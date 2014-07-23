@@ -1,0 +1,14 @@
+{
+	"category" : "VivideContextS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"partialMethod" ],
+	"name" : "ViPartialMethodEditor",
+	"pools" : [
+		 ],
+	"super" : "ViMethodEditor",
+	"type" : "normal" }
