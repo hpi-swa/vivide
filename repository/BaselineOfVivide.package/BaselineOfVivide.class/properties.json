@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfVivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfVivide",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
