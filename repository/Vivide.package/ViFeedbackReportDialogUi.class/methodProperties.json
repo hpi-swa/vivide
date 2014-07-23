@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"backgroundContainer" : "mt 4/5/2013 13:29:57.733",
+		"emailEdit" : "mt 4/5/2013 13:29:57.729",
+		"emoHappyBtn" : "mt 4/5/2013 13:29:57.709",
+		"emoNeutralBtn" : "mt 4/5/2013 13:29:57.717",
+		"emoSadBtn" : "mt 4/5/2013 13:29:57.721",
+		"emoSillyBtn" : "mt 4/5/2013 13:29:57.713",
+		"ideaBtn" : "mt 4/5/2013 13:29:57.695",
+		"initializePanel" : "mt 4/5/2013 13:29:57.787",
+		"messageEdit" : "mt 4/5/2013 13:29:57.725",
+		"praiseBtn" : "mt 4/5/2013 13:29:57.704",
+		"problemBtn" : "mt 4/5/2013 13:29:57.7",
+		"questionBtn" : "mt 4/5/2013 13:29:57.687",
+		"screenshotList" : "mt 4/5/2013 13:29:57.746",
+		"selectAllBtn" : "mt 4/5/2013 13:29:57.738",
+		"selectNoneBtn" : "mt 4/5/2013 13:29:57.742",
+		"sendBtn" : "mt 4/5/2013 13:29:57.764",
+		"stackCombo" : "mt 4/5/2013 13:29:57.755",
+		"stackContainer" : "mt 4/5/2013 13:29:57.751",
+		"stackEdit" : "mt 4/5/2013 13:29:57.759" } }

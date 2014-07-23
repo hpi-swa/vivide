@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"queryModel",
+		"queries" ],
+	"name" : "ViQueryPageLight",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Queries-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UniqueInstance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"eventSource",
+		"silenceLevel" ],
+	"name" : "ViQueryChangeNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

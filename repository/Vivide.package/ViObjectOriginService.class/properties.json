@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Services",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/8/2012 15:16:07.426",
+	"instvars" : [
+		 ],
+	"name" : "ViObjectOriginService",
+	"pools" : [
+		 ],
+	"super" : "ViObjectService",
+	"type" : "normal" }

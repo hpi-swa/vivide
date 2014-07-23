@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Editors-Models",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TUiItemModel classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"context",
+		"stacks",
+		"groups" ],
+	"name" : "ViCallstackModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TUiItemModel",
+	"type" : "normal" }

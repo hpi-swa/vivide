@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model" ],
+	"name" : "ViArtifactListView",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactListPage",
+	"type" : "normal" }

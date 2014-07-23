@@ -1,0 +1,5 @@
+accessing
+titleLbl
+	"nil"
+	
+	^ titleLbl

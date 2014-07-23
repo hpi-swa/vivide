@@ -1,0 +1,1 @@
+I contain some buttons and fade them in or out according to my alpha value.

@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"openFor:" : "mt 3/24/2014 06:35:32.9" },
+	"instance" : {
+		"annotation" : "mt 3/24/2014 07:00:49.572",
+		"buildWith:" : "mt 3/24/2014 06:42:44.909",
+		"code" : "mt 3/24/2014 07:07:53.388",
+		"contextDetails" : "mt 3/24/2014 07:17:23.476",
+		"contextOutline" : "mt 3/24/2014 07:14:17.172",
+		"dataflow" : "mt 3/24/2014 06:54:38.151",
+		"labelString" : "mt 3/24/2014 06:36:42.87",
+		"objects" : "mt 3/24/2014 06:34:51.128",
+		"process" : "mt 3/24/2014 06:34:25.945",
+		"process:" : "mt 3/24/2014 06:34:26.111",
+		"receiverDetails" : "mt 3/24/2014 07:15:49.907",
+		"receiverOutline" : "mt 3/24/2014 07:10:59.711",
+		"squeakListViewCreator" : "mt 3/24/2014 06:56:17.266",
+		"squeakTextViewCreator" : "mt 3/24/2014 06:56:24.949",
+		"stack" : "mt 3/24/2014 06:57:18.327" } }

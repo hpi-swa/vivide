@@ -1,0 +1,4 @@
+operations
+doColor: aColor
+
+	^ nil

@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViMemento classTrait + TViOverlayMessages classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 4/24/2014 08:36:40.704",
+	"instvars" : [
+		"scrollArea",
+		"model" ],
+	"name" : "ViArtifactListView2",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViMemento + TViOverlayMessages",
+	"type" : "normal" }

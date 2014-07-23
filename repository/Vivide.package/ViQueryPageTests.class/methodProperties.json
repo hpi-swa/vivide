@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"exampleObjects" : "mt 7/12/2013 10:49:15.06",
+		"exampleQueries" : "mt 7/13/2013 13:33:59.199",
+		"exampleQuery01" : "mt 9/6/2013 19:52:17.757",
+		"exampleQuery02" : "mt 9/6/2013 19:56:32.358",
+		"subjectClass" : "mt 7/11/2013 09:38:43.947",
+		"test01New" : "mt 11/7/2013 11:58:16.396",
+		"test02Results" : "mt 7/13/2013 13:57:06.668",
+		"test03NewQuery" : "mt 11/7/2013 12:40:43.841",
+		"test04StableQuery" : "mt 7/13/2013 14:17:12.71",
+		"test05DefaultQuery" : "mt 7/13/2013 17:06:39.144",
+		"test06NoInvalidQuery" : "mt 9/6/2013 19:57:38.836",
+		"test07NoInvalidQueryWithQueryListFallback" : "mt 7/13/2013 14:26:40.65",
+		"test08DeferredObjects" : "mt 7/15/2013 08:52:56.467" } }

@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"treeView",
+		"searchContainer",
+		"searchEdit",
+		"addQueryBtn",
+		"debugQueryBtn",
+		"combineQueryBtn" ],
+	"name" : "ViQueryPageUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

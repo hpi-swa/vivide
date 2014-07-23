@@ -1,0 +1,1 @@
+This view is a decorator for item views from the Widgets package (base class: UiAbstractItemView). It adds a commands bar for the input objects, a text-based search mechanism, and previews on mouse hover.

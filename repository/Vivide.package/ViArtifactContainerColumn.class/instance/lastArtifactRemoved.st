@@ -1,0 +1,4 @@
+signals
+lastArtifactRemoved
+
+	self emitInOwnerChain.

@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 12/4/2012 11:21:39.85",
+	"instvars" : [
+		"titleBar",
+		"objectsBar",
+		"locator" ],
+	"name" : "VivideLight",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

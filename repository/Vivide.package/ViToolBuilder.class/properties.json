@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViToolBuilder",
+	"pools" : [
+		 ],
+	"super" : "MorphicToolBuilder",
+	"type" : "normal" }

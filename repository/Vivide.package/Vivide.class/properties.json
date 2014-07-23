@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Callgraphs",
+		"EditorStates",
+		"Images",
+		"TapeStates" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tapeContainer",
+		"leftFixedTape",
+		"rightFixedTape",
+		"objectsBar",
+		"tapesBar" ],
+	"name" : "Vivide",
+	"pools" : [
+		 ],
+	"super" : "BorderedMorph",
+	"type" : "normal" }

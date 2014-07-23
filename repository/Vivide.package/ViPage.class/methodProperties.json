@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"newFromState:" : "mt 10/3/2013 18:32:31.109" },
+	"instance" : {
+		"artifactRequested:" : "mt 11/7/2012 11:11:49.966",
+		"column" : "mt 11/7/2012 11:11:47.61",
+		"drawOverlayOn:" : "mt 9/3/2013 13:22:08.836",
+		"drawShadowOn:" : "mt 9/3/2013 13:21:42.569",
+		"editor" : "mt 11/7/2012 11:14:11.197",
+		"initialize" : "mt 11/7/2012 12:02:05.649",
+		"initializeUi" : "mt 11/7/2012 15:27:12.853",
+		"isFloating" : "mt 9/3/2013 13:20:39.403",
+		"isQueryPage" : "mt 12/7/2013 10:54:40.806",
+		"isVisible" : "mt 7/15/2013 08:47:32.641",
+		"loadState:" : "mt 11/7/2012 13:04:45.511",
+		"messageBounds" : "mt 11/7/2012 11:11:49.536",
+		"minimalWidth" : "mt 11/7/2012 11:29:29.158",
+		"morphsOfInterest" : "mt 11/7/2012 11:11:47.695",
+		"objectSelectionChanged:" : "mt 2/3/2014 10:28:03.401",
+		"objects" : "mt 11/8/2012 14:21:10.286",
+		"objects:" : "mt 11/8/2012 14:21:00.2",
+		"objectsChanged:" : "mt 2/3/2014 10:27:49.359",
+		"optimalWidth" : "mt 11/7/2012 11:21:02.341",
+		"outerBounds" : "mt 9/3/2013 13:21:11.064",
+		"popUpAt:" : "mt 4/22/2014 07:58:31.808",
+		"saveState:" : "mt 11/7/2012 13:04:52.338",
+		"ui" : "mt 11/7/2012 11:11:50.484",
+		"uiClass" : "mt 11/7/2012 11:11:50.572" } }

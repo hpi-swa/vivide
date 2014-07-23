@@ -1,0 +1,5 @@
+accessing
+hideBtn
+	"nil"
+	
+	^ hideBtn

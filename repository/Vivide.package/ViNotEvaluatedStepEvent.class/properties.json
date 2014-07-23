@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViNotEvaluatedStepEvent",
+	"pools" : [
+		 ],
+	"super" : "DoItEvent",
+	"type" : "normal" }

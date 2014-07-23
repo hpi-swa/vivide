@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "mt 2/25/2013 15:03:58.929" },
+	"instance" : {
+		"setUp" : "mt 2/25/2013 11:52:26.73",
+		"subjectClass" : "mt 2/25/2013 11:52:20.92",
+		"test01Size" : "mt 2/25/2013 14:38:19.385",
+		"test02Limit" : "mt 2/25/2013 14:40:23.389",
+		"test03Signals" : "mt 2/25/2013 14:45:55.926",
+		"test04ReturnAddedObject" : "mt 2/25/2013 14:48:04.614",
+		"test05ReturnRemovedObject" : "mt 2/25/2013 14:48:32.013",
+		"test06ChangeLimit" : "mt 2/25/2013 14:54:42.703",
+		"test07ChangeLimitLarge" : "mt 2/25/2013 14:54:25.972",
+		"test08Order" : "mt 2/25/2013 15:40:36.899",
+		"test09AddRemoveUndefiniedObject" : "mt 2/26/2013 16:56:16.834" } }

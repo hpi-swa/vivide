@@ -1,0 +1,4 @@
+accessing
+editorIcon
+
+	^ UiSilkIcons pictureEmptyIcon

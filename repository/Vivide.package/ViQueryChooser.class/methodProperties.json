@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"collectBaseClassesForContext:" : "mt 12/5/2013 11:26:12.431" },
+	"instance" : {
+		"chooseObjectAt:thenNotify:with:" : "mt 9/13/2013 14:32:51.551",
+		"firstVisibleQuery" : "mt 9/13/2013 14:47:27.528",
+		"initialize" : "mt 11/1/2013 18:17:42.315",
+		"initializeEventHandler" : "mt 4/22/2014 07:54:49.025",
+		"initializeModel" : "mt 11/1/2013 18:16:42.712",
+		"initializeView" : "mt 11/1/2013 18:17:20.695",
+		"notify:with:about:" : "mt 9/13/2013 14:32:36.389",
+		"popUpAt:" : "mt 2/6/2014 10:11:44.864",
+		"queries" : "mt 11/1/2013 17:34:57.496",
+		"queries:" : "mt 11/1/2013 17:35:06.016",
+		"selectBlock" : "mt 11/1/2013 17:57:44.861",
+		"selectBlock:" : "mt 11/1/2013 17:58:27.356",
+		"visibleQueries" : "mt 11/1/2013 17:58:55.061" } }

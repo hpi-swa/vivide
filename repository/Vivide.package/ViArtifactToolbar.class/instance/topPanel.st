@@ -1,0 +1,4 @@
+accessing
+topPanel
+
+	^ topBar

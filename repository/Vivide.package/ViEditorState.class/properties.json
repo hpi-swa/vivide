@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Memento",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"properties" ],
+	"name" : "ViEditorState",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

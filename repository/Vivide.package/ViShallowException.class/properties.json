@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stack",
+		"description" ],
+	"name" : "ViShallowException",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

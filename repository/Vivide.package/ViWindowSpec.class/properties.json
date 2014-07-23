@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dataflowSpecs",
+		"objects" ],
+	"name" : "ViWindowSpec",
+	"pools" : [
+		 ],
+	"super" : "PluggableWindowSpec",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TUiItemModel classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects",
+		"contents",
+		"helpText" ],
+	"name" : "ViGroupedToolbarModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TUiItemModel",
+	"type" : "normal" }

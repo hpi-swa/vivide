@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Locator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"shortcut",
+		"description" ],
+	"name" : "ViLocatorOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

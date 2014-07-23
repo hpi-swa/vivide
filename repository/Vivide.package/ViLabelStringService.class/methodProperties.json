@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"doAssociation:" : "mt 7/22/2013 14:01:27.149",
+		"doBlockContext:" : "mt 9/11/2012 15:42:08.033",
+		"doCallgraph:" : "mt 2/13/2013 17:15:58.68",
+		"doCallgraphDiff:" : "mt 2/14/2013 16:52:21.651",
+		"doDebugger:" : "mt 8/5/2013 16:11:37.818",
+		"doFlagComment:" : "mt 9/4/2012 09:08:04.461",
+		"doLocatorOperation:" : "mt 9/4/2012 09:08:02.06",
+		"doMethodCallNodeOLD:" : "mt 9/10/2012 16:14:27.365",
+		"doMethodContext:" : "mt 6/6/2014 17:19:04.627",
+		"doMethodReference:" : "mt 3/26/2013 11:56:06.351",
+		"doMethodVersion:" : "mt 9/11/2012 14:24:27.077",
+		"doObject:" : "mt 6/27/2013 15:46:36.873",
+		"doPackageInfo:" : "mt 9/4/2012 09:07:44.061",
+		"doProtocol:" : "mt 2/20/2013 13:08:30.99",
+		"doQuery:" : "mt 8/29/2013 12:00:20.988",
+		"doQueryPart:" : "mt 9/9/2013 15:13:05.612",
+		"doQueryStep:" : "mt 9/19/2013 14:09:01.143",
+		"doQueryStepDefinition:" : "mt 9/9/2013 15:18:51.73",
+		"doTag:" : "mt 9/4/2012 09:07:41.594",
+		"doText:" : "mt 9/4/2012 11:03:55.128" } }

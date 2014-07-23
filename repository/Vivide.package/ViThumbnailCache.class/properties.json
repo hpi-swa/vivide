@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"thumbnails" ],
+	"name" : "ViThumbnailCache",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

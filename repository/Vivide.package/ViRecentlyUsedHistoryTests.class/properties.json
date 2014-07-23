@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViRecentlyUsedHistoryTests",
+	"pools" : [
+		 ],
+	"super" : "ViObjectHistoryTests",
+	"type" : "normal" }

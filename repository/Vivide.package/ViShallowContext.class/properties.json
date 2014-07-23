@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stack" ],
+	"name" : "ViShallowContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

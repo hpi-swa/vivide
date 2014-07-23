@@ -1,0 +1,4 @@
+accessing
+rightPanel
+
+	^ rightBar

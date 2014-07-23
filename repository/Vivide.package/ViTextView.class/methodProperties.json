@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptChanges:" : "mt 2/25/2014 15:31:29.098",
+		"addColumns:" : "mt 2/19/2014 09:26:51.428",
+		"appendFrom:to:inGroup:" : "mt 2/25/2014 15:31:14.064",
+		"appendGroupSeparator:" : "mt 12/6/2013 16:42:08.657",
+		"connectModel" : "mt 12/6/2013 15:58:41.569",
+		"disconnectDefaultSignals" : "mt 2/19/2014 09:31:34.525",
+		"disconnectModel" : "mt 12/6/2013 15:58:48.097",
+		"doubleClicked:" : "mt 2/19/2014 16:43:49.716",
+		"hovered:" : "mt 2/19/2014 16:43:41.526",
+		"initialize" : "mt 2/25/2014 15:26:35.942",
+		"isSearchSupported" : "mt 2/19/2014 17:08:50.356",
+		"model" : "mt 12/6/2013 15:47:58.123",
+		"model:" : "mt 12/6/2013 15:49:17.815",
+		"optimalHeight" : "mt 6/2/2014 17:47:27.843",
+		"optimalWidth" : "mt 12/7/2013 10:09:11.351",
+		"removeAllColumns" : "mt 2/19/2014 09:26:02.187",
+		"reset" : "mt 4/7/2014 15:55:29.504",
+		"returnPressed:" : "mt 2/19/2014 16:43:54.813",
+		"selectedNodes" : "mt 2/25/2014 15:12:13.932",
+		"selectionChanged:" : "mt 2/19/2014 16:43:32.675",
+		"specs" : "mt 12/6/2013 15:57:03.985",
+		"specs:" : "mt 12/6/2013 15:56:39.507",
+		"visibleNodes" : "mt 2/25/2014 15:12:08.525" } }

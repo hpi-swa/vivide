@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nameEdit",
+		"dropTarget" ],
+	"name" : "ViProtocolEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

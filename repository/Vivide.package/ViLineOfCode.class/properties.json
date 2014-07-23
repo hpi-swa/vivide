@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"codeHash",
+		"categories" ],
+	"name" : "ViLineOfCode",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

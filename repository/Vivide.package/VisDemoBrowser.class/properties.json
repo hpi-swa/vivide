@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VisDemoBrowser",
+	"pools" : [
+		 ],
+	"super" : "VisTool",
+	"type" : "normal" }

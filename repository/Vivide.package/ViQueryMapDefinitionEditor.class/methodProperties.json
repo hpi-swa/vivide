@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"supportedTypes" : "mt 9/7/2013 20:19:16.347" },
+	"instance" : {
+		"acceptChanges" : "mt 9/7/2013 20:54:26.16",
+		"acceptSubscribeCode" : "mt 9/9/2013 14:53:15.212",
+		"acceptUnsubscribeCode" : "mt 9/9/2013 14:53:21.532",
+		"acceptUpdateClearDefinition" : "mt 9/7/2013 20:49:41.25",
+		"acceptUpdateSetDefinition" : "mt 9/7/2013 20:49:23.403",
+		"clear" : "mt 9/7/2013 21:01:42.312",
+		"currentSubscribeCode" : "mt 9/8/2013 11:34:36.272",
+		"currentSubscribeCode:" : "mt 9/8/2013 14:34:52.764",
+		"currentUnsubscribeCode" : "mt 9/8/2013 11:34:46.143",
+		"currentUnsubscribeCode:" : "mt 9/8/2013 14:34:35.057",
+		"currentUpdateClearDefinition" : "mt 9/7/2013 12:22:14.449",
+		"currentUpdateClearDefinition:" : "mt 9/7/2013 20:46:20.242",
+		"currentUpdateSetDefinition" : "mt 9/7/2013 12:22:30.467",
+		"currentUpdateSetDefinition:" : "mt 9/7/2013 20:46:06.143",
+		"hasUnacceptedChanges" : "mt 9/8/2013 11:55:47.119",
+		"initializeArtifact" : "mt 11/10/2013 13:33:07.945",
+		"initializeResizeHandle" : "mt 9/7/2013 21:01:29.484",
+		"initializeToolbarOperations" : "mt 9/8/2013 11:49:04.452",
+		"optimalWidth" : "mt 9/7/2013 20:20:24.186",
+		"toggleCodeVisible:" : "mt 9/7/2013 21:05:44.648",
+		"useNewCode" : "mt 9/9/2013 12:04:41.932" } }

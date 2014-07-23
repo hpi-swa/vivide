@@ -1,0 +1,4 @@
+events
+hasKeyboard
+
+	^ snippetEdit hasKeyboard

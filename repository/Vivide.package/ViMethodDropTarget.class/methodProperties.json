@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptArtifact:fromEditor:event:" : "mt 2/19/2013 10:23:27.53",
+		"acceptObjects:fromEditor:event:" : "mt 2/19/2013 14:14:32.832",
+		"drawOn:" : "mt 7/28/2013 16:04:57.211",
+		"initialize" : "mt 7/24/2013 15:58:55.621",
+		"objectsDropped:" : "mt 2/19/2013 10:23:57.327",
+		"text" : "mt 2/19/2013 10:03:50.017",
+		"text:" : "mt 2/19/2013 10:25:18.483" } }

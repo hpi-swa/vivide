@@ -1,0 +1,3 @@
+completion
+selectedClassOrMetaClass
+	^ nil

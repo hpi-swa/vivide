@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"users",
+		"projects",
+		"listings" ],
+	"name" : "ViSmalltalkHub",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

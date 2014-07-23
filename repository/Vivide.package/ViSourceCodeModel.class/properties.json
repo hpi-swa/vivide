@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"class",
+		"completionController" ],
+	"name" : "ViSourceCodeModel",
+	"pools" : [
+		 ],
+	"super" : "UiTextModel",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"addPaneBtn",
+		"headerBtn",
+		"hideBtn",
+		"closeBtn",
+		"content" ],
+	"name" : "ViMultiPaneEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

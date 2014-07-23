@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"layoutInset",
+		"cellInset" ],
+	"name" : "ViWrappingLayout",
+	"pools" : [
+		 ],
+	"super" : "LayoutPolicy",
+	"type" : "normal" }

@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"newFrom:to:in:" : "mt 10/5/2012 10:35:15.224" },
+	"instance" : {
+		"addAllSourceMorphs:" : "mt 6/19/2012 17:50:37.767",
+		"addAllTargetMorphs:" : "mt 6/19/2012 17:51:12.459",
+		"connectMorph:" : "mt 6/14/2012 09:28:55.461",
+		"connectTransformMorph:" : "mt 6/14/2012 09:35:25.221",
+		"disconnectMorph:" : "mt 6/14/2012 09:29:10.776",
+		"disconnectTransformMorph:" : "mt 6/14/2012 09:34:59.635",
+		"drawFramesOn:" : "mt 7/8/2013 17:04:26.151",
+		"drawLinesOn:" : "mt 6/19/2012 18:35:33.161",
+		"drawOn:" : "mt 6/19/2012 18:17:13.757",
+		"initialize" : "mt 6/19/2012 17:32:57.549",
+		"isOverlayConnector" : "mt 6/19/2012 17:59:13.399",
+		"rejectsEvent:" : "mt 6/13/2012 16:25:13.716",
+		"removeAllSourceMorphs" : "mt 6/19/2012 18:20:46.373",
+		"removeAllTargetMorphs" : "mt 6/19/2012 18:20:09.713",
+		"removeSourceMorph:" : "mt 6/19/2012 18:19:49.593",
+		"removeTargetMorph:" : "mt 6/19/2012 18:27:43.908",
+		"sourceMorphBounds" : "mt 6/14/2012 10:23:35.204",
+		"sourceMorphs" : "mt 6/19/2012 17:47:41.67",
+		"targetMorphBounds" : "mt 6/14/2012 10:23:41.686",
+		"targetMorphs" : "mt 6/19/2012 17:47:57.461",
+		"update" : "mt 6/19/2012 18:22:04.147",
+		"updateReferences" : "mt 6/19/2012 18:40:53.927" } }

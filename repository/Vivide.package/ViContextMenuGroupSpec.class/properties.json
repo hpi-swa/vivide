@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViContextMenuGroupSpec",
+	"pools" : [
+		 ],
+	"super" : "UiListViewGroupSpec",
+	"type" : "normal" }

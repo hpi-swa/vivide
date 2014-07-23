@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Services",
+	"classinstvars" : [
+		"iconCache" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViIconService",
+	"pools" : [
+		 ],
+	"super" : "ViObjectService",
+	"type" : "normal" }

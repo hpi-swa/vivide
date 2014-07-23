@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"clearTranscriptBtn" : "mt 6/20/2012 14:05:55.093",
+		"closeBtn" : "mt 6/20/2012 14:05:55.002",
+		"headerBtn" : "mt 6/20/2012 14:05:54.984",
+		"hideBtn" : "mt 6/20/2012 14:05:54.964",
+		"initializePanel" : "mt 6/20/2012 14:05:55.136",
+		"redrawBtn" : "mt 6/20/2012 14:05:55.075",
+		"timestampBtn" : "mt 6/20/2012 14:05:55.057",
+		"transcriptEdit" : "mt 6/20/2012 14:05:55.021",
+		"transcriptToolbar" : "mt 6/20/2012 14:05:55.039" } }

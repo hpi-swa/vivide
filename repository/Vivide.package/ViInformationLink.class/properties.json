@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"color" ],
+	"name" : "ViInformationLink",
+	"pools" : [
+		 ],
+	"super" : "PluggableTextAttribute",
+	"type" : "normal" }

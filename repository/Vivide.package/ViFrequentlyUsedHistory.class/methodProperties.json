@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addObject:" : "mt 2/26/2013 15:55:14.678",
+		"ensureLimit" : "mt 2/26/2013 17:04:04.677",
+		"frequencies" : "mt 2/26/2013 16:29:40.094",
+		"normalizeFrequencies" : "mt 3/1/2013 14:00:07.071",
+		"removeObject:ifAbsent:" : "mt 3/28/2013 11:38:50.128",
+		"updateOrder" : "mt 7/9/2013 11:25:15.027" } }

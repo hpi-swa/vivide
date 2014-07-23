@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViContextMenu",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactToolbarPanel",
+	"type" : "normal" }

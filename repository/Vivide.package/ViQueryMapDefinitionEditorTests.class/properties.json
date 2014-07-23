@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"updateSetDefinition",
+		"updateClearDefinition" ],
+	"name" : "ViQueryMapDefinitionEditorTests",
+	"pools" : [
+		 ],
+	"super" : "ViQueryStepDefinitionEditorTests",
+	"type" : "normal" }

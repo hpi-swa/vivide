@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptChanges" : "mt 8/27/2012 13:48:53.753",
+		"changeReceiverFor:" : "mt 11/2/2012 15:58:26.247",
+		"clear" : "mt 2/3/2014 11:28:25.388",
+		"contentTree" : "mt 8/27/2012 13:43:44.385",
+		"editVisibilityBtn" : "mt 8/27/2012 13:41:45.25",
+		"editVisible" : "mt 8/27/2012 13:44:02.716",
+		"editVisible:" : "mt 8/27/2012 13:44:40.389",
+		"executeCommand:" : "mt 6/6/2014 11:42:18.935",
+		"focusCurrentNodeIn:" : "mt 11/18/2013 11:55:12.274",
+		"grabKeyboard" : "mt 8/27/2012 15:16:54.877",
+		"group" : "mt 8/27/2012 13:37:53.239",
+		"hasUnacceptedChanges" : "mt 8/27/2012 13:48:37.209",
+		"initializeArtifact" : "mt 11/18/2013 11:55:26.641",
+		"initializeResizeHandle" : "mt 9/4/2012 15:07:33.008",
+		"initializeToolbarObjects" : "mt 8/29/2012 13:13:31.358",
+		"initializeToolbarOperations" : "mt 6/6/2014 11:43:33.935",
+		"knowsObject:" : "mt 11/16/2013 12:31:49.789",
+		"object" : "mt 8/27/2012 14:49:52.448",
+		"object:" : "mt 8/29/2012 13:42:28.689",
+		"optimalWidth" : "mt 9/13/2012 16:59:08.801",
+		"refreshModel" : "mt 2/3/2014 11:25:56.551",
+		"sourceCodeEdit" : "mt 8/27/2012 13:43:25.91",
+		"theClass" : "mt 11/18/2013 11:37:37.406",
+		"toggleEditVisible" : "mt 9/4/2012 15:09:44.424" } }

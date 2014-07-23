@@ -1,0 +1,5 @@
+contents
+abstractCoContents
+
+	^ 'R0lGODlhBwAIAKIAABR6ODCKUHu+krndxdbr3f///////wAAACH5BAEAAAYALAAAAAAHAAgA
+AAMUaFZQugIIt1pTLEPAZy5fABbiaCYAOw=='

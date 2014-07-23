@@ -1,0 +1,4 @@
+completion
+guessTypeForName: aString
+
+	^ nil

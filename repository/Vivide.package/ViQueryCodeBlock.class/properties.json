@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourceCode" ],
+	"name" : "ViQueryCodeBlock",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

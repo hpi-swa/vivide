@@ -1,0 +1,10 @@
+contents
+tasksTskContents
+
+	^ 'R0lGODlhEAAQANUAAPHz+vj5/PX3/Ozw+YeUrYyWquft+fD0/PP2/PX3+/r7/fj5+152o22E
+rV9zlmBzlnGCoN/o+OLq+ICUtIGUtJutzIKRqpenwJinwI6bsK+6zO7z+666zPX3+pKbpvv8
+/fr7/D+m/6vB1ACK+ABVlgBGe5mfoaGknKmpltDQxLCtkbeyjbaxjbu0itCseNSwe+HLqsWa
+Yc6pdseicsqldNOuetvEpMGbbMSeb76Ya62BUryWarWQZ+TWxtTBr////yH5BAEAAD8ALAAA
+AAAQABAAAAaVwJ9wKMyIRBmiUmjhcDQcy/LXi8UgmMsFA9HFesTX60GhTMoUhzjcWrjf7taL
+WGsvPqHPu1Ujulh3ISQfDAwLKy5EMioKgiEgHR0JKjJCIT80KY4BFYUAKDQ/jjCOAgOnpycz
+liUjJSEIBg2FDAYmOEOuIwcSvb4SHjdEIxsRxsfGBTlENgTOz9A7RD481dbXPlPaP0EAOw=='

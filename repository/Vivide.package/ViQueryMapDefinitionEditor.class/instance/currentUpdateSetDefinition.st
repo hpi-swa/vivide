@@ -1,0 +1,4 @@
+accessing
+currentUpdateSetDefinition 
+
+	^ subscribeEdit definition

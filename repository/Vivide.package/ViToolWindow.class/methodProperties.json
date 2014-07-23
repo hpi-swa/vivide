@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"expandBoxImage" : "mt 9/13/2013 14:12:59.874" },
+	"instance" : {
+		"activate" : "mt 5/20/2014 11:56:16.508",
+		"appendHeaderButtons:" : "mt 7/5/2013 10:25:39.076",
+		"beginDarken" : "mt 2/5/2013 14:35:30.215",
+		"closeBoxHit" : "mt 5/7/2014 08:53:31.535",
+		"darkenThreshold" : "mt 7/15/2013 18:45:51.08",
+		"darkenTimeout" : "mt 2/5/2013 14:35:17.806",
+		"darkenWindow" : "mt 1/31/2014 11:42:14.779",
+		"drawOverlayOn:" : "mt 5/7/2014 10:37:14.953",
+		"editor" : "mt 3/27/2013 16:46:55.628",
+		"endDarken" : "mt 2/5/2013 11:46:57.589",
+		"externalName" : "mt 2/2/2013 15:38:04.586",
+		"fastFramingOn" : "mt 1/25/2013 09:37:53.354",
+		"fullScreen" : "mt 7/19/2013 11:25:24.47",
+		"headerButtons" : "mt 7/5/2013 10:25:33.531",
+		"initialize" : "mt 5/7/2014 10:12:28.629",
+		"initializeLabelAreaContents" : "mt 5/20/2014 10:39:21.65",
+		"isNotUsed" : "mt 5/7/2014 10:37:38.621",
+		"label" : "mt 1/31/2013 16:24:44.132",
+		"passivate" : "mt 5/20/2014 11:50:47.654",
+		"visibleArea" : "mt 1/6/2014 13:20:23.696",
+		"wantsHaloFromClick" : "mt 4/28/2014 14:10:30.253" } }

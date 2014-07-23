@@ -1,0 +1,4 @@
+operations
+doClassDescription: aClassDescription
+
+	^ nil

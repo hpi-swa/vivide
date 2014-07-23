@@ -1,0 +1,4 @@
+signals
+collapsed
+
+	self emit.

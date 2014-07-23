@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"footer",
+		"icon",
+		"text",
+		"background" ],
+	"name" : "ViTransformMorph",
+	"pools" : [
+		 ],
+	"super" : "UiTransformMorph",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViArtifactListViewTests",
+	"pools" : [
+		 ],
+	"super" : "UiTestCase",
+	"type" : "normal" }

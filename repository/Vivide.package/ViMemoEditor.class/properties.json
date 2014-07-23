@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 9/5/2012 13:27:09.344",
+	"instvars" : [
+		"fontList",
+		"sizeList",
+		"text" ],
+	"name" : "ViMemoEditor",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainer",
+	"type" : "normal" }

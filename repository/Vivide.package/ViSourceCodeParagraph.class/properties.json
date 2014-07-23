@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViSourceCodeParagraph",
+	"pools" : [
+		 ],
+	"super" : "NewParagraph",
+	"type" : "normal" }

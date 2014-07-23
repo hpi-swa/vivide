@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"form" ],
+	"name" : "ViLazyImageMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

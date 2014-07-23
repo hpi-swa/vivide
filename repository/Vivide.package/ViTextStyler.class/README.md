@@ -1,0 +1,1 @@
+Regular Shout text styler with the ability to override some attributes dynamically.

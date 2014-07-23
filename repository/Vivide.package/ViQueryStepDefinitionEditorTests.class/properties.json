@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"definition",
+		"organization" ],
+	"name" : "ViQueryStepDefinitionEditorTests",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainerTests",
+	"type" : "normal" }

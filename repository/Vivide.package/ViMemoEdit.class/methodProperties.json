@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addSelectionAttribute:" : "mt 1/30/2014 11:45:33.54",
+		"currentFont" : "mt 1/29/2014 17:37:04.72",
+		"currentFontSize" : "mt 1/29/2014 17:37:20.563",
+		"drawOn:" : "mt 1/29/2014 16:56:13.117",
+		"initialize" : "mt 1/30/2014 12:59:31.585",
+		"makeSelectionBold" : "mt 1/30/2014 11:45:47.163",
+		"makeSelectionItalic" : "mt 1/30/2014 11:45:52.878",
+		"makeSelectionUnderlined" : "mt 1/30/2014 11:45:58.577",
+		"setColor:" : "mt 1/30/2014 12:59:44.839",
+		"setFont:" : "mt 1/30/2014 11:57:34.836" } }

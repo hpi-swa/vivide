@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"reference" ],
+	"name" : "ViQueryReferenceStep",
+	"pools" : [
+		 ],
+	"super" : "ViQueryStep",
+	"type" : "normal" }

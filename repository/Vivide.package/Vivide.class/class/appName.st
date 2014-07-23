@@ -1,0 +1,4 @@
+application
+appName
+
+	^ 'vivide'

@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"test01UpToNextProperties" : "mt 11/16/2013 11:48:47.247",
+		"test02UpToEnd" : "mt 12/18/2013 13:45:50.095",
+		"test03UpToStep" : "mt 11/16/2013 12:17:07.028",
+		"test04DuplicateObjects" : "mt 11/16/2013 14:45:02.757",
+		"test05FlattenCollections" : "mt 12/5/2013 09:51:50.635",
+		"test06ReferencedProperties" : "mt 6/6/2014 10:01:03.536",
+		"test07PropertyReadBlock" : "mt 6/6/2014 10:09:03.213",
+		"test08PropertyWriteBlock" : "mt 6/6/2014 10:12:36.707",
+		"test09FlattenInput" : "mt 6/9/2014 15:58:01.29",
+		"test10FlattenOutput" : "mt 6/9/2014 15:58:58.013",
+		"test11TupleInput" : "mt 6/12/2014 13:02:48.331",
+		"test12TupleOutput" : "mt 6/9/2014 16:16:06.597",
+		"test13TupleWithProperties" : "mt 6/9/2014 21:50:08.024",
+		"test14TupleFilter" : "mt 6/11/2014 15:02:00.613" } }

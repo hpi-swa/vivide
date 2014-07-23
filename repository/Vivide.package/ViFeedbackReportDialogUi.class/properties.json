@@ -1,0 +1,31 @@
+{
+	"category" : "Vivide-Feedback",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"questionBtn",
+		"ideaBtn",
+		"problemBtn",
+		"praiseBtn",
+		"emoHappyBtn",
+		"emoSillyBtn",
+		"emoNeutralBtn",
+		"emoSadBtn",
+		"messageEdit",
+		"emailEdit",
+		"backgroundContainer",
+		"selectAllBtn",
+		"selectNoneBtn",
+		"screenshotList",
+		"stackContainer",
+		"stackCombo",
+		"stackEdit",
+		"sendBtn" ],
+	"name" : "ViFeedbackReportDialogUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

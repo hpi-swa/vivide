@@ -1,0 +1,4 @@
+operations
+doSourceCodeSnippet: aSourceCodeSnippet
+
+	^ ViCodeSnippetEditor

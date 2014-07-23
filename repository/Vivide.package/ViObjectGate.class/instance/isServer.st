@@ -1,0 +1,4 @@
+mode
+isServer
+
+	^ mode == #server

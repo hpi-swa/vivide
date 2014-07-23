@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"widgetCategory" : "mt 4/25/2011 10:42:50.921",
+		"widgetClassName" : "mt 4/25/2011 10:42:38.703" },
+	"instance" : {
+		"dragTransferType" : "mt 7/27/2012 10:01:08.957",
+		"dragTransferType:" : "mt 7/27/2012 10:01:19.253",
+		"initialize" : "mt 9/19/2012 14:35:03.225",
+		"initializeEventHandler" : "mt 4/25/2011 10:45:51.888",
+		"mouseStartDrag:" : "mt 9/5/2012 14:11:05.085",
+		"passenger" : "mt 9/4/2012 15:41:16.717",
+		"passenger:" : "mt 9/4/2012 15:41:06.153",
+		"source" : "mt 8/6/2012 14:49:42.227",
+		"source:" : "mt 8/6/2012 14:49:53.967",
+		"startDrag" : "mt 9/5/2012 14:10:52.234",
+		"startDragWithHand:" : "mt 11/8/2013 11:11:16.028",
+		"target:" : "mt 7/20/2012 16:36:19.882",
+		"updateSubmorphs" : "mt 9/19/2012 14:37:22.553" } }

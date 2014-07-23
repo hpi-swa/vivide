@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bindingOf:" : "mt 2/12/2014 13:26:34.166",
+		"bindings" : "mt 2/12/2014 13:26:00.628",
+		"bindings:" : "mt 2/12/2014 13:21:20.974",
+		"completionAdditionals" : "mt 2/12/2014 13:27:34.518",
+		"completionController" : "mt 2/12/2014 13:44:34.216",
+		"guessTypeForName:" : "mt 2/12/2014 13:28:18.796",
+		"hasBindingOf:" : "mt 2/12/2014 13:28:24.54",
+		"hasBindingThatBeginsWith:" : "mt 2/12/2014 13:29:24.498",
+		"selectedClassOrMetaClass" : "mt 2/12/2014 13:54:01.5" } }

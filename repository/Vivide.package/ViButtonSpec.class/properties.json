@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"enabledSelector",
+		"clickedSelector",
+		"overrideButtonFont" ],
+	"name" : "ViButtonSpec",
+	"pools" : [
+		 ],
+	"super" : "UiItemViewColumnSpec",
+	"type" : "normal" }

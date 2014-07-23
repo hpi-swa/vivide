@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ui" ],
+	"name" : "ViOverlayMessageBox",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

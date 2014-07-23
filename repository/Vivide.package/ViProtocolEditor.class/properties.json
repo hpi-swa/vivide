@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ui",
+		"protocol",
+		"class" ],
+	"name" : "ViProtocolEditor",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainer",
+	"type" : "normal" }

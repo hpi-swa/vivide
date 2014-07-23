@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"artifactName" : "mt 9/4/2012 10:01:21.963" },
+	"instance" : {
+		"addArtifact" : "mt 9/5/2012 18:31:24.561",
+		"clear" : "mt 9/4/2012 12:50:02.043",
+		"currentFont" : "mt 9/4/2012 10:35:41.292",
+		"currentFontFamilyName" : "mt 9/4/2012 10:36:17.182",
+		"currentFontSize" : "mt 9/4/2012 10:37:06.432",
+		"defaultMemo" : "mt 9/5/2012 13:59:33.665",
+		"group" : "mt 1/29/2014 15:46:31.066",
+		"hasUnacceptedChanges" : "mt 9/6/2012 11:21:29.656",
+		"initializeArtifact" : "mt 1/29/2014 15:53:17.225",
+		"initializeResizeHandle" : "mt 1/29/2014 15:50:18.327",
+		"initializeToolbarOperations" : "mt 7/8/2013 16:37:02.993",
+		"object" : "mt 9/5/2012 13:22:19.061",
+		"object:" : "mt 9/6/2012 11:24:45.096",
+		"optimalWidth" : "mt 9/4/2012 12:06:04.941",
+		"setFont:" : "mt 9/4/2012 10:37:33.593",
+		"setPointSize:" : "mt 9/4/2012 10:38:56.642",
+		"updateText:" : "mt 9/6/2012 16:00:47.896" } }

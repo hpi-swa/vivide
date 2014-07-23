@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"on:" : "mt 11/17/2013 11:50:49.134" },
+	"instance" : {
+		"contextStackIndex" : "mt 11/17/2013 12:19:06.349",
+		"contextStackIndex:oldContextWas:" : "mt 11/17/2013 12:12:11.95",
+		"initialize" : "mt 11/17/2013 12:22:49.47",
+		"interruptedContext" : "mt 11/17/2013 12:00:40.257",
+		"interruptedProcess" : "mt 11/17/2013 11:57:54.114",
+		"labelString" : "mt 11/17/2013 11:58:08.907",
+		"pcRange" : "mt 11/17/2013 12:21:05.483",
+		"receiver" : "mt 11/17/2013 12:15:55.477",
+		"selectedContext" : "mt 11/17/2013 12:32:24.563",
+		"shallowException:" : "mt 11/17/2013 11:51:12.379",
+		"toggleContextStackIndex:" : "mt 11/17/2013 12:08:26.992" } }

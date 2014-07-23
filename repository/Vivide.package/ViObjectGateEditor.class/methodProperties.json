@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addObject:" : "mt 7/24/2013 15:55:20.189",
+		"clear" : "mt 7/24/2013 16:44:51.93",
+		"group" : "mt 7/24/2013 11:27:36.739",
+		"hasUnacceptedChanges" : "mt 7/24/2013 15:59:10.962",
+		"initializeArtifact" : "mt 7/24/2013 16:53:30.611",
+		"initializeResizeHandle" : "mt 7/24/2013 15:29:26.958",
+		"object" : "mt 7/24/2013 11:27:54.857",
+		"object:" : "mt 7/24/2013 16:06:49.13",
+		"sendObjects:" : "mt 7/24/2013 16:32:20.665",
+		"toggleServerMode:" : "mt 7/24/2013 15:41:25.845",
+		"tryConnect" : "mt 7/24/2013 16:11:46.328",
+		"ui" : "mt 7/24/2013 11:27:16.072",
+		"updateAddressInObjectGate" : "mt 7/24/2013 16:55:21.756",
+		"updateButtons" : "mt 7/24/2013 16:09:41.601" } }

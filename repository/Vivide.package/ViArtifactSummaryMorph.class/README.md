@@ -1,0 +1,1 @@
+A support structure for ViArtifactContainer.

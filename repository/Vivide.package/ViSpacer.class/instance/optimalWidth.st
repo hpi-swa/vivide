@@ -1,0 +1,4 @@
+geometry
+optimalWidth
+
+	^ 50

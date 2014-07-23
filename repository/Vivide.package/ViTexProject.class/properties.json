@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entry" ],
+	"name" : "ViTexProject",
+	"pools" : [
+		 ],
+	"super" : "ViTexDocumentNode",
+	"type" : "normal" }

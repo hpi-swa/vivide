@@ -1,0 +1,4 @@
+signals
+expressionAboutToBeEvaluated
+
+	self emitInOwnerChain.

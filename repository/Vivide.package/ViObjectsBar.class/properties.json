@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/17/2012 11:29:06.255",
+	"instvars" : [
+		"editorStateList",
+		"recentlyList",
+		"frequentlyList",
+		"resizeHandle",
+		"contentContainer",
+		"drawBackground" ],
+	"name" : "ViObjectsBar",
+	"pools" : [
+		 ],
+	"super" : "VivideToolBar",
+	"type" : "normal" }

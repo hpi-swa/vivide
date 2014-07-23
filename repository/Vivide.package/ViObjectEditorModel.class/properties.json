@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TUiItemModel classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"wrappedObject",
+		"isRoot",
+		"contentsCache",
+		"groups" ],
+	"name" : "ViObjectEditorModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TUiItemModel",
+	"type" : "normal" }

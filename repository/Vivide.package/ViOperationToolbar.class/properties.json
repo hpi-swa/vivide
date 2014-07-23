@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"operationContext" ],
+	"name" : "ViOperationToolbar",
+	"pools" : [
+		 ],
+	"super" : "ViGroupedToolbar",
+	"type" : "normal" }

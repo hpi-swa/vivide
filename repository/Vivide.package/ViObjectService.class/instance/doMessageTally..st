@@ -1,0 +1,4 @@
+operations
+doMessageTally: aMessageTally
+
+	^ nil

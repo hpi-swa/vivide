@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"method" ],
+	"name" : "ViMethodSourceCodeEdit",
+	"pools" : [
+		 ],
+	"super" : "ViSourceCodeEdit",
+	"type" : "normal" }

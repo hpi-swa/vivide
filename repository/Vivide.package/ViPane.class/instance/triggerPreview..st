@@ -1,0 +1,4 @@
+OBSOLETE
+triggerPreview: arg
+
+	"Dummy."

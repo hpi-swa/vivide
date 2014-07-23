@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"key" ],
+	"name" : "ViUnboxingDragDropSpec",
+	"pools" : [
+		 ],
+	"super" : "UiItemViewDragDropSpec",
+	"type" : "normal" }

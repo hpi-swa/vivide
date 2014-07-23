@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViSourceCodeEditor",
+	"pools" : [
+		 ],
+	"super" : "UiTextEditor",
+	"type" : "normal" }

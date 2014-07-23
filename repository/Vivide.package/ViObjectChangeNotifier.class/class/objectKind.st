@@ -1,0 +1,4 @@
+item kinds
+objectKind
+
+	^ #object

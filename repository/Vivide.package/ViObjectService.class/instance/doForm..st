@@ -1,0 +1,4 @@
+operations
+doForm: aForm
+
+	^ nil

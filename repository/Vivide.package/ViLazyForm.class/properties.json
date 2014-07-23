@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"initBlock",
+		"form" ],
+	"name" : "ViLazyForm",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

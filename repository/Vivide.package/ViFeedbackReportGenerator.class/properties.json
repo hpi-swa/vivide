@@ -1,0 +1,22 @@
+{
+	"category" : "Vivide-Feedback",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dataForWorldSubmorphs",
+		"dataForDebuggers",
+		"dataForVersions",
+		"dataForQueries",
+		"topic",
+		"mood",
+		"emailAddress",
+		"message",
+		"timestamp" ],
+	"name" : "ViFeedbackReportGenerator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

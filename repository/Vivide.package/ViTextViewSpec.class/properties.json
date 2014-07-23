@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"overrideCodeFont" ],
+	"name" : "ViTextViewSpec",
+	"pools" : [
+		 ],
+	"super" : "UiItemViewSimpleColumnSpec",
+	"type" : "normal" }

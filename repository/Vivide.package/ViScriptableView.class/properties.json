@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptableView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addIcon:icon:text:receiver:selector:" : "mt 9/3/2013 10:04:36.245",
+		"addIcon:icon:text:receiver:selector:argument:" : "mt 1/30/2014 11:52:23.936",
+		"addIcon:text:receiver:selector:" : "mt 1/30/2014 11:55:18.354",
+		"addIcon:text:receiver:selector:argument:" : "mt 1/30/2014 12:58:02.638",
+		"addSeparator" : "mt 11/15/2012 13:45:12.826",
+		"addText:receiver:selector:argument:" : "mt 1/30/2014 11:59:18.463",
+		"buttons" : "mt 9/2/2013 11:37:22.509",
+		"closeOnAction" : "mt 9/2/2013 11:35:20.164",
+		"closeOnAction:" : "mt 9/2/2013 11:39:39.052",
+		"drawOn:" : "mt 7/8/2013 17:06:36.913",
+		"handleMouseMove:" : "mt 11/13/2012 17:08:42.197",
+		"initialize" : "mt 11/15/2012 13:33:16.34",
+		"initializeEventHandler" : "mt 7/29/2013 15:49:25.666",
+		"popUpAt:" : "mt 11/15/2012 13:53:44.857",
+		"popUpForMorph:" : "mt 9/3/2013 11:41:08.959",
+		"tryDelete:" : "mt 11/13/2012 17:09:08.945",
+		"updateAlpha:" : "mt 11/15/2012 13:53:23.179",
+		"updateAlphaFor:" : "mt 11/15/2012 13:53:31.913",
+		"updateConnections" : "mt 9/2/2013 11:38:37.805" } }

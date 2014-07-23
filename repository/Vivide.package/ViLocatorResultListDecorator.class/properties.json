@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Locator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"overlappingWidth" ],
+	"name" : "ViLocatorResultListDecorator",
+	"pools" : [
+		 ],
+	"super" : "ViMorphDecorator",
+	"type" : "normal" }

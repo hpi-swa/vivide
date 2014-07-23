@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"otherContexts" ],
+	"name" : "ViMethodContextEditor",
+	"pools" : [
+		 ],
+	"super" : "ViMethodEditor",
+	"type" : "normal" }

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"defAllSystemChangeNotifications" : "mt 9/6/2013 16:29:54.316",
+		"defNoSystemChangeNotifications" : "mt 9/6/2013 16:21:02.648",
+		"defNotifyChangedMethods" : "mt 9/6/2013 21:04:08.375",
+		"defNotifyClassReorganized" : "mt 9/6/2013 21:31:06.871",
+		"defaultSourceCode" : "mt 9/7/2013 11:41:24.403" },
+	"instance" : {
+		"isUpdateDefinition" : "mt 9/6/2013 14:45:11.943" } }

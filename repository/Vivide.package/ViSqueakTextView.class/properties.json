@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"textView" ],
+	"name" : "ViSqueakTextView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

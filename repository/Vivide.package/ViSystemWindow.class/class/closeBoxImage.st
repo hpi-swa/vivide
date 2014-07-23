@@ -1,0 +1,4 @@
+initializing
+closeBoxImage
+
+	^ ViIcons crossSmallSunkenIcon

@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"content",
+		"label" ],
+	"name" : "ViTexContentNode",
+	"pools" : [
+		 ],
+	"super" : "ViTexDocumentNode",
+	"type" : "normal" }

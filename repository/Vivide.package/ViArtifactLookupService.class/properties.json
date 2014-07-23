@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Services",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViArtifactLookupService",
+	"pools" : [
+		 ],
+	"super" : "ViObjectService",
+	"type" : "normal" }

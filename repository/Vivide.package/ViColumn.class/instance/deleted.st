@@ -1,0 +1,4 @@
+signals
+deleted
+
+	self emit.

@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"browse:selector:" : "mt 2/12/2013 11:33:34.268",
+		"browseHierarchy:selector:" : "mt 2/12/2013 11:33:00.021",
+		"browseMessageSet:name:autoSelect:" : "mt 12/5/2013 10:38:04.122",
+		"countCategoriesIn:" : "mt 2/21/2014 13:45:21.529",
+		"debug:context:label:contents:fullView:" : "mt 4/7/2014 15:50:46.511",
+		"explore:" : "mt 2/12/2013 11:17:20.508",
+		"fileOutClasses:results:to:" : "mt 2/21/2014 13:47:23.238",
+		"inspect:" : "mt 2/12/2013 11:13:55.338",
+		"inspect:label:" : "mt 2/12/2013 11:13:59.234",
+		"isMethodCodeCategorized:" : "mt 2/14/2014 14:08:15.232",
+		"linesOfCodeForBlock:" : "mt 2/21/2014 14:02:19.669",
+		"linesOfCodeForBlock:do:" : "mt 2/21/2014 14:01:39.035",
+		"linesOfCodeForClass:" : "mt 2/12/2014 11:43:11.978",
+		"linesOfCodeForClassWithoutExtensions:" : "mt 2/21/2014 10:01:44.604",
+		"linesOfCodeForMethod:" : "mt 2/13/2014 16:16:17.953",
+		"linesOfCodeForMethod:do:" : "mt 2/21/2014 14:01:02.679",
+		"linesOfCodeForSourceCode:do:" : "mt 2/21/2014 14:00:08.922",
+		"mergeFromDefaultArchive" : "mt 2/5/2014 16:35:23.311",
+		"methodCategories" : "mt 2/21/2014 13:45:12.987",
+		"methodNullCategory" : "mt 2/21/2014 13:45:03.018",
+		"serializeIntoDefaultArchive" : "mt 7/23/2014 14:25:13.222",
+		"tidyDefaultOrganizer" : "mt 2/5/2014 16:33:20.246" },
+	"instance" : {
+		 } }

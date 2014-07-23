@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"alpha",
+		"fadeEnabled" ],
+	"name" : "ViArtifactToolbarPanel",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

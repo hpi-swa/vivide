@@ -1,0 +1,4 @@
+accessing
+morphsOfInterest
+
+	^ {self artifact}

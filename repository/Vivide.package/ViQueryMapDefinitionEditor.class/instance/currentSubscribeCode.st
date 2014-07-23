@@ -1,0 +1,4 @@
+accessing
+currentSubscribeCode
+
+	^ subscribeEdit theText

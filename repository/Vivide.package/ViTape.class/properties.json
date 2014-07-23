@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViMemento classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViTape",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViMemento",
+	"type" : "normal" }

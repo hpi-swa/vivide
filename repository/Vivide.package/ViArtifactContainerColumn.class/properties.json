@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dropShadow" ],
+	"name" : "ViArtifactContainerColumn",
+	"pools" : [
+		 ],
+	"super" : "ViColumn",
+	"type" : "normal" }

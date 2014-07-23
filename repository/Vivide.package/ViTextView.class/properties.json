@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"specs",
+		"textEdit",
+		"lastNode" ],
+	"name" : "ViTextView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

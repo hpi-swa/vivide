@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"returnCount",
+		"previousTextEnd",
+		"contextMenu" ],
+	"name" : "ViSourceCodeTextMorph",
+	"pools" : [
+		 ],
+	"super" : "UiTextMorph",
+	"type" : "normal" }

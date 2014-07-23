@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"model" ],
+	"name" : "ViInputField",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

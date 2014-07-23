@@ -1,0 +1,4 @@
+operations
+doPackageInfo: aPackageInfo
+
+	^ nil  

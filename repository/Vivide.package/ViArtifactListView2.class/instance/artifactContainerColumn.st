@@ -1,0 +1,4 @@
+accessing
+artifactContainerColumn
+
+	^ scrollArea widget

@@ -1,0 +1,25 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objectsBtn",
+		"hideBtn",
+		"headerBtn",
+		"closeBtn",
+		"infoLbl",
+		"listView",
+		"controlsContainer",
+		"proceedBtn",
+		"restartBtn",
+		"intoBtn",
+		"overBtn",
+		"throughBtn" ],
+	"name" : "ViDebuggerEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

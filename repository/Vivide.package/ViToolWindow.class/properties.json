@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"darkenValue",
+		"headerButtons" ],
+	"name" : "ViToolWindow",
+	"pools" : [
+		 ],
+	"super" : "ViSystemWindow",
+	"type" : "normal" }

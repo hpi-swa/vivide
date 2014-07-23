@@ -1,0 +1,5 @@
+accessing
+messageLbl
+	"nil"
+	
+	^ messageLbl

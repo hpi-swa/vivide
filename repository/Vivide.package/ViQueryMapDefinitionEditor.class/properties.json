@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"subscribeEdit",
+		"unsubscribeEdit",
+		"toggleBtn",
+		"codeBox" ],
+	"name" : "ViQueryMapDefinitionEditor",
+	"pools" : [
+		 ],
+	"super" : "ViQueryStepDefinitionEditor",
+	"type" : "normal" }

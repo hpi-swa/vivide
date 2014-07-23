@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViMemoEdit",
+	"pools" : [
+		 ],
+	"super" : "ViSourceCodeEdit",
+	"type" : "normal" }

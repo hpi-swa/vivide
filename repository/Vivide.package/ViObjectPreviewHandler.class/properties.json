@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Services",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"panel",
+		"object",
+		"objectBounds",
+		"preferredEdge" ],
+	"name" : "ViObjectPreviewHandler",
+	"pools" : [
+		 ],
+	"super" : "ViObjectService",
+	"type" : "normal" }

@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addObjects:" : "mt 9/4/2012 09:14:09.845",
+		"addOperation:label:icon:" : "mt 9/4/2012 10:19:26.742",
+		"addOperation:label:icon:argument:" : "mt 9/5/2012 10:34:38.029",
+		"addOperation:label:icon:argument:group:" : "mt 2/25/2013 13:50:35.62",
+		"addOperations:" : "mt 2/25/2013 13:50:22.399",
+		"childAt:inGroup:" : "mt 9/5/2012 10:38:49.417",
+		"childCount" : "mt 9/5/2012 10:37:57.371",
+		"childCountInGroup:" : "mt 9/5/2012 10:38:45.114",
+		"contents" : "mt 8/28/2012 09:46:42.824",
+		"contents:" : "mt 8/28/2012 10:00:53.706",
+		"groups" : "mt 7/9/2013 11:25:44.553",
+		"helpText" : "mt 8/28/2012 09:54:34.11",
+		"helpText:" : "mt 8/28/2012 09:54:40.486",
+		"objects" : "mt 8/15/2012 10:21:54.594",
+		"objects:" : "mt 9/4/2012 09:16:27.737",
+		"refreshFromEditor:" : "mt 8/28/2012 10:00:09.237",
+		"removeAllObjects" : "mt 8/28/2012 14:08:52.938" } }

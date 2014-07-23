@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/17/2012 10:51:45.003",
+	"instvars" : [
+		"summaryBtn",
+		"moveBtn",
+		"expandBtn",
+		"closeBtn" ],
+	"name" : "ViArtifactSummaryMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,22 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ClosedObjects",
+		"Frequently",
+		"LastExceptions",
+		"RecentClasses",
+		"RecentMethods",
+		"RecentPackages",
+		"Recently",
+		"TranscriptHistory" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects",
+		"limit" ],
+	"name" : "ViObjectHistory",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

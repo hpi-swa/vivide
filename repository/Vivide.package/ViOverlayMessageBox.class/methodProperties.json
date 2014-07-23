@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"example01" : "mt 4/29/2011 10:28:12.065" },
+	"instance" : {
+		"addAction:icon:" : "mt 4/29/2011 15:51:29.39",
+		"addAction:icon:receiver:selector:" : "mt 4/29/2011 15:51:34.855",
+		"addAction:icon:receiver:selectors:" : "mt 4/29/2011 15:51:40.011",
+		"extent:" : "mt 8/28/2012 11:05:26.68",
+		"initialize" : "mt 5/12/2011 15:44:13.107",
+		"message:" : "mt 5/2/2011 15:54:49.573",
+		"message:icon:" : "mt 5/2/2011 15:54:45.89",
+		"showAbove:" : "mt 1/30/2014 15:45:26.257",
+		"title:" : "mt 4/29/2011 10:26:32.788",
+		"ui" : "mt 4/25/2011 17:14:24.177",
+		"updateShortcuts" : "mt 4/29/2011 15:51:56.612" } }

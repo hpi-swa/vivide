@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"footer",
+		"background" ],
+	"name" : "ViTapeContainer",
+	"pools" : [
+		 ],
+	"super" : "ViDropTarget",
+	"type" : "normal" }

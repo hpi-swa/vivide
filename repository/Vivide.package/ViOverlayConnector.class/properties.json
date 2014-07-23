@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourceMorphs",
+		"targetMorphs" ],
+	"name" : "ViOverlayConnector",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,1 @@
+This is always the last or sometimes only item on a tape. A tape is never empty.

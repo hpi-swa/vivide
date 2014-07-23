@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"positionOffset",
+		"inputPanes",
+		"outputPanes",
+		"newOutputPane" ],
+	"name" : "ViPaneHaloMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

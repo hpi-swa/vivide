@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ui",
+		"objectGate" ],
+	"name" : "ViObjectGateEditor",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainer",
+	"type" : "normal" }

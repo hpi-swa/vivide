@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Queries-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sut",
+		"step",
+		"organization",
+		"answer",
+		"definition" ],
+	"name" : "ViQueryChangeNotifierTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+signals
+limitChanged
+
+	self emit.

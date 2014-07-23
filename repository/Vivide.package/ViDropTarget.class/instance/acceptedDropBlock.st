@@ -1,0 +1,4 @@
+accessing
+acceptedDropBlock
+
+	^ acceptedDropBlock

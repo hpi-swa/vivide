@@ -1,0 +1,4 @@
+accessing
+footer
+
+	^ footer

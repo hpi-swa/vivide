@@ -1,0 +1,1 @@
+This is an editor meant to be placed inside an ViColumn in the IDE.

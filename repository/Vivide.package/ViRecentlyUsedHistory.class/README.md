@@ -1,0 +1,1 @@
+This history works like a priority queue where each object will be added only once. Additional calls to #addObject: will just move the object to the front if present.

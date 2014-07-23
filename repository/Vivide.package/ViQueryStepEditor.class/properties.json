@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ui",
+		"step",
+		"otherSteps",
+		"context",
+		"typeMenu",
+		"typeMappings" ],
+	"name" : "ViQueryStepEditor",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainer",
+	"type" : "normal" }

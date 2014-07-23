@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Memento",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViFrequentlyUsedHistoryModel",
+	"pools" : [
+		 ],
+	"super" : "ViRecentlyUsedHistoryModel",
+	"type" : "normal" }

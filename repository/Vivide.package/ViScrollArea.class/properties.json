@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScrollArea",
+	"pools" : [
+		 ],
+	"super" : "UiScrollArea",
+	"type" : "normal" }

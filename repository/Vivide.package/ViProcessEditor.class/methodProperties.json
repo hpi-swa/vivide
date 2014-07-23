@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"supportedTypes" : "mt 1/24/2014 11:18:20.172" },
+	"instance" : {
+		"hasUnacceptedChanges" : "mt 1/24/2014 14:51:29.139",
+		"initializeToolbarOperations" : "mt 1/24/2014 14:36:03.695",
+		"isUiProcess" : "mt 1/24/2014 11:21:15.504",
+		"restart" : "mt 2/3/2014 11:33:56.454",
+		"resume" : "mt 2/4/2014 15:09:09.825",
+		"stepInto" : "mt 2/3/2014 11:34:27.371",
+		"stepOver" : "mt 2/3/2014 11:34:45.333",
+		"stepThrough" : "mt 2/3/2014 11:34:50.77",
+		"suspend" : "mt 2/4/2014 15:09:23.078",
+		"terminate" : "mt 2/4/2014 15:09:33.295",
+		"tryClear" : "mt 1/24/2014 14:57:46.499" } }

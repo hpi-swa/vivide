@@ -1,0 +1,4 @@
+operations
+doTag: aTag
+
+	^ ViTagEditor

@@ -1,0 +1,4 @@
+geometry
+boundsForShadow
+
+	^ self bounds

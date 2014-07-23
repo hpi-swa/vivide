@@ -1,0 +1,1 @@
+This bar handles single objects, groups of objects (i.e., editor states), and buttons for operations (e.g., create object). Usually, it is to the left of all tapes.

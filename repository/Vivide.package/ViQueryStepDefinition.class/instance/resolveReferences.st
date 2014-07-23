@@ -1,0 +1,2 @@
+serialization
+resolveReferences

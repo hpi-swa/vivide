@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Editors-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"view",
+		"model",
+		"filter" ],
+	"name" : "ViQueryChooser",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

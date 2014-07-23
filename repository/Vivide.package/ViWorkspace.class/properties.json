@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bindings",
+		"completionController" ],
+	"name" : "ViWorkspace",
+	"pools" : [
+		 ],
+	"super" : "UiTextModel",
+	"type" : "normal" }

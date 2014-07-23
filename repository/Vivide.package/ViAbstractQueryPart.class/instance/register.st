@@ -1,0 +1,4 @@
+organization
+register
+
+	self subclassResponsibility.

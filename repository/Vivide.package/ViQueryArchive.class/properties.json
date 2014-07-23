@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViQueryArchive",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

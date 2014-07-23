@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Artifacts-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"addBtn",
+		"previewHandler",
+		"lastObjects" ],
+	"name" : "ViQueryCommandsBar",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

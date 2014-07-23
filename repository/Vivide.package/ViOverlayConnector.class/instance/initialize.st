@@ -1,0 +1,7 @@
+initialization
+initialize
+
+	super initialize.
+	self
+		color: Color transparent;
+		disableTableLayout: true.

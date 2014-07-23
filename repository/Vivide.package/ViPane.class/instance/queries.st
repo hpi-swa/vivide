@@ -1,0 +1,4 @@
+accessing
+queries
+
+	^ queries ifNil: [#()]

@@ -1,0 +1,4 @@
+defaults
+defaultViewDefinition
+
+	^ ViQueryStepDefinition treeView

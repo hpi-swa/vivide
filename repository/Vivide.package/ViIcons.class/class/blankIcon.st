@@ -1,0 +1,4 @@
+accessing
+blankIcon
+
+	^ ViIconService blankIcon

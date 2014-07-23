@@ -1,0 +1,4 @@
+signals
+connectionEstablished
+
+	self emit.

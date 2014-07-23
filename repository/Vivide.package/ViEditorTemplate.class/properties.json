@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"unnamedMorph1",
+		"pinBtn",
+		"hideBtn",
+		"unnamedMorph2",
+		"headerBtn",
+		"unnamedMorph3",
+		"unnamedMorph4",
+		"closeBtn" ],
+	"name" : "ViEditorTemplate",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

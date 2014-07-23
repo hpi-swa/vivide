@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"archive",
+		"organizer",
+		"steps",
+		"commands",
+		"definitions",
+		"stepSelectors",
+		"commandSelectors",
+		"definitionSelectors" ],
+	"name" : "ViQuerySerializer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

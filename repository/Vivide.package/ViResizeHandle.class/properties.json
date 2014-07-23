@@ -1,0 +1,20 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/17/2012 11:25:06.092",
+	"instvars" : [
+		"flattened",
+		"fadeAnimation",
+		"mouseDownEventPosition",
+		"mouseDownTargetExtent",
+		"target",
+		"orientation",
+		"minSize" ],
+	"name" : "ViResizeHandle",
+	"pools" : [
+		 ],
+	"super" : "UiPushButton",
+	"type" : "normal" }

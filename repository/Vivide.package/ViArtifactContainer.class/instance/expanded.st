@@ -1,0 +1,4 @@
+signals
+expanded
+
+	self emit.

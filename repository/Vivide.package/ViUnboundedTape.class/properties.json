@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"shadow" ],
+	"name" : "ViUnboundedTape",
+	"pools" : [
+		 ],
+	"super" : "ViTape",
+	"type" : "normal" }

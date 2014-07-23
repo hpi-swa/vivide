@@ -1,0 +1,4 @@
+accessing - views
+currentSearchView
+
+	^ currentSearchView

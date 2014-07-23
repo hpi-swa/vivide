@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"snippet",
+		"snippetPanel",
+		"snippetEdit" ],
+	"name" : "ViCodeSnippetEditor",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactContainer",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"before",
+		"after",
+		"node" ],
+	"name" : "ViObjectStateChange",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

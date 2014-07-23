@@ -1,0 +1,4 @@
+signals
+closed
+
+	self emit.

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViEclipseIcons",
+	"pools" : [
+		 ],
+	"super" : "UiIcons",
+	"type" : "normal" }

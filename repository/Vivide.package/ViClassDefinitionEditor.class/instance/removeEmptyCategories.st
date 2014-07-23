@@ -1,0 +1,5 @@
+actions
+removeEmptyCategories
+
+	self theClass theNonMetaClass organization removeEmptyCategories.
+	self theClass theMetaClass organization removeEmptyCategories.

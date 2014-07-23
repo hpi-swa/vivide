@@ -1,0 +1,4 @@
+completion
+selectedClassOrMetaClass
+
+	^ self theClass

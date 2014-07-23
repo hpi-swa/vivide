@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hideBtn",
+		"headerBtn",
+		"closeBtn",
+		"transcriptEdit",
+		"transcriptToolbar",
+		"timestampBtn",
+		"redrawBtn",
+		"clearTranscriptBtn" ],
+	"name" : "ViTranscriptEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

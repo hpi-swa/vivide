@@ -1,0 +1,4 @@
+accessing
+widgetClassIcon
+
+	^ UiFugueIcons scriptTextIcon

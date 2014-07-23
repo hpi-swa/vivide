@@ -1,0 +1,4 @@
+accessing
+locator
+
+	^ tapesBar locator

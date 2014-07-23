@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"oldIcon" ],
+	"name" : "ViRenamedStepEvent",
+	"pools" : [
+		 ],
+	"super" : "RenamedEvent",
+	"type" : "normal" }

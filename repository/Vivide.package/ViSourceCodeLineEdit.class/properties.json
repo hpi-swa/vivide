@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"theClass",
+		"completionController",
+		"doItReceiver",
+		"doItContext" ],
+	"name" : "ViSourceCodeLineEdit",
+	"pools" : [
+		 ],
+	"super" : "UiLineEdit",
+	"type" : "normal" }

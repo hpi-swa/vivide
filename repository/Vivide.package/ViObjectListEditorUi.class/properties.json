@@ -1,0 +1,20 @@
+{
+	"category" : "Vivide-Editors-Designs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pageButtonGroup",
+		"extensionalListBtn",
+		"addPageBtn",
+		"headerBtn",
+		"hideBtn",
+		"closeBtn",
+		"stack" ],
+	"name" : "ViObjectListEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

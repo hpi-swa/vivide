@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"open" : "mt 2/25/2014 14:06:32.236" },
+	"instance" : {
+		"build" : "mt 2/25/2014 14:07:11.864",
+		"buttonBarCreator" : "mt 2/27/2014 14:25:41.359",
+		"createPage:" : "mt 2/25/2014 14:00:07.544",
+		"createPages:" : "mt 2/25/2014 14:00:13.38",
+		"createPanel" : "mt 2/25/2014 13:56:07.945",
+		"createRow:topFraction:bottomFraction:" : "mt 2/25/2014 14:01:09.612",
+		"defaultBackgroundColor" : "mt 2/25/2014 13:49:52.389",
+		"detectPage:" : "mt 2/25/2014 13:52:52.713",
+		"detectPage:ifNone:" : "mt 2/25/2014 13:44:50.335",
+		"initialize" : "mt 2/25/2014 13:42:26.265",
+		"listViewCreator" : "mt 3/6/2014 14:42:37.944",
+		"okToClose" : "mt 2/25/2014 13:49:43.486",
+		"selectPages:" : "mt 2/25/2014 13:45:12.776",
+		"squeakListViewCreator" : "mt 3/4/2014 16:20:35.407",
+		"textViewCreator" : "mt 2/25/2014 15:39:34.618" } }

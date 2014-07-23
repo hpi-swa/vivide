@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dropTargetPosition",
+		"lastDropRectangle",
+		"acceptedDropAreas",
+		"acceptedDropBlock",
+		"dropColor",
+		"convertPassengerBlock" ],
+	"name" : "ViDropTarget",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VisDemoBrowserAdapted",
+	"pools" : [
+		 ],
+	"super" : "VisDemoBrowser",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Help",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViHelpTopic",
+	"pools" : [
+		 ],
+	"super" : "HelpTopic",
+	"type" : "normal" }

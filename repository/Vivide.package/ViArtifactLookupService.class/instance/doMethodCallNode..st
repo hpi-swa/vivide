@@ -1,0 +1,4 @@
+operations
+doMethodCallNode: aMethodCallNode
+
+	^ nil

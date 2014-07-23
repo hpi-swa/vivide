@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mapType",
+		"inputKind",
+		"outputKind",
+		"updateSetDefinition",
+		"updateClearDefinition" ],
+	"name" : "ViQueryMapDefinition",
+	"pools" : [
+		 ],
+	"super" : "ViQueryStepDefinition",
+	"type" : "normal" }

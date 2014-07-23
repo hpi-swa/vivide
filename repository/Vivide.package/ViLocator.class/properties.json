@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Locator",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"resultList",
+		"iterator",
+		"currentSource",
+		"previewHandler",
+		"resultListDecorator",
+		"vivide" ],
+	"name" : "ViLocator",
+	"pools" : [
+		 ],
+	"super" : "UiLineEdit",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+class initialization
+addInitialEditorStates
+
+	self addTranscriptState.

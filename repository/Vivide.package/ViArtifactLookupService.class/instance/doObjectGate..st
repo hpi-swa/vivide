@@ -1,0 +1,4 @@
+operations
+doObjectGate: anObjectGate
+
+	^ ViObjectGateEditor

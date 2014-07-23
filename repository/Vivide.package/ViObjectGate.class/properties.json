@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"socket",
+		"outObjects",
+		"inObjects",
+		"mode",
+		"sendProcess",
+		"recvProcess",
+		"hostAddress",
+		"port" ],
+	"name" : "ViObjectGate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

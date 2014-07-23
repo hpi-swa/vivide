@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"input",
+		"output" ],
+	"name" : "ViScriptableCompositeView",
+	"pools" : [
+		 ],
+	"super" : "ViScriptableView",
+	"type" : "normal" }

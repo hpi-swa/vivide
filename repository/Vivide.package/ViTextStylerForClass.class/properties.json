@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViTextStylerForClass",
+	"pools" : [
+		 ],
+	"super" : "ViTextStyler",
+	"type" : "normal" }

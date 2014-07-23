@@ -1,0 +1,4 @@
+accessing
+wrappedObject
+
+	^ self base

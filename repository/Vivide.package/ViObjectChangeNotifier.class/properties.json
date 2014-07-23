@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UniqueInstance" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"eventSource",
+		"silenceLevel" ],
+	"name" : "ViObjectChangeNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

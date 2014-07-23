@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"alignNeighboursFor:" : "mt 5/2/2014 11:05:12.192",
+		"cellInset" : "mt 5/19/2014 14:03:08.574",
+		"ensureCellInsetFor:" : "mt 5/19/2014 14:13:43.126",
+		"fixOverlappingMorphs:" : "mt 5/2/2014 10:45:29.922",
+		"layout:in:" : "mt 5/2/2014 09:16:25.819",
+		"normalizeMorphPositions:in:" : "mt 5/2/2014 09:40:12.577",
+		"removeEmptyLinesFor:in:keepExtent:" : "mt 5/19/2014 14:18:30.553",
+		"resize:in:" : "mt 5/19/2014 14:20:33.761",
+		"shrinkWrap:from:" : "mt 7/21/2014 17:01:02.371" } }

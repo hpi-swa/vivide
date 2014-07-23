@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViTranscriptHistory",
+	"pools" : [
+		 ],
+	"super" : "ViStampedHistory",
+	"type" : "normal" }

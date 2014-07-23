@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Memento",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TUiItemModel classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packages",
+		"classes",
+		"methods" ],
+	"name" : "ViRecentlyUsedHistoryModel",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TUiItemModel",
+	"type" : "normal" }

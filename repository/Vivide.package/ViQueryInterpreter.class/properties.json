@@ -1,0 +1,20 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects",
+		"contexts",
+		"groups",
+		"stack",
+		"step",
+		"numProperties",
+		"properties" ],
+	"name" : "ViQueryInterpreter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

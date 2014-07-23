@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"debugger" ],
+	"name" : "ViDebuggerEditor",
+	"pools" : [
+		 ],
+	"super" : "ViEditor",
+	"type" : "normal" }

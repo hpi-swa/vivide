@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"previewHandler" ],
+	"name" : "VivideToolBar",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

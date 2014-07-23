@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViRecentlyUsedHistory",
+	"pools" : [
+		 ],
+	"super" : "ViObjectHistory",
+	"type" : "normal" }

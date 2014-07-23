@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"reference",
+		"symbol",
+		"comment",
+		"interval" ],
+	"name" : "ViFlagComment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViAddedPartEvent",
+	"pools" : [
+		 ],
+	"super" : "AddedEvent",
+	"type" : "normal" }

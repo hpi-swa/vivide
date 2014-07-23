@@ -1,0 +1,4 @@
+signals
+newArtifactRequested
+
+	self emitInOwnerChain.

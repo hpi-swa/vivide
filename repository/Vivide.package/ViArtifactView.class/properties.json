@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"objectsAsContext" ],
+	"name" : "ViArtifactView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

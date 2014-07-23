@@ -1,0 +1,4 @@
+signals
+connectionLost
+
+	self emit.

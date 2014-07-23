@@ -1,0 +1,4 @@
+designer
+widgetClassIcon
+
+	^ UiFugueIcons cursorSmallIcon

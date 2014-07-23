@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-DEPRECATED-Code",
+	"classinstvars" : [
+		"instance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"topics" ],
+	"name" : "ViTopicManager",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

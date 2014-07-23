@@ -1,0 +1,4 @@
+actions
+sendFeedback
+
+	ViFeedbackReportDialog open.

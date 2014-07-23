@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"defaultSourceCode" : "mt 6/10/2014 14:46:04.831" },
+	"instance" : {
+		"=" : "mt 9/6/2013 14:47:04.076",
+		"asDictionary" : "mt 12/19/2013 13:35:52.682",
+		"guessType" : "mt 9/6/2013 15:10:56.306",
+		"hash" : "mt 9/6/2013 14:51:01.898",
+		"inputKind" : "mt 9/6/2013 14:39:53.939",
+		"inputKind:" : "mt 6/10/2014 08:42:17.559",
+		"isMapDefinition" : "mt 9/6/2013 14:45:24.41",
+		"isReadOf:" : "mt 9/29/2013 21:46:52.809",
+		"isWriteTo:" : "mt 9/29/2013 21:45:09.107",
+		"mapType" : "mt 9/6/2013 14:39:17.297",
+		"mapType:" : "mt 9/17/2013 07:34:57.675",
+		"mergeFromDictionary:" : "mt 12/19/2013 13:37:14.525",
+		"outputKind" : "mt 9/6/2013 14:41:37.065",
+		"outputKind:" : "mt 6/10/2014 08:42:59.445",
+		"resolveReferences" : "mt 9/6/2013 16:16:06.593",
+		"updateClearDefinition" : "mt 9/6/2013 16:09:42.692",
+		"updateClearDefinition:" : "mt 9/6/2013 16:10:03.535",
+		"updateSetDefinition" : "mt 9/6/2013 16:09:21.939",
+		"updateSetDefinition:" : "mt 9/6/2013 16:09:32.877",
+		"variables" : "mt 9/29/2013 21:23:36.417",
+		"wantsAllObjectsAtOnce" : "mt 9/6/2013 15:09:28.795",
+		"wantsEachObjectSeparately" : "mt 9/6/2013 15:09:36.847",
+		"wantsNoObjects" : "mt 9/29/2013 21:23:17.739",
+		"wantsTwoObjectsAtOnce" : "mt 9/6/2013 15:09:46.244" } }

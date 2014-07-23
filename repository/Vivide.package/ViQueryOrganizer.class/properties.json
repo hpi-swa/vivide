@@ -1,0 +1,23 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"steps",
+		"definitions",
+		"orderedSteps",
+		"orderedDefinitions",
+		"notifier",
+		"stepsCategorizer",
+		"definitionsCategorizer",
+		"commands",
+		"orderedCommands",
+		"commandsCategorizer" ],
+	"name" : "ViQueryOrganizer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

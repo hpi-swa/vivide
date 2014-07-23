@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViFixedTape",
+	"pools" : [
+		 ],
+	"super" : "ViTape",
+	"type" : "normal" }

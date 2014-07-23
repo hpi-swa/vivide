@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-DEPRECATED-Benchmarks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViBenchmark",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

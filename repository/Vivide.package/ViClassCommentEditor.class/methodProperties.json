@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"group" : "mt 9/4/2012 11:40:31.332",
+		"hasUnacceptedChanges" : "mt 9/6/2012 11:23:08.065",
+		"initializeArtifact" : "mt 9/5/2012 18:31:00.567",
+		"initializeToolbarObjects" : "mt 9/4/2012 11:58:53.689",
+		"isAffectedBy:" : "mt 7/8/2013 14:03:20.748",
+		"object" : "mt 9/4/2012 11:41:10.044",
+		"object:" : "mt 9/4/2012 11:57:51.958",
+		"resetSource" : "mt 5/10/2013 11:53:27.055",
+		"setClassComment:" : "mt 9/4/2012 11:38:03.365",
+		"theClass" : "mt 9/4/2012 11:40:22.153",
+		"updateText:" : "mt 9/5/2012 13:24:20.401" } }

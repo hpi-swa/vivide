@@ -1,0 +1,1 @@
+Refactoring result from ViArtifactListPage and ViArtifactListView. Should be renamed to ViArtifactListView afterwards.

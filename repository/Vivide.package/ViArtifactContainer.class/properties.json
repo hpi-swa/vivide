@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViMemento classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/17/2012 10:44:06.419",
+	"instvars" : [
+		"artifact",
+		"resizeHandle",
+		"toolbar",
+		"summaryContainer" ],
+	"name" : "ViArtifactContainer",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViMemento",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Feedback",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"EmailAddress" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ui",
+		"screenshots",
+		"debuggers",
+		"queries",
+		"versions" ],
+	"name" : "ViFeedbackReportDialog",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

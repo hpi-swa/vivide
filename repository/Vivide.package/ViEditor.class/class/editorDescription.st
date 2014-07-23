@@ -1,0 +1,4 @@
+accessing
+editorDescription
+
+	^ 'n/a'

@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"open" : "mt 3/5/2013 13:31:26.711" },
+	"instance" : {
+		"currentMood" : "mt 3/6/2013 16:01:18.791",
+		"currentTopic" : "mt 3/6/2013 16:00:19.643",
+		"debuggers" : "mt 3/5/2013 11:45:32.427",
+		"emailAddress" : "mt 3/5/2013 11:19:59.487",
+		"emailAddress:" : "mt 3/5/2013 11:19:49.282",
+		"generate" : "mt 4/5/2013 14:11:40.316",
+		"initialize" : "mt 3/4/2013 16:27:10.075",
+		"initializeCallStacks" : "mt 4/5/2013 12:58:35.808",
+		"initializePersonalInformation" : "mt 7/8/2013 14:10:34.568",
+		"initializeQueries" : "mt 9/24/2013 11:05:31.594",
+		"initializeScreenshots" : "mt 3/5/2013 14:23:58.821",
+		"initializeUi" : "mt 4/5/2013 13:54:57.891",
+		"initializeVersions" : "mt 4/5/2013 13:36:01.655",
+		"maskedFormFor:" : "mt 3/4/2013 17:39:41.999",
+		"open" : "mt 3/4/2013 16:24:04.539",
+		"openDebuggers" : "mt 3/5/2013 11:43:26.007",
+		"openScreenshot:" : "mt 3/4/2013 17:22:25.936",
+		"queries" : "mt 4/5/2013 13:05:04.741",
+		"screenshots" : "mt 3/4/2013 16:33:17.431",
+		"selectAllScreenshots" : "mt 3/5/2013 14:22:44.751",
+		"selectNoneScreenshots" : "mt 3/5/2013 14:23:08.277",
+		"stackIndex:" : "mt 3/5/2013 11:50:38.64",
+		"ui" : "mt 3/4/2013 16:21:02.863",
+		"versions" : "mt 4/5/2013 13:16:44.042" } }

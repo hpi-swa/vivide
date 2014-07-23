@@ -1,0 +1,4 @@
+actions
+resetSource
+
+	self updateToolbars.

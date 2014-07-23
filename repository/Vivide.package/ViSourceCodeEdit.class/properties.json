@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 3/24/2011 11:22:15.769",
+	"instvars" : [
+		"theClass",
+		"autoCreateArtifacts" ],
+	"name" : "ViSourceCodeEdit",
+	"pools" : [
+		 ],
+	"super" : "UiTextEdit",
+	"type" : "normal" }

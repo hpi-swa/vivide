@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"id",
+		"properties",
+		"organization" ],
+	"name" : "ViAbstractQueryPart",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

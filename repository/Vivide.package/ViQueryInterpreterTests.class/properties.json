@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sut" ],
+	"name" : "ViQueryInterpreterTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+evaluation
+compile
+
+	^ true

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isUiProcess" ],
+	"name" : "ViProcessEditor",
+	"pools" : [
+		 ],
+	"super" : "ViObjectEditor",
+	"type" : "normal" }

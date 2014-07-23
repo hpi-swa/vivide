@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 2/13/2013 14:21:42.864",
+	"instvars" : [
+		"tracer",
+		"categories",
+		"morphs" ],
+	"name" : "ViMorphicEventWrapper",
+	"pools" : [
+		 ],
+	"super" : "MwMethodWrapper",
+	"type" : "normal" }

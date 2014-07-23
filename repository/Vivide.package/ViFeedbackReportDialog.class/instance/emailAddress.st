@@ -1,0 +1,4 @@
+accessing
+emailAddress
+
+	^ EmailAddress ifNil: ['']  

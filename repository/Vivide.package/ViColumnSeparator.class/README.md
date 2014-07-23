@@ -1,0 +1,1 @@
+Just a container for a resize handle and additional buttons if needed. Separates two columns.

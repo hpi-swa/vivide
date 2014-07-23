@@ -1,0 +1,4 @@
+accessing
+optimalWidth
+
+	^ objectsBar optimalWidth

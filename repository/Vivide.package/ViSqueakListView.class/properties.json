@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"listView",
+		"listIndex" ],
+	"name" : "ViSqueakListView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

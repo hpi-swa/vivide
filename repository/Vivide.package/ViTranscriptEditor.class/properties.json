@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"transcriptModel",
+		"lastTimestamp" ],
+	"name" : "ViTranscriptEditor",
+	"pools" : [
+		 ],
+	"super" : "ViEditor",
+	"type" : "normal" }

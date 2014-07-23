@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"next",
+		"definition",
+		"label",
+		"icon",
+		"viewDefinition" ],
+	"name" : "ViQueryStep",
+	"pools" : [
+		 ],
+	"super" : "ViAbstractQueryPart",
+	"type" : "normal" }

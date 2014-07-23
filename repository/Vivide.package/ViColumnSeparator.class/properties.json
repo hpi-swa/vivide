@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/17/2012 11:23:56.065",
+	"instvars" : [
+		 ],
+	"name" : "ViColumnSeparator",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

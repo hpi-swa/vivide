@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"object" ],
+	"name" : "ViQueryToolbar",
+	"pools" : [
+		 ],
+	"super" : "ViGroupedToolbar",
+	"type" : "normal" }

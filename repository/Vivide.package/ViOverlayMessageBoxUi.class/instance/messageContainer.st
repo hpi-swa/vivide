@@ -1,0 +1,5 @@
+accessing
+messageContainer
+	"nil"
+	
+	^ messageContainer

@@ -1,0 +1,1 @@
+Support for informative overlay message boxes. Can be used in any morph.

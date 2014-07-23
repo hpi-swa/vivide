@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViQueryGroupSortStep",
+	"pools" : [
+		 ],
+	"super" : "ViQuerySortStep",
+	"type" : "normal" }

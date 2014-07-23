@@ -1,0 +1,1 @@
+A model for managing a given list of editor states. Supports drag'n'drop.

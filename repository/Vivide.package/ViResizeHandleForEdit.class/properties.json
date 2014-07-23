@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViResizeHandleForEdit",
+	"pools" : [
+		 ],
+	"super" : "ViResizeHandle",
+	"type" : "normal" }

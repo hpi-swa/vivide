@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"highlightColor" : "mt 9/5/2012 10:21:46.808",
+		"initializePreviewHandler" : "mt 9/7/2012 11:33:33.162",
+		"initializeSecondaryList" : "mt 9/6/2012 15:32:48.326",
+		"onOperationClicked:" : "mt 9/4/2012 10:22:03.777",
+		"operationContext" : "mt 8/28/2012 10:33:14.336",
+		"operationContext:" : "mt 8/28/2012 10:33:08.678",
+		"operationSelected:argument:inGroup:" : "mt 9/4/2012 10:19:48.622",
+		"operationSelected:inGroup:" : "mt 8/16/2012 10:21:13.01",
+		"refreshFromEditor:" : "mt 2/25/2013 13:51:09.317",
+		"selectGroup:" : "mt 11/16/2013 13:28:27.814" } }

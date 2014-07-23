@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"specs",
+		"model" ],
+	"name" : "ViButtonBarView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

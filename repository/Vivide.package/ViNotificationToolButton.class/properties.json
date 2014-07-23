@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"notificationIcon" ],
+	"name" : "ViNotificationToolButton",
+	"pools" : [
+		 ],
+	"super" : "UiToolButton",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"idBtn",
+		"inBtn",
+		"outBtn",
+		"sendersBtn",
+		"definition" ],
+	"name" : "ViQueryDefinitionEdit",
+	"pools" : [
+		 ],
+	"super" : "ViSourceCodeEdit",
+	"type" : "normal" }

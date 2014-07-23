@@ -1,0 +1,4 @@
+accessing
+artifactName
+
+	self subclassResponsibility.

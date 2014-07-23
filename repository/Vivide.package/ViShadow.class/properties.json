@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 6/18/2012 11:19:47.549",
+	"instvars" : [
+		"orientation",
+		"text" ],
+	"name" : "ViShadow",
+	"pools" : [
+		 ],
+	"super" : "ViDropTarget",
+	"type" : "normal" }

@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ShadowCache" ],
+	"commentStamp" : "mt 5/1/2011 11:13:55.168",
+	"instvars" : [
+		"applicationBox",
+		"dropShadow",
+		"disableDropShadow",
+		"labelMorph",
+		"lockBox" ],
+	"name" : "ViSystemWindow",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

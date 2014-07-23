@@ -1,0 +1,4 @@
+accessing - object
+context
+
+	^ context

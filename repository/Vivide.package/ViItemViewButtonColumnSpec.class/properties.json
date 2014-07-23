@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"root" ],
+	"name" : "ViItemViewButtonColumnSpec",
+	"pools" : [
+		 ],
+	"super" : "UiItemViewColumnSpec",
+	"type" : "normal" }

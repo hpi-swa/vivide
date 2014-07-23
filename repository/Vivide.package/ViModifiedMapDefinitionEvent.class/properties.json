@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViModifiedMapDefinitionEvent",
+	"pools" : [
+		 ],
+	"super" : "ViModifiedStepDefinitionEvent",
+	"type" : "normal" }

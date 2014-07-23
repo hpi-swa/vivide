@@ -1,0 +1,4 @@
+accessing
+objectBounds
+
+	^ objectBounds

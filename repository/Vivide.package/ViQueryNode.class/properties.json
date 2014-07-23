@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"firstStep",
+		"context",
+		"referenceStack",
+		"updateCount" ],
+	"name" : "ViQueryNode",
+	"pools" : [
+		 ],
+	"super" : "UiPropertyItemNode",
+	"type" : "normal" }

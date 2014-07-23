@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"widgetCategory" : "mt 1/27/2013 19:52:13.952",
+		"widgetClassName" : "mt 1/27/2013 19:52:34.727" },
+	"instance" : {
+		"clear" : "mt 9/3/2013 08:41:22.853",
+		"drawOverlayOn:" : "mt 7/11/2012 11:00:44.665",
+		"notificationIcon" : "mt 7/11/2012 10:56:07.535",
+		"setIcon:" : "mt 9/3/2013 08:40:45.605",
+		"setIconByNumber:color:" : "mt 7/8/2013 17:07:51.154",
+		"showError" : "mt 7/11/2012 11:46:35.57",
+		"showNumber:" : "mt 7/11/2012 11:18:02.669",
+		"showWarning" : "mt 7/11/2012 11:17:15.958" } }

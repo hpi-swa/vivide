@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Tapes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViEditorColumn",
+	"pools" : [
+		 ],
+	"super" : "ViColumn",
+	"type" : "normal" }

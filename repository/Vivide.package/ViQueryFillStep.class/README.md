@@ -1,0 +1,1 @@
+This step is only used to fill the root with some objects to start with, e.g., from the extensional list a.k.a. input side.

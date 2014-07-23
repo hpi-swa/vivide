@@ -1,0 +1,4 @@
+views - accessing
+currentQueryView
+
+	^ currentQueryView

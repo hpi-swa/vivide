@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"receiverIsCollection",
+		"method",
+		"inputKind" ],
+	"name" : "ViQuerySnippetDefinition",
+	"pools" : [
+		 ],
+	"super" : "ViQueryStepDefinition",
+	"type" : "normal" }

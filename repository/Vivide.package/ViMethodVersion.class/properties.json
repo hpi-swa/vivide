@@ -1,0 +1,23 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/9/2012 18:03:51.581",
+	"instvars" : [
+		"sources",
+		"pointer",
+		"classSymbol",
+		"classIsMeta",
+		"category",
+		"stamp",
+		"prior",
+		"selector",
+		"timeStamp",
+		"author" ],
+	"name" : "ViMethodVersion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

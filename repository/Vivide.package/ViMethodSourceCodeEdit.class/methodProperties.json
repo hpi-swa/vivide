@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"widgetClassName" : "mt 1/27/2013 19:51:16.335" },
+	"instance" : {
+		"activateSymbol:" : "mt 2/13/2014 10:18:48.96",
+		"checkMethodVersion" : "mt 3/6/2014 13:25:53.349",
+		"compile" : "mt 2/4/2014 15:51:07.859",
+		"drawOverlayBottomOn:" : "mt 8/14/2012 11:47:39.645",
+		"drawOverlayOn:" : "mt 8/14/2012 11:43:28.413",
+		"drawOverlayTopOn:" : "mt 8/14/2012 11:42:21.474",
+		"hasUnacceptedChanges" : "mt 8/6/2012 15:55:27.997",
+		"method" : "mt 1/30/2014 16:11:33.355",
+		"method:" : "mt 2/4/2014 15:40:44.121",
+		"notify:at:in:" : "mt 2/4/2014 15:05:46.904",
+		"overlayText" : "mt 6/21/2012 17:06:52.667",
+		"parse" : "mt 2/4/2014 16:39:25.275",
+		"protocol" : "mt 2/4/2014 16:41:38.987",
+		"selector" : "mt 2/4/2014 15:39:41.756" } }

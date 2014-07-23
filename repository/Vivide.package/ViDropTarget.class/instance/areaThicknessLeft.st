@@ -1,0 +1,4 @@
+accessing
+areaThicknessLeft
+
+	^ 20

@@ -1,0 +1,4 @@
+defaults
+defaultProperties
+
+	^ ViQueryPropertyStep defaults

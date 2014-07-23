@@ -1,0 +1,5 @@
+accessing
+closeBtn
+	"nil"
+	
+	^ closeBtn

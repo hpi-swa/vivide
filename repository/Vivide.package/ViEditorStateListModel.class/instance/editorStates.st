@@ -1,0 +1,4 @@
+accessing
+editorStates
+
+	^ editorStates ifNil: [#()]

@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Code",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 4/11/2011 09:38:06.258",
+	"instvars" : [
+		"text",
+		"view",
+		"selection" ],
+	"name" : "ViParserHelper",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

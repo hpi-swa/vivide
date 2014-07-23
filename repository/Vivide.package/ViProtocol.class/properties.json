@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"class" ],
+	"name" : "ViProtocol",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

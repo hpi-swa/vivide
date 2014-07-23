@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dragIcon",
+		"passenger",
+		"dragTransferType",
+		"source" ],
+	"name" : "ViDraggableButton",
+	"pools" : [
+		 ],
+	"super" : "UiToolButton",
+	"type" : "normal" }

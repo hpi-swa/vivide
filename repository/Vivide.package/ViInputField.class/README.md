@@ -1,0 +1,1 @@
+Operates directly on text.

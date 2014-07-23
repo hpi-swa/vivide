@@ -1,0 +1,4 @@
+signals
+connectionTimedOut
+
+	self emit.

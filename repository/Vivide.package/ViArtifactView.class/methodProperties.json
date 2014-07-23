@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"connectModel" : "mt 7/21/2014 09:08:42.759",
+		"container" : "mt 7/21/2014 09:14:45.437",
+		"disconnectModel" : "mt 7/21/2014 09:08:54.011",
+		"initialize" : "mt 7/21/2014 09:09:53.704",
+		"initializeForContainerClass:" : "mt 7/21/2014 09:26:41.651",
+		"model" : "mt 7/21/2014 09:08:03.634",
+		"model:" : "mt 7/21/2014 09:08:28.027",
+		"objectsAsContext" : "mt 7/23/2014 13:06:20.003",
+		"objectsAsContext:" : "mt 7/23/2014 13:11:21.278",
+		"optimalHeight" : "mt 7/21/2014 09:18:41.359",
+		"optimalWidth" : "mt 7/21/2014 09:18:31.68",
+		"reset" : "mt 7/23/2014 13:09:28.873",
+		"selectedNodes" : "mt 7/21/2014 09:17:59.481",
+		"visibleNodes" : "mt 7/21/2014 09:17:55.017" } }

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addIcon:text:receiver:selector:" : "mt 8/17/2012 12:04:23.859",
+		"contentContainer" : "mt 8/17/2012 12:01:56.905",
+		"initializePreviewHandler" : "mt 9/3/2012 14:08:16.87",
+		"showPreview" : "mt 2/23/2013 13:44:25.294",
+		"triggerPreview:" : "mt 8/20/2013 09:02:07.584" } }

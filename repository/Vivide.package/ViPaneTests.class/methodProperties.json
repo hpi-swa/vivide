@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"tearDown" : "mt 4/22/2014 18:38:21.834",
+		"test01New" : "mt 4/22/2014 18:47:40.715",
+		"test02SingleQuery" : "mt 4/22/2014 18:46:35.087",
+		"test03MultipleQueries" : "mt 6/10/2014 09:46:02.699",
+		"test04AddQuery" : "mt 4/23/2014 14:05:11.896",
+		"test05AddListenerForResults" : "mt 4/23/2014 15:00:56.735",
+		"test06AddListenerForSelections" : "mt 6/10/2014 09:38:59.26",
+		"test07KeepAddedQuery" : "mt 6/10/2014 09:46:11.211",
+		"test08DefaultQuery" : "mt 6/10/2014 09:46:17.868",
+		"test09NoQuery" : "mt 4/23/2014 14:55:29.117",
+		"test10TupleInput" : "mt 6/10/2014 09:56:14.293" } }

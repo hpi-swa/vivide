@@ -1,0 +1,4 @@
+operations
+doProtocol: aProtocol
+
+	^ ViProtocolEditor  

@@ -1,0 +1,4 @@
+accessing
+contentContainer
+
+	^ self

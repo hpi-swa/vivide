@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"editorDescription" : "mt 6/28/2011 21:03:57.643",
+		"editorGroup" : "mt 7/3/2011 08:57:18.88",
+		"editorIcon" : "mt 6/28/2011 14:34:09.316",
+		"editorName" : "mt 6/28/2011 21:03:38.934",
+		"isStandAlone" : "mt 6/28/2011 21:10:43.734" },
+	"instance" : {
+		"addEntry:" : "mt 8/28/2013 13:47:26.022",
+		"asString" : "mt 5/5/2011 16:39:02.759",
+		"grabKeyboard" : "mt 9/21/2012 10:32:10.408",
+		"initializeUi" : "mt 9/20/2013 11:50:11.353",
+		"loadState:" : "mt 7/4/2011 18:09:38.229",
+		"objects" : "mt 9/10/2012 16:33:36.549",
+		"objects:" : "mt 9/19/2012 13:07:30.4",
+		"saveState:" : "mt 7/4/2011 15:19:41.37",
+		"uiClass" : "mt 6/15/2012 12:41:55.888" } }
