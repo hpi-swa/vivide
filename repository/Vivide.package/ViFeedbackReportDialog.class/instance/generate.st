@@ -31,6 +31,4 @@ generate
 	self flag: #todo. "mt: Interpret result and notify user if anything went wrong."
 	UserDialogBoxMorph inform: ('Report was sent successfully to: {1}.
 
-You can configure this using Squeak preferences.' format: {Preferences
-			valueOfPreference: #feedbackServer
-			ifAbsent: ['127.0.0.1:8080']}).
+You can configure this using Squeak preferences.' format: {VivideLight feedbackServer}).

@@ -22,7 +22,7 @@ openInWindow
 		paneColor: (Color gray: 0.85).
 	
 	"Fix spacing between label area and only morph."
-	self layoutFrame topOffset: -2.
+	self layoutFrame topOffset: (18 - Preferences windowTitleFont height).
 		
 	extent := self fullBounds extent + 
 			(window borderWidth@window labelHeight) + window borderWidth.

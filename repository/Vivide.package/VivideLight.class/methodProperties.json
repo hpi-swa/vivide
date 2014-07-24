@@ -1,7 +1,11 @@
 {
 	"class" : {
+		"feedbackServer" : "mt 7/24/2014 15:01:05.277",
+		"feedbackServer:" : "mt 7/24/2014 14:52:30.097",
 		"open" : "mt 3/26/2013 16:00:16.207",
-		"prepareSqueak" : "mt 9/25/2013 11:18:50.954" },
+		"prepareSqueak" : "mt 9/25/2013 11:18:50.954",
+		"useVivideDebugger" : "mt 7/24/2014 14:53:41.182",
+		"useVivideDebugger:" : "mt 7/24/2014 14:53:53.241" },
 	"instance" : {
 		"close" : "mt 7/10/2013 10:41:17.824",
 		"closeAllWindows" : "mt 5/13/2013 10:24:49.862",

@@ -3,7 +3,7 @@ pushOtherWindowsAside
 
 	self world ifNotNil: [:w |
 		w submorphs 
-			select: [:m | m isSystemWindow and: [m ~~ self]]
+			select: [:m | (m isKindOf: ViSystemWindow) and: [m ~~ self]]
 			thenDo: [:wnd | (wnd bounds intersects: self bounds)
 				ifTrue: [ | current wanted |
 					current := wnd center - self center.

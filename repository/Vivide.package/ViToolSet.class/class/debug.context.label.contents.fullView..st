@@ -2,7 +2,7 @@ debugging
 debug: aProcess context: aContext label: aString contents: contents fullView: aBool
 
 	| errorWasInUIProcess |
-	(ActiveVivide isNil or: [(Preferences valueOfPreference: #useVivideDebugger) not])
+	(ActiveVivide isNil or: [(VivideLight useVivideDebugger) not])
 		ifTrue: [^ super debug: aProcess context: aContext label: aString contents: contents fullView: aBool].
 	
 	[Preferences logDebuggerStackToFile
