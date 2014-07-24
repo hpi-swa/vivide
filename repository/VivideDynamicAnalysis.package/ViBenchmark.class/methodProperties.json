@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"all" : "abc 8/18/2011 19:41:38.481",
+		"allTracesFor:" : "mt 2/25/2013 11:23:21.023",
+		"coverageFor:" : "abc 8/20/2011 06:13:33.921",
+		"coveredTracesFor:" : "mt 2/25/2013 11:23:27.502",
+		"methodsToTestsFor:" : "abc 8/19/2011 09:20:56.622",
+		"numberOfTestsFor:" : "abc 8/18/2011 18:32:02.839",
+		"overheadForCoverage:" : "mt 1/31/2012 13:57:08.605" },
+	"instance" : {
+		 } }

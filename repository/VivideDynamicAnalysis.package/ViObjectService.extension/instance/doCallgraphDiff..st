@@ -1,0 +1,4 @@
+*VivideDynamicAnalysis
+doCallgraphDiff: aCallgraphDiff
+
+	^ nil

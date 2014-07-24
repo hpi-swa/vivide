@@ -1,0 +1,17 @@
+{
+	"category" : "VivideDynamicAnalysis-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"iconBtn",
+		"tagnameEdit",
+		"descriptionEdit",
+		"dropTarget" ],
+	"name" : "ViTagEditorUi",
+	"pools" : [
+		 ],
+	"super" : "UserInterface",
+	"type" : "normal" }

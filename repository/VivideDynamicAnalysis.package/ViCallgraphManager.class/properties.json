@@ -1,0 +1,14 @@
+{
+	"category" : "VivideDynamicAnalysis",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Callgraphs" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViCallgraphManager",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

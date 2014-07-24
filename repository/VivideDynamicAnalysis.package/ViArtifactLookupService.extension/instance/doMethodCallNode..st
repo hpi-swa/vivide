@@ -1,0 +1,4 @@
+*VivideDynamicAnalysis
+doMethodCallNode: aMethodCallNode
+
+	^ nil
