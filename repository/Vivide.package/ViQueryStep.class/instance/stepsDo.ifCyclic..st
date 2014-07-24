@@ -4,5 +4,7 @@ stepsDo: aBlock ifCyclic: anExceptionBlock
 	| lastSteps |
 	lastSteps := OrderedCollection new.
 	self stepsDoUnsafe: [:step |
-		lastSteps add: step ifPresent: [^ anExceptionBlock cull: step].
+		(lastSteps includes: step)
+			ifFalse: [lastSteps add: step]
+			ifTrue: [^ anExceptionBlock cull: step].
 		aBlock value: step].

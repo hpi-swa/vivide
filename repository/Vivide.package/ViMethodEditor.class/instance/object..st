@@ -13,15 +13,8 @@ object: anObject
 		ifTrue: [
 			self artifact method: anObject.
 			self resetSource].
-	(anObject isKindOf: STestReference)
-		ifTrue: [
-			self object: anObject methodReference.
-			self flag: #implicitConversion "mt: Converted to reference."].
 	(anObject isKindOf: ViFlagComment)
 		ifTrue: [
 			self object: anObject reference.
 			self flag: #implicitConversion "mt: Converted to reference."].
-	(anObject isKindOf: SdMethodCallNode)
-		ifTrue: [
-			self object: anObject clientReference.
-			self flag: #implicitConversion "mt: Converted to reference."].
+		

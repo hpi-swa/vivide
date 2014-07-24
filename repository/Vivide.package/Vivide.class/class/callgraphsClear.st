@@ -1,4 +1,0 @@
-callgraphs
-callgraphsClear
-
-	Callgraphs := nil.

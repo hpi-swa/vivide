@@ -1,11 +1,10 @@
 {
 	"class" : {
-		"classForOperation:" : "mt 7/19/2013 09:41:41.519" },
+		"classForOperation:" : "mt 7/24/2014 13:26:56.84" },
 	"instance" : {
 		"doClassComment:" : "mt 9/4/2012 11:56:15.626",
 		"doClassDescription:" : "mt 7/26/2012 09:54:14.07",
 		"doCompiledMethod:" : "mt 1/17/2014 15:47:17.559",
-		"doMethodCallNode:" : "mt 2/1/2013 11:16:52.366",
 		"doMethodReference:" : "mt 9/19/2012 12:00:47.741",
 		"doMethodVersion:" : "mt 9/3/2012 09:31:29.101",
 		"doObject:" : "mt 2/11/2013 17:52:06.824",
@@ -13,6 +12,5 @@
 		"doProtocol:" : "mt 2/19/2013 11:42:12.725",
 		"doQuery:" : "mt 8/29/2013 12:00:35.964",
 		"doSourceCodeSnippet:" : "mt 11/2/2012 15:25:21.268",
-		"doTag:" : "mt 9/6/2012 17:36:06.783",
 		"doTestReference:" : "mt 1/31/2013 17:59:36.837",
 		"doText:" : "mt 7/26/2012 09:54:05.867" } }

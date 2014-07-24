@@ -1,6 +1,6 @@
 operations
 doMethodVersion: aMethodVersion
 
-	^ [aMethodVersion timeStamp printRelativeTimeStamp]
+	^ [ViToolSet printRelativeTimeStamp: aMethodVersion timeStamp]
 		on: Error
 		do: ['-']

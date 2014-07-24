@@ -1,4 +1,4 @@
-as yet unclassified
+operations
 doCompiledMethod: aCompiledMethod
 
 	panel := self

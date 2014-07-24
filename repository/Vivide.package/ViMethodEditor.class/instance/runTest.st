@@ -2,7 +2,7 @@ actions
 runTest
 
 	| results |
-	(self method notNil and: [self method isTestMethod])
+	(self method notNil and: [ViToolSet isTestMethod: self method])
 		ifFalse: [^ self].
 		
 	results := self theClass run: self selector.

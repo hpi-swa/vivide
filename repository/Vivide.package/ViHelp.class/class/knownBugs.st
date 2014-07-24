@@ -2,10 +2,10 @@ pages
 knownBugs
 
 	^ ViHelpTopic
-		title: 'Known Bugs'
+		title: 'Known Issues'
 		icon: UiSilkIcons bugIcon
-		contents: '<b>Known Bugs</b>
+		contents: '<b>Known Issues</b>
 		
-Take a look at our bug tracker:
-https://www.hpi.uni-potsdam.de/hirschfeld/trac/SqueakCommunityProjects/report
+Take a look at our issues on GitHub:
+https://github.com/marceltaeumel/vivide
 '

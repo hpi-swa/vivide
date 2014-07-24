@@ -19,7 +19,7 @@ initializeToolbarOperations
 			{#clear. 'Revert changes'. UiFugueIcons crossSmallIcon. nil. 1}},
 			(editor method notNil
 				ifTrue: [
-					(editor method isTestMethod
+					((ViToolSet isTestMethod: editor method)
 						ifFalse: [{}]
 						ifTrue: [{{#runTest. 'Run test'. UiFugueIcons controlIcon. nil. 2}}]),
 					
@@ -34,10 +34,3 @@ initializeToolbarOperations
 			{#fileOut. ('File out'). ViIcons blankIcon. nil. 1}.
 			{#toggleBreakpoint. (((BreakpointManager methodHasBreakpoint: editor method) ifTrue: ['Remove'] ifFalse: ['Add']),
 				' <b>breakpoint</b> on method entry') asHtmlText. ViIcons blankIcon. nil. 2}}]].
-	
-	(self theClass notNil and: [self theClass inheritsFrom: TestCase]) ifTrue: [
-		self toolbar rightPanel
-			addGroup: #tests
-			icon: UiFugueIcons clipboardTaskIcon
-			contents: [:editor | editor method ifNil: [{}] ifNotNil: [:m | m isTestMethod ifFalse: [{}] ifTrue: [
-			{{#runTest. 'Run test'. UiFugueIcons controlIcon. nil. 1}}]]]].

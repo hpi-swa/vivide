@@ -1,4 +1,6 @@
 operations
 doMethodReference: aMethodReference
 
-	^ nil
+	^ aMethodReference isValid
+		ifTrue: [self doCompiledMethod: aMethodReference compiledMethod]
+		ifFalse: []

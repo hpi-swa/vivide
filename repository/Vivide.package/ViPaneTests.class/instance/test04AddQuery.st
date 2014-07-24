@@ -11,4 +11,4 @@ test04AddQuery
 	
 	self
 		assert: sut currentQuery ~~ prev;
-		deny: sut queries includes: sut currentQuery.
+		deny: (sut queries includes: sut currentQuery).

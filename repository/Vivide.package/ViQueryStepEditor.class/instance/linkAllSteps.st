@@ -16,14 +16,16 @@ linkAllSteps
 	hasCycle := false.
 
 	otherSteps overlappingPairsDo: [:step1 :step2 |
-		lastSteps add: step2 ifPresent: [
-			hasCycle ifTrue: [
-				self warningSent: 'Too many repetitive steps detected! Only one cycle allowed.'.
-				^ self].
-			otherSteps last == step2 ifFalse: [
-				self warningSent: 'Cycle should be at the end of a query!'.
-				^ self].
-			hasCycle := true].
+		(lastSteps includes: step2)
+			ifFalse: [lastSteps add: step2]
+			ifTrue: [
+				hasCycle ifTrue: [
+					self warningSent: 'Too many repetitive steps detected! Only one cycle allowed.'.
+					^ self].
+				otherSteps last == step2 ifFalse: [
+					self warningSent: 'Cycle should be at the end of a query!'.
+					^ self].
+				hasCycle := true].
 		step1 next: step2].
 	
 	hasCycle ifFalse: [

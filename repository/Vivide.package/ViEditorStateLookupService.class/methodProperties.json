@@ -8,11 +8,10 @@
 		"setProperties:to:" : "mt 12/7/2012 11:32:52.128" },
 	"instance" : {
 		"defaultState" : "mt 9/13/2013 15:07:05.773",
-		"doCallgraph:" : "mt 1/29/2013 19:51:55.813",
 		"doClassComment:" : "mt 9/13/2013 16:34:42.537",
 		"doClassDescription:" : "mt 1/29/2013 19:52:07.091",
+		"doCompiledMethod:" : "mt 7/24/2014 11:17:45.714",
 		"doFlagComment:" : "mt 8/31/2012 20:08:45.407",
-		"doMethodReference:" : "mt 9/13/2013 15:07:19.849",
 		"doObject:" : "mt 9/3/2012 11:37:26.143",
 		"doObjectHistory:" : "mt 11/18/2013 09:19:37.372",
 		"doPackageInfo:" : "mt 1/29/2013 19:53:09.544",

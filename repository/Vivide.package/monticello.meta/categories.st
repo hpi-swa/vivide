@@ -3,7 +3,6 @@ SystemOrganization addCategory: #'Vivide-Artifacts'!
 SystemOrganization addCategory: #'Vivide-Artifacts-Support'!
 SystemOrganization addCategory: #'Vivide-Artifacts-Tests'!
 SystemOrganization addCategory: #'Vivide-Code'!
-SystemOrganization addCategory: #'Vivide-DEPRECATED-Benchmarks'!
 SystemOrganization addCategory: #'Vivide-DEPRECATED-Code'!
 SystemOrganization addCategory: #'Vivide-Editors'!
 SystemOrganization addCategory: #'Vivide-Editors-Designs'!
