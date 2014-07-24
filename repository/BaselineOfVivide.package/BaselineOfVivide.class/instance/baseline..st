@@ -76,6 +76,11 @@ baseline: spec
 				className: 'ConfigurationOfContextS';
 				repository: 'http://www.squeaksource.com/MetacelloRepository'].
 
+		spec project: 'SwaUtil' with: [
+			spec
+				className: 'ConfigurationOfSwaUtil';
+				repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/MetacelloRepository'].
+
 		"Internal packages."
 		spec package: 'Vivide' with: [
 			spec
@@ -88,7 +93,7 @@ baseline: spec
 			].
 		spec package: 'VivideDynamicAnalysis' with: [
 			spec
-				requires: #('Vivide' 'Sight-Coverage' 'Sight-Callgraph' 'Sight-Tagging').
+				requires: #('Vivide' 'Sight-Coverage' 'Sight-Callgraph' 'Sight-Tagging' 'SwaUtil').
 			].
 				
 		spec package: 'VividePolySource' with: [
