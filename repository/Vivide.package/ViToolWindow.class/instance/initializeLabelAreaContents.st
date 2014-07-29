@@ -2,6 +2,6 @@ initialization
 initializeLabelAreaContents
 
 	self addLabel.
-	self addLockBox.
+	"self addLockBox."
 	self addExpandBox.
 	self addCloseBox.

@@ -21,7 +21,8 @@ makeConvenient: menu
 
 	menu
 		add: 'Global Queries' subMenu: queryMenu;
-		add: 'Global Commands' subMenu: commandMenu;
+		add: 'Global Commands' subMenu: (commandMenu hasItems
+			ifTrue: [commandMenu] ifFalse: [nil]);
 		addLine.
 
 	self

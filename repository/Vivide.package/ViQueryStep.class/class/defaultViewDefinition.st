@@ -1,4 +1,4 @@
 defaults
 defaultViewDefinition
 
-	^ ViQueryStepDefinition treeView
+	^ ViQueryOrganizer default definitionById: #treePlain

@@ -1,0 +1,5 @@
+definitions
+defb260370c848e33428d96d04d86a58ddc
+	<definition>
+
+	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'25 July 2014 5:54:16 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#'b260370c-848e-3342-8d96-d04d86a58ddc'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:method | (method methodClass compiledMethodAt: method selector) in: [:layeredMethod | layeredMethod isContextSMethod ifFalse: [#()] ifTrue: [{layeredMethod basePartialMethod}, layeredMethod partialMethods]]]'); add: (#mapType->#each); add: (#block->[:method | (method methodClass compiledMethodAt: method selector) in: [:layeredMethod | layeredMethod isContextSMethod ifFalse: [#()] ifTrue: [{layeredMethod basePartialMethod}, layeredMethod partialMethods]]]); yourself)
