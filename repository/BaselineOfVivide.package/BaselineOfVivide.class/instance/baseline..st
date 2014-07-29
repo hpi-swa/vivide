@@ -23,7 +23,8 @@ baseline: spec
 				spec
 					className: 'ConfigurationOfRefactoringBrowser';
 					repository: 'http://www.squeaksource.com/MetacelloRepository';
-					loads: #('Core')].
+					loads: #('Core');
+					version: '2.0.2'].
 
 		spec project: 'OCompletion' with: [
 			spec
