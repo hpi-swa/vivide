@@ -1,5 +1,0 @@
-definitions
-def365aad0cb5f7434a90571140135cb8f6
-	<definition>
-
-	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'25 July 2014 6:27:49 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#'365aad0c-b5f7-434a-9057-1140135cb8f6'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:method | (method methodClass compiledMethodAt: method selector) in: [:layeredMethod | layeredMethod isContextSMethod ifFalse: [#()] ifTrue: [{layeredMethod basePartialMethod}, layeredMethod partialMethods]]]'); add: (#mapType->#each); add: (#block->[:method | (method methodClass compiledMethodAt: method selector) in: [:layeredMethod | layeredMethod isContextSMethod ifFalse: [#()] ifTrue: [{layeredMethod basePartialMethod}, layeredMethod partialMethods]]]); yourself)
