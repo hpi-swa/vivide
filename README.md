@@ -4,11 +4,11 @@ A programming environment and framework that supports *data-driven*, *scriptable
 
 ##Videos
 
-Here is the screencast that I showed at the [COP'14](http://prg.is.titech.ac.jp/events/cop14) workshop: 
+Here is a screencast about creating tools for context-oriented programming, which I showed at the [COP'14](http://prg.is.titech.ac.jp/events/cop14) workshop: 
 
 [![VIMEO](http://i.vimeocdn.com/video/484103433_320.jpg)](https://www.vimeo.com/102158303)
 
-Here is a recent screencast about how to create a browser for GitHub issues:
+Here is a recent screencast about how to create a browser for GitHub issues, which I showed at the [FutureSOC'14](https://www.hpi.uni-potsdam.de/research_school/aktivitaeten/future_trends_in_soc/futuresoc_2014.html) symposium:
 
 [![VIMEO](http://i.vimeocdn.com/video/480727139_320.jpg)](https://www.vimeo.com/99525933)
 
