@@ -6,7 +6,7 @@ A programming environment and framework that supports *data-driven*, *scriptable
 
 Here is the screencast that I showed at the [COP'14](http://prg.is.titech.ac.jp/events/cop14) workshop: 
 
-[![VIMEO](http://i.vimeocdn.com/video/default_320)](https://www.vimeo.com/102158303)
+[![VIMEO](http://i.vimeocdn.com/video/484103433_320.jpg)](https://www.vimeo.com/102158303)
 
 Here is a recent screencast about how to create a browser for GitHub issues:
 
