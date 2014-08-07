@@ -2,9 +2,9 @@
 	"class" : {
 		"ensureRepositoryAccessFor:" : "mt 7/23/2014 16:57:06.327" },
 	"instance" : {
-		"baseline:" : "mt 7/29/2014 11:20:30.35",
+		"baseline:" : "mt 8/7/2014 16:00:00.015",
 		"ensureAccessForFonts" : "mt 7/23/2014 17:02:11.224",
 		"ensureAccessForVividePolySource" : "mt 7/23/2014 17:03:19.857",
-		"postLoad" : "mt 7/24/2014 14:56:29.843",
+		"postLoad" : "mt 8/7/2014 16:07:32.034",
 		"postLoadFonts" : "mt 7/23/2014 17:05:37.998",
 		"preLoad" : "mt 7/23/2014 17:04:20.271" } }
