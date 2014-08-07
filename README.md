@@ -1,4 +1,4 @@
-#The VIVIDE Programming Environment
+#The VIVIDE Programming Environment [![Build Status](https://secure.travis-ci.org/marceltaeumel/vivide.png?branch=master)](http://travis-ci.org/marceltaeumel/vivide)
 
 A programming environment and framework that supports *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk.
 
