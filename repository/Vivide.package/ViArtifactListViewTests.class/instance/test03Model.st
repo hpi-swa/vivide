@@ -9,7 +9,7 @@ test03Model
 	self assert: (sut objects hasEqualElements: #(1 2 3)).
 	
 	sut addObject: 4.
-	self assert: (model firstStep objects includes: 4). "input"
+	self assert: (model firstStep flattenedObjects includes: 4). "input"
 	self assert: (sut objects includes: 4). "output"
 	
 	"stable output"

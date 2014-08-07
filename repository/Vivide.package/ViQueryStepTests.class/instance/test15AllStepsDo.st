@@ -4,7 +4,7 @@ test15AllStepsDo
 	| q1 p q2 count |
 	
 	q1 := ViQueryStep collect: '[:morph | morph submorphs]'.
-	p := ViQueryStep reference: ViQueryStep defaultProperties.
+	p := ViQueryStep reference: [:o | #text -> o asString] asQuery.
 	q2 := ViQueryStep collect: '[:morph | self haltOnce. morph owner]'.
 
 	q1 next: p.
@@ -13,4 +13,4 @@ test15AllStepsDo
 	count := 0.
 	
 	q1 allStepsDo: [:step | count := count + 1].
-	self assert: 5 equals: count.
+	self assert: 4 equals: count.
