@@ -1,7 +1,7 @@
 language: erlang
 
 env:
-   - ST=Vivide-base
+   - ST=Squeak-4.4
 
 install:
    - export PROJECT_HOME="$(pwd)"
@@ -11,8 +11,12 @@ install:
    - cd dalehenrich-builderCI*
    - source build_env_vars
    - ln -s $PROJECT_HOME $GIT_PATH
-   - chmod +x $PROJECT_HOME/tests/build_image.sh
-   - ./$PROJECT_HOME/tests/build_image.sh
+   - ./build_image.sh
+   - cd $IMAGES_PATH/Squeak4.4
+   - wget -q http://placebo.hpi.uni-potsdam.de/webhome/marcel.taeumel/travisci/vivide-base.zip
+   - unzip vivide-base.zip
+   - mv vivide-base.changes ../${IMAGE_TARGET_NAME}.changes
+   - mv vivide-base.image ../${IMAGE_TARGET_NAME}.image
 
 # use a different script if you want to customize how travis tests are run
 # use verbose flag to dump transcript unconditionally
