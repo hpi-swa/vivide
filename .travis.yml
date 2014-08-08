@@ -17,6 +17,7 @@ install:
    - unzip vivide-base.zip
    - mv vivide-base.changes ../${IMAGE_TARGET_NAME}.changes
    - mv vivide-base.image ../${IMAGE_TARGET_NAME}.image
+   - cd $HOME/dalehenrich-builderCI*
 
 # use a different script if you want to customize how travis tests are run
 # use verbose flag to dump transcript unconditionally
