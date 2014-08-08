@@ -1,15 +1,7 @@
 | gitPath |
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-[
-  (Delay forSeconds: 10) wait.
-
-  WorldState addDeferredUIMessage: 
-   [Transcript
-	  cr;
-	  show: (PackageInfo named: #Vivide) classes size asString;
-	  cr].
-] forkAt: 50.
+FileStream stdout reopen; nextPutAll: 'Hello, World!'; cr; flush.
 
 Metacello new
   baseline: 'Vivide';
