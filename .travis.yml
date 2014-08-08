@@ -1,11 +1,8 @@
 language: erlang
 
-# Choose which platforms you want your builds run against (done in parallel)
 env:
-   - ST=Squeak-4.4
-#   - ST=Squeak-4.5 # until https://github.com/dalehenrich/metacello-work/issues/155 fixed
+   - ST=Vivide-base
 
-# Boilerplate ... should be no reason to edit the install section
 install:
    - export PROJECT_HOME="$(pwd)"
    - cd $HOME
@@ -14,7 +11,8 @@ install:
    - cd dalehenrich-builderCI*
    - source build_env_vars
    - ln -s $PROJECT_HOME $GIT_PATH
-   - ./build_image.sh
+   - chmod +x $PROJECT_HOME/build_image.sh
+   - ./$PROJECT_HOME/build_image.sh
 
 # use a different script if you want to customize how travis tests are run
 # use verbose flag to dump transcript unconditionally

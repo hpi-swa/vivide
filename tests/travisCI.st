@@ -1,8 +1,6 @@
 | gitPath |
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-FileStream stdout reopen; nextPutAll: 'Hello, World!'; cr; flush.
-
 Metacello new
   baseline: 'Vivide';
   repository: 'filetree://', gitPath, '/vivide/repository';
