@@ -15,8 +15,10 @@ install:
    - cd $IMAGES_PATH/Squeak4.4
    - wget -q http://placebo.hpi.uni-potsdam.de/webhome/marcel.taeumel/travisci/vivide-base.zip
    - unzip vivide-base.zip
-   - mv vivide-base.changes ../${IMAGE_TARGET_NAME}.changes
-   - mv vivide-base.image ../${IMAGE_TARGET_NAME}.image
+   - mv vivide-base.changes ../Squeak-4.4.changes
+   - mv vivide-base.image ../Squeak-4.4.image
+   - cd ..
+   - ls
    - cd $HOME/dalehenrich-builderCI*
 
 # use a different script if you want to customize how travis tests are run
