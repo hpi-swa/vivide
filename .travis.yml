@@ -12,8 +12,11 @@ install:
    - source build_env_vars
    - ln -s $PROJECT_HOME $GIT_PATH
    - ./build_image.sh
-   - cd $IMAGES_PATH/Squeak4.4
-   - wget -q http://placebo.hpi.uni-potsdam.de/webhome/marcel.taeumel/travisci/vivide-base.zip
+   - cd $IMAGES_PATH
+   - ls
+   - cd Squeak4.4
+   - ls
+   - wget -q https://dl.dropboxusercontent.com/s/71e2heiy6uvde2e/vivide-base.zip
    - unzip vivide-base.zip
    - mv vivide-base.changes ../Squeak-4.4.changes
    - mv vivide-base.image ../Squeak-4.4.image
