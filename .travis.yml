@@ -11,8 +11,8 @@ install:
    - cd dalehenrich-builderCI*
    - source build_env_vars
    - ln -s $PROJECT_HOME $GIT_PATH
-   - chmod +x $PROJECT_HOME/build_image.sh
-   - ./$PROJECT_HOME/build_image.sh
+   - chmod +x $PROJECT_HOME/tests/build_image.sh
+   - ./$PROJECT_HOME/tests/build_image.sh
 
 # use a different script if you want to customize how travis tests are run
 # use verbose flag to dump transcript unconditionally
