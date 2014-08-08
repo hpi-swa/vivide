@@ -1,0 +1,14 @@
+{
+	"category" : "VivideVoronoi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViFFI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
