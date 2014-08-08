@@ -4,12 +4,11 @@ gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 [
   (Delay forSeconds: 10) wait.
 
- FileStream stdout in: [:out |
-	out closed ifTrue: [out reopen].
-	out
-		nextPutAll: (PackageInfo named: #Vivide) classes size asString;
-		cr;
-		flush].
+  WorldState addDeferredUIMessage: 
+   [Transcript
+	  cr;
+	  show: (PackageInfo named: #Vivide) classes size asString;
+	  cr].
 ] forkAt: 50.
 
 Metacello new
