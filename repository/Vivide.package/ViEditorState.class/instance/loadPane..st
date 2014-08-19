@@ -1,4 +1,4 @@
-as yet unclassified
+loading - editors
 loadPane: pane
 
 	#(bounds objects queries recentQueries) do: [:property |

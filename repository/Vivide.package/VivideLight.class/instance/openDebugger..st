@@ -2,9 +2,7 @@ actions - open
 openDebugger: aDebugger
 
 	| editor window |
-	editor := (ViEditorStateLookupService defaultStateFor: ViDebuggerEditor)
-		ifNotNil: [:state | ViEditor newFromState: state].
-		
+	editor := ViDebuggerEditor new.	
 	editor objects: {aDebugger}.
 	window := editor openInWindow.
 	

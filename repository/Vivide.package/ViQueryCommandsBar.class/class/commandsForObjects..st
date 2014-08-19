@@ -4,7 +4,7 @@ commandsForObjects: someObjects
 	^ someObjects
 		ifEmpty: [ViQueryOrganizer default globalCommands]
 		ifNotEmpty: [:objs |
-			(ViQueryChooser collectBaseClassesForContext: objs) in: [:baseClasses |.
+			(ViQueryStepDefinition collectBaseClassesForContext: objs) in: [:baseClasses |.
 					ViQueryOrganizer default orderedCommands select: [:cmd |
 						"cmd definition receiverIsCollection not | (someObjects size > 1)" true
 							and: [baseClasses includes: cmd definition inputKind]]]].

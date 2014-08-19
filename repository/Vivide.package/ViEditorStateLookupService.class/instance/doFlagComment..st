@@ -1,4 +1,0 @@
-operations
-doFlagComment: aFlagComment
-
-	^ nil

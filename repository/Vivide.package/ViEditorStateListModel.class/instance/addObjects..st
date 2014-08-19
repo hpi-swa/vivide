@@ -1,4 +1,4 @@
 actions - objects
 addObjects: someObjects
 
-	^ self addEditor: (ViObjectListEditor new objects: someObjects)
+	^ self addEditor: (ViMultiPaneEditor new: #artifacts for: someObjects)

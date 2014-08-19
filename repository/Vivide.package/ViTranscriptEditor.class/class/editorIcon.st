@@ -1,4 +1,0 @@
-accessing
-editorIcon
-
-	^ UiSilkIcons applicationViewListIcon

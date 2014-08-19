@@ -1,4 +1,0 @@
-signals
-closeRequested
-
-	self emitAlways.

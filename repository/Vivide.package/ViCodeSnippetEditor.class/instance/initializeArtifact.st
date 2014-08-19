@@ -41,6 +41,6 @@ initializeArtifact
 		cellInset: 0;
 		layoutInset: 0;
 		height: 150.
-	box addAllMorphs: {"snippetPanel."snippetEdit}.
+	box addAllMorphs: {snippetPanel.snippetEdit}.
 
 	self artifact: box.

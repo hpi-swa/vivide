@@ -1,4 +1,0 @@
-geometry
-defaultWidth
-
-	^ 50

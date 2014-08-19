@@ -1,5 +1,5 @@
 running
 setUpWindow
 
-	window := ViArtifactListPage new.
-	window addArtifact: editor.
+	window := ViArtifactListView2 new.
+	window artifactContainers: {editor}.

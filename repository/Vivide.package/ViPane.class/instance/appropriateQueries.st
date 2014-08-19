@@ -10,7 +10,7 @@ appropriateQueries
 				(self queries value select: [:query | query inputCount = self tupleSize
 					or: [query baseClass = Object "fallback...should work...allows for cloning"]])].
 
-	baseClasses := ViQueryChooser collectBaseClassesForContext: self objects.
+	baseClasses := ViQueryStepDefinition collectBaseClassesForContext: self objects.
 
 	^ ((self currentQuery notNil and: [self objects isEmpty or: [baseClasses includes: self currentQuery baseClass]])
 		ifTrue: [{self currentQuery}]

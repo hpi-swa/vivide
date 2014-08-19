@@ -1,4 +1,0 @@
-finder
-finder
-	
-	^ finder

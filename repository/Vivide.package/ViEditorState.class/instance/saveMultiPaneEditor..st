@@ -1,4 +1,4 @@
-as yet unclassified
+saving - editors
 saveMultiPaneEditor: editor
 
 	"Add names for storing internal dataflow connections."

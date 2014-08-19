@@ -1,4 +1,4 @@
-as yet unclassified
+loading - editors
 loadMultiPaneEditor: editor
 
 	editor panes: (self states collect: [:state |

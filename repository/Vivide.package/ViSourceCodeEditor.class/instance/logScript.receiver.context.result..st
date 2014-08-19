@@ -20,7 +20,7 @@ logScript: string receiver: recvr context: ctxt result: obj
 		receiverIsCollection: selfSent & receiverIsCollection;
 		inputKind: (selfSent ifFalse: [UndefinedObject]
 			ifTrue: [receiverIsCollection
-				ifTrue: [(ViQueryChooser collectBaseClassesForContext: recvr) first]
+				ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
 				ifFalse: [recvr class]]).
 	
 	similarDef := ViQueryOrganizer default snippetDefinitions

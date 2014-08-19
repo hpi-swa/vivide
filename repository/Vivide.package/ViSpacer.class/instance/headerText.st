@@ -1,4 +1,0 @@
-accessing - header
-headerText
-
-	^ 'Spacer'

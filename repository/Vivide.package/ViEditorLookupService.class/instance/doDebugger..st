@@ -1,4 +1,0 @@
-operations
-doDebugger: aDebugger
-
-	^ {ViDebuggerEditor}  

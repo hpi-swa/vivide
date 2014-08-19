@@ -3,7 +3,7 @@ initializeEditorStateList
 	
 	| model |
 	model := ViEditorStateListModel new
-		editorStates:  Vivide editorStates;
+		editorStates:  VivideLight editorStates;
 		supportedTypes: #(editor editorStates objects artifact).
 
 	editorStateList := UiListView new

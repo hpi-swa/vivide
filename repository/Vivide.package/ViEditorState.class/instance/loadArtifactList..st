@@ -1,2 +1,0 @@
-loading - editors
-loadArtifactList: anEditor  

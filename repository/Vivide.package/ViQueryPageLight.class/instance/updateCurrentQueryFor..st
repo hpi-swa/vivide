@@ -2,7 +2,7 @@ as yet unclassified
 updateCurrentQueryFor: someObjects
 
 	| baseClasses appropriateQueries |	
-	baseClasses := ViQueryChooser collectBaseClassesForContext: someObjects.
+	baseClasses := ViQueryStepDefinition collectBaseClassesForContext: someObjects.
 	
 	appropriateQueries := self queries select: [:query |
 		(query isGlobal not & someObjects notEmpty and: [baseClasses includes: query baseClass])

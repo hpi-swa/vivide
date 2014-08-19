@@ -1,2 +1,0 @@
-saving - editors
-saveArtifactList: anEditor

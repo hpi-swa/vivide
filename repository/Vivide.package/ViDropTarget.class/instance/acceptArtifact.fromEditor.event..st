@@ -1,9 +1,7 @@
 dropping - specific
 acceptArtifact: anArtifactContainer fromEditor: anEditor event: evt
-
-	| editor |
-	editor := ViObjectListEditor new.
-	editor addArtifact: anArtifactContainer.
+	"Create a new editor for the container's object."
 	
-	self dropEditor: editor event: evt.
-	anArtifactContainer justDroppedInto: editor event: evt.
+	self
+		dropEditor: (ViMultiPaneEditor new: #artifacts for: {anArtifactContainer object})
+		event: evt.

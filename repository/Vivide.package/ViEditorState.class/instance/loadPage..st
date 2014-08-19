@@ -1,2 +1,0 @@
-loading - general
-loadPage: aPage

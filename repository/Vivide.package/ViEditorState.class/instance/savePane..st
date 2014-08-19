@@ -1,4 +1,4 @@
-as yet unclassified
+saving - editors
 savePane: pane
 
 	#(objects queries bounds recentQueries) do: [:property |

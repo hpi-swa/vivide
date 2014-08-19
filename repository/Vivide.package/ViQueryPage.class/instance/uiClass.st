@@ -1,4 +1,0 @@
-accessing - ui
-uiClass
-
-	^ ViQueryPageUi

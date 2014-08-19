@@ -1,4 +1,0 @@
-signals
-cleared
-
-	self emit.

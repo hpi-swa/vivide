@@ -1,4 +1,0 @@
-geometry
-minimalWidth
-
-	^ 20

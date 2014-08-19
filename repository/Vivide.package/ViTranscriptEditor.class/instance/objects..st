@@ -1,2 +1,0 @@
-accessing - objects
-objects: someObjects

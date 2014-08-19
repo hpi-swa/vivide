@@ -1,1 +1,0 @@
-ArtifactContainers may convert objects, e.g., compiled method -> method reference.

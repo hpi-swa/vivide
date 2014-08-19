@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"EditorStates",
 		"FeedbackServer",
 		"UseVivideDebugger" ],
 	"commentStamp" : "mt 12/4/2012 11:21:39.85",

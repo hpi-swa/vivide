@@ -2,5 +2,5 @@ actions - objects
 insertObjects: someObjects before: aNode
 
 	^ self
-		insertEditor: (ViObjectListEditor new objects: someObjects)
+		insertEditor: (ViMultiPaneEditor new: #artifacts for: someObjects)
 		before: aNode
