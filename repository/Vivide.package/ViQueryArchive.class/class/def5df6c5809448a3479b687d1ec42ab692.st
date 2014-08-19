@@ -7,9 +7,9 @@ def5df6c5809448a3479b687d1ec42ab692
 		mcp hasWorkingCopy
 			ifFalse: [#()] ifTrue: [(mcp workingCopy changesRelativeToRepository:
 				(mcp workingCopy repositoryGroup repositories in: [:repos |
-					repos at: (2 min: repos size)])) operations]]]]'); add: (#mapType->#all); add: (#block->[:pkgs | pkgs gather: [:pkg |
+					repos detect: [:repo | (repo isKindOf: MCCacheRepository) not] ifNone: [repos first]])) operations]]]]'); add: (#mapType->#all); add: (#block->[:pkgs | pkgs gather: [:pkg |
 	pkg mcPackage in: [:mcp |
 		mcp hasWorkingCopy
 			ifFalse: [#()] ifTrue: [(mcp workingCopy changesRelativeToRepository:
 				(mcp workingCopy repositoryGroup repositories in: [:repos |
-					repos at: (2 min: repos size)])) operations]]]]); yourself)
+					repos detect: [:repo | (repo isKindOf: MCCacheRepository) not] ifNone: [repos first]])) operations]]]]); yourself)

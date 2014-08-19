@@ -15,6 +15,8 @@ open: query for: objects
 		currentQuery: (ViQueryStep convert: query);
 		objects: objects.
 
+	objects do: [:object | ViObjectHistory addObject: object].
+
 	(objects size = 1 and: [defaultQueryCheck anySatisfy: [:chk | chk value: objects first]])
 		ifTrue: [
 			self flag: #fishy. "mt: Why second?"
