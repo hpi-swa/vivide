@@ -1,4 +1,4 @@
-drop shadows
+contents - patterns
 dropShadowContents
 	"Top right corner of a drop shadow."
 

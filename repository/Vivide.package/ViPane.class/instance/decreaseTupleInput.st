@@ -1,4 +1,4 @@
-as yet unclassified
+tuples
 decreaseTupleInput
 	"Expect in objects a list of lists as created in #inscreaseTupleInput."
 	

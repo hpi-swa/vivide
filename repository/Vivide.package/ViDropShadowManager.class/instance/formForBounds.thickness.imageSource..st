@@ -1,5 +1,5 @@
-drop shadows
-createDropShadowForBounds: bounds width: width dataSource: source
+accessing
+formForBounds: bounds thickness: width imageSource: source
 
 	| shadowSize canvas dropShadow |
 	shadowSize := width.
@@ -49,4 +49,4 @@ createDropShadowForBounds: bounds width: width dataSource: source
 			(dropShadow width - source dropShadowTopRight width) @
 			(dropShadow height - source dropShadowBottomLeft height).
 
-	^ dropShadow  
+	^ dropShadow

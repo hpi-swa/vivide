@@ -1,7 +1,7 @@
-drop shadows
+accessing - drop shadow
 dropShadowBottomRight
 
-	^ self shadowCache
+	^ Icons
 		at: #dropShadowBottomRight
 		ifAbsentPut: [
 			| result |

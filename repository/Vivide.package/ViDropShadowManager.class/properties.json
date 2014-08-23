@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dropShadows" ],
+	"name" : "ViDropShadowManager",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

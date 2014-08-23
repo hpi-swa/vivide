@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"default" : "mt 8/23/2014 12:12:08.039",
+		"defaultThickness" : "mt 8/23/2014 12:25:57.047",
+		"new" : "mt 8/23/2014 12:12:29.504" },
+	"instance" : {
+		"dropShadows" : "mt 8/23/2014 12:06:35.316",
+		"finalizeValues" : "mt 8/23/2014 12:11:46.319",
+		"formForBounds:" : "mt 8/23/2014 12:26:50.763",
+		"formForBounds:thickness:" : "mt 8/23/2014 12:19:49.826",
+		"formForBounds:thickness:imageSource:" : "mt 8/23/2014 12:20:43.885",
+		"formForMorph:" : "mt 8/23/2014 13:13:07.614",
+		"formForMorph:thickness:" : "mt 8/23/2014 12:28:47.444" } }

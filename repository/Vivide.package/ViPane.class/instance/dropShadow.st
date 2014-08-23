@@ -3,4 +3,4 @@ dropShadow
 
 	^ ViDropShadowManager default
 		formForMorph: self
-		thickness: self shadowWidth
+		thickness: 8

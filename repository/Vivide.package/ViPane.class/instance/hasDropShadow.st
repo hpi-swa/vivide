@@ -1,4 +1,4 @@
 drop shadows
 hasDropShadow
 
-	^ self isActive
+	^ self owner == self world

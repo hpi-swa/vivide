@@ -1,4 +1,4 @@
-as yet unclassified
+macpal
 flash
 
 	"Give user feedback."

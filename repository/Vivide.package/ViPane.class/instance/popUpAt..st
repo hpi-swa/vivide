@@ -6,11 +6,11 @@ popUpAt: aPoint
 
 	self
 		color: (Color gray: 0.85);
-		borderWidth: 1;
-		borderColor: (Color gray: 0.8) muchDarker;
+"		borderWidth: 1;
+		borderColor: (Color gray: 0.8) muchDarker;"
 		extent: (300@200 max: self extent);
 		topLeft: aPoint;
-		layoutInset: 3;
+"		layoutInset: 3;"
 		position: self position + (self bounds amountToTranslateWithin: ActiveWorld bounds).
 	
 	self eventHandler disconnectSignal: #mouseLeft: from: self selector: #delete.

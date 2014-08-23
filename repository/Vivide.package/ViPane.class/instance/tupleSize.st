@@ -1,4 +1,4 @@
-as yet unclassified
+tuples
 tupleSize
 
 	^ self providersForSelections size + self providersForResults size
