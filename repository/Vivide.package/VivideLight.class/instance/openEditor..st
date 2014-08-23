@@ -6,4 +6,5 @@ openEditor: anEditorState
 		ifTrue: [^ self openArtifact: (anEditorState properties at: #object)]  .
 			
 	^ (ViEditor newFromState: anEditorState)
+		expand;
 		openInWindowAsIs

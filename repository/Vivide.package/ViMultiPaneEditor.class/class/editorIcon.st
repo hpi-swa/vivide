@@ -1,4 +1,4 @@
 accessing
 editorIcon
 
-	^ UiFugueIcons magnifierIcon
+	^ UiFugueIcons applicationSplitTileIcon

@@ -4,7 +4,10 @@ convert: object
 	^ (object isSymbol
 		ifTrue: [(ViQueryOrganizer default stepById: object)
 			ifNil: [(ViQueryOrganizer default definitionById: object)
-				ifNotNil: [:def | ViQueryTransformStep new definition: def]]]
+				ifNotNil: [:def | 
+					def isMapDefinition
+						ifFalse: [nil]
+						ifTrue: [ViQueryTransformStep new definition: def]]]]
 		ifFalse: [(object isString or: [object isClosure])
 			ifTrue: [object asQuery]
 			ifFalse: [object isVariableBinding

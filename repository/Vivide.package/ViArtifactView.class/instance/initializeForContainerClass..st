@@ -9,9 +9,7 @@ initializeForContainerClass: class
 		lockSize;
 		yourself.
 	
-	container artifact 
-		changeTableLayout;
-		vResizing: #spaceFill.
+	container artifact vResizing: #spaceFill.
 	
 	"No controls in this view."
 	container toolbar topPanel removeAllMorphs.

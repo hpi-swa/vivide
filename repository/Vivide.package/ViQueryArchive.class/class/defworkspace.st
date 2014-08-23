@@ -9,8 +9,11 @@ defworkspace
 			v setProperty: #viewId toValue: #workspace.
 			v objectsAsContext: true.
 			
-			"self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
-			self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
+			v container sgConnectSignal: #expressionEvaluated: to: v selector: #selectObjects:. 
+			
+			self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
+			
+			"self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
 			self connect: v signal: #returnPressed: to: environment selector: #requestArtifactFor:."
 			v]].	
 	newView]); add: (#sourceCode->'[:query :view :environment | | newView |
@@ -20,8 +23,11 @@ defworkspace
 			v setProperty: #viewId toValue: #workspace.
 			v objectsAsContext: true.
 			
-			"self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
-			self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
+			v container sgConnectSignal: #expressionEvaluated: to: v selector: #selectObjects:. 
+			
+			self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
+			
+			"self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
 			self connect: v signal: #returnPressed: to: environment selector: #requestArtifactFor:."
 			v]].	
 	newView]'); yourself)

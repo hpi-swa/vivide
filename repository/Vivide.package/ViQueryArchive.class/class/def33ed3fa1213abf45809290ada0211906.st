@@ -9,11 +9,11 @@ def33ed3fa1213abf45809290ada0211906
 	#text -> (state properties at: #headerText).
 	#icon -> (cls
 			ifNotNil: [cls editorIcon]
-			ifNil: [ViIconService doObject: (state properties at: #object)])}]'); add: (#mapType->#each); add: (#block->[:state | | cls |
+			ifNil: [ViIconService doObject: (state properties at: #object ifAbsent: [nil])])}]'); add: (#mapType->#each); add: (#block->[:state | | cls |
 	cls := Smalltalk at: (state properties at: #className ifAbsent: []) ifAbsent: [].
 	
 	{
 	#text -> (state properties at: #headerText).
 	#icon -> (cls
 			ifNotNil: [cls editorIcon]
-			ifNil: [ViIconService doObject: (state properties at: #object)])}]); yourself)
+			ifNil: [ViIconService doObject: (state properties at: #object ifAbsent: [nil])])}]); yourself)

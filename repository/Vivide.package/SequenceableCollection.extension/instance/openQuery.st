@@ -1,4 +1,4 @@
 *vivide-queries
 openQuery
 
-	(ViQueryStep convertList: self) openQuery
+	self asQuery openQuery

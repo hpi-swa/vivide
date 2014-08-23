@@ -9,7 +9,7 @@ showWindowForTransferMorph: aTransferMorph
 			addPane: aTransferMorph passenger;
 			openInWindow].
 		
-	(#(objects queries) includes: type)
+	(#(objects) includes: type)
 		ifTrue: [^ ActiveVivide openArtifacts: aTransferMorph passenger].
 	
 	(#(artifact) includes: type)
@@ -17,10 +17,6 @@ showWindowForTransferMorph: aTransferMorph
 	
 	(#(editorStates) includes: type)
 		ifTrue: [^ ActiveVivide openEditor: aTransferMorph passenger first].
-		
-	(#(operation) includes: type)
-		ifTrue: [^ ActiveVivide openEditorForArtifact: (
-			(ViArtifactLookupService classForOperation: aTransferMorph passenger) new
-				context: nil; object: nil)]].
-		
+	].
+
 	^ ActiveVivide openArtifact: aTransferMorph passenger

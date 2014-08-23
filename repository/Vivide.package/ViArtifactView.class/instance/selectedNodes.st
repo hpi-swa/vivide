@@ -1,4 +1,4 @@
 as yet unclassified
 selectedNodes
 
-	^ self visibleNodes
+	^ self valueOfProperty: #lastSelection ifAbsent: [#()]
