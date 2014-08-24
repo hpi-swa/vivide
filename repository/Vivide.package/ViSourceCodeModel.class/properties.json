@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
+		"bindings",
 		"class",
 		"completionController" ],
 	"name" : "ViSourceCodeModel",

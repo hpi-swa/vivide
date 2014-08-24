@@ -2,7 +2,7 @@
 	"class" : {
 		"supportedTypes" : "mt 2/13/2014 14:31:41.03" },
 	"instance" : {
-		"bindings" : "mt 2/11/2014 16:53:58.948",
+		"bindings" : "mt 8/24/2014 11:52:33.868",
 		"clear" : "mt 2/13/2014 14:34:03.61",
 		"context" : "mt 2/3/2014 16:45:01.15",
 		"context:" : "mt 7/23/2014 13:08:41.835",
@@ -21,4 +21,5 @@
 		"onContextChanged" : "mt 2/13/2014 09:34:27.524",
 		"optimalWidth" : "mt 2/3/2014 16:45:30.261",
 		"showEvaluationResult:" : "mt 2/6/2014 09:49:58.704",
+		"snippetEdit" : "mt 8/24/2014 12:50:27.684",
 		"updateSnippet" : "mt 2/13/2014 09:40:42.656" } }

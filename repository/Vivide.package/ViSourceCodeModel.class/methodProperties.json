@@ -2,8 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"bindingOf:" : "mt 8/24/2014 11:56:54.926",
+		"bindings" : "mt 8/24/2014 11:56:05.576",
+		"bindings:" : "mt 8/24/2014 11:56:15.218",
 		"completionController" : "mt 11/1/2012 17:05:50.822",
 		"guessTypeForName:" : "mt 11/1/2012 17:25:33.272",
+		"hasBindingOf:" : "mt 8/24/2014 13:22:11.101",
+		"hasBindingThatBeginsWith:" : "mt 8/24/2014 12:16:16.653",
+		"knownNames" : "mt 8/24/2014 11:57:16.597",
 		"selectedClassOrMetaClass" : "mt 11/1/2012 17:10:06.507",
 		"theClass" : "mt 11/1/2012 17:09:44.947",
 		"theClass:" : "mt 11/1/2012 17:09:49.993" } }

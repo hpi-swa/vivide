@@ -1,6 +1,5 @@
 as yet unclassified
 childrenAllGroups
 
-	^ self children
-		ifNil: [#()]
-		ifNotNil: [:groups | groups values gather: [:group | group]]
+	self flag: #deprecated. "mt: Use #nodes instead from base class."
+	^ self nodes
