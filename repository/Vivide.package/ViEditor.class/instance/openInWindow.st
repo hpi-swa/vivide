@@ -2,7 +2,9 @@ geometry - actions
 openInWindow
 	"Open in own system window."
 	
-	| originalColor window extent |
+	| originalColor window extent grab |
+	grab := (ActiveHand keyboardFocus notNil and: [ActiveHand keyboardFocus isInSystemWindow not]).
+	
 	"Hide header."
 	self eventHandler
 		disconnectSignal: #focusReceivedInSubmorph: from: self;
@@ -35,7 +37,7 @@ openInWindow
 		
 		b right + window width < ActiveWorld right
 			ifTrue: [window topLeft: b topRight]]].
-		
+				
 	ActiveWorld addMorph: window.
 	window activate.
 	ActiveWorld startSteppingSubmorphsOf: window.
@@ -46,5 +48,9 @@ openInWindow
 	
 	"Window controls."
 	self connect: self signal: #closed to: window selector: #delete.
+
+	grab ifTrue: [
+		window center: ActiveHand position.
+		ActiveHand grabMorph: window].
 	
 	^ window

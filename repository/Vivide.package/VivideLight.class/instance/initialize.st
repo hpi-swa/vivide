@@ -24,5 +24,4 @@ initialize
 	ActiveHand addKeyboardListener: self.
 	self initializeSystemChangeNotifications.
 	
-	self sgConnectSignal: #artifactRequested: toSelector: #openArtifact:.
-	self sgConnectSignal: #editorRequested: toSelector: #openEditor:.
+	self initializeSgSignals.
