@@ -28,8 +28,10 @@ defmethodEditor
 							container artifact model bindings: bindings].
 						]].
 			
-			"self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
-			self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
+			v container sgConnectSignal: #expressionEvaluated: to: v selector: #selectObjects:. 
+			self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
+			
+			"self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
 			self connect: v signal: #returnPressed: to: environment selector: #requestArtifactFor:."
 			v]].	
 	newView]); add: (#sourceCode->'[:query :view :environment | | newView |
@@ -58,8 +60,10 @@ defmethodEditor
 							container artifact model bindings: bindings].
 						]].
 			
-			"self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
-			self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
+			v container sgConnectSignal: #expressionEvaluated: to: v selector: #selectObjects:. 
+			self connect: v signal: #selectionChanged: to: environment selector: #notifyChangedSelection:.
+			
+			"self connect: v signal: #doubleClicked: to: environment selector: #requestArtifactFor:.
 			self connect: v signal: #returnPressed: to: environment selector: #requestArtifactFor:."
 			v]].	
 	newView]'); yourself)
