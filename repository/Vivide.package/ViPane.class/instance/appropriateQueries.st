@@ -12,7 +12,9 @@ appropriateQueries
 
 	baseClasses := ViQueryStepDefinition collectBaseClassesForContext: self objects.
 
-	^ (self recentQueries select: [:step | baseClasses includes: step baseClass]), 
+	^ ((self currentQuery notNil and: [self objects isEmpty or: [baseClasses includes: self currentQuery baseClass]])
+		ifTrue: [{self currentQuery}] ifFalse: [{}]), 
+		(self recentQueries select: [:step | step ~= self currentQuery and: [baseClasses includes: step baseClass]]), 
 			(self queries value select: [:query | (query isRegistered not or: [query nextLabel notNil]) and: [
 				(query isGlobal not & self objects notEmpty and: [baseClasses includes: query baseClass])
 					or: [query isGlobal & self objects isEmpty]]])
