@@ -1,6 +1,7 @@
 as yet unclassified
 productOfCollections: someCollections
-
+	"Cartesion product?"
+	
 	| tmp |
 	someCollections ifEmpty: [^ #()].
 	

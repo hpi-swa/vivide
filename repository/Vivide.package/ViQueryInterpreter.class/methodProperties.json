@@ -1,10 +1,12 @@
 {
 	"class" : {
+		"collapseTuples:" : "mt 9/21/2014 11:24:53.076",
 		"divisionOfTuples:" : "mt 6/12/2014 11:43:46.989",
+		"expandTuples:" : "mt 9/21/2014 11:34:05.305",
 		"isCollection:" : "mt 12/6/2013 08:38:14.871",
 		"on:" : "mt 11/16/2013 11:46:37.113",
-		"packTuples:" : "mt 6/12/2014 12:03:46.07",
-		"productOfCollections:" : "mt 6/11/2014 15:05:01.419",
+		"packTuples:" : "mt 9/22/2014 16:27:03.014",
+		"productOfCollections:" : "mt 9/22/2014 16:49:55.247",
 		"unpackTuples:" : "mt 6/12/2014 12:03:18.303" },
 	"instance" : {
 		"allObjects" : "mt 11/16/2013 11:42:45.706",

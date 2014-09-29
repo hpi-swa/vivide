@@ -10,7 +10,7 @@ initializeArtifact
 		colorFocusBorder: (Color gray: 0.3);
 		colorBackground: Color white;
 		hResizing: #spaceFill;
-		autoAccept: true.
+		autoAccept: false.
 		
 	sourceCodeEdit eventHandler grabKeyboardOnMouseEnter: true.  
 		

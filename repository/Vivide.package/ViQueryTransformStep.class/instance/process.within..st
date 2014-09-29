@@ -13,7 +13,7 @@ process: someObjects within: aContext
 				ifFalse: [{result}]]]
 		ifFalse: [Array streamContents: [:stream |
 			someObjects do: [:obj | 
-				(in > 1 "offer context for n=1 only"
+				(in > 1 "offer context for in=1 only"
 					ifFalse: [definition block cull: obj cull: aContext]
 					ifTrue: [definition block valueWithArguments: obj]) in: [:result |
 				out > 1
