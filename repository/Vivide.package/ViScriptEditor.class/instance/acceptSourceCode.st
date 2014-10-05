@@ -2,16 +2,15 @@ as yet unclassified
 acceptSourceCode
 
 	| code newPointer |
-	self object definition sourceCode
-		ifEmpty: [self proposeScriptTemplate].
+	shouldPropose ifTrue: [self proposeScriptTemplate].
 	
 	code := edit theText asString withBlanksTrimmed.
 		
 	"Check for correct enclosing brackets if not outermost snippet."
 	self scriptPointer ~= (1 to: self script size) ifTrue: [
-		(code endsWith: '.')
+		[code endsWith: '.'] whileTrue: [
 			"No trailing points for intermediate code blocks."
-			ifTrue: [code := code allButLast].
+			code := code allButLast].
 		((code beginsWith: '[') and: [code endsWith: ']'])
 			"Auto bracketing."
 			ifFalse: [code := '[{1}]' format: {code}].		

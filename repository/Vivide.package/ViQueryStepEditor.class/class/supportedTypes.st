@@ -1,4 +1,4 @@
 accessing
 supportedTypes
 
-	^ ViQueryStep allSubclasses copyWithoutAll: ViQueryFillStep withAllSubclasses
+	^ ViQueryStep allSubclasses copyWithoutAll: ViQueryFillStep withAllSubclasses, {ViScriptPart}

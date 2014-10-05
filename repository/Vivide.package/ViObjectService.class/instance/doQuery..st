@@ -1,4 +1,0 @@
-operations
-doQuery: aQuery
-
-	^ nil

@@ -9,7 +9,10 @@
 		"step",
 		"edit",
 		"script",
-		"scriptPointer" ],
+		"scriptPointer",
+		"shouldPropose",
+		"context",
+		"otherSteps" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],
