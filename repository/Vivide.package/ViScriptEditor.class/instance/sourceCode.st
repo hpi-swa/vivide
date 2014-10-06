@@ -1,5 +1,6 @@
 as yet unclassified
 sourceCode
+	"Find source code in script. Do not decompile block to preserve custom formatting."
 
 	^ (RBParser parseExpression: self script) children first
 		in: [:node |

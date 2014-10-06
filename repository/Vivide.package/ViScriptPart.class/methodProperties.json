@@ -3,7 +3,10 @@
 		 },
 	"instance" : {
 		"baseClass" : "mt 10/5/2014 12:16:00.055",
+		"convertProperty:" : "mt 10/6/2014 11:00:40.29",
 		"initialize" : "mt 10/5/2014 12:02:20.502",
+		"isPropertyExtraction" : "mt 10/6/2014 13:09:26.891",
 		"isScript" : "mt 10/5/2014 11:50:58.109",
+		"process:within:" : "mt 10/6/2014 10:47:03.016",
 		"sourceCode" : "mt 10/5/2014 13:05:17.191",
 		"sourceCode:" : "mt 10/5/2014 13:05:28.339" } }

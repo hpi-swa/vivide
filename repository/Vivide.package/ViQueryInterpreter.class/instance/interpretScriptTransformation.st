@@ -1,9 +1,7 @@
 as yet unclassified
-interpretTupleStep
+interpretScriptTransformation
 
 	| transformedObjects |
-	self assert: step isTupleStep.
-		
 	transformedObjects := Dictionary new.
 
 	objects keysAndValuesDo: [:group :groupedObjects |
@@ -11,4 +9,4 @@ interpretTupleStep
 			at: group
 			put: (step process: groupedObjects within: (contexts at: group))].
 
-	objects := transformedObjects.
+	objects := transformedObjects.	

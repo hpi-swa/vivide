@@ -8,10 +8,7 @@ next
 	step isGroupStep ifTrue: [self interpretGroupStep].
 	step isTransformStep ifTrue: [self interpretTransformStep].
 	step isPropertyStep ifTrue: [self interpretPropertyStep].
-	
-	"--- X) Experimental ---"
-	step isTupleStep ifTrue: [self interpretTupleStep].
-	step isNestStep ifTrue: [self interpretNestStep].
+	step isScript ifTrue: [self interpretScript].
 
 	"--- 2) Choose next step ---"
 

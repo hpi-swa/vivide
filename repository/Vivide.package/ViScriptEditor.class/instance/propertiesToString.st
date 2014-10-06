@@ -3,4 +3,4 @@ propertiesToString
 
 	^ self object
 		ifNil: ['{}']
-		ifNotNil: [:step | '{}']
+		ifNotNil: [:step | self propertiesToStringFrom: step properties]

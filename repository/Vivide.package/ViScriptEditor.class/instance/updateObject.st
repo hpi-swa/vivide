@@ -13,4 +13,4 @@ updateObject
 				ifTrue: ["Reference to definition"]
 				ifFalse: [Error signal: 'No code recognized!']]].
 	
-	self propertiesFromList: spec value.
+	self propertiesFromList: (Dictionary newFrom: spec value).

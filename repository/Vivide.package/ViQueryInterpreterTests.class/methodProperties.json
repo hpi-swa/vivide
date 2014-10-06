@@ -15,4 +15,7 @@
 		"test11TupleInput" : "mt 6/12/2014 13:02:48.331",
 		"test12TupleOutput" : "mt 6/9/2014 16:16:06.597",
 		"test13TupleWithProperties" : "mt 6/9/2014 21:50:08.024",
-		"test14TupleFilter" : "mt 6/11/2014 15:02:00.613" } }
+		"test14TupleFilter" : "mt 6/11/2014 15:02:00.613",
+		"test15Script" : "mt 10/6/2014 11:23:44.406",
+		"test16ScriptWithProperties" : "mt 10/6/2014 13:11:05.282",
+		"test17ScriptWithTuples" : "mt 10/6/2014 13:20:01.403" } }

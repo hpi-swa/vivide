@@ -1,4 +1,4 @@
 properties
 valueOfProperty: property
 
-	^ self properties at: property ifAbsent: []
+	^ self valueOfProperty: property ifAbsent: []

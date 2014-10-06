@@ -4,5 +4,6 @@ upToNextProperties
 	numProperties := 0.
 	properties := IdentityDictionary new.
 	
-	[step isNil or: [step isPropertyStep not and: [numProperties > 0]]]
+	[step isNil or: [(step isPropertyStep not and: [(step isScript and: [step isPropertyExtraction]) not])
+		and: [numProperties > 0]]]
 		whileFalse: [self next].
