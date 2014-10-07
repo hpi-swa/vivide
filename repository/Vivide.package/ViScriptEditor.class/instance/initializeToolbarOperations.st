@@ -9,8 +9,8 @@ initializeToolbarOperations
 		contents: [:editor | {
 			{#register. 'Register'. UiSilkIcons reportAddIcon. nil. 1}.
 			{#unregister. 'Unregister'. ViIcons blankIcon. nil. 1}.
-			"{#openNextSteps. 'Open next parts'. ViIcons blankIcon. nil. 2}."
-			"{#openAllSteps. 'Open all steps (w/ references)'. ViIcons blankIcon. nil. 2}."
+			{#openNextSteps. 'Open next parts'. ViIcons blankIcon. nil. 2}.
+			{#openAllSteps. 'Open all steps (w/ references)'. ViIcons blankIcon. nil. 2}.
 			{#linkAllScripts. 'Link parts in window'. UiSilkIcons folderLinkIcon. nil. 3}.
 			}].
 

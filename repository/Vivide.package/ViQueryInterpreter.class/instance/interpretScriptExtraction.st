@@ -4,7 +4,7 @@ interpretScriptExtraction
 	numProperties := numProperties + 1.
 	
 	"Look for model class for later node creation."
-	[step valueOfProperty: #modelClass]
+	(step valueOfProperty: #modelClass)
 		ifNotNil: [:cls | modelClass := cls].   
 	
 	objects keysAndValuesDo: [:group :groupedObjects |

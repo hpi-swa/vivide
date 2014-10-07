@@ -10,3 +10,4 @@ clear
 	].	
 
 	self updateToolbars.
+	self updateUi.

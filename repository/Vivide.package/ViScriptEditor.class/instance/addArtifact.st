@@ -3,7 +3,7 @@ addArtifact
 
 	| editor |
 	editor := ViScriptEditor new.
-	editor object: (ViScriptPart new sourceCode: '[:in :out | "Type code here..."]').
+	editor object: (ViScriptPart new sourceCode: '[:in :out | out addAll: in]').
 	editor activateWizard.
 
 	"Register new step and definition."

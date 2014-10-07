@@ -1,8 +1,4 @@
 as yet unclassified
 templateAllAtOnce
 
-	^ (14 to: 33) -> '[:in :out | ([:objects | objects]
-	value: in) do: [:result |
-		(ViQueryInterpreter isCollection: result)
-			ifTrue: [out addAll: result]
-			ifFalse: [out add: result]]]'
+	^ (26 to: 45) -> '[:in :out | out addAll: ([:objects | objects] value: in)]'

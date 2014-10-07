@@ -5,11 +5,11 @@ editors: someContainers
 	| oldContainersToClose |
 	oldContainersToClose := self editors reject: [:c | ((someContainers includes: c) or: [c hasUnacceptedChanges]) or: [c object isNil]].
 
-	someContainers size > 4 ifTrue: [| i |
+	someContainers size > 10 ifTrue: [| i |
 		i := 0.
 		someContainers do: [:c | (self editors includes: c) ifFalse: [
 			i := i + 1.
-			i > 4 ifTrue: [c collapse]]]].
+			i > 10 ifTrue: [c collapse]]]].
 	
 	self
 		addAllMorphs: someContainers

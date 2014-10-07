@@ -1,7 +1,9 @@
 as yet unclassified
 selectBlockStatements
 
-	(RBParser parseExpression: edit theText asString)
+	(RBParser
+		parseExpression: edit theText asString
+		onError: [:msg :i | edit select: (1 to: 0). ^ self])
 		in: [:node | node isBlock
 			ifFalse: [^ self]
 			ifTrue: [(node children

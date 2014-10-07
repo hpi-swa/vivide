@@ -12,5 +12,7 @@ definitionSourceCodeChanged: aStepDefinition from: oldCode to: newCode
 		ifFalse: [self trigger: ((ViModifiedStepDefinitionEvent
 			item: aStepDefinition kind: (aStepDefinition isUpdateDefinition
 				ifTrue: [self class updateDefinitionKind]
-				ifFalse: [self class viewDefinitionKind]))
-					oldItem: {oldCode})].
+				ifFalse: [aStepDefinition isViewDefinition
+					ifTrue: [self class viewDefinitionKind]
+					ifFalse: [self class definitionKind "generic, for new-style scripts"]]))
+						oldItem: {oldCode})].

@@ -6,5 +6,5 @@ goUpToTop
 	
 	cursor := edit cursorPosition + self scriptPointer first - 1.
 	
-	self scriptPointer: nil.
+	self scriptPointer: (1 to: self script size).
 	edit select: (cursor to: cursor - 1).
