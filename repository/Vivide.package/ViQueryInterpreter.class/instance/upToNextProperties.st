@@ -2,7 +2,7 @@ interpreting
 upToNextProperties
 	
 	numProperties := 0.
-	properties := IdentityDictionary new.
+	properties := Dictionary new.
 	
 	[step isNil or: [(step isPropertyStep not and: [(step isScript and: [step isPropertyExtraction]) not])
 		and: [numProperties > 0]]]

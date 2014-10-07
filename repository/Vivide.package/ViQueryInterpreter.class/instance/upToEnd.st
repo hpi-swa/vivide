@@ -4,7 +4,7 @@ upToEnd
 	| previousSteps |
 	previousSteps := OrderedCollection new.
 	numProperties := 0.
-	properties := IdentityDictionary new.
+	properties := Dictionary new.
 	
 	[step isNil or: [previousSteps includes: step]]
 		whileFalse: [

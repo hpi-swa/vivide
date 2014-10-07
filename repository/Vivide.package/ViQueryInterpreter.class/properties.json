@@ -12,7 +12,8 @@
 		"stack",
 		"step",
 		"numProperties",
-		"properties" ],
+		"properties",
+		"modelClass" ],
 	"name" : "ViQueryInterpreter",
 	"pools" : [
 		 ],

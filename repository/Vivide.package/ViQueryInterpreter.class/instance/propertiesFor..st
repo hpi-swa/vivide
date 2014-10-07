@@ -1,4 +1,4 @@
 accessing - convenience
 propertiesFor: anObject
 
-	^ properties at: anObject
+	^ self propertiesFor: anObject ifNone: []

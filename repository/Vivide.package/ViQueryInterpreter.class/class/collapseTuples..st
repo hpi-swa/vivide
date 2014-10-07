@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 collapseTuples: someTuples
 	"Merge (a, b, c) and (a, d, e) to (a, ((b, c), (d, e)))"
 	

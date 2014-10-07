@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 divisionOfTuples: someTuples
 	"Merge same objects. Undo operation for #productOfCollections."
 	

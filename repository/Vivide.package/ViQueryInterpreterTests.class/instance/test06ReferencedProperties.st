@@ -14,4 +14,4 @@ test06ReferencedProperties
 
 	self
 		assert: ref isHomogeneous not;
-		assert: 2 equals: (sut propertiesFor: 16 "4*4") size.
+		assert: 6 equals: (sut propertiesFor: 16 "4*4") size.

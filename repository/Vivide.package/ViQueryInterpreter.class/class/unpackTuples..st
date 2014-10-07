@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 unpackTuples: packedTuples
 
 	| result |

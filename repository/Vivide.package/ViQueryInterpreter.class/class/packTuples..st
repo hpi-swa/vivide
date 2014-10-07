@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 packTuples: someTuples
 	"Like #collapseTuples but only for runs. Keeps sort order"
 

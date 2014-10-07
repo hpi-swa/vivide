@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 isCollection: anObject
 
 	^ (((anObject isCollection

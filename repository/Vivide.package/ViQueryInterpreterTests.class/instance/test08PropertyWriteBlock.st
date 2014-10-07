@@ -8,7 +8,7 @@ test08PropertyWriteBlock
 	sut := ViQueryInterpreter on: (ViQueryStep use: {m} in: q).
 	sut upToNextProperties.
 	
-	b := sut properties values first "props" values first "block".
+	b := sut properties values first first first first value.
 	
 	b value: Color yellow value: true.
 	self assert: m color = Color yellow.

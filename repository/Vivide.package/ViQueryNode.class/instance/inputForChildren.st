@@ -1,16 +1,9 @@
 as yet unclassified
 inputForChildren
-	"Objects that should internally be used for computing the next children."
+	"Choose tuple or single object. See how interpreter creates nodes."
 
-	(self keys includes: #objects)
-		ifTrue: [^ self at: #objects].
-	
-	self firstStep isScript
-		ifTrue: [^ self at: #object].
-	
-	^ (self keys
-		select: [:key | key endsWith: '_object'] "do not fetch duplicate #object because it is #1_object"
-		thenCollect: [:objectKey | self at: objectKey]) in: [:objects |
-			objects size = 1 "no 1-tuples allowed"
-				ifTrue: [objects first]
-				ifFalse: [objects]]
+	^ self
+		at: #objects
+		ifAbsent: [self
+			at: #object
+			ifAbsent: [nil]]

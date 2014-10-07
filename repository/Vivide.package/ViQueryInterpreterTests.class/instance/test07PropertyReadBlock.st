@@ -8,7 +8,8 @@ test07PropertyReadBlock
 	sut := ViQueryInterpreter on: (ViQueryStep use: {m} in: q).
 	sut upToNextProperties.
 	
-	b := sut properties values first "props" values first "block".
+	self flag: #ugly. "mt: Refactor!"
+	b := sut properties values first first first first value.
 	
 	m color: Color yellow.
 	self assert: b value = Color yellow.

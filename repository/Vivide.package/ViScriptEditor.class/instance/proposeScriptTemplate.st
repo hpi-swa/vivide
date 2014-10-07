@@ -27,9 +27,7 @@ proposeScriptTemplate
 						properties at: #isProperty put: true.
 						
 						node arguments size = 0
-							ifTrue: [
-								template := self class templateSelf.
-								properties at: #selfReferential put: true]
+							ifTrue: [template := self class templateWrapper]
 							ifFalse: [
 								(node children last "sequence" children first isMessage "->")
 									ifTrue: [template := node arguments size = 1

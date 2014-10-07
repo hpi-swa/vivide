@@ -1,4 +1,4 @@
-as yet unclassified
+collection handling
 expandTuples: someCollapsedTuples
 	"Reverse operation to #collapseTuples:."
 	

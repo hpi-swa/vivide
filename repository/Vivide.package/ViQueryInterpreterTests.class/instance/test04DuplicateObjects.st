@@ -10,4 +10,4 @@ test04DuplicateObjects
 	sut := ViQueryInterpreter on: q1.
 	
 	sut upToNextProperties.
-	self assert: 1 equals: (sut propertiesFor: 1) size.
+	self assert: 4 equals: (sut createNodesForGroup: #all) size.

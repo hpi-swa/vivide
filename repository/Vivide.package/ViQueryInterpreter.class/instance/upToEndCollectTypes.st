@@ -5,7 +5,7 @@ upToEndCollectTypes
 		ifTrue: [Error signal: 'This query is cyclic! Cannot interpret up to end.'].
 
 	numProperties := 0.
-	properties := IdentityDictionary new.
+	properties := OrderedCollection new.
 
 	[step isNil] whileFalse: [
 		step in: [:prevStep |

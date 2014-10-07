@@ -2,7 +2,7 @@ interpreting
 upToStep: aQueryStep
 
 	numProperties := 0.
-	properties := IdentityDictionary new.
+	properties := Dictionary new.
 	
 	[step isNil or: [step == aQueryStep]] whileFalse: [self next].
 	
