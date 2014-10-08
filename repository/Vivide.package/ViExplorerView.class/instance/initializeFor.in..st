@@ -9,8 +9,11 @@ initializeFor: aScript in: anEnvironment
 	self initializeForContainerClass: ViObjectEditor. 
 
 	self setupBlock: [:model :container |
-		model nodes
+		model objects
 			ifEmpty: [container object: nil]
-			ifNotEmpty: [:nodes | container object: (nodes first at: #object)	]].
+			ifNotEmpty: [:objects | 
+				objects size = 1
+					ifTrue: [container object: objects first]
+					ifFalse: [container object: objects]]].
 
 	self connect: self container contentTree signal: #selectionChanged: toSelector: #selectObjects:.

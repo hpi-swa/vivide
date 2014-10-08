@@ -10,4 +10,6 @@ objects: someObjects from: aPane
 		ifFalse: [self providersForSelections size + (self providersForResults indexOf: aPane)].
 	
 	self objects at: index put: someObjects.
+	
+	self flag: #performance. "mt: Deferred evaluation?"
 	self objects: self objects.

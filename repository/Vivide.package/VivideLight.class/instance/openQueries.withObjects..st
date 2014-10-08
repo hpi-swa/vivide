@@ -3,9 +3,7 @@ openQueries: someQueries withObjects: someObjects
 
 	| input wnd hasOutputPage |
 	hasOutputPage := false.
-	input := (someObjects size > 1
-		ifFalse: [someObjects]
-		ifTrue: [{someObjects} "Do not expand."]).
+	input := someObjects.
 	
 	self flag: #badWindowHeight. "mt: We should  set the window height AFTER opening all chained windows."
 	wnd := ViMultiPaneEditor new openInWindow.
