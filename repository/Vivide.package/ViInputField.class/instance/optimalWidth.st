@@ -1,4 +1,4 @@
-as yet unclassified
+geometry
 optimalWidth
 
 	^ self submorphs first optimalWidth

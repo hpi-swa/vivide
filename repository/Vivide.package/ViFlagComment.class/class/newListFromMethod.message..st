@@ -3,7 +3,7 @@ newListFromMethod: aCompiledMethod message: aSymbol
 
 	| methodNode treeSearcher flagNodes |
 	flagNodes := OrderedCollection new.
-	methodNode := RBParser parseMethod: aCompiledMethod getSource asString.
+	methodNode := RBParser parseMethod: aCompiledMethod getSource asString onError: [:msg :idx | ^ #()].
 	treeSearcher := RBParseTreeSearcher new.
 	treeSearcher matches: '``@rcv `@msg: ``@args' do: [:node :answer |
 		node selector == aSymbol ifTrue: [answer add: node]. answer].

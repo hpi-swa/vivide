@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 addCommandForSnippet: snippet
 
 	^ self executeCommandForSnippet: snippet

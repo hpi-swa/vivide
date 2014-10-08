@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 connectModel
 
 	self model ifNotNil: [:m |

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 lineEdit
 
 	^ self submorphs first

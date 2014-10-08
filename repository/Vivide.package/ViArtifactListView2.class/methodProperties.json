@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"defaultViewId" : "mt 10/8/2014 10:29:09.901" },
 	"instance" : {
 		"acceptChanges" : "mt 4/24/2014 08:35:42.244",
 		"addArtifact:" : "mt 4/24/2014 08:35:42.553",
@@ -37,7 +37,7 @@
 		"onMethodChange:" : "mt 4/24/2014 08:35:46.568",
 		"onObjectChange:" : "mt 4/24/2014 08:35:48.146",
 		"onObjectsChanged" : "mt 5/13/2014 14:24:17.662",
-		"onSelectionChanged:" : "mt 5/7/2014 11:26:53.011",
+		"onSelectionChanged:" : "mt 10/8/2014 10:30:34.233",
 		"openArtifact:" : "mt 4/25/2014 08:17:25.838",
 		"optimalHeight" : "mt 5/6/2014 11:28:15.798",
 		"optimalWidth" : "mt 4/24/2014 08:35:47.828",

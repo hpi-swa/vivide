@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViTilePlainView",
+	"pools" : [
+		 ],
+	"super" : "ViTileView",
+	"type" : "normal" }

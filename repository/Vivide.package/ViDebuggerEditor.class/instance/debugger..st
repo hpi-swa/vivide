@@ -10,6 +10,7 @@ debugger: aDebugger
 	debugger := aDebugger.
 
 	debugger ifNotNil: [:dbg |
+		dbg fullyExpandStack.
 		dbg addDependent: self.
 		self
 			update: #relabel;

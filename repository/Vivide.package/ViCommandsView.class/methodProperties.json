@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"defaultViewId" : "mt 10/8/2014 11:40:57.232" },
 	"instance" : {
 		"addCommandForSnippet:" : "mt 6/23/2014 09:23:58.19",
 		"executeCommand:" : "mt 6/23/2014 09:27:00.398",
@@ -10,5 +10,4 @@
 		"model" : "mt 6/23/2014 08:49:26.297",
 		"model:" : "mt 6/23/2014 09:05:20.48",
 		"reset" : "mt 6/23/2014 08:52:11.948",
-		"selectedNodes" : "mt 6/23/2014 08:48:39.257",
 		"visibleNodes" : "mt 6/23/2014 08:48:44.225" } }

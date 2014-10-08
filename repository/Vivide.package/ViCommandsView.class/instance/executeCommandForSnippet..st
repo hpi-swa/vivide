@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 executeCommandForSnippet: snippet
 
 	self executeCommand: (ViQueryCommand new

@@ -5,6 +5,9 @@ doCompiledMethod: aMethod
 	label := aMethod selector.
 	
 	aMethod methodClass isMeta ifTrue: [label := '<u>', label,'</u>'].
-	aMethod isTraitMethod ifTrue: [label := '<i>', label, '</i>'].
+	aMethod isTraitMethod ifTrue: [
+		aMethod methodHome isClassTrait
+			ifTrue: [label := '<u>', label, '</u>'].
+		label := '<font color="#3c7113">', label, '</font>'].
 	
 	^ label

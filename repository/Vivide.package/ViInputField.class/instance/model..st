@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 model: queryNode
 
 	model ifNotNil: [

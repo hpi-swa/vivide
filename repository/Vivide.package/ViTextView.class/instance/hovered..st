@@ -1,4 +1,4 @@
-as yet unclassified
+signals
 hovered: object
 
 	self emit.

@@ -1,12 +1,9 @@
 {
 	"class" : {
-		"newLineEdit" : "mt 6/23/2014 10:16:31.702",
-		"newTextEdit" : "mt 6/23/2014 10:16:41.521" },
+		 },
 	"instance" : {
 		"acceptChanges" : "mt 6/24/2014 18:39:13.031",
 		"initialize" : "mt 6/23/2014 10:23:49.073",
-		"initializeLineEdit" : "mt 6/23/2014 10:25:15.744",
-		"initializeTextEdit" : "mt 6/23/2014 10:25:29.285",
 		"lineEdit" : "mt 5/21/2014 16:07:54.197",
 		"model" : "mt 5/21/2014 16:10:28.812",
 		"model:" : "mt 5/21/2014 17:41:24.304",
@@ -14,6 +11,5 @@
 		"optimalWidth" : "mt 6/23/2014 13:04:06.877",
 		"reset" : "mt 5/21/2014 17:54:10.736",
 		"selectedNodes" : "mt 6/18/2014 13:39:05.632",
-		"selectionChanged:" : "mt 6/18/2014 13:41:09.843",
 		"textEdit" : "mt 6/23/2014 10:16:17.973",
 		"visibleNodes" : "mt 6/18/2014 13:39:00.19" } }

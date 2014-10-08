@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 model: anItemModel
 
 "	anItemModel ifNil: [self halt]."

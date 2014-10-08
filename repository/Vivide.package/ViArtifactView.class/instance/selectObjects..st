@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 selectObjects: someObjects
 	"Explicit selection  mechansim."
 	

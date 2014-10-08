@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 disconnectModel
 
 	self model ifNotNil: [:m |

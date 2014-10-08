@@ -1,4 +1,4 @@
-accessing
+initialization
 model: anObject
 
 	model ifNotNil: [:m |

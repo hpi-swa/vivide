@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 removeAllColumns
 	"Compliance with UiAbstractItemView API."
 	

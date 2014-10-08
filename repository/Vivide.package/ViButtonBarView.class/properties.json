@@ -2,6 +2,7 @@
 	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TViObjectView classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -12,4 +13,5 @@
 	"pools" : [
 		 ],
 	"super" : "Morph",
+	"traitcomposition" : "TViObjectView",
 	"type" : "normal" }

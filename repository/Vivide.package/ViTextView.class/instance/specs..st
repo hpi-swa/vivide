@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 specs: someSpecs
 
 	specs := someSpecs.

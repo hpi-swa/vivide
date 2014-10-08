@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViWorkspaceView",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactView",
+	"type" : "normal" }

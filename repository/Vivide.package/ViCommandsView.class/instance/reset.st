@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 reset
 
 	self model ifNil: [^ self].

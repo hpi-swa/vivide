@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 executeCommand: aQueryCommand
 
 	self model ifNil: [^ self].

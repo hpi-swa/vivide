@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"createFor:orUpdate:in:" : "mt 10/8/2014 09:05:10.163",
+		"defaultViewId" : "mt 10/8/2014 08:52:30.035" },
+	"instance" : {
+		"connectModel" : "mt 10/8/2014 09:11:27.645",
+		"disconnectModel" : "mt 10/8/2014 09:11:04.363",
+		"doubleClicked:" : "mt 10/8/2014 13:29:02.744",
+		"initializeFor:in:" : "mt 10/8/2014 08:53:36.675",
+		"model" : "mt 10/8/2014 09:10:46.855",
+		"model:" : "mt 10/8/2014 09:10:25.511",
+		"nodeForObject:" : "mt 10/8/2014 09:23:43.405",
+		"nodesForObjects:" : "mt 10/8/2014 09:22:18.053",
+		"openNode:" : "mt 10/8/2014 09:21:01.16",
+		"optimalHeight" : "mt 10/8/2014 08:45:05.26",
+		"optimalWidth" : "mt 10/8/2014 08:45:11.489",
+		"reset" : "mt 10/8/2014 09:12:19.037",
+		"selectedNodes" : "mt 10/8/2014 09:15:30.317",
+		"selectionChanged:" : "mt 10/8/2014 08:43:33.831",
+		"updateFor:in:" : "mt 10/8/2014 09:06:00.945",
+		"visibleNodes" : "mt 10/8/2014 09:15:32.636" } }

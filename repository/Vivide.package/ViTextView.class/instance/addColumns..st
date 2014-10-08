@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 addColumns: specs
 	"Compliance with UiAbstractItemView API."
 

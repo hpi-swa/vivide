@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 setupBlock: aBlock
 	"Setup the container with the given model."
 	

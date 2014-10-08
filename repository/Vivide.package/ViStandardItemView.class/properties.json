@@ -2,7 +2,7 @@
 	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViOverlayMessages classTrait",
+	"classtraitcomposition" : "TViOverlayMessages classTrait + TViObjectView classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
@@ -19,5 +19,5 @@
 	"pools" : [
 		 ],
 	"super" : "Morph",
-	"traitcomposition" : "TViOverlayMessages",
+	"traitcomposition" : "TViOverlayMessages + TViObjectView",
 	"type" : "normal" }

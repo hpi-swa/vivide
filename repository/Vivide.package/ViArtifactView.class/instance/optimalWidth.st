@@ -1,4 +1,4 @@
-as yet unclassified
+geometry
 optimalWidth
 
 	^ self container optimalWidth
