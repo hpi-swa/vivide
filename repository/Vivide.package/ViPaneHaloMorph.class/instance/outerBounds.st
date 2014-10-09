@@ -1,4 +1,4 @@
-as yet unclassified
+geometry
 outerBounds
 
 	| box |
@@ -10,7 +10,7 @@ outerBounds
 	
 	self listeningPanesForSelections,
 	self listeningPanesForResults,
-	self listenToPanesForSelections,
-	self listenToPanesForResults do: [:m |
+	self providingPanesForSelections,
+	self providingPanesForResults do: [:m |
 		box := box quickMerge: m bounds].
 	^ box

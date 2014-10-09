@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 startDrag: evt with: dragHandle
 
 	evt hand obtainHalo: self.

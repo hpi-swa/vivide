@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 startGrow: evt with: growHandle
 	"Initialize resizing of my target.  Launch a command representing it, to support Undo"
 

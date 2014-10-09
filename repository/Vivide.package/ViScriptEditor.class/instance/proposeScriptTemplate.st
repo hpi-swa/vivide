@@ -1,4 +1,4 @@
-as yet unclassified
+actions - editing
 proposeScriptTemplate
 
 	| code node template properties tmp |

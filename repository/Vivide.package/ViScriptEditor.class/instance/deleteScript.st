@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 deleteScript
 
 	self object isRegistered

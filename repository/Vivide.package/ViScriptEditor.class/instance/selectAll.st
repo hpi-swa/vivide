@@ -1,4 +1,4 @@
-as yet unclassified
+actions - navigation
 selectAll
 
 	edit selection size > 1

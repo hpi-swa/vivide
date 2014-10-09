@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 propertiesFromList: dict
 
 	| propertiesToSkip propertiesToRemove propertiesToSet |

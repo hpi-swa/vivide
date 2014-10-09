@@ -1,4 +1,4 @@
-as yet unclassified
+handles - construction
 createHandleButton: spec
 
 	^ UiToolButton new

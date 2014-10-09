@@ -1,8 +1,8 @@
-as yet unclassified
+handles
 addFanInHandles
 
 	| box buttons |
-	buttons := self listenToPanesForSelections collect: [:p |
+	buttons := self providingPanesForSelections collect: [:p |
 		UiToolButton new
 			color: self fanInColor;
 			autoRaise: false;
@@ -14,7 +14,7 @@ addFanInHandles
 				ifNotNil: [:q | q nextLabel]);
 			setProperty: #paneIn toValue: p;
 			yourself].
-	buttons := buttons, (self listenToPanesForResults collect: [:p |
+	buttons := buttons, (self providingPanesForResults collect: [:p |
 		UiToolButton new
 			color: self fanInColor;
 			autoRaise: false;

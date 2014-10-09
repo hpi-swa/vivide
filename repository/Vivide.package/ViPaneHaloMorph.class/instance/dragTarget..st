@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 dragTarget: event
 
 "	| thePoint |

@@ -1,4 +1,4 @@
-as yet unclassified
+handles
 addHandles
 
 	self removeAllMorphs.

@@ -1,4 +1,4 @@
-as yet unclassified
+templates
 templateProperty
 
 	^ (55 to: 90) -> '[:in :out | ([:all | all collect: [:o |

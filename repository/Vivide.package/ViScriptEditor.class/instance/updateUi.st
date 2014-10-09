@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateUi
 
 	(self object valueOfProperty: #isProperty) == true

@@ -1,4 +1,4 @@
-as yet unclassified
+events-processing
 containsPoint: aPoint event: anEvent
 	"Blue buttons are handled by the halo"
 	(anEvent isMouse and:[anEvent isMouseDown and:[anEvent blueButtonPressed]])

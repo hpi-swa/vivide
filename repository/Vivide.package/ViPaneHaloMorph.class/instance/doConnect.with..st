@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 doConnect: event with: connectHandle
 
 	event hand obtainHalo: self.

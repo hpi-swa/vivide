@@ -1,4 +1,4 @@
-as yet unclassified
+submorphs-add/remove
 delete
 
 	target ifNotNil: [:morph | morph hasHalo: false].

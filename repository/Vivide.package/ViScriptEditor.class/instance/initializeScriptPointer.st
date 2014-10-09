@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeScriptPointer
 	"Find out where to start editing the script."
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 addConnection: event with: connectHandle
 
 	self redrawLater.

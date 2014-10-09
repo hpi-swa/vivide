@@ -1,4 +1,4 @@
-as yet unclassified
+actions - editing
 activateWizard
 	"Ignore current source code and propose simple mapping."
 

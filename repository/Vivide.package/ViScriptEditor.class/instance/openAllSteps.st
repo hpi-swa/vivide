@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 openAllSteps
 
 	self object allStepsDo: [:s |

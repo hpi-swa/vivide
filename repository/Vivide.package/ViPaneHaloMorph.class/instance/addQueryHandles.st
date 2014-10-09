@@ -1,4 +1,4 @@
-as yet unclassified
+handles
 addQueryHandles
 
 	| buttons box |

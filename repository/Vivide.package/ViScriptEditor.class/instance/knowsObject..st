@@ -1,4 +1,4 @@
-as yet unclassified
+testing - object
 knowsObject: anObject
 
 	((anObject isKindOf: ViQueryStep) and: [anObject next == self object])

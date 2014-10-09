@@ -1,4 +1,4 @@
-as yet unclassified
+actions - navigation
 goDown
 
 	| node cursor result |

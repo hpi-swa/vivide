@@ -1,4 +1,4 @@
-as yet unclassified
+listening
 listenForSelectionsFrom: pane
 
 	(WeakMessageSend receiver: self selector: #outgoingObjects:from:) in: [:msg |

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 script: aString
 	"Reset the whole script to be edited."
 

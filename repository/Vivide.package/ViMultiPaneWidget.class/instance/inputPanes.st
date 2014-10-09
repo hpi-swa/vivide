@@ -1,4 +1,4 @@
-as yet unclassified
+listening
 inputPanes
 
 	^ inputPanes ifNil: [inputPanes := OrderedCollection new]

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 scriptPointer
 	"Indicate which block is currently visible."
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+actions - navigation
 goUp
 
 	| node cursor result previousResult |

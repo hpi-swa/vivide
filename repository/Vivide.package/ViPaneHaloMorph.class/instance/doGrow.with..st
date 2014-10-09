@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 doGrow: evt with: growHandle
 	"Called while the mouse is down in the grow handle"
 

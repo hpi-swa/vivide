@@ -1,4 +1,4 @@
-as yet unclassified
+templates
 templateTuplesProperties
 
 	^ (44 to: 94) -> '[:in :out | ([:all | all collect: [:t | (

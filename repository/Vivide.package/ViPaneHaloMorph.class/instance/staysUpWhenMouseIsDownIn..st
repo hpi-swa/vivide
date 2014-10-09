@@ -1,4 +1,4 @@
-as yet unclassified
+events
 staysUpWhenMouseIsDownIn: aMorph
 
 	^ ((aMorph == target) or: [aMorph hasOwner: self])

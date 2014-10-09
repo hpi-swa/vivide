@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - object
 context: someObjects
 
 	context := someObjects.

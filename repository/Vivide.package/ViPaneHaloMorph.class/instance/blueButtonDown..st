@@ -1,4 +1,4 @@
-as yet unclassified
+meta-actions
 blueButtonDown: event
 	"Transfer the halo to the next likely recipient"
 	target ifNil:[^self delete].

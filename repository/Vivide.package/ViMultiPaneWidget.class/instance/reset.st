@@ -3,7 +3,11 @@ reset
 	
 	self model ifNil: [^ self].
 
+	"Clear."
 	inputPanes := nil.
+	self panes do: [:p |
+		p providersForSelections removeAll.
+		p listenersForSelections removeAll].
 
 	self paneSpecs do: [:spec |
 		(self panes
