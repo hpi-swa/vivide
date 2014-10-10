@@ -14,4 +14,4 @@ test26CopyQuery
 		assert: copy1 ~~ q1;
 		assert: q1 id ~= copy1 id;
 		assert: q1 definition == copy1 definition;
-		assert: (copy1 valueOfProperty: #copyOfStep) equals: q1 id.
+		assert: (copy1 valueOfProperty: #copyOf) equals: q1 id.

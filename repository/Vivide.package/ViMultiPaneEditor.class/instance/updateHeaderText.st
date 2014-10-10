@@ -5,7 +5,7 @@ updateHeaderText
 	newHeader := ((self panes sorted: [:p1 :p2 | p1 topLeft <= p2 topLeft])
 		select: [:pane | pane currentQuery notNil])
 		inject: ''
-		into: [:header :pane | header, (pane currentQuery nextLabel ifNil: [pane currentQuery definition sourceCode]) asString, ' > '].
+		into: [:header :pane | header, (ViLabelService doObject: pane currentQuery) asString, ' > '].
 	newHeader := newHeader ifNotEmpty: [:txt | txt allButLast: 3] ifEmpty: [''].
 	
 	text := ''.

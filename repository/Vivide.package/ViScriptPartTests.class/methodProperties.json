@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"test01CopyWithDefinition" : "mt 10/10/2014 11:20:36.304",
+		"test02TemplateDetection" : "mt 10/10/2014 11:42:26.479",
+		"test03SourceCodeShort" : "mt 10/10/2014 12:03:08.249",
+		"test04TempNames" : "mt 10/10/2014 12:02:34.518" } }
