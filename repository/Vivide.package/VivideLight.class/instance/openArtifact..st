@@ -21,4 +21,6 @@ openArtifact: anObject
 	(object isKindOf: ViEditorState) ifTrue: [
 		^ self openEditor: object].
 
-	^ ViMultiPaneEditor open: #artifacts for: {object}
+	^ ViMultiPaneEditor open: #artifacts for: ((ViQueryInterpreter isCollection: object)
+		ifTrue: [object]
+		ifFalse: [{object}])

@@ -12,7 +12,8 @@
 		"scriptPointer",
 		"shouldPropose",
 		"context",
-		"otherSteps" ],
+		"otherSteps",
+		"inputKind" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

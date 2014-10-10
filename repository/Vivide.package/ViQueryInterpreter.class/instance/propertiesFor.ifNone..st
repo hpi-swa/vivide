@@ -7,7 +7,7 @@ propertiesFor: anObject ifNone: block
 		ifNone: [^ block value].
 	objectIndex := (self objects at: group) indexOf: anObject.
 		  
-	(self properties at: group) in: [:chunks |
+	(self properties at: group ifAbsent: [^ block value]) in: [:chunks |
 		| result |
 		result := Dictionary new.
 		chunks withIndexDo: [:chunk :propertyIndex |
