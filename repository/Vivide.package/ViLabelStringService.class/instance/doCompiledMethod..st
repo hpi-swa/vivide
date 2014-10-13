@@ -2,8 +2,8 @@ operations
 doCompiledMethod: aMethod
 	
 	| label |
-	label := aMethod selector.
-	
+	label := aMethod selector escapeHtmlText.
+		
 	aMethod methodClass isMeta ifTrue: [label := '<u>', label,'</u>'].
 	aMethod isTraitMethod ifTrue: [
 		aMethod methodHome isClassTrait
