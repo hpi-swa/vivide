@@ -5,7 +5,8 @@ initializeArtifact
 		hResizing: #spaceFill;
 		outerBorderWidth: 0;
 		scrollingMode: #limit;
-		autoCreateArtifacts: true.
+		autoCreateArtifacts: true;
+		margins: (5@0 corner: 0@10).
 	edit eventHandler grabKeyboardOnMouseEnter: true.
 		
 	self connect: edit signal: #editingFinished: toSelector: #acceptSourceCode.

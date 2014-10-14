@@ -13,7 +13,8 @@
 		"shouldPropose",
 		"context",
 		"otherSteps",
-		"inputKind" ],
+		"inputKind",
+		"map" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

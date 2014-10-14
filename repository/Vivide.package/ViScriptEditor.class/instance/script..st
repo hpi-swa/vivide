@@ -4,4 +4,8 @@ script: aString
 
 	script := aString.
 	scriptPointer := nil. "Reset"
+	(RBParser parseExpression: script) in: [:n |
+		self
+			updateMapFor: n;
+			updateMapIndex: n].   
 	self updateSourceCode.

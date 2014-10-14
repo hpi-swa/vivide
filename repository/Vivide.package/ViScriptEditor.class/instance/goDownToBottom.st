@@ -18,3 +18,4 @@ goDownToBottom
 
 	self scriptPointer: result sourceInterval.
 	edit select: ((cursor - result start + 1) to: (cursor - result start)).
+	self mapIndex: self map size.

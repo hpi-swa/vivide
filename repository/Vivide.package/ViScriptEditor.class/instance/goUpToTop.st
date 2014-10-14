@@ -8,3 +8,4 @@ goUpToTop
 	
 	self scriptPointer: (1 to: self script size).
 	edit select: (cursor to: cursor - 1).
+	self mapIndex: 1.

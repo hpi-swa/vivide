@@ -4,7 +4,7 @@ initializeToolbarObjects
 	super initializeToolbarObjects.
 
 	self toolbar leftPanel
-		addGroup: #steps
+		addGroup: #parts
 		icon: UiSilkIcons folderIcon
 		contents: [:editor | editor object ifNil: [#()] ifNotNil: [:s |
 				s allSteps]]

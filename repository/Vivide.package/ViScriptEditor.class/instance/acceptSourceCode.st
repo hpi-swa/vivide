@@ -25,6 +25,10 @@ acceptSourceCode
 	"Store new code and adjust script pointer."	
 	script := (self script first: self scriptPointer first -1), code, (self script last: self script size - self scriptPointer last).
 	scriptPointer := self scriptPointer first to: self scriptPointer first + code size - 1.
+	(RBParser parseExpression: script) in: [:n |
+		self
+			updateMapFor: n;
+			updateMapIndex: n].   
 	
 	"Update visuals if code was fixed automatically."
 	code size ~= edit theText size
