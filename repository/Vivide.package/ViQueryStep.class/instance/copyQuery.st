@@ -13,7 +13,7 @@ copyQuery
 				lastStep := lastStep next]]
 		ifCyclic: [:repeatedStep |
 			newQuery stepsDo: [:newStep |
-				(newStep valueOfProperty: #copyOfStep) = repeatedStep id
+				(newStep valueOfProperty: #copyOf) = repeatedStep id
 					ifTrue: [lastStep next: newStep. ^ newQuery]].
 			self error: 'Repeated step not found in copy!'].
 	

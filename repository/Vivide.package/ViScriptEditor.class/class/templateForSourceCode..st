@@ -10,7 +10,7 @@ templateForSourceCode: code
 		onError: [:msg :idx | ^ template -> properties].
 
 	(node sentMessages anySatisfy: [:msg |
-		#(collect select gather reject reduce inject asGroups) anySatisfy: [:verb |  
+		#(collect select gather reject reduce inject asGroups sort sorted sortBy) anySatisfy: [:verb |  
 			msg includesSubstring: verb caseSensitive: false]]) ifTrue: [
 			template := self templateAllAtOnce].
 	
@@ -25,7 +25,7 @@ templateForSourceCode: code
 				and: [child receiver isLiteral])
 				"and: [#(text icon color morph icon) includes: child receiver value]"])
 					ifTrue: [ "So we have an association with suspicious keys..."
-						properties at: #modelClass put: ViQueryNode. "Skip default?"
+						"properties at: #modelClass put: ViQueryNode." "Skip default?"
 						properties at: #isProperty put: true.
 						
 						node arguments size = 0

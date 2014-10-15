@@ -6,7 +6,7 @@ addArtifact
 	editor object: (ViScriptPart new sourceCode: '[:in :out | out addAll: in]').
 	
 	"Try to determine the kind of objects that are put into."
-	self interpretUpToSelf allObjects ifNotEmpty: [:objects |
+	([self interpretUpToSelf allObjects] on: Error do: [#()]) ifNotEmpty: [:objects |
 		(ViQueryStepDefinition collectBaseClassesForContext: objects) in: [:tmp |
 			editor inputKind: (tmp first isBehavior
 				ifTrue: [{tmp first}]

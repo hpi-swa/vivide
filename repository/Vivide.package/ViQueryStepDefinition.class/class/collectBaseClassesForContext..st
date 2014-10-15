@@ -8,6 +8,8 @@ collectBaseClassesForContext: someObjects
 		ifTrue: ["Treat all objects as same tuple size."
 			| result |
 			result := Array new: someObjects first size.
+			(someObjects allSatisfy: [:array | array size = someObjects first size])
+				ifFalse: [^ {Array}].
 			1 to: result size do: [:index |
 				result
 					at: index

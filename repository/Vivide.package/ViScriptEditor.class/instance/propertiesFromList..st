@@ -15,6 +15,7 @@ propertiesFromList: dict
 	"Overwrite properties."
 	propertiesToSet do: [:property |
 		((self propertiesToIgnore at: property ifAbsent: [#()]) includes: (dict at: property))
+			ifTrue: [self object setProperty: property toValue: nil "remove defaults"]
 			ifFalse: [self object setProperty: property toValue: (dict at: property)]].
 
 	"Update visuals."

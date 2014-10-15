@@ -1,8 +1,14 @@
 as yet unclassified
 mapIndex: index
-	"Update the current position in the map."
 
-	(self map indexOf: #current) in: [:oldIndex |
-		oldIndex > 0 ifTrue: [self map at: oldIndex put: #default]].
-	self map at: index put: #current.
+	mapIndex := index.
+	
+	self isCollapsed ifTrue: [^ self].
+	self layoutPolicy ifNil: [^ self].
+	
+	self layoutPolicy margins: (
+		(index - 1) * 2 "px" @ ((index - 1) * 4 "px" + (index > 2 ifTrue: [13] ifFalse: [index = 2 ifTrue: [8] ifFalse: [0]]))
+			corner: 0@0).
+	self layoutChanged.
+	
 	self redrawLater.

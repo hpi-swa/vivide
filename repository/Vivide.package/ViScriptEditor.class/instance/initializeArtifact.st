@@ -6,7 +6,7 @@ initializeArtifact
 		outerBorderWidth: 0;
 		scrollingMode: #limit;
 		autoCreateArtifacts: true;
-		margins: (5@0 corner: 0@10).
+		margins: (1@0 corner: 0@1).
 	edit eventHandler grabKeyboardOnMouseEnter: true.
 		
 	self connect: edit signal: #editingFinished: toSelector: #acceptSourceCode.

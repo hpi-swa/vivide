@@ -10,6 +10,8 @@ propertiesToIgnore
 		#modelClass -> {ViQueryNode}.
 		#creationAuthor -> nil. "skipped/preserved"
 		#creationTimeStamp -> nil. "skipped/preserved"
+		#copyOf -> nil. "skipped/preserved"
 		#inputKind -> {Object}.
 		#outputKind -> {Object}.
+		#isProperty -> {false}.
 		}

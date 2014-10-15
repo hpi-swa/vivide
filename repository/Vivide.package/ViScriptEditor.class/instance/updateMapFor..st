@@ -5,6 +5,12 @@ updateMapFor: node
 	deepest := self class detectDeepestBlockNode: node.
 	deepest ifNil: [map := nil. ^ self].
 	
-	count := (deepest parents count: [:n | n isBlock]) + 1. "root"
-	map := Array new: count withAll: #default.
-	self redrawLater.
+	map := {node}, (deepest parents select: [:n | n isBlock]),  {nil}
+		overlappingPairsCollect: [:n :x | n isMessage "properies"
+			ifFalse: [(n argumentNames inject: '' into: [:s :e | s, ' :', e]),
+				(x ifNil: [''] ifNotNil: [' (', x parent selector escapeHtmlText,')'])
+				]
+			ifTrue: [(self propertyNamesFrom: n arguments first)
+				inject: '' into: [:s :e | s, ' ', e]]].
+	
+"	self redrawLater."

@@ -11,5 +11,5 @@ activateWizard
 			'[{1}| "Type code here..."]' format: {
 				classes inject: '' into: [:pattern :cls | | count |
 					count := classCount at: cls put: (classCount at: cls ifAbsent: [0]) + 1.
-					pattern := pattern, ':', cls name withFirstCharacterDownshifted, (count > 1 ifFalse: [''] ifTrue: [count asString]),' ']}]).
+					pattern := pattern, ':', ((cls name findTokens: ' ') reduce: [:a :b | a, b withFirstCharacterUppercase]) withFirstCharacterDownshifted, (count > 1 ifFalse: [''] ifTrue: [count asString]),' ']}]).
 	self selectBlockStatements.

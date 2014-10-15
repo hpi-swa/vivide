@@ -14,7 +14,8 @@
 		"context",
 		"otherSteps",
 		"inputKind",
-		"map" ],
+		"map",
+		"mapIndex" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

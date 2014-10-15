@@ -9,4 +9,4 @@ debugQuery: aQuery
 		ifTrue: [self objects]
 		ifFalse: [self objects ifNotEmpty: [{self objects}] ifEmpty: [#()]].
 		
-	ViMultiPaneEditor open: #artifacts for: {input}, aQuery steps.
+	ViMultiPaneEditor open: #artifacts for: (input ifEmpty: [{}] ifNotEmpty: [{input}]), aQuery steps.
