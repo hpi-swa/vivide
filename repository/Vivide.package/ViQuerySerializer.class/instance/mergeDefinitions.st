@@ -5,8 +5,9 @@ mergeDefinitions
 		select: [:symbol | ((archive compiledMethodAt: symbol) pragmaAt: #definition) notNil]
 		thenDo: [:selector | | category |
 			category := archive organization categoryOfElement: selector.
-			(category beginsWith: #*) ifTrue: [
-				category := category allButFirst allButLast: 12]. "Example: *widgets-definitions"
+			(category beginsWith: #*)
+				ifFalse: [category := nil]
+				ifTrue: [category := category allButFirst allButLast: 12]. "Example: *widgets-definitions"
 		(archive theNonMetaClass perform: selector) in: [:spec |
 			((organizer definitionById: (spec at: #id))
 				ifNil: [(spec at: #class) new id: (spec at: #id); organization: organizer; register]
