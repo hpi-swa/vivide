@@ -14,4 +14,5 @@ propertiesToIgnore
 		#inputKind -> {Object}.
 		#outputKind -> {Object}.
 		#isProperty -> {false}.
+		#view -> {ViTreePlainView}.
 		}

@@ -10,7 +10,7 @@ proposeScriptTemplate
 		properties at: key put: value].  
 
 	"New pointer."
-	script := spec key value, String cr, '-> ', (self propertiesToStringFrom: properties).
+	script := spec key value, String cr, '-> ', (self propertiesToStringFrom: properties associations, self specialProperties).
 	scriptPointer := spec key key ifNil: [1 to: script size].
 	
 	shouldPropose := false.

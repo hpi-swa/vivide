@@ -18,7 +18,7 @@ drawMapOn: aCanvas
 			
 		i = 1
 			ifTrue: [
-				('<font size="9" color="#52B637">', ((self map at: i) ifEmpty: [' ']), '</font>')
+				('<font size="9" color="#000000">', ((self map at: i) ifEmpty: [' ']), '</font>')
 					asHtmlText asMorph topLeft: offset + (3 @ -10); drawOn: aCanvas.
 				offsetArguments := offsetArguments + (5@0)]
 			ifFalse: [

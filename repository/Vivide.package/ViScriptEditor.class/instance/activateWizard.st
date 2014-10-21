@@ -2,14 +2,10 @@ actions - editing
 activateWizard
 	"Ignore current source code and propose simple mapping."
 
-	| classCount |
-	classCount := Dictionary new.
 	shouldPropose := true.
+	self updateInputKind.
 	self script: (self inputKind
 		ifEmpty: ['["Type code here..."]']
-		ifNotEmpty: [:classes |
-			'[{1}| "Type code here..."]' format: {
-				classes inject: '' into: [:pattern :cls | | count |
-					count := classCount at: cls put: (classCount at: cls ifAbsent: [0]) + 1.
-					pattern := pattern, ':', ((cls name findTokens: ' ') reduce: [:a :b | a, b withFirstCharacterUppercase]) withFirstCharacterDownshifted, (count > 1 ifFalse: [''] ifTrue: [count asString]),' ']}]).
+		ifNotEmpty: ['[{1}| "Type code here..."]' format: {self generateBlockVarDeclaration}]).
+	self mapIndex: 1.
 	self selectBlockStatements.
