@@ -28,4 +28,5 @@ Metacello new
   repository: 'github://marceltaeumel/vivide/repository';
   load.
 ```
+**Close all transcript windows before loading!**
 
