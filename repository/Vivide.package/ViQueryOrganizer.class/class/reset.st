@@ -1,4 +1,4 @@
-default instance
+instances
 reset
 
 	default := nil.

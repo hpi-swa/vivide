@@ -1,17 +1,7 @@
 {
 	"class" : {
 		"collectBaseClassesForContext:" : "mt 10/15/2014 18:23:41.333",
-		"defCopyToContext" : "mt 9/6/2013 15:05:13.544",
-		"defIconAndLabel" : "mt 9/6/2013 15:05:19.31",
-		"defMergeAssociations" : "mt 9/6/2013 14:54:00.478",
-		"defOrigin" : "mt 9/6/2013 15:05:26.172",
-		"defSelectByContext" : "mt 9/6/2013 15:05:39.429",
-		"defSubclasses" : "mt 9/6/2013 14:54:13.932",
-		"defToplevelClasses" : "mt 9/6/2013 14:54:26.304",
-		"defaultSourceCode" : "mt 9/7/2013 11:37:31.176",
-		"tileView" : "mt 11/6/2013 18:24:52.873",
-		"treeView" : "mt 9/6/2013 14:27:59.082",
-		"treeViewExtended" : "mt 9/6/2013 14:28:09.729" },
+		"defaultSourceCode" : "mt 9/7/2013 11:37:31.176" },
 	"instance" : {
 		"=" : "mt 9/18/2013 10:35:41.715",
 		"acceptObjectService:" : "mt 9/9/2013 15:09:51.583",

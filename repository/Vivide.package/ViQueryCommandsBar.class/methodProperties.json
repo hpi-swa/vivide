@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"commandsForObjects:" : "mt 8/19/2014 11:49:31.528" },
+		"commandsForObjects:" : "mt 11/13/2014 09:59:15.229" },
 	"instance" : {
 		"activated:" : "mt 2/5/2014 17:33:59.935",
 		"addCommandForSnippet:" : "mt 2/6/2014 10:02:48.076",
-		"chooseSnippet" : "mt 5/19/2014 13:12:47.07",
+		"chooseSnippet" : "mt 11/13/2014 09:58:41.685",
 		"commands" : "mt 2/5/2014 17:50:45.665",
 		"createButtonForCommand:" : "mt 2/18/2014 17:25:30.363",
 		"hideAddButton" : "mt 2/6/2014 10:35:14.934",

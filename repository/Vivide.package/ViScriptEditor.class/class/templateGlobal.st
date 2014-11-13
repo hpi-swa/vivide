@@ -1,4 +1,7 @@
 templates
 templateGlobal
 
-	^ (25 to: 40) -> '[:in :out | out addAll: [#(hello world)] value]'
+	^ (13 to: 28) -> '[:in :out | [#(hello world)] value in: [:result |
+	(ViQueryInterpreter isCollection: result)
+		ifTrue: [out addAll: result]
+		ifFalse: [out add: result]]]'

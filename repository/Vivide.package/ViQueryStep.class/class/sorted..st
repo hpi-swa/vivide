@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 sorted: codeForSortBlock
 	"[:o1 :o2 | o1 asString <= o2 asString]."
 	

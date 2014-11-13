@@ -1,0 +1,1 @@
+This dynamic scope variable can be used to override the Active*-Pattern, which is used for Vivide, too. For example, there is ActiveHand, ActiveWorld, ... and ActiveVivide. For testing, however, it is necessary to override this for new GUI elements to appear in a sandbox and not in the active world.

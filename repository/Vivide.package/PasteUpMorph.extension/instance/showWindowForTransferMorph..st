@@ -1,7 +1,7 @@
 *vivide
 showWindowForTransferMorph: aTransferMorph
 
-	ActiveVivide ifNil: [^ self].
+	VivideLight active ifNil: [^ self].
 
 	aTransferMorph dragTransferType in: [:type |
 	(#(pane) includes: type)
@@ -10,13 +10,13 @@ showWindowForTransferMorph: aTransferMorph
 			openInWindow].
 		
 	(#(objects) includes: type)
-		ifTrue: [^ ActiveVivide openArtifacts: aTransferMorph passenger].
+		ifTrue: [^ VivideLight active openArtifacts: aTransferMorph passenger].
 	
 	(#(artifact) includes: type)
-		ifTrue: [^ ActiveVivide openEditorForArtifact: aTransferMorph passenger].
+		ifTrue: [^ VivideLight active openEditorForArtifact: aTransferMorph passenger].
 	
 	(#(editorStates) includes: type)
-		ifTrue: [^ ActiveVivide openEditor: aTransferMorph passenger first].
+		ifTrue: [^ VivideLight active openEditor: aTransferMorph passenger first].
 	].
 
-	^ ActiveVivide openArtifact: aTransferMorph passenger
+	^ VivideLight active openArtifact: aTransferMorph passenger

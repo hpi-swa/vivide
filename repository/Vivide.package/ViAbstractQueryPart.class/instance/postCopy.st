@@ -1,4 +1,4 @@
-as yet unclassified
+copying
 postCopy
 
 	properties := properties deepCopy.

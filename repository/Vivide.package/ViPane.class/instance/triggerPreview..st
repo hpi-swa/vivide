@@ -1,4 +1,0 @@
-OBSOLETE
-triggerPreview: arg
-
-	"Dummy."

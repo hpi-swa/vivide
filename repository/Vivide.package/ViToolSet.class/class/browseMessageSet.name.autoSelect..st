@@ -1,6 +1,6 @@
 browsing
 browseMessageSet: messageList name: title autoSelect: autoSelectString
 	
-	ActiveVivide ifNil: [^super browseMessageSet: messageList name: title autoSelect: autoSelectString].
+	VivideLight active ifNil: [^super browseMessageSet: messageList name: title autoSelect: autoSelectString].
 	
-	^ ActiveVivide openArtifact: messageList
+	^ VivideLight active openArtifact: messageList

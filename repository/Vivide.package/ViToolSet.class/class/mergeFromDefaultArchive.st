@@ -1,7 +1,8 @@
 organizing
 mergeFromDefaultArchive
 
-	ActiveVivide ifNotNil: [:vivide | vivide openQuery: #transcript].
+	#transcript openScript.
+	
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive
 		intoOrganizer: ViQueryOrganizer default) merge.

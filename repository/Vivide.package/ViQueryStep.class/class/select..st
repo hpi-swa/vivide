@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 select: codeForSelectBlock
 	"[:obj | obj value >= 5]."
 

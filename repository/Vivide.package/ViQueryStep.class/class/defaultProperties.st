@@ -1,5 +1,5 @@
 defaults
 defaultProperties
 
-	"^ ViQueryPropertyStep defaults"
-	^ ViQueryOrganizer default stepById: #printString
+	"^ #defaultProperties asScript"
+	^ #printString asScript

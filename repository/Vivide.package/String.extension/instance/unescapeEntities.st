@@ -1,3 +1,3 @@
 *vivide-queries
 unescapeEntities
-	^ self copyWithRegex: '&\w*;' matchesTranslatedUsing: [:match | (Dictionary newFrom: {'&lt;' -> '<'. '&gt;' -> '>'. '&amp;' -> '&'. '&quot;' -> '"'. '&apos;' -> ''''}) at: match ifAbsent: [match]].
+	^ self copyWithRegex: '&#*\w*\d*;' matchesTranslatedUsing: [:match | (Dictionary newFrom: {'&lt;' -> '<'. '&gt;' -> '>'. '&amp;' -> '&'. '&quot;' -> '"'. '&apos;' -> ''''. '&#39;' -> ''''}) at: match ifAbsent: [match]].

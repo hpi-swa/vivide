@@ -1,7 +1,7 @@
 *vivide-queries
 openQueryWith: someObjects
 
-	ActiveVivide ifNotNil: [:vivide |
+	^ VivideLight active ifNotNil: [:vivide |
 		vivide
-			openQuery: (ViQueryStep convert: self)
+			openQuery: self
 			withObjects: someObjects].

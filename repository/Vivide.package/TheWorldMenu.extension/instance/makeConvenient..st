@@ -2,17 +2,17 @@
 makeConvenient: menu
 
 	| queryMenu commandMenu |
-	queryMenu := MenuMorph new defaultTarget: ActiveVivide.
-	ViQueryOrganizer default globalQueries do: [:query |
+	queryMenu := MenuMorph new defaultTarget: VivideLight active.
+	ViQueryOrganizer active globalQueries do: [:query |
 		queryMenu
 			add: query nextLabel
-			target: ActiveVivide
+			target: VivideLight active
 			selector: #openQueryAtHand:
 			argument: query.
 		queryMenu lastItem icon: (query nextIcon ifNil: [ViIcons blankIcon])].
 			
 	commandMenu := MenuMorph new.
-	ViQueryOrganizer default globalCommands do: [:command |
+	ViQueryOrganizer active globalCommands do: [:command |
 		commandMenu
 			add: (command label ifNil: [command definition sourceCode])
 			target: command

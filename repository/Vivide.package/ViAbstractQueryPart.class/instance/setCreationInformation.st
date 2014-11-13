@@ -1,4 +1,4 @@
-properties
+initialization
 setCreationInformation
 
 	self properties

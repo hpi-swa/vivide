@@ -3,11 +3,10 @@ test05Organization
 
 	| def orga |
 	orga := ViQueryOrganizer new.
-	def := ViQueryMapDefinition new
+	def := ViQueryStepDefinition new
 		id: #test05Organization;
 		organization: orga;
-		sourceCode: '[:obj | obj asString]';
-		mapType: #each.
+		sourceCode: '[:obj | obj asString]'.
 	self assert: (orga definitionById: #test05Organization) isNil.
 	
 	def register.

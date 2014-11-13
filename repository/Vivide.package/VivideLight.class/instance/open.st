@@ -1,9 +1,16 @@
 initialization
 open 
-
-	ActiveVivide := self.
+	"See #close."
+	
+	ViActiveVivide world == ActiveWorld
+		ifTrue: [ActiveVivide := self].
+	
+	ViActiveVivide world == ActiveWorld
+		ifTrue: [ActiveHand addKeyboardListener: self].
+	
+	self initializeSystemChangeNotifications.
 	
 	"Allow dropping things in the world."
-	ActiveWorld transferMorphConverter: #openArtifactsForTransferMorph:.
+	ViActiveVivide world transferMorphConverter: #openArtifactsForTransferMorph:.
 	
 	self openInWorld.

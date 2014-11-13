@@ -1,12 +1,13 @@
 {
 	"class" : {
-		"detectDeepestBlockNode:" : "mt 10/10/2014 11:54:17.828",
+		"detectDeepestBlockNode:" : "mt 10/22/2014 11:41:51.717",
+		"detectDeepestBlockNode:last:" : "mt 10/22/2014 11:49:09.079",
 		"supportedTypes" : "mt 10/5/2014 11:51:57.92",
 		"templateAllAtOnce" : "mt 10/7/2014 16:06:37.503",
 		"templateForBlock:" : "mt 10/10/2014 11:01:03.738",
 		"templateForSourceCode:" : "mt 10/15/2014 17:34:05.349",
 		"templateFrom:" : "mt 10/9/2014 18:48:56.879",
-		"templateGlobal" : "mt 9/30/2014 11:48:03.739",
+		"templateGlobal" : "mt 10/22/2014 06:29:46.367",
 		"templateProperties" : "mt 9/30/2014 09:13:27.087",
 		"templateProperty" : "mt 9/30/2014 09:08:25.272",
 		"templateStandard" : "mt 9/29/2014 17:58:52.43",
@@ -16,7 +17,7 @@
 		"templateWrapper" : "mt 10/7/2014 08:28:10.332" },
 	"instance" : {
 		"acceptSourceCode" : "mt 10/14/2014 09:21:28.733",
-		"activateWizard" : "mt 10/20/2014 12:00:03.072",
+		"activateWizard" : "mt 11/4/2014 09:30:50.892",
 		"addArtifact" : "mt 10/20/2014 11:43:24.433",
 		"clear" : "mt 10/7/2014 15:22:13.882",
 		"collapse" : "mt 10/15/2014 18:38:06.834",
@@ -76,7 +77,7 @@
 		"tryDeleteScript" : "mt 10/5/2014 13:53:00.2",
 		"updateConnections" : "mt 10/20/2014 11:20:29.71",
 		"updateInputKind" : "mt 10/20/2014 11:43:07.878",
-		"updateMapFor:" : "mt 10/15/2014 17:32:57.84",
+		"updateMapFor:" : "mt 10/22/2014 13:37:40.037",
 		"updateMapIndex:" : "mt 10/14/2014 09:29:19.966",
 		"updateObject" : "mt 10/6/2014 09:39:38.06",
 		"updateSourceCode" : "mt 9/29/2014 16:34:13.484",

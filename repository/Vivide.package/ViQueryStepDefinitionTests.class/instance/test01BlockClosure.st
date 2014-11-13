@@ -7,7 +7,5 @@ test01BlockClosure
 		assert: sut block isBlock;
 		assert: sut block == sut block.
 	tmp := sut block.
-	sut
-		sourceCode: nil; "bypass check"
-		sourceCode: '[:obj | obj]'.
+	sut sourceCode: '[:object | object]'.
 	self deny: sut block == tmp.

@@ -1,7 +1,10 @@
-actions - open
+actions - open - DEPRECATED
 openQueries: someQueries withObjects: someObjects
+	"Create a single window with panes for multiple scripts in it."
 
 	| input wnd hasOutputPage |
+	self flag: #deprecated. "mt: ViMultiPaneWidgets should deal with that."
+	
 	hasOutputPage := false.
 	input := someObjects.
 	

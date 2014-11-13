@@ -1,6 +1,7 @@
 top window
 activate
 
+	active := true.
 	super activate.
 	
 	"Need to do this explicitely because #outerBounds are not reliable here."

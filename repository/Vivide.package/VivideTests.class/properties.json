@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"world",
+		"vivide" ],
+	"name" : "VivideTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

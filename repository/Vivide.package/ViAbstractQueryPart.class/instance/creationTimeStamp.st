@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 creationTimeStamp
 
 	^ TimeStamp fromString: (self valueOfProperty: #creationTimeStamp)

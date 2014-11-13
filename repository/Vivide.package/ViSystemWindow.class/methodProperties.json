@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"activeWindow" : "mt 11/12/2014 11:10:44.146",
 		"borderWidth" : "mt 9/25/2012 09:10:25.436",
 		"boxExtent" : "mt 12/6/2012 15:07:36.437",
 		"closeBoxImage" : "mt 12/5/2012 16:49:39.901",
@@ -8,8 +9,7 @@
 		"morph:label:" : "mt 5/1/2011 11:22:23.26" },
 	"instance" : {
 		"aboutRequested" : "mt 5/2/2011 16:12:35.236",
-		"activate" : "mt 5/20/2014 10:47:43.079",
-		"activateWindow" : "mt 12/5/2012 17:02:05.011",
+		"activate" : "mt 11/12/2014 11:09:51.793",
 		"addApplicationBox" : "mt 5/1/2011 12:11:32.293",
 		"addCloseBox" : "mt 5/1/2011 12:14:15.052",
 		"addCollapseBox" : "mt 12/6/2012 15:11:09.671",
@@ -36,8 +36,9 @@
 		"initialize" : "mt 4/15/2013 14:35:37.616",
 		"initializeLabelArea" : "mt 12/6/2012 15:12:04.292",
 		"initializeLabelAreaContents" : "mt 5/20/2014 10:39:05.531",
+		"isActive" : "mt 11/12/2014 11:10:06.202",
 		"lockWindow" : "mt 8/23/2014 11:20:46.015",
-		"passivate" : "mt 7/28/2013 14:32:55.365",
+		"passivate" : "mt 11/12/2014 11:09:46.695",
 		"pushOtherWindowsAside" : "mt 7/24/2014 14:48:19.527",
 		"setStripeColorsFrom:" : "mt 12/5/2012 16:59:58.051",
 		"shadowWidth" : "mt 4/15/2013 14:09:47.97",

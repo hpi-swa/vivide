@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mt 9/29/2013 20:18:31.806",
-		"test01BlockClosure" : "mt 8/22/2013 14:10:39.192",
-		"test02GuessType" : "mt 8/22/2013 14:16:57.186",
+		"setUp" : "mt 11/11/2014 17:01:22.126",
+		"test01BlockClosure" : "mt 11/11/2014 17:00:17.699",
+		"test02GuessType" : "mt 11/11/2014 17:03:54.999",
 		"test03SyntaxError" : "mt 8/22/2013 14:19:33.285",
 		"test04SourceCodeChanged" : "mt 9/17/2013 08:46:08.837",
-		"test05Organization" : "mt 9/6/2013 15:06:53.55",
-		"test06DefaultViews" : "mt 8/29/2013 17:19:09.32",
+		"test05Organization" : "mt 11/11/2014 17:04:54.272",
+		"test06DefaultViews" : "mt 11/11/2014 17:07:01.864",
 		"test07IsRegistered" : "mt 9/4/2013 08:56:45.111",
-		"test08Variables" : "mt 9/29/2013 21:24:52.842",
-		"test09VariablesAccess" : "mt 9/29/2013 21:48:20.014" } }
+		"test08Variables" : "mt 11/11/2014 17:11:23.269",
+		"test09VariablesAccess" : "mt 11/11/2014 17:11:33.404" } }

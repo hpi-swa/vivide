@@ -1,5 +1,5 @@
 organizing
 tidyDefaultOrganizer
 
-	ActiveVivide openQuery: #transcript.
+	#transcript openScript.
 	ViQueryOrganizer default tidy.

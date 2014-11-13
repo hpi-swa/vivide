@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 collect: codeForCollectBlock
 	"[:obj | obj class]."
 

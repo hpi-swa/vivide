@@ -10,5 +10,5 @@
 	"name" : "ViQueryFillStep",
 	"pools" : [
 		 ],
-	"super" : "ViQueryTransformStep",
+	"super" : "ViQueryStep",
 	"type" : "normal" }

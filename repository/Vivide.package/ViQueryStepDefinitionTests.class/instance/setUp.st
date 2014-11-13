@@ -2,7 +2,7 @@ running
 setUp
 
 	super setUp.
-	sut := ViQueryMapDefinition new.
+	sut := ViQueryStepDefinition new.
 	organization := ViQueryOrganizer new.
 	notifier := ViQueryChangeNotifier new.
 	organization notifier: notifier.

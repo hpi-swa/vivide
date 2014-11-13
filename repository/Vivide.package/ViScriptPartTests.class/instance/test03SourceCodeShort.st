@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test03SourceCodeShort
 
 	| script code block |

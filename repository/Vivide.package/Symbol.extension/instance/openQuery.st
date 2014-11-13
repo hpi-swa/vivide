@@ -1,4 +1,4 @@
 *vivide-queries
 openQuery
 
-	^ ActiveVivide ifNotNil: [:vivide | vivide openQuery: self]
+	^ VivideLight active ifNotNil: [:vivide | vivide openQuery: self]

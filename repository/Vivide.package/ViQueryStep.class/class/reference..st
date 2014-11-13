@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 reference: anotherQueryStep
 
 	^ ViQueryReferenceStep new

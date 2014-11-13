@@ -2,8 +2,8 @@ as yet unclassified
 convert: object
 
 	^ (object isSymbol
-		ifTrue: [(ViQueryOrganizer default stepById: object)
-			ifNil: [(ViQueryOrganizer default definitionById: object)
+		ifTrue: [(ViQueryOrganizer active stepById: object)
+			ifNil: [(ViQueryOrganizer active definitionById: object)
 				ifNotNil: [:def | 
 					def isMapDefinition
 						ifFalse: [nil]

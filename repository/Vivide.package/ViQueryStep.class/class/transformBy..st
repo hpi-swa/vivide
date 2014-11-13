@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 transformBy: aStepDefinition
 
 	^ ViQueryTransformStep new

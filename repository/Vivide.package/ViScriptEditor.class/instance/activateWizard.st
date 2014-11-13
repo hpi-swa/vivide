@@ -6,6 +6,7 @@ activateWizard
 	self updateInputKind.
 	self script: (self inputKind
 		ifEmpty: ['["Type code here..."]']
-		ifNotEmpty: ['[{1}| "Type code here..."]' format: {self generateBlockVarDeclaration}]).
+		ifNotEmpty: ['[{1}| "Type code here..."]'
+			format: {self generateBlockVarDeclaration}]).
 	self mapIndex: 1.
 	self selectBlockStatements.

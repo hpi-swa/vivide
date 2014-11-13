@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - OBSOLETE
 setViewSpec: blockOrSymbol
 	"Shortcut. For scripting purposes."
 

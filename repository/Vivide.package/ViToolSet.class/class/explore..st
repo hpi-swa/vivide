@@ -1,5 +1,5 @@
 inspecting
 explore: anObject
 
-	ActiveVivide ifNil: [^ super explore: anObject].
-	^ ActiveVivide openArtifact: anObject
+	VivideLight active ifNil: [^ super explore: anObject].
+	^ VivideLight active openArtifact: anObject

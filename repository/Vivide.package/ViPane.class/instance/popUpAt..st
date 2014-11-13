@@ -11,7 +11,7 @@ popUpAt: aPoint
 		extent: (300@200 max: self extent);
 		topLeft: aPoint;
 "		layoutInset: 3;"
-		position: self position + (self bounds amountToTranslateWithin: ActiveWorld bounds).
+		position: self position + (self bounds amountToTranslateWithin: ViActiveVivide world bounds).
 	
 	self eventHandler disconnectSignal: #mouseLeft: from: self selector: #delete.
 	self connect: self eventHandler signal: #mouseLeft: toSelector: #delete.

@@ -20,8 +20,3 @@ initialize
 		initializeLocator.
 	
 	self addAllMorphs: {titleBar.objectsBar}.
-	
-	ActiveHand addKeyboardListener: self.
-	self initializeSystemChangeNotifications.
-	
-	self initializeSgSignals.

@@ -35,6 +35,7 @@
 		"stepIconChanged:from:to:" : "mt 9/16/2013 17:16:05.299",
 		"stepNextChanged:from:to:" : "mt 9/16/2013 17:54:01.902",
 		"stepNotEvaluated:becauseOf:" : "mt 6/18/2014 14:18:51.847",
+		"stepPropertiesChanged:from:to:" : "mt 11/6/2014 13:37:48.354",
 		"stepReferenceChanged:from:to:" : "mt 9/16/2013 17:54:33.718",
 		"stepRegistered:" : "mt 9/16/2013 17:11:04.879",
 		"stepRenamed:from:to:" : "mt 9/16/2013 17:15:37.576",

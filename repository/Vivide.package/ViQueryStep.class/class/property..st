@@ -1,4 +1,4 @@
-instance creation
+instance creation - OLD
 property: codeForPropertyBlock
 	"[:obj | #text -> obj asString]."
 

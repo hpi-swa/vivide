@@ -2,7 +2,7 @@ debugging
 debug: aProcess context: aContext label: aString contents: contents fullView: aBool
 
 	| errorWasInUIProcess |
-	(ActiveVivide isNil or: [(VivideLight useVivideDebugger) not])
+	(VivideLight active isNil or: [(VivideLight useVivideDebugger) not])
 		ifTrue: [^ super debug: aProcess context: aContext label: aString contents: contents fullView: aBool].
 	
 	[Preferences logDebuggerStackToFile
@@ -23,7 +23,7 @@ debug: aProcess context: aContext label: aString contents: contents fullView: aB
 			} withObjects: {aProcess}) height: 500."
 
 			"Or let Vivide show the debugger."
-			ActiveVivide openDebugger:
+			VivideLight active openDebugger:
 				((Debugger new process: aProcess controller: nil context: aContext)
 					labelString: aString;
 					expandStack;

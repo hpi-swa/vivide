@@ -2,4 +2,4 @@ as yet unclassified
 openQuery
 	"Idiomatic with String, BlockClosure, etc."
 
-	^ ActiveVivide ifNotNil: [:vivide | vivide openQuery: self]
+	^ VivideLight active ifNotNil: [:vivide | vivide openQuery: self]

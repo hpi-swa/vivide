@@ -3,7 +3,7 @@ chooseSnippet
 
 	| pg |
 	pg := ViPane new.
-	pg currentQuery: (ViQueryOrganizer default stepById: #snippets).
+	pg currentQuery: #snippets asScript.
 	pg objects: (lastObjects asOrderedCollection reject: [:o | o isNil]).
 	pg extent: 300@200.
 	
