@@ -12,4 +12,4 @@ postLoad
 			ts mergeFromDefaultArchive].
 	
 	"First time setup."
-	ActiveVivide ifNil: [VivideLight prepareSqueak; open].
+	VivideLight active ifNil: [VivideLight prepareSqueak; open].
