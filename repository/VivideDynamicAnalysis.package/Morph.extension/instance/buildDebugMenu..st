@@ -13,7 +13,7 @@ buildDebugMenu: aHand
 		aMenu addLine].
 	
 	"### Vivide START ###"
-	ActiveVivide ifNotNil: [
+	VivideLight active ifNotNil: [
 		aMenu
 			addUpdating: #hasTraceEventsString action: #changeTraceEvents;
 			addLine].
