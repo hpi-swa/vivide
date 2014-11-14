@@ -1,7 +1,7 @@
 handles
 addFanOutHandles
 
-	| addBtn box buttons |
+	| addBtn box buttons outBtn |
 	buttons := self listeningPanesForSelections collect: [:p |
 		UiToolButton new
 			color: self fanOutColor;
@@ -42,6 +42,16 @@ addFanOutHandles
 	self connect: addBtn eventHandler signal: #mouseMoved: toSelector: #doConnect:with: pattern: {1.#=.addBtn}.
 	self connect: addBtn eventHandler signal: #mouseReleased: toSelector: #addConnection:with:  pattern: {1.#=.addBtn}.
 	
+	outBtn := UiToolButton new
+		color: self fanOutColor;
+		autoRaise: false;
+		buttonStyle: #iconOnly;
+		icon: (ViIcons controlRecordSmallSunkenIcon clippedTo: 10@10);
+		layoutInset: 2;
+		yourself.
+	self connect: outBtn signal: #clicked: to: self target selector: #browseResults.
+	self connect: outBtn signal: #clicked: toSelector: #delete.
+	
 	box := Morph new
 		color: Color transparent;
 		changeTableLayout;
@@ -49,7 +59,7 @@ addFanOutHandles
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		layoutInset: 3.
-	box addAllMorphs: buttons, {addBtn}.
+	box addAllMorphs: {outBtn}, buttons, {addBtn}.
 
 	box fullBounds.
 	box center: (self basicBox right -15) @ ((self basicBox height // 2) + self basicBox top + (addBtn height // 2)).

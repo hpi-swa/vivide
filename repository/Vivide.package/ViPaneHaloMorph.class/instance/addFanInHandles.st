@@ -1,7 +1,7 @@
 handles
 addFanInHandles
 
-	| box buttons |
+	| inBtn box buttons |
 	buttons := self providingPanesForSelections collect: [:p |
 		UiToolButton new
 			color: self fanInColor;
@@ -28,7 +28,17 @@ addFanInHandles
 			yourself]).
 	buttons do: [:btn |
 		self connect: btn signal: #clicked: toSelector: #removeProviderFrom: pattern: #(0)].
-	
+
+	inBtn := UiToolButton new
+		color: self fanInColor;
+		autoRaise: false;
+		buttonStyle: #iconOnly;
+		icon: (ViIcons controlRecordSmallSunkenIcon clippedTo: 10@10);
+		layoutInset: 2;
+		yourself.
+	self connect: inBtn signal: #clicked: to: self target selector: #browseObjects.
+	self connect: inBtn signal: #clicked: toSelector: #delete.
+
 	box := Morph new
 		color: Color transparent;
 		changeTableLayout;
@@ -36,7 +46,7 @@ addFanInHandles
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		layoutInset: 3.
-	box addAllMorphs: buttons.
+	box addAllMorphs: {inBtn}, buttons.
 
 	box fullBounds.
 	box center: (self basicBox left +15) @ ((self basicBox height // 2) + self basicBox top).
