@@ -2,14 +2,11 @@ tests
 test09Property
 
 	self
-		assert: {{#text -> '1'}.{#text -> '2'}}
-		equals: ((ViQueryStep property: '[:obj | obj asString]') process: #(1 2)).
+		assert: {{#text -> '1'. #object -> 1}.{#text -> '2'. #object -> 2}}
+		equals: ([:n | #text -> n asString] asScript process: #(1 2)) asArray.
 	self
-		assert: {{#text -> '1'}.{#text -> '2'}}
-		equals: ((ViQueryStep property: '[:obj | #text -> obj asString]') process: #(1 2)).
+		assert: {{#icon -> ViIcons vivideLogo. #object -> 1}.{#icon -> ViIcons vivideLogo. #object -> 2}}
+		equals: ([:n | #icon -> ViIcons vivideLogo] asScript process: #(1 2)) asArray.
 	self
-		assert: {{#icon -> ViIcons vivideLogo}.{#icon -> ViIcons vivideLogo}}
-		equals: ((ViQueryStep property: '[:obj | #icon -> ViIcons vivideLogo]') process: #(1 2)).
-	self
-		assert: {{#text -> '1'.#icon -> ViIcons vivideLogo}.{#text -> '2'.#icon -> ViIcons vivideLogo}}
-		equals: ((ViQueryStep property: '[:obj | {#text -> obj asString. #icon -> ViIcons vivideLogo}]') process: #(1 2)).
+		assert: {{#text -> '1'.#icon -> ViIcons vivideLogo. #object -> 1}.{#text -> '2'.#icon -> ViIcons vivideLogo. #object -> 2}}
+		equals: ([:n | {#text -> n asString. #icon -> ViIcons vivideLogo}] asScript process: #(1 2)) asArray.

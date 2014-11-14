@@ -1,11 +1,12 @@
 tests
 test15AllStepsDo
+	"Are references followed correctly?"
 
 	| q1 p q2 count |
 	
-	q1 := ViQueryStep collect: '[:morph | morph submorphs]'.
-	p := ViQueryStep reference: [:o | #text -> o asString] asQuery.
-	q2 := ViQueryStep collect: '[:morph | self haltOnce. morph owner]'.
+	q1 := [:morph | morph submorphs] asScript.
+	p := [:o | #text -> o asString] asScript asReference.
+	q2 := [:morph | self haltOnce. morph owner] asScript.
 
 	q1 next: p.
 	p next: q2.

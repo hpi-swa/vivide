@@ -9,5 +9,5 @@ test13DoSilently
 		definition: nil;
 		label: 'test13DoSilently';
 		icon: Morph new;
-		viewDefinition: ViQueryStepDefinition tileView].
+		viewDefinition: (ViQueryOrganizer active definitionById: #tileView)].
 	self assert: 0 equals: answer.

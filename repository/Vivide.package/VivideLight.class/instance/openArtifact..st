@@ -20,6 +20,10 @@ openArtifact: anObject
 
 	(object isKindOf: ViEditorState) ifTrue: [
 		^ self openEditor: object].
+	
+	(object isKindOf: ViScriptPart) ifTrue: [
+		"See behavior of ViScriptEditor >> #onContextChanged."
+		^ self openArtifacts: object allSteps].
 
 	^ ViMultiPaneEditor open: #artifacts for: ((ViQueryInterpreter isCollection: object)
 		ifTrue: [object]

@@ -31,7 +31,13 @@ initializeToolbarObjects
 	self toolbar leftPanel
 		addGroup: #versions
 		icon: UiSilkIcons timeIcon
-		contents: [:editor | ViMethodVersion versionsOfMethod: editor reference]
+		contents: [:editor | (ViMethodVersion versionsOfMethod: editor reference) in: [:versions |
+			| result |
+			result := Dictionary new.
+			versions do: [:v | result at: v stamp put: v].
+			result values sorted: [:v1 :v2 | 
+				(v1 isNil or: [v2 isNil])
+					or: [v1 timeStamp >= v2 timeStamp]]]]
 		helpText: 'No versions found.'.
 	
 	"self toolbar leftPanel

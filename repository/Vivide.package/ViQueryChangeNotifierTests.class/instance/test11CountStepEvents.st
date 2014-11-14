@@ -8,5 +8,5 @@ test11CountStepEvents
 		definition: nil;
 		label: 'test11CountStepEvents';
 		icon: Morph new;
-		viewDefinition: ViQueryStepDefinition tileView.
+		viewDefinition: (ViQueryOrganizer active definitionById: #tileView).
 	self assert: 5 equals: answer.

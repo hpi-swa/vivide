@@ -3,6 +3,7 @@ chooseMostAppropriateQuery
 
 	| defaultQueryCheck |
 	self flag: #magicNumber. "mt: Make it programmable and not fixed to an ID."
+	self currentQuery ifNil: [^ self].
 	self currentQuery id == #artifacts
 		ifFalse: [^ self].
 	

@@ -2,9 +2,9 @@ tests
 test29AllPropertiesCycle
 
 	| q p q2 |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
-	p := ViQueryStep property: '[:number | number asString]'.
-	q2 := ViQueryStep collect: '[:ea | ea + ea]'.
+	q := [:ea | ea * ea] asScript.
+	p := [:n | #text -> n asString] asScript.
+	q2 := [:ea | ea + ea] asScript.
 	
 	q next: p.
 	p next: q2.

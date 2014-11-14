@@ -2,9 +2,9 @@ tests
 test22NextSteps
 
 	| q1 p q2 |
-	q1 := ViQueryStep transform: '[:objs | objs]'.
-	p := ViQueryStep property: '[:obj | obj asString]'.
-	q2 := ViQueryStep transform: '[:objs | objs]'.
+	q1 := [:objs | objs] asScript.
+	p := [:o | #text -> o asString] asScript.
+	q2 := [:objs | objs] asScript.
 	q1 next: p. p next: q2.
 	
 	self

@@ -2,8 +2,8 @@ tests
 test27CopyQueryCyclic
 
 	| q1 q2 copy1 copy2 |
-	q1 := ViQueryStep collect: '[:ea | ea * ea]'.
-	q2 := ViQueryStep property: '[:number | number asString]'.
+	q1 := [:ea | ea * ea] asScript.
+	q2 := [:n | #text -> n asString] asScript.
 	q1 next: q2.
 	q2 next: q1.
 	

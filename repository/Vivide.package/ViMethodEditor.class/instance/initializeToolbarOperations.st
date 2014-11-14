@@ -16,14 +16,16 @@ initializeToolbarOperations
 		icon: UiSilkIcons pencilIcon
 		contents: [:editor | {
 			{#acceptChanges. 'Accept changes'. UiFugueIcons tickSmallIcon. nil. 1}.
-			{#clear. 'Revert changes'. UiFugueIcons crossSmallIcon. nil. 1}},
+			{#clear. 'Revert changes'. UiFugueIcons crossSmallIcon. nil. 1}.
+			{#loadPreviousCode. 'Previous version'. UiFugueIcons arrowReturn180LeftIcon. nil. 2}.
+			{#loadLastCode. 'Last version'. ViIcons blankIcon. nil. 2}},
 			(editor method notNil
 				ifTrue: [
 					((ViToolSet isTestMethod: editor method)
 						ifFalse: [{}]
-						ifTrue: [{{#runTest. 'Run test'. UiFugueIcons controlIcon. nil. 2}}]),
+						ifTrue: [{{#runTest. 'Run test'. UiFugueIcons controlIcon. nil. 3}}]),
 					
-					{{#tryDeleteMethod. 'Remove method'. UiSilkIcons binEmptyIcon. nil. 3}}]
+					{{#tryDeleteMethod. 'Remove method'. UiSilkIcons binEmptyIcon. nil. 4}}]
 				ifFalse: [{}])].
 			
 	self toolbar rightPanel

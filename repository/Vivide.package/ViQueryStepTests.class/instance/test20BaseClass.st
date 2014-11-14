@@ -3,16 +3,26 @@ test20BaseClass
 	"Which kind of input objects are appropriate for a query step?"
 	
 	| sameType sameType2 changedType changedType2 changedType3 |
-	sameType := ViQueryStep collect: '[:obj | obj]'.
-	sameType definition inputKind: Object; outputKind: Object.
-	sameType2 := ViQueryStep collect: '[:m | m submorphs]'.
-	sameType2 definition inputKind: Morph; outputKind: Morph.
-	changedType := ViQueryStep collect: '[:m | m color]'.
-	changedType definition inputKind: Morph; outputKind: Color.
-	changedType2 := ViQueryStep collect: '[:c | ActiveWorld submorphs select: [:m | m color = c]]'.
-	changedType2 definition inputKind: Color; outputKind: BorderedMorph.
-	changedType3 := ViQueryStep collect: '[:bm | bm splitters]'.
-	changedType3 definition inputKind: BorderedMorph; outputKind: ProportionalSplitterMorph.
+	sameType := [:obj | obj] asScript.
+	sameType
+		setProperty: #inputKind toValue: Object;
+		setProperty: #outputKind toValue: Object.
+	sameType2 := [:m | m submorphs] asScript.
+	sameType2
+		setProperty: #inputKind toValue: Morph;
+		setProperty: #outputKind toValue: Morph.
+	changedType := [:m | m color] asScript.
+	changedType
+		setProperty: #inputKind toValue: Morph;
+		setProperty: #outputKind toValue: Color.
+	changedType2 := [:c | ActiveWorld submorphs select: [:m | m color = c]] asScript.
+	changedType2
+		setProperty: #inputKind toValue: Color;
+		setProperty: #outputKind toValue: BorderedMorph.
+	changedType3 := [:bm | bm splitters] asScript.
+	changedType3
+		setProperty: #inputKind toValue: BorderedMorph;
+		setProperty: #outputKind toValue: ProportionalSplitterMorph.
 
 	"Test specialization."
 	sameType next: sameType2.

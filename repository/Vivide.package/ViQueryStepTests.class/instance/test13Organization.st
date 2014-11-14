@@ -3,7 +3,7 @@ test13Organization
 
 	| q orga |
 	orga := ViQueryOrganizer new.
-	q := ViQueryStep collect: '[:method | method methodReference]'.
+	q := [:method | method methodReference] asScript.
 	q
 		id: #test13Organization;
 		organization: orga.

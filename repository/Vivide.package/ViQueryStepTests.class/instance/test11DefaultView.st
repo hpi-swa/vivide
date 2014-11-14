@@ -2,8 +2,8 @@ tests
 test11DefaultView
 
 	| q p view env |
-	q := ViQueryStep collect: '[:morph | morph color]'.
-	p := ViQueryStep property: '[:color | ViLabelService doObject: color]'.
+	q := [:morph | morph color] asScript.
+	p := [:color | #text -> (ViLabelService doObject: color)] asScript.
 	q next: p.
 	
 	env := ViPane new.
@@ -13,7 +13,7 @@ test11DefaultView
 		assert: view == (q updateView: view forEnvironment: env);
 		assert: 1 equals: view currentVisibleView columnCount.
 	
-	p next: (ViQueryStep property: '[:color | ViObjectOriginService doObject: color]').
+	p next: [:color | #text -> (ViObjectOriginService doObject: color)] asScript.
 	self
 		assert: view == (q updateView: view forEnvironment: env);
 		assert: 2 equals: view currentVisibleView columnCount.

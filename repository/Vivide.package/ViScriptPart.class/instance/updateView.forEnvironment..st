@@ -1,5 +1,6 @@
 as yet unclassified
 updateView: aMorph forEnvironment: anObject
+	"Overridden to use new-style view references stored in properties. Those are classes or blocks. See TViObjectView trait and its implementors."
 
 	^ (self valueOfProperty: #view)
 		ifNil: [super updateView: aMorph forEnvironment: anObject]

@@ -1,7 +1,7 @@
 as yet unclassified
 setProperty: property toValue: value
 
-	(#(icon id label) includes: property)
+	(#(icon id label isProperty) includes: property)
 		ifTrue: [^ self perform: (property, #:) asSymbol with: value].  
 
 	property = #view

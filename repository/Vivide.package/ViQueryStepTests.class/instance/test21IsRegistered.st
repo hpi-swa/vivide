@@ -1,7 +1,7 @@
 tests
 test21IsRegistered
 
-	sut := ViQueryStep transform: '[:objs | objs]'.
+	sut := [:objs | objs] asScript.
 
 	sut organization: ViQueryOrganizer new.
 	self deny: sut isRegistered.

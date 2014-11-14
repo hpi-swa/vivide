@@ -2,8 +2,8 @@ tests
 test24NextLabel
 
 	| q1 q2 |
-	q1 := ViQueryStep collect: '[:ea | ea * ea]'.
-	q2 := ViQueryStep select: '[:number | number event]'.
+	q1 := [:ea | ea * ea] asScript.
+	q2 := [:numbers | numbers select: [:number | number even]] asScript.
 	q1 next: q2.
 	
 	self assert: q1 nextLabel isNil.
