@@ -10,6 +10,7 @@
 	"instance" : {
 		"allItemKinds" : "mt 9/16/2013 16:55:41.869",
 		"allQueryEvents" : "mt 9/16/2013 17:01:30.868",
+		"definitionPropertiesChanged:from:to:" : "mt 11/14/2014 11:24:28.674",
 		"definitionRegistered:" : "mt 9/17/2013 08:44:33.798",
 		"definitionSourceCodeChanged:from:to:" : "mt 10/7/2014 17:13:18.261",
 		"definitionUnregistered:" : "mt 9/17/2013 08:44:55.247",
@@ -35,7 +36,7 @@
 		"stepIconChanged:from:to:" : "mt 9/16/2013 17:16:05.299",
 		"stepNextChanged:from:to:" : "mt 9/16/2013 17:54:01.902",
 		"stepNotEvaluated:becauseOf:" : "mt 6/18/2014 14:18:51.847",
-		"stepPropertiesChanged:from:to:" : "mt 11/6/2014 13:37:48.354",
+		"stepPropertiesChanged:from:to:" : "mt 11/14/2014 11:21:58.493",
 		"stepReferenceChanged:from:to:" : "mt 9/16/2013 17:54:33.718",
 		"stepRegistered:" : "mt 9/16/2013 17:11:04.879",
 		"stepRenamed:from:to:" : "mt 9/16/2013 17:15:37.576",

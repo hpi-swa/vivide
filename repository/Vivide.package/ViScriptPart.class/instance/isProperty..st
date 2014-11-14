@@ -3,4 +3,10 @@ isProperty: aBoolean
 
 	isProperty = aBoolean ifTrue: [^ self].
 
-	isProperty := aBoolean.
+	isProperty in: [:old |
+		isProperty := aBoolean.
+		
+		self notifier
+			stepPropertiesChanged: self
+			from: {#isProperty -> old}
+			to: {#isProperty -> aBoolean}].
