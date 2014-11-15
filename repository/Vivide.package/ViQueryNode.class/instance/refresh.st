@@ -1,4 +1,4 @@
-notifications
+reset
 refresh
 
 	updateCount := true.

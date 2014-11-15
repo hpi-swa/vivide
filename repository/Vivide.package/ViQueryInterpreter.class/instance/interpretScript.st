@@ -1,4 +1,4 @@
-as yet unclassified
+interpreting - private
 interpretScript
 
 	self assert: step isScript.

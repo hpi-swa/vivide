@@ -16,9 +16,6 @@ processSteps
 	children := Dictionary new.
 	groups do: [:group | children at: group put: OrderedCollection new].
 	
-	self flag: #remove. "mt: Maybe we want to keep empty groups?"
-	interpreter hasObjects ifFalse: [^ self "no children"].
-
 	"Create child nodes."
 	groups do: [:group | children
 		at: group

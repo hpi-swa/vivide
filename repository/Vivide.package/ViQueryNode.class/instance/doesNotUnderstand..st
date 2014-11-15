@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - data
 doesNotUnderstand: aMessage
 	"Special handling for block values. See #at:ifAbsent: too. Allows to store blocks that proxy accessors to real objects.
 	

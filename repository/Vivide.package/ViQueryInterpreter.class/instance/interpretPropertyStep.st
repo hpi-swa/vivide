@@ -1,12 +1,10 @@
-interpreting - private
+deprecated
 interpretPropertyStep
 
 	self assert: self currentStep isPropertyStep.
 	
-	numProperties := numProperties + 1.
-	
 	objects keysAndValuesDo: [:group :groupedObjects |
-		(step process: groupedObjects within: (contexts at: group)) in: [:newProperties |
+		(step process: groupedObjects) in: [:newProperties |
 			(properties
 				at: group
 				ifAbsentPut: [OrderedCollection new]) add: (

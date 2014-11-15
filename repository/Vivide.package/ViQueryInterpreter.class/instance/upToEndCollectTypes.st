@@ -1,10 +1,9 @@
-as yet unclassified
+interpreting
 upToEndCollectTypes
 
 	(step notNil and: [step hasCycle])
 		ifTrue: [Error signal: 'This query is cyclic! Cannot interpret up to end.'].
 
-	numProperties := 0.
 	properties := OrderedCollection new.
 
 	[step isNil] whileFalse: [

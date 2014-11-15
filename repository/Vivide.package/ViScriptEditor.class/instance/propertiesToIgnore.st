@@ -15,4 +15,7 @@ propertiesToIgnore
 		#outputKind -> {Object}.
 		#isProperty -> {false}.
 		#view -> {ViTreePlainView}.
+		#in -> {OrderedCollection}.
+		#out -> {OrderedCollection}.
+		#async -> {false}.
 		}

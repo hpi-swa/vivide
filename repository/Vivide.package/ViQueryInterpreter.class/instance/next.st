@@ -20,6 +20,6 @@ next
 	[step isNil and: [stack isEmpty not]] whileTrue: [
 		step := stack pop next].
 
-	(step isNil and: [numProperties = 0]) ifTrue: [
+	((step isNil and: [self hasObjects]) and: [self hasProperties not]) ifTrue: [
 		step := ViQueryStep defaultProperties.
 		self assert: step isPropertyStep].

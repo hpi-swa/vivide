@@ -2,14 +2,9 @@ instance creation
 onNode: aQueryNode
 
 	^ self new
-		firstStep: aQueryNode firstStep
+		currentStep: aQueryNode firstStep;
 		objects: (Dictionary new
 			at: aQueryNode defaultGroup put: {aQueryNode inputForChildren};
-			yourself)
-		groups: {aQueryNode defaultGroup} asOrderedCollection
-		contexts: (Dictionary new
-			at: aQueryNode defaultGroup put: (aQueryNode context
-				ifNil: [ViQueryContext new]
-				ifNotNil: [:ctxt | ctxt copy]);
-			yourself)
+			yourself);
+		groups: {aQueryNode defaultGroup} asOrderedCollection;
 		stack: aQueryNode referenceStack copy

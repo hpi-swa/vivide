@@ -1,4 +1,4 @@
-as yet unclassified
+reset
 updateChildren
 
 	"No need to call this method if never initialized lazily!"

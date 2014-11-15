@@ -1,4 +1,4 @@
-as yet unclassified
+notifications
 clearAllQueryChangeNotifications
 
 	children ifNil: [^ self].

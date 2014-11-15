@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 objects
 
 	^ self nodes collect: [:node | node object]

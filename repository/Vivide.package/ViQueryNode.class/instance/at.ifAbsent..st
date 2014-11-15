@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - data
 at: key ifAbsent: aBlock
 	"Special handling for block values. See #doesNotUnderstand:  too."
 

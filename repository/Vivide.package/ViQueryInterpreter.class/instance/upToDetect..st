@@ -1,7 +1,6 @@
-as yet unclassified
+interpreting
 upToDetect: block
 
-	numProperties := 0.
 	properties := Dictionary new.
 	
 	[step isNil or: [block value: step]] whileFalse: [self next].

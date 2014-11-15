@@ -1,4 +1,4 @@
-interpreting - private
+deprecated
 interpretTransformStep
 
 	| transformedObjects |
@@ -6,7 +6,7 @@ interpretTransformStep
 	
 	step isGroupSortStep ifTrue: [
 		self flag: #stinky. "mt: Groups should be more of a generic concept?"
-		groups := step process: groups within: nil.
+		groups := step process: groups.
 		^ self].
 	
 	transformedObjects := Dictionary new.
@@ -14,6 +14,6 @@ interpretTransformStep
 	objects keysAndValuesDo: [:group :groupedObjects |
 		transformedObjects
 			at: group
-			put: (step process: groupedObjects within: (contexts at: group))].
+			put: (step process: groupedObjects)].
 
 	objects := transformedObjects.

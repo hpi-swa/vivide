@@ -1,4 +1,4 @@
-accessing
+deprecated
 groups
 
 	^ groups

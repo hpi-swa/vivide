@@ -1,4 +1,4 @@
-as yet unclassified
+interpreting - private
 interpretScriptTransformation
 
 	| transformedObjects |
@@ -7,6 +7,6 @@ interpretScriptTransformation
 	objects keysAndValuesDo: [:group :groupedObjects |
 		transformedObjects
 			at: group
-			put: (step process: groupedObjects within: (contexts at: group))].
+			put: (step process: groupedObjects)].
 
 	objects := transformedObjects.	

@@ -1,4 +1,4 @@
-interpreting - private
+deprecated
 interpretReferenceStep
 
 	self assert: step isReferenceStep.

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 allObjects
 
 	(self allNodes collect: [:node | node object]) in: [:result |

@@ -1,4 +1,4 @@
 accessing
 currentStep: aStep
 
-	step := step.
+	step := aStep.

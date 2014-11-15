@@ -1,4 +1,4 @@
-as yet unclassified
+notifications
 clearQueryChangeNotifications
 
 	firstStep ifNil: [^ self].

@@ -26,6 +26,5 @@ createNodesForGroup: aGroup
 				in: [:node |
 					node
 						firstStep: self currentStep;
-						context: (self contextFor: aGroup);
 						referenceStack: self stack;
 						yourself]]]

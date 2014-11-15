@@ -1,9 +1,13 @@
 interpreting
 upToNextProperties
 	
-	numProperties := 0.
+	| seenPropertySteps |
 	properties := Dictionary new.
+	seenPropertySteps := 0.
 	
-	[step isNil or: [(step isPropertyStep not and: [(step isScript and: [step isPropertyExtraction]) not])
-		and: [numProperties > 0]]]
-		whileFalse: [self next].
+	[step isNil or: [step isPropertyStep not
+		and: [seenPropertySteps > 0]]]
+		whileFalse: [
+			step isPropertyStep ifTrue: [
+				seenPropertySteps := seenPropertySteps + 1].
+			self next].
