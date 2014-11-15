@@ -15,12 +15,12 @@ test21GroupObjects
 	
 	sut firstStep: (ViQueryStep use: {testClass} in: q).
 	self assert: sut childCount = testClass organization categories size.
-	sut childrenAllGroups with: testClass organization categories do: [:node :protocol |
+	sut nodes with: testClass organization categories do: [:node :protocol |
 		self
 			assert: protocol equals: (node at: '1_text');
 			assert: protocol equals: node object;
 			assert: protocol equals: (node at: '1_object').
-		node childrenAllGroups with: (testClass organization listAtCategoryNamed: protocol) do: [:node2 :selector |
+		node nodes with: (testClass organization listAtCategoryNamed: protocol) do: [:node2 :selector |
 			self
 				assert: selector equals: (node2 at: '1_text');
 				assert: selector equals: node2 object selector;

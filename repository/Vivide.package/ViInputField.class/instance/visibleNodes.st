@@ -3,4 +3,4 @@ visibleNodes
 
 	^ self model
 		ifNil: [#()]
-		ifNotNil: [:m | m childrenAllGroups ifNotEmpty: [:nodes | {nodes first}]]
+		ifNotNil: [:m | m nodes ifNotEmpty: [:nodes | {nodes first}]]

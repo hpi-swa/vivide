@@ -5,5 +5,5 @@ theClass
 		ifFalse: [^ nil].
 
 	^ classIsMeta
-		ifTrue: [(Smalltalk at: classSymbol) class]
+		ifTrue: [(Smalltalk at: classSymbol) theMetaClass]
 		ifFalse: [Smalltalk at: classSymbol]

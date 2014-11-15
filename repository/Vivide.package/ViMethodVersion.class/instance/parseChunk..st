@@ -4,7 +4,7 @@ parseChunk: aString
 	| tokens |
 	tokens := Scanner new scanTokens: aString.
 	classSymbol := tokens first.
-	tokens second = #class
+	(tokens second = #class or: [tokens second = #classTrait])
 		ifTrue: [
 			classIsMeta := true.
 			category := tokens fourth.

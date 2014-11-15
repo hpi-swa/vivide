@@ -6,7 +6,7 @@ reset
 	self model ifNotNil: [:m |
 		self specs do: [:spec | | firstButton |
 			firstButton := nil.
-			m childrenAllGroups do: [:node |
+			m nodes do: [:node |
 					self addMorphBack: (spec itemFor: node).
 					firstButton
 						ifNil: [firstButton := self submorphs last]

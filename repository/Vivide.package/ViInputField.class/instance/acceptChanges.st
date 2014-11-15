@@ -7,7 +7,7 @@ acceptChanges
 	self model objects first = self lineEdit theText asString
 		ifTrue: [^ self].
 
-	self model childrenAllGroups first in: [:node |
+	self model nodes first in: [:node |
 		node at: #object put: self lineEdit theText asString].
 
 "	self lineEdit theText asString in: [:value |
