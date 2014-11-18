@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Exceptions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViAsyncError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

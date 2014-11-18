@@ -13,6 +13,7 @@
 	"instance" : {
 		"allObjects" : "mt 11/16/2013 11:42:45.706",
 		"anyObject" : "mt 10/10/2014 15:17:03.737",
+		"clearObjectsAndProperties" : "mt 11/18/2014 10:10:37.114",
 		"createNodesForGroup:" : "mt 11/15/2014 15:57:18.584",
 		"currentStep" : "mt 11/15/2013 14:09:50.666",
 		"currentStep:" : "mt 11/15/2014 16:49:10.119",
@@ -27,10 +28,11 @@
 		"interpretScriptExtraction" : "mt 11/15/2014 15:57:49.305",
 		"interpretScriptTransformation" : "mt 11/15/2014 15:57:57.777",
 		"interpretTransformStep" : "mt 11/15/2014 15:59:20.474",
-		"next" : "mt 11/15/2014 15:49:50.202",
+		"next" : "mt 11/17/2014 10:14:46.115",
 		"objects" : "mt 11/16/2013 13:22:11.807",
 		"objects:" : "mt 11/15/2014 16:01:44.183",
 		"objectsFor:" : "mt 11/16/2013 10:51:33.412",
+		"prepareAsynchronousExecution" : "mt 11/17/2014 10:19:45.096",
 		"properties" : "mt 10/7/2014 13:11:48.837",
 		"propertiesFor:" : "mt 10/7/2014 13:08:12.194",
 		"propertiesFor:ifNone:" : "mt 10/10/2014 14:42:03.491",
@@ -40,4 +42,6 @@
 		"upToEnd" : "mt 11/15/2014 15:52:11.855",
 		"upToEndCollectTypes" : "mt 11/15/2014 15:52:15.57",
 		"upToNextProperties" : "mt 11/15/2014 16:17:10.067",
+		"upToNextPropertiesAsync" : "mt 11/18/2014 10:10:58.147",
+		"upToNextPropertiesForced" : "mt 11/17/2014 10:14:52.245",
 		"upToStep:" : "mt 10/20/2014 11:35:32.912" } }

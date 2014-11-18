@@ -23,3 +23,4 @@ SystemOrganization addCategory: #'Vivide-Visualizations'!
 SystemOrganization addCategory: #'Vivide-Visualizations-OBSOLETE'!
 SystemOrganization addCategory: #'Vivide-Queries-OLD'!
 SystemOrganization addCategory: #'Vivide-Tests'!
+SystemOrganization addCategory: #'Vivide-Exceptions'!

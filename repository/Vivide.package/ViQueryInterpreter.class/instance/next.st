@@ -3,6 +3,9 @@ next
 	
 	step ifNil: [self assert: stack isEmpty. ^ self].
 	
+	(step isExecutedAsynchronously and: [Project uiProcess == Processor activeProcess]) ifTrue: [
+		ViAsyncError signal: 'This step must not be executed in the UI process.'].
+	
 	"--- 1) Interpret current step ---"
 
 	step isGroupStep ifTrue: [self interpretGroupStep].
