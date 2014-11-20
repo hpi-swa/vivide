@@ -2,12 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"alignNeighbours:for:" : "mt 11/20/2014 16:56:56.254",
 		"alignNeighboursFor:" : "mt 5/2/2014 11:05:12.192",
-		"cellInset" : "mt 5/19/2014 14:03:08.574",
+		"cellInset" : "mt 11/20/2014 17:00:40.059",
 		"ensureCellInsetFor:" : "mt 5/19/2014 14:13:43.126",
+		"fixLayoutFor:pivot:" : "mt 11/20/2014 17:22:12.691",
 		"fixOverlappingMorphs:" : "mt 5/2/2014 10:45:29.922",
-		"layout:in:" : "mt 5/2/2014 09:16:25.819",
+		"layout:in:" : "mt 11/20/2014 15:23:05.591",
 		"normalizeMorphPositions:in:" : "mt 5/2/2014 09:40:12.577",
+		"pushMorphsAway:by:" : "mt 11/20/2014 17:13:44.612",
 		"removeEmptyLinesFor:in:keepExtent:" : "mt 5/19/2014 14:18:30.553",
-		"resize:in:" : "mt 5/19/2014 14:20:33.761",
-		"shrinkWrap:from:" : "mt 7/29/2014 11:12:50.68" } }
+		"resize:in:" : "mt 11/20/2014 17:24:32.756",
+		"shrinkWrap:from:" : "mt 11/20/2014 16:49:51.298",
+		"snapNeighbours:for:" : "mt 11/20/2014 17:09:41.815" } }

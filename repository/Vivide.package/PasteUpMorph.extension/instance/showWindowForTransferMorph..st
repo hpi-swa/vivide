@@ -6,8 +6,10 @@ showWindowForTransferMorph: aTransferMorph
 	aTransferMorph dragTransferType in: [:type |
 	(#(pane) includes: type)
 		ifTrue: [^ ViMultiPaneEditor new
+			openInWindow;
 			addPane: aTransferMorph passenger;
-			openInWindow].
+			fullBounds; "Needed for correct geometry."
+			window].
 		
 	(#(objects) includes: type)
 		ifTrue: [^ VivideLight active openArtifacts: aTransferMorph passenger].

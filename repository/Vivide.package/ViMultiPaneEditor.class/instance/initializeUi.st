@@ -5,15 +5,18 @@ initializeUi
 	super initializeUi.
 	
 	self
-		hResizing: #rigid;
-		vResizing: #rigid.
+		removeAllMorphs;
+		borderWidth: 0;
+		layoutPolicy: ViConstraintLayout new;  
+		hResizing: #spaceFill;
+		vResizing: #spaceFill.
 	
-	self ui panel wantsHaloFromClick: false.
+"	self ui panel wantsHaloFromClick: false.
 	self ui content wantsHaloFromClick: false.
 	
 	self ui content
 		layoutPolicy: ViConstraintLayout new;
-		layoutInset: 0.
+		layoutInset: 0."
 	"self ui content layoutPolicy cellInset: 2."
 	
 	self ui addPaneBtn icon: self ui addPaneBtn icon asWireframeSunken.

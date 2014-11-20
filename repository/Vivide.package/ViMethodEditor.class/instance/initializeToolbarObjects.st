@@ -36,7 +36,7 @@ initializeToolbarObjects
 			result := Dictionary new.
 			versions do: [:v | result at: v stamp put: v].
 			result values sorted: [:v1 :v2 | 
-				(v1 isNil or: [v2 isNil])
+				(v1 stamp isNil or: [v2 stamp isNil])
 					or: [v1 timeStamp >= v2 timeStamp]]]]
 		helpText: 'No versions found.'.
 	

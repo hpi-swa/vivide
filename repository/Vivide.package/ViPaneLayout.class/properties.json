@@ -1,15 +1,13 @@
 {
-	"category" : "Vivide-Sandbox",
+	"category" : "Vivide-Artifacts-Support",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"isLayouting",
-		"activeMorph",
-		"cachedBounds" ],
-	"name" : "ViConstraintLayout",
+		 ],
+	"name" : "ViPaneLayout",
 	"pools" : [
 		 ],
 	"super" : "LayoutPolicy",

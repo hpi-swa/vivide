@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	self
-		changeTableLayout;
+		layoutPolicy: ViPaneLayout new;
 		color: Color transparent;
 		extent: 150@150.
 	

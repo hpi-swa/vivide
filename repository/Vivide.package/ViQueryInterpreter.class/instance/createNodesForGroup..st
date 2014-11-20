@@ -1,6 +1,8 @@
 as yet unclassified
 createNodesForGroup: aGroup
 
+	self properties ifEmpty: [^ #()].
+
 	(self properties at: aGroup) in: [:chunks |
 		| result |
 		result := Array new: chunks first size.

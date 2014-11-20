@@ -1,5 +1,5 @@
 accessing
 panes: somePanes
 
-	self ui content addAllMorphs: somePanes.
+	self addAllMorphs: somePanes.
 	self updateHeaderText.

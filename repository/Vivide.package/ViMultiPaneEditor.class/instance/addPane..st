@@ -1,18 +1,14 @@
 actions
 addPane: aPane
 
-	aPane hResizing: #spaceFill; vResizing: #spaceFill.
+	aPane
+		hResizing: #spaceFill;
+		vResizing: #spaceFill.
 	
 	self panes ifEmpty: [
-		"first pane"
-		aPane topLeft: self ui content topLeft.
-		self ui content extentInOwner: aPane extent].
+		aPane topLeft: self innerBounds topLeft.].
 	
-	self ui content addMorphFront: aPane.
-	self flag: #fixit.
-	"aPane layoutChanged."
-	self fullBounds.
-	self window ifNotNil: [:wnd |
-		wnd fullBounds].
-	
+	self addMorphFront: aPane.
+	aPane layoutChanged.
+
 	self updateHeaderText.

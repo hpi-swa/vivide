@@ -4,6 +4,6 @@ addPane
 
 	self addPane: (ViPane new
 		queries: [ViQueryOrganizer active orderedSteps];
-		topLeft: self ui content topRight;
+		topLeft: self topRight;
 		height: self height;
 		yourself).

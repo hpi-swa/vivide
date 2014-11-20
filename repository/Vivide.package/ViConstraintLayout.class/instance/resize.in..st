@@ -2,6 +2,7 @@ layout
 resize: morph in: bounds
 
 	| scale targetBounds offset |
+	Transcript cr; show: 'Resize to ', bounds asString.
 	targetBounds := morph submorphBounds.
 	offset := targetBounds topLeft - bounds topLeft.
 	scale := bounds extent / (targetBounds extent + offset).
@@ -9,7 +10,7 @@ resize: morph in: bounds
 		m
 			topLeft: ((m topLeft - bounds topLeft) * scale) rounded + bounds topLeft;
 			extent: (m extent * scale) rounded].
-	
-	self flag: #fixit. "mt: Watch for proportional spaces between morphs. Not wanted."
-	"self removeEmptyLinesFor: morph submorphs in: bounds keepExtent: false."
-	self ensureCellInsetFor: morph submorphs.
+
+	self
+		fixLayoutFor: morph submorphs allButFirst
+		pivot: morph submorphs first.

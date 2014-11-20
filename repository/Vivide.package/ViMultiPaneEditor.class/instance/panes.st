@@ -1,4 +1,4 @@
 accessing
 panes
 
-	^ self ui content submorphs
+	^ self submorphs select: [:m | m isKindOf: ViPane]
