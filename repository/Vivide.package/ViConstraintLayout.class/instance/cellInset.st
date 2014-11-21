@@ -1,4 +1,4 @@
 accessing
 cellInset
 
-	^ 10
+	^ cellInset ifNil: [cellInset := 5]

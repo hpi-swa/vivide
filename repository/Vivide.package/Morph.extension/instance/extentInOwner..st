@@ -10,7 +10,7 @@ extentInOwner: aPoint
 		owner hResizing = #spaceFill
 			ifFalse: [owner vResizing ~= #spaceFill
 				ifTrue: [
-					Transcript cr; show: owner asString, ' new extent: ', delta.
+					"Transcript cr; show: owner asString, ' new extent: ', delta."
 					owner extent: owner extent + delta.
 					owner fullBounds.
 					^ self "fast path"]

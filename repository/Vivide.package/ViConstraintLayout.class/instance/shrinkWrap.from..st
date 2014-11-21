@@ -1,12 +1,7 @@
 layout
 shrinkWrap: morph from: currentBounds
 
-"	self removeEmptyLinesFor: morph submorphs in: morph submorphBounds keepExtent: true.
-	self fixOverlappingMorphs: morph submorphs.
-	self normalizeMorphPositions: morph submorphs in: currentBounds.
-	self alignNeighboursFor: morph submorphs.
-"
-	(morph submorphs copyWithout: activeMorph) in: [:other |
+	(morph submorphs reject: [:m | m == activeMorph or: [m disableTableLayout]]) in: [:other |
 	self
 		alignNeighbours: other
 		for: activeMorph.
@@ -18,8 +13,7 @@ shrinkWrap: morph from: currentBounds
 		for: activeMorph.
 	].
 
-
-	morph submorphBounds in: [:b |
+	(self boundsForSubmorphs: morph) in: [:b |
 		"Transcript cr; show: b topLeft."
 		morph submorphs do: [:m |		
 			m topLeft: m topLeft + (currentBounds topLeft - b topLeft)].

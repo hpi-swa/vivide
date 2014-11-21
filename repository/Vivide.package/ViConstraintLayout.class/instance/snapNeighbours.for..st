@@ -1,4 +1,4 @@
-as yet unclassified
+private
 snapNeighbours: someMorphs for: variable "pivotMorph"
 
 	| snapRange |

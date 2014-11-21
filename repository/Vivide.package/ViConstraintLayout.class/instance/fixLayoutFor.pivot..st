@@ -1,4 +1,4 @@
-as yet unclassified
+private
 fixLayoutFor: morphs pivot: morph
 
 	morphs ifEmpty: [^ self].

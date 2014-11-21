@@ -8,7 +8,8 @@
 	"instvars" : [
 		"isLayouting",
 		"activeMorph",
-		"cachedBounds" ],
+		"cachedBounds",
+		"cellInset" ],
 	"name" : "ViConstraintLayout",
 	"pools" : [
 		 ],

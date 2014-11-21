@@ -1,4 +1,4 @@
-as yet unclassified
+private
 alignNeighbours: someMorphs for: variable "pivotMorph"
 
 	someMorphs ifEmpty: [^ self].

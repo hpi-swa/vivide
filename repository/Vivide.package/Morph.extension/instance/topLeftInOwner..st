@@ -10,7 +10,7 @@ topLeftInOwner: aPoint
 		owner hResizing = #spaceFill
 			ifFalse: [owner vResizing ~= #spaceFill
 				ifTrue: [
-					Transcript cr; show: owner asString, ' new topLeft: ', delta.
+					"Transcript cr; show: owner asString, ' new topLeft: ', delta."
 					owner topLeft: owner topLeft + delta.
 					^ self "fast path"]
 				ifFalse: [owner left: owner left + delta x. owner := nil]]

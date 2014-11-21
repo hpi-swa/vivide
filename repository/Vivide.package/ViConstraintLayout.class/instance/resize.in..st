@@ -2,8 +2,8 @@ layout
 resize: morph in: bounds
 
 	| scale targetBounds offset |
-	Transcript cr; show: 'Resize to ', bounds asString.
-	targetBounds := morph submorphBounds.
+	"Transcript cr; show: 'Resize to ', bounds asString."
+	targetBounds := self boundsForSubmorphs: morph.
 	offset := targetBounds topLeft - bounds topLeft.
 	scale := bounds extent / (targetBounds extent + offset).
 	morph submorphs do: [:m |

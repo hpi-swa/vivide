@@ -1,4 +1,4 @@
-as yet unclassified
+private
 pushMorphsAway: someMorphs by: pivotMorph
 
 	| boundsToUse |
@@ -15,8 +15,8 @@ pushMorphsAway: someMorphs by: pivotMorph
 				wanted x < wanted y
 					ifTrue: [wanted := wanted x @ 0]
 					ifFalse: [wanted := 0 @ wanted y].
-				m center: m center + (wanted * current sign)].
+				m center: m center + (wanted * current sign).
 
 			self
 				pushMorphsAway: (someMorphs copyWithout: m)
-				by: m]].
+				by: m]]].
