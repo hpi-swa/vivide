@@ -1,13 +1,13 @@
 *vivide-layout
-extentInOwner: aPoint
-	"If this morph's extent is controlled by its owner, resize the owner to make this morph have the new size."
-	
-	(self bounds extent closeTo: aPoint) ifTrue: [^ self].
-	
+boundsInOwner: aRectangle
+
+	self bounds = aRectangle ifTrue: [^ self].
+
 	self withAllOwnersDo: [:m |
 		"Assume that the world or a morph without layout policy allows for custom resizing of submorphs."
 		(m owner == m world or: [m owner layoutPolicy isNil])
 			ifTrue: [
-				m extent: m extent + (aPoint - self extent).
+				m bounds: (m topLeft + aRectangle topLeft - self topLeft
+					extent: m extent + aRectangle extent - self extent).
 				m fullBounds.
 				^ self]].

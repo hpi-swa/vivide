@@ -14,7 +14,8 @@
 		"providersForSelections",
 		"providersForResults",
 		"recentQueries",
-		"errorBtn" ],
+		"errorBtn",
+		"id" ],
 	"name" : "ViPane",
 	"pools" : [
 		 ],

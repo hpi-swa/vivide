@@ -14,12 +14,12 @@ reset
 			detect: [:morph | (morph valueOfProperty: #id) = (spec at: #id)]
 			ifNone: [(ViPane new
 				setProperty: #id toValue: (spec at: #id);
-				queries: [organizer orderedSteps]
+				queries: [self organizer orderedSteps]
 				yourself) in: [:m | self addMorph: m. m]]) in: [:pane |
 					"1) Geometry"
 					pane bounds: ((spec at: #bounds ifAbsent: [0@0 corner: 300@300]) translateBy: (self topLeft)).
 					"2) Scripts"
-					pane currentQuery: (organizer stepById: (spec at: #script)).					
+					pane currentQuery: (self organizer stepById: (spec at: #script)).					
 			]].
 	"3) Dataflow"
 	self paneSpecs do: [:spec | | pane |

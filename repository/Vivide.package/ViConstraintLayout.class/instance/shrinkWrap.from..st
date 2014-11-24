@@ -19,6 +19,4 @@ shrinkWrap: morph from: currentBounds
 			m topLeft: m topLeft + (currentBounds topLeft - b topLeft)].
 		self flag: #refactor. "mt: Merge topLeft and extent into positionInOwner:."
 		morph
-			topLeftInOwner: b topLeft - (morph borderWidth @ morph borderWidth);
-			extentInOwner: b extent + (2* (morph borderWidth @ morph borderWidth))
-			"bounds: b"].
+			boundsInOwner: (b topLeft - (morph borderWidth @ morph borderWidth) extent: b extent + (2* (morph borderWidth @ morph borderWidth)))].

@@ -2,7 +2,9 @@ initialization
 initializeUi
 
 	self
+		flag: #refactor; "mt: Use other layout policy than buggy table layout."
 		changeTableLayout;
+		clipSubmorphs: true;
 		color: (Color gray: 0.85).
 
 	scrollArea := UiScrollArea new

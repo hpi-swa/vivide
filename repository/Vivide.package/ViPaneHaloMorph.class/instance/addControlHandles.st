@@ -16,8 +16,11 @@ addControlHandles
 		self connect: resizeBtn eventHandler signal: #mouseMoved: toSelector: #doGrow:with: pattern: {1.#=.resizeBtn}.
 		self connect: resizeBtn eventHandler signal: #mouseReleased: toSelector: #endInteraction].
 
-	(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. 'Explore pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
-		self connect: exploreBtn signal: #clicked: to: target selector: #explore].
-
 	(self addHandleButton: {ViIcons crossSmallSunkenIcon. 'Close pane'. box topRight}) in: [:closeBtn |
 		self connect: closeBtn signal: #clicked: to: target selector: #close].
+	
+	"Advanced pane control."
+	(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. 'Explore pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
+		self connect: exploreBtn signal: #clicked: to: target selector: #explore].
+	"(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. ' pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
+		self connect: exploreBtn signal: #clicked: to: target selector: #explore]."
