@@ -1,0 +1,20 @@
+{
+	"category" : "Vivide-Logging",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ActivateLoggingService",
+		"CouchDB",
+		"DefaultInstance",
+		"User" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lastDocuments",
+		"pendingEvents",
+		"process",
+		"mutex" ],
+	"name" : "ViLoggingService",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
