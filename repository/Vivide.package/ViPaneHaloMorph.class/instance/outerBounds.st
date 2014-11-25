@@ -7,10 +7,8 @@ outerBounds
 	newOutputPane ifNotNil: [:m |
 		box := box quickMerge: m bounds].
 	
-	
-	self listeningPanesForSelections,
-	self listeningPanesForResults,
-	self providingPanesForSelections,
-	self providingPanesForResults do: [:m |
+	((self target connections
+		gather: [:c | {c source. c target}])
+		reject: [:o | o isNil]) asSet do: [:m |
 		box := box quickMerge: m bounds].
 	^ box

@@ -2,6 +2,13 @@ listening
 notifyChangedSelection: selectedNodes
 
 	(self hasProperty: #isUpdating) ifTrue: [^ self].
-	(selectedNodes collect: [:node | node at: #object]) in: [:objects |
-		self listenersForSelections do: [:msg |
-			msg valueWithArguments: {objects.self}]].
+	
+	self
+		setProperty: #lastSelection
+		toValue: (WeakArray withAll: (selectedNodes collect: [:node | node at: #object])).
+	
+	self connections
+		select: [:connection | (connection isValid
+			and: [connection isSelection])
+			and: [connection source == self]]
+		thenDo: [:connection | connection notify].

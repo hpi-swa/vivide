@@ -9,9 +9,8 @@ saveMultiPaneEditor: editor
 	
 	"Save mediating properties for all panes."
 	self properties at: #bounds put: editor bounds.
-	#(providersForSelections providersForResults) do: [:symbol |
-		self properties at: symbol put: OrderedCollection new.
-		editor panes do: [:listener |
-			(listener perform: symbol) do: [:providers |
-				providers ifNotNil: [:provider | provider knownName ifNotNil: [
-					(self properties at: symbol) add: (provider knownName -> listener knownName)]]]]].
+
+	self properties at: #connections put: OrderedCollection new.
+	editor panes do: [:p | p connections select: [:c | c isValid] thenDo: [:c |
+		(self properties at: #connections) add: c class name -> (c source knownName -> c target knownName)]].
+	self properties at: #connections put: (self properties at: #connections) asSet asOrderedCollection.

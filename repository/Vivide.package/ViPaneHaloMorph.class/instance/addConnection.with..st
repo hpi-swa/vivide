@@ -5,8 +5,8 @@ addConnection: event with: connectHandle
 	
 	newOutputPane ifNotNil: [:pane |
 		event shiftPressed
-			ifFalse: [pane listenForSelectionsFrom: self target]
-			ifTrue: [pane listenForResultsFrom: self target].
+			ifFalse: [(ViSelectionConnection from: self target to: pane) attach]
+			ifTrue: [(ViResultsConnection from: self target to: pane) attach].
 		newOutputPane := nil].
 	
 	self endInteraction.

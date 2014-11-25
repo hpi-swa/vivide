@@ -5,7 +5,7 @@ test05AddListenerForResults
 	sut currentQuery: [:obj | obj] asQuery.
 	
 	listener := ViPane new.
-	listener listenForResultsFrom: sut.
+	(ViResultsConnection from: sut to: listener) attach.
 
 	self assert: listener objects isEmpty.
 	sut objects: #(1 2 3).	

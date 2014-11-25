@@ -2,32 +2,23 @@ handles
 addFanInHandles
 
 	| inBtn box buttons |
-	buttons := self providingPanesForSelections collect: [:p |
-		UiToolButton new
-			color: self fanInColor;
-			autoRaise: false;
-			buttonStyle: #iconOnly;
-			icon: UiDiagonaIcons icon0331Small asWireframeSunken;
-			layoutInset: 2;
-			balloonText: (p currentQuery
-				ifNil: '(no query)'
-				ifNotNil: [:q | q nextLabel]);
-			setProperty: #paneIn toValue: p;
-			yourself].
-	buttons := buttons, (self providingPanesForResults collect: [:p |
-		UiToolButton new
-			color: self fanInColor;
-			autoRaise: false;
-			buttonStyle: #iconOnly;
-			icon: UiDiagonaIcons icon0335Small asWireframeSunken;
-			layoutInset: 2;
-			balloonText: (p currentQuery
-				ifNil: '(no query)'
-				ifNotNil: [:q | q nextLabel]);
-			setProperty: #paneIn toValue: p;
-			yourself]).
-	buttons do: [:btn |
-		self connect: btn signal: #clicked: toSelector: #removeProviderFrom: pattern: #(0)].
+	buttons := OrderedCollection new.
+	
+	self target connections
+		select: [:connection | connection isValid and: [connection target == self target]]
+		thenDo: [:connection |
+			buttons add: (UiToolButton new
+				color: self fanInColor;
+				autoRaise: false;
+				buttonStyle: #iconOnly;
+				icon: connection class icon;
+				layoutInset: 2;
+				balloonText: (connection source currentQuery
+					ifNil: ['(no query)']
+					ifNotNil: [:q | q nextLabel]);
+				setProperty: #paneIn toValue: connection source;   
+				yourself).
+			self connect: buttons last signal: #clicked: to: connection selector: #detach].
 
 	inBtn := UiToolButton new
 		color: self fanInColor;

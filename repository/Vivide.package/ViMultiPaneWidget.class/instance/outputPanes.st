@@ -1,4 +1,6 @@
 listening
 outputPanes
 
-	^ self panes select: [:pane | pane listenersForSelections anySatisfy: [:msg | msg receiver = self]]
+	^ self connections
+		select: [:c | c target == self]
+		thenCollect: [:c | c source]

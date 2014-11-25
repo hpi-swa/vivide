@@ -5,7 +5,7 @@ test06AddListenerForSelections
 	sut currentQuery: [:obj | obj] asQuery.
 	
 	listener := ViPane new.
-	listener listenForSelectionsFrom: sut.
+	(ViSelectionConnection from: sut to: listener) attach.
 
 	self assert: listener objects isEmpty.
 	sut objects: #(1 2 3).	

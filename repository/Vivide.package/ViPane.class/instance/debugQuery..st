@@ -4,7 +4,7 @@ debugQuery: aQuery
 	| tupleSize input |
 	self owner ifNil: [^ self].
 
-	tupleSize := self providersForSelections size + self providersForResults size.
+	tupleSize := self tupleSize.
 	input := tupleSize > 1
 		ifTrue: [self objects]
 		ifFalse: [self objects ifNotEmpty: [{self objects}] ifEmpty: [#()]].

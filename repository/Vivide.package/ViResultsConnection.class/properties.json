@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Editors-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViResultsConnection",
+	"pools" : [
+		 ],
+	"super" : "ViPaneConnection",
+	"type" : "normal" }

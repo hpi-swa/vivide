@@ -1,2 +1,0 @@
-listening
-listenForResultsFrom: pane

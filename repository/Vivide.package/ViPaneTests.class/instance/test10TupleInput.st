@@ -5,7 +5,7 @@ test10TupleInput
 	q := [:obj | obj] asQuery.
 	
 	provider1 := ViPane new.
-	sut listenForSelectionsFrom: provider1.
+	(ViSelectionConnection from: provider1 to: sut) attach.
 	provider1
 		currentQuery: q;
 		objects: #(a b).
@@ -14,7 +14,7 @@ test10TupleInput
 	self assert: (sut objects hasEqualElements: #(a b)).
 
 	provider2 := ViPane new.
-	sut listenForSelectionsFrom: provider2.
+	(ViSelectionConnection from: provider2 to: sut) attach.
 	"self assert: (sut objects hasEqualElements: #((a b)()))."
 	provider2
 		currentQuery: q;

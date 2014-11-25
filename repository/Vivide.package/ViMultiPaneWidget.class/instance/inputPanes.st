@@ -1,4 +1,6 @@
 listening
 inputPanes
 
-	^ inputPanes ifNil: [inputPanes := OrderedCollection new]
+	^ self connections
+		select: [:c | c source == self]
+		thenCollect: [:c | c target]

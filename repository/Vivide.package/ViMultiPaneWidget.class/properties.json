@@ -9,8 +9,8 @@
 	"instvars" : [
 		"model",
 		"organizer",
-		"inputPanes",
-		"outgoingObjects" ],
+		"outgoingObjects",
+		"connections" ],
 	"name" : "ViMultiPaneWidget",
 	"pools" : [
 		 ],

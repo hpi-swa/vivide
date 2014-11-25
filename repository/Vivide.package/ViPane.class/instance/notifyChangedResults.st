@@ -1,6 +1,8 @@
 listening
 notifyChangedResults
 
-	self model objects "results" in: [:objects |
-		self listenersForResults do: [:msg |
-			msg valueWithArguments: {objects.self}]].
+	self connections
+		select: [:connection | (connection isValid
+			and: [connection isResults])
+			and: [connection source == self]]
+		thenDo: [:connection | connection notify].

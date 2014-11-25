@@ -8,5 +8,8 @@ updateResults
 	self model updateChildren.
 	self removeProperty: #isUpdating. 
 	
-	self listenersForSelections do: [:msg |
-		msg valueWithArguments: {self selectedResults.self}].
+	self connections
+		select: [:connection | (connection isValid
+			and: [connection isSelection])
+			and: [connection source == self]]
+		thenDo: [:connection | connection notify].

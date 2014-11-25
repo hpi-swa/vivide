@@ -1,2 +1,0 @@
-listening
-stopListeningForResultsFrom: pane

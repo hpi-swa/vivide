@@ -1,4 +1,4 @@
 tuples
 tupleSize
 
-	^ self providersForSelections size + self providersForResults size
+	^ self validConnections count: [:c | c target == self]

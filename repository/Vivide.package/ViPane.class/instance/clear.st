@@ -1,20 +1,8 @@
 memento - cleanup
 clear
 
-	self providersForSelections
-		select: [:pane | pane notNil]
-		thenDo: [:pane | self stopListeningForSelectionsFrom: pane].
-	self providersForResults
-		select: [:pane | pane notNil]
-		thenDo: [:pane | self stopListeningForResultsFrom: pane].
-	self listenersForSelections
-		collect: [:msg | msg receiver]
-		thenDo: [:pane | pane ifNotNil: [
-			pane stopListeningForSelectionsFrom: self]].
-	self listenersForResults
-		collect: [:msg | msg receiver]
-		thenDo: [:pane | pane ifNotNil: [
-			pane stopListeningForResultsFrom: self]].
+	self connections copy do: [:connection |
+		connection detach].
 	
 	ViObjectChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	ViQueryChangeNotifier uniqueInstance noMoreNotificationsFor: self.

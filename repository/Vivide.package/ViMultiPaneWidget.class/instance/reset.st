@@ -4,10 +4,8 @@ reset
 	self model ifNil: [^ self].
 
 	"Clear."
-	inputPanes := nil.
 	self panes do: [:p |
-		p providersForSelections removeAll.
-		p listenersForSelections removeAll].
+		p connections copy do: [:c | c detach]].
 
 	self paneSpecs do: [:spec |
 		(self panes
@@ -25,13 +23,17 @@ reset
 	self paneSpecs do: [:spec | | pane |
 		pane := self panes detect: [:morph | (morph valueOfProperty: #id) = (spec at: #id)].
 		(spec at: #in ifAbsent: [#()]) do: [:id | 
-			id = #outer ifTrue: [self addInputPane: pane] ifFalse: [
+			id = #outer ifTrue: [(ViSelectionConnection from: self to: pane) attach] ifFalse: [
 			(self panes detect: [:morph | (morph valueOfProperty: #id) = id] ifNone: [])
-				ifNotNil: [:providerForSelections | pane listenForSelectionsFrom: providerForSelections]]].
+				ifNotNil: [:providerForSelections | (ViSelectionConnection from: providerForSelections to: pane) attach]]].
 		(spec at: #out ifAbsent: [#()]) do: [:id |
-			id = #outer ifTrue: [self listenForSelectionsFrom: pane] ifFalse: [
+			id = #outer ifTrue: [(ViSelectionConnection from: pane to: self) attach] ifFalse: [
 			(self panes detect: [:morph | (morph valueOfProperty: #id) = id] ifNone: [])
-				ifNotNil: [:consumerForSelections | consumerForSelections listenForSelectionsFrom: pane]]]].
+				ifNotNil: [:consumerForSelections | (ViSelectionConnection from: pane to: consumerForSelections) attach]]]].
 
 	"Distribute incoming objects."
-	self inputPanes do: [:pane | pane objects: self incomingObjects]
+	self connections
+		select: [:connection | (connection isValid
+			and: [connection isSelection])
+			and: [connection source == self]]
+		thenDo: [:connection | connection notify].
