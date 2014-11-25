@@ -1,4 +1,4 @@
-pop-up chooser
+initialization - pop-up
 chooseObjectAt: pt thenNotify: receiver with: selector
 
 	self view disconnectSignal: #doubleClicked:. " from: self."

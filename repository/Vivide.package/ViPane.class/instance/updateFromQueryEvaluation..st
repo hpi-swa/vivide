@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateFromQueryEvaluation: evt
 	
 	self model firstStep allStepsDo: [:step |

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 objects: someObjects from: aPane
 
 	| index |

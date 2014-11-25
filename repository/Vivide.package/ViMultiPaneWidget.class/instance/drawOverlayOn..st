@@ -1,9 +1,9 @@
-drawing
+as yet unclassified
 drawOverlayOn: aCanvas
 
 	super drawOverlayOn: aCanvas.
 
-	(self drawFlags includes: #dropPane) ifTrue: [
+	(self hasProperty: #dropPane) ifTrue: [
 		aCanvas
 			frameAndFillRectangle: self bounds
 			fillColor: ((Color fromString: #'952424') alpha: 0.3)

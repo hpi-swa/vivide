@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 clearDrawFlag: symbol
 
 	self setProperty: #drawFlags toValue: (self drawFlags copyWithout: symbol).

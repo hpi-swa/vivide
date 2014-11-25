@@ -1,4 +1,4 @@
-accessing
+accessing - convenience
 appropriateQueries
 	"Current query is most appropriate if not nil and still matching the type filter. Prepend it; then append others."
 	

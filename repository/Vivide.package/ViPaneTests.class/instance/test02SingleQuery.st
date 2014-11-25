@@ -5,4 +5,4 @@ test02SingleQuery
 		objects: #(1 2 3);
 		currentQuery: [:num | num * num] asQuery.
 	
-	self assert: (sut visibleResults hasEqualElements: {1. 4. 9}).
+	self assert: (sut results hasEqualElements: {1. 4. 9}).

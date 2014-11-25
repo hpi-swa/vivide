@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 chooseMostAppropriateQuery
 
 	| defaultQueryCheck |

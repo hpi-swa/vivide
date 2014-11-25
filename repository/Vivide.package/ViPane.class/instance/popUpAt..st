@@ -1,4 +1,4 @@
-pop-up chooser
+initialization - pop-up
 popUpAt: aPoint
 
 	self flag: #badPlace. "mt: Move to initializer?"

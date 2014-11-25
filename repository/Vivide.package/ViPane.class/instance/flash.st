@@ -1,4 +1,4 @@
-macpal
+actions
 flash
 
 	"Give user feedback."

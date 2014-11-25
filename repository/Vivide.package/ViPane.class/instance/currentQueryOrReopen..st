@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 currentQueryOrReopen: aQueryStep
 	"Open a new windows if shift is pressed."
 

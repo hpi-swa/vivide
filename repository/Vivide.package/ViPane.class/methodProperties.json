@@ -6,7 +6,7 @@
 		"addQuery" : "mt 4/23/2014 13:39:16.981",
 		"appropriateQueries" : "mt 9/20/2014 10:52:37.95",
 		"browseObjects" : "mt 11/14/2014 15:46:41.944",
-		"browseResults" : "mt 11/14/2014 15:47:17.202",
+		"browseResults" : "mt 11/25/2014 08:18:10.08",
 		"chooseMostAppropriateQuery" : "mt 11/13/2014 11:24:09.85",
 		"chooseObjectAt:thenNotify:with:" : "mt 10/8/2014 13:31:10.09",
 		"chooseQuery" : "mt 11/14/2014 15:43:27.427",
@@ -65,6 +65,7 @@
 		"recentQueries" : "mt 5/2/2014 14:13:54.955",
 		"recentQueries:" : "mt 5/19/2014 18:09:51.008",
 		"recentQueriesAdd:" : "mt 5/5/2014 14:23:43.087",
+		"results" : "mt 11/25/2014 08:17:52.785",
 		"saveState:" : "mt 5/19/2014 15:57:00.685",
 		"selectedResults" : "mt 4/22/2014 18:48:06.752",
 		"showLastException" : "mt 6/18/2014 14:33:30",
@@ -82,5 +83,4 @@
 		"updateFromQueryEvaluation:" : "mt 6/18/2014 14:58:27.14",
 		"updateResults" : "mt 6/18/2014 15:00:50.533",
 		"updateView" : "mt 6/18/2014 15:01:12.35",
-		"view" : "mt 6/18/2014 14:35:44.584",
-		"visibleResults" : "mt 11/14/2014 15:44:29.473" } }
+		"view" : "mt 6/18/2014 14:35:44.584" } }

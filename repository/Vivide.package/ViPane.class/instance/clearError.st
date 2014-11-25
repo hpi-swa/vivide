@@ -1,4 +1,4 @@
-as yet unclassified
+errors
 clearError
 
 	errorBtn ifNil: [^ self].

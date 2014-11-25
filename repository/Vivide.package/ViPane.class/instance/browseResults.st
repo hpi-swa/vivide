@@ -1,10 +1,10 @@
-as yet unclassified
+actions
 browseResults
 	"Visible output."
 
 	| pane |
 	pane := ViPane new
-		objects: self visibleResults;
+		objects: self results;
 		currentQuery: #defaultProperties asScript;
 		yourself.
 	pane

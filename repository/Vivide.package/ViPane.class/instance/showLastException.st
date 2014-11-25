@@ -1,4 +1,4 @@
-as yet unclassified
+errors
 showLastException
 
 	(self errorBtn valueOfProperty: #error) ifNotNil: [:ex |

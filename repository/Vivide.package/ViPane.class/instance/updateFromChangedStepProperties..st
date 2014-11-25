@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateFromChangedStepProperties: evt
 
 	self currentQuery ifNil: [^ self].

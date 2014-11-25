@@ -20,7 +20,7 @@ openQueries: someQueries withObjects: someObjects
 					currentQuery: (ViQueryStep convert: q);
 					yourself).
 				"Immitate selection. How to actually select?"
-				input := wnd editor panes last visibleResults
+				input := wnd editor panes last results
 					ifEmpty: [#()] ifNotEmpty: [:objs | {objs first}]].
 			hasOutputPage := true].
 

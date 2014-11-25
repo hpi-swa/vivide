@@ -6,5 +6,5 @@ test01New
 		assert: sut objects isEmpty;
 		assert: sut queries isEmpty;
 		assert: sut selectedResults isEmpty;
-		assert: sut visibleResults isEmpty;
+		assert: sut results isEmpty;
 		assert: sut view isNil.

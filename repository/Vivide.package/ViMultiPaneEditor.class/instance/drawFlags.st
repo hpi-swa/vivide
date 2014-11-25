@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 drawFlags
 
 	^ self valueOfProperty: #drawFlags ifAbsent: [#()]
