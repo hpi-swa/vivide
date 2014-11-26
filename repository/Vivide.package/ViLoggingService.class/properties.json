@@ -6,6 +6,7 @@
 		"ActivateLoggingService",
 		"CouchDB",
 		"DefaultInstance",
+		"LoggingFlags",
 		"User" ],
 	"commentStamp" : "",
 	"instvars" : [
