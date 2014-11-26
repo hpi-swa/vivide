@@ -12,3 +12,5 @@ popUpFor: aMorph event: event
 				- (aMorph point: aMorph position in: owner).
 	
 	target ifNotNil: [self addHandles].
+
+	ViLoggingService trigger: {#message -> 'Halo opened.'}.

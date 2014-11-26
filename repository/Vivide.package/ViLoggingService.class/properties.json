@@ -12,7 +12,9 @@
 		"lastDocuments",
 		"pendingEvents",
 		"process",
-		"mutex" ],
+		"mutex",
+		"outgoingDocuments",
+		"outgoingAttachments" ],
 	"name" : "ViLoggingService",
 	"pools" : [
 		 ],

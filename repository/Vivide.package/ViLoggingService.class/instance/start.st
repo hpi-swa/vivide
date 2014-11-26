@@ -1,4 +1,4 @@
-as yet unclassified
+process
 start
 
 	process ifNotNil: [^ self].
@@ -7,16 +7,10 @@ start
 		| delay |
 		delay := Delay forSeconds: 30.
 		[
-			| nextEvents nextEvent |
-			nextEvents := OrderedCollection new.
-			[nextEvent := self pendingEvents nextOrNil]
-				whileNotNil: [nextEvents add: nextEvent].  
-	
 			self mutex critical: [
-				self addAllDocuments: nextEvents].  
-	
-			delay wait.
-		
+				self processPendingEvents.
+				self trySendDocumentsAndAttachments].
+			delay wait.		
 		] repeat ] newProcess.
 	
 	process name: 'Vivide Logging Service'.
