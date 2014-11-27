@@ -15,7 +15,9 @@
 		"process",
 		"mutex",
 		"outgoingDocuments",
-		"outgoingAttachments" ],
+		"outgoingAttachments",
+		"lastScreenshotLog",
+		"activityMonitor" ],
 	"name" : "ViLoggingService",
 	"pools" : [
 		 ],

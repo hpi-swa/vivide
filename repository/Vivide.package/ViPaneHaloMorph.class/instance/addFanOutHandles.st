@@ -18,6 +18,7 @@ addFanOutHandles
 					ifNotNil: [:q | q nextLabel]);
 				setProperty: #paneOut toValue: connection target;   
 				yourself).
+			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
 			self connect: buttons last signal: #clicked: to: connection selector: #detach].
 	
 	addBtn := UiToolButton new

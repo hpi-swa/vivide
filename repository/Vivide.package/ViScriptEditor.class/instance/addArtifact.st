@@ -16,5 +16,7 @@ addArtifact
 	editor object next: self object next.
 	self object next: editor object.
 
+	ViLoggingService trigger: {#message -> 'Script part created.'}.
+
 	self artifactCreated: editor.
 	editor activateWizard.

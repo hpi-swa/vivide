@@ -8,13 +8,21 @@ trigger: anEvent
 	anEvent isDictionary ifFalse: [
 		^ self trigger: (Dictionary newFrom: anEvent)].
 	
+	"Transcript cr; show: anEvent."
+	
 	anEvent
 		at: #timestamp put: DateAndTime now printString;
 		at: #user put: self class user;
 		at: #author put: Utilities authorInitials;
-		at: #call put: self externalCall printString.
+		at: #call put: (self externalCall
+			ifNil: [Processor activeProcess name]
+			ifNotNil: [:ctxt | ctxt printString]).
 
-	self class logScreenshots ifTrue: [
-		anEvent at: #screenshot put: Display copy]. 
+	(self class logScreenshots and: [lastScreenshotLog isNil or: [
+		(Time now asSeconds - lastScreenshotLog between: 0 and: 5) not]])
+			ifTrue: [
+				anEvent at: #screenshot put: Display copy.
+				(anEvent at: #screenshot) getCanvas drawMorph: ActiveHand.
+				lastScreenshotLog := Time now asSeconds]. 
 
 	self pendingEvents nextPut: anEvent.

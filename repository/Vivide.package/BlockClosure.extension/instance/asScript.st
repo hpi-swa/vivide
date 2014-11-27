@@ -1,6 +1,8 @@
 *vivide-queries
 asScript
 
+	ViLoggingService trigger: {#message -> 'Script created from block.'}.
+
 	(ViScriptEditor templateForBlock: self) in: [:spec | | t s p |
 		t := spec key value.
 		s := spec key key ifNil: [1 to: t size].

@@ -9,4 +9,6 @@ chooseQuery
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
 		thenNotify: self
-		with: #currentQueryOrReopen:. 
+		with: #currentQueryOrReopen:.
+
+	ViLoggingService trigger: {#message -> 'Script list opened.'}.

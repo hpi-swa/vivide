@@ -10,3 +10,4 @@ addConnection: event with: connectHandle
 		newOutputPane := nil].
 	
 	self endInteraction.
+	self logDataflowChanged.

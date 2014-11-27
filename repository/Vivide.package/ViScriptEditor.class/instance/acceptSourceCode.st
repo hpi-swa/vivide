@@ -28,7 +28,7 @@ acceptSourceCode
 	(RBParser parseExpression: script) in: [:n |
 		self
 			updateMapFor: n;
-			updateMapIndex: n].   
+			updateMapIndex: n].
 	
 	"Update visuals if code was fixed automatically."
 	code size ~= edit theText size
@@ -38,3 +38,7 @@ acceptSourceCode
 	self updateObject.
 
 	self updateUi.
+
+	ViLoggingService trigger: {
+		#message -> 'Script modified.'.
+		#script -> script copy}.
