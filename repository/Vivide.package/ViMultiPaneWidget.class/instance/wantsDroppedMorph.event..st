@@ -1,4 +1,4 @@
-as yet unclassified
+dropping
 wantsDroppedMorph: morph event: event
 
 	^ (morph isKindOf: TransferMorph)

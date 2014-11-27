@@ -1,4 +1,4 @@
-as yet unclassified
+dropping
 acceptDroppingMorph: aTransferMorph event: evt
 
 	| pane |
@@ -7,5 +7,4 @@ acceptDroppingMorph: aTransferMorph event: evt
 	pane topLeft: evt cursorPoint.
 	self addPane: pane.
 
-	self removeProperty: #dropPane.
-	self redrawLater.
+	self clearDrawFlag: #dropPane.

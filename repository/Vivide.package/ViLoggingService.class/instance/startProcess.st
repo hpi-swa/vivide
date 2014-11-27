@@ -9,7 +9,8 @@ startProcess
 		[
 			self mutex critical: [
 				self processPendingEvents.
-				self trySendDocumentsAndAttachments].
+				self trySendDocumentsAndAttachments.
+				self limitOutgoingRequests].
 			delay wait.		
 		] repeat ] newProcess.
 	

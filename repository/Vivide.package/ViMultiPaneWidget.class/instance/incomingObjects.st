@@ -1,4 +1,6 @@
 accessing
 incomingObjects
 
-	^ self model nodes first at: #objects ifAbsent: [#()]
+	^ (self model nodes
+		detect: [:node | node includesKey: #objects]
+		ifNone: []) ifNil: [#()] ifNotNil: [:node | node at: #objects]
