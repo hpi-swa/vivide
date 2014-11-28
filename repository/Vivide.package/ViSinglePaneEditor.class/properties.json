@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Editors",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViSinglePaneEditor",
+	"pools" : [
+		 ],
+	"super" : "ViEditor",
+	"type" : "normal" }

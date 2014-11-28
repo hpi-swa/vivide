@@ -1,6 +1,8 @@
 {
 	"class" : {
-		"convert:" : "mt 11/13/2014 15:00:39.699" },
+		"convert:" : "mt 11/13/2014 15:00:39.699",
+		"convertPanes:" : "mt 11/28/2014 14:35:40.774",
+		"convertPanes:toScript:" : "mt 11/28/2014 14:37:06.857" },
 	"instance" : {
 		"acceptObjectService:" : "mt 10/10/2014 12:13:03.681",
 		"asDictionary" : "mt 11/14/2014 11:02:26.669",

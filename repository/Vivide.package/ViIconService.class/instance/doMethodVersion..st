@@ -1,4 +1,4 @@
 operations
 doMethodVersion: aMethodVersion
 
-	^ UiFugueIcons clockSmallIcon  
+	^ UiFugueIcons clockSmallIcon

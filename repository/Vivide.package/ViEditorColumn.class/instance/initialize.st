@@ -5,7 +5,7 @@ initialize
 	
 	self
 		vResizing: #spaceFill;
-		layoutPolicy: ViEditorColumnLayout new;
+		layoutPolicy: ViVerticalLayout new;
 		acceptedDropAreas: #(left right between);
 		convertPassengerBlock: [:passenger :type :source |
 			type == #editorStates

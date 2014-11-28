@@ -4,7 +4,7 @@ initialize
 	super initialize.
 
 	self
-		layoutPolicy: ViPaneLayout new;
+		layoutPolicy: ViOverlappingLayout new;
 		color: Color transparent;
 		extent: 150@150.
 	
