@@ -35,6 +35,9 @@ startSearch
 		
 	tokens first = '.'
 		ifTrue: [^ self searchLocals: tokens second].
+	
+	tokens first = ','
+		ifTrue: [^ self searchRecentChanges: tokens second].
 		
 	"tokens first asLowercase = 'i'
 		ifTrue: [^ self searchImplementors: tokens second]."

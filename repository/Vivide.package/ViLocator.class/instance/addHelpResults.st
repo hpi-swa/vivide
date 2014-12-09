@@ -5,6 +5,7 @@ addHelpResults
 	
 	resultList model addAllChildren: (#(
 		('.' 'Objects in view')
+		(',' 'Recent changes (2 hours)')
 		(p 'Packages')
 		(c 'Classes (refine with ''p'')')
 		(m 'Methods (refine with ''c'' or ''p'')')
