@@ -1,9 +1,10 @@
 {
 	"class" : {
-		"defaultStyleTable" : "mt 4/20/2011 17:09:48.067",
+		"defaultStyleTable" : "mt 12/9/2014 11:09:46.724",
 		"styleExpression:" : "mt 2/6/2013 17:27:27.253",
 		"subduedStyleTable" : "mt 4/20/2011 17:10:02.525" },
 	"instance" : {
 		"attributesFor:" : "mt 4/27/2011 13:30:52.11",
 		"customTextAttributes" : "mt 4/20/2011 17:21:02.301",
+		"rangesIn:setWorkspace:" : "mt 12/9/2014 11:20:25.779",
 		"styleExpression:" : "mt 2/6/2013 17:26:54.291" } }
