@@ -6,5 +6,7 @@ acceptDroppingMorph: aTransferMorph event: evt
 	
 	pane topLeft: evt cursorPoint.
 	self addPane: pane.
+	
+	pane adoptOrganization: self organizer.  
 
 	self clearDrawFlag: #dropPane.

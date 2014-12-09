@@ -19,7 +19,8 @@ addFanInHandles
 				setProperty: #paneIn toValue: connection source;   
 				yourself).
 			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
-			self connect: buttons last signal: #clicked: to: connection selector: #detach].
+			self connect: buttons last signal: #clicked: to: connection selector: #detach.
+			self connect: buttons last signal: #clicked: toSelector: #endInteraction].
 
 	inBtn := UiToolButton new
 		color: self fanInColor;

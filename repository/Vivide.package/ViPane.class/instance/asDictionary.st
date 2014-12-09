@@ -1,6 +1,8 @@
 as yet unclassified
 asDictionary
 
+	self flag: #metaScript.
+
 	^ Dictionary new
 		at: #id put: self id;
 		at: #bounds put: (self bounds translateBy: self owner topLeft negated);

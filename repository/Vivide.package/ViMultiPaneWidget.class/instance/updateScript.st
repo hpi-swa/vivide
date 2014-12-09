@@ -12,9 +12,7 @@ updateScript
 			steps.   
 			
 	"Ensure same tool-local organization."
-	scripts do: [:script | 
-		script organization: self organizer.
-		script definition organization: self organizer].
+	scripts do: [:script | script adoptOrganization: self organizer].
 	
 	self currentQuery: scripts first.
 

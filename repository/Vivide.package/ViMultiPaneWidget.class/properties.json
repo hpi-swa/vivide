@@ -10,7 +10,8 @@
 		"model",
 		"organizer",
 		"outgoingObjects",
-		"connections" ],
+		"connections",
+		"fullScript" ],
 	"name" : "ViMultiPaneWidget",
 	"pools" : [
 		 ],

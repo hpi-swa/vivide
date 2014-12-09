@@ -3,9 +3,16 @@ detach
 
 	self source ifNotNil: [:pane |
 		(pane connections includes: self)
-			ifTrue: [pane connections remove: self]].
+			ifTrue: [
+				self flag: #metaScript.
+				pane layoutChanged.
+
+				pane connections remove: self]].
 	self target ifNotNil: [:pane |
 		(pane connections includes: self)
 			ifTrue: [
+				self flag: #metaScript.
+				pane layoutChanged.
+
 				pane connections remove: self.
 				pane decreaseTupleInput]].

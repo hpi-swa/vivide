@@ -5,7 +5,7 @@ updatePanesFor: specs
 	(self valueOfProperty: #isUpdatingScript ifAbsent: [false])
 		ifTrue: [^ self].  
 
-	unknownPanes := self panes.
+	unknownPanes := self panes copy asOrderedCollection.
 
 	self paneSpecs do: [:spec |
 		(self panes
@@ -20,6 +20,7 @@ updatePanesFor: specs
 					"2) Scripts"
 					pane currentQuery: (self organizer stepById: (spec at: #current))]].
 	
+	self connections copy do: [:c | c detach]. "for unknown panes -- just in case..."
 	self removeAllMorphsIn: unknownPanes. 
 			
 	"3) Dataflow"
