@@ -1,4 +1,6 @@
 halos and balloon help
 haloClass
 
-	^ #ViPaneHaloMorph
+	^ VivideLight useClassicMode
+		ifTrue: [super haloClass]
+		ifFalse: [#ViPaneHaloMorph]

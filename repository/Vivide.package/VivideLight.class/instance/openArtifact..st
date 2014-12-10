@@ -1,7 +1,7 @@
 actions - open
 openArtifact: anObject
 
-	| editor object |
+	| object |
 	"Reuse windows if modifier pressed."
 	(self currentEvent in: [:evt | evt isKeyboard | evt isMouse and: [evt shiftPressed]])
 		ifTrue: [
@@ -26,6 +26,10 @@ openArtifact: anObject
 		"See behavior of ViScriptEditor >> #onContextChanged."
 			steps size > 1 ifTrue: [^ self openArtifacts: steps]]].
 
-	^ ViMultiPaneEditor open: #artifacts for: ((ViQueryInterpreter isCollection: object)
+	object := (ViQueryInterpreter isCollection: object)
 		ifTrue: [object]
-		ifFalse: [{object}])
+		ifFalse: [{object}].
+
+	^ VivideLight useClassicMode
+		ifTrue: [self chooseScriptFor: object]
+		ifFalse: [ViMultiPaneEditor open: #artifacts for: object]

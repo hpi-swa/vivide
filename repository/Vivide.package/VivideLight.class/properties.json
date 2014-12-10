@@ -5,6 +5,7 @@
 	"classvars" : [
 		"EditorStates",
 		"FeedbackServer",
+		"UseClassicMode",
 		"UseVivideDebugger" ],
 	"commentStamp" : "mt 12/4/2012 11:21:39.85",
 	"instvars" : [

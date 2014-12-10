@@ -7,6 +7,9 @@ chooseMostAppropriateQuery
 	self currentQuery id == #artifacts
 		ifFalse: [^ self].
 	
+	VivideLight useClassicMode
+		ifTrue: [^ self].
+	
 	defaultQueryCheck := {
 		[:o | o isBehavior].
 		[:o | o isKindOf: PackageInfo].

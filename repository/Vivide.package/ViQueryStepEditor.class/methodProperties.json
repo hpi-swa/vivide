@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"supportedTypes" : "mt 10/5/2014 12:13:40.393" },
+		"supportedTypes" : "mt 12/9/2014 15:50:08.527" },
 	"instance" : {
 		"acceptChanges" : "mt 9/9/2013 14:24:16.997",
 		"acceptDefinition" : "mt 2/5/2014 14:35:51.725",
@@ -73,7 +73,7 @@
 		"typeMappings" : "mt 9/15/2013 11:10:01.925",
 		"ui" : "mt 9/2/2013 14:38:00.091",
 		"unregisterQuery" : "mt 9/3/2013 13:16:08.328",
-		"updateFromEvent:" : "mt 9/17/2013 08:42:27.334",
+		"updateFromEvent:" : "mt 12/10/2014 10:29:20.33",
 		"updateSummaryLbl" : "mt 9/9/2013 09:52:46.576",
 		"updateTypeFromEditor" : "mt 1/8/2014 08:57:21.732",
 		"updateViewList" : "mt 9/18/2013 20:09:28.088",

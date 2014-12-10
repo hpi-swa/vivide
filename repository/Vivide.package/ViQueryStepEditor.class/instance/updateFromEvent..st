@@ -3,7 +3,10 @@ updateFromEvent: evt
 
 	(evt isModified and: [evt item == self step])
 		ifFalse: [^ self].
-		
+	
+	evt isPropertiesModified
+		ifTrue: [^ self].
+	
 	evt isDefinitionChanged
 		ifTrue: [self currentDefinition: evt definition].
 	evt isNextChanged
