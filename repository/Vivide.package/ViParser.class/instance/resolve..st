@@ -1,4 +1,4 @@
-as yet unclassified
+nil
 resolve: aString
 
 	aString = 'thisScript'

@@ -11,4 +11,4 @@ openArtifacts: someObjects
 	
 	^ VivideLight useClassicMode
 		ifTrue: [self chooseScriptFor: objects]
-		ifFalse: [ViMultiPaneEditor open: #artifacts for: objects]
+		ifFalse: [ViSinglePaneEditor open: #artifacts for: objects]

@@ -1,4 +1,4 @@
 actions - open
 openSenders: aSymbol
 
-	^ ViMultiPaneEditor open: #senders for: {aSymbol}
+	^ ViSinglePaneEditor open: #senders for: {aSymbol}

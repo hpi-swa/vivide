@@ -1,4 +1,4 @@
 actions - open
 openImplementors: aSymbol
 
-	^ ViMultiPaneEditor open: #implementors for: {aSymbol}
+	^ ViSinglePaneEditor open: #implementors for: {aSymbol}

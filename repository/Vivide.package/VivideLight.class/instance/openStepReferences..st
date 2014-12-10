@@ -1,4 +1,4 @@
 actions - open
 openStepReferences: aQueryStep
 
-	^ ViMultiPaneEditor open: #refToStep for: {aQueryStep}
+	^ ViSinglePaneEditor open: #refToStep for: {aQueryStep}

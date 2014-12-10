@@ -5,9 +5,9 @@ showWindowForTransferMorph: aTransferMorph
 
 	aTransferMorph dragTransferType in: [:type |
 	(#(pane) includes: type)
-		ifTrue: [^ ViMultiPaneEditor new
+		ifTrue: [^ ViSinglePaneEditor new
+			pane: aTransferMorph passenger;
 			openInWindow;
-			addPane: aTransferMorph passenger;
 			fullBounds; "Needed for correct geometry."
 			window].
 		

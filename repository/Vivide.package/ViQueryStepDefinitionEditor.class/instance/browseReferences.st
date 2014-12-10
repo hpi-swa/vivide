@@ -1,4 +1,4 @@
 actions
 browseReferences
 
-	ViMultiPaneEditor open: #refToDef for: {self definition}.
+	ViSinglePaneEditor open: #refToDef for: {self definition}.

@@ -1,7 +1,7 @@
 as yet unclassified
 process: someObjects within: aContext
 
-	| in out thisScriptBinding |
+	| in out |
 	(self valueOfProperty: #in ifAbsent: [OrderedCollection])
 		in: [:ic |
 			ic = someObjects species
@@ -16,15 +16,11 @@ process: someObjects within: aContext
 				ifTrue: [oc value]
 				ifFalse: [oc new])].
 
-	"Find binding for current script."
-	thisScriptBinding := #thisScript -> nil. "Fall-back"
-	definition block method literalsDo: [:lit | (lit isVariableBinding
-		and: [lit key = 'thisScript']) ifTrue: [thisScriptBinding := lit]].
-
-	[
-		thisScriptBinding value: self.
-		definition block value: in value: out.
-	] ensure: [
-		thisScriptBinding value: nil].
+	(Smalltalk at: #thisScript) in: [:old |
+		[
+			Smalltalk at: #thisScript put: self.
+			definition block value: in value: out.
+		] ensure: [
+			Smalltalk at: #thisScript put: old]].
 	
 	^ out

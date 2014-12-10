@@ -1,6 +1,8 @@
 binding
 bindingOf: aString 
 
+	aString = 'thisScript' ifTrue: [^ nil].
+
 	(self bindings includesKey: aString)
 		ifFalse: [aString first isUppercase
 			ifTrue: [^ nil]

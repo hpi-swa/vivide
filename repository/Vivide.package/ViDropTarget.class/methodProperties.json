@@ -5,9 +5,9 @@
 		"widgetClassIcon" : "mt 2/19/2013 09:58:49.656",
 		"widgetClassName" : "mt 2/19/2013 10:00:33.709" },
 	"instance" : {
-		"acceptArtifact:fromEditor:event:" : "mt 8/19/2014 11:02:47.216",
+		"acceptArtifact:fromEditor:event:" : "mt 12/10/2014 11:50:23.816",
 		"acceptDroppingMorph:event:" : "mt 8/19/2014 09:50:42.612",
-		"acceptObjects:fromEditor:event:" : "mt 8/19/2014 09:29:51.112",
+		"acceptObjects:fromEditor:event:" : "mt 12/10/2014 11:50:28.406",
 		"acceptedDropAreas" : "mt 6/18/2012 11:28:18.314",
 		"acceptedDropAreas:" : "mt 6/18/2012 11:28:18.503",
 		"acceptedDropBlock" : "mt 6/18/2012 11:28:18.607",

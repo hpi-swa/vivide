@@ -1,4 +1,4 @@
 actions - open
 openQuery: aQueryOrSymbol withObjects: someObjects
 
-	^ ViMultiPaneEditor open: aQueryOrSymbol for: someObjects
+	^ ViSinglePaneEditor open: aQueryOrSymbol for: someObjects
