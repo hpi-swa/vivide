@@ -4,5 +4,7 @@ browseIt
 	| aSymbol |
 	self lineSelectAndEmptyCheck: [^ self].
 	(aSymbol := self selectedSymbol) == nil ifTrue: [^ morph flash].
-	morph requestQuery: ((Smalltalk at: aSymbol
-		ifAbsent: [^ morph requestImplementors: aSymbol])).
+	
+	(Smalltalk at: aSymbol ifAbsent: [nil])
+		ifNil: [morph requestImplementors: aSymbol]
+		ifNotNil: [:cls | #outline openScriptWith: {cls}].

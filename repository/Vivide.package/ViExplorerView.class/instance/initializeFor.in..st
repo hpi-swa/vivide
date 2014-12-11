@@ -14,6 +14,10 @@ initializeFor: aScript in: anEnvironment
 			ifNotEmpty: [:objects | 
 				objects size = 1
 					ifTrue: [container object: objects first]
-					ifFalse: [container object: objects]]].
+					ifFalse: [container object: objects]].
+		container editVisible: true.
+		container sourceCodeEdit
+			theText: '"Enter code here..."';
+			selectAll].
 
 	self connect: self container contentTree signal: #selectionChanged: toSelector: #selectObjects:.

@@ -6,7 +6,7 @@ initialize
 	
 	"scene-graph signals coming from editors."
 	self sgConnectSignal: #artifactRequested: toSelector: #openArtifact:.
-	self sgConnectSignal: #explorerRequested: toSelector: #openArtifact:.
+	self sgConnectSignal: #explorerRequested: toSelector: #openExplorer:.
 	self sgConnectSignal: #artifactCreated: toSelector: #forceAddArtifact:ifNotFocusedAfter: pattern: #(1 0).
 	"scene-graph signals coming from drop target."
 	self sgConnectSignal: #artifactsAdded: toSelector: #updateModelInput.

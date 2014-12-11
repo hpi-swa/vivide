@@ -8,8 +8,8 @@ openIt
 	self selectedSelector ifNotNil: [:symbol |
 		^ morph editView activateSymbol: symbol].
 
-	"self evaluateSelection ifNotNil: [:result |
+	self evaluateSelection ifNotNil: [:result |
 		((result isKindOf: FakeClassPool) or: [result == #failedDoit])
-			ifFalse: [^ model activateObject: result]]."
+			ifFalse: [^ morph editView activateObject: result]].
 	
 	^ morph flash

@@ -2,7 +2,7 @@
 	"class" : {
 		"initializeCmdKeyShortcuts" : "mt 8/13/2012 15:07:35.917" },
 	"instance" : {
-		"browseIt" : "mt 8/13/2012 15:01:17.29",
+		"browseIt" : "mt 12/11/2014 09:41:43.394",
 		"debug:receiver:in:" : "mt 2/3/2014 13:16:06.07",
 		"evaluateSelectionAndDo:" : "mt 2/10/2014 15:57:03.572",
 		"exploreIt" : "mt 8/14/2012 10:15:45.746",
@@ -10,6 +10,6 @@
 		"inspectIt" : "mt 8/14/2012 10:15:52.889",
 		"logScript:receiver:context:result:" : "mt 8/19/2014 11:51:05.159",
 		"notify:at:in:" : "mt 2/4/2014 15:07:29.869",
-		"openIt" : "mt 11/1/2012 17:13:40.396",
+		"openIt" : "mt 12/11/2014 10:41:50.663",
 		"openIt:" : "mt 8/13/2012 15:39:02.409",
 		"sendersOfIt" : "mt 8/13/2012 14:32:54.806" } }

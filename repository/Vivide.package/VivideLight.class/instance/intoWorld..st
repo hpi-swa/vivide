@@ -8,8 +8,7 @@ intoWorld: aWorld
 		^ self].
 
 	aWorld sgConnectSignal: #artifactRequested: to: self selector: #openArtifact:.
-	aWorld sgConnectSignal: #explorerRequested: to: self selector: #openArtifact:.
-	aWorld sgConnectSignal: #queryRequested: to: self selector: #openArtifact:.
+	aWorld sgConnectSignal: #explorerRequested: to: self selector: #openExplorer:.
 	aWorld sgConnectSignal: #implementorsRequested: to: self selector: #openImplementors:.
 	aWorld sgConnectSignal: #sendersRequested: to: self selector: #openSenders:.
 
