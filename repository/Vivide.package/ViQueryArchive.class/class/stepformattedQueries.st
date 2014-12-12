@@ -2,4 +2,4 @@ steps
 stepformattedQueries
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#'67e6843f-98b0-044f-8903-62eacc3a5308'); add: (#class->ViQueryPropertyStep); add: (#properties->((Dictionary new) add: (#copyOfStep->#identity); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'11 February 2014 1:01:49 pm'); yourself)); add: (#id->#formattedQueries); add: (#iconCode->'nil'); add: (#next->#'cd563aef-8bdc-1746-b414-80fad70add58'); add: (#viewDefinition->#treeView); add: (#label->'Formatted Queries'); yourself)
+	^ ((Dictionary new) add: (#definition->#'7e9d16d4-7549-f441-bf3d-74fbe6115750'); add: (#class->ViQuerySortStep); add: (#properties->((Dictionary new) add: (#priority->6060); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'11 February 2014 1:01:49 pm'); add: (#copyOfStep->#identity); yourself)); add: (#id->#formattedQueries); add: (#iconCode->'nil'); add: (#next->#'6add0b0f-920d-894b-8c60-7e275fc7080f'); add: (#viewDefinition->#treeView); add: (#label->'Formatted Queries'); yourself)

@@ -7,8 +7,8 @@ tidy
 	Transcript cr; show: '[Vivide] ...finished registering all reachable steps and definitions...'.
 	self synchronizeCaches.
 	Transcript cr; show: '[Vivide] ...finished synchronizing caches...'.
-	self mergeDefinitions.
-	Transcript cr; show: '[Vivide] ...finished merging duplicate definitions...'.
+"	self mergeDefinitions.
+	Transcript cr; show: '[Vivide] ...finished merging duplicate definitions...'."
 
 	self deleteInvisibleSteps.
 	Transcript cr; show: '[Vivide] ...finished unregistering unreachable steps...'.
