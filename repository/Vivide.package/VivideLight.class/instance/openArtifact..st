@@ -11,7 +11,7 @@ openArtifact: anObject
 	object := anObject.
 		
 	self flag: #evaluate. "mt: Unwrap name bindings."
-	(self currentEvent in: [:evt | evt isDropEvent and: [evt contents shouldCopy]])
+	(self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		in: [:evaluateObject | "Unbox bindings, e.g. #a -> aMorph."
 			object := evaluateObject ifTrue: [anObject value] ifFalse: [anObject]].
 

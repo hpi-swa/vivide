@@ -6,7 +6,7 @@ openArtifacts: someObjects
 		ifTrue: [^ self openArtifact: someObjects first].
 	
 	self flag: #evaluate. "mt: Unwrap name bindings."
-	objects := (self currentEvent in: [:evt | evt isDropEvent and: [evt contents shouldCopy]])
+	objects := (self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		ifTrue: [someObjects collect: [:o | o value]] ifFalse: [someObjects].
 	
 	^ VivideLight useClassicMode

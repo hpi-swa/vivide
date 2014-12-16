@@ -22,7 +22,9 @@ initializeObjectsBar
 			text: '<font color="#555555"><b>', buttonSpec first, '</b></font>' asHtmlText;
 			balloonText: 'Drag me :)';
 			layoutInset: (2@3 corner: 2@0);
-				dragTransferType: #objects;
-				passenger: {buttonSpec second}.
+			
+			dragTransferType: #objects;
+			passenger: {buttonSpec second};
+			dragFlags: #(evaluate).
 		"self connect: btn signal: #clicked: toSelector: buttonSpec second."
 		btn]).

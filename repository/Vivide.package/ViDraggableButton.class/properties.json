@@ -9,7 +9,9 @@
 		"dragIcon",
 		"passenger",
 		"dragTransferType",
-		"source" ],
+		"source",
+		"dragFlags",
+		"dragFlagSpecs" ],
 	"name" : "ViDraggableButton",
 	"pools" : [
 		 ],

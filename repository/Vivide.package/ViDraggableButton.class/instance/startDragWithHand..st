@@ -8,5 +8,7 @@ startDragWithHand: aHand
 	
 	[aHand grabMorph:
 		((ViTransferMorph withPassenger: self passenger from: self source)
-			dragTransferType: self dragTransferType)]
+			dragTransferType: self dragTransferType;
+			flagSpecs: self dragFlagSpecs;
+			setFlags: self dragFlags)]
 		ensure: [Cursor normal show. aHand releaseMouseFocus: self].

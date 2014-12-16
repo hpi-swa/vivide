@@ -2,6 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"flagSpecs" : "mt 12/16/2014 15:15:23.232",
+		"flagSpecs:" : "mt 12/16/2014 15:11:47.574",
 		"iconFor:" : "mt 11/8/2013 11:16:00.466",
 		"initDraggedMorph" : "mt 5/2/2014 11:48:06.99",
-		"labelFor:" : "mt 11/8/2013 11:16:02.965" } }
+		"labelFor:" : "mt 11/8/2013 11:16:02.965",
+		"setFlags:" : "mt 12/16/2014 15:36:18.069",
+		"updateKeyStroke:" : "mt 12/16/2014 15:16:45.266",
+		"updateModifier:" : "mt 12/16/2014 14:55:32.164" } }

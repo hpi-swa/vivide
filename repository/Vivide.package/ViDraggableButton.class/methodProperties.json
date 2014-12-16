@@ -3,6 +3,10 @@
 		"widgetCategory" : "mt 4/25/2011 10:42:50.921",
 		"widgetClassName" : "mt 4/25/2011 10:42:38.703" },
 	"instance" : {
+		"dragFlagSpecs" : "mt 12/16/2014 15:20:13.461",
+		"dragFlagSpecs:" : "mt 12/16/2014 15:20:23.388",
+		"dragFlags" : "mt 12/16/2014 15:19:50.904",
+		"dragFlags:" : "mt 12/16/2014 15:20:00.436",
 		"dragTransferType" : "mt 7/27/2012 10:01:08.957",
 		"dragTransferType:" : "mt 7/27/2012 10:01:19.253",
 		"initialize" : "mt 9/19/2012 14:35:03.225",
@@ -13,6 +17,6 @@
 		"source" : "mt 8/6/2012 14:49:42.227",
 		"source:" : "mt 8/6/2012 14:49:53.967",
 		"startDrag" : "mt 9/5/2012 14:10:52.234",
-		"startDragWithHand:" : "mt 11/8/2013 11:11:16.028",
+		"startDragWithHand:" : "mt 12/16/2014 15:36:32.692",
 		"target:" : "mt 7/20/2012 16:36:19.882",
 		"updateSubmorphs" : "mt 9/19/2012 14:37:22.553" } }
