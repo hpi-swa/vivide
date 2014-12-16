@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"flagSpecs" ],
+		"flagSpecs",
+		"helpBox",
+		"helpBoxPositions" ],
 	"name" : "ViTransferMorph",
 	"pools" : [
 		 ],

@@ -9,4 +9,5 @@ transferItemFor: someDictionaries
 					ifTrue: [dictionary at: k]
 					ifFalse: [dictionary perform: k]]])
 		from: self source)
-		dragTransferType: self dragTransferType
+			dragTransferType: self dragTransferType;
+			flagSpecs: #(($e 'Evaluate' #evaluate)($s 'Script' #script))
