@@ -1,11 +1,12 @@
 instance creation
 new: symbolOrBlockOrScript for: objects
 
-	| instance |
+	| instance script |
 	instance := self new.
+	script := ViQueryStep convert: symbolOrBlockOrScript.
 	instance pane: (ViPane new
-		queries: [ViQueryOrganizer active orderedSteps];
-		currentQuery: (ViQueryStep convert: symbolOrBlockOrScript);
+		queries: [script organization orderedSteps];
+		currentQuery: script;
 		objects: objects;
 		chooseMostAppropriateQuery).
 

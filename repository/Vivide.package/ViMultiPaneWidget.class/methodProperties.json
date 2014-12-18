@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"acceptDroppingMorph:event:" : "mt 12/9/2014 14:34:58.394",
+		"acceptDroppingMorph:event:" : "mt 12/18/2014 11:42:55.168",
+		"acceptDroppingObject:at:" : "mt 12/18/2014 11:44:28.098",
+		"acceptDroppingPane:at:" : "mt 12/18/2014 10:30:21.801",
 		"addPane:" : "mt 11/24/2014 15:55:58.195",
 		"clear" : "mt 10/9/2014 16:46:31.857",
 		"clearDrawFlag:" : "mt 11/27/2014 14:12:12.518",
@@ -29,6 +31,7 @@
 		"objects:" : "mt 11/25/2014 12:06:38.073",
 		"objects:from:" : "mt 11/25/2014 11:53:08.519",
 		"onMouseMove:" : "mt 11/27/2014 14:21:50.879",
+		"organization" : "mt 12/18/2014 10:49:36.169",
 		"organizer" : "mt 11/24/2014 10:07:03.981",
 		"organizer:" : "mt 11/25/2014 12:09:50.848",
 		"outgoingObjects" : "mt 10/8/2014 17:45:49.16",
@@ -45,5 +48,5 @@
 		"updateFor:in:" : "mt 12/9/2014 14:29:26.55",
 		"updatePanesFor:" : "mt 12/9/2014 14:31:28.224",
 		"updateScript" : "mt 12/9/2014 15:07:33.169",
-		"wantsDroppedMorph:event:" : "mt 11/24/2014 15:30:23.362",
+		"wantsDroppedMorph:event:" : "mt 12/18/2014 10:32:23.678",
 		"wantsHaloFromClick" : "mt 12/9/2014 15:46:28.319" } }

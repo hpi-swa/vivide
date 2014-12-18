@@ -4,9 +4,9 @@ clear
 	super clear.
 
 	self object ifNotNil: [:step |
-		step sourceCode
-			ifEmpty: [	self activateWizard]
-			ifNotEmpty: [self deactivateWizard].
+		(step valueOfProperty: #isNew ifAbsent: [false])
+			ifTrue: [self activateWizard]
+			ifFalse: [self deactivateWizard].
 	].	
 
 	self updateToolbars.

@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"new:for:" : "mt 11/28/2014 14:10:45.474",
+		"new:for:" : "mt 12/18/2014 12:19:28.076",
 		"open:for:" : "mt 11/28/2014 12:35:59.054" },
 	"instance" : {
 		"acceptChanges" : "mt 11/28/2014 15:04:30.487",
-		"acceptDroppingMorph:event:" : "mt 12/9/2014 14:58:35.885",
+		"acceptDroppingMorph:event:" : "mt 12/18/2014 10:25:00.561",
 		"clear" : "mt 11/28/2014 15:04:15.786",
 		"clearDrawFlag:" : "mt 11/28/2014 12:35:58.001",
 		"copyEditor" : "mt 11/28/2014 12:35:54.86",
@@ -33,5 +33,6 @@
 		"setDrawFlag:" : "mt 11/28/2014 12:35:58.361",
 		"uiClass" : "mt 11/28/2014 12:35:55.793",
 		"updateHeaderText" : "mt 11/28/2014 13:50:06.459",
-		"wantsDroppedMorph:event:" : "mt 11/28/2014 14:20:43.152",
-		"wantsHaloFromClick" : "mt 12/9/2014 15:46:31.559" } }
+		"wantsDroppedMorph:event:" : "mt 12/18/2014 10:32:02.204",
+		"wantsHaloFromClick" : "mt 12/9/2014 15:46:31.559",
+		"wrapPaneIntoMultiPaneWidget" : "mt 12/18/2014 10:36:14.609" } }

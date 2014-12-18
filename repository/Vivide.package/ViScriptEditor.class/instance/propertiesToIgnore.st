@@ -18,4 +18,5 @@ propertiesToIgnore
 		#in -> {OrderedCollection}.
 		#out -> {OrderedCollection}.
 		#async -> {false}.
+		#isNew -> nil.
 		}

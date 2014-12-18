@@ -1,12 +1,14 @@
 dropping
 acceptDroppingMorph: aTransferMorph event: evt
 
-	| pane |
-	pane := aTransferMorph passenger.
-	
-	pane topLeft: evt cursorPoint.
-	self addPane: pane.
-	
-	pane adoptOrganization: self organizer.  
+	aTransferMorph passenger in: [:obj |
+		(aTransferMorph hasFlag: #script)
+			ifFalse: [self acceptDroppingPane: obj at: evt position]
+			ifTrue: [(self acceptDroppingObject: obj at: evt position) in: [:newPane |
+				(aTransferMorph source firstOwnerSuchThat: [:m | m isKindOf: ViPane])
+					ifNotNil: [:sourcePane |
+						(ViSelectionConnection
+							from: sourcePane
+							to: newPane) attach]]]].
 
 	self clearDrawFlag: #dropPane.

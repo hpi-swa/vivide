@@ -13,4 +13,7 @@ updateObject
 				ifTrue: ["Reference to definition"]
 				ifFalse: [Error signal: 'No code recognized!']]].
 	
+	"If it was new, is is not anymore after its first save operation."
+	self object setProperty: #isNew toValue: nil.   
+	
 	self propertiesFromList: (Dictionary newFrom: spec value).
