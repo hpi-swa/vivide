@@ -6,6 +6,9 @@ popUpFor: aMorph event: event
 	target := aMorph.
 	target hasHalo: true.	
 	
+	self flag: #metaScript.
+	target fullScript. "Update meta scripts"
+	
 	hand halo: self.
 	hand world addMorphFront: self.
 	positionOffset := event position 

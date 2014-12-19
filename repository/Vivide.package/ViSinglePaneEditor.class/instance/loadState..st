@@ -2,4 +2,4 @@ memento - ui
 loadState: anEditorState
 
 	super loadState: anEditorState.
-	"anEditorState loadMultiPaneEditor: self".
+	anEditorState loadSinglePaneEditor: self.

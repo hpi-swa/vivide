@@ -2,4 +2,4 @@ memento - ui
 saveState: anEditorState
 
 	super saveState: anEditorState.
-	"anEditorState saveMultiPaneEditor: self."
+	anEditorState saveSinglePaneEditor: self.

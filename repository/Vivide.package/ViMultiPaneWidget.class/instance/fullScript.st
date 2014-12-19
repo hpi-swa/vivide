@@ -4,9 +4,7 @@ fullScript
 
 	fullScript ifNotNil: [:script | ^ script].
 	
-	self panes do: [:pane |
-		(pane view respondsTo: #fullScript)
-			ifTrue: [pane view fullScript]].
+	self panes do: [:pane | pane fullScript].
 	
 	fullScript := self updateScript.
 	^ fullScript
