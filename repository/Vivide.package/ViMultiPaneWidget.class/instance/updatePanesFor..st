@@ -33,3 +33,6 @@ updatePanesFor: specs
 		(spec at: #out ifAbsent: [#()]) do: [:kindId |
 			({self}, self panes detect: [:p | p = kindId second] ifNone: [])
 				ifNotNil: [:consumerForSelections | (ViPaneConnection kind: kindId first from: pane to: consumerForSelections) attach]]].
+
+	"4) Ensure recalculation of own bounds after pane insertions."
+	self fullBounds.

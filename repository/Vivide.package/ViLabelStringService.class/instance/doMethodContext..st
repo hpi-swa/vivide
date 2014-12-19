@@ -6,4 +6,4 @@ doMethodContext: aMethodContext
 		(aMethodContext selector == #doesNotUnderstand: ifFalse: [''] ifTrue: [
 			' <font color="#0B61A4">#', (aMethodContext isExecutingBlock
 				ifFalse: [aMethodContext tempAt: 1]
-				ifTrue: [aMethodContext tempAt: aMethodContext numTemps]) selector, '</font>'])
+				ifTrue: [aMethodContext tempAt: aMethodContext numTemps]) selector escapeHtmlText, '</font>'])

@@ -6,7 +6,7 @@ extentInOwner: aPoint
 	
 	self withAllOwnersDo: [:m |
 		"Assume that the world or a morph without layout policy allows for custom resizing of submorphs."
-		(m owner == m world or: [m owner layoutPolicy isNil])
+		((m owner == m world or: [m owner layoutPolicy isNil]) or: [m owner isNil])
 			ifTrue: [
 				m extent: m extent + (aPoint - self extent).
 				m fullBounds.
