@@ -1,8 +1,6 @@
 drag/drop
 doDrag: evt with: dragHandle
-	
-	evt hand obtainHalo: self.
-	
+		
 	evt shiftPressed ifTrue: [
 		[
 			evt hand releaseHalo: self. self delete.
@@ -12,9 +10,12 @@ doDrag: evt with: dragHandle
 			evt hand submorphs first topLeft: evt position + (10@10)]
 		ensure: [Cursor normal show. evt hand releaseMouseFocus: self].
 		^ self].
+
+	positionOffset ifNil: [^ self].
+
+	evt hand obtainHalo: self.
 	
-	
-	target topLeft: evt cursorPoint - positionOffset.
+	target topLeft: (target globalPointToLocal: evt cursorPoint - positionOffset).
 	target layoutChanged.
 	self topLeft: evt cursorPoint - positionOffset.
 	dragHandle position: evt cursorPoint - (dragHandle extent // 2).
