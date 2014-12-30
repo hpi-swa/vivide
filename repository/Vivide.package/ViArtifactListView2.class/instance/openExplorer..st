@@ -1,4 +1,4 @@
-as yet unclassified
+nil
 openExplorer: anObject
 
 	self artifactContainerColumn
