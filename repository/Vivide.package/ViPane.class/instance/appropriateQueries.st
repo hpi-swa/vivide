@@ -7,8 +7,10 @@ appropriateQueries
 		^ ((self currentQuery notNil and: [self currentQuery inputCount = self tupleSize])
 			ifTrue: [{self currentQuery}]
 			ifFalse: [{}]),
-				(self queries value select: [:query | query inputCount = self tupleSize
-					or: [query baseClass = Object "fallback...should work...allows for cloning"]])].
+				(self queries value select: [:query | query inputCount = self tupleSize])
+					ifEmpty: [
+						self flag: #todo. "mt: Consider actual types of incoming tuples."
+						{ViScriptPart createIdentityForTuple: (Array new: self tupleSize withAll: Object)}]].
 
 	baseClasses := ViQueryStepDefinition collectBaseClassesForContext: self objects.
 

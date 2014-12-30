@@ -1,11 +1,9 @@
 listening
 notifyChangedSelection: selectedNodes
-
-	(self hasProperty: #isUpdating) ifTrue: [^ self].
 	
 	self
 		setProperty: #lastSelection
-		toValue: (WeakArray withAll: (selectedNodes collect: [:node | node at: #object])).
+		toValue: (selectedNodes collect: [:node | node at: #object]).
 	
 	self connections
 		select: [:connection | (connection isValid

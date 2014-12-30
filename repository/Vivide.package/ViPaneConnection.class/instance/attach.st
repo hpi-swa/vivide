@@ -18,5 +18,4 @@ attach
 					self flag: #metaScript.
 					pane layoutChanged.
 					
-					pane connections add: self.
-					pane increaseTupleInput]].
+					pane connections add: self]].

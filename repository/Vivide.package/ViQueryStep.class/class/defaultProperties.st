@@ -1,5 +1,4 @@
 defaults
 defaultProperties
 
-	"^ #defaultProperties asScript"
-	^ #printString asScript
+	^ #printStringNew asScript

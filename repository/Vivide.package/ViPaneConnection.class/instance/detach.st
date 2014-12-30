@@ -14,5 +14,4 @@ detach
 				self flag: #metaScript.
 				pane layoutChanged.
 
-				pane connections remove: self.
-				pane decreaseTupleInput]].
+				pane connections remove: self]].

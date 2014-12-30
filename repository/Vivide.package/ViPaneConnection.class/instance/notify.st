@@ -1,4 +1,6 @@
 notification
 notify
 
-	self subclassResponsibility.
+	self target
+		objects: self objects
+		from: self source.

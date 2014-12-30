@@ -1,4 +1,4 @@
 tuples
 tupleSize
 
-	^ self validConnections count: [:c | c target == self]
+	^ self connections count: [:c | c target == self]

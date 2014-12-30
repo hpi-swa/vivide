@@ -2,6 +2,7 @@
 	"class" : {
 		"detectDeepestBlockNode:" : "mt 10/22/2014 11:41:51.717",
 		"detectDeepestBlockNode:last:" : "mt 10/22/2014 11:49:09.079",
+		"generateBlockVarDeclarationFor:" : "mt 12/30/2014 11:59:33.69",
 		"supportedTypes" : "mt 12/9/2014 15:50:12.824",
 		"templateAllAtOnce" : "mt 10/7/2014 16:06:37.503",
 		"templateForBlock:" : "mt 10/10/2014 11:01:03.738",
@@ -32,7 +33,7 @@
 		"exploreOneProperty" : "mt 10/10/2014 14:42:57.715",
 		"exploreOutput" : "mt 10/10/2014 14:34:26.222",
 		"exploreStack" : "mt 10/10/2014 14:31:01.068",
-		"generateBlockVarDeclaration" : "mt 10/20/2014 11:26:40.177",
+		"generateBlockVarDeclaration" : "mt 12/30/2014 11:59:53.309",
 		"goDown" : "mt 10/14/2014 09:12:15.809",
 		"goDownToBottom" : "mt 10/14/2014 09:03:52.278",
 		"goUp" : "mt 10/14/2014 09:13:00.698",

@@ -2,6 +2,6 @@ accessing - view
 selectedResults
 	"Return the objects users selected and interact with."
 
-	^ (self
+	^ self
 		valueOfProperty: #lastSelection
-		ifAbsent: [#()]) reject: [:obj | obj isNil]
+		ifAbsent: [#()]

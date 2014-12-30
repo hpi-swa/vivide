@@ -7,9 +7,3 @@ updateResults
 	self setProperty: #isUpdating toValue: true. 
 	self model updateChildren.
 	self removeProperty: #isUpdating. 
-	
-	self connections
-		select: [:connection | (connection isValid
-			and: [connection isSelection])
-			and: [connection source == self]]
-		thenDo: [:connection | connection notify].
