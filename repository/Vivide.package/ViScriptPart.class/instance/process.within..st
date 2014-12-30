@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 process: someObjects within: aContext
 
 	| in out |

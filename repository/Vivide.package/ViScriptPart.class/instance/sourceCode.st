@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 sourceCode
 
 	^ self definition sourceCode

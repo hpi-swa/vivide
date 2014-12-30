@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 isExecutedAsynchronously: aBoolean
 
 	isExecutedAsynchronously = aBoolean ifTrue: [^ self].

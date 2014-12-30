@@ -1,4 +1,4 @@
-as yet unclassified
+support
 convertProperty: property
 	"Converte read/write blocks."
 

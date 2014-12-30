@@ -1,4 +1,4 @@
-as yet unclassified
+opening
 openScriptWith: someObjects
 
 	^ self openQueryWith: someObjects

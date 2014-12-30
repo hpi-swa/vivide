@@ -1,4 +1,4 @@
-as yet unclassified
+processing
 updateView: aMorph forEnvironment: anObject
 	"Overridden to use new-style view references stored in properties. Those are classes or blocks. See TViObjectView trait and its implementors."
 

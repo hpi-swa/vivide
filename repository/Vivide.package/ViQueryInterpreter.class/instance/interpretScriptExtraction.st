@@ -10,5 +10,5 @@ interpretScriptExtraction
 			(properties
 				at: group
 				ifAbsentPut: [OrderedCollection new]) add: (
-					newProperties collect: [:p | step convertProperty: p]
+					newProperties collect: [:p | ViScriptPart convertProperty: p]
 			) ]].

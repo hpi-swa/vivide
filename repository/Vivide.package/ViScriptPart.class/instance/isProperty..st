@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 isProperty: aBoolean
 
 	isProperty = aBoolean ifTrue: [^ self].

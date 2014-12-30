@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 isExecutedAsynchronously
 
 	^ isExecutedAsynchronously ifNil: [false]

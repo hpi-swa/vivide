@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isPropertyExtraction
 
 	^ self isProperty

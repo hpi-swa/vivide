@@ -1,4 +1,4 @@
-as yet unclassified
+opening
 openScript
 
 	^ self openQuery

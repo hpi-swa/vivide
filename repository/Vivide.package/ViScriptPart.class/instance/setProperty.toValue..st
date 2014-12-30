@@ -1,4 +1,4 @@
-as yet unclassified
+properties
 setProperty: property toValue: value
 
 	(#(icon id label isProperty) includes: property)

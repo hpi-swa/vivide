@@ -1,4 +1,4 @@
-as yet unclassified
+support
 convertPanes: paneSpecs toScript: firstPart
 
 	| scripts |

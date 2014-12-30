@@ -1,4 +1,4 @@
-as yet unclassified
+serialization
 asDictionary
 
 	super asDictionary in: [:dict |
