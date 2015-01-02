@@ -9,6 +9,9 @@ acceptDroppingMorph: aTransferMorph event: evt
 					ifNotNil: [:sourcePane |
 						(ViSelectionConnection
 							from: sourcePane
-							to: newPane) attach]]]].
+							to: newPane) attach].
+				newPane
+					grabKeyboard;
+					debugQuery]]].
 
 	self clearDrawFlag: #dropPane.

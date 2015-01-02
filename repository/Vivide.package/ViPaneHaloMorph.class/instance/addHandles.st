@@ -2,8 +2,8 @@ handles
 addHandles
 
 	self removeAllMorphs.
-	self addControlHandles.
 	self addQueryHandles.
+	self addControlHandles.
 	
 	self addFanInHandles.
 	self addFanOutHandles.

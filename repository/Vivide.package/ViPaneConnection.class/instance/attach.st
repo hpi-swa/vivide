@@ -19,3 +19,6 @@ attach
 					pane layoutChanged.
 					
 					pane connections add: self]].
+	
+	self notify.
+	self checkTargetScript.

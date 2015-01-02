@@ -3,6 +3,8 @@ deactivateWizard
 	"Show actual source code but fall back if not present."
 	
 	| code |
+	self object setProperty: #isNew toValue: false.  
+	
 	code := self object definition sourceCode
 		ifEmpty: ['[:in :out | "Type code here..."]'].
 
