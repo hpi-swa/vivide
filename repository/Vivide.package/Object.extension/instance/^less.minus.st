@@ -1,0 +1,4 @@
+*vivide
+<- anObject
+
+	^ anObject -> self

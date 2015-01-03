@@ -3,7 +3,7 @@ updateFor: query in: anEnvironment
 
 	| newSpecs |						
 	newSpecs := (1 to: query maxPropertyCount) collect: [:idx |
-		(ViTextViewSpec newFrom: (#(text icon color morph balloonText)
+		(ViTextViewSpec newFrom: (#(text icon color morph balloonText editable)
 			collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
 				labelColor: (idx > 1 ifTrue: [Color fromString: #AAAAAA] ifFalse: []);
 				yourself].

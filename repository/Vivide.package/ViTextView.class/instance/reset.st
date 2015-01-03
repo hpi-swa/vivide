@@ -6,7 +6,7 @@ reset
 	lastNode := nil.
 	
 	(self model notNil and: [self specs notEmpty]) ifTrue: [
-		textEdit readOnly: (self specs first editableFor: self model) not.
+		textEdit readOnly: ((self script allPropertySteps first valueOfProperty: #editable ifAbsent: [false]) not or: [self model nodes size > 1]).
 		
 		showGroups := self model groups size > 1.
 		self model groups do: [:group |
