@@ -8,7 +8,9 @@ initialize
 		color: Color transparent;
 		extent: 150@150.
 	
-	model := ViQueryNode new firstStep: (ViQueryFillStep new objects: #()).
+	model := ViQueryNode new
+		pane: self;
+		firstStep: (ViQueryFillStep new objects: #()).
 	
 	self
 		initializeUiObjectChanges;

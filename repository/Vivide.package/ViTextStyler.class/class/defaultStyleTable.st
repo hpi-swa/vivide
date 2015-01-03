@@ -47,6 +47,8 @@ defaultStyleTable
 	(#nil 									( cyan muchDarker )	bold	)
 	(#thisContext 							( cyan muchDarker )	bold	)
 	(#thisScript 							( cyan muchDarker )	bold	)
+	(#thisPane 							( cyan muchDarker )	bold	)
+	(#thisView 							( cyan muchDarker )	bold	)
 	(#return								( black )	bold				)
 	(patternArg 							( blue muchDarker ) 		)	
 	(methodArg 								( blue muchDarker ) 		)		

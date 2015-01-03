@@ -1,6 +1,6 @@
 nil
 resolve: aString
 
-	aString = 'thisScript'
+	(#('thisScript' 'thisPane' 'thisView') includes: aString)
 		ifTrue: [^ aString asSymbol].
 	^ super resolve: aString
