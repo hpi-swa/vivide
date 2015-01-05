@@ -23,7 +23,7 @@ logScript: string receiver: recvr context: ctxt result: obj
 				ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
 				ifFalse: [recvr class]]).
 	
-	similarDef := ViQueryOrganizer default snippetDefinitions
+	similarDef := ViQueryOrganizer active snippetDefinitions
 		detect: [:def | (def method = newDef method
 			and: [def inputKind = newDef inputKind])
 			and: [def receiverIsCollection = newDef receiverIsCollection]]
