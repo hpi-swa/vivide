@@ -1,4 +1,0 @@
-accessing
-editorIcon
-
-	^ UiFugueIcons applicationSplitTileIcon
