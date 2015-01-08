@@ -11,5 +11,5 @@ searchQueries: token
 	currentSource := #query.
 	
 	self
-		startSearchIn: ViQueryOrganizer default orderedSteps
+		startSearchIn: ViQueryOrganizer active orderedSteps
 		match: match.
