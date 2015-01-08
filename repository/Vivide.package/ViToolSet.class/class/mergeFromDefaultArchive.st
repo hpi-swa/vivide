@@ -1,7 +1,5 @@
 organizing
 mergeFromDefaultArchive
-
-	#transcript openScript.
 	
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive
