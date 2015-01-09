@@ -2,7 +2,9 @@ support
 convertProperty: property
 	"Converte read/write blocks."
 
-	^ (property isVariableBinding and: [property value isVariableBinding])
+	^ ((property isVariableBinding
+			and: [property value isVariableBinding])
+			and: [property key ~= #object])
 		ifFalse: [property]
 		ifTrue: [ | propertyName valueOrReadBlock writeBlock |
 			"#text -> [obj name] <- [:val | obj name: val]."
