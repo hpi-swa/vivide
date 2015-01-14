@@ -4,6 +4,10 @@ A programming environment and framework that supports *data-driven*, *scriptable
 
 ##Videos
 
+Here is a screencast about integrating information from Stack Overflow into the Squeak/Smalltalk programming environment using Vivide. I included it in my talk at the [Onward'14](http://2014.splashcon.org/track/onward2014-papers) conference:
+
+[![VIMEO](https://i.vimeocdn.com/video/503216190_295x166.jpg)](https://vimeo.com/116751102)
+
 Here is a screencast about creating tools for context-oriented programming, which I showed at the [COP'14](http://prg.is.titech.ac.jp/events/cop14) workshop: 
 
 [![VIMEO](http://i.vimeocdn.com/video/484103433_320.jpg)](https://www.vimeo.com/102158303)
