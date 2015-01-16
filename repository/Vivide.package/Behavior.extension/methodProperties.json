@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"detectSubInstanceSuchThat:" : "mt 1/14/2015 16:57:33.006",
 		"someSubInstance" : "mt 12/18/2013 14:03:51.596",
 		"someSubInstances:" : "mt 12/18/2013 14:18:13.635" } }
