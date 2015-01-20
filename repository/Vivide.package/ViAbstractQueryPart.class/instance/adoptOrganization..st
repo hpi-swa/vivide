@@ -1,7 +1,7 @@
 as yet unclassified
 adoptOrganization: aQueryOrganizer
 
-	self organization = aQueryOrganizer
+	(self isDefault or: [self organization = aQueryOrganizer])
 		ifTrue: [^ self "no change"].
 
 	self

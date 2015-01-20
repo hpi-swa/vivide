@@ -7,7 +7,7 @@ asDictionary
 		at: #id put: self id;
 		at: #bounds put: (self bounds translateBy: self owner topLeft negated);
 		"at: #scripts put: (pane queries value collect: [:script | script id]) asArray;"
-		at: #current put: self currentQuery id;
+		at: #current put: (self currentQuery ifNotNil: [:script | script id]);
 		at: #in put: (self validConnections
 			select: [:connection | connection target == self]
 			thenCollect: [:connection | {
