@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 mapIndex: index
 
 	mapIndex := index.

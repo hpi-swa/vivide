@@ -1,4 +1,4 @@
-as yet unclassified
+templates - support
 templateForSourceCode: code
 	"Guess the underlying script template given the code."
 

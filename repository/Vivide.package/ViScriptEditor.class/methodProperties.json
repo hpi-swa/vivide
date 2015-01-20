@@ -17,6 +17,7 @@
 		"templateTuplesProperty" : "mt 10/6/2014 16:02:34.34",
 		"templateWrapper" : "mt 10/7/2014 08:28:10.332" },
 	"instance" : {
+		"acceptDroppingMorph:event:" : "mt 1/20/2015 10:29:28.52",
 		"acceptSourceCode" : "mt 11/26/2014 15:12:21.687",
 		"activateWizard" : "mt 11/4/2014 09:30:50.892",
 		"addArtifact" : "mt 11/26/2014 16:23:11.861",
@@ -44,6 +45,7 @@
 		"initializeResizeHandle" : "mt 10/15/2014 09:19:58.525",
 		"initializeScriptPointer" : "mt 10/10/2014 11:54:56.614",
 		"initializeSummaryContainer" : "mt 10/15/2014 09:18:23.281",
+		"initializeToolbarControls" : "mt 1/20/2015 10:29:16.082",
 		"initializeToolbarObjects" : "mt 10/14/2014 08:00:38.658",
 		"initializeToolbarOperations" : "mt 10/10/2014 14:29:53.104",
 		"inputKind" : "mt 10/10/2014 15:01:45.12",
@@ -68,6 +70,7 @@
 		"propertiesVisible" : "mt 10/6/2014 09:52:17.329",
 		"propertyNamesFrom:" : "mt 10/20/2014 07:16:25.284",
 		"proposeScriptTemplate" : "mt 10/20/2014 11:48:47.703",
+		"removeCycle" : "mt 1/20/2015 10:26:55.634",
 		"script" : "mt 9/25/2014 11:03:15.793",
 		"script:" : "mt 10/14/2014 09:21:42.737",
 		"scriptPointer" : "mt 10/5/2014 15:25:04.528",
@@ -77,10 +80,12 @@
 		"sourceCode" : "mt 10/6/2014 09:01:57.728",
 		"specialProperties" : "mt 11/14/2014 10:21:48.606",
 		"tryDeleteScript" : "mt 10/5/2014 13:53:00.2",
-		"updateConnections" : "mt 11/26/2014 16:33:20.754",
+		"updateConnections" : "mt 1/20/2015 10:21:53.299",
 		"updateInputKind" : "mt 1/2/2015 13:16:05.942",
 		"updateMapFor:" : "mt 10/22/2014 13:37:40.037",
 		"updateMapIndex:" : "mt 10/14/2014 09:29:19.966",
 		"updateObject" : "mt 12/18/2014 11:16:28.849",
 		"updateSourceCode" : "mt 9/29/2014 16:34:13.484",
-		"updateUi" : "mt 10/7/2014 15:22:02.072" } }
+		"updateToolbars" : "mt 1/20/2015 10:31:36.477",
+		"updateUi" : "mt 10/7/2014 15:22:02.072",
+		"wantsDroppedMorph:event:" : "mt 1/20/2015 09:14:17.87" } }

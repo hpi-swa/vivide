@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 drawMapOn: aCanvas
 
 	| offset delta offsetArguments |

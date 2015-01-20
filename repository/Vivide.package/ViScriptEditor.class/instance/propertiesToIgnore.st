@@ -1,4 +1,4 @@
-as yet unclassified
+support - properties
 propertiesToIgnore
 	"Returns a list of properties to NOT store in object---partially if it is the default value.
 	

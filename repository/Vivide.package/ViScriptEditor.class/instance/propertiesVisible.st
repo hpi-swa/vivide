@@ -1,4 +1,4 @@
-as yet unclassified
+support - properties
 propertiesVisible
 
 	^ self scriptPointer size = self script size

@@ -1,4 +1,4 @@
-updating
+support - properties
 propertiesFromList: dict
 
 	| propertiesToSkip propertiesToRemove propertiesToSet |

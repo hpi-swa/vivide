@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeResizeHandle
 
 	super initializeResizeHandle.

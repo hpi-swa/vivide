@@ -1,4 +1,4 @@
-as yet unclassified
+actions - debugging
 exploreOutput
 
 	self interpretUpToSelf ifNotNil: [:interpreter |

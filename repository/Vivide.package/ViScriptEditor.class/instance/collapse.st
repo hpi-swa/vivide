@@ -1,4 +1,4 @@
-as yet unclassified
+geometry - actions
 collapse
 
 	self layoutPolicy margins: nil.

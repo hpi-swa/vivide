@@ -1,4 +1,4 @@
-as yet unclassified
+toolbar - initialization
 initializeToolbarObjects
 
 	super initializeToolbarObjects.

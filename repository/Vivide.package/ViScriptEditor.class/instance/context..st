@@ -1,4 +1,4 @@
-nil
+accessing - object
 context: someObjects
 
 	context := someObjects.

@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateInputKind
 	"Try to found out about input objects."
 

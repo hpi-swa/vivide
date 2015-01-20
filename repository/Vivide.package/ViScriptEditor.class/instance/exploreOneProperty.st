@@ -1,4 +1,4 @@
-as yet unclassified
+actions - debugging
 exploreOneProperty
 
 	self interpretUpToSelf ifNotNil: [:interpreter |

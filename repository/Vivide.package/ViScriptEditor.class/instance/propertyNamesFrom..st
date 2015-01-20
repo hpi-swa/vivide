@@ -1,4 +1,4 @@
-as yet unclassified
+support - properties
 propertyNamesFrom: arrayNode
 	"{ #view -> ViTreeView . #author -> 'mt'}"
 

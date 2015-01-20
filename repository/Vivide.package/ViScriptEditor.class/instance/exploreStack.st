@@ -1,4 +1,4 @@
-as yet unclassified
+actions - debugging
 exploreStack
 
 	self interpretUpToSelf ifNotNil: [:interpreter |

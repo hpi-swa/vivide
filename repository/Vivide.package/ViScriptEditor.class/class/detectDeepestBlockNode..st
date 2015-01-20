@@ -1,4 +1,4 @@
-as yet unclassified
+support
 detectDeepestBlockNode: node
 
 	^ self
