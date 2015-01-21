@@ -12,13 +12,15 @@ next
 	step isTransformStep ifTrue: [self interpretTransformStep].
 	step isScript
 		ifTrue: [self interpretScript]
-		ifFalse: [step isPropertyStep ifTrue: [self interpretPropertyStep]].
+		ifFalse: [
+			step isPropertyStep
+				ifTrue: [self interpretPropertyStep].
 
 	"--- 2) Choose next step ---"
+			step isReferenceStep
+				ifTrue: [self interpretReferenceStep]
+				ifFalse: [step := step next]].
 
-	step isReferenceStep
-		ifTrue: [self interpretReferenceStep]
-		ifFalse: [step := step next].
 		
 	[step isNil and: [stack isEmpty not]] whileTrue: [
 		step := stack pop next].

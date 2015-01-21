@@ -2,7 +2,7 @@
 	"category" : "Vivide-Artifacts",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViMemento classTrait",
+	"classtraitcomposition" : "TViMemento classTrait + TViDrawFlags classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "mt 8/17/2012 10:44:06.419",
@@ -15,5 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "Morph",
-	"traitcomposition" : "TViMemento",
+	"traitcomposition" : "TViMemento + TViDrawFlags",
 	"type" : "normal" }

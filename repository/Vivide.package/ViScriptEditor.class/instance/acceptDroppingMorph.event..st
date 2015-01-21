@@ -4,7 +4,5 @@ acceptDroppingMorph: aTransferMorph event: evt
 	
 	| script |
 	script := aTransferMorph passenger.
-	script next: self object.
-
-	self flag: #informationHiding. "mt: Use script change notifier?"
-	aTransferMorph source updateToolbars.
+	script next: self object asReference.
+	aTransferMorph source requestArtifact: script next.  

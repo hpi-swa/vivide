@@ -14,6 +14,7 @@ propertiesToIgnore
 		#inputKind -> {Object}.
 		#outputKind -> {Object}.
 		#isProperty -> {false}.
+		#isReference -> {false}.
 		#view -> {ViTreePlainView}.
 		#in -> {OrderedCollection}.
 		#out -> {OrderedCollection}.

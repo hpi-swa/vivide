@@ -1,5 +1,5 @@
-drawing
+as yet unclassified
 clearDrawFlag: symbol
 
 	self setProperty: #drawFlags toValue: (self drawFlags copyWithout: symbol).
-	self redrawLater.   
+	self redrawLater.
