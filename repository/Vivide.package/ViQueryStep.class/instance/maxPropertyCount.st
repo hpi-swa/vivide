@@ -6,15 +6,12 @@ maxPropertyCount
 	maxCount := 0.
 	currentCount := 0.
 	
-	self stepsDo: [:step |
+	self allStepsDo: [:step |
 		step isPropertyStep
 			ifTrue: [currentCount := currentCount + 1]
 			ifFalse: [
 				maxCount := maxCount max: currentCount.
-				currentCount := 0].
-			
-		step isReferenceStep ifTrue: [
-			maxCount := maxCount max: step reference maxPropertyCount]].
+				currentCount := 0]].
 	
 	maxCount := maxCount max: currentCount.
 	^ maxCount = 0

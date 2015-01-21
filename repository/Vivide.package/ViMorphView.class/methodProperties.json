@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawOverlayOn:" : "mt 1/21/2015 14:50:27.36",
+		"initialize" : "mt 1/21/2015 13:56:01.962",
+		"model" : "mt 1/21/2015 13:50:14.887",
+		"model:" : "mt 1/21/2015 11:34:18.716",
+		"optimalHeight" : "mt 1/21/2015 13:53:10.444",
+		"optimalWidth" : "mt 1/21/2015 13:53:15.211",
+		"reset" : "mt 1/21/2015 14:33:27.664",
+		"wantsHaloFromClick" : "mt 1/21/2015 13:57:23.149" } }

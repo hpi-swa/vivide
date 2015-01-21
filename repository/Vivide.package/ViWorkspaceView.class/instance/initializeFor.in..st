@@ -13,11 +13,12 @@ initializeFor: aScript in: anEnvironment
 			container context: (objects size = 1
 				ifTrue: [objects first]
 				ifFalse: [objects])].
-		model nodes
-			ifEmpty: [container snippetEdit model bindings: nil]
-			ifNotEmpty: [:nodes |
-				(nodes first at: #'1_bindings' ifAbsent: [Dictionary new]) in: [:bindings |
-					container snippetEdit model bindings: bindings]]
+		container snippetEdit model bindings ifNil: [
+			container snippetEdit model bindings: Dictionary new].
+		"Update bindings. Do not delete old ones."
+		model nodes ifNotEmpty: [:nodes |
+			(nodes first at: #'1_bindings' ifAbsent: [Dictionary new]) in: [:newBindings |
+				newBindings associationsDo: [:ass | container snippetEdit model bindings add: ass]]]
 	].
 
 	self container object: nil. "default snippet"
