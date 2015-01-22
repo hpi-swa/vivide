@@ -14,5 +14,5 @@ object: aSnippet
 
 	self clear.
 
-	self defaultSnippet code = aSnippet code
+	self defaultSnippet code = aSnippet contents
 		ifTrue: [snippetEdit selectLine].
