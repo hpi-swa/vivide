@@ -9,7 +9,7 @@ def23cf0ae6f7f5794b8d4dd25816a58874
 				UiFugueIcons fireBigIcon]])}]]
 	ifFalse: [obj isVariableBinding
 		ifFalse: [{}]
-		ifTrue: [{#text -> (''<font color="#AAAAAA">'', (obj value value printString truncateWithElipsisTo: 30) escapeHtmlText, ''</font>'') asHtmlText}]] 
+		ifTrue: [{#text -> (''<font color="#AAAAAA">'', (obj value value printStringLimitedTo: 30) escapeHtmlText, ''</font>'') asHtmlText}]] 
 
 ]'); add: (#mapType->#each); add: (#block->[:obj | obj isCompiledMethod ifTrue: [obj linesOfCode in: [:loc | {
 	#balloonText -> (loc asString, ' lines of code').
@@ -18,6 +18,6 @@ def23cf0ae6f7f5794b8d4dd25816a58874
 				UiFugueIcons fireBigIcon]])}]]
 	ifFalse: [obj isVariableBinding
 		ifFalse: [{}]
-		ifTrue: [{#text -> ('<font color="#AAAAAA">', (obj value value printString truncateWithElipsisTo: 30) escapeHtmlText, '</font>') asHtmlText}]] 
+		ifTrue: [{#text -> ('<font color="#AAAAAA">', (obj value value printStringLimitedTo: 30) escapeHtmlText, '</font>') asHtmlText}]] 
 
 ]); yourself)
