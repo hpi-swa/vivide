@@ -9,20 +9,5 @@ newFrom: anotherProfile
 			script copyQuery
 				adoptOrganization: instance organization;
 				id: id "preserve id in new organization"]].
-	
-	"Add some tools to the bookmarks."
-	{
-	{ [:object | object] -> {
-		#label -> 'Workspace'.
-		#view -> ViWorkspaceView}}.
-	{ [ViProfile active transcriptHistory] -> {
-		#label -> 'Transcript'.
-		#view -> ViTextView}.
-	  [:history | history objects].
-	  [:entry | #text -> (entry key, ' ', entry value)]}
-	} do: [:spec |
-		instance bookmarks add: (ViSinglePaneEditor
-			new: spec asScript
-			for: #()) asEditorState].
-		
+			
 	^ instance

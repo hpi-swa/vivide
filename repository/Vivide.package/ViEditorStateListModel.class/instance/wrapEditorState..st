@@ -7,9 +7,10 @@ wrapEditorState: anEditorState
 	
 	node := UiPropertyItemNode new
 		at: #state put: anEditorState;
-		at: #icon put: (cls
-			ifNotNil: [cls editorIcon]
-			ifNil: [ViIconService doObject: (anEditorState properties at: #object)]);
+		at: #icon put: ((anEditorState properties at: #icon ifAbsent: [])
+			ifNil: [cls
+				ifNotNil: [cls editorIcon]
+				ifNil: [ViIconService doObject: (anEditorState properties at: #object)]]);
 		"at: #balloonText put: (cls
 			ifNotNil: [cls editorDescription]
 			ifNil: []);"
