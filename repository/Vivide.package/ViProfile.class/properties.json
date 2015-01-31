@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organization",
+		"bookmarks",
+		"closedObjects",
+		"recentClasses",
+		"recentMethods",
+		"recentPackages",
+		"transcriptHistory",
+		"label" ],
+	"name" : "ViProfile",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

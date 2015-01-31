@@ -1,4 +1,4 @@
 *vivide-support
 logObject: anObject
 
-	ViObjectHistory transcriptHistory addObject: anObject.
+	ViProfile active transcriptHistory addObject: anObject.

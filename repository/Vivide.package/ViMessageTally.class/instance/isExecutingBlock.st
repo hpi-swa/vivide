@@ -1,0 +1,4 @@
+accessing
+isExecutingBlock
+
+	^ isExecutingBlock

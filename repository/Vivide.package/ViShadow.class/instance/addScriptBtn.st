@@ -11,4 +11,4 @@ addScriptBtn
 		icon: UiFugueIcons plusSmallIcon asWireframeSunken2;
 		topLeft: self topLeft + (5@5).
 	self addMorph: scriptBtn.
-	self connect: scriptBtn signal: #clicked: toSelector: #scriptRequested.
+	self connect: scriptBtn signal: #clicked: toSelector: #codeSnippetRequested.

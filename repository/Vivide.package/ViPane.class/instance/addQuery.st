@@ -3,7 +3,7 @@ addQuery
 
 	| newQuery |
 	newQuery := self currentQuery
-		ifNil: [ViQueryStep transform: ViQueryMapDefinition defaultSourceCode]
+		ifNil: [ [:object | object] asScript ]
 		ifNotNil: [:q | q copyQuery].
 
 	ViLoggingService trigger: {

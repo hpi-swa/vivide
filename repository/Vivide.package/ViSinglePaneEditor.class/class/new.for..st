@@ -13,6 +13,6 @@ new: symbolOrBlockOrScript for: objects
 	(objects notEmpty and: [objects last isKindOf: ViScriptPart]) ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script editor(s) opened.'}].  
 
-	objects do: [:object | ViObjectHistory addObject: object].
+	objects do: [:object | ViProfile active addObject: object].
 
 	^ instance

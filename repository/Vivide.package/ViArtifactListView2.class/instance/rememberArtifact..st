@@ -1,4 +1,4 @@
 as yet unclassified
 rememberArtifact: anArtifactContainer
 
-	ViObjectHistory closedObjects addObject: {anArtifactContainer object}.
+	ViProfile active closedObjects addObject: {anArtifactContainer object}.

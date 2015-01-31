@@ -16,7 +16,7 @@ initialize
 	self sgConnectSignal: #artifactsRemoved: toSelector: #onObjectsChanged.
 	
 	"History."
-	self sgConnectSignal: #artifactAdded: to: ViObjectHistory selector: #addArtifact:.
+	self sgConnectSignal: #artifactAdded: to: ViProfile active selector: #addArtifact:.
 	self sgConnectSignal: #artifactRemoved: toSelector: #rememberArtifact:.
 	self connect: self signal: #closed toSelector: #rememberAllArtifacts.
 	

@@ -3,7 +3,7 @@ initializeEditorStateList
 	
 	| model |
 	model := ViEditorStateListModel new
-		editorStates:  VivideLight editorStates;
+		editorStates: ViProfile active bookmarks;
 		supportedTypes: #(editor editorStates objects artifact).
 
 	editorStateList := UiListView new

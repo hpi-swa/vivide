@@ -5,13 +5,16 @@
 	"classvars" : [
 		"EditorStates",
 		"FeedbackServer",
+		"LastProfile",
+		"Profiles",
 		"UseClassicMode",
 		"UseVivideDebugger" ],
 	"commentStamp" : "mt 12/4/2012 11:21:39.85",
 	"instvars" : [
 		"titleBar",
 		"objectsBar",
-		"locator" ],
+		"locator",
+		"profile" ],
 	"name" : "VivideLight",
 	"pools" : [
 		 ],

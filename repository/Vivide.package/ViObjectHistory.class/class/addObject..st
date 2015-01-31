@@ -3,7 +3,7 @@ addObject: anObject
 	"Adds the object to all known histories."
 	
 	anObject isCompiledMethod "mt: Avoid saving old methods but only current references."
-		ifTrue: [^ self recentMethods addObject: anObject methodReference].
+		ifTrue: ["^ self recentMethods addObject: anObject methodReference"].
 		
 	(anObject isKindOf: MethodReference)
 		ifTrue: [^ self recentMethods addObject: anObject].

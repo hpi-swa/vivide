@@ -1,13 +1,13 @@
 initialization
 initializeTitleBar
 
-	| closeBtn closeWndBtn feedbackBtn |
+	| closeBtn closeWndBtn feedbackBtn profileLabel |
 	titleBar := Morph new
 		color: (Color fromString: '#C6CBD6') lighter;
 		changeTableLayout;
 		listDirection: #leftToRight;
 		cellInset: 5;
-		layoutInset: (5@5 corner: 5@5); 
+		layoutInset: (5@5 corner: 5@2); 
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap.
 	
@@ -31,9 +31,14 @@ initializeTitleBar
 		text: '<font color="#444444">Feedback</font>'.
 	self connect: feedbackBtn signal: #clicked: toSelector: #sendFeedback.
 	
+	profileLabel := ('<font size="9" color="#444444">Profile: "', ViProfile active label, '"</font>') asHtmlText asMorph
+			disableTableLayout: true;
+			position: titleBar position + (10@30).
+	
 	titleBar addAllMorphs: {
 		closeBtn.
 		closeWndBtn.
 		(ViIcons vivideLogo asWireframeSunken: 0.3) asMorph.
 		UiSpacer new orientation: #horizontal.
-		feedbackBtn}.
+		feedbackBtn.
+		profileLabel}.

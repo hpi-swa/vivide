@@ -1,6 +1,7 @@
 instance creation
 open
-
-	(ActiveWorld submorphs
-		detect: [:m |	m isKindOf: self]
-		ifNone: [self new]) open
+	"Use last profile."
+	
+	self profiles size = 1
+		ifTrue: [self openProfile: self profiles first]
+		ifFalse: [self chooseProfile].

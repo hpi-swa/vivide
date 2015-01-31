@@ -1,4 +1,4 @@
 accessing
 default
 
-	^ ViQueryOrganizer default
+	^ ViProfile active ifNotNil: #organization

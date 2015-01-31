@@ -8,15 +8,19 @@ initialize
 		changeTableLayout;
 		listDirection: #topToBottom;  
 		cellPositioning: #topLeft;  
-		cellInset: 10;
+		cellInset: 20;
 		vResizing: #spaceFill;
 		hResizing: #rigid; width: 200;
 		setToAdhereToEdge: #left;
 		beSticky.
 	
-	self
-		initializeTitleBar;
-		initializeObjectsBar;
-		initializeLocator.
+	ViActiveVivide
+		value: self
+		during: [
+			"Code may have to access this instance..."
+			self
+				initializeTitleBar;
+				initializeObjectsBar;
+				initializeLocator].
 	
 	self addAllMorphs: {titleBar.objectsBar}.

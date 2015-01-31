@@ -1,4 +1,4 @@
 as yet unclassified
 doScriptPart: aScriptPart
 
-	^ self doQueryPart: aScriptPart
+	^ self doQueryStep: aScriptPart

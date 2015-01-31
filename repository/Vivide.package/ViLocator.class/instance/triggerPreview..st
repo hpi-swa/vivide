@@ -4,7 +4,7 @@ triggerPreview: aNode
 	(ActiveHand submorphs notEmpty or: [aNode isNil])
 		ifTrue: [^ self removeAlarm: #showPreview].
 
-	previewHandler object = (aNode at: #object)
+	previewHandler object == (aNode at: #object)
 		ifTrue: [^ self].
 
 	previewHandler discardPreview.

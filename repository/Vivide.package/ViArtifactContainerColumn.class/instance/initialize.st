@@ -9,7 +9,7 @@ initialize
 		text: '<font color="#888888">Drop object here.</font>' asHtmlText asMorph;
 		acceptedDropBlock: [:object | false];
 		addScriptBtn.
-	self connect: dropShadow signal: #scriptRequested toSelector: #addScript.
+	self connect: dropShadow signal: #codeSnippetRequested toSelector: #appendCodeSnippet.
 	
 	self
 		layoutPolicy: ViArtifactContainerColumnLayout new;

@@ -4,7 +4,7 @@
 	"instance" : {
 		"acceptArtifact:fromEditor:event:" : "mt 9/11/2012 14:37:17.371",
 		"acceptObjects:fromEditor:event:" : "mt 12/16/2014 15:39:22.178",
-		"addScript" : "mt 12/18/2014 11:18:22.913",
+		"appendCodeSnippet" : "mt 1/31/2015 13:05",
 		"artifactAdded:" : "mt 11/8/2012 14:50:34.033",
 		"artifactContainers" : "mt 8/6/2012 17:34:36.344",
 		"artifactRemoved:" : "mt 11/8/2012 14:54:56.313",
@@ -20,7 +20,7 @@
 		"dropRectanglesForPoint:" : "mt 8/13/2012 10:20:09.267",
 		"editors" : "mt 7/27/2012 09:57:44.628",
 		"editors:" : "mt 10/7/2014 16:58:12.952",
-		"initialize" : "mt 2/10/2014 13:44:21.844",
+		"initialize" : "mt 1/31/2015 13:08",
 		"initializeEventHandler" : "mt 8/7/2013 16:54:39.142",
 		"lastArtifactRemoved" : "mt 11/8/2012 14:58:05.241",
 		"objectSelectionChanged:" : "mt 8/7/2013 16:55:24.153",

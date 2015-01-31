@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"isExecutingBlock",
+		"lastPc" ],
+	"name" : "ViMessageTally",
+	"pools" : [
+		 ],
+	"super" : "MessageTally",
+	"type" : "normal" }
