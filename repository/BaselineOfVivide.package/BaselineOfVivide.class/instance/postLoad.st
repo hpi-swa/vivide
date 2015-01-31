@@ -11,5 +11,8 @@ postLoad
 			ToolSet default: ts.
 			ts mergeFromDefaultArchive].
 	
+	VivideLight profiles ifEmpty: [
+		ViProfile migrate].
+	
 	"First time setup."
 	VivideLight active ifNil: [VivideLight prepareSqueak; open].
