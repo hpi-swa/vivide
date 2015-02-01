@@ -1,4 +1,4 @@
 organization - accessing
 organization
 
-	^ organization ifNil: [ViQueryOrganizer default]
+	^ organization "ifNil: [ViQueryOrganizer default]"

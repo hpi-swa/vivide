@@ -1,10 +1,16 @@
 as yet unclassified
 adoptOrganization: aQueryOrganizer
 
-	(self isDefault or: [self organization = aQueryOrganizer])
-		ifTrue: [^ self "no change"].
+	self isDefault ifTrue: [^ self "no change"].
+		
+	self stepsDo: [:step |
+		step organization == aQueryOrganizer ifFalse: [
 
-	super adoptOrganization: aQueryOrganizer.
+			(aQueryOrganizer stepById: step id) ifNotNil: [:result |
+				self assert: step ~~ result.
+				Error signal: 'Duplicate ID! Change or remove first. Then try again.'].
 
-	self next ifNotNil: [:step |
-		step adoptOrganization: aQueryOrganizer].    
+			step
+				unregister;
+				organization: aQueryOrganizer;
+				register]]	

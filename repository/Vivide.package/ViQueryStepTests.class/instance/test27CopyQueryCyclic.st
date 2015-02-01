@@ -9,7 +9,7 @@ test27CopyQueryCyclic
 	
 	self assert: q1 hasCycle.
 	
-	copy1 := q1 copyQuery.
+	copy1 := q1 deepCopy.
 	
 	self
 		assert: copy1 hasCycle;

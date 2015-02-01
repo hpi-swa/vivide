@@ -27,6 +27,8 @@ logScript: string receiver: recvr context: ctxt result: obj
 		detect: [:def | (def method = newDef method
 			and: [def inputKind = newDef inputKind])
 			and: [def receiverIsCollection = newDef receiverIsCollection]]
-		ifNone: [newDef register. ^ self].
+		ifNone: [
+			newDef adoptOrganization: ViQueryOrganizer active.
+			^ self].
 
 	self flag: #merge. "mt: Merge similarDef with newDef."

@@ -6,7 +6,7 @@ test26CopyQuery
 	q2 := [:numbers | numbers select: [:number | number even]] asScript.
 	q1 next: q2.
 	
-	copy1 := q1 copyQuery.
+	copy1 := q1 deepCopy.
 	copy2 := copy1 next.
 	
 	self

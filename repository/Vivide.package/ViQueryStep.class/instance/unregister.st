@@ -1,5 +1,5 @@
 organization
 unregister
 
-	self organization
-		unregisterStep: self.
+	self organization ifNotNil: [:o |
+		o unregisterStep: self].

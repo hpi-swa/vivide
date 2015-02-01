@@ -1,5 +1,5 @@
 organization
 unregister
 
-	self organization
-		unregisterDefinition: self.
+	self organization ifNotNil: [:o |
+		o unregisterDefinition: self].

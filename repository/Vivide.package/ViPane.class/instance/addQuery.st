@@ -4,7 +4,7 @@ addQuery
 	| newQuery |
 	newQuery := self currentQuery
 		ifNil: [ [:object | object] asScript ]
-		ifNotNil: [:q | q copyQuery].
+		ifNotNil: [:q | q deepCopy].
 
 	ViLoggingService trigger: {
 		#message -> 'Script copied.'.

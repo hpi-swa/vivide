@@ -1,5 +1,5 @@
-copying
-copyQuery
+as yet unclassified
+deepCopy
 	"Copy all next steps."
 
 	| lastStep newQuery |
