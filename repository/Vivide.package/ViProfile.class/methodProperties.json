@@ -1,13 +1,14 @@
 {
 	"class" : {
 		"active" : "mt 1/31/2015 14:05",
+		"hardcodedScriptIds" : "mt 2/1/2015 12:04",
 		"migrate" : "mt 1/31/2015 15:04",
 		"newFrom:" : "mt 1/31/2015 18:28",
 		"newMinimal" : "mt 1/31/2015 18:52",
-		"requiredScripts" : "mt 1/31/2015 15:48" },
+		"requiredScripts" : "mt 2/1/2015 12:20" },
 	"instance" : {
 		"addArtifact:" : "mt 1/31/2015 13:55",
-		"addDefaultProperties" : "mt 1/31/2015 18:59",
+		"addDefaultProperties" : "mt 2/1/2015 11:10",
 		"addObject:" : "mt 1/31/2015 13:55",
 		"addScript:" : "mt 1/31/2015 18:56",
 		"addScriptAsBookmark:" : "mt 1/31/2015 18:41",

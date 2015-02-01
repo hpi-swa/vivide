@@ -26,5 +26,5 @@ next
 		step := stack pop next].
 
 	((step isNil and: [self hasObjects]) and: [self hasProperties not]) ifTrue: [
-		step := ViQueryStep defaultProperties.
+		step := #defaultProperties asScript.
 		self assert: step isPropertyStep].

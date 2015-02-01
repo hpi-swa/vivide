@@ -13,7 +13,7 @@ exploreOneProperty
 				"Just use default properties for the object at hand."
 				(ViQueryInterpreter on: (ViQueryStep
 					use: {obj}
-					in: ViQueryStep defaultProperties)) upToNextProperties; propertiesFor: obj])
+					in: #defaultProperties asScript)) upToNextProperties; propertiesFor: obj])
 				
 			asOrderedCollection sorted: [:a1 :a2 | a1 key <= a2 key])
 			explore]].

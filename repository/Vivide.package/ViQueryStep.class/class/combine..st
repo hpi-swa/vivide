@@ -9,7 +9,7 @@ combine: someQueries
 		{ViQueryStep reference: q},
 		(q allSteps last isPropertyStep 
 			ifTrue: [#()]
-			ifFalse: [{ViQueryStep reference: ViQueryStep defaultProperties}])]
+			ifFalse: [{ViQueryStep reference: #defaultProperties asScript}])]
 	) in: [:mergedSteps |
 		result := mergedSteps first.
 		mergedSteps overlappingPairsDo: [:s1 :s2 |

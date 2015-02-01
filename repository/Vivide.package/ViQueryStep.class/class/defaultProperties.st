@@ -1,4 +1,5 @@
 defaults
 defaultProperties
 
-	^ #printStringNew asScript
+	self flag: #deprecated. "mt: Use that code directly instead."
+	^ #defaultProperties asScript

@@ -13,4 +13,6 @@ allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 	"Also consider default properties if needed."
 	(lastStep isPropertyStep not and: [
 		lastStep next isNil "or: [lastStep next isPropertyStep not] mt: references?"]) ifTrue: [
-		ViQueryStep defaultProperties allPropertyStepsDo: aBlock ifNewSequence: anotherBlock].
+		#defaultProperties asScript
+			allPropertyStepsDo: aBlock
+			ifNewSequence: anotherBlock].

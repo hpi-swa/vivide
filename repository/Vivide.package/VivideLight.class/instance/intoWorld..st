@@ -11,6 +11,4 @@ intoWorld: aWorld
 	aWorld sgConnectSignal: #explorerRequested: to: self selector: #openExplorer:.
 	aWorld sgConnectSignal: #implementorsRequested: to: self selector: #openImplementors:.
 	aWorld sgConnectSignal: #sendersRequested: to: self selector: #openSenders:.
-
-	aWorld sgConnectSignal: #referencesRequested: to: self selector: #openStepReferences:.
 	aWorld sgConnectSignal: #editorRequested: to: self selector: #openEditor:.

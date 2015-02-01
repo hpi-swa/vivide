@@ -13,5 +13,5 @@ exploreOneProperty
 				"Just use default properties for the object at hand."
 				(ViQueryInterpreter on: (ViQueryStep
 					use: {obj}
-					in: ViQueryStep defaultProperties)) upToNextProperties; propertiesFor: obj])
+					in: #defaultProperties asScript)) upToNextProperties; propertiesFor: obj])
 			explore]].

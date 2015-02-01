@@ -2,4 +2,4 @@ steps
 stepdefaultProperties
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#iconAndLabel); add: (#class->ViQueryPropertyStep); add: (#properties->((Dictionary new) add: (#priority->610); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); add: (#copyOfStep->#defaultProperties); yourself)); add: (#id->#defaultProperties); add: (#iconCode->'nil'); add: (#next->#'d0751873-113e-5342-a056-84f838b9df4b'); add: (#viewDefinition->#treeView); add: (#label->nil); yourself)
+	^ ((Dictionary new) add: (#definition->#'83fdd12e-c8ff-d04c-aca7-8a67eac8a477'); add: (#class->ViScriptPart); add: (#properties->((Dictionary new) add: (#isNew->false); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'30 December 2014 5:04:25 pm'); yourself)); add: (#isProperty->true); add: (#next->nil); add: (#label->nil); add: (#iconCode->'nil'); add: (#id->#defaultProperties); add: (#isReference->false); add: (#viewDefinition->#treePlain); yourself)

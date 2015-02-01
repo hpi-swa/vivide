@@ -15,5 +15,5 @@ maxPropertyCount
 	
 	maxCount := maxCount max: currentCount.
 	^ maxCount = 0
-		ifTrue: [ViQueryStep defaultProperties maxPropertyCount]
+		ifTrue: [#defaultProperties asScript maxPropertyCount]
 		ifFalse: [maxCount]

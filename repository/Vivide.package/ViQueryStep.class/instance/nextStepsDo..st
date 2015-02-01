@@ -12,4 +12,4 @@ nextStepsDo: aBlock
 	
 	hasProperties ifFalse: [
 		"Also consider default properties."
-		ViQueryStep defaultProperties nextStepsDo: aBlock].
+		#defaultProperties asScript nextStepsDo: aBlock].
