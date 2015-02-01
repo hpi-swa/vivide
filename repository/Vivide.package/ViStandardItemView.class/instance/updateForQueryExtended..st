@@ -4,8 +4,9 @@ updateForQueryExtended: query
 
 	| newCols newResizeModes newHorizontalHeaderVisible commandsVisible |
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
-					UiItemViewColumnSpec newFrom: (#(text icon color morph balloonText checkable checked editable)
-						collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol])].
+					(UiItemViewColumnSpec newFrom: (#(text icon color morph balloonText checkable checked editable selectable)
+						collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
+							overrideStandardListFont: true].
 	newResizeModes := OrderedCollection new.
 	commandsVisible := true.
 	

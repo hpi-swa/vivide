@@ -10,8 +10,8 @@ templateForSourceCode: code
 		onError: [:msg :idx | ^ template -> properties].
 
 	(node sentMessages anySatisfy: [:msg |
-		#(collect select gather reject reduce inject asGroups sort sorted sortBy) anySatisfy: [:verb |  
-			msg includesSubstring: verb caseSensitive: false]]) ifTrue: [
+		#(collect: select: gather: reject: reduce: inject: asGroups sort: sorted: sorted sortBy:) anySatisfy: [:verb |  
+			msg beginsWith: verb]]) ifTrue: [
 			template := self templateAllAtOnce].
 	
 	node isBlock ifTrue: [

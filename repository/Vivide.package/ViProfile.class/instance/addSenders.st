@@ -1,4 +1,4 @@
-as yet unclassified
+initialization - scripts
 addSenders
 
 	self addScript: {
@@ -7,6 +7,5 @@ addSenders
 			#inputKind -> ByteSymbol. #outputKind -> MethodReference.
 			#label -> 'Senders'.
 			#id -> #senders}.
-		[:ref | #text -> ref asString]
 	
 	} asScript.

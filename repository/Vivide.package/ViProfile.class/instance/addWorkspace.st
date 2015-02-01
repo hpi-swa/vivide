@@ -1,4 +1,4 @@
-as yet unclassified
+initialization - bookmarks
 addWorkspace
 
 	self addScriptAsBookmark:

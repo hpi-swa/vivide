@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFrom: anotherProfile
 	"Create a new profile and copy information from the given one to ensure its validity."
 	| instance |

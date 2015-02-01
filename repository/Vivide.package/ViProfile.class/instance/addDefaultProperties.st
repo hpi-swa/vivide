@@ -1,9 +1,13 @@
-as yet unclassified
+initialization - scripts
 addDefaultProperties
 
 	self addScript: {
 	
-		[:object | #text -> object printString] -> {
-			#id -> #defaultProperties}.
+		[:object | {
+			#icon -> (ViIconService doObject: object).
+			#text -> (ViLabelService doObject: object)}] -> {
+			#id -> #defaultProperties.
+			#label -> 'Default Properties'}.
+		[:object | #text -> (ViObjectOriginService doObject: object)]
 	
 	} asScript.

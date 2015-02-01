@@ -1,4 +1,4 @@
-as yet unclassified
+add/remove
 addScript: aScript
 
 	(self organization stepById: aScript id)

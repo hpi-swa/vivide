@@ -1,4 +1,4 @@
-as yet unclassified
+add/remove
 addScriptAsBookmark: aScript
 
 	self bookmarks add: ((ViSinglePaneEditor
