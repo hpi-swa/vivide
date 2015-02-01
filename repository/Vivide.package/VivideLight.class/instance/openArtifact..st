@@ -22,7 +22,7 @@ openArtifact: anObject
 		^ self openEditor: object].
 	
 	(object isKindOf: ViScriptPart) ifTrue: [
-		object allSteps in: [:steps |
+		object steps in: [:steps |
 		"See behavior of ViScriptEditor >> #onContextChanged."
 			steps size > 1 ifTrue: [^ self openArtifacts: steps]]].
 

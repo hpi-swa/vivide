@@ -1,8 +1,7 @@
 as yet unclassified
 doPane: aPane
 
-	| scriptsSummary objectsSummary |
-	(aPane view isKindOf: ViMultiPaneWidget)
+	((aPane currentQuery ifNil: false ifNotNil: #isMeta) and: [aPane currentQuery nextLabel isNil])
 		ifFalse: [^ (ViLabelService doObject: aPane currentQuery) asString].  
 	
 	^ (((((aPane view panes)

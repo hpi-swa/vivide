@@ -8,7 +8,7 @@ popUpAt: aPoint
 		color: (Color gray: 0.85);
 "		borderWidth: 1;
 		borderColor: (Color gray: 0.8) muchDarker;"
-		extent: (300@200 max: self extent);
+		extent: ((self optimalWidth @ self optimalHeight) min: (500@300));
 		topLeft: aPoint;
 "		layoutInset: 3;"
 		position: self position + (self bounds amountToTranslateWithin: ViActiveVivide world bounds).
