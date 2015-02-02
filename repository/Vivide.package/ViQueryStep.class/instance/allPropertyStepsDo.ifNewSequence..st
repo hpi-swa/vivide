@@ -5,7 +5,7 @@ allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 	lastStep := nil.
 	self allStepsDo: [:step |
 		step isPropertyStep ifTrue: [
-			(lastStep isNil or: [lastStep isPropertyStep not])
+			(lastStep isNil or: [lastStep isPropertyStep not and: [lastStep isReferenceStep not]])
 				ifTrue: [anotherBlock value].
 			aBlock value: step].
 		lastStep := step].
