@@ -5,9 +5,9 @@ migrate
 	self migrate explore."
  
 	| profile |
-	profile := self new.
+	profile := self newEmpty.
 	profile
-		name: 'Migrated on ', TimeStamp now asString;
+		label: 'Migrated on ', TimeStamp now date asString;
 		organization: ViQueryOrganizer default;
 		bookmarks: VivideLight editorStates;
 		closedObjects: ViObjectHistory closedObjects;
@@ -17,7 +17,18 @@ migrate
 		transcriptHistory: ViObjectHistory transcriptHistory.
 	self assert: profile isValid.
 	
-	VivideLight profiles add: profile.
-	VivideLight active ifNotNil: [:vivide | vivide profile: profile].
+	profile
+		addBlockForNewSnippet;
+		addBlockForNewClass;
+		addBlockForNewMemo.
 	
+	VivideLight profiles add: profile.
+	VivideLight openProfile: profile.
+
+	"Overwrite old-style default properties."
+	(#defaultProperties asScript isKindOf: ViScriptPart) ifFalse: [
+		profile addScript: ([:object | #text -> object printString] asScript
+			id: #defaultProperties;
+			yourself)].
+
 	^ profile    
