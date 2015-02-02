@@ -1,4 +1,4 @@
 accessing - properties
 currentView
 
-	^ self ui viewCombo currentItem at: #object
+	^ self ui viewCombo currentItem ifNotNil: [:item | item at: #object]

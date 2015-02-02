@@ -5,13 +5,16 @@ currentQuery: aQueryStep
 	
 	aQueryStep == self currentQuery
 		ifFalse: [
-			self flag: #metaScript.
-			self layoutChanged.
+			aQueryStep ifNotNil: [
+				self flag: #metaScript.
+				self layoutChanged].
 			
 			self model resetSilently.
 			self model firstStep next: aQueryStep.
 			self updateView. "Evaluation will happen lazily."
-			self currentQueryChanged: aQueryStep]
+			
+			aQueryStep ifNotNil: [
+				self currentQueryChanged: aQueryStep]]
 		ifTrue: [
 			self currentQuery notNil
 				"Force re-evaluation NOW."

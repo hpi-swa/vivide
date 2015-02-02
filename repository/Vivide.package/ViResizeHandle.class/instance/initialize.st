@@ -11,7 +11,7 @@ initialize
 		listCentering: #center;
 		layoutInset: 0;
 		updateLayout;
-		fadeOut.
+		fadeOutInstantly.
 
 	self connect: self eventHandler signal: #mouseEntered: toSelector: #fadeIn.
 	self connect: self eventHandler signal: #mouseLeft: toSelector: #fadeOut.

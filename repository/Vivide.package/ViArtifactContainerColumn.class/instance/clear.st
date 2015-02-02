@@ -1,4 +1,4 @@
 add/remove editors
 clear
 
-	self removeAllMorphsIn: self editors.
+	"self removeAllMorphsIn: self editors."
