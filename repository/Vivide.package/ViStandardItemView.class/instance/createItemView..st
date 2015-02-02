@@ -23,6 +23,8 @@ createItemView: viewClass
 	self connect: view signal: #returnPressed: toSelector: #returnPressed:.
 	
 	self connect: view signal: #hovered: toSelector: #triggerPreview:.
+	self connect: view signal: #clicked: toSelector: #removeAlarm: pattern: #(=showPreview).
+	self connect: view signal: #clicked: to: previewHandler selector: #discardPreview.
 
 	self
 		connect: view viewport eventHandler signal: #focusLost
