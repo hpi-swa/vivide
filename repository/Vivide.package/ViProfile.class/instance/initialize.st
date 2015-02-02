@@ -4,4 +4,7 @@ initialize
 	super initialize.
 	self
 		addWorkspace;
-		addTranscript.
+		addTranscript;
+		addBlockForNewSnippet;
+		addBlockForNewClass;
+		addBlockForNewMemo.
