@@ -4,9 +4,9 @@ initializeArtifact
 	edit := ViSourceCodeEdit new
 		hResizing: #spaceFill;
 		outerBorderWidth: 0;
-		scrollingMode: #limit;
+		scrollingMode: #never;
 		autoCreateArtifacts: true;
-		margins: (1@0 corner: 0@1).
+		margins: (4@0 corner: 0@7).
 	edit eventHandler grabKeyboardOnMouseEnter: true.
 		
 	self connect: edit signal: #editingFinished: toSelector: #acceptSourceCode.

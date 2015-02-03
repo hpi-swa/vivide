@@ -4,7 +4,7 @@ initializeArtifact
 	| sourceCodeEdit |
 	sourceCodeEdit := ViClassDefinitionEdit new
 		outerBorderWidth: 0;
-		scrollingMode: #limit;
+		scrollingMode: #never;
 		colorFocusBackground: Color white;
 		colorFocusBorder: (Color gray: 0.3);
 		colorBackground: Color white.

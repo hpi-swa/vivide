@@ -9,5 +9,5 @@ boundsForSubmorphs: aMorph
 			box 
 				ifNil:[box := subBox copy]
 				ifNotNil:[box := box quickMerge: subBox]]].
-	box ifNil:[^self bounds]. "e.g., having submorphs but not visible"
+	box ifNil:[^ aMorph bounds]. "e.g., having submorphs but not visible"
 	^ box origin asIntegerPoint corner: box corner asIntegerPoint

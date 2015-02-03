@@ -9,7 +9,8 @@
 		"isLayouting",
 		"activeMorph",
 		"cachedBounds",
-		"cellInset" ],
+		"cellInset",
+		"snapValue" ],
 	"name" : "ViConstraintLayout",
 	"pools" : [
 		 ],

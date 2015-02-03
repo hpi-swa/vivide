@@ -5,7 +5,8 @@ new: symbolOrBlockOrScript for: objects
 	instance := self new.
 	script := ViQueryStep convert: symbolOrBlockOrScript.
 	instance pane: (ViPane new
-		queries: [script organization orderedSteps sorted: [:s1 :s2 | s1 priority <= s2 priority]];
+		queries: [script organization orderedSteps
+			sorted: [:s1 :s2 | s1 priority <= s2 priority]];
 		currentQuery: script;
 		objects: objects;
 		chooseMostAppropriateQuery).

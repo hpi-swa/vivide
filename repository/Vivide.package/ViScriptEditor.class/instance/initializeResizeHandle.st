@@ -1,5 +1,6 @@
 initialization
 initializeResizeHandle
 
-	super initializeResizeHandle.
-	self resizeHandle setProperty: #noMargins toValue: true.
+	"super initializeResizeHandle.
+	self resizeHandle setProperty: #noMargins toValue: true."
+	resizeHandle := nil.

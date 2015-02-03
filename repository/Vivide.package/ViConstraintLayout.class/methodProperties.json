@@ -3,12 +3,15 @@
 		 },
 	"instance" : {
 		"alignNeighbours:for:" : "mt 11/20/2014 16:56:56.254",
-		"boundsForSubmorphs:" : "mt 11/21/2014 12:13:10.025",
+		"boundsForSubmorphs:" : "mt 2/3/2015 09:47",
 		"cellInset" : "mt 11/21/2014 12:18:04.053",
 		"cellInset:" : "mt 11/21/2014 12:17:46.695",
 		"fixLayoutFor:pivot:" : "mt 11/20/2014 17:22:12.691",
 		"layout:in:" : "mt 11/21/2014 12:16:56.997",
 		"pushMorphsAway:by:" : "mt 11/20/2014 17:34:54.298",
-		"resize:in:" : "mt 11/21/2014 12:14:59.484",
-		"shrinkWrap:from:" : "mt 11/24/2014 09:12:06.545",
-		"snapNeighbours:for:" : "mt 11/20/2014 17:09:41.815" } }
+		"resize:in:" : "mt 2/3/2015 10:45",
+		"shrinkToSubmorphsOf:in:" : "mt 2/3/2015 10:36",
+		"shrinkWrap:from:" : "mt 2/3/2015 10:36",
+		"snapNeighbours:for:" : "mt 2/3/2015 10:31",
+		"snapValue" : "mt 2/3/2015 10:31",
+		"snapValue:" : "mt 2/3/2015 10:31" } }

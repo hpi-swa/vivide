@@ -18,7 +18,8 @@
 		"fileOut" : "mt 2/10/2014 12:37:59.278",
 		"group" : "mt 8/15/2012 15:10:56.863",
 		"hasUnacceptedChanges" : "mt 7/13/2013 13:16:36.035",
-		"initializeArtifact" : "mt 7/13/2013 13:18:55.252",
+		"initializeArtifact" : "mt 2/3/2015 09:18",
+		"initializeResizeHandle" : "mt 2/3/2015 09:17",
 		"initializeToolbarObjects" : "mt 11/18/2014 11:57:01.024",
 		"initializeToolbarOperations" : "mt 11/14/2014 10:39:39.091",
 		"isAffectedBy:" : "mt 2/7/2014 15:05:12.952",
@@ -28,7 +29,7 @@
 		"knowsObject:" : "mt 2/10/2014 16:09:55.118",
 		"loadLastCode" : "mt 11/14/2014 10:34:51.699",
 		"loadPreviousCode" : "mt 11/14/2014 10:34:03.821",
-		"lockSize" : "mt 11/16/2013 14:47:10.637",
+		"lockSize" : "mt 2/3/2015 09:22",
 		"method" : "mt 1/9/2014 15:02:01.661",
 		"object" : "mt 1/9/2014 16:32:19.997",
 		"object:" : "mt 7/24/2014 13:12:37.545",
@@ -45,4 +46,4 @@
 		"toggleSide" : "mt 2/4/2014 16:41:30.434",
 		"tryDeleteMethod" : "mt 9/7/2012 13:08:12.001",
 		"tryToggleSide" : "mt 7/13/2013 13:16:42.13",
-		"unlockSize" : "mt 7/22/2013 13:53:29.671" } }
+		"unlockSize" : "mt 2/3/2015 09:21" } }

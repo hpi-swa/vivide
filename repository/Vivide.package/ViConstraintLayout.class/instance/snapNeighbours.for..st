@@ -4,7 +4,7 @@ snapNeighbours: someMorphs for: variable "pivotMorph"
 	| snapRange |
 	someMorphs ifEmpty: [^ self].
 	
-	snapRange := self cellInset to: self cellInset + 15.
+	snapRange := self cellInset to: self cellInset + self snapValue.
 
 	self flag: #dataNeeded. "mt: Are we resizing or are we moving here?!"
 	
