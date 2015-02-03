@@ -8,7 +8,7 @@ debug: aProcess context: aContext label: aString contents: contents fullView: aB
 	[Preferences logDebuggerStackToFile
 		ifTrue: [Smalltalk logSqueakError: aString inContext: aContext]] on: Error do: [:ex | ex return: nil].
 	
-	errorWasInUIProcess := Project spawnNewProcessIfThisIsUI: aProcess.
+	errorWasInUIProcess := Project current spawnNewProcessIfThisIsUI: aProcess.
 	
 	WorldState addDeferredUIMessage: [
 		[

@@ -14,9 +14,9 @@ updateContext
 				object: class >> selector;
 				artifact]
 		ifFalse: [ "Just do-its on expressions."
-			self ensureSourceEditor
-				sourceCode: context debuggerMap sourceText;
-				yourself]) ifNotNil: [:textEdit |
+			self ensureMethodEditor
+				object: context method;
+				artifact]) ifNotNil: [:textEdit |
 			
 			textEdit model
 				doItContext: context;
