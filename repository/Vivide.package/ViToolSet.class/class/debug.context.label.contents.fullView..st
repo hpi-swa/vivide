@@ -15,13 +15,6 @@ debug: aProcess context: aContext label: aString contents: contents fullView: aB
 			"Free stack from error handling stuff."
 			aProcess stepToHome: aContext.
 			
-			"Let Vivide show the artifact."
-"			(ActiveVivide openQueries: {
-				#debuggerStack.
-				nil.
-				#debuggerBindings.
-			} withObjects: {aProcess}) height: 500."
-
 			"Or let Vivide show the debugger."
 			VivideLight active openDebugger:
 				((Debugger new process: aProcess controller: nil context: aContext)
