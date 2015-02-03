@@ -1,11 +1,11 @@
 accessing - object
 object: aMethodContext
 
-	self artifact method: aMethodContext method.
+	self artifact method: (aMethodContext ifNotNil: #method).
 	self resetSource.
 	
 	self artifact model
 		doItContext: aMethodContext;
-		doItReceiver: aMethodContext receiver.
+		doItReceiver: (aMethodContext ifNotNil: #receiver).
 	
 	self clear.

@@ -1,7 +1,7 @@
 accessing
 pcRange
 
-	self object isDead
+	(self object isNil or: [self object isDead])
 		ifTrue: [^ 1 to: 0].
 		
 	self flag: #activeContext. "mt: How to retrieve whether this stack frame is on top?!"

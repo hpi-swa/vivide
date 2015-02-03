@@ -9,7 +9,7 @@ itemFor: aNode
 	enabled := self enabledFor: aNode.
 		
 	item := UiToolButton new
-		autoRaise: false;
+		autoRaise: true;
 		color: (itemColor ifNil: [Color gray: 0.85]);
 		icon: icon; 
 		balloonText: balloonText; 

@@ -1,5 +1,5 @@
 signals
 objectsChanged: inputObjects
 
-	self emit.
+	"self emit."
 	self emitInOwnerChain.

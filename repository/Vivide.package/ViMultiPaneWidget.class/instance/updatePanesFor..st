@@ -24,15 +24,17 @@ updatePanesFor: specs
 	self removeAllMorphsIn: unknownPanes. 
 			
 	"3) Dataflow"
-	self panes do: [:p | p connections copy do: [:c | c detach]].
+	self panes do: [:p | p connections
+		select: [:c | (self panes includes: c source) and: [self panes includes: c target]]
+		thenDo: [:c | c detach]].
 	self paneSpecs do: [:spec | | pane |
 		pane := self panes detect: [:p | p id = (spec at: #id)].
 		(spec at: #in ifAbsent: [#()]) do: [:kindId | 
 			({self}, self panes detect: [:p | p id = kindId second] ifNone: [])
-				ifNotNil: [:providerForSelections | (ViPaneConnection kind: kindId first from: providerForSelections to: pane) attach]].
+				ifNotNil: [:providerForSelections | (ViPaneConnection kind: kindId first from: providerForSelections to: pane) attachSilently]].
 		(spec at: #out ifAbsent: [#()]) do: [:kindId |
 			({self}, self panes detect: [:p | p = kindId second] ifNone: [])
-				ifNotNil: [:consumerForSelections | (ViPaneConnection kind: kindId first from: pane to: consumerForSelections) attach]]].
+				ifNotNil: [:consumerForSelections | (ViPaneConnection kind: kindId first from: pane to: consumerForSelections) attachSilently]]].
 
 	"4) Ensure recalculation of own bounds after pane insertions."
 	self fullBounds.

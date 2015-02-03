@@ -2,6 +2,16 @@ actions - open
 openDebugger: aDebugger
 
 	| editor window |
+	#debugger asScript ifNotNil: [:script |
+		aDebugger fullyExpandStack.
+		^ self
+			openQuery: script
+			withObjects: {aDebugger}].
+	
+	
+	
+	
+	
 	editor := ViDebuggerEditor new.	
 	editor objects: {aDebugger}.
 	window := editor openInWindow.

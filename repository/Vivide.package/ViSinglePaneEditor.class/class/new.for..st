@@ -1,15 +1,19 @@
 instance creation
 new: symbolOrBlockOrScript for: objects
 
-	| instance script |
+	| instance script pane |
 	instance := self new.
 	script := ViQueryStep convert: symbolOrBlockOrScript.
-	instance pane: (ViPane new
+	pane := ViPane new
+		objects: objects;
 		queries: [script organization orderedSteps
 			sorted: [:s1 :s2 | s1 priority <= s2 priority]];
-		currentQuery: script;
-		objects: objects;
-		chooseMostAppropriateQuery).
+		yourself.
+	pane recentQueries add: script.
+	pane chooseMostAppropriateQuery.
+	pane currentQuery ifNil: [pane currentQuery: script].
+	  
+	instance pane: pane.
 
 	(objects notEmpty and: [objects last isKindOf: ViScriptPart]) ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script editor(s) opened.'}].  

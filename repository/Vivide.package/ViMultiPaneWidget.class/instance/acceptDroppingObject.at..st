@@ -6,11 +6,10 @@ acceptDroppingObject: anObject at: aPoint
 "		objects: ((ViQueryInterpreter isCollection: anObject)
 			ifTrue: [anObject] ifFalse: [ {anObject} ]);
 "		queries: [self organization orderedSteps];
-"		currentQuery: ([:object | object] asScript
-			setProperty: #isNew toValue: true;   
-			adoptOrganization: self organization;
+		currentQuery: ([:object | object] asScript
+			setProperty: #isNew toValue: true;
 			yourself);
-"	"	fullBounds;"
+	"	fullBounds;"
 		yourself.
 	
 	self

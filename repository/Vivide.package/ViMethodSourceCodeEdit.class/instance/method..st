@@ -3,4 +3,4 @@ method: aCompiledMethod
 
 	method := aCompiledMethod.
 	
-	self theClass: method methodClass.
+	self theClass: (method ifNotNil: #methodClass).

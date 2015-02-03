@@ -3,9 +3,11 @@ chooseMostAppropriateQuery
 
 	| defaultQueryCheck |
 	self flag: #magicNumber. "mt: Make it programmable and not fixed to an ID."
-	self currentQuery ifNil: [^ self].
-	self currentQuery id == #artifacts
-		ifFalse: [^ self].
+	self recentQueries
+		ifEmpty: [^ self]
+		ifNotEmpty: [:queries |
+			queries first id == #artifacts
+				ifFalse: [^ self]].
 	
 	VivideLight useClassicMode
 		ifTrue: [^ self].
