@@ -5,6 +5,7 @@ initializeUi
 		
 	"call stack"
 	self ui listView
+		widgetResizable: true;
 		model: ViCallstackModel new;
 		listSpec: ((UiItemViewColumnSpec newFrom: {#text -> #object. #icon -> #object})
 				textConverter: [:contextPart |
