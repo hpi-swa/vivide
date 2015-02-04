@@ -21,7 +21,7 @@ initializeRecentlyList
 		buttonColor: (Color fromString: '#C6CBD6').
 	recentlyList
 		hResizing: #spaceFill;
-		vResizing: #rigid; height: 400. self flag: #magicNumber.
+		vResizing: #rigid; height: 550. self flag: #magicNumber.
 	
 	recentlyList groupSpec hideIfFirst: false.  
 	recentlyList groupSpec hideIfEmpty: false.
