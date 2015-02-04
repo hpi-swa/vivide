@@ -8,7 +8,7 @@ model: aQueryNode
 	queryModel := aQueryNode.
 	
 	queryModel ifNotNil: [:m |
-		self connect: m signal: #modelReset toSelector: #reset.
 		finder root: m.
 		currentQueryView model: m.
+		self connect: m signal: #modelReset toSelector: #reset.
 		self updateQueryCommands].

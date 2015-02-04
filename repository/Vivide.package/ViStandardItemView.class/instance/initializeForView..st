@@ -16,6 +16,9 @@ initializeForView: symbol
 	currentSearchView viewport color: (Color gray: 0.95).
 	currentSearchView model: self searchModel.
 	
+	self currentViews do: [:view |
+		self connect: view signal: #keyStroked:on: toSelector: #onKeyStroked:on:].
+	
 	self addAllMorphs: {
 		self currentQueryView.
 		self searchEdit}
