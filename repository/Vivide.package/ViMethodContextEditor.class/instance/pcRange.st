@@ -7,4 +7,4 @@ pcRange
 	self flag: #activeContext. "mt: How to retrieve whether this stack frame is on top?!"
 	^ self object debuggerMap
 		rangeForPC: self object pc
-		contextIsActiveContext: (self context indexOf: self object) = 1
+		contextIsActiveContext: (self context ifEmpty: [true] ifNotEmpty: [:c | (c indexOf: self object) = 1])

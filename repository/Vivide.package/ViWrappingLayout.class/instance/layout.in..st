@@ -19,4 +19,5 @@ layout: morph in: bounds
 				topLeft: offset;
 				layoutChanged.
 			offset := (offset x + s width + self cellInset) @ offset y]].
-	morph height: offset y - morph top + rowHeight - self layoutInset.
+	morph extentInOwner: morph width @ ((offset y - morph top + rowHeight - self layoutInset) max: 25).
+	"morph height: ((offset y - morph top + rowHeight - self layoutInset) max: 20)."

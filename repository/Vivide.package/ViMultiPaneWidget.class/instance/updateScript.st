@@ -2,6 +2,9 @@ as yet unclassified
 updateScript
 
 	| paneSpecs scripts |
+	(self currentQuery valueOfProperty: #locked ifAbsent: [false])
+		ifTrue: [^ self].   
+	
 	self setProperty: #isUpdatingScript toValue: true.   
 
 	paneSpecs := self panes collect: [:pane | pane asDictionary].
@@ -12,9 +15,11 @@ updateScript
 			steps.   
 			
 	"Ensure same tool-local organization."
-	scripts do: [:script | script adoptOrganization: self organizer].
+	scripts first notifier doSilently: [  
+		scripts do: [:script | script adoptOrganization: self organizer].
+		scripts first setProperty: #optimalExtent toValue: self extent].
 	
-	self currentQuery: scripts first.
+	self currentQuery ifNil: [self currentQuery: scripts first].
 
 	self removeProperty: #isUpdatingScript.
 

@@ -29,8 +29,8 @@
 		"objects:" : "mt 11/25/2014 12:06:38.073",
 		"objects:from:" : "mt 12/30/2014 16:34:59.764",
 		"onMouseMove:" : "mt 11/27/2014 14:21:50.879",
-		"optimalHeight" : "mt 2/3/2015 10:43",
-		"optimalWidth" : "mt 2/3/2015 10:43",
+		"optimalHeight" : "mt 2/4/2015 10:07",
+		"optimalWidth" : "mt 2/4/2015 10:19",
 		"organization" : "mt 12/18/2014 10:49:36.169",
 		"organizer" : "mt 11/24/2014 10:07:03.981",
 		"organizer:" : "mt 11/25/2014 12:09:50.848",
@@ -47,6 +47,6 @@
 		"tupleSize" : "mt 11/25/2014 11:50:17.144",
 		"updateFor:in:" : "mt 12/9/2014 14:29:26.55",
 		"updatePanesFor:" : "mt 2/3/2015 18:11",
-		"updateScript" : "mt 12/9/2014 15:07:33.169",
+		"updateScript" : "mt 2/4/2015 10:22",
 		"wantsDroppedMorph:event:" : "mt 12/18/2014 10:32:23.678",
 		"wantsHaloFromClick" : "mt 12/9/2014 15:46:28.319" } }
