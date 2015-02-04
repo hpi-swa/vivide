@@ -25,6 +25,7 @@
 		"initializeToolbarOperations" : "mt 2/24/2014 13:41:23.155",
 		"isAffectedBy:" : "mt 2/4/2014 16:58:10.248",
 		"knowsObject:" : "mt 9/16/2013 16:13:20.306",
+		"lockSize" : "mt 2/4/2015 17:27",
 		"object" : "mt 8/2/2012 16:42:10.12",
 		"object:" : "mt 7/22/2013 13:59:12.047",
 		"optimalWidth" : "mt 8/29/2012 11:52:55.47",
@@ -37,4 +38,5 @@
 		"theClassDefinition" : "mt 8/6/2012 10:15:09.309",
 		"theClassDefinition:" : "mt 8/6/2012 14:11:08.529",
 		"tryDeleteClass" : "mt 8/28/2012 14:44:10.059",
+		"unlockSize" : "mt 2/4/2015 17:28",
 		"updateClass" : "mt 8/6/2012 10:50:46.053" } }

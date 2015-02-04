@@ -7,6 +7,8 @@ logScript: string receiver: recvr context: ctxt result: obj
 	
 	"No debugging do-its."
 	"ctxt ifNotNil: [^ self]."
+	
+	VivideLight active ifNil: [^ self].
 
 	selfSent := string includesSubstring: 'self' caseSensitive: true.
 	receiverIsCollection := ViQueryInterpreter isCollection: recvr.
@@ -14,14 +16,16 @@ logScript: string receiver: recvr context: ctxt result: obj
 	self flag: #suspicious. "mt: Not so easy to hide collections, eh?"
 	(receiverIsCollection and: [recvr isEmpty])
 		ifTrue: [^ self].
-	
-	newDef := ViQuerySnippetDefinition new
-		sourceCode: string;
-		receiverIsCollection: selfSent & receiverIsCollection;
-		inputKind: (selfSent ifFalse: [UndefinedObject]
-			ifTrue: [receiverIsCollection
-				ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
-				ifFalse: [recvr class]]).
+
+	newDef := ViQuerySnippetDefinition new.
+	newDef notifier doSilently: [
+		newDef  
+			sourceCode: string;
+			receiverIsCollection: selfSent & receiverIsCollection;
+			inputKind: (selfSent ifFalse: [UndefinedObject]
+				ifTrue: [receiverIsCollection
+					ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
+					ifFalse: [recvr class]])].
 	
 	similarDef := ViQueryOrganizer active snippetDefinitions
 		detect: [:def | (def method = newDef method
