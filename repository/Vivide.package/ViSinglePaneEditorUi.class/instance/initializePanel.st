@@ -115,14 +115,14 @@ initializePanel
 	unnamedMorph2 frameFractions: (0@0 corner: 1@1).
 	unnamedMorph2 frameOffsets: (0@0 corner: 0@0).
 	unnamedMorph2 balloonText: (nil).
-	unnamedMorph2 balloonColor: ((TranslucentColor r: 0.91 g: 0.94 b: 1 alpha: 0.937)).
+	unnamedMorph2 balloonColor: ((TranslucentColor r: 0.91 g: 0.94 b: 1 alpha: 0.933)).
 	unnamedMorph2 color: (Color transparent).
 	unnamedMorph2 borderWidth: (0).
 	unnamedMorph2 borderStyle2: (#simple).
 	unnamedMorph2 borderColor: (Color black).
 	unnamedMorph1 addChild: unnamedMorph2.
 	unnamedMorph3 := UiSpacer new.
-	unnamedMorph3 extent: (66@10).
+	unnamedMorph3 extent: (64@10).
 	unnamedMorph3 position: (38@6).
 	unnamedMorph3 hResizing: (#spaceFill).
 	unnamedMorph3 vResizing: (#rigid).
@@ -151,8 +151,8 @@ initializePanel
 	unnamedMorph1 addChild: unnamedMorph3.
 	headerBtn := ViDraggableButton new.
 	headerBtn changeTableLayout.
-	headerBtn extent: (63@18).
-	headerBtn position: (104@1).
+	headerBtn extent: (67@18).
+	headerBtn position: (102@1).
 	headerBtn hResizing: (#shrinkWrap).
 	headerBtn vResizing: (#shrinkWrap).
 	headerBtn minWidth: (2).
@@ -175,7 +175,7 @@ initializePanel
 	headerBtn enabled: (true).
 	headerBtn setProperty: #iconByDesigner toValue: 'nil'.
 	headerBtn icon: (nil).
-	headerBtn text: ('Multi Pane').
+	headerBtn text: ('Single Pane').
 	headerBtn color: ((Color r: 0.85 g: 0.85 b: 0.85)).
 	headerBtn checkable: (false).
 	headerBtn checked: (false).
@@ -185,8 +185,8 @@ initializePanel
 	headerBtn setProperty: #objectName toValue: 'headerBtn'.
 	unnamedMorph1 addChild: headerBtn.
 	unnamedMorph4 := UiSpacer new.
-	unnamedMorph4 extent: (66@10).
-	unnamedMorph4 position: (169@6).
+	unnamedMorph4 extent: (64@10).
+	unnamedMorph4 position: (171@6).
 	unnamedMorph4 hResizing: (#spaceFill).
 	unnamedMorph4 vResizing: (#rigid).
 	unnamedMorph4 minWidth: (2).
@@ -304,11 +304,11 @@ initializePanel
 	content frameFractions: (0@0 corner: 1@1).
 	content frameOffsets: (0@0 corner: 0@0).
 	content balloonText: (nil).
-	content balloonColor: ((TranslucentColor r: 0.91 g: 0.94 b: 1 alpha: 0.937)).
+	content balloonColor: ((TranslucentColor r: 0.91 g: 0.94 b: 1 alpha: 0.933)).
 	content color: (Color transparent).
 	content borderWidth: (0).
 	content borderStyle2: (#simple).
 	content borderColor: (Color black).
 	content setProperty: #objectName toValue: 'content'.
 	panel addChild: content.
-	panel setProperty: #uiClassName toValue: 'ViMultiPaneEditor'.
+	panel setProperty: #uiClassName toValue: 'ViSinglePaneEditor'.

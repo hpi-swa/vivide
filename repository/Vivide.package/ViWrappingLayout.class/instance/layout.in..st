@@ -2,6 +2,9 @@ layout
 layout: morph in: bounds
 
 	| offset rowHeight |
+	isLayouting == true ifTrue: [^ self].
+	isLayouting := true.  
+	
 	offset := morph topLeft + (self layoutInset @ self layoutInset).
 	rowHeight := 0.
 	
@@ -21,3 +24,5 @@ layout: morph in: bounds
 			offset := (offset x + s width + self cellInset) @ offset y]].
 	morph extentInOwner: morph width @ ((offset y - morph top + rowHeight - self layoutInset) max: 25).
 	"morph height: ((offset y - morph top + rowHeight - self layoutInset) max: 20)."
+	
+	isLayouting := false.

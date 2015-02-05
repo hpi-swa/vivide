@@ -11,7 +11,7 @@
 		"hideBtn",
 		"addPaneBtn",
 		"content" ],
-	"name" : "ViMultiPaneEditorUi",
+	"name" : "ViSinglePaneEditorUi",
 	"pools" : [
 		 ],
 	"super" : "UserInterface",

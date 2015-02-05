@@ -2,6 +2,6 @@ initialization
 appendHeaderButtons: someMorphs
 
 	someMorphs reverseDo: [:m | 
-		labelArea addMorphFront: m].
+		labelArea addMorphBack: m].
 	
 	self headerButtons addAll: someMorphs.

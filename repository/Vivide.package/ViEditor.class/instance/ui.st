@@ -1,4 +1,4 @@
 accessing - ui
 ui
 	
-	^ ui ifNil: [ui := self uiClass new]
+	^ ui ifNil: [ui := self uiClass new] 

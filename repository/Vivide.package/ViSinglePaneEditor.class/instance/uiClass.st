@@ -1,4 +1,4 @@
 accessing - ui
 uiClass
 
-	^ ViMultiPaneEditorUi 
+	^ ViSinglePaneEditorUi

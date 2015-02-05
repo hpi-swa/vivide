@@ -8,8 +8,9 @@ topLeftInOwner: aPoint
 
 	self withAllOwnersDo: [:m |
 		"Assume that the world or a morph without layout policy allows for custom resizing of submorphs."
-		(((m owner == m world or: [m owner layoutPolicy isNil]) or: [m owner isNil])
+		((((m owner == m world or: [m owner layoutPolicy isNil]) or: [m owner isNil])
 			or: [m owner layoutPolicy isKindOf: ViConstraintLayout])
+			or: [m owner layoutPolicy isTableLayout])
 			ifTrue: [
 				m topLeft: m topLeft + delta.
 				self flag: #fullBoundsNeeded. "mt: ...if called without #extentInOwner!"
