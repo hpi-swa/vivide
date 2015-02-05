@@ -48,7 +48,7 @@
 		"initializeResizeHandle" : "mt 2/3/2015 09:24",
 		"initializeScriptPointer" : "mt 10/10/2014 11:54:56.614",
 		"initializeSummaryContainer" : "mt 10/15/2014 09:18:23.281",
-		"initializeToolbarControls" : "mt 1/20/2015 10:29:16.082",
+		"initializeToolbarControls" : "mt 2/5/2015 19:16",
 		"initializeToolbarObjects" : "mt 10/14/2014 08:00:38.658",
 		"initializeToolbarOperations" : "mt 10/10/2014 14:29:53.104",
 		"inputKind" : "mt 10/10/2014 15:01:45.12",
@@ -90,6 +90,6 @@
 		"updateMapIndex:" : "mt 10/14/2014 09:29:19.966",
 		"updateObject" : "mt 12/18/2014 11:16:28.849",
 		"updateSourceCode" : "mt 9/29/2014 16:34:13.484",
-		"updateToolbars" : "mt 1/20/2015 10:31:36.477",
+		"updateToolbars" : "mt 2/5/2015 19:53",
 		"updateUi" : "mt 10/7/2014 15:22:02.072",
 		"wantsDroppedMorph:event:" : "mt 1/20/2015 09:14:17.87" } }

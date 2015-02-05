@@ -9,7 +9,8 @@
 		"firstStep",
 		"pane",
 		"referenceStack",
-		"updateCount" ],
+		"updateCount",
+		"depth" ],
 	"name" : "ViQueryNode",
 	"pools" : [
 		 ],

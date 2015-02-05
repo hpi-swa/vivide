@@ -29,5 +29,8 @@ processSteps
 	groups do: [:group | children
 		at: group
 		put: ((interpreter createNodesForGroup: group)
-			do: [:node | node pane: self pane];
+			do: [:node |
+				node
+					pane: self pane;
+					depth: self depth + 1];
 			yourself)].

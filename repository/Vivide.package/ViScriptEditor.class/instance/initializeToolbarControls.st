@@ -6,8 +6,8 @@ initializeToolbarControls
 		autoRaise: true;
 		color: Color yellow;
 		buttonStyle: #iconOnly;
-		icon: (UiDiagonaIcons icon0307Small clippedTo: 16@16) asWireframeSunken;
-		balloonText: 'Change cycle';
+		icon: (UiDiagonaIcons icon0315Small clippedTo: 16@16) "asWireframeSunken";
+		balloonText: 'Insert reference to other script part';
 		layoutInset: (-1@0 corner: -1@0).
 		
 	self connect: cycleBtn signal: #clicked: toSelector: #removeCycle.
@@ -20,3 +20,16 @@ initializeToolbarControls
 		dragTransferType: #connect.
 
 	super initializeToolbarControls.
+
+	(self valueOfProperty: #moveBtn)
+		icon: (UiDiagonaIcons icon0324Small clippedTo: 16@16);
+		balloonText: 'Change order of script parts'.
+	(self valueOfProperty: #closeBtn)
+		icon: (UiDiagonaIcons icon0301Small clippedTo: 16@16);
+		balloonText: 'Delete this part from script!'. 
+	(self valueOfProperty: #collapseBtn)
+		delete.
+		
+	self toolbar
+		addSpacerToEdge: #top;
+		addButton: (self valueOfProperty: #closeBtn) edge: #top.    

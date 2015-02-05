@@ -3,8 +3,8 @@ initializeToolbarControls
 	"General controls for expand, collapse, drag, close."
 	
 	{{#top. #moveBtn. ViIcons controlRecordSmallSunkenIcon. 'Move method editor'. #yourself. ViDraggableButton}.
-		{#top. nil. ViIcons control090SmallSunkenIcon. 'Collapse method editor'. #collapse. UiToolButton}.
-		{#top. nil. ViIcons crossSmallSunkenIcon. 'Close method editor (CMD+W)'. #tryClose. UiToolButton}.
+		{#top. #collapseBtn. ViIcons control090SmallSunkenIcon. 'Collapse method editor'. #collapse. UiToolButton}.
+		{#top. #closeBtn. ViIcons crossSmallSunkenIcon. 'Close method editor (CMD+W)'. #tryClose. UiToolButton}.
 	} do: [:action |
 		| button |
 		button := action sixth new
