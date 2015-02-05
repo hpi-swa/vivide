@@ -3,7 +3,7 @@ updateForQuery: query
 
 	| newCols newResizeModes newHorizontalHeaderVisible commandsVisible |
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
-		(UiItemViewSimpleColumnSpec newFrom: (#(text icon color morph balloonText editable)
+		(UiItemViewSimpleColumnSpec newFrom: (#(text icon color morph balloonText editable selectable)
 			collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
 				labelColor: (idx > 1 ifTrue: [Color fromString: #AAAAAA] ifFalse: []);
 				yourself].

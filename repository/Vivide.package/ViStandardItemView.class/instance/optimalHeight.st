@@ -1,4 +1,4 @@
 geometry
 optimalHeight
 
-	^ self currentVisibleView optimalHeight + self searchEdit height + self cellInset + ((self hasProperty: #hideCommandsBar) ifTrue: [0] ifFalse: [self commandsBar fullBounds height])
+	^ self currentVisibleView optimalHeight + self searchEdit height + self cellInset + ((self commandsBar world isNil) ifTrue: [0] ifFalse: [self commandsBar fullBounds height])

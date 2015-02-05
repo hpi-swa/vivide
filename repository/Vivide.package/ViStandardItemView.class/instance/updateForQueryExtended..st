@@ -22,7 +22,10 @@ updateForQueryExtended: query
 					with: ((prop valueOfProperty: colProp) ifNotNil: [:val | wantsHeader := true. val])].
 				#(hAlignment vAlignment itemOrientation) do: [:colProp | col
 					perform: (colProp, #:) asSymbol
-					with: (prop valueOfProperty: colProp)]].
+					with: (prop valueOfProperty: colProp)].
+			
+				(prop valueOfProperty: #selectionMode) ifNotNil: [:sm |
+					self currentViews do: [:view | view selectionMode: sm]]].
 			newHorizontalHeaderVisible := wantsHeader].
 
 	commandsVisible
