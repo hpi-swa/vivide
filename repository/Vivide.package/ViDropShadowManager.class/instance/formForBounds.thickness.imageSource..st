@@ -6,13 +6,19 @@ formForBounds: bounds thickness: width imageSource: source
 	dropShadow := Form extent: (bounds extent + ((shadowSize@shadowSize) * 2)) depth: 32.
 	canvas := dropShadow getCanvas.
 	
+	"canvas
+		fillRectangle: (source dropShadowTopLeft width @ 0
+			corner: (dropShadow width - source dropShadowTopRight width)
+				@ source dropShadowTop height)
+		fillStyle: (InfiniteForm with: source dropShadowTop)."
+
 	source dropShadowTopLeft width
 		to: dropShadow width - source dropShadowTopRight width - 1
 		do: [:offset |
 			canvas
 				translucentImage: source dropShadowTop
 				at: offset @ 0].
-	
+		
 	source dropShadowTopLeft height
 		to: dropShadow height - source dropShadowBottomLeft height - 1
 		do: [:offset |

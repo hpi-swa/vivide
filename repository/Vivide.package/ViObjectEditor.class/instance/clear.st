@@ -1,10 +1,17 @@
 memento - cleanup
 clear
+	"Selections will be restored automatically be the view. Just keep the current index expanded."
+	
+	| currentIndex isExpanded |
+	currentIndex := self contentTree selection currentIndex.
+	isExpanded := false.
 
-"	super clear."
+	self flag: #informationHiding. "mt: Better API needed?"
+	currentIndex ifNotNil: [:index |
+		isExpanded := self contentTree viewport isExpanded: index].
 	
 	self contentTree model update.
 	self contentTree expandAllTopLevelNodes.
-	self contentTree currentNode: (self contentTree model childAt: 1 inGroup: self contentTree model groups first).
+	isExpanded ifTrue: [self contentTree expandIndex: currentIndex].
 	
 	self updateToolbars.

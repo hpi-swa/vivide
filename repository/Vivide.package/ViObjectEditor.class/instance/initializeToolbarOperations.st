@@ -7,7 +7,9 @@ initializeToolbarOperations
 		addGroup: #refresh
 		icon: UiSilkIcons arrowRefreshSmallIcon
 		contents: [:editor | {
-			{#refreshModel. 'Refresh'. nil. nil. 1}.
+			{#refreshModel. 'Refresh'. ViIcons blankIcon. nil. 1}.
+			{#turnOnAutoRefresh. 'Turn on auto refresh'. UiFugueIcons alarmClockSelectIcon. nil. 2}.
+			{#turnOffAutoRefresh. 'Turn off auto refresh'. ViIcons blankIcon. nil. 2}
 			}].
 	
 	self toolbar rightPanel
