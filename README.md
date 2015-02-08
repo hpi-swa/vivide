@@ -34,3 +34,12 @@ Metacello new
 ```
 **Close all transcript windows before loading!**
 
+If you want to update your image with the current code, do this:
+
+```Smalltalk
+Metacello new
+  baseline: 'Vivide';
+  repository: 'github://hpi-swa/vivide/repository';
+  get;
+  load.
+```
