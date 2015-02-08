@@ -15,7 +15,8 @@
 		"otherSteps",
 		"inputKind",
 		"map",
-		"mapIndex" ],
+		"mapIndex",
+		"highlights" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

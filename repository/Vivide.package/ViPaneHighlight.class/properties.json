@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Morphic-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pane" ],
+	"name" : "ViPaneHighlight",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

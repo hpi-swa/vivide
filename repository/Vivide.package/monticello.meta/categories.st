@@ -25,3 +25,4 @@ SystemOrganization addCategory: #'Vivide-Queries-OLD'!
 SystemOrganization addCategory: #'Vivide-Tests'!
 SystemOrganization addCategory: #'Vivide-Exceptions'!
 SystemOrganization addCategory: #'Vivide-Logging'!
+SystemOrganization addCategory: #'Vivide-Morphic-Support'!

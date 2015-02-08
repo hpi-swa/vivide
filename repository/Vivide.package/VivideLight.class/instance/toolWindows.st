@@ -1,5 +1,5 @@
 accessing
 toolWindows
 
-	^ self world submorphs select: [:m |
+	^ self world submorphsSatisfying: [:m |
 		m isKindOf: ViToolWindow]
