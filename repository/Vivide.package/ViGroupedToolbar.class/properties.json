@@ -11,7 +11,8 @@
 		"orientation",
 		"groups",
 		"previewHandler",
-		"dropTarget" ],
+		"dropTarget",
+		"editor" ],
 	"name" : "ViGroupedToolbar",
 	"pools" : [
 		 ],

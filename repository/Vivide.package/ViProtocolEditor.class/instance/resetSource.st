@@ -1,4 +1,3 @@
 actions
 resetSource
 
-	self updateToolbars.

@@ -19,4 +19,3 @@ clear
 	].
 
 	self updateSummaryLbl.
-	self updateToolbars.

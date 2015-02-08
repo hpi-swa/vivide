@@ -7,5 +7,3 @@ resetSource
 		self theClass theNonMetaClass definition,
 		'.', String cr,
 		self theClass theMetaClass definition.
-		
-	self updateToolbars.

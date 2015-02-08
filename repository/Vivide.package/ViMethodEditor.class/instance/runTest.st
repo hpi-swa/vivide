@@ -20,5 +20,3 @@ runTest
 			ifFalse: [UiFugueIcons tickIcon]).
 	
 	results updateResultsInHistory.
-
-	self updateToolbars.

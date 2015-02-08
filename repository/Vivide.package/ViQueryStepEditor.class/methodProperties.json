@@ -2,8 +2,8 @@
 	"class" : {
 		"supportedTypes" : "mt 12/9/2014 15:50:08.527" },
 	"instance" : {
-		"acceptChanges" : "mt 9/9/2013 14:24:16.997",
-		"acceptDefinition" : "mt 2/5/2014 14:35:51.725",
+		"acceptChanges" : "mt 2/8/2015 12:46",
+		"acceptDefinition" : "mt 2/8/2015 12:46",
 		"acceptIcon" : "mt 9/3/2013 08:39:10.034",
 		"acceptLabel" : "mt 9/4/2013 13:04:06.342",
 		"acceptReference" : "mt 9/9/2013 14:58:17.448",
@@ -15,7 +15,7 @@
 		"browseReferences" : "mt 9/15/2013 18:04:35.943",
 		"chooseIcon" : "mt 9/3/2013 08:42:09.471",
 		"chooseReference" : "mt 7/23/2014 11:30:27.938",
-		"clear" : "mt 9/7/2013 20:16:04.118",
+		"clear" : "mt 2/8/2015 12:46",
 		"context" : "mt 11/16/2013 13:14:49.009",
 		"context:" : "mt 11/16/2013 13:12:33.391",
 		"copyAcceptSourceCode" : "mt 11/10/2013 13:03:01.116",

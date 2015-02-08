@@ -10,5 +10,3 @@ clear
 				nextPut: $.;
 				nextPut: Character cr]])
 		].
-
-	self updateToolbars.

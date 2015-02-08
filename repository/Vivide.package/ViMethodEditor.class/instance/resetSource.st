@@ -7,5 +7,4 @@ resetSource
 		sourceCode: self method getSource;
 		select: (1 to: 0).	
 	
-	self updateToolbars.
 	self redrawLater.

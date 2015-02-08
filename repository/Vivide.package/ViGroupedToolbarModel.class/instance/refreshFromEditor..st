@@ -4,6 +4,6 @@ refreshFromEditor: anArtifactEditor
 
 	self contents ifNil: [^ self].
 
-	self objects: (self contents isBlock
+	self objects: ([self contents isBlock
 		ifTrue: [self contents cull: anArtifactEditor]
-		ifFalse: [self contents]).
+		ifFalse: [self contents]] on: Error do: [#()]).

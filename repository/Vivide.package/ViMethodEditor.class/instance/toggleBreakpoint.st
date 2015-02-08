@@ -6,5 +6,3 @@ toggleBreakpoint
 		ifFalse: [BreakpointManager
 			installInClass: self theClass
 			selector: self selector].
-	
-	self updateToolbars.

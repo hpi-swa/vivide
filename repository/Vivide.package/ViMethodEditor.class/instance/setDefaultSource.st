@@ -5,5 +5,3 @@ setDefaultSource
 		sourceCode: self defaultSource;
 		originalText: '';
 		selectAll.
-
-	self updateToolbars.

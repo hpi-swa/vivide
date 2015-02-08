@@ -16,11 +16,9 @@ initializeArtifact
 	self flag: #ugly. "mt: Take a look at text editor and paragraph initialization and update. Maybe use Shout hook #aboutToStyle?"
 	snippetEdit widget styler workspace: snippetEdit model.
 	
-	self connect: snippetEdit signal: #editingFinished: toSelector: #updateToolbars.
 	self connect: snippetEdit signal: #editingFinished: toSelector: #updateSnippet.
 
 "	self sgConnectSignal: #expressionAboutToBeEvaluated toSelector: #updateContext."
-	self sgConnectSignal: #expressionEvaluated: toSelector: #updateToolbars.
 	self sgConnectSignal: #expressionEvaluated: toSelector: #showEvaluationResult:.
 
 	snippetEdit eventHandler grabKeyboardOnMouseEnter: true.

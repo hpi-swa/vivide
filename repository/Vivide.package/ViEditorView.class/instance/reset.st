@@ -8,5 +8,4 @@ reset
 
 	self initializeForContainerClass: (ViArtifactLookupService doObject: object).
 	
-	self container object: object.	
-	self container updateToolbars.
+	self container object: object.

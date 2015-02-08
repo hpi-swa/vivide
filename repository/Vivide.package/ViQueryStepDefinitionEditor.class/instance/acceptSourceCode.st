@@ -12,4 +12,3 @@ acceptSourceCode
 	ViQuerySerializer
 		updateDefinition: self definition
 		inQueryArchive: ViQueryArchive.
-	self updateToolbars.

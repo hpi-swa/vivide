@@ -13,5 +13,3 @@ clear
 					with: UiFugueIcons crossIcon].
 			
 			self ui nameEdit theText: protocol protocolname].
-	
-	self updateToolbars.

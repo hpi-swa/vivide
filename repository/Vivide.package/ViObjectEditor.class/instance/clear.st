@@ -13,5 +13,3 @@ clear
 	self contentTree model update.
 	self contentTree expandAllTopLevelNodes.
 	isExpanded ifTrue: [self contentTree expandIndex: currentIndex].
-	
-	self updateToolbars.

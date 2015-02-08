@@ -8,7 +8,6 @@ tryToggleSide
 		self context isMeta
 			ifTrue: [self context: self context theNonMetaClass]
 			ifFalse: [self context: self context theMetaClass].
-		self updateToolbars.
 		^ self].
 	
 	self hasUnacceptedChanges

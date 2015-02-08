@@ -18,7 +18,6 @@ acceptChanges
 	self assert: self hasUnacceptedChanges not.
 
 	self updateSummaryLbl.
-	self updateToolbars.
 	
 	ViAnimatedImageMorph
 		flyOutOn: self

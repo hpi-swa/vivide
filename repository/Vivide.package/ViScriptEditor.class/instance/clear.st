@@ -6,8 +6,9 @@ clear
 	self object ifNotNil: [:step |
 		(step valueOfProperty: #isNew ifAbsent: [false])
 			ifTrue: [self activateWizard]
-			ifFalse: [self deactivateWizard].
-	].	
+			ifFalse: [self deactivateWizard]].	
 
-	self updateToolbars.
+	(self valueOfProperty: #cycleBtn) ifNotNil: [:btn |
+		btn passenger: self object].
+
 	self updateUi.

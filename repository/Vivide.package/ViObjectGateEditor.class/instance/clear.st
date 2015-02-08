@@ -10,5 +10,3 @@ clear
 				(NetNameResolver stringFromAddress: objectGate hostAddress),
 				':', objectGate port asString).
 			self updateButtons].
-		
-	self updateToolbars.

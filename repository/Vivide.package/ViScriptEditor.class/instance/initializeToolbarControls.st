@@ -10,7 +10,6 @@ initializeToolbarControls
 		balloonText: 'Insert reference to other script part';
 		layoutInset: (-1@0 corner: -1@0).
 		
-	self connect: cycleBtn signal: #clicked: toSelector: #removeCycle.
 	self toolbar addButton: cycleBtn edge: #top.
 	self setProperty: #cycleBtn toValue: cycleBtn.
 

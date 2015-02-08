@@ -12,4 +12,3 @@ clear
 		snippetEdit model bindings: self object bindings copy].
 
 "	snippetEdit revertChanges."
-	self updateToolbars.

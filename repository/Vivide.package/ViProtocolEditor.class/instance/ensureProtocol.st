@@ -8,7 +8,5 @@ ensureProtocol
 	protocol := ViProtocol
 		named: self ui nameEdit theText asString
 		inClass: self theClass.
-		
-	self updateToolbars.
-	
+			
 	^ true

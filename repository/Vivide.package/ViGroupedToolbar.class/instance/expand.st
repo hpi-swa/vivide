@@ -3,6 +3,9 @@ expand
 
 	secondaryList owner ifNotNil: [^ self].
 	
+	self editor ifNotNil: [:ed |
+		self refreshFromEditor: ed].
+	
 	self ensureVisibility.
 	
 	self orientation == #leftToRight

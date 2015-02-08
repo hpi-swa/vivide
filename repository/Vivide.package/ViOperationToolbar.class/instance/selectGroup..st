@@ -4,6 +4,9 @@ selectGroup: aModel
 	| oldEdge |
 	super selectGroup: aModel.
 	
+"	self editor ifNotNil: [:ed |
+		aModel refreshOperationsFromEditor: ed].
+"	
 	self orientation == #rightToLeft
 		ifTrue: [oldEdge := self right].
 	

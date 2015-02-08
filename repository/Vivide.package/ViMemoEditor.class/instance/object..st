@@ -8,4 +8,3 @@ object: aText
 
 	text := aText.
 	self artifact theText: aText copy.
-	self updateToolbars.
