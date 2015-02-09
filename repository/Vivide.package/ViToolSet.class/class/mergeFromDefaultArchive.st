@@ -1,4 +1,0 @@
-organizing
-mergeFromDefaultArchive
-
-	ViScriptArchive mergeAll.

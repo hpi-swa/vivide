@@ -1,18 +1,6 @@
 {
 	"class" : {
-		"addArtifact:" : "mt 2/26/2013 16:54:33.902",
-		"addObject:" : "mt 1/25/2015 11:49",
-		"clear" : "mt 3/28/2013 11:50:39.707",
-		"closedObjects" : "mt 11/16/2013 15:51:30.768",
-		"frequently" : "mt 2/25/2013 15:56:07.848",
-		"frequentlyClear" : "mt 2/25/2013 15:56:38.309",
-		"lastExceptions" : "mt 11/18/2013 09:13:49.689",
-		"recentClasses" : "mt 3/28/2013 11:57:14.495",
-		"recentMethods" : "mt 3/28/2013 11:57:42.465",
-		"recentPackages" : "mt 3/28/2013 11:57:26.104",
-		"recently" : "mt 2/25/2013 15:56:24.997",
-		"recentlyClear" : "mt 2/25/2013 15:56:45.599",
-		"transcriptHistory" : "mt 9/13/2013 18:02:57.863" },
+		 },
 	"instance" : {
 		"acceptObjectService:" : "mt 11/16/2013 17:15:06.372",
 		"addObject:" : "mt 2/25/2013 11:50:10.058",

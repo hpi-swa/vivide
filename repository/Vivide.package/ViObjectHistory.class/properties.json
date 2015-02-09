@@ -3,14 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ClosedObjects",
-		"Frequently",
-		"LastExceptions",
-		"RecentClasses",
-		"RecentMethods",
-		"RecentPackages",
-		"Recently",
-		"TranscriptHistory" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"objects",
