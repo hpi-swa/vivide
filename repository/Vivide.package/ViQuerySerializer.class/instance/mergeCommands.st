@@ -11,7 +11,7 @@ mergeCommands
 				ifTrue: [category := category allButFirst allButLast: 6]. "Example: *widgets-commands"
 		(archive theNonMetaClass perform: selector asSymbol) in: [:spec |
 			((organizer commandById: (spec at: #id))
-				ifNil: [(spec at: #class) new id: (spec at: #id); organization: organizer; register]
+				ifNil: [(spec at: #class) new organization: organizer; id: (spec at: #id); register]
 				ifNotNil: [:s | Transcript cr; show: '[Warning] Overwriting registered command ', s id. s])
 				in: [:command |
 					command notifier doSilently: [

@@ -10,11 +10,15 @@ mergeProfile
 			profile ifNotNil: [
 				Error signal: 'Profile not found!'].
 			
-			profile := ViProfile newMinimal.
+			profile := ViProfile newEmpty.
+			profile initializeMinimal.
+			
 			VivideLight profiles add: profile.
-			profile archive: archive.
+			profile archive: archive theNonMetaClass.
 			profile id: archive theNonMetaClass id].
 
-	organizer := profile organization.
+	self
+		setOrganizer: profile organization
+		archive: archive theNonMetaClass.
 
 	profile label: archive theNonMetaClass label.

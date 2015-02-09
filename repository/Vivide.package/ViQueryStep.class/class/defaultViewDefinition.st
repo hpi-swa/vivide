@@ -1,4 +1,4 @@
 defaults
 defaultViewDefinition
 
-	^ ViQueryOrganizer default definitionById: #treePlain
+	^ ViQueryOrganizer active definitionById: #treePlain
