@@ -1,0 +1,14 @@
+{
+	"category" : "VivideScripts-Experimentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptsForExperimentation",
+	"pools" : [
+		 ],
+	"super" : "ViScriptArchive",
+	"type" : "normal" }
