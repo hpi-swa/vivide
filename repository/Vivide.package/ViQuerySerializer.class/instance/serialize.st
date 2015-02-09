@@ -2,6 +2,7 @@ public
 serialize
 
 	self
+		serializeProfile;
 		prepareSerialization;
 		serializeSteps;
 		serializeStepsOrder;
@@ -10,3 +11,5 @@ serialize
 		serializeDefinitions.
 		
 	self tidyArchive.
+
+	^ archive theNonMetaClass

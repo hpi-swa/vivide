@@ -12,4 +12,4 @@ acceptDefinition
 	self step definition ifNotNil: [:def |
 		ViQuerySerializer
 			updateDefinition: def
-			inQueryArchive: ViQueryArchive].
+			inQueryArchive: ViProfile active archive].

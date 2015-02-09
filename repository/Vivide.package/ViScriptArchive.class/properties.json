@@ -6,16 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"archive",
-		"organizer",
-		"profile",
-		"steps",
-		"commands",
-		"definitions",
-		"stepSelectors",
-		"commandSelectors",
-		"definitionSelectors" ],
-	"name" : "ViQuerySerializer",
+		 ],
+	"name" : "ViScriptArchive",
 	"pools" : [
 		 ],
 	"super" : "Object",

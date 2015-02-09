@@ -11,4 +11,4 @@ acceptSourceCode
 	"Put it in the archive."
 	ViQuerySerializer
 		updateDefinition: self definition
-		inQueryArchive: ViQueryArchive.
+		inQueryArchive: ViProfile active archive.

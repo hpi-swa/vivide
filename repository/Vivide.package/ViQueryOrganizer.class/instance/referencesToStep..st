@@ -4,6 +4,7 @@ referencesToStep: aQueryStep
 	
 	^ Array streamContents: [:strm |
 		self orderedSteps do: [:step |
-			(step next == aQueryStep or: [
-				(step isReferenceStep and: [step reference == aQueryStep])])
+			((step next == aQueryStep
+				or: [step isReferenceStep and: [step reference == aQueryStep]])
+				or: [step isMeta and: [step metaReferences identityIncludes: aQueryStep]])
 					ifTrue: [strm nextPut: step]]]

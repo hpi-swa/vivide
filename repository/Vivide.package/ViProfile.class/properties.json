@@ -13,7 +13,9 @@
 		"recentMethods",
 		"recentPackages",
 		"transcriptHistory",
-		"label" ],
+		"label",
+		"archive",
+		"id" ],
 	"name" : "ViProfile",
 	"pools" : [
 		 ],

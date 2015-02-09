@@ -1,6 +1,8 @@
 private
 prepareSerialization
 
+	organizer tidy.
+
 	steps := IdentitySet new.
 	organizer orderedSteps do: [:q | steps addAll: q allSteps].
 	

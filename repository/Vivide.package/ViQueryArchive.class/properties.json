@@ -10,5 +10,5 @@
 	"name" : "ViQueryArchive",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ViScriptArchive",
 	"type" : "normal" }

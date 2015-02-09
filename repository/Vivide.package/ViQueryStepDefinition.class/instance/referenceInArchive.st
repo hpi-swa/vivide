@@ -3,4 +3,4 @@ referenceInArchive
 
 	^ self organization 
 		referenceForDefinition: self
-		inQueryArchive: ViQueryArchive
+		inQueryArchive: ViProfile active archive
