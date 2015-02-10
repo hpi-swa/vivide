@@ -7,7 +7,8 @@
 		"acceptDroppingMorph:event:" : "mt 12/18/2014 10:25:00.561",
 		"asEditorState" : "mt 1/31/2015 14:51",
 		"clear" : "mt 11/28/2014 15:04:15.786",
-		"copyEditor" : "mt 1/31/2015 14:52",
+		"copyEditor" : "mt 2/10/2015 20:34",
+		"copyEditorState" : "mt 2/10/2015 20:38",
 		"drawOverlayOn:" : "mt 11/28/2014 12:35:58.241",
 		"focusObject:" : "mt 1/29/2015 16:16",
 		"grabKeyboard" : "mt 11/28/2014 12:42:06.004",
@@ -16,7 +17,7 @@
 		"hasUnacceptedChanges" : "mt 11/28/2014 15:04:51.329",
 		"includesObject:" : "mt 11/28/2014 14:55:04.164",
 		"initializeEventHandler" : "mt 11/28/2014 12:35:57.522",
-		"initializeUi" : "mt 1/31/2015 14:52",
+		"initializeUi" : "mt 2/10/2015 20:37",
 		"loadState:" : "mt 12/19/2014 10:47:27.496",
 		"objects" : "mt 11/28/2014 12:40:26.612",
 		"objects:" : "mt 11/28/2014 12:40:34.665",
@@ -33,4 +34,4 @@
 		"updateHeaderText" : "mt 11/28/2014 13:50:06.459",
 		"wantsDroppedMorph:event:" : "mt 12/18/2014 10:32:02.204",
 		"wantsHaloFromClick" : "mt 12/9/2014 15:46:31.559",
-		"wrapPaneIntoMultiPaneWidget" : "mt 12/18/2014 10:36:14.609" } }
+		"wrapPaneIntoMultiPaneWidget" : "mt 2/10/2015 21:13" } }

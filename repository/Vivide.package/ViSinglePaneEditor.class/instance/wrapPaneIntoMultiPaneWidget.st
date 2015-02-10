@@ -2,6 +2,10 @@ as yet unclassified
 wrapPaneIntoMultiPaneWidget
 
 	| singlePane metaScript |
+	"Copy default scripts on the fly."
+	self pane currentQuery ifNotNil: [:script |
+		script isDefault ifTrue: [self pane currentQuery: script deepCopy]].
+	
 	singlePane := self pane.
 	metaScript := ViScriptPart convertPanes: {singlePane asDictionary}.
 	

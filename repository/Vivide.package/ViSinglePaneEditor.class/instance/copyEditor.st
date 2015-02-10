@@ -1,5 +1,6 @@
 actions
 copyEditor
 
-	(ViEditor newFromState: self asEditorState)
-		openInWindowAsIs.
+	self pane currentQuery ifNotNil: [:script |
+		(script deepCopy openScriptWith: self objects copy)
+			extent: self extent]

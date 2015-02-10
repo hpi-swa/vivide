@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"block" : "mt 2/9/2015 16:47",
+		"block:" : "mt 2/9/2015 16:47",
+		"initialize" : "mt 2/9/2015 16:37",
+		"intoWorld:" : "mt 2/9/2015 16:48",
+		"open" : "mt 2/9/2015 16:41",
+		"outOfWorld:" : "mt 2/9/2015 16:40",
+		"update:" : "mt 2/9/2015 16:52",
+		"wantsHaloFromClick" : "mt 2/9/2015 16:42" } }

@@ -6,5 +6,5 @@ highlightAffectedPanes
 	self discardPaneHighlights.
 
 	VivideLight active panes
-		select: [:pane | pane currentQuery allSteps includes: self object]
+		select: [:pane | (pane currentQuery ifNil: #() ifNotNil: #allSteps) includes: self object]
 		thenDo: [:pane |self highlights add: (ViPaneHighlight on: pane)].

@@ -2,9 +2,9 @@
 	"class" : {
 		"on:" : "mt 2/8/2015 14:13" },
 	"instance" : {
-		"initialize" : "mt 2/8/2015 14:20",
+		"drawOn:" : "mt 2/9/2015 13:11",
+		"initialize" : "mt 2/9/2015 13:01",
 		"pane" : "mt 2/8/2015 14:03",
 		"pane:" : "mt 2/8/2015 14:04",
 		"rejectsEvent:" : "mt 2/8/2015 13:33",
-		"update" : "mt 2/8/2015 14:20",
-		"wantsRoundedCorners" : "mt 2/8/2015 14:17" } }
+		"update" : "mt 2/9/2015 13:01" } }

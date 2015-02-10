@@ -37,7 +37,7 @@ drawOn: aCanvas
 	(self target "pane" view isKindOf: ViMultiPaneWidget) ifTrue: [
 		self target "pane "view panes do: [:p |
 			UiPlatform current canvas: aCanvas
-				frameRoundRect: (p bounds insetBy: 15)
+				frameRoundRect: (p bounds insetBy: (15 min: (p width min: p height)-15 max: 0))
 				radius: 3 width: 2
 				color: (Color white alpha: 0.5)].
 		self target "pane" view inputPanes do: [:p |

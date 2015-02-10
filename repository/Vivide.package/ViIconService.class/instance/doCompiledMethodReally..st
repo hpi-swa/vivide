@@ -7,6 +7,9 @@ doCompiledMethodReally: aMethod
 		result := aMethod methodClass theNonMetaClass perform: aMethod selector.
 		result class == Form ifTrue: [^ result]].
 
+	(aMethod methodClass == Color class and: [(aMethod methodClass organization categoryOfElement: aMethod selector) endsWith: #colors])
+		ifTrue: [^ (Form extent: 12@12 depth: 32) fillColor: (Color perform: aMethod selector)].
+
 	^ self class
 		iconForClass: aMethod methodClass
 		selector: aMethod selector

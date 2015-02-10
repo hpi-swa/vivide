@@ -15,8 +15,8 @@ chooseMostAppropriateQuery
 	defaultQueryCheck := {
 		[:o | o isBehavior].
 		[:o | o isKindOf: PackageInfo].
-		[:o | o isKindOf: ViObjectHistory].
-		[:o | o isKindOf: MessageTally]
+	"	[:o | o isKindOf: ViObjectHistory]."
+	"	[:o | o isKindOf: MessageTally]"
 	}.
 
 	(self objects size = 1 and: [defaultQueryCheck anySatisfy: [:chk | chk value: self objects first]])

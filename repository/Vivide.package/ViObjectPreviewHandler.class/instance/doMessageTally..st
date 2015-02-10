@@ -1,4 +1,4 @@
 operations
 doMessageTally: aMessageTally
 
-	self doCompiledMethod: aMessageTally method.
+	"self doCompiledMethod: aMessageTally method."

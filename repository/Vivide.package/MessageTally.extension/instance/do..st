@@ -2,4 +2,4 @@
 do: aBlock
 
 	aBlock value: self.
-	receivers do: [:aMessageTally | aMessageTally do: aBlock].
+	self receiversSortedByCall do: [:aMessageTally | aMessageTally do: aBlock].

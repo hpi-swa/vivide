@@ -3,7 +3,7 @@ updateScript
 
 	| paneSpecs scripts |
 	(self currentQuery valueOfProperty: #locked ifAbsent: [false])
-		ifTrue: [^ self].   
+		ifTrue: [^ self currentQuery].   
 	
 	self setProperty: #isUpdatingScript toValue: true.   
 
