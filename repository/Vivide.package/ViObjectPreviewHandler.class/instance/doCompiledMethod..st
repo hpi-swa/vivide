@@ -1,9 +1,9 @@
 operations
 doCompiledMethod: aCompiledMethod
 
-	panel := self
+	^ panel := self
 		codeboxFor:
 			'"', aCompiledMethod methodClass name, 
 			' (', (aCompiledMethod methodClass organization categoryOfElement: aCompiledMethod selector)  ,')"', String cr,
 			aCompiledMethod getSource asString
-		inClass: aCompiledMethod methodClass.
+		inClass: aCompiledMethod methodClass

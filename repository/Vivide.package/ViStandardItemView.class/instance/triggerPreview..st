@@ -8,9 +8,10 @@ triggerPreview: aNode
 		ifTrue: [^ self].
 
 	previewHandler discardPreview.
-		
+	
 	previewHandler
-		object: (aNode at: #object);
+		"object: (aNode at: #object);"
+		panel: (aNode at: #tooltip ifAbsent: []);
 		objectBounds: self previewBounds.
 
 	self

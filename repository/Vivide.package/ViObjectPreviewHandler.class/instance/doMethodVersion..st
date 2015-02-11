@@ -1,8 +1,8 @@
 operations
 doMethodVersion: aMethodVersion
 
-	panel := self
+	^ panel := self
 		codeboxFor:
 			'"', aMethodVersion theClass name, ' ', aMethodVersion stamp, '"', String cr,
 			aMethodVersion source
-		inClass: aMethodVersion theClass.
+		inClass: aMethodVersion theClass

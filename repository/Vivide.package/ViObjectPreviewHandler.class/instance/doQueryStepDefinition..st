@@ -1,9 +1,9 @@
 as yet unclassified
 doQueryStepDefinition: def
 
-	panel := self
+	^ panel := self
 		codeboxFor: ('"{1} - {2}"', String cr, '{3}' format: {
 			def valueOfProperty: #creationAuthor.
 			def valueOfProperty: #creationTimeStamp.
 			def sourceCode})
-		inClass: nil.
+		inClass: nil

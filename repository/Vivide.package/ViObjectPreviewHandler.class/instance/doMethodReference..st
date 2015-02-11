@@ -3,6 +3,6 @@ doMethodReference: aMethodReference
 
 	aMethodReference isValid ifFalse: [
 		panel := self textboxFor: 'Invalid method reference!' color: Color red muchLighter.
-		^ self].
+		^ panel].
 
 	^ super doMethodReference: aMethodReference

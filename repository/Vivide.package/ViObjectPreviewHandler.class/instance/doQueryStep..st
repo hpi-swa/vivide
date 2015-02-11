@@ -1,7 +1,7 @@
 as yet unclassified
 doQueryStep: aQueryStep
 
-	panel := self
+	^ panel := self
 		codeboxFor: ('"{1} - {2}', String cr, 'Next Step: {3}"', String cr, '{4}' format: {
 			aQueryStep valueOfProperty: #creationAuthor.
 			aQueryStep valueOfProperty: #creationTimeStamp.

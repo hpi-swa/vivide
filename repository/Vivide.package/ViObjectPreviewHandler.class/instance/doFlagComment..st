@@ -1,6 +1,6 @@
 operations
 doFlagComment: aFlagComment
 	
-	panel := self
+	^ panel := self
 		textboxFor: aFlagComment comment
-		color: Color blue muchLighter paler.
+		color: Color blue muchLighter paler

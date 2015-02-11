@@ -16,8 +16,8 @@ doEditorState: anEditorState
 					' <font color="#AAAAAA">',
 					(ViObjectOriginService doObject: obj),
 					'</font>']).
-			^ self].
+			^ panel].
 	
-	panel := ViMorphDecorator new
+	^ panel := ViMorphDecorator new
 		addMorph: (anEditorState properties at: #thumbnail ifAbsent: [^ nil]) asMorph;
 		yourself.

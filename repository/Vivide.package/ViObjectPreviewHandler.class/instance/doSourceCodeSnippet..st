@@ -1,6 +1,6 @@
 operations
 doSourceCodeSnippet: aSourceCodeSnippet
 
-	panel := self
+	^ panel := self
 		codeboxFor: aSourceCodeSnippet code
-		inClass: nil.
+		inClass: nil
