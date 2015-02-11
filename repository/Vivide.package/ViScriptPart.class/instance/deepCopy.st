@@ -7,6 +7,7 @@ deepCopy
 	copiedReferences := OrderedCollection new.
 	
 	newQuery := self copy.
+	copiedReferences add: newQuery.
 	idMap at: self id put: newQuery id.
 	 
 	lastStep := nil.
@@ -17,6 +18,7 @@ deepCopy
 			ifNotNil: [lastStep notifier doSilently: [
 				lastStep next: step copy].
 				lastStep := lastStep next.
+				copiedReferences add: lastStep.
 				idMap at: step id put: lastStep id].
 		step isReferenceStep ifTrue: [step reference ifNotNil: [:referencedStep |
 			"Copy only if not already there."
