@@ -12,4 +12,9 @@ allStepsDo: aBlock previousSteps: someSteps
 			step reference ifNotNil: [:referencedStep |
 				referencedStep
 					allStepsDo: aBlock
+					previousSteps: someSteps]].
+		step isMeta ifTrue: [
+			step metaReference ifNotNil: [:referencedStep |
+				referencedStep
+					allStepsDo: aBlock
 					previousSteps: someSteps]]].

@@ -7,4 +7,6 @@ outOfWorld: aWorld
 	aWorld sgDisconnectSignal: #sendersRequested: from: self selector: #openSenders:.
 	aWorld sgDisconnectSignal: #editorRequested: from: self selector: #openEditor:.
 
+	aWorld stopStepping: self.
+
 	super outOfWorld: aWorld.  

@@ -1,7 +1,7 @@
 initialization
 initializeTitleBar
 
-	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn  |
+	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn |
 	titleBar := Morph new
 		color: (Color fromString: '#C6CBD6') lighter;
 		changeTableLayout;
@@ -31,6 +31,14 @@ initializeTitleBar
 		icon: UiFugueIcons userIcon asWireframeSunken.
 	self connect: changeProfileBtn signal: #clicked: to: VivideLight selector: #open.
 	
+	updateBtn := UiToolButton new
+		"buttonStyle: #iconOnly;"
+		color: (Color fromString: '#C6CBD6');
+		text: 'Update';
+		balloonText: 'Check for update.';
+		icon: UiFugueIcons leafArrowIcon.
+	self connect: updateBtn signal: #clicked: toSelector: #updateFromRepository.
+	
 	feedbackBtn := UiToolButton new
 		"buttonStyle: #iconOnly;"
 		color: (Color fromString: '#C6CBD6');
@@ -46,6 +54,8 @@ initializeTitleBar
 		closeBtn.
 		(ViIcons vivideLogo asWireframeSunken: 0.3) asMorph.
 		UiSpacer new orientation: #horizontal.
+		updateBtn.
 		changeProfileBtn.
 		closeWndBtn.
 		profileLabel}.
+	updateBtn hideFull.

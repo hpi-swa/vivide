@@ -13,7 +13,8 @@
 		"titleBar",
 		"objectsBar",
 		"locator",
-		"profile" ],
+		"profile",
+		"updateBtn" ],
 	"name" : "VivideLight",
 	"pools" : [
 		 ],
