@@ -4,7 +4,7 @@ addExplorer
 	self addScript: {
 	
 		[:object | object] -> {
-			#label -> 'Explorer'.
+			#label -> 'Inspector'.
 			#view -> ViExplorerView.
 			#id -> #objectExplorer}.
 	

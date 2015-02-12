@@ -1,8 +1,8 @@
 as yet unclassified
 adoptOrganization: aQueryOrganizer
 
-	self isDefault ifTrue: [
-		Error signal: 'Must not adopt a default script!'].
+	(aQueryOrganizer ~~ ViQueryOrganizer active and: [self isDefault])
+		ifTrue: [Error signal: 'Must not adopt a default script!'].
 		
 	self allSteps "collect all first!" do: [:step |
 		step organization == aQueryOrganizer ifFalse: [

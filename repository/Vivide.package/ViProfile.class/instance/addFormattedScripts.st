@@ -5,7 +5,7 @@ addFormattedScripts
 	
 		[:scripts | scripts sorted: [:s1 :s2 | s1 priority <= s2 priority]] -> {
 			#inputKind -> ViQueryStep. #outputKind -> ViQueryStep.
-			#label -> 'Formatted Scripts'.
+			#label -> 'Scripts'.
 			#id -> #formattedQueries}.
 		[:script | {
 			#icon -> (script nextIcon ifNil: [ViIcons blankIcon]).

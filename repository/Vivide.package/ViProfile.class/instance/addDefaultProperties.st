@@ -6,8 +6,7 @@ addDefaultProperties
 		[:object | {
 			#icon -> (ViIconService doObject: object).
 			#text -> (ViLabelService doObject: object)}] -> {
-			#id -> #defaultProperties.
-			#label -> 'Default Properties'}.
+			#id -> #defaultProperties}.
 		[:object | #text -> (ViObjectOriginService doObject: object)]
 	
 	} asScript.

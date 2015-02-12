@@ -6,7 +6,7 @@ addClassOutline
 		[:cls | cls theNonMetaClass methodDict values, cls theMetaClass methodDict values] -> {
 			#inputKind -> ClassDescription. #outputKind -> CompiledMethod.
 			#label -> 'Class Outline'.
-			#view -> ViTreeViewExtended.
+			#view -> ViTreeView.
 			#id -> #outline}.
 		[:methods | methods sorted: [:m1 :m2 | m1 selector <= m2 selector]].
 		[:method | {

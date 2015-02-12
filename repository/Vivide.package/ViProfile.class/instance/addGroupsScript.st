@@ -5,8 +5,7 @@ addGroupsScript
 	
 		[:tuples | tuples asGroups] -> {
 			#inputKind -> {Object.Object}.
-			#label -> 'Groups'.
-			#view -> ViTreeViewExtended.
+			#view -> ViTreeView.
 			#id -> #groups}.
 		[:groups | groups sorted: [:g1 :g2 | g1 first asString <= g2 first asString]].
 		[:group | { "Prepend separators to groups."
@@ -18,6 +17,7 @@ addGroupsScript
 			#text -> (object isText ifFalse: [ViLabelService doObject: object]).
 			#icon -> (object isText ifFalse: [ViIconService doObject: object]).
 			#morph -> (object isText ifTrue: [object asMorph lock; margins: (0@5 corner: 0@2)]).
-			#selectable -> object isText not}]
+			#selectable -> object isText not.
+			#tooltip -> [object isText ifFalse: [ViObjectPreviewHandler doObject: object]]}]
 		
 	} asScript.
