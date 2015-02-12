@@ -1,7 +1,7 @@
 initialization
 initializeTitleBar
 
-	| closeBtn closeWndBtn feedbackBtn profileLabel |
+	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn  |
 	titleBar := Morph new
 		color: (Color fromString: '#C6CBD6') lighter;
 		changeTableLayout;
@@ -24,6 +24,13 @@ initializeTitleBar
 		icon: UiFugueIcons broomIcon asWireframeSunken.
 	self connect: closeWndBtn signal: #clicked: toSelector: #closeAllWindows.
 	
+	changeProfileBtn := UiToolButton new
+		buttonStyle: #iconOnly;
+		color: (Color fromString: '#C6CBD6');
+		balloonText: 'Switch user profile.';
+		icon: UiFugueIcons userIcon asWireframeSunken.
+	self connect: changeProfileBtn signal: #clicked: to: VivideLight selector: #open.
+	
 	feedbackBtn := UiToolButton new
 		"buttonStyle: #iconOnly;"
 		color: (Color fromString: '#C6CBD6');
@@ -37,8 +44,8 @@ initializeTitleBar
 	
 	titleBar addAllMorphs: {
 		closeBtn.
-		closeWndBtn.
 		(ViIcons vivideLogo asWireframeSunken: 0.3) asMorph.
 		UiSpacer new orientation: #horizontal.
-		feedbackBtn.
+		changeProfileBtn.
+		closeWndBtn.
 		profileLabel}.
