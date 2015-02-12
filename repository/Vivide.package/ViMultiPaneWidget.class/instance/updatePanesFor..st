@@ -18,7 +18,8 @@ updatePanesFor: specs
 					"1) Geometry"
 					pane bounds: ((spec at: #bounds ifAbsent: [0@0 corner: 300@300]) translateBy: (self topLeft)).
 					"2) Scripts"
-					pane currentQuery: (self organizer stepById: (spec at: #current))]].
+					pane currentQuery: ((self organizer stepById: (spec at: #current))
+						ifNil: [Error signal: 'Script not found in organizer!'])]].
 	
 	self connections copy do: [:c | c detach]. "for unknown panes -- just in case..."
 	self removeAllMorphsIn: unknownPanes. 

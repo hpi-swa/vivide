@@ -1,4 +1,8 @@
 as yet unclassified
 allMetaReferences
 
-	^ self allPropertySteps collect: [:step | step metaReference]
+	^ Array streamContents: [:strm |
+		self allPropertyStepsDo: [:step |
+			step isMeta ifTrue: [
+				step metaReference ifNotNil: [:ref |
+					strm nextPut: ref]]]]
