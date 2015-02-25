@@ -5,7 +5,8 @@
 		"convertPanes:toScript:" : "mt 12/9/2014 14:08:01.793",
 		"convertProperty:" : "mt 1/9/2015 16:16:50.973",
 		"createIdentityForTuple:" : "mt 12/30/2014 17:19:04.426",
-		"referenceTo:" : "mt 1/21/2015 10:19:37.773" },
+		"referenceTo:" : "mt 1/21/2015 10:19:37.773",
+		"specialProperties" : "mt 2/25/2015 15:52" },
 	"instance" : {
 		"acceptObjectService:" : "mt 10/10/2014 12:13:03.681",
 		"adoptOrganization:" : "mt 2/10/2015 20:50",
@@ -48,4 +49,4 @@
 		"sourceCodeShort" : "mt 10/15/2014 18:28:53.902",
 		"updateClearDefinition" : "mt 10/7/2014 15:27:35.879",
 		"updateSetDefinition" : "mt 10/7/2014 15:27:42.504",
-		"updateView:forEnvironment:" : "mt 2/9/2015 11:52" } }
+		"updateView:forEnvironment:" : "mt 2/25/2015 15:53" } }

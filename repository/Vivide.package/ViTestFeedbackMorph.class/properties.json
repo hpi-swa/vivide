@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"block" ],
+		"block",
+		"world",
+		"vivide" ],
 	"name" : "ViTestFeedbackMorph",
 	"pools" : [
 		 ],

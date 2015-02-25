@@ -3,6 +3,5 @@ updateFromChangedViewDefinition: evt
 
 	self currentQuery ifNil: [^ self].
 	
-	(self currentQuery viewDefinition == evt item
-		and: [evt isSourceCodeChanged])
-			ifTrue: [self triggerUpdateView].
+	self currentQuery == evt item
+		ifTrue: [self triggerUpdateView].

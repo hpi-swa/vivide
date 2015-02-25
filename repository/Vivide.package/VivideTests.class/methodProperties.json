@@ -6,6 +6,7 @@
 		"expectedFailures" : "mt 11/13/2014 10:10:26.724",
 		"performTest" : "mt 11/12/2014 10:37:28.137",
 		"setUp" : "mt 11/13/2014 09:54:06.867",
+		"tearDown" : "mt 2/25/2015 15:36",
 		"test00DynamicScope" : "mt 11/12/2014 10:40:39.303",
 		"test01Open" : "mt 1/5/2015 14:55:33.608",
 		"test02OpenSpecificQuery" : "mt 11/12/2014 13:19:57.761",

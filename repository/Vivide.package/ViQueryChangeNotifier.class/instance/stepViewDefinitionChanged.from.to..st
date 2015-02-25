@@ -1,5 +1,5 @@
 system triggers
 stepViewDefinitionChanged: aQueryStep from: oldDef to: newDef
 
-	self trigger: ((ViModifiedStepEvent item: aQueryStep kind: self class stepKind)
-		oldItem: {aQueryStep next. aQueryStep definition. oldDef}).
+	self trigger: ((ViModifiedStepDefinitionEvent item: aQueryStep kind: self class viewDefinitionKind)
+		oldItem: {oldDef. newDef}).

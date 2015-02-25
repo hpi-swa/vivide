@@ -1,4 +1,4 @@
 instance creation
 defaultViewId
 
-	^ self class name
+	^ self name
