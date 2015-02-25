@@ -3,4 +3,7 @@ initialize
 
 	super initialize.
 
-	self extent: 50@50.
+	self
+		cornerStyle: #rounded;
+		extent: 50@50;
+		borderWidth: 2.

@@ -1,12 +1,12 @@
 {
 	"class" : {
-		 },
+		"study01Score" : "mt 2/25/2015 15:18" },
 	"instance" : {
 		"block" : "mt 2/9/2015 16:47",
 		"block:" : "mt 2/9/2015 16:47",
-		"initialize" : "mt 2/9/2015 16:37",
+		"initialize" : "mt 2/25/2015 15:17",
 		"intoWorld:" : "mt 2/9/2015 16:48",
 		"open" : "mt 2/9/2015 16:41",
 		"outOfWorld:" : "mt 2/9/2015 16:40",
-		"update:" : "mt 2/9/2015 16:52",
+		"update:" : "mt 2/25/2015 15:19",
 		"wantsHaloFromClick" : "mt 2/9/2015 16:42" } }
