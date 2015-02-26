@@ -2,5 +2,7 @@ operations
 doMethodReference: aMethodReference
 
 	^ aMethodReference isValid
-		ifTrue: [ViMethodEditor]
-		ifFalse: []
+		ifFalse: [] ifTrue: [
+			aMethodReference selector = #Comment
+				ifTrue: [ViObjectEditor]
+				ifFalse: [ViMethodEditor]]

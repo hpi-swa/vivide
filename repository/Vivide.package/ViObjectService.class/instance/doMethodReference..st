@@ -2,5 +2,7 @@ operations
 doMethodReference: aMethodReference
 
 	^ aMethodReference isValid
-		ifTrue: [self doCompiledMethod: aMethodReference compiledMethod]
-		ifFalse: []
+		ifFalse: [] ifTrue: [
+			aMethodReference selector = #Comment
+				ifTrue: [self doObject: aMethodReference actualClass comment]
+				ifFalse: [	self doObject: aMethodReference compiledMethod]]

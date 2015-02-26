@@ -1,4 +1,4 @@
 operations
 doText: aText
 
-	^ aText asString withoutLineEndingsTruncatedTo: 20
+	^ aText asString withoutLineEndingsTruncatedTo: 50
