@@ -3,7 +3,8 @@ scriptArtifacts: someObjects
 	"Create a fresh script and open it."
 	
 	| objects script toolWnd editorWnd |
-	self assert: VivideLight useClassicMode not.
+	VivideLight useClassicMode
+		ifTrue: [^ self openArtifacts: someObjects]..
 	
 	(ViQueryInterpreter isCollection: someObjects)
 		ifFalse: [objects := {someObjects}]. 

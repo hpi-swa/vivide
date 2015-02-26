@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"createSomeBigTree" : "mt 2/26/2015 09:34" },
+	"instance" : {
+		"anySatisfy:" : "mt 2/26/2015 08:49",
+		"children" : "mt 2/26/2015 08:48",
+		"collect:" : "mt 2/26/2015 08:49",
+		"count:" : "mt 2/26/2015 08:50",
+		"detect:" : "mt 2/26/2015 08:49",
+		"detect:ifFound:ifNone:" : "mt 2/26/2015 08:49",
+		"doRecursively:" : "mt 2/26/2015 09:31",
+		"select:" : "mt 2/26/2015 08:49",
+		"sizeAll" : "mt 2/26/2015 09:31" } }

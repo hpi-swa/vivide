@@ -20,6 +20,7 @@ createItemView: viewClass
 	view disconnectDefaultSignals.
 	self connect: view signal: #selectionChanged: toSelector: #onView:selectionChanged: pattern: #(0 1).
 	self connect: view signal: #doubleClicked: toSelector: #doubleClicked:.
+	self connect: view signal: #activated: toSelector: #activated:.
 	self connect: view signal: #returnPressed: toSelector: #returnPressed:.
 	
 	self connect: view signal: #hovered: toSelector: #triggerPreview:.

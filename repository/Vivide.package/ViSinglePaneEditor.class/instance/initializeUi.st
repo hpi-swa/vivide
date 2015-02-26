@@ -15,7 +15,7 @@ initializeUi
 	self connect: self ui addPaneBtn signal: #clicked: toSelector: #copyEditor.
 	self ui addPaneBtn
 		balloonText: 'Copy or save tool';
-		passenger: [{self copyEditorState}];
+		passenger: [{self asEditorState}];
 		dragTransferType: #editorStates;
 		source: nil.
 	

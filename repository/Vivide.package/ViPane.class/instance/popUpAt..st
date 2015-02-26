@@ -13,9 +13,7 @@ popUpAt: aPoint
 "		layoutInset: 3;"
 		position: self position + (self bounds amountToTranslateWithin: ViActiveVivide world bounds).
 	
-	self eventHandler disconnectSignal: #mouseLeft: from: self selector: #delete.
-	self connect: self eventHandler signal: #mouseLeft: toSelector: #delete.
-	self eventHandler disconnectSignal: #mouseLeftDragging: from: self selector: #delete.
-	self connect: self eventHandler signal: #mouseLeftDragging: toSelector: #delete.
-		
+	self eventHandler disconnectSignal: #focusLostInSubmorph: from: self selector: #onFocusLost.
+	self connect: self eventHandler signal: #focusLostInSubmorph: toSelector: #onFocusLost.
+	
 	self openInWorld; redrawLater.
