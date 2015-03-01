@@ -1,6 +1,9 @@
 as yet unclassified
 drawOn: aCanvas
 
+	aCanvas
+		fillRectangle: self bounds
+		color: ((Color fromString: '#7B84AE') alpha: 0.15).
 	{
 		{2. 0. 1. Color fromString: '#515D91'}.
 		{0. 3. 1. Color fromString: '#172357'}.

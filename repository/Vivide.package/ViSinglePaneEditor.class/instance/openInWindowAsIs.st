@@ -5,7 +5,8 @@ openInWindowAsIs
 	wnd := self
 		openInWindowBounds: self bounds
 		grab: false.
-		   	
-	wnd appendHeaderButtons: {self ui addPaneBtn}.
+
+	VivideLight useClassicMode
+		ifFalse: [wnd appendHeaderButtons: {self ui addPaneBtn}].
 	
 	^ wnd

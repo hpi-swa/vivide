@@ -7,6 +7,7 @@ openInWindow
 		fullBounds;
 		height: ((self optimalHeight min: 500) max: 200).	
 
-	super openInWindow in: [:wnd |		
-		wnd appendHeaderButtons: {self ui addPaneBtn}.
+	super openInWindow in: [:wnd |
+		VivideLight useClassicMode
+			ifFalse: [wnd appendHeaderButtons: {self ui addPaneBtn}].
 		^ wnd].
