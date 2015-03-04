@@ -10,5 +10,5 @@
 	"name" : "ViAnimatedImageMorph",
 	"pools" : [
 		 ],
-	"super" : "ImageMorph",
+	"super" : "AnimatedImageMorph",
 	"type" : "normal" }

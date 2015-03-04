@@ -1,4 +1,6 @@
 geometry
 optimalHeight
 
-	^ self height
+	^ submorphs
+		ifEmpty: [self height]
+		ifNotEmpty: [self submorphBounds height]

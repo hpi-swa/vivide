@@ -3,7 +3,7 @@ updateInputKind
 	"Try to found out about input objects."
 
 	(self object valueOfProperty: #inputKind ifAbsent: [])
-		ifNotNil: [:k | self inputKind: k. ^ self].
+		ifNotNil: [:k | self inputKind: (k isArray ifTrue: [k] ifFalse: [{k}]). ^ self].
 
 	([(self interpretUpToDetect: [:script | script next == self object]) allObjects]
 	on: Error do: [#()]) ifNotEmpty: [:objects |

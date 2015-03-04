@@ -7,6 +7,9 @@ updateFromChangedStep: evt
 	evt isPropertiesModified
 		ifTrue: [^ self updateFromChangedStepProperties: evt].
 
+	(self currentQuery isMeta and: [evt item isMeta not])
+		ifTrue: [^ self].
+
 	(((evt isNextChanged and: [
 		"Property added?"
 		((evt next notNil and: [evt next isPropertyStep])
@@ -18,6 +21,6 @@ updateFromChangedStep: evt
 				or: [evt isReferenceChanged])
 				or: [evt isViewDefinitionChanged and: [evt item == self currentQuery]])
 					ifFalse: [^ self].
-	
+		
 	self currentQuery allStepsDo: [:step |
 		step == evt item ifTrue: [self triggerUpdateView. ^ self]].

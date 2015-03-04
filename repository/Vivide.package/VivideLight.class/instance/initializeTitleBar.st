@@ -1,7 +1,7 @@
 initialization
 initializeTitleBar
 
-	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn |
+	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn helpBtn |
 	titleBar := Morph new
 		color: (Color fromString: '#C6CBD6') lighter;
 		changeTableLayout;
@@ -30,6 +30,13 @@ initializeTitleBar
 		balloonText: 'Switch user profile.';
 		icon: UiFugueIcons userIcon asWireframeSunken.
 	self connect: changeProfileBtn signal: #clicked: to: VivideLight selector: #open.
+
+	helpBtn := UiToolButton new
+		buttonStyle: #iconOnly;
+		color: (Color fromString: '#C6CBD6');
+		balloonText: 'Explore HowTo Videos';
+		icon: ViIcons questionMarkIcon asWireframeSunken.
+	self connect: helpBtn signal: #clicked: toSelector: #showHowTo.
 	
 	updateBtn := UiToolButton new
 		"buttonStyle: #iconOnly;"
@@ -57,5 +64,6 @@ initializeTitleBar
 		updateBtn.
 		changeProfileBtn.
 		closeWndBtn.
+		helpBtn.
 		profileLabel}.
 	updateBtn hideFull.

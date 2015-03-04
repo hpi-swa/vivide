@@ -1,4 +1,6 @@
 geometry
 optimalWidth
 
-	^ self width
+	^ submorphs
+		ifEmpty: [self width]
+		ifNotEmpty: [self submorphBounds width]

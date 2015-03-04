@@ -14,7 +14,8 @@ chooseMostAppropriateQuery
 	
 	defaultQueryCheck := {
 		[:o | o isBehavior].
-		[:o | o isKindOf: PackageInfo].
+		[:o | o class == PackageInfo].
+		[:o | o class == ViAnimatedImageMorph].
 	"	[:o | o isKindOf: ViObjectHistory]."
 	"	[:o | o isKindOf: MessageTally]"
 	}.
