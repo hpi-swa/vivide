@@ -12,7 +12,8 @@ def8c63945ac92d404cae8763a80050d688
 		ifTrue: [Color fromString: 'EEEEEE'])."
 	#morph -> (object isText
 		ifTrue: [object asMorph lock; margins: (0@5 corner: 0@2)]).
-	#selectable -> object isText not}]
+	#selectable -> object isText not.
+	#tooltip -> [(object isText ifFalse: [ViObjectPreviewHandler doObject: object])]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:o | (
 	[:object | {
@@ -24,6 +25,7 @@ def8c63945ac92d404cae8763a80050d688
 		ifTrue: [Color fromString: ''EEEEEE''])."
 	#morph -> (object isText
 		ifTrue: [object asMorph lock; margins: (0@5 corner: 0@2)]).
-	#selectable -> object isText not}]
+	#selectable -> object isText not.
+	#tooltip -> [(object isText ifFalse: [ViObjectPreviewHandler doObject: object])]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]'); yourself)

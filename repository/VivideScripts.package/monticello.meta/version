@@ -1,1 +1,1 @@
-(name 'VivideScripts-mt.1' message 'scripts for experiment added' id '2e45d4ce-1744-cc40-8bd6-ccee461970aa' date '9 February 2015' time '10:31:19.854 am' author 'mt' ancestors () stepChildren ())
+(name 'VivideScripts-mt.2' message 'NEW: animation script' id 'dfa103f1-9b45-ac4a-9817-c53ba9eddf72' date '4 March 2015' time '3:40:44.763 pm' author 'mt' ancestors ((name 'VivideScripts-mt.1' message 'scripts for experiment added' id '2e45d4ce-1744-cc40-8bd6-ccee461970aa' date '9 February 2015' time '10:31:19.854 am' author 'mt' ancestors () stepChildren ())) stepChildren ())
