@@ -4,6 +4,8 @@ startDragWithHand: aHand
 	aHand hasSubmorphs ifTrue: [^ self].
 	self dragEnabled ifFalse: [^ self].
 	
+	aHand removeHalo.
+	
 	self down: false; flatten.
 	
 	[aHand grabMorph:

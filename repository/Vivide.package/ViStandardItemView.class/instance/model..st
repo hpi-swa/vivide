@@ -12,12 +12,10 @@ model: aQueryNode
 	
 	queryModel ifNotNil: [:m |
 		finder root: m.
+		currentQueryView model: m.
 		
 		self connect: m signal: #modelReset toSelector: #reset.
 		self connect: m signal: #propertiesChanged toSelector: #reset.
 		self connect: m signal: #propertiesChanged: toSelector: #reset.
-
-		currentQueryView model: m.
 		
-		self updateQueryCommands.
-		self ensureSelection].
+		self reset].

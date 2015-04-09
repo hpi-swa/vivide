@@ -28,7 +28,8 @@ initializeArtifact
 		dragDropSpec: (ViUnboxingDragDropSpec new
 			dropEnabled: false;
 			key: #object;
-			dragTransferType: #objects).
+			dragTransferType: #objects;
+			source: self).
 		
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #changeReceiverFor:.
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #focusCurrentNodeIn: pattern: #(0).

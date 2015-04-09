@@ -3,6 +3,10 @@ updateForQueryExtended: query
 	"Use another column spec for more elaborate item rendering."
 
 	| newCols newResizeModes newHorizontalHeaderVisible commandsVisible |
+	self
+		setProperty: #expandAll
+		toValue: (query valueOfProperty: #expandAll ifAbsent: [false]).
+
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
 					(UiItemViewColumnSpec newFrom: (#(text icon color morph balloonText checkable checked editable selectable)
 						collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
