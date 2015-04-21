@@ -7,6 +7,4 @@ ensureTag
 	"Create and register a new tag."
 	tag := SdTag named: self ui tagnameEdit theText asString.
 	
-	self updateToolbars.
-	
 	^ true

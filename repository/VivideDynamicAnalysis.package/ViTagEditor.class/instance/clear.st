@@ -12,5 +12,3 @@ clear
 			self ui iconBtn icon: (tag icon ifNil: [ViIconService blankIcon]).
 			self ui tagnameEdit theText: tag tagname.
 			self ui descriptionEdit theText: tag description].
-	
-	self updateToolbars.
