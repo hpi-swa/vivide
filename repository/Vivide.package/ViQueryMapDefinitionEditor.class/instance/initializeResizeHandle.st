@@ -4,7 +4,7 @@ initializeResizeHandle
 	| handle |
 	toggleBtn := UiToolButton new
 		buttonStyle: #iconOnly;
-		icon: (UiSilkIcons bulletFeedIcon clippedTo: 10@10);
+		icon: (UiSilkIcons bulletFeedIcon clippedToSize: 10@10);
 		color: (Color gray: 0.85);
 		balloonText: 'Toggle update code panels.';
 		checkable: true;

@@ -1,5 +1,5 @@
 accessing
 setIcon: aForm
 
-	notificationIcon := aForm ifNotNil: [:f | f clippedTo: 10@10].
+	notificationIcon := aForm ifNotNil: [:f | f clippedToSize: 10@10].
 	self redrawLater.

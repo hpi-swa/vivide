@@ -2,13 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addAllMorphs:" : "mt 2/10/2014 11:57:47.655",
-		"addAllMorphs:after:" : "mt 2/10/2014 11:28:24.837",
-		"addAllMorphs:behind:" : "mt 2/10/2014 11:29:18.817",
-		"addAllMorphs:inFrontOf:" : "mt 2/10/2014 11:29:58.664",
-		"addAllMorphsBack:" : "mt 2/10/2014 11:56:55.76",
-		"addAllMorphsFront:" : "mt 2/10/2014 11:56:36.22",
-		"addMorph:after:" : "mt 2/10/2014 11:27:52.161",
 		"boundsInOwner:" : "mt 2/5/2015 10:39",
 		"extentInOwner:" : "mt 2/5/2015 10:38",
 		"gridCell" : "mt 4/28/2014 09:04:44.225",
@@ -16,9 +9,6 @@
 		"gridSpan" : "mt 4/28/2014 09:05:37.207",
 		"gridSpan:" : "mt 4/29/2014 11:03:04.392",
 		"ide" : "mt 6/28/2011 14:53:07.534",
-		"inspectInMorphic:" : "mt 7/19/2013 11:03:09.905",
 		"isOverlayConnector" : "mt 6/19/2012 17:59:01.663",
-		"layoutProportionallyIn:" : "mt 5/2/2014 08:53:09.104",
-		"privateAddAllMorphs:atIndex:" : "mt 2/10/2014 11:55:34.319",
 		"shrinkWrap" : "mt 1/23/2015 10:28",
 		"topLeftInOwner:" : "mt 2/5/2015 10:39" } }

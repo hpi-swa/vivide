@@ -8,10 +8,10 @@ defd06feec8587b1b4b8b63a5aeb5f665b2
 			entry name.
 			ViToolSet printRelativeTimeStamp: entry creationDateAndTime asTimeStamp.
 			entry fileSize}) asHtmlText.
-	#icon -> ((ViThumbnailCache default thumbnailForEntry: entry size: 100@100) clippedTo: 105@105)}]'); add: (#mapType->#each); add: (#block->[:entry | {
+	#icon -> ((ViThumbnailCache default thumbnailForEntry: entry size: 100@100) clippedToSize: 105@105)}]'); add: (#mapType->#each); add: (#block->[:entry | {
 	#text -> ('{1}<br><font color="#777777">{2}<br>{3} Bytes</font>'
 		format: {
 			entry name.
 			ViToolSet printRelativeTimeStamp: entry creationDateAndTime asTimeStamp.
 			entry fileSize}) asHtmlText.
-	#icon -> ((ViThumbnailCache default thumbnailForEntry: entry size: 100@100) clippedTo: 105@105)}]); yourself)
+	#icon -> ((ViThumbnailCache default thumbnailForEntry: entry size: 100@100) clippedToSize: 105@105)}]); yourself)

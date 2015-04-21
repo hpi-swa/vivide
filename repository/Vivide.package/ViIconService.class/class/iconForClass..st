@@ -12,7 +12,7 @@ iconForClass: aClassDescription
 
 	self classIcons do: [:assoc |
 		(aClassDescription includesBehavior: assoc key)
-			ifTrue: [^ self icons at: assoc value ifAbsentPut: [(self perform: assoc value) clippedTo: 16@16]]].
+			ifTrue: [^ self icons at: assoc value ifAbsentPut: [(self perform: assoc value) clippedToSize: 16@16]]].
 
 	(aClassDescription inheritsFrom: TestCase) ifFalse: [^ self blankIcon].
 	

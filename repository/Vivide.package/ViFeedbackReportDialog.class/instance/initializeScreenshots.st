@@ -14,7 +14,7 @@ initializeScreenshots
 			#formName -> (morph isSystemWindow ifTrue: [morph label] ifFalse: [morph name]).
 			#form -> morph imageForm.
 			#checked -> true.
-			#thumbnail -> ((form scaledToSize: 100 @ 100) clippedTo: 100@100).
+			#thumbnail -> ((form scaledToSize: 100 @ 100) clippedToSize: 100@100).
 			#top -> morph top.
 			#left -> morph left.
 			#zIndex -> (maxIndex - index + 1)}]).

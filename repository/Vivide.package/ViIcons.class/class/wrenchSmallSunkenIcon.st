@@ -3,4 +3,4 @@ wrenchSmallSunkenIcon
 
 	^ Icons
 		at: #wrenchSmallSunkenIcon
-		ifAbsentPut:[(UiSilkIcons bulletWrenchIcon clippedTo: 12@12) asWireframeSunken].
+		ifAbsentPut:[(UiSilkIcons bulletWrenchIcon clippedToSize: 12@12) asWireframeSunken].

@@ -26,7 +26,7 @@ addFanOutHandles
 		color: self fanOutColor;
 		autoRaise: false;
 		buttonStyle: #iconOnly;
-		icon: (ViIcons plusSmallSunkenIcon clippedTo: 10@10);
+		icon: (ViIcons plusSmallSunkenIcon clippedToSize: 10@10);
 		layoutInset: 2;
 		yourself.
 
@@ -39,7 +39,7 @@ addFanOutHandles
 		color: self fanOutColor;
 		autoRaise: false;
 		buttonStyle: #iconOnly;
-		icon: (ViIcons controlRecordSmallSunkenIcon clippedTo: 10@10);
+		icon: (ViIcons controlRecordSmallSunkenIcon clippedToSize: 10@10);
 		layoutInset: 2;
 		yourself.
 	self connect: outBtn signal: #clicked: to: self target selector: #browseResults.

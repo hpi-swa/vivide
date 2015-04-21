@@ -49,7 +49,7 @@ initializeTitleBar
 	feedbackBtn := UiToolButton new
 		"buttonStyle: #iconOnly;"
 		color: (Color fromString: '#C6CBD6');
-		icon: (UiFugueIcons balloonSmallIcon asWireframeSunken clippedTo: 10@10);
+		icon: (UiFugueIcons balloonSmallIcon asWireframeSunken clippedToSize: 10@10);
 		text: '<font color="#444444">Feedback</font>'.
 	self connect: feedbackBtn signal: #clicked: toSelector: #sendFeedback.
 	

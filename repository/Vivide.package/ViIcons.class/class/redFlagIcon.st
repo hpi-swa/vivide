@@ -3,4 +3,4 @@ redFlagIcon
 
 	^ Icons
 		at: #redFlagIcon
-		ifAbsentPut:[UiDiagonaIcons icon0221Small clippedTo: 16@16].
+		ifAbsentPut:[UiDiagonaIcons icon0221Small clippedToSize: 16@16].
