@@ -12,6 +12,6 @@ postLoad
 	(Smalltalk at: #ViToolSet ifAbsent: [])
 		ifNotNil: [:ts | ToolSet default: ts].
 
-	"ViProfile active bookmarks ifEmpty: [
-		ViProfile active initializeBasicBookmarks.
-		VivideLight openProfile: ViProfile active]"
+	VivideLight profiles first in: [:p |
+		p bookmarks ifEmpty: [
+			p initializeBasicBookmarks]].
