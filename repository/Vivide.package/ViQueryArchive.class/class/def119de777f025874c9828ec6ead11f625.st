@@ -21,6 +21,7 @@ def119de777f025874c9828ec6ead11f625
 				ifFalse: [{#text -> (ViLabelService doObject: obj)}]
 				ifTrue: [{ "editable selector"
 					#editable -> true.
+					#tooltip -> (ViObjectPreviewHandler doObject: obj).
 					#text -> [ViLabelService doObject: obj]
 					      -> [:sel | (RBRenameMethodRefactoring
 	model: (RBNamespace onEnvironment: (RBPackageEnvironment new
@@ -47,6 +48,7 @@ def119de777f025874c9828ec6ead11f625
 				ifFalse: [{#text -> (ViLabelService doObject: obj)}]
 				ifTrue: [{ "editable selector"
 					#editable -> true.
+					#tooltip -> (ViObjectPreviewHandler doObject: obj).
 					#text -> [ViLabelService doObject: obj]
 					      -> [:sel | (RBRenameMethodRefactoring
 	model: (RBNamespace onEnvironment: (RBPackageEnvironment new

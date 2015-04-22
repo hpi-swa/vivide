@@ -11,7 +11,7 @@ mergeProfile
 				Error signal: 'Profile not found!'].
 			
 			profile := ViProfile newEmpty.
-			profile initializeMinimal.
+			"profile initializeMinimal."
 			
 			VivideLight profiles add: profile.
 			profile archive: archive theNonMetaClass.
