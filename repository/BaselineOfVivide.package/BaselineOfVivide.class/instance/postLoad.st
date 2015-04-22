@@ -14,4 +14,6 @@ postLoad
 
 	VivideLight profiles first in: [:p |
 		p bookmarks ifEmpty: [
-			p initializeBasicBookmarks]].
+			ViActiveOrganizer
+				value: p organization
+				during: [p initializeBasicBookmarks]]].
