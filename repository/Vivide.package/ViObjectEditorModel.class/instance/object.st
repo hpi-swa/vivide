@@ -2,4 +2,4 @@ accessing
 object
 
 	^ self base ifNotNil: [:wrapper |
-		wrapper instVarNamed: #item]
+		wrapper item value]

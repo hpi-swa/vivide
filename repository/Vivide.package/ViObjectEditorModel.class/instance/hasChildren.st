@@ -6,6 +6,6 @@ hasChildren
 		ifNotNil: [:wrappedObject |
 			self isRoot
 				ifTrue: [true "expose root"]
-				ifFalse: [wrappedObject withoutListWrapper isString
+				ifFalse: [wrappedObject withoutListWrapper value isString
 					ifTrue: [false "do not expand strings"]
 					ifFalse: [wrappedObject hasContents]]]
