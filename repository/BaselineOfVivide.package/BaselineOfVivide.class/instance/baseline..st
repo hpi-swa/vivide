@@ -3,19 +3,15 @@ baseline: spec
 	<baseline>
 	
 	spec for: #common do: [
-		spec project: 'Signals' with: [
-			spec
-				className: 'BaselineOfSignals';
-				repository: 'github://marceltaeumel/signals:master/repository'].
+		spec baseline: 'Signals' with: [
+			spec repository: 'github://marceltaeumel/signals:master/repository'].
 
-		spec project: 'Animations' with: [
+		spec baseline: 'Animations' with: [
 			spec
-				className: 'BaselineOfAnimations';
 				repository: 'github://marceltaeumel/animations:master/repository'].
 
-		spec project: 'Widgets' with: [
+		spec baseline: 'Widgets' with: [
 			spec
-				className: 'BaselineOfWidgets';
 				repository: 'github://marceltaeumel/widgets:master/repository';
 				loads: #(full)].
 		
