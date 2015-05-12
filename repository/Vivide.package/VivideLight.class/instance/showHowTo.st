@@ -2,7 +2,10 @@ as yet unclassified
 showHowTo
 
 	| menu entries |
-	entries := (FileDirectory on: FileDirectory default pathName, '/package-cache/vivide/howto') entries.
+	(PackageInfo named: #Vivide) workingCopy repositoryGroup repositories
+		detect: [:repo | repo isKindOf: MCRemoteGitRepository]
+		ifFound: [:repo | entries := (repo directory containingDirectory directoryNamed: 'howto') entries]
+		ifNone: [^ self].
 	
 	menu := MenuMorph new
 		defaultTarget: self;
