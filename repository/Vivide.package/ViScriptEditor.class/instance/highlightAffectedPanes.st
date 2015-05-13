@@ -11,4 +11,5 @@ highlightAffectedPanes
 		thenDo: [:pane | self highlights add: (ViPaneHighlight on: pane)].
 	
 	(self firstOwnerSuchThat: [:morph | morph isSystemWindow])
-		ifNotNil: #comeToFront.  
+		ifNotNil: #comeToFront.
+	self showToolbar.
