@@ -19,7 +19,9 @@ process: someObjects within: aContext
 	(Smalltalk at: #thisScript) in: [:old |
 		[
 			Smalltalk at: #thisScript put: self.
-			definition block value: in value: out.
+			ViActiveOrganizer
+				value: self organization
+				during: [definition block value: in value: out].
 		] ensure: [
 			Smalltalk at: #thisScript put: old]].
 	

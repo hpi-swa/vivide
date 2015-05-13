@@ -2,8 +2,11 @@ as yet unclassified
 convert: object
 
 	^ (object isSymbol
-		ifTrue: [(ViQueryOrganizer active stepById: object)
-			ifNil: [(ViQueryOrganizer active definitionById: object)
+		"If the dynamically-scoped organization does not have it, try the on in the current profile."
+		ifTrue: [((ViQueryOrganizer active stepById: object)
+				ifNil: [ViProfile active organization stepById: object])
+			ifNil: [((ViQueryOrganizer active definitionById: object)
+					ifNil: [ViProfile active organization definitionById: object])
 				ifNotNil: [:def | 
 					def isMapDefinition
 						ifFalse: [nil]
