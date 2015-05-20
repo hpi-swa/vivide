@@ -4,7 +4,7 @@ unregisterUnusedDefinitions
 	| defs |
 	self registerAllReachableStepsAndDefinitions.
 	
-	defs := self orderedDefinitions reject: [:def | def isSnippetDefinition].
+	defs := (self orderedDefinitions reject: [:def | def isSnippetDefinition]) asOrderedCollection.
 	self orderedSteps do: [:query | query allStepsDo: [:step |
 		defs remove: step definition ifAbsent: [].
 		defs remove: step viewDefinition ifAbsent: []]].

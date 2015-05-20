@@ -1,6 +1,4 @@
-as yet unclassified
-adoptPaneColor: paneColor
+nil
+adoptPaneColor: aColor
 
-	self color: paneColor.
-	self window ifNotNil: [:wnd |
-		wnd isSticky ifTrue: [super adoptPaneColor: paneColor]].
+	self color: aColor.

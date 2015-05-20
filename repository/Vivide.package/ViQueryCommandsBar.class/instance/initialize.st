@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self
-		color: (Color gray: 0.85);
+		color: Color transparent;
 		layoutPolicy: ViWrappingLayout new.
 		
 	addBtn := UiToolButton new 

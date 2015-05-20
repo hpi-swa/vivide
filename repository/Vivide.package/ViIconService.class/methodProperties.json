@@ -23,6 +23,7 @@
 		"signalOwnerChainIcon" : "mt 12/7/2012 09:55:47.901",
 		"string" : "mt 8/20/2012 15:43:32.362" },
 	"instance" : {
+		"doAssociation:" : "mt 5/20/2015 11:58",
 		"doClassComment:" : "mt 9/4/2012 11:50:33.639",
 		"doClassDescription:" : "mt 8/20/2012 15:44:43.105",
 		"doColor:" : "mt 2/12/2013 13:30:48.659",

@@ -4,7 +4,6 @@ unregisterCommand: aCommand
 	(self commands includesKey: aCommand id)
 		ifFalse: [^ self].
 	self commands removeKey: aCommand id.
-	self orderedCommands remove: aCommand.
 	
 	self commandsCategorizer removeElement: aCommand id.
 	

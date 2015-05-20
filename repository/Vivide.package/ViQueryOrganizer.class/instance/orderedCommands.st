@@ -1,4 +1,4 @@
 accessing
 orderedCommands
 
-	^ orderedCommands ifNil: [orderedCommands := OrderedCollection new]
+	^ self commands values

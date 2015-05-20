@@ -9,7 +9,7 @@ drawOverlayOn: aCanvas
 		drawString: ':'
 		at: sendersBtn topRight + (2@0)
 		font: (StrikeFont
-			familyName: UiPlatform current standardDefaultTextFont familyName
+			familyName: UiPlatform current standardButtonFont familyName
 			pointSize: 8)
 		color: (Color fromString: #AAAAAA).
 		
@@ -17,6 +17,6 @@ drawOverlayOn: aCanvas
 		drawString: '>'
 		at: inBtn topRight + (2@0)
 		font: (StrikeFont
-			familyName: UiPlatform current standardDefaultTextFont familyName
+			familyName: UiPlatform current standardButtonFont familyName
 			pointSize: 8)
 		color: (Color fromString: #AAAAAA).

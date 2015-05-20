@@ -16,11 +16,8 @@ openInWindowBounds: bounds grab: boolean
 	window 
 		bounds: bounds;
 		addMorph: self frame: (0@0 extent: 1@1);
-		paneColor: (Color gray: 0.85).
-	
-	"Fix spacing between label area and only morph."
-	self layoutFrame topOffset: (18 - Preferences windowTitleFont height).
-		
+		setWindowColor: (Color gray: 0.85).
+			
 	extent := self fullBounds extent + 
 			(window borderWidth@window labelHeight) + window borderWidth.
 	window extent: extent.

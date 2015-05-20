@@ -2,4 +2,4 @@ steps
 stepsenders
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#'a3a0aaa7-1711-094f-8621-bac1067b8ab0'); add: (#class->ViQueryTransformStep); add: (#properties->((Dictionary new) add: (#priority->350); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); yourself)); add: (#id->#senders); add: (#iconCode->'UiFugueIcons arrowStepIcon'); add: (#next->#'b90e4eaa-f8ab-8b47-aca3-f78a5dadde3e'); add: (#viewDefinition->#treeView); add: (#label->'Senders'); yourself)
+	^ ((Dictionary new) add: (#definition->#'fa044112-0baa-3e4d-abc2-c54a247e5236'); add: (#class->ViScriptPart); add: (#properties->((Dictionary new) add: (#inputKind->ByteSymbol); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'20 May 2015 12:08:55 pm'); add: (#view->ViTreeViewExtended); add: (#out->Set); add: (#isNew->false); yourself)); add: (#isProperty->false); add: (#next->#'e67a3ef7-7a93-634e-86af-5740774f3bb9'); add: (#label->'Senders'); add: (#iconCode->'nil'); add: (#id->#senders); add: (#isReference->false); add: (#viewDefinition->nil); yourself)

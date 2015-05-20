@@ -10,7 +10,7 @@
 		"newFromState:" : "mt 10/3/2013 18:32:40.552" },
 	"instance" : {
 		"aboutToClose" : "mt 9/21/2012 10:43:27.554",
-		"adoptPaneColor:" : "mt 5/20/2014 11:33:44.693",
+		"adoptPaneColor:" : "mt 5/20/2015 15:19",
 		"artifactRequested:" : "mt 9/21/2012 15:57:21.809",
 		"beginEditHeader" : "mt 7/8/2013 16:35:10.062",
 		"close" : "mt 2/3/2014 11:09:45.212",
@@ -52,7 +52,7 @@
 		"onVisibilityChanged:" : "mt 9/4/2012 15:53:13.921",
 		"openInWindow" : "mt 11/12/2014 10:43:08.267",
 		"openInWindowAsIs" : "mt 5/19/2014 18:26:08.327",
-		"openInWindowBounds:grab:" : "mt 4/21/2015 11:03",
+		"openInWindowBounds:grab:" : "mt 5/20/2015 15:40",
 		"optimalHeight" : "mt 7/19/2013 10:08:50.397",
 		"optimalWidth" : "mt 6/15/2012 11:33:35.887",
 		"saveState:" : "mt 6/20/2012 11:12:39.916",

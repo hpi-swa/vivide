@@ -1,4 +1,4 @@
 accessing
 orderedDefinitions
 
-	^ orderedDefinitions ifNil: [orderedDefinitions := OrderedCollection new]
+	^ self definitions values
