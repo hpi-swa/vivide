@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Experimentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"task",
+		"ui",
+		"startTime" ],
+	"name" : "ViExperimentRunner",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

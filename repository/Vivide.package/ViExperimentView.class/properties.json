@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Experimentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViExperimentView",
+	"pools" : [
+		 ],
+	"super" : "ViArtifactView",
+	"type" : "normal" }

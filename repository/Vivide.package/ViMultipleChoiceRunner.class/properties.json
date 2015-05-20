@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Experimentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViMultipleChoiceRunner",
+	"pools" : [
+		 ],
+	"super" : "ViExperimentRunner",
+	"type" : "normal" }

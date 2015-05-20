@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Experimentation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Experiments" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tasks",
+		"description" ],
+	"name" : "ViExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -16,6 +16,7 @@ chooseMostAppropriateQuery
 		[:o | o isBehavior].
 		[:o | o class == PackageInfo].
 		[:o | o class == ViAnimatedImageMorph].
+		[:o | o class == ViExperiment].
 	"	[:o | o isKindOf: ViObjectHistory]."
 	"	[:o | o isKindOf: MessageTally]"
 	}.

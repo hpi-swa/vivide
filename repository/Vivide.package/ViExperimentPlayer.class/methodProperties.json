@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"artifactName" : "mt 5/20/2015 21:51",
+		"supportedTypes" : "mt 5/20/2015 21:48" },
+	"instance" : {
+		"acceptChanges" : "mt 5/20/2015 23:05",
+		"clear" : "mt 5/20/2015 23:06",
+		"completeTask" : "mt 5/20/2015 22:04",
+		"currentTask" : "mt 5/20/2015 21:31",
+		"currentTask:" : "mt 5/20/2015 22:08",
+		"doNextTask" : "mt 5/20/2015 22:20",
+		"experiment" : "mt 5/20/2015 21:31",
+		"experiment:" : "mt 5/20/2015 22:48",
+		"grabKeyboard" : "mt 5/20/2015 21:52",
+		"group" : "mt 5/20/2015 21:28",
+		"hasKeyboard" : "mt 5/20/2015 21:52",
+		"hasUnacceptedChanges" : "mt 5/20/2015 23:05",
+		"initializeArtifact" : "mt 5/20/2015 23:37",
+		"initializeResizeHandle" : "mt 5/20/2015 22:28",
+		"object" : "mt 5/20/2015 21:31",
+		"object:" : "mt 5/20/2015 21:31",
+		"optimalWidth" : "mt 5/20/2015 23:09",
+		"updateUi" : "mt 5/20/2015 22:40",
+		"óptimalHeight" : "mt 5/20/2015 23:09" } }
