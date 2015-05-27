@@ -1,6 +1,23 @@
 #The VIVIDE Programming Environment
 
-A programming environment and framework that supports *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk.
+A programming environment and framework that supports *interactive*, *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk.
+
+##How to Install
+
+1. Get [Squeak 4.6 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
+2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
+3. Finally, load VIVIDE into your Squeak image:
+
+```Smalltalk
+Metacello new
+  baseline: 'Vivide';
+  repository: 'github://hpi-swa/vivide/repository';
+  load.
+```
+
+Then, create and enter a new *animated Morphic project*. There, your can open Vivide with ```VivideLight open```.
+
+See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
 ##Videos
 
@@ -19,27 +36,3 @@ Here is a recent screencast about how to create a browser for GitHub issues, whi
 Here is an older screencast about how to create a code browser and modify its appearance to reveal more or different information:
 
 [![VIMEO](http://i.vimeocdn.com/video/434147754_320.jpg)](https://www.vimeo.com/63757592)
-
-##How to Install
-
-1. Get [Squeak 4.4 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
-2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
-3. Finally, load VIVIDE into your Squeak image:
-
-```Smalltalk
-Metacello new
-  baseline: 'Vivide';
-  repository: 'github://hpi-swa/vivide/repository';
-  load.
-```
-**Close all transcript windows before loading!**
-
-If you want to update your image with the current code, do this:
-
-```Smalltalk
-Metacello new
-  baseline: 'Vivide';
-  repository: 'github://hpi-swa/vivide/repository';
-  get;
-  load.
-```
