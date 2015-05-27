@@ -20,7 +20,7 @@ convertPanes: paneSpecs toScript: firstPart
 				spec associations
 					inject: String cr
 					into: [:src :assoc | src, String tab,
-						assoc key storeString, ' -> ', assoc value storeString, '.',
+						assoc key storeString, ' -> ', assoc value compactStoreString, '.',
 						String cr] }).
 			script setProperty: #view toValue: ViMultiPaneWidget.
 			script setProperty: #isProperty toValue: true].
