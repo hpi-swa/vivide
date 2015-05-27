@@ -5,5 +5,5 @@ updateResults
 	self clearError.
 
 	self setProperty: #isUpdating toValue: true. 
-	self model updateChildren.
+	self model reset.
 	self removeProperty: #isUpdating. 

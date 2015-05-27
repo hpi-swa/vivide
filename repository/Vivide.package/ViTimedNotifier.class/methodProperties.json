@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"every:" : "mt 5/27/2015 16:49" },
+	"instance" : {
+		"initialize" : "mt 5/27/2015 16:47",
+		"shouldGetStepsFrom:" : "mt 5/27/2015 16:46",
+		"stepTime" : "mt 5/27/2015 16:47",
+		"stepTime:" : "mt 5/27/2015 16:47",
+		"subscribe" : "mt 5/27/2015 17:43",
+		"unsubscribe" : "mt 5/27/2015 17:44" } }
