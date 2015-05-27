@@ -3,10 +3,14 @@ processSteps
 	"Creates child nodes with properties. Idempotent."
 
 	| interpreter |
-
 	self firstStep ifNil: [
 		self assert: self referenceStack isEmpty.
 		^ self].
+
+	"Clear internal caches."
+	self cachedResults: nil.
+	children := Dictionary new.
+	groups := #().
 
 	interpreter := ViQueryInterpreter onNode: self.
 
@@ -20,9 +24,10 @@ processSteps
 				Smalltalk at: #thisView put: oldThisView.
 				Smalltalk at: #thisPane put: oldThisPane]]].
 	
+	self cachedResults: interpreter objectsCache.
+	
 	"Prepare model."
 	groups := interpreter groups.
-	children := Dictionary new.
 	groups do: [:group | children at: group put: OrderedCollection new].
 	
 	"Create child nodes."

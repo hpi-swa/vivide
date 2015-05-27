@@ -9,4 +9,5 @@ interpretScriptTransformation
 			at: group
 			put: (step process: groupedObjects)].
 
-	objects := transformedObjects.	
+	self objectsCache at: step put: objects values concatenation.
+	objects := transformedObjects.

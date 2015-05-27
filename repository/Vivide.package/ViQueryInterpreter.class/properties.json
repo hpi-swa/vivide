@@ -11,7 +11,8 @@
 		"stack",
 		"step",
 		"properties",
-		"modelClass" ],
+		"modelClass",
+		"objectsCache" ],
 	"name" : "ViQueryInterpreter",
 	"pools" : [
 		 ],

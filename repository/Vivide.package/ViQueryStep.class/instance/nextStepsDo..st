@@ -7,7 +7,9 @@ nextStepsDo: aBlock
 	self allStepsDo: [:step |
 		step isPropertyStep
 			ifTrue: [hasProperties := true]
-			ifFalse: [hasProperties ifTrue: [^ self]].
+			ifFalse: [
+				(step isReferenceStep not and: [hasProperties])
+					ifTrue: [^ self]].
 		aBlock value: step].
 	
 	hasProperties ifFalse: [

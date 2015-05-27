@@ -10,7 +10,9 @@
 		"pane",
 		"referenceStack",
 		"updateCount",
-		"depth" ],
+		"depth",
+		"cachedResults",
+		"updateNotifiers" ],
 	"name" : "ViQueryNode",
 	"pools" : [
 		 ],
