@@ -42,6 +42,4 @@ initializeArtifact
 		
 	container addAllMorphs: {contentTree.sourceCodeEdit}.
 	
-	sourceCodeEdit hideFull.
-	
 	self artifact: container.

@@ -22,3 +22,6 @@ showHelp
 
 	helpBox topLeft: helpBoxPositions first.
 	helpBox openInWorld.
+
+	"Remove help box after 10 seconds. Workaround for debuggers..."
+	helpBox addAlarm: #delete after: 10000.

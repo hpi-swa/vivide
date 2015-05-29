@@ -40,7 +40,8 @@ openInWindowBounds: bounds grab: boolean
 	self connect: self signal: #closed to: window selector: #delete.
 
 	boolean ifTrue: [
-		window center: ActiveHand position.
-		ActiveHand grabMorph: window].
+		window setProperty: #initialDrop toValue: true.
+		window hasDropShadow: false.
+		self currentHand attachMorph: window].
 	
 	^ window
