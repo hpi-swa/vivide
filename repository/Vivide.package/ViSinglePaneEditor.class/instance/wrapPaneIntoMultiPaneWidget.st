@@ -1,7 +1,7 @@
 as yet unclassified
 wrapPaneIntoMultiPaneWidget
 
-	| singlePane metaScript |
+	| singlePane metaScript newPane |
 	"Copy default scripts on the fly."
 	self pane currentQuery ifNotNil: [:script |
 		script isDefault ifTrue: [self pane currentQuery: script deepCopy]].
@@ -13,15 +13,16 @@ wrapPaneIntoMultiPaneWidget
 	singlePane currentQuery ifNotNil: [:query |
 		metaScript adoptOrganization: query organization].
 	
-	self pane: (ViPane new
+	newPane := ViPane new.
+	newPane
 		addMorphBack: (ViMultiPaneWidget new
-			initializeFor: metaScript in: self pane;
+			initializeFor: metaScript in: newPane;
 			addPane: singlePane; "preserve state"
 			yourself);
 		objects: singlePane objects;
 		queries: singlePane queries;
-		currentQuery: metaScript;
-		yourself).
+		currentQuery: metaScript.
+	self pane: newPane.
 
 	"Calculate the initial meta script."
 	self pane view in: [:multiPaneWidget |

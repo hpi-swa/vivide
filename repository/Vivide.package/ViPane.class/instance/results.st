@@ -1,4 +1,7 @@
 as yet unclassified
 results
 
-	^ self model objects
+	self flag: #metaScript.
+	^ self currentQuery isMeta
+		ifTrue: [self view outgoingObjects]
+		ifFalse: [self model objects]
