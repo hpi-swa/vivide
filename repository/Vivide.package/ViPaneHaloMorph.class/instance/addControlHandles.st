@@ -1,8 +1,9 @@
 handles
 addControlHandles
 
-	| box |
+	| box buttonSize |
 	box := self basicBox.
+	buttonSize := 14.
 	
 	(self addHandleButton: {UiFugueIcons arrowMoveIcon asWireframeSunken. 'Move pane'. box topLeft}) in: [:dragBtn |
 		dragBtn eventHandler dragThreshold: 0.
@@ -20,7 +21,10 @@ addControlHandles
 		self connect: closeBtn signal: #clicked: to: target selector: #close].
 	
 	"Advanced pane control."
-	(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. 'Explore pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
+	(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. 'Explore pane'. ((box width // 2) + box left - buttonSize) @ box top}) in: [:exploreBtn |
 		self connect: exploreBtn signal: #clicked: to: target selector: #explore].
+	(self addHandleButton: {UiFugueIcons nodeIcon asWireframeSunken. 'Explore hierarchy'. ((box width // 2) + box left + buttonSize) @ box top}) in: [:exploreBtn |
+		self connect: exploreBtn signal: #clicked: to: target selector: #exploreHierarchy].
+
 	"(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. ' pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
 		self connect: exploreBtn signal: #clicked: to: target selector: #explore]."
