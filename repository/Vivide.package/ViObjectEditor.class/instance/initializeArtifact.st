@@ -38,6 +38,7 @@ initializeArtifact
 		color: Color transparent;
 		changeTableLayout;
 		listDirection: #topToBottom;
+		cellInset: 1;
 		height: 150.
 		
 	container addAllMorphs: {contentTree.sourceCodeEdit}.

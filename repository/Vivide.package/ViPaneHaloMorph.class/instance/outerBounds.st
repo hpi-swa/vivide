@@ -11,4 +11,4 @@ outerBounds
 		gather: [:c | {c source. c target}])
 		reject: [:o | o isNil]) asSet do: [:m |
 		box := box quickMerge: m bounds].
-	^ box
+	^ box outsetBy: 20 "See drawing code."
