@@ -4,6 +4,9 @@ acceptDroppingPane: aPane at: aPoint
 	self fullScript isDefault ifTrue: [
 		Error signal: 'Cannot modify default script here. Copy first.'].
 
+	aPane currentQuery isMeta ifTrue: [
+		self wrapPanesIntoMultiPaneWidget].
+
 	"Drop source context because this pane is embedded in a new one."
 	aPane connections copy do: [:c | c detach].
 

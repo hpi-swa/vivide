@@ -4,7 +4,7 @@
 	"instance" : {
 		"acceptDroppingMorph:event:" : "mt 6/1/2015 15:28",
 		"acceptDroppingObject:at:" : "mt 2/3/2015 18:19",
-		"acceptDroppingPane:at:" : "mt 2/10/2015 21:15",
+		"acceptDroppingPane:at:" : "mt 6/1/2015 17:09",
 		"acceptObjectService:" : "mt 6/1/2015 13:46",
 		"addPane:" : "mt 11/24/2014 15:55:58.195",
 		"clear" : "mt 10/9/2014 16:46:31.857",
@@ -40,14 +40,16 @@
 		"outputPanes" : "mt 11/25/2014 11:30:30.248",
 		"paneSpecs" : "mt 10/8/2014 16:11:53.653",
 		"panes" : "mt 10/8/2014 16:28:02.264",
-		"removedMorph:" : "mt 11/24/2014 15:33:59.776",
+		"removedMorph:" : "mt 6/1/2015 17:01",
 		"reset" : "mt 2/3/2015 17:28",
 		"results" : "mt 11/25/2014 11:52:08.838",
 		"selectedResults" : "mt 11/25/2014 11:38:49.187",
 		"setDrawFlag:" : "mt 11/27/2014 14:12:31.217",
 		"tupleSize" : "mt 11/25/2014 11:50:17.144",
+		"unwrapPaneFromMultiPaneWidget" : "mt 6/1/2015 17:00",
 		"updateFor:in:" : "mt 12/9/2014 14:29:26.55",
 		"updatePanesFor:" : "mt 5/12/2015 16:13",
 		"updateScript" : "mt 2/10/2015 21:17",
 		"wantsDroppedMorph:event:" : "mt 6/1/2015 13:37",
-		"wantsHaloFromClick" : "mt 12/9/2014 15:46:28.319" } }
+		"wantsHaloFromClick" : "mt 12/9/2014 15:46:28.319",
+		"wrapPanesIntoMultiPaneWidget" : "mt 6/1/2015 17:08" } }

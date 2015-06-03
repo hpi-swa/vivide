@@ -8,7 +8,7 @@ convertPanes: paneSpecs toScript: firstPart
 		(scripts size - paneSpecs size max: 0) timesRepeat: [
 			"Remove trailing scripts."
 			(scripts atLast: 2) next: nil.
-			scripts removeLast].
+			scripts removeLast unregister].
 		(paneSpecs size - scripts size max: 0) timesRepeat: [
 			"Append trailing scripts."
 			scripts add: ViScriptPart new.

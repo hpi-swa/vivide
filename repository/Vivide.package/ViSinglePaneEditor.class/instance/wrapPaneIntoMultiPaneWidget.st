@@ -24,6 +24,16 @@ wrapPaneIntoMultiPaneWidget
 		currentQuery: metaScript.
 	self pane: newPane.
 
+	"Update connections."
+	singlePane connections copy
+		do: [:c |
+			c detach.
+			c source = singlePane ifTrue: [c source: newPane].
+			c target = singlePane ifTrue: [c target: newPane].
+			c attachSilently].
+	(ViResultsConnection from: newPane view to: singlePane) attachSilently.
+	(ViSelectionConnection from: singlePane to: newPane view) attachSilently.
+	
 	"Calculate the initial meta script."
 	self pane view in: [:multiPaneWidget |
 		^ multiPaneWidget
