@@ -10,6 +10,9 @@ acceptDroppingMorph: aTransferMorph event: evt
 						(ViSelectionConnection
 							from: sourcePane
 							to: newPane) attach].
+				
+				ViAnimatedImageMorph flashOn: newPane.
+				
 				newPane
 					grabKeyboard;
 					debugQuery]]].
