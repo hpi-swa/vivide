@@ -1,4 +1,4 @@
 as yet unclassified
-óptimalHeight
+optimalHeight
 
 	^ 200
