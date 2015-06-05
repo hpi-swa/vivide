@@ -13,6 +13,9 @@ updateView
 						vResizing: #spaceFill.
 					self addMorphBack: newView]]].
 	
-	self clearError.
-	self flash.
+	self
+		clearError;
+		updateColor;
+		flash.
+		
 	ViArtifactToolbar hideAllToolbars.

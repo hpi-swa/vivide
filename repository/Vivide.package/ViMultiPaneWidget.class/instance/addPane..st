@@ -5,4 +5,6 @@ addPane: aPane
 		aPane topLeft: self innerBounds topLeft.].
 	
 	self addMorphFront: aPane.
-	aPane layoutChanged.
+	aPane
+		updateColor;
+		layoutChanged.
