@@ -1,10 +1,10 @@
 as yet unclassified
 drawOverlayInHaloOn: aCanvas
 
-	| offset |
+	| offset s |
 	offset := 15.
 
-	self panes withIndexDo: [:pane :index |
+	self panes reverse withIndexDo: [:pane :index |
 		aCanvas
 			frameAndFillRoundRect: (pane bounds insetBy: (
 				(15 + (self panes size-index*offset)) @
@@ -15,15 +15,17 @@ drawOverlayInHaloOn: aCanvas
 			
 			))
 			radius: 4
-			fillStyle: (Color white alpha: 0.5)
+			fillStyle: (Color white alpha: 0.35)
 			borderWidth: 2
 			borderColor: (Color gray: 0.3).
 			
-		(ViLabelService doObject: pane currentQuery) asString asMorph
-			color: (Color white alpha: 0.5);
+		s := (ViLabelService doObject: pane currentQuery) asString asMorph
 			topLeft: self topLeft
-				+ (offset asPoint * (1 @ 2))
-				+ (2 @ 0)
-				+ ((index-1*offset) asPoint * (1 @ -1));
-			drawOn: aCanvas
+				+ (offset asPoint * (1 @ self panes size))
+				+ (3 @ 1)
+				+ ((self panes size-index*offset) asPoint * (1@ -1));
+			yourself.
+		s
+			color: Color black; drawOn: aCanvas;
+			topLeft: s topLeft - (1@1); color: Color white; drawOn: aCanvas 
 			].
