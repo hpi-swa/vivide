@@ -12,4 +12,6 @@ popUpAt: aPoint
 	self eventHandler disconnectSignal: #focusLostInSubmorph: from: self selector: #onFocusLost.
 	self connect: self eventHandler signal: #focusLostInSubmorph: toSelector: #onFocusLost.
 	
+	self addDropShadow.
+	
 	self openInWorld; updateColor; redrawLater.

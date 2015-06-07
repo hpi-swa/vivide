@@ -1,5 +1,10 @@
 events
 transferHalo: event
 	"Transfer the halo to the next likely recipient"
-	target ifNil:[^self delete].
-	target transferHalo: (event transformedBy: (target transformedFrom: self)) from: target.
+	
+	target
+		ifNil:[self delete]
+		ifNotNil: [:t |
+			t
+				transferHalo: (event transformedBy: (t transformedFrom: self))
+				from: t].

@@ -34,22 +34,9 @@ drawOn: aCanvas
 				line: (handle center x + 20) @ pane center y to: pane center
 				width: 2 color: self fanOutColor]].
 	
+	self target "pane" drawOverlayInHaloOn: aCanvas.
 	(self target "pane" view isKindOf: ViMultiPaneWidget) ifTrue: [
-		self target "pane "view panes do: [:p |
-			UiPlatform current canvas: aCanvas
-				frameRoundRect: (p bounds insetBy: (15 min: (p width min: p height)-30 max: 0))
-				radius: 3 width: 2
-				color: (Color white alpha: 0.5)].
-		self target "pane" view inputPanes do: [:p |
-			'<font color="#FFFFFF">IN</font>' asHtmlText asMorph
-				center: p center;
-				drawOn: aCanvas].
-		self target "pane" view outputPanes do: [:p |
-			'<font color="#FFFFFF">OUT</font>' asHtmlText asMorph
-				center: p center + (0@15);
-				drawOn: aCanvas]
-		]  
-	].
+		self target "pane "view drawOverlayInHaloOn: aCanvas]].
 
 	newOutputPane ifNotNil: [:morph |
 		aCanvas

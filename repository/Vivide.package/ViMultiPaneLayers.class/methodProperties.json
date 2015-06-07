@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawOverlayInHaloOn:" : "mt 6/7/2015 13:42",
+		"initialize" : "mt 6/7/2015 11:21",
+		"transferHalo:toPane:" : "mt 6/7/2015 12:43" } }
