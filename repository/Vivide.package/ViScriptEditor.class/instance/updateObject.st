@@ -17,3 +17,6 @@ updateObject
 	self object setProperty: #isNew toValue: nil.   
 	
 	self propertiesFromList: (Dictionary newFrom: spec value).
+
+	"Remind the user to set the input kind."
+	self hasInputKind ifFalse: [self addHintForInputKindTuple].

@@ -1,6 +1,7 @@
 support - properties
 propertiesFromList: dict
-
+	"Set script properties from the given dictionary."
+	
 	| propertiesToSkip propertiesToRemove propertiesToSet |
 	propertiesToSkip := self propertiesToIgnore keys select: [:property |
 		(self propertiesToIgnore at: property) isNil].

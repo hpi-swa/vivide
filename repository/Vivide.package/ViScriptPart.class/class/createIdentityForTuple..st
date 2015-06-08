@@ -8,5 +8,5 @@ createIdentityForTuple: someClasses
 	^ ('[{1} | \{{2}\} asTuples]' format: {
 		decl.
 		decl allButFirst copyReplaceAll: ' :' with: '. '}) asScript
-			setProperty: #inputKind toValue: someClasses copy;
+			setProperty: #inputKind toValue: (Array new: someClasses size);
 			yourself

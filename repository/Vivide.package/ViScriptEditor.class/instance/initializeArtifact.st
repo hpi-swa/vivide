@@ -1,6 +1,7 @@
 initialization
 initializeArtifact
 
+	| container |
 	edit := ViSourceCodeEdit new
 		hResizing: #spaceFill;
 		outerBorderWidth: 0;
@@ -21,4 +22,18 @@ initializeArtifact
 	self connect: edit eventHandler signal: #focusReceived toSelector: #highlightAffectedPanes.
 	self connect: edit eventHandler signal: #focusLost toSelector: #discardPaneHighlights.
 
-	self artifact: edit.
+	hintBox := Morph new
+		color: Color transparent;
+		layoutPolicy: (ViVerticalLayout new layoutInset: (5@5 corner: 0@0); yourself);
+		vResizing: #shrinkWrap;
+		hResizing: #spaceFill.
+	
+	container := Morph new
+		color: Color transparent;
+		layoutPolicy: ViVerticalLayout new;
+		vResizing: #shrinkWrap;
+		hResizing: #spaceFill.
+	container addAllMorphs: {edit. hintBox}.
+	
+	hintBox hideFull.
+	self artifact: container.

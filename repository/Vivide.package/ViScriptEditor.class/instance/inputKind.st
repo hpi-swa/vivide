@@ -1,4 +1,4 @@
-accessing
+support - input kind
 inputKind
 
-	^ inputKind ifNil: [{Object}]
+	^ inputKind ifNil: [{nil}]

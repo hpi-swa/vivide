@@ -16,7 +16,8 @@
 		"inputKind",
 		"map",
 		"mapIndex",
-		"highlights" ],
+		"highlights",
+		"hintBox" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

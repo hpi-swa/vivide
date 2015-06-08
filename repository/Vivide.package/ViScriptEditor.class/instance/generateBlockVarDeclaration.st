@@ -1,4 +1,4 @@
 support
 generateBlockVarDeclaration
 
-	^ self class generateBlockVarDeclarationFor: self inputKind
+	^ self class generateBlockVarDeclarationFor: (self inputKind collect: [:kind | kind ifNil: [Object]])

@@ -10,3 +10,4 @@ deactivateWizard
 
 	shouldPropose := false.
 	self script: code, String cr, '-> ', self propertiesToString.
+	self updateInputKind.
