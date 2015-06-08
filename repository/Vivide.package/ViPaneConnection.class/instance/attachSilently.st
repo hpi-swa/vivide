@@ -6,14 +6,14 @@ attachSilently
 		anySatisfy: [:connection | connection source == self source]])
 			ifTrue: [^ false "Not allowed."].
 
-	self source ifNotNil: [:pane |		
+	self source in: [:pane |		
 		(pane connections includes: self)
 				ifFalse: [
 					self flag: #metaScript.
 					pane layoutChanged.
 
 					pane connections add: self]].
-	self target ifNotNil: [:pane |
+	self target in: [:pane |
 		(pane connections includes: self)
 				ifFalse: [
 					self flag: #metaScript.
