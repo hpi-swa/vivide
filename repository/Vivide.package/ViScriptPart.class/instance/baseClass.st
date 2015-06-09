@@ -17,11 +17,12 @@ baseClass
 		^ mostSpecific].
 	
 	self allStepsDo: [:step | | in out |
-		in := step valueOfProperty: #inputKind ifAbsent: [Object].
-		out := step valueOfProperty: #outputKind ifAbsent: [Object].
+		"Use ProtoObject as fall-back to allow for Object type."
+		in := step valueOfProperty: #inputKind ifAbsent: [ProtoObject].
+		out := step valueOfProperty: #outputKind ifAbsent: [ProtoObject].
 		
 		(ViQueryInterpreter isCollection: in)
-			ifTrue: [^ in].
+			ifTrue: [^ in collect: [:ea | ea ifNil: [Object]]].
 		
 		(in inheritsFrom: mostSpecific)
 			ifTrue: [mostSpecific := in].
