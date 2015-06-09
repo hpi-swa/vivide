@@ -1,4 +1,0 @@
-accessing
-transformMorphClass
-
-	^ ViTransformMorph

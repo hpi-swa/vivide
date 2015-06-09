@@ -25,5 +25,6 @@ SystemOrganization addCategory: #'Vivide-Support-Tests'!
 SystemOrganization addCategory: #'Vivide-Tests'!
 SystemOrganization addCategory: #'Vivide-Traits'!
 SystemOrganization addCategory: #'Vivide-Visualizations'!
-SystemOrganization addCategory: #'Vivide-Visualizations-OBSOLETE'!
 SystemOrganization addCategory: #'Vivide-Experimentation'!
+SystemOrganization addCategory: #'Vivide-Data'!
+SystemOrganization addCategory: #'Vivide-Visualizations-Support'!
