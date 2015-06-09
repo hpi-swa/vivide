@@ -12,7 +12,8 @@ addQueryHandles
 				ifNil: [q definition sourceCode]
 				ifNotNil: [:label | label]);
 			text: (q nextLabel
-				ifNil: ['(unnamed)']
+				ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
+					ifTrue: ['*new*'] ifFalse: ['(unnamed)']]
 				ifNotNil: [:l | l withoutLineEndingsTruncatedTo: 25]);
 			buttonStyle: (self target currentQuery == q
 				ifTrue: [#textBesideIcon]
@@ -22,7 +23,7 @@ addQueryHandles
 				ifFalse: [0]);
 			setProperty: #query toValue: q;
 			dragTransferType: #objects;
-			passenger: q steps;
+			passenger: self target objects, {q}; "Sufficient. See VivideLight >> #openArtifacts:"
 			yourself].
 	buttons do: [:btn |
 		self connect: btn signal: #clicked: toSelector: #changeToQueryFrom: pattern: #(0)].
