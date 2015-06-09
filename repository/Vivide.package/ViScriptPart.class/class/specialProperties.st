@@ -9,8 +9,8 @@ specialProperties
 		#creationAuthor -> nil. "skipped/preserved"
 		#creationTimeStamp -> nil. "skipped/preserved"
 		#copyOf -> nil. "skipped/preserved"
-		#inputKind -> {Object}.
-		#outputKind -> {Object}.
+		"#inputKind -> {Object}.
+		#outputKind -> {Object}."
 		#isProperty -> {false}.
 		#isReference -> {false}.
 		#view -> {ViTreePlainView}.

@@ -6,14 +6,14 @@ defb3774c3bc2b4c343a067b265cf1cb7c8
 	[:view |
 	{
 	#icon -> ((ViIconService doObject: view) ifNil: [UiFugueIcons scriptCodeIcon]).
-	#text -> (ViLabelService doObject: view)
-	}]
+	#text -> (ViLabelService doObject: view).
+	}, (view isMorph ifFalse: [{}]ifTrue: [{#selectedLater -> [[view addHalo]]}])]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:o | (
 	[:view |
 	{
 	#icon -> ((ViIconService doObject: view) ifNil: [UiFugueIcons scriptCodeIcon]).
-	#text -> (ViLabelService doObject: view)
-	}]
+	#text -> (ViLabelService doObject: view).
+	}, (view isMorph ifFalse: [{}]ifTrue: [{#selectedLater -> [[view addHalo]]}])]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]'); yourself)

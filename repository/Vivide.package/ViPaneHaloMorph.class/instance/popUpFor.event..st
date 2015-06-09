@@ -2,7 +2,7 @@ events
 popUpFor: aMorph event: event
 
 	| hand |
-	hand := event hand.
+	hand := event ifNil: [ActiveHand] ifNotNil: #hand.
 	target := aMorph.
 	target hasHalo: true.
 	
