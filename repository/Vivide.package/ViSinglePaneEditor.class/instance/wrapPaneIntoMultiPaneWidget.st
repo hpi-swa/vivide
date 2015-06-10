@@ -31,13 +31,17 @@ wrapPaneIntoMultiPaneWidget
 			c source = singlePane ifTrue: [c source: newPane].
 			c target = singlePane ifTrue: [c target: newPane].
 			c attachSilently].
-	(ViResultsConnection from: newPane view to: singlePane) attachSilently.
-	(ViSelectionConnection from: singlePane to: newPane view) attachSilently.
 	
 	"Calculate the initial meta script."
 	self pane view in: [:multiPaneWidget |
-		^ multiPaneWidget
+		multiPaneWidget
 			setProperty: #isUpdatingScript toValue: true;
 			model: self pane model;
 			removeProperty: #isUpdatingScript;
-			yourself].
+			yourself.
+		
+		"Setup connection to outer pane not ealier to avoid unnecessary updates."
+		(ViResultsConnection from: newPane view to: singlePane) attachSilently.
+		(ViSelectionConnection from: singlePane to: newPane view) attachSilently.
+		
+		^ multiPaneWidget].

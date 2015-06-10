@@ -22,3 +22,6 @@ mergeProfile
 		archive: archive theNonMetaClass.
 
 	profile label: archive theNonMetaClass label.
+	
+	(archive theNonMetaClass respondsTo: #defaultView)
+		ifTrue: [profile defaultView: (archive theNonMetaClass perform: #defaultView)].

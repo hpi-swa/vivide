@@ -1,6 +1,8 @@
 as yet unclassified
 commandsForObjects: someObjects
 
+	ViQueryOrganizer active ifNil: [^ #()].
+
 	^ someObjects
 		ifEmpty: [ViQueryOrganizer active globalCommands]
 		ifNotEmpty: [:objs |

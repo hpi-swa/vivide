@@ -14,3 +14,7 @@ serializeProfile
 	self
 		archiveCode: 'label', String cr, String tab, '^ ', profile label storeString
 		under: 'profile'.
+
+	self
+		archiveCode: 'defaultView', String cr, String tab, '^ ', profile defaultView storeString
+		under: 'profile'.

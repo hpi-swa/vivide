@@ -13,7 +13,7 @@ specialProperties
 		#outputKind -> {Object}."
 		#isProperty -> {false}.
 		#isReference -> {false}.
-		#view -> {ViTreePlainView}.
+		#view -> {ViProfile active defaultView}.
 		#in -> {OrderedCollection}.
 		#out -> {OrderedCollection}.
 		#async -> {false}.

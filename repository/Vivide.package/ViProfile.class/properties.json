@@ -15,7 +15,8 @@
 		"transcriptHistory",
 		"label",
 		"archive",
-		"id" ],
+		"id",
+		"defaultView" ],
 	"name" : "ViProfile",
 	"pools" : [
 		 ],

@@ -1,6 +1,6 @@
 dropping
 wantsDroppedMorph: morph event: event
 
-	^ (morph isKindOf: UiTransferMorph)
+	^ (morph isKindOf: TransferMorph)
 		and: [morph dragTransferType = #pane
 			or: [morph hasFlag: #script]]

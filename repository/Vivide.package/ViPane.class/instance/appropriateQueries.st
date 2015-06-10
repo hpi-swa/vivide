@@ -16,10 +16,10 @@ appropriateQueries
 	check := [:step | | i b |
 		i := 0.
 		b := step baseClass asList.
-		b size = (tuples max: 1) and: [
+		self objects isEmpty or: [b size = (tuples max: 1) and: [
 			baseClasses allSatisfy: [:classes |
 				i := i + 1.
-				classes includes: (b at: i)]]].
+				classes includes: (b at: i)]]]].
 
 	^ Array streamContents: [:strm |
 		"1) Keep the current query if it still matches."
