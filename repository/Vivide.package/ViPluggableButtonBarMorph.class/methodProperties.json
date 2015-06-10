@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"doClickAt:" : "mt 6/10/2015 11:24",
+		"initialize" : "mt 6/10/2015 11:34",
+		"model" : "mt 6/10/2015 11:15",
+		"model:" : "mt 6/10/2015 11:15",
+		"reset" : "mt 6/10/2015 11:36",
+		"updateFor:in:" : "mt 6/10/2015 11:33" } }
