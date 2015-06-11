@@ -5,6 +5,7 @@ findNext
 	self finder reset.
 	
 	"Prepare search result list for results."
+	self setProperty: #previousSearchSelection toValue: (self currentSearchView selectedNodes collect: [:node | node at: #object]). 
 	self searchModel
 		removeAllGroups;
 		groups: self queryModel groups.
