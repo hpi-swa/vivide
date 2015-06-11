@@ -3,12 +3,15 @@ reset
 
 	self removeAllMorphs.
 	self model ifNil: [^ self].
+	self model hasChildren ifFalse: [^ self].
 	
 	self addAllMorphs: ((1 to: buttonCount) collect: [:index |
-		(PluggableButtonMorph
+		(PluggableButtonMorphPlus
 			on: self
 			getState: nil
 			action: #doClickAt:)
 			label: (self model firstNode at: index asString, '_text' ifAbsent: ['(text missing)']);
 			arguments: {index};
+			hResizing: #spaceFill;
+			vResizing: #spaceFill;
 			yourself]).

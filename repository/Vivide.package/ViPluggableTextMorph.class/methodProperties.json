@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutToStyle:" : "mt 6/10/2015 13:42",
+		"aboutToStyle:" : "mt 6/10/2015 17:20",
 		"bindingOf:" : "mt 6/10/2015 13:38",
 		"doItContext" : "mt 6/10/2015 13:29",
 		"doItReceiver" : "mt 6/10/2015 13:28",
@@ -10,8 +10,8 @@
 		"model" : "mt 6/10/2015 13:22",
 		"model:" : "mt 6/10/2015 13:22",
 		"reset" : "mt 6/10/2015 14:23",
-		"selection" : "mt 6/10/2015 13:42",
-		"text" : "mt 6/10/2015 14:13",
+		"selection" : "mt 6/10/2015 17:13",
+		"text" : "mt 6/10/2015 17:12",
 		"text:" : "mt 6/10/2015 14:03",
 		"textMorph" : "mt 6/10/2015 14:18",
 		"updateFor:in:" : "mt 6/10/2015 14:26" } }

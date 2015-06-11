@@ -3,4 +3,6 @@ text
 
 	^ self model
 		ifNil: ['']
-		ifNotNil: [:m | (m firstNode at: #text ifAbsent: ['']) copy]
+		ifNotNil: [:m | m hasChildren
+			ifFalse: ['']
+			ifTrue: [(m firstNode at: #text ifAbsent: [''])]]

@@ -1,6 +1,8 @@
 as yet unclassified
 currentSelectionIndex: anInteger
 
+	selectionMap ifNotNil: [^ self changed: #currentSelectionIndex].
+
 	currentSelectionIndex = anInteger ifTrue: [^ self].
 	
 	currentSelectionIndex := anInteger.

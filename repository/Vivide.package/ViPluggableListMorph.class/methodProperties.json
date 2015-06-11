@@ -2,14 +2,23 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentSelectionIndex" : "mt 6/9/2015 15:13",
-		"currentSelectionIndex:" : "mt 6/9/2015 15:38",
+		"currentSelectionIndex" : "mt 6/10/2015 16:47",
+		"currentSelectionIndex:" : "mt 6/10/2015 16:48",
 		"dragPassengerAtIndex:" : "mt 6/10/2015 10:21",
 		"dragTransferTypeAtIndex:" : "mt 6/10/2015 10:22",
-		"iconAtIndex:" : "mt 6/9/2015 15:16",
-		"initialize" : "mt 6/10/2015 10:22",
+		"hasMultiSelection" : "mt 6/10/2015 16:56",
+		"hasSingleSelection" : "mt 6/10/2015 16:56",
+		"iconAtIndex:" : "mt 6/10/2015 17:09",
+		"initialize" : "mt 6/10/2015 16:51",
+		"initializeForMultiSelection" : "mt 6/10/2015 17:02",
+		"initializeForSingleSelection" : "mt 6/10/2015 16:49",
+		"isSelectedAt:" : "mt 6/10/2015 16:52",
 		"list" : "mt 6/9/2015 15:09",
 		"model" : "mt 6/9/2015 15:00",
 		"model:" : "mt 6/9/2015 15:01",
 		"reset" : "mt 6/9/2015 16:02",
-		"selectedNode" : "mt 6/9/2015 15:23" } }
+		"selectedNode" : "mt 6/9/2015 15:23",
+		"selectedNodes" : "mt 6/10/2015 16:55",
+		"selectionMap" : "mt 6/10/2015 17:05",
+		"setAt:isSelected:" : "mt 6/10/2015 16:56",
+		"updateFor:in:" : "mt 6/10/2015 17:00" } }
