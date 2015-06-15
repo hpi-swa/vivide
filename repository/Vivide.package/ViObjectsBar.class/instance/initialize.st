@@ -6,8 +6,7 @@ initialize
 	self
 		initializeEditorStateList;
 		initializeResizeHandle;
-		initializePreviewHandler;
-		initializeRecentlyList.
+		initializePreviewHandler.
 
 	self
 		width: 200;
@@ -25,7 +24,5 @@ initialize
 		hResizing: #spaceFill.
 		
 	contentContainer addMorph: self editorStateList.
-	contentContainer addMorphBack: (UiLabel new text: '<font size="8" color="#DFE3EA">Recently Opened</font>').
-	contentContainer addMorphBack: recentlyList.
 
 	self addAllMorphs: {contentContainer.self resizeHandle}.
