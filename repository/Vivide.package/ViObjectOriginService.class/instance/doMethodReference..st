@@ -2,9 +2,8 @@ nil
 doMethodReference: aMethodReference
 
 	aMethodReference isValid
-		ifFalse: [^ '{1} ({2})' format: {
-			aMethodReference classSymbol.
-			aMethodReference category}].
+		ifFalse: [^ '{1} (--invalid--)' format: {
+			aMethodReference classSymbol}].
 		
 	aMethodReference selector = #Comment
 		ifTrue: [^ '{1} (comment)' format: {
