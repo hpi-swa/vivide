@@ -1,9 +1,13 @@
 notifications
 setUpdateNotifications
 
+	| refObjects |
 	self firstStep ifNotNil: [:f |
+		self flag: #missing. "mt: What about intermediate objects?"
+		refObjects := f process: #() within: nil.
+		
 		f nextStepsDo: [:step |
-			step objectNotifiers do: [:notifier |
+			(step objectNotifiersWith: refObjects) do: [:notifier |
 				self updateNotifiers add: notifier.
 				notifier subscribe.
 				self
