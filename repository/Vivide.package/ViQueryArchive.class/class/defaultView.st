@@ -1,3 +1,3 @@
 profile
 defaultView
-	^ ViPluggableListMorph
+	^ ViTreePlainView
