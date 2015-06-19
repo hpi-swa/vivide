@@ -5,3 +5,5 @@ initialize
 	self
 		color: Color transparent;
 		changeTableLayout.
+		
+	self initializeWidget.

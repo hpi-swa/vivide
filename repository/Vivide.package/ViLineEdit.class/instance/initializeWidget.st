@@ -1,7 +1,5 @@
-initialization
-initialize
-
-	super initialize.
+as yet unclassified
+initializeWidget
 
 	self vResizing: #shrinkWrap.
 	self addMorph: (UiLineEdit new

@@ -1,7 +1,5 @@
-initialization
-initialize
-
-	super initialize.
+as yet unclassified
+initializeWidget
 
 	self hResizing: #spaceFill; vResizing: #spaceFill.
 	self addMorph: (UiTextEdit new
