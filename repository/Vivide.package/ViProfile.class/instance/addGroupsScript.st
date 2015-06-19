@@ -4,7 +4,7 @@ addGroupsScript
 	self addScript: {
 	
 		[:tuples | tuples asGroups] -> {
-			#inputKind -> {Object.Object}.
+			#inputKind -> #(nil nil).
 			#view -> ViTreeView.
 			#id -> #groups}.
 		[:groups | groups sorted: [:g1 :g2 | g1 first asString <= g2 first asString]].

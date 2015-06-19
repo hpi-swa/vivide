@@ -6,6 +6,7 @@ addExplorer
 		[:object | object] -> {
 			#label -> 'Inspector'.
 			#view -> ViExplorerView.
-			#id -> #objectExplorer}.
+			#id -> #objectExplorer.
+			#priority -> 500}.
 	
 	} asScript

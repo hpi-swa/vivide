@@ -6,6 +6,7 @@ addImplementors
 		[:symbol | SystemNavigation default allImplementorsOf: symbol] -> {
 			#inputKind -> ByteSymbol. #outputKind -> MethodReference.
 			#label -> 'Implementors'.
-			#id -> #implementors}.
+			#id -> #implementors.
+			#priority -> 200}.
 	
 	} asScript.
