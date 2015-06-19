@@ -5,8 +5,9 @@ postCopy
 	oldId := id.
 	id := UUID new asString asSymbol.
 
-	properties := properties deepCopy.
-
+	"DeepCopy does not work for blocks. I think sharing of values if fine because editors will overwrite them anyway..."
+	properties := properties copy.
+	
 	self organization: ViQueryOrganizer new.
 	self register.
 
