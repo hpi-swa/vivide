@@ -36,3 +36,47 @@ Here is a recent screencast about how to create a browser for GitHub issues, whi
 Here is an older screencast about how to create a code browser and modify its appearance to reveal more or different information:
 
 [![VIMEO](http://i.vimeocdn.com/video/434147754_320.jpg)](https://www.vimeo.com/63757592)
+
+##Acknowledgements
+
+We are very thankful for any feedback in the form of bug reports, discussions, or even custom applications. Vivide is mainly developed by [Marcel Taeumel](https://github.com/marceltaeumel) in context of his PhD thesis. To date, the following people also contributed to this project:
+
+Pavel Belskiy,
+Lars Blumberg,
+Thomas Bünger,
+[Conrad Calmez](https://github.com/calmez),
+Falco Duersch,
+[Tim Felgentreff](https://github.com/timfel),
+Dustin Glaeser,
+Anne Gropler,
+Eva-Maria Herbst,
+[Hubert Hesse](https://github.com/hubx),
+[Robert Hirschfeld](https://github.com/roberthirschfeld),
+Johannes Koch,
+Sebastian Kruse,
+[Jens Lincke](https://github.com/JensLincke),
+Thorben Lindhauer,
+Roland Lux,
+Tobias Mohr,
+Christoph Neijenhuis,
+[Fabio Niephaus](https://github.com/fniephaus),
+Phillipp Otto,
+[Tobias Pape](https://github.com/krono),
+Tobias Pfeiffer,
+Stephanie Platz,
+Jan Rehwaldt,
+[Patrick Rein](https://github.com/codeZeilen),
+Jakob Reschke,
+Oliver Richter,
+Marko Röder,
+[Robin Schreiber](https://github.com/merryman),
+Leonhard Schweizer,
+Benjamin Siegmund,
+Sebastian Stamm,
+Tobias Stengel,
+Karsten Tausche,
+Lauritz Thamsen,
+Daniel Werner,
+Sebastian Woinar
+
+
