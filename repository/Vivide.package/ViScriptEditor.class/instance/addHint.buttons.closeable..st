@@ -2,6 +2,12 @@ as yet unclassified
 addHint: message buttons: someButtons closeable: boolean
 
 	| hint closeBtn |
+	"No duplicate hints."
+	hintBox submorphs
+		detect: [:h | h submorphs first text asString = message]
+		ifFound: [:h | ^ self]
+		ifNone: [].
+			
 	hint := Morph new
 		color: (Color gray: 0.9);
 		changeTableLayout;
