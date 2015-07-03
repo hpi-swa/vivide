@@ -2,8 +2,9 @@ tests
 test03SimpleQuery
 
 	| query |
-	query := ((ViQueryStep collect: '[:ea | ea + 1]')
-		next: (ViQueryStep property: '[:ea | #text -> ea asString]')).
+	query := {
+		[:ea | ea + 1].
+		[:ea | #text -> ea asString] } asScript.
 		
 	sut firstStep: (ViQueryStep use: #(1 2 3) in: query).
 	self

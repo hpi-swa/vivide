@@ -3,7 +3,7 @@ test05DefaultProperties
 
 	sut firstStep: (ViQueryStep
 		use: #(1 2 3)
-		in: (ViQueryStep collect: '[:ea | ea + 1]')).
+		in: [:ea | ea + 1] asScript).
 	self
 		assert: 3 equals: sut childCount;
 		assert: 2 asString equals: ((sut childAt: 1) at: #'1_text');

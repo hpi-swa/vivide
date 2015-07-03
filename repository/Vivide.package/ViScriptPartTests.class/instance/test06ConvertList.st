@@ -5,11 +5,11 @@ test06ConvertList
 		[:num | num * num].
 		[:num | #text -> num asString].
 		[:num | num / 2] -> {#inputKind -> Integer. #outputKind -> Fraction}.
-		#iconAndLabel})
+		#identity})
 	in: [:query |
 		self
 			assert: query steps size = 4;
 			assert: (query steps allSatisfy: [:step | step next notNil
-				or: [step definition id = #iconAndLabel]]);
+				or: [step id = #identity]]);
 			assert: query steps second isPropertyExtraction;
-			assert: query steps last isTransformStep].
+			deny: query steps last isPropertyExtraction].

@@ -1,17 +1,13 @@
 tests
 test11Notifications
 
-	| q oldNodes |
-	q := ViQueryStep transform: '[:objs | objs]'.
-	
-	q definition
-		updateSetDefinition: ViQueryUpdateDefinition defAllSystemChangeNotifications;
-		updateClearDefinition: ViQueryUpdateDefinition defNoSystemChangeNotifications.
-	
+	| script oldNodes |
+	script := {[:class | class] -> {#notifier -> ViSystemChangeNotifier}} asScript.
+		
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: #(1 2 3 4 5) in: q).
+	sut firstStep: (ViQueryStep use: self class withAllSuperclasses in: script).
 	oldNodes := sut nodes.
-	self assert: 5 equals: oldNodes size.
+	self assert: self class withAllSuperclasses size equals: oldNodes size.
 	
 	self simulateSystemChangeAndCallbacks.
 

@@ -4,8 +4,8 @@ test05Organization
 	| def orga |
 	orga := ViQueryOrganizer new.
 	def := ViQueryStepDefinition new
-		id: #test05Organization;
 		organization: orga;
+		id: #test05Organization;
 		sourceCode: '[:obj | obj asString]'.
 	self assert: (orga definitionById: #test05Organization) isNil.
 	

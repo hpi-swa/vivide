@@ -2,21 +2,19 @@ tests
 test12NotificationsInChildren
 	"Notifications should work in a selective way!"
 
-	| q1 p q2 oldNodes |
-	q1 := ViQueryStep transform: '[:objs | objs]'.
-	p := ViQueryStep property: '[:obj | obj asString]'.
-	q2 := ViQueryStep collect: '[:obj | obj * 2]'.
-	q1 next: p. p next: q2.
-		
-	
-	q2 definition
-		updateSetDefinition: ViQueryUpdateDefinition defAllSystemChangeNotifications;
-		updateClearDefinition: ViQueryUpdateDefinition defNoSystemChangeNotifications.
+	| script oldNodes topCount |
+		script := {
+			[:category | SystemOrganization listAtCategoryNamed: category].
+			[:className | Smalltalk classNamed: className].
+			[:class | #text -> class].
+			[:class | class methodDict values] -> {#notifier -> ViSystemChangeNotifier}} asScript.
 	
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: #(1 2 3 4 5) in: q1).
+	sut firstStep: (ViQueryStep use: {self class category} in: script).
 	oldNodes := sut allNodes.
-	self assert: 10 equals: oldNodes size.
+	topCount := (SystemOrganization listAtCategoryNamed: self class category) size.
+
+	self assert: sut nodes size equals: topCount.
 	
 	self simulateSystemChangeAndCallbacks.
 
@@ -26,6 +24,4 @@ test12NotificationsInChildren
 			n1 ~~ n2
 				ifTrue: [different := different + 1]
 				ifFalse: [same := same + 1]].
-		self
-			assert: 5 equals: same;
-			assert: 5 equals: different].
+		self assert: same >= topCount].

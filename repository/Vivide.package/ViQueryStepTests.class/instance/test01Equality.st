@@ -2,12 +2,12 @@ tests
 test01Equality
 
 	| step1 step2 |
-	step1 := ViQueryStep new
+	step1 := ViScriptPart new
 		label: 'Foobar';
 		icon: Morph new;
 		definition: ViQueryStepDefinition new;
-		next: ViQueryStep new.
-	step2 := ViQueryStep new
+		next: ViScriptPart new.
+	step2 := ViScriptPart new
 		label: 'Same here!';
 		icon: Morph new;
 		definition: step1 definition;

@@ -1,24 +1,24 @@
 tests
 test08WithAllObjects
 
-	| packageName q1 p q2 q3 |
+	| packageName q1 |
 	packageName := #Morphic.
 	
-	q1 := ViQueryStep transform: '[:classes :context |
-		context contents: classes.
-		classes reject: [:cls | classes includes: cls superclass]]'.
-	p := ViQueryStep property: '[:cls | cls name]'.
-	q2 := ViQueryStep collect: '[:cls | cls subclasses]'.
-	q3 := ViQueryStep transform: '[:classes :context | classes select: [:cls |
-		context contents includes: cls]]'.
-
-	q1 next: p.
-	p next: q2.
-	q2 next: q3.
-	q3 next: p.
+	q1 := {
+		[:classes | 
+			Smalltalk at: #test08WithAllObjects put: classes.
+			classes reject: [:class | classes includes: class superclass]].
+		[:class | #text -> class name].
+		[:class | class subclasses].
+		[:classes | classes select: [:class | (Smalltalk at: #test08WithAllObjects) includes: class]]
 	
+	} asScript.
+	q1 steps last next: q1 steps second asReference. 
+		
 	sut firstStep: (ViQueryStep use: (PackageInfo named: packageName) classes in: q1).
 	
 	self
 		assert: sut childCount < sut firstStep objects size;
 		assert: sut allObjects size = sut firstStep objects size.
+	
+	Smalltalk removeKey: #test08WithAllObjects.

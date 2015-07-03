@@ -3,12 +3,11 @@ test04NestedQueries
 	"There are no default properties/halts for nested queries!"
 
 	| innerQuery outerQuery |
-	innerQuery := ViQueryStep collect: '[:ea | ea * ea]'.
-	outerQuery := ViQueryStep reference: innerQuery.
+	innerQuery := [:ea | ea * ea] asScript.
+	outerQuery := innerQuery asReference.
 
 	"The following code is the reason for introducing references."
-	outerQuery next: ((ViQueryStep collect: '[:ea | ea + 1]')
-		next: (ViQueryStep property: '[:ea | #text -> ea asString]')).
+	outerQuery next: {[:ea | ea + 1]. [:ea | #text -> ea asString]} asScript.
 		
 	sut firstStep: (ViQueryStep use: #(1 2 3) in: outerQuery).
 	self

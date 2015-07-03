@@ -2,37 +2,44 @@ tests
 test14NotificationsSkipNestedUpdates
 	"If your parent updates, do not update because you will be invalid anyway."
 	
-	| q1 p q2 view env oldNodes |
-	Smalltalk at: #queryNode put: 0.
-	q1 := ViQueryStep transform: '[:objs | objs]'.
-	p := ViQueryStep property: '[:obj | obj asString]'.
-	q2 := ViQueryStep transform: '[:objs |
-	Smalltalk at: #queryNode put: (Smalltalk at: #queryNode) + 1.
-	objs]'.
+	| script view env |
+	Smalltalk at: #outer put: 0.
+	Smalltalk at: #inner put: 0.
 	
-	q1 next: p. p next: q2.
+	script := {
+		[:category | 
+			Smalltalk at: #outer put: (Smalltalk at: #outer) + 1.
+			SystemOrganization listAtCategoryNamed: category].
+		[:className | Smalltalk classNamed: className].
+		[:class | #text -> class] -> {#notifier -> ViSystemChangeNotifier}.
+		[:class | 
+			Smalltalk at: #inner put: (Smalltalk at: #inner) + 1.
+			class methodDict values] -> {#notifier -> ViSystemChangeNotifier}.
+	} asScript.
+	
 	env := ViPane new.
-	view := q1 updateView: nil forEnvironment: env.
-	
-	q1 definition
-		updateSetDefinition: ViQueryUpdateDefinition defAllSystemChangeNotifications;
-		updateClearDefinition: ViQueryUpdateDefinition defNoSystemChangeNotifications.
-	q2 definition
-		updateSetDefinition: ViQueryUpdateDefinition defAllSystemChangeNotifications;
-		updateClearDefinition: ViQueryUpdateDefinition defNoSystemChangeNotifications.
-	
+	view := script updateView: nil forEnvironment: env.
+		
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: #(1 2 3 4 5) in: q1).
+	sut firstStep: (ViQueryStep use: {self class category} in: script).
 	view model: sut.
 	view currentVisibleView expandAllTopLevelNodes.
 	
-	self assert: 5 equals: (Smalltalk at: #queryNode).
-	Smalltalk at: #queryNode put: 0. "reset first"
+	self assert: 1 equals: (Smalltalk at: #outer).
+	self
+		assert: (SystemOrganization listAtCategoryNamed: self class category) size
+		equals: (Smalltalk at: #inner).
+
+	Smalltalk at: #outer put: 0.
+	Smalltalk at: #inner put: 0.
 	
 	"Two updates at once."
-	SystemChangeNotifier uniqueInstance
-		evaluated: #test14NotificationsSkipNestedUpdates.
+	self class compile: 'shouldNotSeeMe ^ true'.
 	self simulateSystemChangeAndCallbacks.
 
-	self assert: 5 equals: (Smalltalk at: #queryNode).
-	Smalltalk removeKey: #queryNode.
+	self assert: 1 equals: (Smalltalk at: #outer).
+	self
+		assert: (SystemOrganization listAtCategoryNamed: self class category) size
+		equals: (Smalltalk at: #inner).
+
+	Smalltalk removeKey: #outer; removeKey: #inner.

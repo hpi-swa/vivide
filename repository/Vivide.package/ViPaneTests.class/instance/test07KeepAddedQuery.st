@@ -2,12 +2,12 @@ as yet unclassified
 test07KeepAddedQuery
 
 	| q1 q2 |
-	q1 := ViQueryStep convertList: {
-		[:num | num * num] -> {Number.Number}.
-		[:num | #text -> num asString]}.
-	q2 := ViQueryStep convertList: {
-		[:morph | morph color] -> {Morph.Color}.
-		[:color | #text -> color name]}.
+	q1 := {
+		[:num | num * num] -> {#label -> #a. #inputKind -> Number. #outputKind -> Number}.
+		[:num | #text -> num asString]} asScript.
+	q2 := {
+		[:morph | morph color] -> {#label -> #b. #inputKind -> Morph. #outputKind -> Color}.
+		[:color | #text -> color name]} asScript.
 
 	sut
 		queries: {q1.q2};

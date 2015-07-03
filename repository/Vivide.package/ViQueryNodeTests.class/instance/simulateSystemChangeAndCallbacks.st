@@ -1,11 +1,9 @@
 running
 simulateSystemChangeAndCallbacks
 
-	| msg |
 	"Simulate system change."
-	SystemChangeNotifier uniqueInstance
-		evaluated: ('{1}' format: {thisContext sender selector}).
+	self class compile: 'shouldNotSeeMe'.
+	self class removeSelector: #shouldNotSeeMe.
 	
 	"Simulate queue processing. Trigger model update this way. See ViQueryModel>>#refresh."
-	[(msg := WorldState deferredUIMessages nextOrNil) == nil]
-		whileFalse: [msg value].
+	ActiveWorld doOneSubCycle.

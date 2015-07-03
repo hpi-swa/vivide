@@ -2,7 +2,7 @@ tests
 test19Flatten
 
 	| q |
-	q := [:o | o] asQuery.
+	q := [:object | object] asScript.
 	sut firstStep: (ViQueryStep use: #( ((1 2) (a b)) foo ) in: q).
 	self
 		assert: 3 equals: sut childCount;

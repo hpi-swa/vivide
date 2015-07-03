@@ -2,7 +2,11 @@ tests
 test17Tuples
 
 	| q |
-	q := [:s | {s. s size}] -> {Symbol. {Symbol. Integer}}.
+	q := {
+		[:s | {s. s size} asTuples] 
+			-> {#inputKind -> Symbol. #outputKind -> {Symbol. Integer}}.
+		[:s :l | #text -> s].
+		} asScript.
 	sut firstStep: (ViQueryStep use: #(foo bar) in: q).
 
 	self

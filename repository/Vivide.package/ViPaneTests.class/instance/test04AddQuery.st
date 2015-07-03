@@ -3,7 +3,7 @@ test04AddQuery
 
 	| prev |
 	sut
-		currentQuery: [:num | num * num] asQuery;
+		currentQuery: [:num | num * num] asScript;
 		objects: #(1 2 3).
 	
 	prev := sut currentQuery.

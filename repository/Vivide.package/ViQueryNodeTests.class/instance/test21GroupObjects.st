@@ -1,17 +1,18 @@
-as yet unclassified
+tests
 test21GroupObjects
-
+	"Via the tree structure."
+	
 	| q testClass |
 	testClass := Integer.
-	q := ViQueryStep convertList: {
-		[:class | {class organization categories. class}] -> {ClassDescription.{String.ClassDescription}}.
-		[:protocol :class | #text -> protocol] -> {{String.ClassDescription}.Object}.
+	q := {
+		[:class | {class organization categories. class} asTuples].
+		[:protocol :class | #text -> protocol].
 		[:protocol :class | {
 			class organization listAtCategoryNamed: protocol.
-			class}] -> {{String.ClassDescription}.{Symbol.ClassDescription}}.
-		[:selector :class | MethodReference class: class selector: selector] -> {{Symbol.ClassDescription}. MethodReference}.
+			class} asTuples].
+		[:selector :class | MethodReference class: class selector: selector].
 		[:ref | #text -> ref selector].
-	}.
+	} asScript.
 	
 	sut firstStep: (ViQueryStep use: {testClass} in: q).
 	self assert: sut childCount = testClass organization categories size.

@@ -2,7 +2,7 @@ as yet unclassified
 test38SharedProperties
 	"Query steps share properties with their definitions."
 
-	sut := ViQueryStep transform: '[:objs | objs]'.
+	sut := [:objs | objs] asScript.
 
 	self assert: (sut valueOfProperty: #testProperty) isNil.
 	sut definition setProperty: #testProperty toValue: #check.

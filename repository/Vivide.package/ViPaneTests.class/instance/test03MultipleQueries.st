@@ -2,15 +2,17 @@ as yet unclassified
 test03MultipleQueries
 
 	| q1 q2 |
-	q1 := ViQueryStep convertList: {
-		[:num | num * num] -> {Number.Number}.
-		[:num | #text -> num asString]}.
-	q2 := ViQueryStep convertList: {
-		[:morph | morph color] -> {Morph.Color}.
-		[:color | #text -> color name]}.
+	q1 := {
+		[:num | num * num] -> {#label -> #a. #inputKind -> Number. #outputKind -> Number}.
+		[:num | #text -> num asString]} asScript.
+	q2 := {
+		[:morph | morph color] -> {#label -> #b. #inputKind -> Morph. #outputKind -> Color}.
+		[:color | #text -> color name]} asScript.
 	
 	sut queries: {q1.q2}; objects: #(1 2 3).
-	self assert: sut currentQuery == q1.
+	self
+		assert: (sut appropriateQueries includes: q1);
+		assert: sut currentQuery == q1.
 	
 	sut objects: {Morph new color: Color yellow; yourself}.
 	self assert: sut currentQuery == q2.

@@ -2,11 +2,13 @@ tests
 test18TuplesInTree
 
 	| q n |
-	q := ViQueryStep convertList: {
-		[:s | {s. s size}] -> {Symbol. {Symbol. Integer}}.
-		[:sym :size | #text -> sym] -> {{Symbol.Integer}. Object}.
-		[:sym :size | {size.size*2}] -> {{Symbol.Integer}. Integer}.
-	}.
+	q := {
+		[:s | {s. s size} asTuples] 
+			-> {#inputKind -> Symbol. #outputKind -> {Symbol. Integer}}.
+		[:s :l | #text -> s].
+		[:sym :size | {size. size * 2}]
+			-> {#inputKind -> {Symbol.Integer}. #outputKind -> Integer}.
+	} asScript.
 	sut firstStep: (ViQueryStep use: #(foo bary) in: q).
 
 	n := sut childAt: 1.

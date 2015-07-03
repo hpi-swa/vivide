@@ -1,13 +1,13 @@
 tests
 test02CyclicQuery
 
-	| query s1 s2 model view |
-	query := ViQueryStep collect: '[:morph | morph submorphs]'.
-	s1 := ViQueryStep property: '[:morph | morph asString]'.
-	s2 := ViQueryStep collect: '[:morph | morph owner]'.
-	query next: s1.
-	s1 next: s2.
-	s2 next: query.
+	| query |
+	query := {
+		[:morph | morph submorphs].
+		[:morph | #text -> morph asString].
+		[:morph | morph owner].
+	} asScript.
+	query steps last next: query.
 
 	sut firstStep: (ViQueryFillStep new
 		objects: {ActiveWorld};
