@@ -4,7 +4,9 @@ iconForTestClass: aClassDescription selector: aSelector
 
 	"((aClassDescription inheritsFrom: TestCase) and: [aSelector startsWith: #test])
 		ifFalse: [^ nil]."
-		
+	
+	(aClassDescription >> aSelector) isReturnSelf ifTrue: [^ UiFugueIcons exclamationSmallIcon].
+	
 	^ ((aClassDescription lastRun at: #errors) includes: aSelector)
 		ifTrue: [UiSilkIcons bulletRedIcon]
 		ifFalse: [((aClassDescription lastRun at: #failures) includes: aSelector)

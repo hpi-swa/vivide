@@ -3,19 +3,19 @@ mergeProfile
 
 	self assert: archive notNil.
 	
-	VivideLight profiles
-		detect: [:p | p id = archive theNonMetaClass id]
-		ifFound: [:p | profile := p]
-		ifNone: [
-			profile ifNotNil: [
-				Error signal: 'Profile not found!'].
-			
-			profile := ViProfile newEmpty.
-			"profile initializeMinimal."
-			
-			VivideLight profiles add: profile.
-			profile archive: archive theNonMetaClass.
-			profile id: archive theNonMetaClass id].
+	profile ifNil: [
+		"Find existing profile automatically. Create a new one if needed."	
+		VivideLight profiles
+			detect: [:p | p id = archive theNonMetaClass id]
+			ifFound: [:p | profile := p]
+			ifNone: [
+				Transcript showln: '[ViQuerySerializer] Creating new profile...'.
+				profile := ViProfile newEmpty.
+				"profile initializeMinimal."
+				
+				VivideLight profiles add: profile.
+				profile archive: archive theNonMetaClass.
+				profile id: archive theNonMetaClass id]].
 
 	self
 		setOrganizer: profile organization

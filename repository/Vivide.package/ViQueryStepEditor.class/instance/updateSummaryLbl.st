@@ -8,6 +8,6 @@ updateSummaryLbl
 				format: {
 					self currentLabel ifNil: [''].
 					q id withoutLineEndingsTruncatedTo: 25.
-					q viewDefinition id withoutLineEndingsTruncatedTo: 25.
+					''.
 					self hasUnacceptedChanges ifTrue: ['<b>'] ifFalse: [''].
 					self hasUnacceptedChanges ifTrue: [' *changed*</b>'] ifFalse: ['']})].

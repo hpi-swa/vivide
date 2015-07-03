@@ -1,4 +1,4 @@
 as yet unclassified
 inputKind
 
-	^ Object
+	^ self valueOfProperty: #inputKind ifAbsent: [Object]

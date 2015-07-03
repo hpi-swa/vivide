@@ -1,4 +1,4 @@
 as yet unclassified
 outputKind
 
-	^ Object  
+	^ self valueOfProperty: #outputKind ifAbsent: [Object] 
