@@ -6,7 +6,7 @@ deepCopy
 	idMap := Dictionary new.
 	copiedReferences := OrderedCollection new.
 	
-	newQuery := self copy.
+	newQuery := self notifier doSilently: [self copy].
 	copiedReferences add: newQuery.
 	idMap at: self id put: newQuery id.
 	 

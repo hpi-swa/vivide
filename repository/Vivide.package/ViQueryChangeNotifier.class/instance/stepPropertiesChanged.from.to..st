@@ -1,5 +1,7 @@
-as yet unclassified
-stepPropertiesChanged: aQueryStep from: oldProps to: newProps
+triggers for steps
+stepPropertiesChanged: step from: oldProps to: newProps
 
-	self trigger: ((ViModifiedPartPropertiesEvent item: aQueryStep kind: self class stepKind)
+	self trigger: ((ViModifiedPartPropertiesEvent
+		item: step
+		kind: self class stepKind)
 		oldItem: {oldProps. newProps}).

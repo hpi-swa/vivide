@@ -6,12 +6,7 @@ unregisterUnusedDefinitions
 	
 	defs := (self orderedDefinitions reject: [:def | def isSnippetDefinition]) asOrderedCollection.
 	self orderedSteps do: [:query | query allStepsDo: [:step |
-		defs remove: step definition ifAbsent: [].
-		defs remove: step viewDefinition ifAbsent: []]].
-	self codeDefinitions do: [:def |
-		defs remove: def updateSetDefinition ifAbsent: [].
-		defs remove: def updateClearDefinition ifAbsent: []].
-	
+		defs remove: step definition ifAbsent: []]].
 	
 	self flag: #magicNumber. "mt: How to really check whether the ID is a UUID or a custom label?"
 	defs

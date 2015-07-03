@@ -4,11 +4,9 @@ setUp
 	super setUp.
 	
 	sut := ViQueryChangeNotifier new.
-	organization := ViQueryOrganizer new notifier: sut.
-	step := ViQueryTransformStep new
-		organization: organization.
-	definition := ViQueryMapDefinition new
-		organization: organization;
-		sourceCode: '[:cls | cls theNonMetaClass methods]';
-		mapType: #each.
-	step definition: definition.
+	step := [:cls | cls theNonMetaClass methods] asScript.
+
+	organization := step organization.
+	definition := step definition.
+
+	organization notifier: sut.

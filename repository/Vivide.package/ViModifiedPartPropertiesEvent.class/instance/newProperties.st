@@ -1,4 +1,4 @@
 as yet unclassified
 newProperties
 
-	^ Dictionary newFrom: self oldItem second
+	^ newProperties ifNil: [newProperties := Dictionary newFrom: self oldItem second]

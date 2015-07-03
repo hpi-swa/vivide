@@ -3,7 +3,7 @@ test09ChangeSourceCode
 
 	| oldCode |
 	oldCode := definition sourceCode.
-	sut notify: self ofQueryChangesOfItem: ViQueryChangeNotifier mapDefinitionKind change: ModifiedEvent changeKind using: #setAnswer:.
+	sut notify: self ofQueryChangesOfItem: ViQueryChangeNotifier definitionKind change: ModifiedEvent changeKind using: #setAnswer:.
 	
 	definition sourceCode: '[:cls | cls theMetaClass methods]'.
 	self

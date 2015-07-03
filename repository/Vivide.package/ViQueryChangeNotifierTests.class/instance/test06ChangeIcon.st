@@ -1,11 +1,11 @@
 tests
 test06ChangeIcon
 
-	sut notify: self ofQueryChangesOfItem: ViQueryChangeNotifier stepKind change: RenamedEvent changeKind using: #setAnswer:.
+	sut notify: self ofQueryChangesOfItem: ViQueryChangeNotifier stepKind change: ViModifiedPartPropertiesEvent changeKind using: #setAnswer:.
 	step icon: Morph new.
+
 	self
-		assert: answer isRenamed;
+		assert: answer isModified;
 		assert: answer item == step;
-		assert: nil equals: answer oldIcon;
-		assert: step icon == answer icon;
-		assert: answer oldLabel == answer label.
+		assert: nil equals: (answer oldProperties at: #icon);
+		assert: step icon == (answer newProperties at: #icon).

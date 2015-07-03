@@ -1,7 +1,4 @@
-system triggers
+triggers for steps
 stepIconChanged: aQueryStep from: oldForm to: newForm
 
-	self trigger: ((ViRenamedStepEvent item: aQueryStep kind: self class stepKind)
-		oldName: aQueryStep label;
-		newName: aQueryStep label;
-		oldIcon: oldForm).
+	self stepPropertiesChanged: aQueryStep from: {#icon -> oldForm}  to: {#icon -> newForm}. 

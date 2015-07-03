@@ -7,5 +7,5 @@ mergeFromDictionary: dict
 	#(label iconCode) do: [:prop |
 		self perform: (prop, #:) asSymbol with: (dict at: prop)].
 	"Set references by id only."
-	#(definition next viewDefinition) do: [:prop |
+	#(definition next) do: [:prop |
 		self perform: (prop, #:) asSymbol with: (dict at: prop)].

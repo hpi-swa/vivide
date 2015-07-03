@@ -3,6 +3,8 @@
 		"supportedKinds" : "mt 11/14/2014 11:15:48.552" },
 	"instance" : {
 		"hasPropertyExtractionChanged" : "mt 11/14/2014 11:22:58.902",
+		"hasViewChanged" : "mt 7/3/2015 09:13",
 		"isPropertiesModified" : "mt 11/14/2014 11:33:55.42",
-		"newProperties" : "mt 11/14/2014 11:21:48.123",
-		"oldProperties" : "mt 11/14/2014 11:21:45.558" } }
+		"newProperties" : "mt 7/3/2015 09:12",
+		"oldProperties" : "mt 7/3/2015 09:13",
+		"onlyViewIndependentChanges" : "mt 7/3/2015 10:30" } }

@@ -23,5 +23,4 @@ serializeSteps
  
 			"Ensure to archive also definitions that may be reachable but not registered."
 			step definition ifNotNil: [:def | definitions add: def].
-			step viewDefinition ifNotNil: [:def | definitions add: def].
 		]].

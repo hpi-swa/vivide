@@ -1,4 +1,4 @@
 accessing
 viewDefinition
 
-	^ viewDefinition
+	^ nil

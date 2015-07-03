@@ -1,8 +1,4 @@
-system triggers
+triggers for definitions
 definitionUnregistered: def
 
-	self trigger: (ViRemovedPartEvent item: def kind: (true caseOf: {
-		[def isMapDefinition] -> [self class mapDefinitionKind].
-		[def isUpdateDefinition] -> [self class updateDefinitionKind].
-		[def isViewDefinition] -> [self class viewDefinitionKind]}
-		otherwise: [^ self "Ignore. Used in tests."])).
+	self trigger: (ViRemovedPartEvent item: def kind: self class definitionKind).
