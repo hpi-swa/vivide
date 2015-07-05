@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"organizer" ],
+		"organizer",
+		"profile",
+		"newOrganizer",
+		"newProfile" ],
 	"name" : "ViQuerySerializerTests",
 	"pools" : [
 		 ],

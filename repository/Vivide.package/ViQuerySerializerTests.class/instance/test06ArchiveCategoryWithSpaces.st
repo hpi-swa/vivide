@@ -2,13 +2,20 @@ tests
 test06ArchiveCategoryWithSpaces
 
 	| q |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
-	q organization: organizer; register.
-	q category: #'test category'.
+	q := [:ea | ea * ea] asScript.
+	q 
+		adoptOrganization: organizer;
+		id: #test05ArchiveCategory.
+		
+	q category: #'Dummy Project'.
+	q definition category: #'Dummy Project'.
+	
+	self serialize.
 
-	self
-		shouldnt: [
-			(ViQuerySerializer
-				fromOrganizer: organizer
-				intoArchive: self archive) serialize
-		] raise: Error.
+	self assert: (self archive class organization categories includes: #'*Dummy Project-steps').
+	self assert: (self archive class organization categories includes: #'*Dummy Project-definitions').
+	self assert: (self archive class organization categories includes: #'*Dummy Project-organization').
+
+	"Stoopid side-effects spoil the image. Clean it up again. *sigh*"
+	PackageOrganizer default unregisterPackageNamed: #'Dummy Project'.
+	(MCPackage named: #'Dummy Project') workingCopy unregister.

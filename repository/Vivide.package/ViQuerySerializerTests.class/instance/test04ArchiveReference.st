@@ -1,18 +1,22 @@
 tests
 test04ArchiveReference
 
-	| q newOrganization |
-	q := ViQueryStep reference: ViQueryStep defaultProperties.
-	q organization: organizer; register.
+	| script reference |
+	script := [:number | number * 2] asScript.
+	script id: #test04ArchiveReference.
+	reference := script asReference.
+	reference id: #test04ArchiveReferenceId.
+	
+	self assert: 0 equals: organizer orderedSteps size.
+	script adoptOrganization: organizer.
+	self assert: 1 equals: organizer orderedSteps size.
+	reference adoptOrganization: organizer.
+	self assert: 2 equals: organizer orderedSteps size.
+	
+	self serialize.
+	self assert: 2 equals: organizer orderedSteps size.
 
-	(ViQuerySerializer
-		fromOrganizer: organizer
-		intoArchive: self archive) serialize.
+	self merge.
 
-	newOrganization := ViQueryOrganizer new.
-
-	(ViQuerySerializer
-		fromArchive: self archive
-		intoOrganizer: newOrganization) merge.
-
-	self assert: (newOrganization stepById: q id) reference == (newOrganization stepById: q reference id).
+	self assert: 2 equals: newOrganizer orderedSteps size.
+	self assert: (newOrganizer stepById: reference id) reference == (newOrganizer stepById: script id).

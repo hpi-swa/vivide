@@ -1,9 +1,11 @@
 tests
 test01Archive
 
-	| q q2 newOrganization |
-	q := ViQueryStep collect: '[:morph | morph submorphs]'.
-	q organization: organizer; register.
+	| q q2 |
+	q := {
+		[:morph | morph submorphs].
+		[:morph | #text -> morph printString]} asScript.
+	q adoptOrganization: organizer.
 	
 	q id: #test01Archive.
 	
@@ -11,24 +13,19 @@ test01Archive
 		assert: (self archive class organization listAtCategoryNamed: 'steps') isEmpty;
 		assert: (self archive class organization listAtCategoryNamed: 'definitions') isEmpty.
 	
-	(ViQuerySerializer
-		fromOrganizer: organizer
-		intoArchive: self archive) serialize.
+	self serialize.
 
 	self
-		assert: 1 equals: (self archive class organization listAtCategoryNamed: 'steps') size;
+		assert: 2 equals: (self archive class organization listAtCategoryNamed: 'steps') size;
 		assert: 2 equals: (self archive class organization listAtCategoryNamed: 'definitions') size.
-		
-	newOrganization := ViQueryOrganizer new.
 	
-	(ViQuerySerializer
-		fromArchive: self archive
-		intoOrganizer: newOrganization) merge.
-
-	q2 := newOrganization stepById: q id.
+	self merge.
+	
+	q2 := newOrganizer stepById: q id.
 	
 	self
 		assert: q2 ~~ q;
 		assert: q2 definition ~~ q definition;
-		assert: q2 viewDefinition ~~ q viewDefinition;
-		assert: q2 = q.
+		assert: q2 properties = q properties;
+		assert: q2 sourceCode = q sourceCode;
+		assert: (q2 definition isKindOf: q definition class).

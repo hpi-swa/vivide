@@ -2,16 +2,20 @@ tests
 test05ArchiveCategory
 
 	| q |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
-	q organization: organizer; register.
-
-	q category: #test.
-	q definition category: #test.
+	q := [:ea | ea * ea] asScript.
+	q 
+		adoptOrganization: organizer;
+		id: #test05ArchiveCategory.
+		
+	q category: #DummyProject.
+	q definition category: #DummyProject.
 	
-	(ViQuerySerializer
-		fromOrganizer: organizer
-		intoArchive: self archive) serialize.
+	self serialize.
 
-	self assert: (self archive class organization categories includes: #'*test-steps').
-	self assert: (self archive class organization categories includes: #'*test-definitions').
-	self assert: (self archive class organization categories includes: #'*test-organization').
+	self assert: (self archive class organization categories includes: #'*DummyProject-steps').
+	self assert: (self archive class organization categories includes: #'*DummyProject-definitions').
+	self assert: (self archive class organization categories includes: #'*DummyProject-organization').
+	
+	"Stoopid side-effects spoil the image. Clean it up again. *sigh*"
+	PackageOrganizer default unregisterPackageNamed: #DummyProject.
+	(MCPackage named: #DummyProject) workingCopy unregister.

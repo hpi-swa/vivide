@@ -1,38 +1,23 @@
 tests
 test02ArchiveOrder
 
-	| q1 q2 newOrganization |
-	q1 := ViQueryStep collect: '[:morph | morph submorphs]'.
+	| q1 q2 |
+	q1 := {[:morph | morph submorphs] -> {#priority -> 10}} asScript.
 	q1
-		organization: organizer;
-		register;
+		adoptOrganization: organizer;
 		id: #b.
-	q1 definition
-		organization: organizer;
-		register;
-		id: #z.
-	"Default view: q viewDefinition id == #treeView"
-	organizer registerDefinition: q1 viewDefinition.
+	q1 definition id: #z.
 	
-	q2 := ViQueryStep collect: '[:ea | ea * ea]'.
+	q2 := {[:ea | ea * ea] -> {#priority -> 20}} asScript.
 	q2
-		organization: organizer;
-		register;
+		adoptOrganization: organizer;
 		id: #a.
+	q2 definition id: #x.
 	
 	self
 		assert: ({q1.q2} hasEqualElements: organizer orderedSteps);
-		assert: q1 viewDefinition == q2 viewDefinition;
-		assert: ({q1 definition.q1 viewDefinition} hasEqualElements: organizer orderedDefinitions).
-		
-	(ViQuerySerializer
-		fromOrganizer: organizer
-		intoArchive: self archive) serialize.
+		assert: ({q1 definition.q2 definition} includesAllOf: organizer orderedDefinitions).
 	
-	newOrganization := ViQueryOrganizer new.
+	self serialize; merge.
 	
-	(ViQuerySerializer
-		fromArchive: self archive
-		intoOrganizer: newOrganization) merge.
-	
-	self assert: (organizer orderedSteps hasEqualElements: newOrganization orderedSteps).
+	self assert: (organizer orderedSteps hasEqualElements: newOrganizer orderedSteps).
