@@ -1,17 +1,27 @@
-as yet unclassified
+tests
 test06ReferencedProperties
 
-	| q1 p1 ref p2 |
-	q1 := ViQueryStep collect: '[:num | num * num]'.
-	p1 := ViQueryStep property: '[:num | num asString]'.
-	q1 next: p1.
-	ref := ViQueryStep reference: q1.
-	p2 := ViQueryStep property: '[:num | num asString size asString]'.
-	ref next: p2.
+	| inner outer |
+	inner := {
+		[:num | num * num] -> {#id -> #inner}.
+		[:num | #value -> num sqrt]} asScript.
 	
-	sut := ViQueryInterpreter on: (ViQueryStep use: #(1 2 3 4) in: ref).
+	"To actually find #inner and create a reference to it"
+	ViActiveOrganizer
+		value: inner organization
+		during: [outer := {
+			#inner.
+			[:num | #stringSize -> num asString size]} asScript].
+	outer adoptOrganization: inner organization.
+	
+	"Did our construction work?"
+	self assert: outer isReference.
+	self assert: outer reference == inner.
+	
+	sut := ViQueryInterpreter on: (ViQueryStep use: #(1 2 3 4) in: outer).
 	sut upToNextProperties.
 
 	self
-		assert: ref isHomogeneous not;
-		assert: 6 equals: (sut propertiesFor: 16 "4*4") size.
+		assert: outer isHomogeneous;
+		assert: 4 equals: ((sut propertiesFor: 16 "sqrt(16)") at: #'1_value');
+		assert: 2 equals: ((sut propertiesFor: 16 "'16' size") at: #'2_stringSize').

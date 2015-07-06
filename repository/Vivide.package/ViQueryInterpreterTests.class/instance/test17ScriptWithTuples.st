@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test17ScriptWithTuples
 
 	| q1 q2 |

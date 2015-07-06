@@ -1,9 +1,11 @@
-as yet unclassified
+tests
 test09FlattenInput
 
 	| q |
-	q := [:num | num * num].
-	sut := ViQueryInterpreter on: (ViQueryStep use: #((1 2)(3 4)) in: q).
-	sut upToEnd.
+	q := [:morph | morph color] asScript.
+	sut := ViQueryInterpreter on: (ViQueryStep use: {{Morph new. Morph new}. {Morph new. Morph new}} in: q).
 
-	self assert: (sut allObjects hasEqualElements: #(1 4 9 16)).
+	"There is no auto-magic flattening of input here."
+	self
+		should: [sut upToEnd]
+		raise: Error.

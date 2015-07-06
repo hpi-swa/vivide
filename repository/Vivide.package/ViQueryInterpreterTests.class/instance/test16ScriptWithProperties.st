@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test16ScriptWithProperties
 
 	| q1 q2 |

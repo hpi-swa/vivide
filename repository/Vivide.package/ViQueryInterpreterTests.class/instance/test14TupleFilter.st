@@ -1,10 +1,12 @@
-as yet unclassified
+tests
 test14TupleFilter
 
 	| q |
-	q := ViQueryStep convert: (
-		[:a :b | a >= b ifTrue: [#()] ifFalse: [{a.b}]] -> {{Integer.Integer}.{Integer.Integer}}).
-	sut := ViQueryInterpreter on: (ViQueryStep use: #((1 2 3 4)(1 2 3 4)) in: q).
+	q := {[:a :b | a >= b
+			ifTrue: [#()]
+			ifFalse: [{a.b} asTuples]]} asScript.
+	
+	sut := ViQueryInterpreter on: (ViQueryStep use: #((1 2 3 4)(1 2 3 4)) asTuples in: q).
 	sut upToNextProperties.
 	
 	self

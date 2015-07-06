@@ -1,8 +1,8 @@
-as yet unclassified
+tests
 test10FlattenOutput
 
 	| q |
-	q := [:num | {num.num}].
+	q := [:num | {num.num}] asScript.
 	sut := ViQueryInterpreter on: (ViQueryStep use: #(1 2 3 4) in: q).
 	sut upToEnd.
 

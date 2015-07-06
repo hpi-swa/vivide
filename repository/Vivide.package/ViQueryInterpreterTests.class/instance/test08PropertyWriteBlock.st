@@ -1,14 +1,18 @@
-as yet unclassified
+tests
 test08PropertyWriteBlock
 
 	| q m b |
-	q := ViQueryStep property: '[:m | #color -> [m color] -> [:newColor | m color: newColor]]'.
+	q := [:morph | 
+		#color 
+			-> [morph color] 
+			<- [:newColor | morph color: newColor]] asScript.
 	m := Morph new.
 	
 	sut := ViQueryInterpreter on: (ViQueryStep use: {m} in: q).
 	sut upToNextProperties.
 	
-	b := sut properties values first first first first value.
+	"Expected block: [:object :isSet | ... ]"
+	b := (sut propertiesFor: m) at: #color.
 	
 	b value: Color yellow value: true.
 	self assert: m color = Color yellow.

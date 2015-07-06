@@ -1,7 +1,7 @@
 instance creation - OLD
-use: someObjects in: aQueryOrId
+use: someObjects in: script
 
 	^ ViQueryFillStep new
 		objects: someObjects;
-		next: (self convert: aQueryOrId);
+		next: script asScript;
 		yourself

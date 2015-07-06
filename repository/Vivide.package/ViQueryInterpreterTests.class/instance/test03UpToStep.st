@@ -2,8 +2,8 @@ tests
 test03UpToStep
 
 	| q1 q2 q3 |
-	q2 := ViQueryStep collect: '[:number | number * number]'.
-	q3 := ViQueryStep collect: '[:number | number - 1]'.
+	q2 := [:number | number * number] asScript.
+	q3 := [:number | number - 1] asScript.
 	
 	q2 next: q3. q3 next: q2.
 	q1 := ViQueryStep use: #(1 2 3 4) in: q2.
