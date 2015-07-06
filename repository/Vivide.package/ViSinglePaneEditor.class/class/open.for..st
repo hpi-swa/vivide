@@ -1,4 +1,4 @@
 instance creation
-open: query for: objects
+open: symbolOrBlockOrScript for: objects
 
-	^ (self new: query for: objects) openInWindow
+	^ (self new: symbolOrBlockOrScript for: objects) openInWindow

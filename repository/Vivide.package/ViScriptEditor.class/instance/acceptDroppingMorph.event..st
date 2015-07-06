@@ -2,7 +2,11 @@ as yet unclassified
 acceptDroppingMorph: aTransferMorph event: evt
 	"Connect dropped script."
 	
-	| script |
+	| script reference |
 	script := aTransferMorph passenger.
-	script next: self object asReference.
+	
+	reference := self object asReference.
+	reference adoptOrganization: script organization.
+	
+	script next: reference.
 	aTransferMorph source requestArtifact: script next.  

@@ -1,4 +1,4 @@
 *vivide-queries
 openScript
 
-	^ self openQuery
+	^ self asScript openScript

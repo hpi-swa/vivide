@@ -13,5 +13,5 @@ chooseScriptFor: objects
 	
 	^ pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
-		thenNotify: [:script | script openQueryWith: objects]
+		thenNotify: [:script | script openScriptWith: objects]
 		with: #value:.

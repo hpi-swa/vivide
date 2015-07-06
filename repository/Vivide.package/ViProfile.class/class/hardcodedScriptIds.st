@@ -9,8 +9,7 @@ hardcodedScriptIds
 	| scriptSelectors scriptIds |
 	scriptSelectors := OrderedCollection new.
 	ViAbstractQueryPart withAllSubclassesDo: [:cls |
-		#("new style" asScript openScript
-		"old/deprecated style" asQuery openQuery) in: [:tokens |
+		#(asScript openScript) in: [:tokens |
 			scriptSelectors addAll: (cls selectors select: [:symbol |
 				tokens anySatisfy: [:token |
 					symbol includesSubstring: token caseSensitive: false]])]].
@@ -20,7 +19,7 @@ hardcodedScriptIds
 
 	scriptIds := IdentitySet new.
 	SystemNavigation default allSelectorsAndMethodsDo: [:b :s :method |
-		(method literals includesAnyOf: scriptSelectors) ifTrue: [
+		(b isTestClass not and: [method literals includesAnyOf: scriptSelectors]) ifTrue: [
 			| ast |
 			ast := RBParser parseMethod: method getSource asString.
 			ast nodesDo: [:node |

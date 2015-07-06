@@ -1,8 +1,8 @@
 as yet unclassified
-openQueryWith: someObjects
+openScriptWith: someObjects
 	"Idiomatic with String, BlockClosure, etc."
 
 	^ VivideLight active ifNotNil: [:vivide |
 		vivide
-			openQuery: self
+			openScript: self
 			withObjects: someObjects]

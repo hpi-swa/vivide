@@ -1,4 +1,4 @@
 *vivide-queries
 openScriptWith: someObjects
 
-	^ self openQueryWith: someObjects  
+	^ self asScript openScriptWith: someObjects

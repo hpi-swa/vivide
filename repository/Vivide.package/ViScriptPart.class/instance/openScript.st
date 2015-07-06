@@ -1,4 +1,0 @@
-opening
-openScript
-
-	^ self openQuery

@@ -7,7 +7,7 @@ makeConvenient: menu
 		queryMenu
 			add: query nextLabel
 			target: VivideLight active
-			selector: #openQueryAtHand:
+			selector: #openScriptAtHand:
 			argument: query.
 		queryMenu lastItem icon: (query nextIcon ifNil: [ViIcons blankIcon])].
 			

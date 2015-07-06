@@ -4,7 +4,7 @@ currentQueryOrReopen: aQueryStep
 
 	Sensor shiftPressed
 		ifFalse: [self currentQuery: aQueryStep]
-		ifTrue: [aQueryStep openQueryWith: self objects].
+		ifTrue: [aQueryStep openScriptWith: self objects].
 
 	ViLoggingService trigger: {
 		#message -> 'Script chosen from list.'.

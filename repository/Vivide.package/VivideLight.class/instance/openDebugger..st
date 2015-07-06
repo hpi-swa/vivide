@@ -5,7 +5,7 @@ openDebugger: aDebugger
 	#debugger asScript ifNotNil: [:script |
 		aDebugger fullyExpandStack.
 		^ self
-			openQuery: script
+			openScript: script
 			withObjects: {aDebugger}].
 	
 	

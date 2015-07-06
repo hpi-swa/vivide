@@ -3,7 +3,7 @@ new: symbolOrBlockOrScript for: objects
 
 	| instance script pane |
 	instance := self new.
-	script := ViQueryStep convert: symbolOrBlockOrScript.
+	script := symbolOrBlockOrScript asScript.
 	pane := ViPane new
 		objects: objects;
 		queries: [script organization orderedSteps];
