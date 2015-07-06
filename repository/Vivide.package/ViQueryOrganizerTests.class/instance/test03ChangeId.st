@@ -2,15 +2,11 @@ tests
 test03ChangeId
 
 	| q d |
-	q := ViQueryStep collect: '[:morph | morph submorphs]'.
+	q := [:morph | morph submorphs] asScript.
 	d := q definition.
 	
-	q organization: sut.
-	d organization: sut.
-	
-	q register.
-	d register.
-	
+	sut := q organization.
+			
 	q id: #foobar.
 	d id: #foobar.
 	

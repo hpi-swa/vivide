@@ -2,9 +2,9 @@ tests
 test11Category
 
 	| q |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
-	q organization: sut; register.
-	
+	q := [:ea | ea * ea] asScript.
+	q adoptOrganization: sut.
+		
 	self assert: q category isNil.
 	q category: #test.
 	self

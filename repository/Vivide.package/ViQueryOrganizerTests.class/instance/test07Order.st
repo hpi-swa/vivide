@@ -2,18 +2,12 @@ tests
 test07Order
 
 	| q1 q2 |
-	q1 := (ViQueryStep collect: '[:ea | ea * ea]')
-		organization: sut;
-		register.
-	q2 := (ViQueryStep collect: '[:morph | morph submorphs]')
-		organization: sut;
-		register.
+	q1 := {[:ea | ea * ea] -> {#priority -> 50}} asScript.
+	q2 := {[:morph | morph submorphs] -> {#priority -> 10}} asScript.
+	
+	q1 adoptOrganization: sut.
+	q2 adoptOrganization: sut.
+	
 	self
-		assert: sut orderedSteps first == q1;
-		assert: sut orderedSteps second == q2.
-		
-	q2 definition organization: sut; register.
-	q1 definition organization: sut; register.
-	self
-		assert: sut orderedDefinitions first == q2 definition;
-		assert: sut orderedDefinitions second == q1 definition.
+		assert: sut orderedSteps first == q2;
+		assert: sut orderedSteps second == q1.

@@ -1,9 +1,9 @@
 tests
-test13CategoryIdChnage
+test13CategoryIdChange
 
 	| q |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
-	q organization: sut; register.
+	q := [:ea | ea * ea] asScript.
+	q adoptOrganization: sut.
 
 	q id: #test13CategoryIdChnage.
 	self assert: q category isNil.

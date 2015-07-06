@@ -2,13 +2,13 @@ tests
 test01Registration
 
 	| q |
-	q := ViQueryStep collect: '[:morph | morph submorphs]'.
-	q organization: sut.
+	q := [:morph | morph submorphs] asScript.
+
+	q adoptOrganization: sut.	
+	self assert: (sut stepById: q id) notNil.
 	
+	sut unregisterStep: q.
 	self assert: (sut stepById: q id) isNil.
 	
-	q register.
+	sut registerStep: q.
 	self assert: (sut stepById: q id) == q.
-	
-	q unregister.
-	self assert: (sut stepById: q id) isNil.

@@ -2,15 +2,11 @@ tests
 test15CategoryNamespaces
 
 	| q |
-	q := ViQueryStep collect: '[:ea | ea * ea]'.
+	q := [:ea | ea * ea] asScript.
 	q
-		organization: sut;
-		id: #test;
-		register.
-	q definition
-		organization: sut;
-		id: #test;
-		register.
+		adoptOrganization: sut;
+		id: #test.
+	q definition id: #test.
 		
 	q category: #foo.
 	q definition category: #bar.

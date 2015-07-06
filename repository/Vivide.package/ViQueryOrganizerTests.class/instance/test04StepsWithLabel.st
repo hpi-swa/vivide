@@ -1,9 +1,9 @@
 tests
 test04StepsWithLabel
 
-	| q d |
-	q := ViQueryStep collect: '[:morph | morph submorphs]'.
-	q organization: sut; register.	
+	| q |
+	q := [:morph | morph submorphs] asScript.
+	sut := q organization.	
 	
 	self assert: sut stepsWithLabel isEmpty.
 	

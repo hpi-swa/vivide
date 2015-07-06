@@ -2,15 +2,11 @@ tests
 test02Namespaces
 
 	| q |
-	q := ViQueryStep collect: '[:morph | morph submorphs]'.
+	q := [:morph | morph submorphs] asScript.
 	q id: #foobar.
 	q definition id: #foobar.
 
-	q organization: sut.
-	q definition organization: sut.
-	
-	q register.
-	q definition register.
+	sut := q organization.
 	
 	self
 		assert: (sut stepById: q id) == q;
