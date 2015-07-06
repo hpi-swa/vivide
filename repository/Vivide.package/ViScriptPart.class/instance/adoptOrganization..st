@@ -6,4 +6,5 @@ adoptOrganization: aQueryOrganizer
 	
 	self flag: #duplicateCheckMissing. "mt: See implementation of ViQueryStep. Should be also warn about id clashes here?"
 	self allStepsDo: [:step |
-		step definition adoptOrganization: aQueryOrganizer].
+		step organization == aQueryOrganizer ifTrue: [
+			step definition adoptOrganization: aQueryOrganizer]].

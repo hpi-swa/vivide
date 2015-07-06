@@ -11,6 +11,8 @@ test15AllStepsDo
 	q1 next: p.
 	p next: q2.
 	q2 next: q1.
+	q1 adoptOrganization: q1 organization.
+	
 	count := 0.
 	
 	q1 allStepsDo: [:step | count := count + 1].

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test05AsScript
 
 	[:num | num * num] asScript in: [:script |

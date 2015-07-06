@@ -21,6 +21,8 @@ test10MaxPropertyCount
 	q1 next: r1.
 	r1 next: p1.
 	p1 next: nil.
+	q1 adoptOrganization: q1 organization.
+	p2 adoptOrganization: q1 organization.
 	self assert: 2 equals: q1 maxPropertyCount.
 	
 	p1 next: r1.
