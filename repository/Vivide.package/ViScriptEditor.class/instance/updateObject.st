@@ -2,6 +2,8 @@ updating
 updateObject
 
 	| spec |
+	self setProperty: #isUpdating toValue: true.
+	
 	spec := Compiler evaluate: self script.
 	"<block> -> <array> OR <symbol> -> <array> OR <symbol>"
 	
@@ -20,3 +22,5 @@ updateObject
 
 	"Remind the user to set the input kind."
 	self hasInputKind ifFalse: [self addHintForInputKindTuple].
+
+	self removeProperty: #isUpdating.

@@ -2,6 +2,14 @@ initialization
 initializeArtifact
 
 	| container |
+
+	ViQueryChangeNotifier uniqueInstance
+		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
+	ViQueryChangeNotifier uniqueInstance
+		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier definitionKind
+		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
+		
 	edit := ViSourceCodeEdit new
 		hResizing: #spaceFill;
 		outerBorderWidth: 0;

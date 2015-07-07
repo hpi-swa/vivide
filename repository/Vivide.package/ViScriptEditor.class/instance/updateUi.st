@@ -1,6 +1,8 @@
 updating
 updateUi
 
-	(self object valueOfProperty: #isProperty) == true
-		ifTrue: [edit color: (Color gray: 0.90)]
-		ifFalse: [edit color: Color white].
+	self object ifNil: [^ self].
+
+	self object isPropertyExtraction
+		ifTrue: [self color: (Color gray: 0.97). edit color: (Color gray: 0.97)]
+		ifFalse: [self color: Color white. edit color: Color white].

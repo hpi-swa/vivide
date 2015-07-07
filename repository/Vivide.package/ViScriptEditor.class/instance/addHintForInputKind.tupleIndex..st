@@ -2,6 +2,8 @@ support - input kind
 addHintForInputKind: kind tupleIndex: index
 
 	| buttons |
+	kind ifNil: [^ self "Ignore"].
+	
 	buttons := kind withAllSuperclasses collect: [:class |
 		| btn |
 		btn := UiToolButton new
