@@ -6,7 +6,9 @@ setProperty: property toValue: newValue
 		
 		super setProperty: property toValue: newValue.
 		
-		self notifier
+		"The #isNew property is for temporary use only."
+		self flag: #refactor. "mt: Find another way to store #isNew property?"
+		property ~= #isNew ifTrue: [self notifier
 			stepPropertiesChanged: self
 			from: {property -> oldValue}
-			to: {property -> newValue}].  
+			to: {property -> newValue}]].  

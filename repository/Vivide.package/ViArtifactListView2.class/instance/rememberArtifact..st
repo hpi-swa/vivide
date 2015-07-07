@@ -1,4 +1,5 @@
 as yet unclassified
 rememberArtifact: anArtifactContainer
 
-	ViProfile active closedObjects addObject: {anArtifactContainer object}.
+	ViProfile active ifNotNil: [:profile |
+		profile closedObjects addObject: {anArtifactContainer object}].

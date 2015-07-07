@@ -8,7 +8,8 @@ convert: object
 			ifTrue: [
 				"Set the given associations as properties: [:n | n * n] -> {#foo -> 5. #bar -> 7}"
 				(self convert: object key) in: [:script |
-					object value do: [:property |
-						script setProperty: property key toValue: property value].
+					script notifier doSilently: [
+						object value do: [:property |
+							script setProperty: property key toValue: property value]].
 					script]]]]
 		ifTrue: [super convert: object]

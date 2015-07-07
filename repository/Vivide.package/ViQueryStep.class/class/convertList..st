@@ -11,9 +11,11 @@ convertList: someObjects
 					ifFalse: [stepOrIndex isDefault
 						ifTrue: [stepOrIndex asReference]
 						ifFalse: [stepOrIndex]]].
-			steps overlappingPairsDo: [:s1 :s2 | s1 next: s2].
 			
 			"It is very important to give all script parts the same organization."
-			steps first adoptOrganization: steps first organization.
+			steps do: [:step | step adoptOrganization: steps first organization].
 			
+			steps first notifier doSilently: [
+				steps overlappingPairsDo: [:s1 :s2 | s1 next: s2]].
+						
 			steps first]

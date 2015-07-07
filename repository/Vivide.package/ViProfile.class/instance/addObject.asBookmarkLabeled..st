@@ -1,4 +1,4 @@
-as yet unclassified
+add/remove
 addObject: anObject asBookmarkLabeled: aLabel
 
 	| state |

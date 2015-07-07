@@ -1,9 +1,12 @@
-as yet unclassified
+initialization
 initializeBasicBookmarks
 
-	self
-		addWorkspace;
-		addTranscript;
-		addBlockForNewSnippet;
-		addBlockForNewClass;
-		addBlockForNewMemo.
+	ViActiveOrganizer
+		value: self organization
+		during: [
+			self
+				addWorkspace;
+				addTranscript;
+				addBlockForNewSnippet;
+				addBlockForNewClass;
+				addBlockForNewMemo].

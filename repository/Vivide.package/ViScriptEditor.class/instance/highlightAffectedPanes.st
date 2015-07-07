@@ -2,6 +2,7 @@ as yet unclassified
 highlightAffectedPanes
 
 	self object ifNil: [^ self].
+	VivideLight active ifNil: [^ self].
 
 	self discardPaneHighlights.
 

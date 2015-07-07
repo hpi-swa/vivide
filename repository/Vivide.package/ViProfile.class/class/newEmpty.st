@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newEmpty
 
-	^ self basicNew initializeEmpty
+	^ self new

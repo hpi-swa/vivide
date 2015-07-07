@@ -11,5 +11,6 @@ postCopy
 	self organization: ViQueryOrganizer new.
 	self register.
 
-	self setCreationInformation.
-	self setProperty: #copyOf toValue: oldId.
+	self notifier doSilently: [
+		self setCreationInformation.
+		self setProperty: #copyOf toValue: oldId].

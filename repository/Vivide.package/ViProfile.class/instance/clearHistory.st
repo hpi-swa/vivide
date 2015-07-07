@@ -1,4 +1,4 @@
-as yet unclassified
+history
 clearHistory
 
 	self recentClasses clear.
