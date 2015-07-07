@@ -1,4 +1,4 @@
 tests
 test14DefaultPropertiesIdentity
 
-	self assert: ViQueryStep defaultProperties == ViQueryStep defaultProperties.
+	self assert: #defaultProperties asScript == #defaultProperties asScript.

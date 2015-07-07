@@ -7,13 +7,14 @@ test08InterpretUpToSelf
 	script := {
 		[:num | num * 2].
 		[:num | num + 2].
+		[:num | #text -> num printString]
 	} asScript.
 
 	view
 		addObject: #(1 2 3 4);
 		openArtifacts: script steps.
 	
-	self assert: 3 equals: view artifactContainers size.
+	self assert: 4 equals: view artifactContainers size.
 	
 	editor := view artifactContainers second.
 	editor interpretUpToSelf in: [:interpreter |

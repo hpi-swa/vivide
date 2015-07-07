@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut" ],
+		"sut",
+		"profile" ],
 	"name" : "ViQueryNodeTests",
 	"pools" : [
 		 ],

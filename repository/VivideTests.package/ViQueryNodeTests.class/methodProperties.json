@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mt 8/22/2013 15:21:49.18",
+		"performTest" : "mt 7/7/2015 16:36",
+		"setUp" : "mt 7/7/2015 16:10",
 		"simulateSystemChangeAndCallbacks" : "mt 7/3/2015 13:21",
 		"tearDown" : "mt 9/6/2013 18:50:48.486",
 		"test01EmptyQuery" : "mt 9/6/2013 17:41:36.181",

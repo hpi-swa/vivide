@@ -1,6 +1,5 @@
-running
+as yet unclassified
 setUp
 
 	super setUp.
-	sut := ViQueryNode new.
 	profile := ViProfile newMinimal.

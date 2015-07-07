@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut" ],
+		"sut",
+		"organization" ],
 	"name" : "ViQueryStepTests",
 	"pools" : [
 		 ],

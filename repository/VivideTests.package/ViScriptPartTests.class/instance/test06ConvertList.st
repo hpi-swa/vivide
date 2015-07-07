@@ -1,6 +1,8 @@
 tests
 test06ConvertList
 
+	self assert: #identityTest asScript notNil.
+
 	(ViScriptPart convertList: {
 		[:num | num * num].
 		[:num | #text -> num asString].
