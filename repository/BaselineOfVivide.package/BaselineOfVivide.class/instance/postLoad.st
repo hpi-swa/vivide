@@ -12,8 +12,10 @@ postLoad
 	(Smalltalk at: #ViToolSet ifAbsent: [])
 		ifNotNil: [:ts | ToolSet default: ts].
 
-	VivideLight profiles first in: [:p |
+	VivideLight profiles add: ViProfile newMinimal.
+
+"	VivideLight profiles first in: [:p |
 		p bookmarks ifEmpty: [
 			ViActiveOrganizer
 				value: p organization
-				during: [p initializeBasicBookmarks]]].
+				during: [p initializeBasicBookmarks]]]."

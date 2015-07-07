@@ -84,25 +84,21 @@ baseline: spec
 				requires: #(Animations Signals 'VB-Regex' JSON Widgets Icons 'Refactoring-Core' OCompletion);
 				preLoadDoIt: #preLoad;
 				postLoadDoIt: #postLoad].
+		spec package: 'VivideScripts' with: [
+			spec requires: #(Vivide)].
+		spec package: 'VivideTests' with: [
+			spec requires: #(Vivide)].		
+		
 		spec package: 'VivideContextS' with: [
-			spec
-				requires: #('Vivide' ContextS2).
-			].
+			spec requires: #(Vivide ContextS2)].
 		spec package: 'VivideDynamicAnalysis' with: [
-			spec
-				requires: #('Vivide' 'Sight-Coverage' 'Sight-Callgraph' 'Sight-Tagging' 'SwaUtil').
-			].
+			spec requires: #('Vivide' 'Sight-Coverage' 'Sight-Callgraph' 'Sight-Tagging' 'SwaUtil')].
 				
-		spec package: 'VividePolySource' with: [
-			spec repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/vivide'.
-			spec requires: #(Vivide PolySource).
-			spec preLoadDoIt: #ensureAccessForVividePolySource].
-
 		spec
 			group: 'default' with: #('core');
 			group: 'core' with: #('Vivide');
-			group: 'dev' with: #('Fonts' FFI 'Vivide');
-			group: 'coexist' with: #('Vivide' 'VividePolySource');
+			group: 'dev' with: #('Fonts' FFI 'Vivide' 'VivideTests' 'VivideScripts');
 			group: 'dynamic' with: #('core' 'VivideDynamicAnalysis');
 			group: 'cop' with: #('core' 'VivideContextS');
-			group: 'TravisCI' with: #('Vivide')].
+			group: 'tests' with: #('VivideTests');
+			group: 'TravisCI' with: #('VivideTests')].
