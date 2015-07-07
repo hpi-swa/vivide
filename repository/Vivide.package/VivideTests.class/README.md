@@ -1,1 +1,0 @@
-Big integration tests for various Vivide components.

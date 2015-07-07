@@ -1,4 +1,0 @@
-support
-archive
-
-	^ self class
