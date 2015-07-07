@@ -7,8 +7,8 @@ interpretScriptReference
 		in: step organization.
 	
 	"Try lookup in current profile's organization."
-	(step isNil and: [stack top organization ~~ ViProfile active organization])
+	(step isNil and: [stack top organization ~~ (ViProfile active ifNotNil: #organization)])
 		ifTrue: [
 			step := stack top
 				referenceFor: objects values first
-				in: ViProfile active organization].
+				in: (ViProfile active ifNotNil: #organization)].
