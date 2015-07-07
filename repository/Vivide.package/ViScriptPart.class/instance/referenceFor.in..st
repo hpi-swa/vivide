@@ -5,4 +5,4 @@ referenceFor: someObjects in: anOrganization
 		ifEmpty: [nil]
 		ifNotEmpty: [:someIds | 
 			self flag: #duplication. "mt: See ViQueryStep class >> #convert:. Why not use id asScript ??"
-			anOrganization stepById: someIds first]
+			anOrganization ifNotNil: [:o | o stepById: someIds first]]

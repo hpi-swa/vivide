@@ -4,4 +4,4 @@ reference
 	
 	^ ((self referenceFor: #(1) in: self organization)
 		ifNil: [self referenceFor: #(1) in: ViQueryOrganizer active])
-		ifNil: [self referenceFor: #(1) in: ViProfile active organization]
+		ifNil: [self referenceFor: #(1) in: (ViProfile active ifNotNil: #organization)]
