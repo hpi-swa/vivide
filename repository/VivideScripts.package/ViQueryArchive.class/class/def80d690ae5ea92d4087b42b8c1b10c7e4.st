@@ -1,0 +1,5 @@
+definitions
+def80d690ae5ea92d4087b42b8c1b10c7e4
+	<definition>
+
+	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'23 September 2013 5:15:04 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#'80d690ae-5ea9-2d40-87b4-2b8c1b10c7e4'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:obj | {#icon -> ((obj at: #projectDescription) ifEmpty: [ViIcons blankIcon] ifNotEmpty: [UiSilkIcons commentIcon]). #balloonText -> (obj at: #projectDescription). #text -> (obj at: #path)}]'); add: (#mapType->#each); add: (#block->[:obj | {#icon -> ((obj at: #projectDescription) ifEmpty: [ViIcons blankIcon] ifNotEmpty: [UiSilkIcons commentIcon]). #balloonText -> (obj at: #projectDescription). #text -> (obj at: #path)}]); yourself)

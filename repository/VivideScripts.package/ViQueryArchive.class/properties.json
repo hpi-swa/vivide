@@ -1,0 +1,14 @@
+{
+	"category" : "VivideScripts-Squeak",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViQueryArchive",
+	"pools" : [
+		 ],
+	"super" : "ViScriptArchive",
+	"type" : "normal" }

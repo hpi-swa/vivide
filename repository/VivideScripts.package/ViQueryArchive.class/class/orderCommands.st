@@ -1,0 +1,5 @@
+organization
+orderCommands
+	<orderCommands>
+
+	^ #('command94f658350c5e014ea42c2408e26ff3b2' 'command81bfe1b01618de48a67d8913eb4b4564' 'command93bc2c1d521151468b304317d085c09d' 'command5b8a8a71a0bbb944bdc260b3f367317e' 'command4fea03ad94df94469c816ac378d2d0e5' 'commandc93610dc3aebb645bec6eb824792657c' 'commandbc70b4363a1c15468c932a855c00522d' 'command3d357a8bbafe604a94badc2941e88623' 'commandc6d3ac2885f2324a872510d7a20cab86' 'commandc49de43560650547ac1d1d78cb3cb0fb' 'commandd811a72faf5db5469bb9b0df038ec7f7' 'command9898b9d44d00954d98fd7ad14fbe2dee' 'command7c36df21eb06d842b04108f05ab93e93' 'command6f2a858ad1ec5f40a08438c8528d3b2f' 'commandfc22f15fedd2654bb9cf4162ea360191' )
