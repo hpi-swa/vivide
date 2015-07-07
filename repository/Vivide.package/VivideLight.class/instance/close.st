@@ -4,11 +4,11 @@ close
 
 	"No more dropping in the world."
 	self flag: #cleanUp. "mt: What about restoring the old state instead of reset?"
-	ViActiveVivide world resetTransferMorphConverter.
+	self world resetTransferMorphConverter.
 
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
-	ViActiveVivide world == ActiveWorld
+	self world == ActiveWorld
 		ifTrue: [ActiveHand removeKeyboardListener: self].
 
 	ActiveVivide == self

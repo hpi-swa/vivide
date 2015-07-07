@@ -14,4 +14,7 @@ initializeMinimal
 		addGroupsScript;
 		addExplorer;
 		addDefaultProperties;
-		addArtifacts.
+		addArtifacts;
+		
+		addPaneHierarchy.
+		"debugger"

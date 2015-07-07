@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test03OpenAllScriptParts
 
 	| script wnd pane |
@@ -10,6 +10,6 @@ test03OpenAllScriptParts
 	self assert: 2 equals: script allSteps size.
 
 	wnd := script explore.
-	pane := wnd editor inputPane.
+	pane := wnd editor pane.
 	
 	self assert: script allSteps size equals: pane objects size.

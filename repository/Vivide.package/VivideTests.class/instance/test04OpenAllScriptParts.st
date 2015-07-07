@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test04OpenAllScriptParts
 
 	| script wnd pane |
@@ -10,7 +10,7 @@ test04OpenAllScriptParts
 	self assert: 2 equals: script allSteps size.
 
 	wnd := #foobar explore. "some object"
-	pane := wnd editor inputPane.
+	pane := wnd editor pane.
 	
 	pane view openArtifact: script.
 	

@@ -1,6 +1,5 @@
-as yet unclassified
+support
 checkOrganizer
 	"Just some recurring checks whether the organizer is setup correctly for all tests."
 	
-	#(artifacts identity printString senders implementors)
-		do: [:id | self assert: id asScript notNil].
+	self assert: ViProfile active organization == ViActiveOrganizer value.

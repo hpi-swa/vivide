@@ -7,7 +7,8 @@
 	"commentStamp" : "<historical>",
 	"instvars" : [
 		"world",
-		"vivide" ],
+		"vivide",
+		"profile" ],
 	"name" : "VivideTests",
 	"pools" : [
 		 ],

@@ -9,7 +9,12 @@ setUp
 		color: Color blue;
 		viewBox: (0@0 extent: world extent).
 
-	vivide := VivideLight new.
-	vivide openInWorld: world.
+	profile := ViProfile newMinimal.
 
-	self checkOrganizer.
+	"Customized opening..."
+	vivide := VivideLight basicNew
+		profile: profile;
+		initialize;
+		yourself.
+	vivide openInWorld: world.
+	vivide initializeSystemChangeNotifications.

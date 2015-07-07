@@ -4,4 +4,8 @@ performTest
 	
 	ViActiveVivide
 		value: vivide
-		during: [super performTest]. 
+		during: [
+			self checkVivide.
+			self checkProfile.
+			self checkOrganizer.
+			super performTest]. 
