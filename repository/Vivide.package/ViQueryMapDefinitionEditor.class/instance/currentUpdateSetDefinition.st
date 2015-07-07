@@ -1,4 +1,0 @@
-accessing
-currentUpdateSetDefinition 
-
-	^ subscribeEdit definition

@@ -1,4 +1,0 @@
-accessing
-currentSubscribeCode
-
-	^ subscribeEdit theText

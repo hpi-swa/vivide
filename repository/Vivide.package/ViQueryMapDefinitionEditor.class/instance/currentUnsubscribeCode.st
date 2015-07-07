@@ -1,4 +1,0 @@
-accessing
-currentUnsubscribeCode
-
-	^ unsubscribeEdit theText
