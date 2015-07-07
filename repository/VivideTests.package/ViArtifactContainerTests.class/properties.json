@@ -1,0 +1,15 @@
+{
+	"category" : "VivideTests-Artifacts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"editor",
+		"window" ],
+	"name" : "ViArtifactContainerTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

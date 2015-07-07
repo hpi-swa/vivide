@@ -1,0 +1,17 @@
+{
+	"category" : "VivideTests-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"organizer",
+		"profile",
+		"newOrganizer",
+		"newProfile" ],
+	"name" : "ViQuerySerializerTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

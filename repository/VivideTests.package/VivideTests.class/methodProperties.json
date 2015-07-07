@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"checkOrganizer" : "mt 7/7/2015 14:04",
+		"checkProfile" : "mt 7/7/2015 12:27",
+		"checkVivide" : "mt 7/7/2015 12:32",
+		"performTest" : "mt 7/7/2015 12:31",
+		"setUp" : "mt 7/7/2015 12:37",
+		"tearDown" : "mt 7/7/2015 12:20",
+		"test01Open" : "mt 7/6/2015 10:45",
+		"test02OpenSpecificQuery" : "mt 7/7/2015 14:05",
+		"test03OpenAllScriptParts" : "mt 7/7/2015 14:09",
+		"test04OpenAllScriptParts" : "mt 7/7/2015 14:10" } }

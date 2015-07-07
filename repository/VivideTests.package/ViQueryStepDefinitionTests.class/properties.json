@@ -1,0 +1,16 @@
+{
+	"category" : "VivideTests-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sut",
+		"organization",
+		"notifier" ],
+	"name" : "ViQueryStepDefinitionTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

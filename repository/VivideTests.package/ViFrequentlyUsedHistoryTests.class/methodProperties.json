@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"orderedFrequencies" : "mt 2/26/2013 15:50:35.861",
+		"subjectClass" : "mt 2/25/2013 16:26:11.17",
+		"test01Frequency" : "mt 2/25/2013 16:51:15.908",
+		"test02FrequencyLimit" : "mt 2/25/2013 16:55:17.754",
+		"test03FrequencyNormalization" : "mt 2/26/2013 16:05:07.863",
+		"test04FrequencyNormalizationOnRemove" : "mt 2/26/2013 16:05:35.177",
+		"test05Equality" : "mt 2/26/2013 17:03:55.796",
+		"test07ChangeLimitLarge" : "mt 2/25/2013 16:32:28.457",
+		"test08Order" : "mt 2/25/2013 16:50:01.301" } }

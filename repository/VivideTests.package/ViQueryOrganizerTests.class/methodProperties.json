@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "mt 8/26/2013 13:17:29.461",
+		"tearDown" : "mt 12/19/2013 16:32:17.514",
+		"test01Registration" : "mt 7/6/2015 15:23",
+		"test02Namespaces" : "mt 7/6/2015 15:38",
+		"test03ChangeId" : "mt 7/6/2015 15:40",
+		"test04StepsWithLabel" : "mt 7/6/2015 15:45",
+		"test05ViewDefinitions" : "mt 7/6/2015 15:46",
+		"test06Archive" : "mt 2/5/2014 16:09:37.122",
+		"test07Order" : "mt 7/6/2015 15:50",
+		"test08ArchiveOrder" : "mt 2/5/2014 16:10:52.337",
+		"test09ArchiveProperties" : "mt 2/5/2014 16:11:51.113",
+		"test10ArchiveReference" : "mt 2/5/2014 16:12:42.136",
+		"test11Category" : "mt 7/6/2015 15:52",
+		"test12ArchiveCategory" : "mt 2/5/2014 16:13:38.099",
+		"test13CategoryIdChange" : "mt 7/6/2015 15:56",
+		"test14ArchiveCategoryWithSpaces" : "mt 2/5/2014 16:14:35.718",
+		"test15CategoryNamespaces" : "mt 7/6/2015 15:57" } }

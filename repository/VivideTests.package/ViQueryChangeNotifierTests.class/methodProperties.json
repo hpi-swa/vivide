@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"countAnswer:" : "mt 9/17/2013 08:25:54.159",
+		"setAnswer:" : "mt 9/17/2013 07:54:00.751",
+		"setUp" : "mt 7/2/2015 17:11",
+		"tearDown" : "mt 9/17/2013 08:04:48.63",
+		"test01RegisterStep" : "mt 7/2/2015 17:12",
+		"test02UnregisterStep" : "mt 7/2/2015 17:13",
+		"test03RegisterDefinition" : "mt 7/2/2015 17:13",
+		"test04UnregisterDefinition" : "mt 7/2/2015 17:14",
+		"test05ChangeLabel" : "mt 9/17/2013 08:03:25.631",
+		"test06ChangeIcon" : "mt 7/3/2015 09:02",
+		"test07ChangeDefinition" : "mt 9/17/2013 08:07:44.173",
+		"test08ChangeReference" : "mt 7/2/2015 17:20",
+		"test09ChangeSourceCode" : "mt 7/2/2015 17:23",
+		"test10ChangeMapType" : "mt 7/2/2015 17:24",
+		"test11CountStepEvents" : "mt 7/3/2015 08:04",
+		"test12CountDefinitionEvents" : "mt 7/3/2015 08:06",
+		"test13DoSilently" : "mt 7/3/2015 08:15",
+		"test14ChangeStepProperties" : "mt 7/3/2015 09:04",
+		"test15ChangeDefinitionProperties" : "mt 7/3/2015 09:05" } }
