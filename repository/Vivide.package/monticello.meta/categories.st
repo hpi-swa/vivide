@@ -29,3 +29,4 @@ SystemOrganization addCategory: #'Vivide-Experimentation'!
 SystemOrganization addCategory: #'Vivide-Data'!
 SystemOrganization addCategory: #'Vivide-Visualizations-Support'!
 SystemOrganization addCategory: #'Vivide-Voronoi'!
+SystemOrganization addCategory: #'Vivide-Squeak'!

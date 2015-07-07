@@ -1,5 +1,0 @@
-definitions
-defe75b20277d4fe24d8ad34f7a91ea05e6
-	<definition>
-
-	^ ((Dictionary new) add: (#class->ViQuerySnippetDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'6 June 2014 11:30:19 am'); yourself)); add: (#id->#'e75b2027-7d4f-e24d-8ad3-4f7a91ea05e6'); add: (#inputKind->RBRefactoring); add: (#block->nil); add: (#sourceCode->'RBRefactoringManager instance addRefactoring: self'); add: (#receiverIsCollection->false); yourself)
