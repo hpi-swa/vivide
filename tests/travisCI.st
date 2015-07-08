@@ -1,5 +1,5 @@
 | gitPath |
-Utilities authorName: 'travisCI'.
+Utilities setAuthorInitials: 'travisCI'.
 
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
