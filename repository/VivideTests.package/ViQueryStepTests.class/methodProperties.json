@@ -2,8 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 7/7/2015 16:56",
-		"setUp" : "mt 7/7/2015 16:59",
 		"test01Equality" : "mt 7/3/2015 10:07",
 		"test02Select" : "mt 11/13/2014 11:11:51.295",
 		"test03Sorted" : "mt 11/13/2014 11:13:32.94",

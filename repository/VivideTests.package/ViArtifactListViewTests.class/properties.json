@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"profile" ],
+		"sut" ],
 	"name" : "ViArtifactListViewTests",
 	"pools" : [
 		 ],
-	"super" : "UiTestCase",
+	"super" : "ViTestCase",
 	"type" : "normal" }

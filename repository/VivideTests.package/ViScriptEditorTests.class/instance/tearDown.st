@@ -1,4 +1,4 @@
-as yet unclassified
+running
 tearDown
 
 	ViQueryChangeNotifier uniqueInstance doSilently: [super tearDown].

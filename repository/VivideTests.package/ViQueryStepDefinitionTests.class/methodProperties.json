@@ -2,8 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 7/7/2015 17:00",
-		"setUp" : "mt 11/11/2014 17:01:22.126",
+		"setUp" : "mt 7/8/2015 10:14",
 		"test01BlockClosure" : "mt 11/11/2014 17:00:17.699",
 		"test02GuessType" : "mt 11/11/2014 17:03:54.999",
 		"test03SyntaxError" : "mt 8/22/2013 14:19:33.285",

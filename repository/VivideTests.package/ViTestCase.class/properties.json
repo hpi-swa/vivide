@@ -1,14 +1,14 @@
 {
-	"category" : "VivideTests-Scripts",
+	"category" : "VivideTests-Kernel",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut" ],
-	"name" : "ViQueryStepTests",
+		"organization" ],
+	"name" : "ViTestCase",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "TestCase",
 	"type" : "normal" }

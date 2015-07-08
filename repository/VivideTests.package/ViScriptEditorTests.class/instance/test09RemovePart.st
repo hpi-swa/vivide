@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test09RemovePart
 
 	| script view parts |

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test39DefaultOrganization
 	
 	sut := ViScriptPart new.

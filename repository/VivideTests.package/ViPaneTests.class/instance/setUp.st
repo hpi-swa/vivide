@@ -1,5 +1,5 @@
-as yet unclassified
+running
 setUp
 
 	super setUp.
-	profile := ViProfile newMinimal.
+	sut := ViPane new.

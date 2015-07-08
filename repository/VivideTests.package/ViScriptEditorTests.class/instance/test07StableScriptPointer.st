@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test07StableScriptPointer
 
 	| script old |

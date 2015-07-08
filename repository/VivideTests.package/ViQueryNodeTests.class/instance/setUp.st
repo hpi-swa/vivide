@@ -3,4 +3,3 @@ setUp
 
 	super setUp.
 	sut := ViQueryNode new.
-	profile := ViProfile newMinimal.

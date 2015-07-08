@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut",
-		"profile" ],
+		"sut" ],
 	"name" : "ViQueryInterpreterTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "ViTestCase",
 	"type" : "normal" }

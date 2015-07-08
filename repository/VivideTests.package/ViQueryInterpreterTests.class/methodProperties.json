@@ -2,8 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 7/7/2015 16:37",
-		"setUp" : "mt 7/7/2015 16:24",
 		"test01UpToNextProperties" : "mt 7/6/2015 11:08",
 		"test02UpToEnd" : "mt 7/6/2015 11:15",
 		"test03UpToStep" : "mt 7/6/2015 11:16",

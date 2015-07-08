@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test34Join
 
 	| o r e |

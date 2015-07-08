@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test38SharedProperties
 	"Query steps share properties with their definitions."
 

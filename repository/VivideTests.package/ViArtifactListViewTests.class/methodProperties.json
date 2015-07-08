@@ -2,9 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 7/7/2015 16:23",
-		"setUp" : "mt 7/7/2015 16:22",
-		"subjectClass" : "mt 4/25/2014 08:11:25.355",
+		"setUp" : "mt 7/8/2015 10:10",
 		"tearDown" : "mt 4/25/2014 08:38:29.734",
 		"test01Objects" : "mt 4/25/2014 08:14:36.891",
 		"test02AddObject" : "mt 4/25/2014 08:16:19.895",

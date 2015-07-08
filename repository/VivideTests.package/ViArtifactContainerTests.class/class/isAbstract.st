@@ -1,4 +1,4 @@
 testing
 isAbstract
 
-	^ self class == ViArtifactContainerTests
+	^ self == ViArtifactContainerTests

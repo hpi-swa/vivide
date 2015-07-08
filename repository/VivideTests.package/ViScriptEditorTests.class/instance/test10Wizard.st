@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test10Wizard
 
 	editor object: [:object | object] asScript.

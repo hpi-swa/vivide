@@ -1,4 +1,4 @@
-as yet unclassified
+support
 forceUpdate
 	"Pane updates are deferred."
 	

@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut",
-		"organization",
-		"notifier" ],
+		"sut" ],
 	"name" : "ViQueryStepDefinitionTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "ViTestCase",
 	"type" : "normal" }

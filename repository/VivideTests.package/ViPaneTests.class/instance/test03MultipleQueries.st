@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test03MultipleQueries
 
 	| q1 q2 |

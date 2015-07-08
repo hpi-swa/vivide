@@ -2,8 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"performTest" : "mt 7/6/2015 09:03",
-		"setUp" : "mt 7/7/2015 16:53",
+		"setUp" : "mt 7/8/2015 10:16",
 		"test01CopyWithDefinition" : "mt 10/10/2014 11:20:36.304",
 		"test02TemplateDetection" : "mt 10/10/2014 11:42:26.479",
 		"test03SourceCodeShort" : "mt 10/10/2014 12:03:08.249",

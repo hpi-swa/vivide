@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test35BaseClassWithTuples
 
 	| q |

@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"organization" ],
+		 ],
 	"name" : "ViScriptPartTests",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "ViTestCase",
 	"type" : "normal" }

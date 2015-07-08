@@ -2,4 +2,4 @@ as yet unclassified
 setUp
 
 	super setUp.
-	profile := ViProfile newMinimal.
+	sut := ViArtifactListView2 new.

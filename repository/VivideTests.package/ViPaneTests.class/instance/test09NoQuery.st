@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test09NoQuery
 	"No defaults. There should be at least one matching query."
 	

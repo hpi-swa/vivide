@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test08DefaultQuery
 
 	| q1 q2 |

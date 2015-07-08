@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test07KeepAddedQuery
 
 	| q1 q2 |
