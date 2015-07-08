@@ -11,6 +11,8 @@ Metacello new
   repository: 'filetree://', gitPath, '/vivide/repository';
   load: 'TravisCI'.
   
+(Smalltalk at: #MetacelloPlatform) current authorName: 'travisCI'.
+  
 "Run the tests"
 TravisCIHarness
   value: #( 'BaselineOfVivide' )
