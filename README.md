@@ -1,4 +1,4 @@
-#The VIVIDE Programming Environment
+![vivide-logo](images/logo.png)
 
 A programming environment and framework that supports *interactive*, *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk.
 
