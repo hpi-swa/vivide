@@ -1,5 +1,5 @@
 | gitPath |
-(Smalltalk at: #MetacelloPlatform) current authorName: 'travisCI'.
+Utilities authorName: 'travisCI'.
 
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
