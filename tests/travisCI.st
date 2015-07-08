@@ -1,4 +1,6 @@
 | gitPath |
+(Smalltalk at: #MetacelloPlatform) current authorName: 'travisCI'.
+
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
 Metacello new
@@ -10,8 +12,6 @@ Metacello new
   baseline: 'Vivide';
   repository: 'filetree://', gitPath, '/vivide/repository';
   load: 'TravisCI'.
-  
-(Smalltalk at: #MetacelloPlatform) current authorName: 'travisCI'.
   
 "Run the tests"
 TravisCIHarness
