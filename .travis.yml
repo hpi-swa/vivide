@@ -1,7 +1,7 @@
 language: erlang
 
 env:
-   - ST=Squeak-Trunk
+   - ST=Squeak-Trunk SCREENSHOT=60
 
 install:
    - export PROJECT_HOME="$(pwd)"
