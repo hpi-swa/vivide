@@ -1,4 +1,4 @@
 actions
 debugQuery
 
-	self debugQuery: self currentQuery.
+	^ self debugQuery: self currentQuery

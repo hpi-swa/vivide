@@ -4,24 +4,24 @@ scriptArtifacts: someObjects
 	
 	| objects script toolWnd editorWnd |
 	VivideLight useClassicMode
-		ifTrue: [^ self openArtifacts: someObjects]..
+		ifTrue: [^ self openArtifacts: someObjects].
 	
-	(ViQueryInterpreter isCollection: someObjects)
-		ifFalse: [objects := {someObjects}]. 
+	objects := someObjects asList.
 	
 	self flag: #evaluate. "mt: Unwrap name bindings."
 	objects := (self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
-		ifTrue: [someObjects collect: [:o | o value]] ifFalse: [someObjects].
+		ifTrue: [objects collect: [:o | o value]] ifFalse: [objects].
 	
 	script := [:object | object] asScript
 		setProperty: #isNew toValue: true;
 		yourself.
-		
+	
+	"Flatten nested collections if feasible."
+	objects := objects gather: [:o | o asList].
+	
 	toolWnd := ViSinglePaneEditor
 		open: script
 		for: objects.
-	editorWnd := ViSinglePaneEditor
-		open: #artifacts
-		for: (objects ifEmpty: [{}] ifNotEmpty: [{objects}]), script steps.
+	editorWnd := toolWnd editor pane debugQuery.
 
 	^ {toolWnd. editorWnd}

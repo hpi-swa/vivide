@@ -26,10 +26,6 @@ openArtifact: anObject
 		"See behavior of ViScriptEditor >> #onContextChanged."
 			steps size > 1 ifTrue: [^ self openArtifacts: steps]]].
 
-	object := (ViQueryInterpreter isCollection: object)
-		ifTrue: [object]
-		ifFalse: [{object}].
-
 	^ VivideLight useClassicMode
 		ifTrue: [self chooseScriptFor: object]
-		ifFalse: [ViSinglePaneEditor open: #artifacts for: object]
+		ifFalse: [ViSinglePaneEditor open: #artifacts for: {object}]

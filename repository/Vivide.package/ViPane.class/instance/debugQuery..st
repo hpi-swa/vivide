@@ -1,10 +1,8 @@
 actions
 debugQuery: aQuery
 
-	self owner ifNil: [^ self].
-		
-	ViSinglePaneEditor
+	^ ViSinglePaneEditor
 		open: #artifacts
 		for: (self objects
 			ifEmpty: [{}]
-			ifNotEmpty: [{self objects}]), aQuery steps.
+			ifNotEmpty: [{self objects}]), aQuery steps
