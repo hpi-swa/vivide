@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"forceUpdate" : "mt 7/3/2015 09:47",
-		"setUp" : "mt 7/8/2015 10:11",
-		"tearDown" : "mt 4/22/2014 18:38:21.834",
+		"setUp" : "mt 7/9/2015 14:54",
+		"tearDown" : "mt 7/9/2015 14:55",
 		"test01New" : "mt 11/25/2014 08:18:28.543",
 		"test02SingleQuery" : "mt 7/3/2015 09:23",
 		"test03MultipleQueries" : "mt 7/3/2015 09:26",
