@@ -1,13 +1,18 @@
 actions - editing
 proposeScriptTemplate
 
-	| spec properties |
+	| inner spec properties |
+	inner := edit theText asString.
 	properties := self object properties copy.
-	spec := ViScriptEditor templateForSourceCode: edit theText asString.
+	spec := ViScriptEditor templateForSourceCode: inner.
+	
+	"Insert missing curly brackets for property steps."
+	(spec value includesKey: #isProperty) ifTrue: [
+		edit theText: (ViScriptEditor wrapExtractionIntoArray: inner)].
 
 	"Merge proposed properties with existing ones."
 	spec value keysAndValuesDo: [:key :value |
-		properties at: key put: value].  
+		properties at: key put: value].
 
 	"New pointer."
 	script := spec key value, String cr, '-> ', (self propertiesToStringFrom: properties associations, self specialProperties).

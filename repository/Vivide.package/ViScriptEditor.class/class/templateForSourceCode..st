@@ -30,14 +30,9 @@ templateForSourceCode: code
 						
 						node arguments size = 0
 							ifTrue: [template := self templateWrapper]
-							ifFalse: [
-								(node children last "sequence" children first isMessage "->")
-									ifTrue: [template := node arguments size = 1
-										ifTrue: [self templateProperty]
-										ifFalse: [self templateTuplesProperty]]
-									ifFalse: [template := node arguments size = 1
-										ifTrue: [self templateProperties]
-										ifFalse: [self templateTuplesProperties]]]].  
+							ifFalse: [template := node arguments size = 1
+								ifTrue: [self templateProperties]
+								ifFalse: [self templateTuplesProperties]]].  
 	].
 
 	(node isMessage and: [node selector = #->]) ifTrue: [
