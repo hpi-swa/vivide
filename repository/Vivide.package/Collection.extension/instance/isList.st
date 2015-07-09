@@ -1,0 +1,4 @@
+*vivide
+isList
+
+	^ true
