@@ -6,9 +6,9 @@ test02TemplateDetection
 		'[:a :b | a - b]' -> ViScriptEditor templateTuples.
 		'[#(1 2 3 4 5)]' -> ViScriptEditor templateGlobal.
 		'[:morphs | morphs select: [:m | m color = Color yellow]]' -> ViScriptEditor templateAllAtOnce.
-		'[:m | #text -> m asString]' -> ViScriptEditor templateProperty.
+		'[:m | #text -> m asString]' -> ViScriptEditor templateProperties.
 		'[:m | { #text -> m asString. #icon -> nil }]' -> ViScriptEditor templateProperties.
-		'[:a :b | #text -> a asString]' -> ViScriptEditor templateTuplesProperty.
+		'[:a :b | #text -> a asString]' -> ViScriptEditor templateTuplesProperties.
 		'[:a :b | { #text -> a asString. #icon -> nil }]' -> ViScriptEditor templateTuplesProperties.
 		'[{#id -> #foo. #bar -> #baz}]' -> ViScriptEditor templateWrapper
 	} do: [:spec | | template |
