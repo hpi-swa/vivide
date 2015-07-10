@@ -10,9 +10,7 @@ test08InterpretUpToSelf
 		[:num | #text -> num printString]
 	} asScript.
 
-	view
-		addObject: #(1 2 3 4);
-		openArtifacts: script steps.
+	view objects: {#(1 2 3 4)}, script steps.
 	
 	self assert: 4 equals: view artifactContainers size.
 	

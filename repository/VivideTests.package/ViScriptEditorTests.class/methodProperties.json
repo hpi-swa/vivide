@@ -10,7 +10,10 @@
 		"test05UpdateOnChangedSourceCode" : "mt 7/7/2015 10:44",
 		"test06UpdateOnChangedProperties" : "mt 7/7/2015 10:46",
 		"test07StableScriptPointer" : "mt 7/7/2015 11:22",
-		"test08InterpretUpToSelf" : "mt 7/7/2015 17:03",
+		"test08InterpretUpToSelf" : "mt 7/10/2015 12:13",
 		"test09RemovePart" : "mt 7/7/2015 11:58",
 		"test10Wizard" : "mt 7/7/2015 11:52",
-		"test11AddArtifact" : "mt 7/7/2015 12:04" } }
+		"test11AddArtifact" : "mt 7/7/2015 12:04",
+		"test12InputKind" : "mt 7/10/2015 12:17",
+		"test13InputKindForTuples" : "mt 7/10/2015 12:21",
+		"test14StoreInputKindForTuples" : "mt 7/10/2015 12:21" } }
