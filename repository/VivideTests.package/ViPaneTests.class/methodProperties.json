@@ -15,4 +15,7 @@
 		"test08DefaultQuery" : "mt 7/3/2015 09:35",
 		"test09NoQuery" : "mt 11/25/2014 08:20:50.951",
 		"test10TupleInput" : "mt 7/3/2015 09:38",
-		"test11ViewUpdate" : "mt 7/3/2015 09:53" } }
+		"test11ViewUpdate" : "mt 7/3/2015 09:53",
+		"test12Results" : "mt 7/10/2015 10:56",
+		"test13ResultsRecursive" : "mt 7/10/2015 09:07",
+		"test14ResultsInfinite" : "mt 7/10/2015 09:09" } }
