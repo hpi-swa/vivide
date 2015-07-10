@@ -20,3 +20,6 @@ addArtifact
 
 	self artifactCreated: editor.
 	editor activateWizard.
+	
+	"We need to update the pane highlights because only now we have a system window."
+	editor highlightAffectedPanes.
