@@ -3,23 +3,17 @@ acceptDroppingObject: anObject at: aPoint
 
 	| pane |
 	pane := ViPane new
-"		objects: ((ViQueryInterpreter isCollection: anObject)
-			ifTrue: [anObject] ifFalse: [ {anObject} ]);
-"		queries: [self organization orderedSteps];
-		currentQuery: ([:object | object] asScript
-			setProperty: #isNew toValue: true;
-			yourself);
-	"	fullBounds;"
+		queries: [self organization orderedSteps];
+		objects: anObject asList;
 		yourself.
+
+	self assert: pane currentQuery notNil.
 	
 	self
 		acceptDroppingPane: pane
 		at: aPoint.
 	
-	self fullBounds. "Enforce calculation of window bounds before additional window is opened."
+	"Enforce calculation of window bounds before additional window is opened."
+	self fullBounds. 
 	
-"	pane
-		grabKeyboard;
-		debugQuery."
-
 	^ pane

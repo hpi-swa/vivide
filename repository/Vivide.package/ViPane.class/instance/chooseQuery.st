@@ -3,8 +3,8 @@ chooseQuery
 
 	| pane |
 	pane := ViPane new
-		objects: self appropriateQueries;
 		currentQuery: #formattedQueries asScript;
+		objects: self appropriateQueries;
 		yourself.
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)

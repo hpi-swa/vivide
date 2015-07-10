@@ -5,12 +5,13 @@ new: symbolOrBlockOrScript for: objects
 	instance := self new.
 	script := symbolOrBlockOrScript asScript.
 	pane := ViPane new
-		objects: objects;
 		queries: [script organization orderedSteps];
 		yourself.
 	pane recentQueries add: script.
+	pane objects: objects.
+	
 	pane chooseMostAppropriateQuery.
-	pane currentQuery ifNil: [pane currentQuery: script].
+	"pane currentQuery ifNil: [pane currentQuery: script]."
 	  
 	instance pane: pane.
 
