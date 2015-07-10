@@ -19,6 +19,10 @@ Then, create and enter a new *animated Morphic project*. There, your can open Vi
 
 See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
+##Applications
+
+* [CCMail](https://github.com/calmez/CCMail) - a mail client by [Conrad Calmez](https://github.com/calmez)
+
 ##Videos
 
 Here is a screencast about integrating information from Stack Overflow into the Squeak/Smalltalk programming environment using Vivide. I included it in my talk at the [Onward'14](http://2014.splashcon.org/track/onward2014-papers) conference:
