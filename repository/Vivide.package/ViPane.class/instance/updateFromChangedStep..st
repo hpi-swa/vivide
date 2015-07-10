@@ -5,11 +5,11 @@ updateFromChangedStep: evt
 	self currentQuery
 		ifNil: [^ self].
 
-	evt isPropertiesModified
-		ifTrue: [^ self updateFromChangedStepProperties: evt].
-
 	(self currentQuery isMeta and: [evt item isMeta not])
 		ifTrue: [^ self].
+
+	evt isPropertiesModified
+		ifTrue: [^ self updateFromChangedStepProperties: evt].
 
 	evt isRenamed
 		ifTrue: [^ self].
