@@ -11,6 +11,6 @@ updateFor: aScript in: anEnvironment
 		self textMorph styler ifNotNil: [:s | s view: self textMorph]]. 
 	
 	(aScript valueOfProperty: #font ifAbsent: []) ifNotNil: [:font |
-		self textMorph font: font].
+		self textMorph font: font value].
 
 	self reset.

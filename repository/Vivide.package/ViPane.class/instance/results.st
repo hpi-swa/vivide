@@ -4,4 +4,4 @@ results
 	self flag: #metaScript.
 	^ (self currentQuery notNil and: [self currentQuery isMeta])
 		ifTrue: [self view outgoingObjects]
-		ifFalse: [self model objects]
+		ifFalse: [self model allObjects]
