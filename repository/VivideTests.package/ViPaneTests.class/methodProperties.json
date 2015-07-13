@@ -20,4 +20,5 @@
 		"test13ResultsRecursive" : "mt 7/10/2015 09:07",
 		"test14ResultsInfinite" : "mt 7/10/2015 09:09",
 		"test15AutoIdentityScript" : "mt 7/10/2015 13:22",
-		"test16AutoIdentityScriptForTuples" : "mt 7/10/2015 13:25" } }
+		"test16AutoIdentityScriptForTuples" : "mt 7/10/2015 13:25",
+		"test17KeepAppropriateScript" : "mt 7/13/2015 11:39" } }
