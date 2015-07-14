@@ -4,6 +4,7 @@ acceptDroppingPane: aPane at: aPoint
 	self fullScript isDefault ifTrue: [
 		Error signal: 'Cannot modify default script here. Copy first.'].
 
+	"Compose a tree."
 	aPane currentQuery isMeta ifTrue: [
 		self wrapPanesIntoMultiPaneWidget].
 

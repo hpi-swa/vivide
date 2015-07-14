@@ -19,9 +19,9 @@ wrapPaneIntoMultiPaneWidget
 			initializeFor: metaScript in: newPane;
 			addPane: singlePane; "preserve state"
 			yourself);
-		objects: singlePane objects;
 		queries: singlePane queries;
-		currentQuery: metaScript.
+		currentQuery: metaScript;
+		objects: singlePane objects.
 	self pane: newPane.
 
 	"Update connections."

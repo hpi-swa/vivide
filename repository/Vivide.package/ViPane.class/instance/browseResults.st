@@ -4,8 +4,8 @@ browseResults
 
 	| pane |
 	pane := ViPane new
-		objects: self results;
 		currentQuery: #defaultProperties asScript;
+		objects: self results;
 		yourself.
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
