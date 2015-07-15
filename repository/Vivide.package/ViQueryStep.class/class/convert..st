@@ -5,5 +5,5 @@ convert: stepOrSymbol
 		"If the dynamically-scoped organization does not have it, try the on in the current profile."
 		ifTrue: [((ViQueryOrganizer active stepById: stepOrSymbol)
 				ifNil: [ViProfile active organization stepById: stepOrSymbol])
-			ifNil: [Error signal: 'Script not found!']]
+			ifNil: [nil]]
 		ifFalse: [stepOrSymbol]
