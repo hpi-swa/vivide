@@ -25,3 +25,7 @@ install:
    - export FILETREE_CI_HOME="$(pwd)"
 
 script: $FILETREE_CI_HOME/run.sh
+
+after_success:
+  - chmod +x $PROJECT_HOME/scripts/prepare_image.sh
+  - $PROJECT_HOME/scripts/prepare_image.sh
