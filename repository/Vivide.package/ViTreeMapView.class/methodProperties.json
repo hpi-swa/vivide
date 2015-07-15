@@ -5,7 +5,7 @@
 		"aggregateModel" : "mt 7/15/2015 11:04",
 		"aggregationBlock" : "mt 7/15/2015 11:03",
 		"configureSubmorph:forNode:" : "mt 7/15/2015 13:25",
-		"initializeFor:in:" : "mt 7/15/2015 13:14",
+		"initializeFor:in:" : "mt 7/15/2015 16:27",
 		"margin" : "mt 7/15/2015 11:04",
 		"model" : "mt 7/14/2015 15:46",
 		"model:" : "mt 7/14/2015 15:46",
@@ -17,6 +17,9 @@
 		"startDrag:event:source:" : "mt 7/15/2015 13:19",
 		"triggerReset" : "mt 7/15/2015 11:40",
 		"tryReset" : "mt 7/15/2015 11:40",
-		"updateFor:in:" : "mt 7/15/2015 13:05",
+		"updateFor:in:" : "mt 7/15/2015 16:24",
 		"updateSubmorphs" : "mt 7/15/2015 13:08",
-		"updateSubmorphsFor:owner:" : "mt 7/15/2015 11:46" } }
+		"updateSubmorphsFor:owner:" : "mt 7/15/2015 15:46",
+		"zoomFit" : "mt 7/15/2015 16:21",
+		"zoomIn" : "mt 7/15/2015 16:24",
+		"zoomOut" : "mt 7/15/2015 16:24" } }
