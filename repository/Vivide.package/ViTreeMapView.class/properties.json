@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Voronoi",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectView classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"aggregationBlock",
+		"margin" ],
+	"name" : "ViTreeMapView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViObjectView",
+	"type" : "normal" }
