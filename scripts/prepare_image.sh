@@ -48,6 +48,9 @@ if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading Vivide image..."
     curl -T Vivide.image http://www.lively-kernel.org/babelsberg/vivide/
     curl -T Vivide.changes http://www.lively-kernel.org/babelsberg/vivide/
+    print_info "Done!"
+else
+    print_info "Preparation of Vivide image failed."
 fi
 
 exit $EXIT_STATUS
