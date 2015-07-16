@@ -37,8 +37,19 @@ Metacello new
 
 "Start Vivide delayed"
 [ (Delay forMilliseconds: 500) wait.
-  VivideLight useVivideDebugger: true.
-  Preferences setPreference: #mouseOverForKeyboardFocus toValue: false.
+  
+  Preferences enable: #mouseOverForKeyboardFocus.
+  Preferences disable: #fastDragWindowForMorphic.
+  Preferences disable: #showSharedFlaps.
+  Morph indicateKeyboardFocus: false.
+  Model windowActiveOnFirstClick: true.
+  Project current showWorldMainDockingBar: false.
+ 
+  Preferences enable: #menuAppearance3d.
+  Morph useSoftDropShadow: true.
+  
+  VivideLight useVivideDebugger: false.
+  VivideLight prepareSqueak.
   VivideLight open.
   
   "Save image and quit"
