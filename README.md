@@ -19,6 +19,10 @@ Then, create and enter a new *animated Morphic project*. There, your can open Vi
 
 See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
+##Latest Stable Build
+
+You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](http://www.lively-kernel.org/babelsberg/vivide). Additionally, you may want to get the latest [CogVM](http://www.mirandabanda.org/files/Cog/VM/) and [sources](http://ftp.squeak.org/sources_files/) file.
+
 ##Applications
 
 * [CCMail](https://github.com/calmez/CCMail) - a mail client by [Conrad Calmez](https://github.com/calmez)
