@@ -6,3 +6,6 @@ reset
 		self lineEdit
 			theText: objs first;
 			select: (1 to: 0) "none"].
+	
+	"Restore selection."
+	self selectionChanged: self selectedNodes.

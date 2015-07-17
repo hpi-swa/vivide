@@ -2,7 +2,8 @@
 	"class" : {
 		"defaultViewId" : "mt 10/8/2014 13:21:16.437" },
 	"instance" : {
-		"initialize" : "mt 2/27/2014 15:14:36.053",
+		"adoptPaneColor:" : "mt 7/17/2015 17:34",
+		"initialize" : "mt 7/17/2015 17:33",
 		"model" : "mt 2/27/2014 14:50:50.814",
 		"model:" : "mt 2/27/2014 14:50:56.109",
 		"reset" : "mt 11/15/2014 13:05:32.949",
