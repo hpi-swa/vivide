@@ -20,5 +20,6 @@ test10TupleInput
 		currentQuery: q;
 		objects: #(3 4).
 	provider2 view currentVisibleView selectAll.
+	self forceUpdate.
 
 	self assert: #((a 3) (a 4) (b 3) (b 4)) equals: sut objects asArray.
