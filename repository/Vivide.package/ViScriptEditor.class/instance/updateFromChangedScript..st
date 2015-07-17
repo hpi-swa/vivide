@@ -10,4 +10,4 @@ updateFromChangedScript: event
 	self hasUnacceptedChanges
 		ifTrue: [^ self].
 
-	self clear.
+	self triggerDeferredClear.

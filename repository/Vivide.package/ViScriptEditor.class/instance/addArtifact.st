@@ -1,23 +1,19 @@
 actions
 addArtifact
 
-	| editor |
-	editor := ViScriptEditor new.
-	editor object: (ViScriptPart new sourceCode: '[:in :out | out addAll: in]').
-		
-	"Register new step and definition."
-	editor object
-		organization: self object organization.
-	self object isRegistered ifTrue: [editor object register].
-	editor object definition 
-		organization: self object definition organization.
-
+	| editor script |	
+	script := ViScriptPart new sourceCode: '[:in :out | out addAll: in]'.		
+	script adoptOrganization: self object organization.
+	
 	"Insert directly."
-	editor object next: self object next.
-	self object next: editor object.
+	script next: self object next.
+	self object next: script.
 
 	ViLoggingService trigger: {#message -> 'Script part created.'}.
 
+	editor := ViScriptEditor new.
+	editor object: script.
+	
 	self artifactCreated: editor.
 	editor activateWizard.
 	
