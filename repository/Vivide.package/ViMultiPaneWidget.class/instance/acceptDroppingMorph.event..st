@@ -6,10 +6,10 @@ acceptDroppingMorph: aTransferMorph event: evt
 			ifFalse: [self acceptDroppingPane: obj at: evt position]
 			ifTrue: [(self acceptDroppingObject: obj at: evt position) in: [:newPane |
 				(aTransferMorph source firstOwnerSuchThat: [:m | m isKindOf: ViPane])
-					ifNotNil: [:sourcePane |
+					ifNotNil: [:sourcePane | sourcePane isInWorld ifTrue: [
 						(ViSelectionConnection
 							from: sourcePane
-							to: newPane) attach].
+							to: newPane) attach]].
 				
 				ViAnimatedImageMorph flashOn: newPane.
 				
