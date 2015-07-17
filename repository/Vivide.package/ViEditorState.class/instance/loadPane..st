@@ -1,6 +1,9 @@
 loading - editors
 loadPane: pane
 
-	#(bounds objects queries recentQueries) do: [:property |
+	#(bounds queries recentQueries) do: [:property |
 		pane perform: (property, $:) asSymbol with: (self properties at: property ifAbsent: []) copy].
-	pane currentQuery: (self properties at: #currentQuery).
+	pane
+		currentQuery: (self properties at: #currentQuery);
+		objects: (self properties at: #objects) copy.
+	
