@@ -17,7 +17,6 @@ updateView
 	
 	self
 		clearError;
-		updateColor;
-		flash.
+		updateColor.
 		
 	ViArtifactToolbar hideAllToolbars.

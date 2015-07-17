@@ -1,6 +1,6 @@
 updating - results
 updateResults
-	"Force a re-evaluation of the query. Assume no notification about changed selections from the view; manually trigger one."
+	"Force a re-evaluation of the query."
 
 	self clearError.
 

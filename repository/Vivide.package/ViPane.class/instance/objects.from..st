@@ -2,10 +2,11 @@ accessing - convenience
 objects: someObjects from: aPane
 
 	self assert: self tupleSize > 0. "Must not be called otherwise."
-	self tupleSize = 1 ifTrue: [^ self objects: someObjects].
 	
-	self flag: #performance. "mt: Deferred evaluation?"
-	self objects: (ViQueryInterpreter productOfCollections:   
-		(self connections
-			select: [:c | c target == self]
-			thenCollect: [:c | c objects])).
+	self tupleSize = 1
+		ifTrue: [
+			"If we have only one input use it directly."
+			self objects: someObjects]
+		ifFalse: [
+			"If we have multiple inputs, defer my updates because those update inputs may update, too."
+			self triggerDeferredObjects].
