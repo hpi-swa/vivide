@@ -1,5 +1,5 @@
 as yet unclassified
-acceptDroppingObject: anObject at: aPoint
+acceptDroppingObject: anObject at: aPoint from: source
 
 	| pane |
 	pane := ViPane new
@@ -9,11 +9,10 @@ acceptDroppingObject: anObject at: aPoint
 
 	self assert: pane currentQuery notNil.
 	
-	self
+	[^ self
 		acceptDroppingPane: pane
-		at: aPoint.
-	
-	"Enforce calculation of window bounds before additional window is opened."
-	self fullBounds. 
-	
-	^ pane
+		at: aPoint
+		from: source
+	] ensure: [
+		"Enforce calculation of window bounds before additional window is opened."
+		self fullBounds].
