@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"metaScript" : "mt 7/18/2015 11:00",
+		"setUp" : "mt 7/19/2015 16:16",
+		"tearDown" : "mt 7/18/2015 10:58",
+		"test01PaneToMultiPane" : "mt 7/18/2015 11:14",
+		"test02AcceptDroppingPane" : "mt 7/18/2015 11:30",
+		"test03RetainPaneConnections" : "mt 7/19/2015 16:17",
+		"test04AcceptDroppingObject" : "mt 7/18/2015 11:44",
+		"test05DeepCopy" : "mt 7/19/2015 14:21",
+		"test06DeepCopyAndOpen" : "mt 7/19/2015 16:01" } }

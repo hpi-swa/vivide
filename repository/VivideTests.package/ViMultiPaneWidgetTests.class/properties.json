@@ -1,0 +1,16 @@
+{
+	"category" : "VivideTests-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sut",
+		"editor",
+		"pane" ],
+	"name" : "ViMultiPaneWidgetTests",
+	"pools" : [
+		 ],
+	"super" : "ViTestCase",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+accessing
+metaScript
+
+	^ sut fullScript

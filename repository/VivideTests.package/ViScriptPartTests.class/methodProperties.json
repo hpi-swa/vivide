@@ -19,4 +19,6 @@
 		"test14Process" : "mt 7/6/2015 14:18",
 		"test15ProcessWithGroups" : "mt 7/16/2015 13:34",
 		"test16TemplateAutoWrap" : "mt 7/9/2015 16:35",
-		"test17ScriptNotFound" : "mt 7/15/2015 17:19" } }
+		"test17ScriptNotFound" : "mt 7/15/2015 17:19",
+		"test18DeepCopy" : "mt 7/19/2015 14:49",
+		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51" } }
