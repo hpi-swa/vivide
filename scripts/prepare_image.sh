@@ -54,7 +54,7 @@ fi
 mv *.image "$VIVIDE_IMAGE"
 mv *.changes "$VIVIDE_CHANGES"
 
-print_info "Preparing Vivide image from SqueakTrunk image..."
+print_info "Preparing Vivide image from $SMALLTALK image..."
 EXIT_STATUS=0
 "$COG_VM_PATH" $COG_VM_PARAM "$VIVIDE_IMAGE" "$PROJECT_HOME/scripts/prepare_image.st" || EXIT_STATUS=$?
 
