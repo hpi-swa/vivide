@@ -7,6 +7,11 @@ updateScript
 	
 	self setProperty: #isUpdatingScript toValue: true.   
 
+	"Update list of recent scripts and remove the ones from different organizations. See ViPane >> #addQuery or #copyQuery to understand the conditions of organization adoption."
+	self panes do: [:pane |
+		pane recentQueries: (pane recentQueries select: [:script |
+			script organization == self organization])].
+	
 	paneSpecs := self panes collect: [:pane | pane asDictionary].
 
 	scripts := (ViScriptPart

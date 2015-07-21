@@ -1,15 +1,16 @@
 actions
-addQuery
+copyQuery
 
 	| newQuery |
-	newQuery := [:object | object] asScript.
-	newQuery setProperty: #isNew toValue: true. 
-
+	self currentQuery ifNil: [self addQuery].
+	
+	newQuery := self currentQuery deepCopy.
+	
 	self isTopLevel ifFalse: [
 		newQuery adoptOrganization: self currentQuery organization].
 	
 	ViLoggingService trigger: {
-		#message -> 'Script added.'.
+		#message -> 'Script copied.'.
 		#scriptLabel -> (ViLabelService doObject: newQuery) asString}.
 
 	self

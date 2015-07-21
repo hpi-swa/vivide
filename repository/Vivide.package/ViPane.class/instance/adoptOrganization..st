@@ -1,10 +1,9 @@
 as yet unclassified
 adoptOrganization: aQueryOrganizer
-	"Let all known scripts use the given organizer."
+	"Let all known scripts use the given organizer. We convert all scripts that are in the same organization as the current one."
 	
-	self flag: #todo. "mt: recent queries, other queries, ..."
-	{self currentQuery}
-		select: [:query | query notNil]
+	self recentQueries
+		select: [:query | query organization == self currentQuery organization]
 		thenDo: [:query | query adoptOrganization: aQueryOrganizer].
 	
 	self flag: #refactor. "mt: self currentQuery isMeta does the same check..."

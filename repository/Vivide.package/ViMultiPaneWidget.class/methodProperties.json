@@ -4,7 +4,7 @@
 	"instance" : {
 		"acceptDroppingMorph:event:" : "mt 7/18/2015 11:22",
 		"acceptDroppingObject:at:from:" : "mt 7/18/2015 11:21",
-		"acceptDroppingPane:at:from:" : "mt 7/18/2015 11:41",
+		"acceptDroppingPane:at:from:" : "mt 7/21/2015 15:07",
 		"acceptObjectService:" : "mt 6/1/2015 13:46",
 		"addPane:" : "mt 6/5/2015 14:05",
 		"adoptOrganization:" : "mt 6/5/2015 13:59",
@@ -53,7 +53,7 @@
 		"unwrapPaneFromMultiPaneWidget" : "mt 6/1/2015 17:00",
 		"updateFor:in:" : "mt 12/9/2014 14:29:26.55",
 		"updatePanesFor:" : "mt 7/19/2015 15:51",
-		"updateScript" : "mt 2/10/2015 21:17",
+		"updateScript" : "mt 7/21/2015 15:24",
 		"wantsDroppedMorph:event:" : "mt 6/9/2015 15:51",
 		"wantsHaloFromClick" : "mt 12/9/2014 15:46:28.319",
 		"wrapPanesIntoMultiPaneWidget" : "mt 6/1/2015 17:08" } }

@@ -41,9 +41,10 @@ addQueryHandles
 	box addMorphBack: (Morph new color: Color transparent; extent: 20@12). "spacer"
 	
 	{
-	{'Look for another matching query'. (UiFugueIcons control270SmallIcon clippedToSize: 12@12) asWireframeSunken: 0.4. Color yellow darker. #chooseQuery}.
-	{'Debug current query'. ViIcons wrenchSmallSunkenIcon. Color gray: 0.85. #debugQuery}.
-	{'Replace query with a copy and debug it'. ViIcons plusSmallSunkenIcon. Color green darker. #addQuery}.
+	{'Browse scripts'. (UiFugueIcons control270SmallIcon clippedToSize: 12@12) asWireframeSunken: 0.4. Color yellow darker. #chooseQuery}.
+	{'Debug script'. ViIcons wrenchSmallSunkenIcon. Color gray: 0.85. #debugQuery}.
+	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
+	{'Add script'. ViIcons plusSmallSunkenIcon. Color green darker. #addQuery}.
 	} do: [:spec | | btn |
 		btn := UiToolButton new
 			buttonStyle: #iconOnly;

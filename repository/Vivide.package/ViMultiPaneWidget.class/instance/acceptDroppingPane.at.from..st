@@ -25,6 +25,7 @@ acceptDroppingPane: aPane at: aPoint from: source
 	
 	self addPane: aPane.
 
+	"Auto-establish data flow connection."
 	(source withAllOwners detect: [:m | m isKindOf: ViPane] ifNone: [])
 		ifNotNil: [:sourcePane | sourcePane owner == self ifTrue: [
 			(ViSelectionConnection
