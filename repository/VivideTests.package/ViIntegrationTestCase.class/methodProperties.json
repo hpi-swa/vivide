@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"isAbstract" : "mt 7/21/2015 11:45" },
+	"instance" : {
+		"checkOrganizer" : "mt 7/21/2015 11:46",
+		"checkProfile" : "mt 7/21/2015 11:46",
+		"checkVivide" : "mt 7/21/2015 11:46",
+		"performTest" : "mt 7/21/2015 11:46",
+		"setUp" : "mt 7/21/2015 11:43",
+		"tearDown" : "mt 7/21/2015 11:44" } }

@@ -14,7 +14,7 @@ test07KeepAddedQuery
 		objects: #(1 2 3).
 	
 	self assert: sut currentQuery == q1.
-	sut addQuery.
+	sut copyQuery.
 	self assert: sut currentQuery ~~ q1.
 	self assert: sut currentQuery ~~ q2.
 	sut objects: #(4 5 6). "No change because type matches."

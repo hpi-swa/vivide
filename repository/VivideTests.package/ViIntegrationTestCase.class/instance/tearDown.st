@@ -3,6 +3,6 @@ tearDown
 
 	ViActiveVivide
 		value: vivide
-		during: [self forceUpdate. vivide close]. 
+		during: [self forceGuiUpdate. vivide close]. 
 
 	super tearDown.

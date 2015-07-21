@@ -8,17 +8,17 @@ test11ViewUpdate
 	sut currentQuery: script.
 
 	script setProperty: #view toValue: ViTextView.
-	self forceUpdate.	
+	self forceGuiUpdate.	
 	self assert: (sut view isKindOf: ViTextView).
 	
 	script setProperty: #view toValue: ViTreePlainView.
-	self forceUpdate.	
+	self forceGuiUpdate.	
 	self assert: (sut view isKindOf: ViTreePlainView).
 
 	script next setProperty: #hAlignment toValue: #right.
-	self forceUpdate.
+	self forceGuiUpdate.
 	self assert: #right equals: sut view currentVisibleView columnSpecs first hAlignment.
 
 	script next setProperty: #hAlignment toValue: #center.
-	self forceUpdate.
+	self forceGuiUpdate.
 	self assert: #center equals: sut view currentVisibleView columnSpecs first hAlignment.

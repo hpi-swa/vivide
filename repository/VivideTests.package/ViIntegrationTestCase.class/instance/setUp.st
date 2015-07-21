@@ -10,6 +10,7 @@ setUp
 		viewBox: (0@0 extent: world extent).
 
 	profile := ViProfile newMinimal.
+	organization := profile organization.
 
 	"Customized opening..."
 	vivide := VivideLight basicNew

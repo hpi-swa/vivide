@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "VivideTests",
+		"sut" ],
+	"name" : "ViSinglePaneEditorTests",
 	"pools" : [
 		 ],
 	"super" : "ViIntegrationTestCase",

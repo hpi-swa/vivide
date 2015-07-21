@@ -18,4 +18,4 @@ test17KeepAppropriateScript
 
 	sut objects: #(1 2 3).
 	self assert: (sut appropriateQueries includes: newScript).
-	self assert: sut currentQuery == script.
+	self assert: sut currentQuery == newScript. "No change.... *sigh*"

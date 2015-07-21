@@ -1,4 +1,0 @@
-support
-forceUpdate
-	
-	ActiveWorld doOneSubCycle.
