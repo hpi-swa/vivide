@@ -7,6 +7,7 @@ env:
     - PACKAGES="/repository"
   matrix:
     - SMALLTALK="SqueakTrunk"
+    - SMALLTALK="Squeak4.6"
 
 addons:
   apt:

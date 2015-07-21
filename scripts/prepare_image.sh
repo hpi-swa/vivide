@@ -17,6 +17,9 @@ if [ -z "$PROJECT_HOME" ]; then
 elif [ -z "$FILETREE_CI_HOME" ]; then
     print_info "\$FILETREE_CI_HOME is not defined!"
     exit 1
+elif [ -z "$SMALLTALK" ]; then
+    print_info "\$SMALLTALK is not defined!"
+    exit 1
 fi
 
 DEPLOY_PATH="$FILETREE_CI_HOME/deploy"
@@ -26,28 +29,39 @@ CACHE_PATH="$BASE_PATH/cache"
 VM_PATH="$CACHE_PATH/vms"
 COG_VM_PATH="$VM_PATH/coglinux/bin/squeak"
 COG_VM_PARAM="-nosound -nodisplay"
+VIVIDE_IMAGE="Vivide$SMALLTALK.image"
+VIVIDE_CHANGES="Vivide$SMALLTALK.changes"
 
 mkdir "$DEPLOY_PATH"
 cd "$DEPLOY_PATH"
 
-print_info "Downloading SqueakTrunk image..."
-wget http://build.squeak.org/job/SqueakTrunk/lastSuccessfulBuild/artifact/target/TrunkImage.zip
-unzip TrunkImage.zip
+if [ $SMALLTALK == "Squeak4.6" ]; then
+    print_info "Downloading Squeak4.6 image..."
+    wget http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
+    unzip Squeak4.6-15102.zip
 
-wget http://ftp.squeak.org/sources_files/SqueakV41.sources.gz
-gunzip SqueakV41.sources.gz
+    wget http://ftp.squeak.org/4.6/SqueakV46.sources.zip
+    gunzip SqueakV46.sources.zip
+else
+    print_info "Downloading SqueakTrunk image..."
+    wget http://build.squeak.org/job/SqueakTrunk/lastSuccessfulBuild/artifact/target/TrunkImage.zip
+    unzip TrunkImage.zip
 
-mv *.image Vivide.image
-mv *.changes Vivide.changes
+    wget http://ftp.squeak.org/sources_files/SqueakV41.sources.gz
+    gunzip SqueakV41.sources.gz
+fi
+
+mv *.image "$VIVIDE_IMAGE"
+mv *.changes "$VIVIDE_CHANGES"
 
 print_info "Preparing Vivide image from SqueakTrunk image..."
 EXIT_STATUS=0
-"$COG_VM_PATH" $COG_VM_PARAM "Vivide.image" "$PROJECT_HOME/scripts/prepare_image.st" || EXIT_STATUS=$?
+"$COG_VM_PATH" $COG_VM_PARAM "$VIVIDE_IMAGE" "$PROJECT_HOME/scripts/prepare_image.st" || EXIT_STATUS=$?
 
 if [ $EXIT_STATUS -eq 0 ]; then
-    print_info "Uploading Vivide image..."
-    curl -T Vivide.image http://www.lively-kernel.org/babelsberg/vivide/
-    curl -T Vivide.changes http://www.lively-kernel.org/babelsberg/vivide/
+    print_info "Uploading $VIVIDE_IMAGE and $VIVIDE_CHANGES..."
+    curl -T "$VIVIDE_IMAGE" http://www.lively-kernel.org/babelsberg/vivide/
+    curl -T "$VIVIDE_CHANGES" http://www.lively-kernel.org/babelsberg/vivide/
     print_info "Done!"
 else
     print_info "Preparation of Vivide image failed."
