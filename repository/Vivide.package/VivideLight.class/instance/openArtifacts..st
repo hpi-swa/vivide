@@ -8,8 +8,11 @@ openArtifacts: someObjects
 	objects := someObjects.
 	
 	(someObjects detect: [:obj | obj isKindOf: ViScriptPart] ifNone: [])
-		ifNotNil: [:script | (script steps hasEqualElements: someObjects)
-			ifFalse: [
+		ifNotNil: [:script | 
+			ViProfile active ifNotNil: [:profile |
+				profile recentScripts addObject: script].
+			
+			(script steps hasEqualElements: someObjects) ifFalse: [
 				"Open the script and the rest as input if it."
 				objects := {someObjects copyWithoutAll: script steps}, script steps]].
 	
