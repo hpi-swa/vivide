@@ -1,4 +1,5 @@
 initialization
 updateFor: script in: env
 
-	self updateForListForQuery: script.     
+	super updateFor: script in: env.	
+	self updateForListForQuery: script.   

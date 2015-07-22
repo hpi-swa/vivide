@@ -9,4 +9,5 @@ onView: aView selectionChanged: someNodes
 		(node at: #selectedLater ifAbsent: []) ifNotNil: [:callback | 
 			Project current addDeferredUIMessage: callback]].
 	
-	self selectionChanged: someNodes.
+	((self valueOfProperty: #yieldOn) includes: #selected)
+		ifTrue: [self yield: someNodes].
