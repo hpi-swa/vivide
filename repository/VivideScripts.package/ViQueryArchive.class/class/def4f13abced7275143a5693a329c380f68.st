@@ -6,10 +6,12 @@ def4f13abced7275143a5693a329c380f68
 	[:objects | objects collect: [:profile | 
 	{'Packages'. profile recentPackages objects} asTuples,
 	{'Classes'. profile recentClasses objects} asTuples, 
-	{'Methods'. profile recentMethods objects} asTuples ]]
+	{'Methods'. profile recentMethods objects} asTuples,
+	{'Scripts'. profile recentScripts objects} asTuples ]]
 		value: in) do: [:result | out addAll: result asList]]); add: (#sourceCode->'[:in :out | (
 	[:objects | objects collect: [:profile | 
 	{''Packages''. profile recentPackages objects} asTuples,
 	{''Classes''. profile recentClasses objects} asTuples, 
-	{''Methods''. profile recentMethods objects} asTuples ]]
+	{''Methods''. profile recentMethods objects} asTuples,
+	{''Scripts''. profile recentScripts objects} asTuples ]]
 		value: in) do: [:result | out addAll: result asList]]'); yourself)

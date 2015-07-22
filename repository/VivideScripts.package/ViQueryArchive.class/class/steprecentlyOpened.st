@@ -1,0 +1,5 @@
+steps
+steprecentlyOpened
+	<step>
+
+	^ ((Dictionary new) add: (#definition->#'4f13abce-d727-5143-a569-3a329c380f68'); add: (#class->ViScriptPart); add: (#properties->((Dictionary new) add: (#inputKind->ViProfile); add: (#creationTimeStamp->'15 June 2015 9:17:12 am'); add: (#notifier->((Array new: 4) at: 1 put: [:t1 | ViObjectHistoryNotifier new history: t1 recentPackages]; at: 2 put: [:t1 | ViObjectHistoryNotifier new history: t1 recentClasses]; at: 3 put: [:t1 | ViObjectHistoryNotifier new history: t1 recentMethods]; at: 4 put: [:t1 | ViObjectHistoryNotifier new history: t1 recentScripts]; yourself)); add: (#creationAuthor->'mt'); add: (#isNew->false); yourself)); add: (#isProperty->false); add: (#next->#'c4ee7c1c-d764-1148-89be-c82a7c91889c'); add: (#label->'Recently Opened'); add: (#iconCode->'nil'); add: (#id->#recentlyOpened); add: (#isReference->false); yourself)
