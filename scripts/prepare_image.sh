@@ -60,8 +60,8 @@ EXIT_STATUS=0
 
 if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading $VIVIDE_IMAGE and $VIVIDE_CHANGES..."
-    curl -T "$VIVIDE_IMAGE" http://www.lively-kernel.org/babelsberg/vivide/
-    curl -T "$VIVIDE_CHANGES" http://www.lively-kernel.org/babelsberg/vivide/
+    curl -T "$VIVIDE_IMAGE" -u"fniephaus:$BINTRAY_KEY" "https://api.bintray.com/content/hpi-swa-lab/Vivide/Latest/$VIVIDE_IMAGE"
+    curl -T "$VIVIDE_CHANGES" -u"fniephaus:$BINTRAY_KEY" "https://api.bintray.com/content/hpi-swa-lab/Vivide/Latest/$VIVIDE_CHANGES"
     print_info "Done!"
 else
     print_info "Preparation of Vivide image failed."
