@@ -31,6 +31,7 @@ COG_VM_PATH="$VM_PATH/coglinux/bin/squeak"
 COG_VM_PARAM="-nosound -nodisplay"
 VIVIDE_IMAGE="Vivide$SMALLTALK.image"
 VIVIDE_CHANGES="Vivide$SMALLTALK.changes"
+BINTRAY_TARGET="https://api.bintray.com/content/hpi-swa-lab/Vivide/Latest/lastest"
 
 mkdir "$DEPLOY_PATH"
 cd "$DEPLOY_PATH"
@@ -60,8 +61,9 @@ EXIT_STATUS=0
 
 if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading $VIVIDE_IMAGE and $VIVIDE_CHANGES..."
-    curl -T "$VIVIDE_IMAGE" -u"fniephaus:$BINTRAY_KEY" "https://api.bintray.com/content/hpi-swa-lab/Vivide/Latest/$VIVIDE_IMAGE"
-    curl -T "$VIVIDE_CHANGES" -u"fniephaus:$BINTRAY_KEY" "https://api.bintray.com/content/hpi-swa-lab/Vivide/Latest/$VIVIDE_CHANGES"
+    curl -T "$VIVIDE_IMAGE" -u"fniephaus:$BINTRAY_KEY" "$BINTRAY_TARGET/$VIVIDE_IMAGE"
+    curl -T "$VIVIDE_CHANGES" -u"fniephaus:$BINTRAY_KEY" "$BINTRAY_TARGET/$VIVIDE_CHANGES"
+    curl -X POST -u"fniephaus:$BINTRAY_KEY" "$BINTRAY_TARGET/publish"
     print_info "Done!"
 else
     print_info "Preparation of Vivide image failed."
