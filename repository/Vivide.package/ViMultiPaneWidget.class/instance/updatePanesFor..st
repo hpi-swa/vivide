@@ -33,12 +33,17 @@ updatePanesFor: specs
 	self panes do: [:p | p connections
 		select: [:c | (self panes includes: c source) and: [self panes includes: c target]]
 		thenDo: [:c | c detach]].
+	"3.1) Ensure correct input order. We have to do this before establishing output connections."
 	self paneSpecs do: [:spec | | pane |
 		pane := self panes detect: [:p | p id = (spec at: #id)].
 		(spec at: #in ifAbsent: [#()]) do: [:kindId | 
 			({self}, self panes detect: [:p | p id = kindId second] ifNone: [])
-				ifNotNil: [:providerForSelections | (ViPaneConnection kind: kindId first from: providerForSelections to: pane) attachSilently]].
+				ifNotNil: [:providerForSelections | (ViPaneConnection kind: kindId first from: providerForSelections to: pane) attachSilently]]].
+	"3.2) Update output connections."
+	self paneSpecs do: [:spec | | pane |
+		pane := self panes detect: [:p | p id = (spec at: #id)].
 		(spec at: #out ifAbsent: [#()]) do: [:kindId |
+			self flag: #performance. "mt: Only #outer connections are missing here..."
 			({self}, self panes detect: [:p | p id = kindId second] ifNone: [])
 				ifNotNil: [:consumerForSelections | (ViPaneConnection kind: kindId first from: pane to: consumerForSelections) attachSilently]]].
 
