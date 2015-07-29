@@ -7,8 +7,8 @@ collectBaseClassesForContext: someObjects withTuples: findTuples
 	findTuples "(someObjects allSatisfy: [:o | ViQueryInterpreter isCollection: o])"
 		ifTrue: ["Treat all objects as same tuple size."
 			| result |
-			result := Array new: someObjects first size.
-			(someObjects allSatisfy: [:array | array size = someObjects first size])
+			result := Array new: someObjects first asList size.
+			(someObjects allSatisfy: [:array | array size = someObjects first asList size])
 				ifFalse: [^ {Array}].
 			1 to: result size do: [:index |
 				result
