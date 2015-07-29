@@ -3,4 +3,4 @@ list
 
 	self flag: #performance.
 	^ self model ifNil: [#()] ifNotNil: [:m |
-		m nodes collect: [:node | (node at: #text ifAbsent: ['']) asString]]
+		m nodes collect: [:node | ((node at: #text ifAbsent: []) ifNil: [(node at: #object)]) asStringOrText ]]

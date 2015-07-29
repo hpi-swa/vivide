@@ -6,5 +6,6 @@ objects: someObjects
 	self currentQuery: (self appropriateQueries
 		ifEmpty: [self createIdentityScript]
 		ifNotEmpty: [:aqueries | aqueries first]).
-	
-	self objectsChanged: self objects.
+		
+	self owner class == ViSinglePaneEditor
+		ifTrue: [self objectsChanged: self objects].
