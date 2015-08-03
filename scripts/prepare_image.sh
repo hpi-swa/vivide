@@ -61,8 +61,8 @@ EXIT_STATUS=0
 
 if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading $VIVIDE_IMAGE and $VIVIDE_CHANGES..."
-    curl -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_IMAGE" "$DEPLOY_TARGET"
-    curl -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_CHANGES" "$DEPLOY_TARGET"
+    curl -s -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_IMAGE" "$DEPLOY_TARGET" && print_info "$VIVIDE_IMAGE uploaded."
+    curl -s -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_CHANGES" "$DEPLOY_TARGET" && print_info "$VIVIDE_CHANGES uploaded."
     print_info "Done!"
 else
     print_info "Preparation of Vivide image failed."

@@ -19,9 +19,9 @@ Then, create and enter a new *animated Morphic project*. There, your can open Vi
 
 See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
-##Latest Stable Build [![Try Now](http://img.shields.io/badge/try-now-green.svg)](https://bertfreudenberg.github.io/SqueakJS/run#url=http://www.lively-kernel.org/babelsberg/vivide/&files=%5BVivide.image,Vivide.changes,SqueakV41.sources%5D)
+##Latest Stable Build [![Try Now](http://img.shields.io/badge/try-now-green.svg)](https://bertfreudenberg.github.io/SqueakJS/run#url=https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/&files=%5BVivide-Squeak4.6.image,Vivide-Squeak4.6.changes,SqueakV41.sources%5D)
 
-You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](http://www.lively-kernel.org/babelsberg/vivide). Additionally, you may want to get the latest [CogVM](http://www.mirandabanda.org/files/Cog/VM/) and [sources](http://ftp.squeak.org/sources_files/) file.
+You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/). Additionally, you may want to get the latest [CogVM](http://www.mirandabanda.org/files/Cog/VM/) and [sources](http://ftp.squeak.org/sources_files/) file.
 
 ##Applications
 
