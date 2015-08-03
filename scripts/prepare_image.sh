@@ -29,8 +29,9 @@ CACHE_PATH="$BASE_PATH/cache"
 VM_PATH="$CACHE_PATH/vms"
 COG_VM_PATH="$VM_PATH/coglinux/bin/squeak"
 COG_VM_PARAM="-nosound -nodisplay"
-VIVIDE_IMAGE="Vivide$SMALLTALK.image"
-VIVIDE_CHANGES="Vivide$SMALLTALK.changes"
+VIVIDE_IMAGE="Vivide-$SMALLTALK.image"
+VIVIDE_CHANGES="Vivide-$SMALLTALK.changes"
+DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
 
 mkdir "$DEPLOY_PATH"
 cd "$DEPLOY_PATH"
@@ -40,8 +41,8 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
     wget http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
     unzip Squeak4.6-15102.zip
 
-    wget http://ftp.squeak.org/4.6/SqueakV46.sources.zip
-    unzip SqueakV46.sources.zip
+    wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
+    gunzip SqueakV46.sources.gz
 else
     print_info "Downloading SqueakTrunk image..."
     wget http://build.squeak.org/job/SqueakTrunk/lastSuccessfulBuild/artifact/target/TrunkImage.zip
@@ -60,8 +61,8 @@ EXIT_STATUS=0
 
 if [ $EXIT_STATUS -eq 0 ]; then
     print_info "Uploading $VIVIDE_IMAGE and $VIVIDE_CHANGES..."
-    curl -T "$VIVIDE_IMAGE" http://www.lively-kernel.org/babelsberg/vivide/
-    curl -T "$VIVIDE_CHANGES" http://www.lively-kernel.org/babelsberg/vivide/
+    curl -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_IMAGE" "$DEPLOY_TARGET"
+    curl -u "$DEPLOY_CREDENTIALS" -T "$VIVIDE_CHANGES" "$DEPLOY_TARGET"
     print_info "Done!"
 else
     print_info "Preparation of Vivide image failed."
