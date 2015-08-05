@@ -36,7 +36,7 @@ Metacello new
   load.
 
 "Start Vivide delayed"
-[ (Delay forMilliseconds: 500) wait.
+WorldState addDeferredUIMessage: [ 
   
   Preferences enable: #mouseOverForKeyboardFocus.
   Preferences disable: #fastDragWindowForMorphic.
@@ -53,11 +53,7 @@ Metacello new
   VivideLight open.
   
   "Save image and quit"
-  Smalltalk at: #WorldState ifPresent: [:global |
-    global addDeferredUIMessage: [
-      Smalltalk at: #SmalltalkImage ifPresent: [:image |
-        image current snapshot: true andQuit: true ]]].
-] forkAt: Processor userInterruptPriority.
+  SmalltalkImage current snapshot: true andQuit: true].
 
 AnimMorphicProject new enter: true.
 !
