@@ -3,6 +3,7 @@ addHintForInputKind: kind tupleIndex: index
 
 	| buttons |
 	kind ifNil: [^ self "Ignore"].
+	self class showHints ifFalse: [^ self].
 	
 	buttons := kind withAllSuperclasses collect: [:class |
 		| btn |
