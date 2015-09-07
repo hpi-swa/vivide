@@ -13,12 +13,23 @@ initializeFor: aScript in: anEnvironment
 		addMorphBack: (UiScrollArea new
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
-			widget: Morph new;
+			widget: (Morph new
+				color: (Color gray: 0.85);
+				borderWidth: 0;
+				layoutFrame: (LayoutFrame fractions: (
+					0@0 corner: 1@1))
+				yourself);
 			yourself).
+
+	self eventHandler: UiEventHandler new.
+	self eventHandler grabKeyboardOnMouseEnter: true.
+	self eventHandler setProperty: #handlesMouseWheel toValue: [true].
+	self connect: self eventHandler signal: #mouseWheelUp: toSelector: #zoomInEvent:.
+	self connect: self eventHandler signal: #mouseWheelDown: toSelector: #zoomOutEvent:.
 	
 	buttonBar := Morph new
 		color: Color transparent;
-		layoutInset: (20@0 corner: 0@0); "Fix for nasty window corner grip."
+		layoutInset: (00@0 corner: 0@0); "Fix for nasty window corner grip."
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		changeTableLayout;

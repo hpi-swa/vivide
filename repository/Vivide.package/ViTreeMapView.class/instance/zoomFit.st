@@ -1,4 +1,4 @@
-as yet unclassified
+zooming
 zoomFit
 
 	self scroller

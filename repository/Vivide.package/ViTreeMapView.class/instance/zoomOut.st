@@ -1,8 +1,4 @@
-as yet unclassified
+zooming
 zoomOut
 
-	self scroller
-		horizontalScrollBarPolicy: #asNeeded;
-		verticalScrollBarPolicy: #asNeeded;
-		widgetResizable: false.
-	self root extent: self root extent / 1.2.
+	self zoomOut: self root center.

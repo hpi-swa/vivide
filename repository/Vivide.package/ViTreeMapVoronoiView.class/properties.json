@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Voronoi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViTreeMapVoronoiView",
+	"pools" : [
+		 ],
+	"super" : "ViTreeMapView",
+	"type" : "normal" }

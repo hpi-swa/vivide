@@ -3,13 +3,36 @@ configureSubmorph: morph forNode: node
 	
 	morph layoutPolicy: ProportionalLayout new.
 	morph hResizing: #spaceFill; vResizing: #spaceFill.
-	morph layoutInset: self margin.
-	morph borderWidth: 1; borderColor: morph color muchDarker.
+	morph clipSubmorphs: true.
 
 	node depth = 0 ifTrue: [^ self].
 
+		(morph layoutFrame rightFraction - morph layoutFrame leftFraction / 
+		(morph layoutFrame bottomFraction - morph layoutFrame topFraction)
+	max: (
+		morph layoutFrame bottomFraction - morph layoutFrame topFraction /
+		(morph layoutFrame rightFraction - morph layoutFrame leftFraction)))
+	> 20
+		ifTrue: [morph cornerStyle: #square]
+		ifFalse: [morph cornerStyle: #rounded].
+
+
+	morph layoutInset: (node hasChildren
+		ifFalse: [self margin]
+		ifTrue: [self margin @ 20 corner: self margin @ self margin]).
+
+	node hasChildren ifTrue: [
+		morph
+			labelPosition: #topLeft;
+			font: (Preferences standardDefaultTextFont emphasized: 1)].
+
+	morph cellInset: 5.
+	morph label: (node at: #text).
+
 	(node at: #color ifAbsent: []) ifNotNil: [:c |
 		morph color: c].
+
+	morph borderWidth: 1.
 
 	morph balloonText: (node at: #balloonText ifAbsent: []).
 

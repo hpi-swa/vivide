@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Voronoi",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label",
+		"labelPosition",
+		"font" ],
+	"name" : "ViTreeMapItemMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
