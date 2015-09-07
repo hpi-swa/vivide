@@ -6,5 +6,5 @@ test06Script
 	model := ViQueryNode new.
 	
 	model firstStep: (ViQueryStep use: #(1 2 3 4) in: script).
-	sut model: model. 
+	sut process: model. 
 	self assert: (sut objects hasEqualElements: #(2 4 6 8)).

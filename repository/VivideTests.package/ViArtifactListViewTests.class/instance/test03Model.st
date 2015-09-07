@@ -5,7 +5,7 @@ test03Model
 	model := ViQueryNode new.
 	model firstStep: (ViQueryFillStep new objects: #(1 2 3); yourself).
 	
-	sut model: model.
+	sut process: model.
 	self assert: (sut objects hasEqualElements: #(1 2 3)).
 	
 	sut addObject: 4.

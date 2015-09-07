@@ -11,10 +11,11 @@ test13NotificationsSkipDuplicateUpdates
 
 	env := ViPane new.
 	view := script updateView: nil forEnvironment: env.
-		
+	view setUp: script.
+	
 	"Prepare view to update."
 	sut firstStep: (ViQueryStep use: {self class} in: script).
-	view model: sut.
+	view process: sut.
 	
 	self assert: 1 equals: (Smalltalk at: #queryNode).
 	Smalltalk at: #queryNode put: 0. "reset first"

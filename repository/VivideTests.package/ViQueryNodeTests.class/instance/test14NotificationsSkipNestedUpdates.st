@@ -19,10 +19,11 @@ test14NotificationsSkipNestedUpdates
 	
 	env := ViPane new.
 	view := script updateView: nil forEnvironment: env.
-		
+	view setUp: script.
+	
 	"Prepare view to update."
 	sut firstStep: (ViQueryStep use: {self class category} in: script).
-	view model: sut.
+	view process: sut.
 	view currentVisibleView expandAllTopLevelNodes.
 	
 	self assert: 1 equals: (Smalltalk at: #outer).
