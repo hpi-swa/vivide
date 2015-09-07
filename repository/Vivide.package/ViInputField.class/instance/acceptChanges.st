@@ -14,4 +14,4 @@ acceptChanges
 		self model firstStep objects: {value}.
 		ViObjectChangeNotifier uniqueInstance objectChanged: value].
 "
-	self selectionChanged: self selectedNodes.
+	self yield: self selectedNodes.

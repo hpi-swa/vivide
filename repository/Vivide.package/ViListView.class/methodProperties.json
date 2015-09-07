@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"defaultViewId" : "mt 10/8/2014 11:16:49.526" },
+		 },
 	"instance" : {
 		"initialize" : "mt 10/8/2014 11:17:27.024",
-		"updateFor:in:" : "mt 7/22/2015 13:50" } }
+		"setUp:" : "mt 9/7/2015 14:10" } }

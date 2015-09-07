@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"currentSelectionIndex" : "mt 6/10/2015 16:47",
-		"currentSelectionIndex:" : "mt 6/10/2015 16:48",
+		"currentSelectionIndex:" : "mt 9/7/2015 17:02",
 		"dragPassengerAtIndex:" : "mt 6/10/2015 10:21",
 		"dragTransferTypeAtIndex:" : "mt 6/10/2015 10:22",
 		"hasMultiSelection" : "mt 6/10/2015 16:56",
@@ -15,10 +15,10 @@
 		"isSelectedAt:" : "mt 6/11/2015 11:26",
 		"list" : "mt 7/28/2015 12:59",
 		"model" : "mt 6/9/2015 15:00",
-		"model:" : "mt 6/9/2015 15:01",
+		"process:" : "mt 9/7/2015 15:44",
 		"reset" : "mt 7/9/2015 17:47",
 		"selectedNode" : "mt 6/9/2015 15:23",
 		"selectedNodes" : "mt 6/10/2015 16:55",
-		"selectionMap" : "mt 6/11/2015 11:24",
-		"setAt:isSelected:" : "mt 6/10/2015 16:56",
-		"updateFor:in:" : "mt 6/10/2015 17:00" } }
+		"selectionMap" : "mt 9/7/2015 17:03",
+		"setAt:isSelected:" : "mt 9/7/2015 17:03",
+		"setUp:" : "mt 9/7/2015 15:45" } }

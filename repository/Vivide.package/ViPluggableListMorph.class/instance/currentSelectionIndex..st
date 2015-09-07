@@ -8,4 +8,4 @@ currentSelectionIndex: anInteger
 	currentSelectionIndex := anInteger.
 	
 	self changed: #currentSelectionIndex.
-	self selectionChanged: (self selectedNode ifNil: [{}] ifNotNil: [:node | {node}]).
+	self yield: (self selectedNode ifNil: [{}] ifNotNil: [:node | {node}]).

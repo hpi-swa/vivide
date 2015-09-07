@@ -10,4 +10,4 @@ selectObjects: someObjects
 		toValue: (someObjects collect: [:o |
 			Dictionary newFrom: {#object -> o}]). 
 
-	self selectionChanged: self selectedNodes.
+	self yield: self selectedNodes.

@@ -3,18 +3,15 @@ updateView
 	
 	self removeProperty: #lastSelection.
 	
-	(self currentQuery ifNotNil: [:q |
-		q updateView: self view forEnvironment: self]) in: [:newView |
-			newView ~~ self view ifTrue: [
-				self view ifNotNil: [:v |
-					v clear; delete].
-				newView ifNotNil: [:v |	
-					v
-						model: self model;
-						hResizing: #spaceFill;
-						vResizing: #spaceFill.
-					self addMorphBack: newView]]].
-	
+	self currentQuery ifNotNil: [:script |
+		(script updateView: self view forEnvironment: self) in: [:view |
+			"Provide current meta-data to view."
+			view setUp: script.
+		
+			view ~~ self view ifTrue: [
+				self view: view.
+				view process: self model] ] ].
+
 	self
 		clearError;
 		updateColor.

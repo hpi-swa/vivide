@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"clear" : "mt 9/7/2015 15:39",
 		"drawOverlayOn:" : "mt 1/21/2015 14:50:27.36",
 		"initialize" : "mt 1/21/2015 13:56:01.962",
 		"model" : "mt 1/21/2015 13:50:14.887",
-		"model:" : "mt 1/21/2015 11:34:18.716",
 		"optimalHeight" : "mt 3/4/2015 13:23",
 		"optimalWidth" : "mt 3/4/2015 13:23",
+		"process:" : "mt 9/7/2015 15:39",
 		"reset" : "mt 1/21/2015 14:33:27.664",
 		"wantsHaloFromClick" : "mt 1/21/2015 13:57:23.149" } }

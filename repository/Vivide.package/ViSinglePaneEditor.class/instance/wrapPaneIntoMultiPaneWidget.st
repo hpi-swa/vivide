@@ -15,12 +15,12 @@ wrapPaneIntoMultiPaneWidget
 	
 	newPane := ViPane new.
 	newPane
-		addMorphBack: (ViMultiPaneWidget new
-			initializeFor: metaScript in: newPane;
+		view: (ViMultiPaneWidget new
 			addPane: singlePane; "preserve state"
 			yourself);
 		queries: singlePane queries;
 		currentQuery: metaScript;
+		flag: #performance; "mt: unnecessary update ..."
 		objects: singlePane objects.
 	self pane: newPane.
 
@@ -36,7 +36,7 @@ wrapPaneIntoMultiPaneWidget
 	self pane view in: [:multiPaneWidget |
 		multiPaneWidget
 			setProperty: #isUpdatingScript toValue: true;
-			model: self pane model;
+			process: self pane model;
 			removeProperty: #isUpdatingScript;
 			yourself.
 		

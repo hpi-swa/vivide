@@ -1,14 +1,10 @@
 processing
-updateView: aMorph forEnvironment: anObject
+updateView: view forEnvironment: pane
 	"Overridden to use new-style view references stored in properties. Those are classes or blocks. See TViObjectView trait and its implementors."
 
-	^ ((self valueOfProperty: #view) ifNil: [ViProfile active ifNil: [ViTreePlainView] ifNotNil: #defaultView]) in: [:classOrBlock |
-			classOrBlock isBlock
-				ifTrue: [classOrBlock
-					cull: self
-					cull: (aMorph ifNil: [Morph new])
-					cull: anObject]
-				ifFalse: [classOrBlock
-					createFor: self
-					orUpdate: (aMorph ifNil: [Morph new])
-					in: anObject]]
+	^ ((self valueOfProperty: #view)
+		ifNil: [ViProfile active ifNil: [ViTreePlainView] ifNotNil: #defaultView])
+		in: [:viewClass |
+			view class == viewClass
+				ifTrue: [view]
+				ifFalse: [viewClass new]]

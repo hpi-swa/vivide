@@ -5,4 +5,4 @@ setAt: index isSelected: aBoolean
 	self selectionMap at: index put: aBoolean.
 	
 	self changed: #currentSelectionIndex.
-	self selectionChanged: self selectedNodes.
+	self yield: self selectedNodes.

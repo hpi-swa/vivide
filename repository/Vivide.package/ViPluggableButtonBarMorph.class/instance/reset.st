@@ -2,7 +2,7 @@ initialization
 reset
 
 	self removeAllMorphs.
-	self model ifNil: [^ self].
+
 	self model hasChildren ifFalse: [^ self].
 	
 	self addAllMorphs: ((1 to: buttonCount) collect: [:index |

@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 exploreHierarchy
 
 	#paneHierarchy openScriptWith: {self}.
