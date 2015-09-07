@@ -1,4 +1,4 @@
-as yet unclassified
+updating - specific
 updateSubmorphsFor: node owner: morph
 
 	self configureSubmorph: morph forNode: node. 

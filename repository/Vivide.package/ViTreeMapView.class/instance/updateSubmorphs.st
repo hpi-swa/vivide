@@ -1,4 +1,4 @@
-as yet unclassified
+updating - specific
 updateSubmorphs
 
 	self assert: self root hasSubmorphs not.

@@ -1,4 +1,4 @@
-as yet unclassified
+layouting
 layoutStripFor: node owner: morph
 
 	| vOffset nodes nodesLeft morphs ratios |

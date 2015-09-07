@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 triggerReset
 
 	self setProperty: #shouldReset toValue: true.

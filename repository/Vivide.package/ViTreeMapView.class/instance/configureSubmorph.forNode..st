@@ -1,4 +1,4 @@
-as yet unclassified
+updating - specific
 configureSubmorph: morph forNode: node
 	
 	morph layoutPolicy: ProportionalLayout new.

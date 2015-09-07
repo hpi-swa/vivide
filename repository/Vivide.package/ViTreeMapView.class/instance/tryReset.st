@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 tryReset
 
 	(self hasProperty: #shouldReset) ifTrue: [

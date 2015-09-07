@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 clear
 
 	self root removeAllMorphs.

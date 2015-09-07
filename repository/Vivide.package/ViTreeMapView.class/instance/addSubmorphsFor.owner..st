@@ -1,4 +1,4 @@
-as yet unclassified
+updating - specific
 addSubmorphsFor: node owner: morph
 
 	"self layoutSliceAndDiceFor: node owner: morph. "

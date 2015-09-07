@@ -1,4 +1,4 @@
-initialization
+updating
 reset
 	"Configure my view with actual data."
 
@@ -8,8 +8,6 @@ reset
 		self setProperty: #isUpdating toValue: true.
 	
 		self root removeAllMorphs.
-	
-		self model ifNil: [^ self].
 
 		self aggregateModel.	
 		self updateSubmorphs.

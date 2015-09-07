@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 setUp: aScript
 	
 	aggregationBlock := aScript valueOfProperty: #aggregate.

@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 root
 	^ self scroller widget
