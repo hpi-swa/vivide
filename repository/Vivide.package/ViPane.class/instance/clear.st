@@ -6,6 +6,7 @@ clear
 	
 	ViObjectChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	ViQueryChangeNotifier uniqueInstance noMoreNotificationsFor: self.
+	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
 	self view ifNotNil: #clear.
 	self currentQuery: nil.

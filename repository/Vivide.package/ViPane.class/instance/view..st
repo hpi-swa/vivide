@@ -7,6 +7,8 @@ view: view
 		self model disconnectSignal: #propertiesChanged: from: v selector: #process:.
 		v clear; delete].
 	
+	view ifNil: [^ self].
+	
 	self
 		connect: view signal: #yield:
 		toSelector: #notifyChangedSelection:.

@@ -14,7 +14,8 @@ initialize
 	
 	self
 		initializeUiObjectChanges;
-		initializeUiQueryChanges.
+		initializeUiQueryChanges;
+		initializeUiSystemChanges.
 
 	self connect: self model signal: #modelReset toSelector: #notifyChangedResults.
 	self connect: self signal: #currentQueryChanged: toSelector: #notifyChangedResults.
