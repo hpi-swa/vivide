@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"columns" : "mt 9/10/2015 15:08",
+		"createColumnForNode:" : "mt 9/14/2015 13:15",
+		"initialize" : "mt 9/10/2015 15:28",
+		"process:" : "mt 9/14/2015 13:15",
+		"updateScale:" : "mt 9/14/2015 13:14" } }
