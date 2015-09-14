@@ -1,10 +1,14 @@
 as yet unclassified
 drawOverlayOn: aCanvas
 
-	| pos |
+	| pos w |
 	self label ifEmpty: [^ self].
 	
-	pos := self center - (((self font widthOfString: self label) @ self font height) // 2).
+	w := self font widthOfString: self label.
+	((w//2) > self width or: [self font height > self height])
+		ifTrue: [^ self].
+	
+	pos := self center - ((w @ self font height) // 2).
 	
 	self labelPosition = #topLeft ifTrue: [
 		pos := self topLeft + (self class preferredCornerRadius // 2) asPoint].
