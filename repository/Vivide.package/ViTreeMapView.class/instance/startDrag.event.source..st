@@ -1,4 +1,4 @@
-as yet unclassified
+event handling
 startDrag: object event: evt source: morph
 
 	evt hand grabMorph: (

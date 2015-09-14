@@ -1,3 +1,4 @@
 accessing
-root
+content
+
 	^ self scroller widget

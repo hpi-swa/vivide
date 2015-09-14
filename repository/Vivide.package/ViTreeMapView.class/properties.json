@@ -2,7 +2,6 @@
 	"category" : "Vivide-Voronoi",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViObjectView classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -13,6 +12,5 @@
 	"name" : "ViTreeMapView",
 	"pools" : [
 		 ],
-	"super" : "Morph",
-	"traitcomposition" : "TViObjectView",
+	"super" : "ViScrollPaneView",
 	"type" : "normal" }

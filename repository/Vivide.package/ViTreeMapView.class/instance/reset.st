@@ -7,7 +7,7 @@ reset
 	[
 		self setProperty: #isUpdating toValue: true.
 	
-		self root removeAllMorphs.
+		self content removeAllMorphs.
 
 		self aggregateModel.	
 		self updateSubmorphs.

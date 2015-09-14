@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"adoptPaneColor:" : "mt 9/14/2015 13:29",
+		"content" : "mt 9/10/2015 14:52",
+		"initialize" : "mt 9/10/2015 15:01",
+		"initializeEventHandler" : "mt 9/10/2015 14:50",
+		"initializeScroller" : "mt 9/10/2015 14:52",
+		"initializeToolbar" : "mt 9/10/2015 14:49",
+		"scroller" : "mt 9/10/2015 14:52",
+		"setUp:" : "mt 9/10/2015 14:57",
+		"zoomFactor" : "mt 9/10/2015 14:54",
+		"zoomFit" : "mt 9/10/2015 14:54",
+		"zoomIn" : "mt 9/10/2015 14:54",
+		"zoomIn:" : "mt 9/10/2015 14:54",
+		"zoomInEvent:" : "mt 9/10/2015 14:55",
+		"zoomOut" : "mt 9/10/2015 14:55",
+		"zoomOut:" : "mt 9/10/2015 14:55",
+		"zoomOutEvent:" : "mt 9/10/2015 14:55" } }

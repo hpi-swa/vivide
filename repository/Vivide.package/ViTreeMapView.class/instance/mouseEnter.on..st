@@ -1,4 +1,4 @@
-as yet unclassified
+event handling
 mouseEnter: evt on: morph
 
 	morph setProperty: #oldColor toValue: morph borderColor.

@@ -1,4 +1,4 @@
 initialization
 clear
 
-	self root removeAllMorphs.
+	self content removeAllMorphs.

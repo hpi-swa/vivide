@@ -1,4 +1,4 @@
-as yet unclassified
+event handling
 mouseLeave: evt on: morph
 
 	(morph hasProperty: #oldColor) ifFalse: [^ self].
