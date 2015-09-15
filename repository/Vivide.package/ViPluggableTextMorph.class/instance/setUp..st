@@ -13,5 +13,7 @@ setUp: aScript
 	(aScript valueOfProperty: #font ifAbsent: []) ifNotNil: [:font |
 		self textMorph font: font value].
 
+	self textMorph balloonText: (aScript valueOfProperty: #help ifAbsent: []).
+
 	self flag: #performance.
 	self reset.

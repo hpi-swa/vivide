@@ -7,4 +7,6 @@ reset
 			select: (1 to: 0) "none"].
 	
 	"Restore selection."
-	self yield: self selectedNodes.
+	self selectedNodes
+		ifEmpty: [self yieldObject: '']
+		ifNotEmpty: [:nodes | self yield: nodes].

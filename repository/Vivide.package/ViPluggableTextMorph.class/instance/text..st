@@ -1,4 +1,4 @@
-nil
+accessing
 text: newText
 
 	self model ifNotNil: [:m |

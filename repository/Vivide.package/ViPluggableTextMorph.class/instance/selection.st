@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 selection
 
 	^ self model ifNil: [1 to: 0] ifNotNil: [:m |

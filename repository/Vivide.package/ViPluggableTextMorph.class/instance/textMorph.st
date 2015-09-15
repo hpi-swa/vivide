@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 textMorph
 
 	^ self submorphs first

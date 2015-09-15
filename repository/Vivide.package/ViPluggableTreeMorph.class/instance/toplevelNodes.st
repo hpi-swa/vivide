@@ -1,4 +1,4 @@
 as yet unclassified
 toplevelNodes
 
-	^ self model ifNil: [#()] ifNotNil: [:m | m nodes]
+	^ self model ifNil: [#()] ifNotNil: [:m | self childrenFor: m]

@@ -1,8 +1,9 @@
 actions
 acceptChanges
 
-	self model ifNil: [^ self].
-	self model objects ifEmpty: [^ self].
+	"Fall-back if there is no input."
+	(self model isNil or: [self model objects isEmpty])
+		ifTrue: [^ self yieldObject: self lineEdit theText asString].
 	
 	self model objects first = self lineEdit theText asString
 		ifTrue: [^ self].
