@@ -16,6 +16,7 @@ doDrag: evt with: dragHandle
 	evt hand obtainHalo: self.
 	
 	target topLeft: (target globalPointToLocal: evt cursorPoint - positionOffset).
-	target layoutChanged.
+	target layoutChanged. "Needed for layout algorithm."
+	
 	self topLeft: evt cursorPoint - positionOffset.
 	dragHandle position: evt cursorPoint - (dragHandle extent // 2).

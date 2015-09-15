@@ -4,7 +4,7 @@
 		"open:for:" : "mt 7/6/2015 10:27" },
 	"instance" : {
 		"acceptChanges" : "mt 11/28/2014 15:04:30.487",
-		"acceptDroppingMorph:event:" : "mt 12/18/2014 10:25:00.561",
+		"acceptDroppingMorph:event:" : "mt 9/14/2015 15:36",
 		"asEditorState" : "mt 1/31/2015 14:51",
 		"clear" : "mt 11/28/2014 15:04:15.786",
 		"copyEditor" : "mt 7/21/2015 13:14",
@@ -35,4 +35,4 @@
 		"updateHeaderText" : "mt 11/28/2014 13:50:06.459",
 		"wantsDroppedMorph:event:" : "mt 6/9/2015 15:50",
 		"wantsHaloFromClick" : "mt 12/9/2014 15:46:31.559",
-		"wrapPaneIntoMultiPaneWidget" : "mt 9/7/2015 17:20" } }
+		"wrapPaneIntoMultiPaneWidget" : "mt 9/15/2015 09:48" } }

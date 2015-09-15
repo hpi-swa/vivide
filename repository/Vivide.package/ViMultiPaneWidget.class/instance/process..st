@@ -1,5 +1,5 @@
 as yet unclassified
 process: node
 
-	model := node.
+	self model: node.
 	self reset.

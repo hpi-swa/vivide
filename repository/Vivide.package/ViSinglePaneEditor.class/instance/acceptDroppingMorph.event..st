@@ -4,11 +4,8 @@ acceptDroppingMorph: aTransferMorph event: evt
 	
 	self assert: (self pane view isKindOf: ViMultiPaneWidget) not.
 
-	self setProperty: #isSpawning toValue: true.   
-
 	self wrapPaneIntoMultiPaneWidget
 		acceptDroppingMorph: aTransferMorph
 		event: evt.
 	
 	self clearDrawFlag: #dropPane.
-	self removeProperty: #isSpawning.

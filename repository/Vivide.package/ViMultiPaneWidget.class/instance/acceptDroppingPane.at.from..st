@@ -25,6 +25,8 @@ acceptDroppingPane: aPane at: aPoint from: source
 	
 	self addPane: aPane.
 
+	self assert: 1 equals: (self submorphs count: [:m | (m instVarNamed: #fullBounds) isNil]).
+
 	"Auto-establish data flow connection."
 	(source withAllOwners detect: [:m | m isKindOf: ViPane] ifNone: [])
 		ifNotNil: [:sourcePane | sourcePane owner == self ifTrue: [
