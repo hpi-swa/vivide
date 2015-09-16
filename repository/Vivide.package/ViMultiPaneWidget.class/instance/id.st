@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - pane api
 id
 
 	^ #outer

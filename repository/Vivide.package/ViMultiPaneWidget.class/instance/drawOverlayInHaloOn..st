@@ -1,4 +1,4 @@
-as yet unclassified
+halo
 drawOverlayInHaloOn: aCanvas
 
 	self panes do: [:p |

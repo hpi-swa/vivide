@@ -1,4 +1,4 @@
-as yet unclassified
+dropping
 acceptDroppingObject: anObject at: aPoint from: source
 
 	| pane |

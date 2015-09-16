@@ -3,7 +3,7 @@ initializeMetaScriptFromPane: pane
 
 	| metaScript metaWidget |
 	metaScript := ViScriptPart convertPanes: {pane asDictionary}.
-	metaWidget := ViMultiPaneWidget new addPane: pane; yourself.
+	metaWidget := ViMultiPaneTiled new addPane: pane; yourself.
 
 	"Adopt organization of single pane's script."
 	metaScript adoptOrganization: pane currentQuery organization.

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 fullScript
 	"Like fullBounds layouting mechanism, we need to compute our meta scripts for multiple panes."
 

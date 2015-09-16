@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViMultiPaneTiled",
+	"pools" : [
+		 ],
+	"super" : "ViMultiPaneWidget",
+	"type" : "normal" }

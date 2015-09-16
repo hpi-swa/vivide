@@ -1,4 +1,4 @@
-as yet unclassified
+panes add/remove
 removedMorph: morph
 
 	self panes

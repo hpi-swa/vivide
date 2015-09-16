@@ -1,4 +1,4 @@
-as yet unclassified
+panes add/remove
 addPane: aPane
 	
 	self panes ifEmpty: [

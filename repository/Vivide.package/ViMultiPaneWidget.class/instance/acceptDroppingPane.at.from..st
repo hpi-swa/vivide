@@ -1,4 +1,4 @@
-as yet unclassified
+dropping
 acceptDroppingPane: aPane at: aPoint from: source
 
 	self assert: (self panes identityIncludes: aPane) not.

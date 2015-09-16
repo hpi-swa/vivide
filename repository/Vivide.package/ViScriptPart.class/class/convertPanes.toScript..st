@@ -22,7 +22,7 @@ convertPanes: paneSpecs toScript: firstPart
 					into: [:src :assoc | src, String tab,
 						assoc key storeString, ' -> ', assoc value compactStoreString, '.',
 						String cr] }).
-			script setProperty: #view toValue: ViMultiPaneWidget.
+			script setProperty: #view toValue: ViMultiPaneTiled.
 			script setProperty: #isProperty toValue: true].
 	].
 

@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 notifyAboutIncomingObjects
 
 	"Distribute incoming objects."

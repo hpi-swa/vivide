@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 panes
 
 	^ self submorphs
