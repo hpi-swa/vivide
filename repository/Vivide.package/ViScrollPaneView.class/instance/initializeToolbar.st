@@ -16,6 +16,7 @@ initializeToolbar
 	} do: [:spec |
 		| button |
 		button := UiToolButton new
+			name: spec third;
 			autoRaise: true;
 			color: (Color gray: 0.85);
 			icon: spec second;

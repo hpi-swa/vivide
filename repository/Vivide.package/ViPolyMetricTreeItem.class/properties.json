@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lineWeight" ],
+	"name" : "ViPolyMetricTreeItem",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
