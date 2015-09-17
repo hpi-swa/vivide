@@ -36,13 +36,18 @@ configureSubmorph: morph forNode: node
 
 	morph balloonText: (node at: #balloonText ifAbsent: []).
 
+
 	morph
 		on: #startDrag
 		send: #startDrag:event:source:
 		to: self
 		withValue: (node at: #object).
+	"Store object reference for multi-selection."
+	morph setProperty: #object toValue: (node at: #object). 
 		
 	morph on: #mouseEnter send: #mouseEnter:on: to: self.
 	morph on: #mouseLeave send: #mouseLeave:on: to: self.
 	morph on: #mouseEnterDragging send: #mouseEnter:on: to: self.
 	morph on: #mouseLeaveDragging send: #mouseLeave:on: to: self.
+	morph on: #mouseUp send: #mouseUp:on: to: self.
+	morph on: #mouseDown send: #mouseDown:on: to: self.

@@ -7,6 +7,8 @@ configureItem: item forNode: node
 	
 	item itemMorph balloonText: (node at: #balloonText ifAbsent: []).
 
+	item setProperty: #object toValue: (node at: #object). 
+
 	"Interactive stuff"
 	item
 		on: #startDrag
@@ -18,3 +20,5 @@ configureItem: item forNode: node
 	item on: #mouseLeave send: #mouseLeave:on: to: self.
 	item on: #mouseEnterDragging send: #mouseEnter:on: to: self.
 	item on: #mouseLeaveDragging send: #mouseLeave:on: to: self.
+	item on: #mouseUp send: #mouseUp:on: to: self.
+	item on: #mouseDown send: #mouseDown:on: to: self.
