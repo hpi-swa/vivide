@@ -6,9 +6,10 @@ env:
     - BASELINE=Vivide
     - PACKAGES="/repository"
   matrix:
-    - SMALLTALK="SqueakTrunk"
     - SMALLTALK="Squeak4.6"
-
+    - SMALLTALK="Squeak5.0"
+    - SMALLTALK="SqueakTrunk"
+    
 addons:
   apt:
     packages:
