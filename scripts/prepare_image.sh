@@ -43,6 +43,13 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
 
     wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
     gunzip SqueakV46.sources.gz
+elif [ $SMALLTALK == "Squeak5.0" ]; then
+    print_info "Downloading Squeak5.0 image..."
+    wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
+    unzip Squeak5.0-15113.zip
+
+    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+    gunzip SqueakV50.sources.gz
 else
     print_info "Downloading SqueakTrunk image..."
     wget http://build.squeak.org/job/SqueakTrunk/lastSuccessfulBuild/artifact/target/TrunkImage.zip
