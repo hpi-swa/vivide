@@ -6,6 +6,8 @@ updateForQuery: query
 		setProperty: #expandAll
 		toValue: (query valueOfProperty: #expandAll ifAbsent: [false]).
 	
+	self flag: #performance. "mt: Avoid unnecessary updates, e.g., if no property step changed."
+	
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
 		(UiItemViewSimpleColumnSpec newFrom: (#(text icon color morph balloonText editable selectable)
 			collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))

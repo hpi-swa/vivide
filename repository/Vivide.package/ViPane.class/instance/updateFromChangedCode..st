@@ -2,8 +2,9 @@ updating
 updateFromChangedCode: evt
 	"If there was a change in view code, update my view."
 	
-	(evt itemClass includesBehavior: self view class)
-		ifFalse: [^ self].
+	((self view class includesBehavior: evt itemClass)
+		or: [(self currentQuery valueOfProperty: #view ifAbsent: [ProtoObject]) includesBehavior: evt itemClass])
+			ifFalse: [^ self].
 		
 	evt itemSelector = #setUp:
 		ifTrue: [^ self triggerUpdateView].
