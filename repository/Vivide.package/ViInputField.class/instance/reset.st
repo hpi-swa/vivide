@@ -8,5 +8,5 @@ reset
 	
 	"Restore selection."
 	self selectedNodes
-		ifEmpty: [self yieldObject: '']
+		ifEmpty: [self yieldObject: self lineEdit theText asString]
 		ifNotEmpty: [:nodes | self yield: nodes].

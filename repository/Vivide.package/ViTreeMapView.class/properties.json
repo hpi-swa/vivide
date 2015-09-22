@@ -2,6 +2,7 @@
 	"category" : "Vivide-Voronoi",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TViObjectViewSupport classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -14,4 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "ViScrollPaneView",
+	"traitcomposition" : "TViObjectViewSupport",
 	"type" : "normal" }

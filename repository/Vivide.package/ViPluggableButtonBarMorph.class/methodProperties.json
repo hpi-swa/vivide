@@ -4,6 +4,7 @@
 	"instance" : {
 		"clear" : "mt 9/7/2015 15:42",
 		"doClickAt:" : "mt 6/10/2015 11:24",
+		"drawOn:" : "mt 9/20/2015 12:04",
 		"initialize" : "mt 6/10/2015 17:17",
 		"model" : "mt 6/10/2015 11:15",
 		"process:" : "mt 9/7/2015 15:42",

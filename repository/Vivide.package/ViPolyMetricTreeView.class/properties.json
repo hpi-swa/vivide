@@ -2,6 +2,7 @@
 	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TViObjectViewSupport classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "ViScrollPaneView",
+	"traitcomposition" : "TViObjectViewSupport",
 	"type" : "normal" }
