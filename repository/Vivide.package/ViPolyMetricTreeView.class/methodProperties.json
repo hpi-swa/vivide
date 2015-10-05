@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addItemsForNode:parent:" : "mt 9/16/2015 17:06",
+		"addItemsForNode:parent:" : "mt 9/23/2015 11:56",
 		"configureItem:forNode:" : "mt 9/17/2015 15:29",
 		"deselectAll" : "mt 9/17/2015 15:09",
 		"deselectItem:" : "mt 9/20/2015 11:25",
@@ -13,7 +13,9 @@
 		"mouseEnter:on:" : "mt 9/16/2015 16:50",
 		"mouseLeave:on:" : "mt 9/16/2015 16:48",
 		"mouseUp:on:" : "mt 9/17/2015 15:37",
-		"process:" : "mt 9/16/2015 16:26",
+		"process:" : "mt 9/23/2015 12:07",
+		"reset" : "mt 9/23/2015 12:07",
+		"rootNode" : "mt 9/23/2015 12:00",
 		"selectItem:" : "mt 9/20/2015 11:25",
 		"selectedItems" : "mt 9/17/2015 15:01",
 		"selectedObjects" : "mt 9/20/2015 11:24",

@@ -5,6 +5,9 @@ addItemsForNode: node parent: item
 		| newItem |
 		newItem := ViPolyMetricTreeItem new.
 		
+		n disconnectSignal: #modelReset from: self selector: #triggerReset. 
+		self connect: n signal: #modelReset toSelector: #triggerReset.
+		
 		self configureItem: newItem forNode: n.
 		newItem lineWeight: ((node at: #edge ifAbsent: [0]) / 5 max: 1) truncated.
 		

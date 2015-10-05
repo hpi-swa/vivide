@@ -50,8 +50,9 @@ layoutStripFor: node owner: morph
 		ratios := ratios allButFirst: strip size.
 		vOffset := vOffset + max.
 	].
-	
+
 	nodes with: morphs do: [:n :m |
 		self updateSubmorphsFor: n owner: m].
-	
-	morph addAllMorphs: morphs.
+
+	morph addAllMorphs: morphs reversed.
+	morph computeSubmorphElevation.

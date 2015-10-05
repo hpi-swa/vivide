@@ -8,7 +8,9 @@
 	"instvars" : [
 		"label",
 		"labelPosition",
-		"font" ],
+		"font",
+		"elevation",
+		"submorphElevation" ],
 	"name" : "ViTreeMapItemMorph",
 	"pools" : [
 		 ],

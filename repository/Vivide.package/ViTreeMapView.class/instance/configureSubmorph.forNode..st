@@ -3,7 +3,7 @@ configureSubmorph: morph forNode: node
 	
 	morph layoutPolicy: ProportionalLayout new.
 	morph hResizing: #spaceFill; vResizing: #spaceFill.
-	morph clipSubmorphs: true.
+	morph clipSubmorphs: false.
 
 	node depth = 0 ifTrue: [^ self].
 
@@ -16,17 +16,17 @@ configureSubmorph: morph forNode: node
 		ifTrue: [morph cornerStyle: #square]
 		ifFalse: [morph cornerStyle: #rounded].
 
-
+	morph elevation: (node at: #elevation ifAbsent: [0]).
 	morph layoutInset: (node hasChildren
 		ifFalse: [self margin]
-		ifTrue: [self margin @ 20 corner: self margin @ self margin]).
+		ifTrue: [self margin @ 20 corner: self margin @ (self margin + morph elevation)]).
 
 	node hasChildren ifTrue: [
 		morph
 			labelPosition: #topLeft;
 			font: (Preferences standardDefaultTextFont emphasized: 1)].
 
-	morph cellInset: 5.
+	"morph cellInset: 15."
 	morph label: (node at: #text).
 
 	(node at: #color ifAbsent: []) ifNotNil: [:c |

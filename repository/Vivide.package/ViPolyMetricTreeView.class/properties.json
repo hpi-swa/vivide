@@ -2,15 +2,16 @@
 	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViObjectViewSupport classTrait",
+	"classtraitcomposition" : "TViObjectViewSupport classTrait + TViObjectViewReset classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"root",
 		"selectedItems" ],
 	"name" : "ViPolyMetricTreeView",
 	"pools" : [
 		 ],
 	"super" : "ViScrollPaneView",
-	"traitcomposition" : "TViObjectViewSupport",
+	"traitcomposition" : "TViObjectViewSupport + TViObjectViewReset",
 	"type" : "normal" }
