@@ -10,7 +10,7 @@ updateInputKind
 				ifFalse: [self inputKind: (k isArray ifTrue: [k] ifFalse: [{k}]). ^ self]].
 
 	([(self interpretUpToDetect: [:script | script next == self object]) allObjects]
-	on: Error do: [^ self]) ifEmpty: [self inputKind: {"global"}] ifNotEmpty: [:objects |
+	on: Error do: [self inputKind: {nil}. ^ self]) ifEmpty: [self inputKind: {"global"}] ifNotEmpty: [:objects |
 		(ViQueryStepDefinition
 			collectBaseClassesForContext: objects
 			withTuples: (ViQueryInterpreter isCollection: objects first)) in: [:tmp |

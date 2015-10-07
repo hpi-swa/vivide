@@ -2,6 +2,8 @@ notifications
 setUpdateNotifications
 
 	| refObjects |
+	self depth > self class updateDepthThreshold ifTrue: [^ self].
+	
 	self firstStep ifNotNil: [:f |
 		self flag: #missing. "mt: What about intermediate objects?"
 		refObjects := f process: #() within: nil.

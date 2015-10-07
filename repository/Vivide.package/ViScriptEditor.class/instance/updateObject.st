@@ -8,7 +8,7 @@ updateObject
 	"<block> -> <array> OR <symbol> -> <array> OR <symbol>"
 	
 	self sourceCode
-		ifNotNil: [:code | self object definition sourceCode: code]
+		ifNotNil: [:code | self object sourceCode: code]
 		ifNil: [spec isSymbol
 			ifTrue: ["Reference to query step"]
 			ifFalse: [spec key isSymbol

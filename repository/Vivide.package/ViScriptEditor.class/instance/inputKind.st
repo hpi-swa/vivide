@@ -1,4 +1,4 @@
 support - input kind
 inputKind
 
-	^ inputKind ifNil: [{nil}]
+	^ inputKind ifNil: [self updateInputKind. inputKind]
