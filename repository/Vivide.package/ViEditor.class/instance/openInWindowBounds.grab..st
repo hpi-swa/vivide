@@ -33,7 +33,7 @@ openInWindowBounds: bounds grab: boolean
 	ViActiveVivide world startSteppingSubmorphsOf: window.
 
 	"Last cosmetics."
-	self color: originalColor.
+	self color: Color transparent. "window color is enough"
 	self ui panel layoutInset: 0.  
 	
 	"Window controls."
