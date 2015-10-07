@@ -41,7 +41,9 @@ updateForQueryExtended: query
 		view
 			horizontalHeaderVisible: newHorizontalHeaderVisible;
 			removeAllColumns;
-			rootIsDecorated: query isHomogeneous not | query hasCycle;
+			rootIsDecorated: ((query isHomogeneous not
+				or: [query isRecursive])
+				or: [query hasCycle]);
 			addColumns: newCols.
 	
 		newResizeModes withIndexDo: [:resizeMode :idx |

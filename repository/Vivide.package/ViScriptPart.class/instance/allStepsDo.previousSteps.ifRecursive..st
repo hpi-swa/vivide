@@ -1,9 +1,9 @@
 as yet unclassified
-allStepsDo: aBlock previousSteps: someSteps
+allStepsDo: aBlock previousSteps: someSteps ifRecursive: anExceptionBlock
 
 	self stepsDo: [:step |
 		(someSteps identityIncludes: step)
-			ifTrue: [^ self].  
+			ifTrue: [^ anExceptionBlock cull: step].  
 		
 		someSteps add: step.
 		aBlock value: step.
@@ -12,9 +12,11 @@ allStepsDo: aBlock previousSteps: someSteps
 			step reference ifNotNil: [:referencedStep |
 				referencedStep
 					allStepsDo: aBlock
-					previousSteps: someSteps]].
+					previousSteps: someSteps
+					ifRecursive: anExceptionBlock]].
 		step isMeta ifTrue: [
 			step metaReference ifNotNil: [:referencedStep |
 				referencedStep
 					allStepsDo: aBlock
-					previousSteps: someSteps]]].
+					previousSteps: someSteps
+					ifRecursive: anExceptionBlock]]].

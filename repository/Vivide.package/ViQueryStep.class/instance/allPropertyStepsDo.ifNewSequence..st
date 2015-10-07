@@ -1,18 +1,21 @@
 as yet unclassified
 allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 
-	| lastStep |
+	| lastStep lastNonReferenceStep |
 	lastStep := nil.
+	lastNonReferenceStep := nil.
 	self allStepsDo: [:step |
 		step isPropertyStep ifTrue: [
-			(lastStep isNil or: [lastStep isPropertyStep not and: [lastStep isReferenceStep not]])
+			(lastNonReferenceStep isNil or: [lastNonReferenceStep isPropertyStep not])
 				ifTrue: [anotherBlock value].
 			aBlock value: step].
-		lastStep := step].
+		lastStep := step.
+		step isReferenceStep ifFalse: [lastNonReferenceStep := step]].
 
 	"Also consider default properties if needed."
-	(lastStep isPropertyStep not and: [
-		lastStep next isNil "or: [lastStep next isPropertyStep not] mt: references?"]) ifTrue: [
-		#defaultProperties asScript
-			allPropertyStepsDo: aBlock
-			ifNewSequence: anotherBlock].
+	((lastStep isPropertyStep not
+		and: [lastStep next isNil])
+		and: [lastStep isReferenceStep not "Should point to some other property..."]) ifTrue: [
+			#defaultProperties asScript
+				allPropertyStepsDo: aBlock
+				ifNewSequence: anotherBlock].

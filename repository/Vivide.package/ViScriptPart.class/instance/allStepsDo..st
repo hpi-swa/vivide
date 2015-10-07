@@ -4,4 +4,4 @@ allStepsDo: aBlock
 	
 	self
 		allStepsDo: aBlock
-		previousSteps: OrderedCollection new.
+		ifRecursive: [].
