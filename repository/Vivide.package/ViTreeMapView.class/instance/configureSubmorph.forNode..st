@@ -31,10 +31,14 @@ configureSubmorph: morph forNode: node
 
 	(node at: #color ifAbsent: []) ifNotNil: [:c |
 		morph color: c].
+	morph color = morph borderColor
+		ifTrue: [morph color: morph color darker].
+	morph color isTransparent
+		ifTrue: [morph color: (Color gray: 0.80)].
 
 	morph borderWidth: 1.
 
-	morph balloonText: (node at: #balloonText ifAbsent: []).
+	morph balloonText: (node at: #balloonText ifAbsent: [node at: #text ifAbsent: []]).
 
 
 	morph

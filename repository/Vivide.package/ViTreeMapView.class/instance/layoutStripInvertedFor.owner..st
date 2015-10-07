@@ -1,7 +1,7 @@
 layouting
-layoutStripFor: node owner: morph
+layoutStripInvertedFor: node owner: morph
 
-	| vOffset nodes nodesLeft morphs ratios |
+	| vOffset nodes nodesLeft morphs ratios odd |
 	nodes := node nodes select: [:n | (n at: #weight) > 0].
 	self sortByWeight ifTrue: [
 		nodes := nodes sorted: [:n1 :n2 | (n1 at: #weight) <= (n2 at: #weight)]].
@@ -16,6 +16,7 @@ layoutStripFor: node owner: morph
 	ratios := nodes collect: [:n | (n at: #weight) / (node at: #weight) asFloat].
 	
 	vOffset := 0.0.
+	odd := true.
 	[nodesLeft notEmpty] whileTrue: [
 		| avgSquareRatio max strip hOffset |
 		max := ratios first.
@@ -36,19 +37,22 @@ layoutStripFor: node owner: morph
 						false]
 					ifFalse: [true] ] ] ifNone: [].	
 
-		hOffset := 0.0.
-		strip do: [:ratio |
+		hOffset := odd ifTrue: [0.0] ifFalse: [1.0].
+		strip do: [:ratio | |hLeft hRight|
+			hLeft := odd ifTrue: [hOffset] ifFalse: [hOffset - (ratio/max)].
+			hRight := odd ifTrue: [hOffset + (ratio/max)] ifFalse: [hOffset].
 			morphs add: (ViTreeMapItemMorph new
 				color: morph color;
 				borderColor: morph color;
 				layoutFrame: (LayoutFrame fractions: (
-					hOffset @ vOffset corner: (hOffset + (ratio/max)) @ (vOffset + max)))
+					hLeft @ vOffset corner: hRight @ (vOffset + max)))
 				yourself).
-			hOffset := hOffset + (ratio/max)].
+			hOffset := odd ifTrue: [hRight] ifFalse: [hLeft]].
 
 		nodesLeft := nodesLeft allButFirst: strip size.
 		ratios := ratios allButFirst: strip size.
 		vOffset := vOffset + max.
+		odd := odd not.
 	].
 
 	nodes with: morphs do: [:n :m |

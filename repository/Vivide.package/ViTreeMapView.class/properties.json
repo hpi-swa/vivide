@@ -2,7 +2,7 @@
 	"category" : "Vivide-Voronoi",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViObjectViewSupport classTrait",
+	"classtraitcomposition" : "TViObjectViewSupport classTrait + TViObjectViewReset classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -10,10 +10,11 @@
 		"model",
 		"aggregationBlock",
 		"margin",
-		"selectedItems" ],
+		"selectedItems",
+		"sortByWeight" ],
 	"name" : "ViTreeMapView",
 	"pools" : [
 		 ],
 	"super" : "ViScrollPaneView",
-	"traitcomposition" : "TViObjectViewSupport",
+	"traitcomposition" : "TViObjectViewSupport + TViObjectViewReset",
 	"type" : "normal" }
