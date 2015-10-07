@@ -21,4 +21,7 @@
 		"test16TemplateAutoWrap" : "mt 7/9/2015 16:35",
 		"test17ScriptNotFound" : "mt 7/15/2015 17:19",
 		"test18DeepCopy" : "mt 7/19/2015 14:49",
-		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51" } }
+		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51",
+		"test20HomogeneousWithReference" : "mt 10/7/2015 17:46",
+		"test21NotHomogeneousWithReference" : "mt 10/7/2015 18:19",
+		"test22Recursive" : "mt 10/7/2015 18:46" } }
