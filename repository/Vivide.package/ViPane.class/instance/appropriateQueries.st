@@ -9,6 +9,10 @@ appropriateQueries
 		ifNotEmpty: [:o | ViQueryStepDefinition
 			collectBaseClassesForContext: o
 			withTuples: tuples > 1].
+	
+	self flag: #refactor. "mt: Find another way to get class for proxy"
+	baseClasses first name == 'ViProxyObject' ifTrue: [baseClasses := {Object}].
+		
 	(self objects notEmpty and: [tuples <= 1])
 		ifTrue: [baseClasses := {baseClasses}].
 
