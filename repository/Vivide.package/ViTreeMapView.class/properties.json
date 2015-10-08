@@ -11,7 +11,8 @@
 		"aggregationBlock",
 		"margin",
 		"selectedItems",
-		"sortByWeight" ],
+		"sortByWeight",
+		"layout" ],
 	"name" : "ViTreeMapView",
 	"pools" : [
 		 ],

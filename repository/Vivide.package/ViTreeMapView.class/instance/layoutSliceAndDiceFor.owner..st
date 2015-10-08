@@ -1,18 +1,20 @@
 layouting
 layoutSliceAndDiceFor: node owner: morph
 
-	| offset |
+	| offset nodes |
+	nodes := node nodes select: [:n | (n at: #weight) > 0].
+	self sortByWeight ifTrue: [
+		nodes := nodes sorted: [:n1 :n2 | (n1 at: #weight) <= (n2 at: #weight)]].
+	
 	offset := 0.0.
-	node nodes do: [:child |
+	nodes do: [:child |
 		| rect ratio |
 		child disconnectSignal: #modelReset from: self selector: #triggerReset. 
 		self connect: child signal: #modelReset toSelector: #triggerReset.
 		
 		rect := ViTreeMapItemMorph new
 			color: morph color;
-			cornerStyle: #rounded;
-			layoutPolicy: ProportionalLayout new;
-			clipSubmorphs: true;
+			borderColor: morph color;
 			yourself.
 		ratio := (child at: #weight) / (node at: #weight) asFloat.
 		node depth even

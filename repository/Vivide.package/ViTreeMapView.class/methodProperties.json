@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addSubmorphsFor:owner:" : "mt 10/6/2015 12:57",
+		"addSubmorphsFor:owner:" : "mt 10/8/2015 10:16",
 		"aggregateModel" : "mt 10/7/2015 16:34",
 		"aggregationBlock" : "mt 7/15/2015 11:03",
 		"clear" : "mt 10/7/2015 16:37",
@@ -10,7 +10,8 @@
 		"deselectAll" : "mt 9/17/2015 15:44",
 		"deselectItem:" : "mt 9/20/2015 11:27",
 		"initializeScroller" : "mt 10/6/2015 14:29",
-		"layoutSliceAndDiceFor:owner:" : "mt 9/3/2015 15:44",
+		"layout" : "mt 10/8/2015 10:13",
+		"layoutSliceAndDiceFor:owner:" : "mt 10/8/2015 10:25",
 		"layoutStripFor:owner:" : "mt 10/6/2015 13:13",
 		"layoutStripInvertedFor:owner:" : "mt 10/6/2015 13:12",
 		"margin" : "mt 7/15/2015 11:04",
@@ -24,7 +25,7 @@
 		"selectItem:" : "mt 10/5/2015 11:30",
 		"selectedItems" : "mt 9/17/2015 15:42",
 		"selectedObjects" : "mt 9/20/2015 11:26",
-		"setUp:" : "mt 10/6/2015 13:13",
+		"setUp:" : "mt 10/8/2015 10:13",
 		"sortByWeight" : "mt 10/6/2015 13:11",
 		"startDrag:event:source:" : "mt 9/17/2015 15:46",
 		"updateSubmorphs" : "mt 9/14/2015 13:22",
