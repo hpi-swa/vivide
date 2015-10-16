@@ -29,6 +29,9 @@ You can download a Squeak/Smalltalk image with the latest working version of Viv
 
 ##Videos
 
+Here is a screencast about exploring the file structure of a C program with treemaps:
+[![VIMEO](https://i.vimeocdn.com/video/540030443_320.jpg)](https://vimeo.com/142670997)
+
 Here is a screencast about integrating information from Stack Overflow into the Squeak/Smalltalk programming environment using Vivide. I included it in my talk at the [Onward'14](http://2014.splashcon.org/track/onward2014-papers) conference:
 
 [![VIMEO](https://i.vimeocdn.com/video/503216190_320.jpg)](https://vimeo.com/116751102)
