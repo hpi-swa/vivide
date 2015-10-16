@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "mt 10/9/2015 10:37",
+		"labelsBox" : "mt 10/9/2015 10:16",
+		"objects" : "mt 10/9/2015 10:27",
+		"process:" : "mt 10/9/2015 10:38",
+		"selectObject:" : "mt 10/9/2015 10:31",
+		"slider" : "mt 10/9/2015 10:15",
+		"updateLabelsFor:" : "mt 10/9/2015 10:35" } }
