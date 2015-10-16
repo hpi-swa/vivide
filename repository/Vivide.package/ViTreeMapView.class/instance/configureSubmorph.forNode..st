@@ -1,10 +1,11 @@
 updating - specific
 configureSubmorph: morph forNode: node
 	
+	| label |	
 	morph layoutPolicy: ProportionalLayout new.
 	morph hResizing: #spaceFill; vResizing: #spaceFill.
 	morph clipSubmorphs: false.
-
+	
 	node depth = 0 ifTrue: [^ self].
 
 		(morph layoutFrame rightFraction - morph layoutFrame leftFraction / 
@@ -27,7 +28,8 @@ configureSubmorph: morph forNode: node
 			font: (Preferences standardDefaultTextFont emphasized: 1)].
 
 	"morph cellInset: 15."
-	morph label: (node at: #text).
+	label := node at: #text.
+	morph label: label.
 
 	(node at: #color ifAbsent: []) ifNotNil: [:c |
 		morph color: c].
@@ -38,8 +40,7 @@ configureSubmorph: morph forNode: node
 
 	morph borderWidth: 1.
 
-	morph balloonText: (node at: #balloonText ifAbsent: [node at: #text ifAbsent: []]).
-
+	morph balloonText: (node at: #balloonText ifAbsent: [label]).
 
 	morph
 		on: #startDrag
@@ -55,3 +56,12 @@ configureSubmorph: morph forNode: node
 	morph on: #mouseLeaveDragging send: #mouseLeave:on: to: self.
 	morph on: #mouseUp send: #mouseUp:on: to: self.
 	morph on: #mouseDown send: #mouseDown:on: to: self.
+
+	"Restore selection."
+	self selectedItems
+		detect: [:oldItem | (oldItem valueOfProperty: #object) = (node at: #object)
+			or: [oldItem label = label]]
+		ifFound: [:oldItem |
+			self selectedItems remove: oldItem.
+			self selectItemSilently: morph]
+		ifNone: [].

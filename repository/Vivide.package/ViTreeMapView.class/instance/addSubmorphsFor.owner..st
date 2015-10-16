@@ -5,4 +5,4 @@ addSubmorphsFor: node owner: morph
 		[#sliceAndDice] -> [self layoutSliceAndDiceFor: node owner: morph].
 		[#strip] -> [self layoutStripFor: node owner: morph].
 		[#stripInverted] -> [self layoutStripInvertedFor: node owner: morph].
-	}
+	} otherwise: [self layoutSliceAndDiceFor: node owner: morph]

@@ -2,7 +2,6 @@ as yet unclassified
 deselectItem: item
 
 	self selectedItems remove: item ifAbsent: [].
-	item color: (item valueOfProperty: #backgroundColor).
-	item removeProperty: #backgroundColor.
+	item selected: false.
 
 	self yieldAllObjects: self selectedObjects.

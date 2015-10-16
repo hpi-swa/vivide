@@ -10,7 +10,8 @@
 		"labelPosition",
 		"font",
 		"elevation",
-		"submorphElevation" ],
+		"submorphElevation",
+		"selected" ],
 	"name" : "ViTreeMapItemMorph",
 	"pools" : [
 		 ],

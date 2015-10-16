@@ -5,4 +5,5 @@ drawOn: aCanvas
 		ifTrue: [^ super drawOn: aCanvas].
 	
 	self drawBackgroundOn: aCanvas.
+	"self drawSelectionOn: aCanvas."
 	self drawLabelOn: aCanvas.

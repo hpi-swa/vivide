@@ -14,6 +14,8 @@ setUp: aScript
 		self textMorph font: font value].
 
 	self textMorph balloonText: (aScript valueOfProperty: #help ifAbsent: []).
+	self textMorph wrapFlag: (aScript valueOfProperty: #wrap ifAbsent: [true]).
+
 
 	self flag: #performance.
 	self reset.

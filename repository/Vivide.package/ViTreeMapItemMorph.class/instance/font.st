@@ -1,4 +1,7 @@
 accessing
 font
 
-	^ font ifNil: [Preferences standardDefaultTextFont]
+	^ font ifNil: [
+		StrikeFont
+			familyName: 'Tahoma'
+			pointSize: 24]

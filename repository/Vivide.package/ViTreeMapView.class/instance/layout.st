@@ -1,4 +1,4 @@
 as yet unclassified
 layout
 
-	^ layout ifNil: [#stripInverted]
+	^ layout ifNil: [#strip]

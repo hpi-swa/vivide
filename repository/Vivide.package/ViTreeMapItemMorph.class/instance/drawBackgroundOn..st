@@ -5,7 +5,7 @@ drawBackgroundOn: aCanvas
 		aCanvas
 			frameAndFillRoundRect: self bounds
 			radius: self preferredCornerRadius
-			fillStyle: self fillStyle asColor darker
+			fillStyle: (self fillStyle asColor adjustBrightness: -0.15)
 			borderWidth: self borderStyle width
 			borderColor: self borderStyle color].
 
@@ -18,7 +18,7 @@ drawBackgroundOn: aCanvas
 					@ (self bottom - (self preferredCornerRadius min: self height // 2))).
 		aCanvas
 			fillRectangle: (r insetBy: self borderStyle width)
-			color: self color darker.
+			color: (self color adjustBrightness: -0.15).
 		aCanvas
 			line: r topLeft + (1@0)
 			to: r bottomLeft + (1@0)
