@@ -1,0 +1,4 @@
+as yet unclassified
+windowsDashboard
+
+	^ self world submorphs detect: [:m | m class == ViWindowsDashboard] ifNone: []

@@ -24,7 +24,7 @@
 		"drawOn:" : "mt 3/1/2013 13:03:04.051",
 		"edgeToAdhereTo" : "mt 11/15/2012 14:27:40.268",
 		"enableGridding" : "mt 9/14/2013 11:30:07.192",
-		"handleListenEvent:" : "mt 7/8/2013 14:02:48.277",
+		"handleListenEvent:" : "mt 10/16/2015 11:23",
 		"initialize" : "mt 1/31/2015 15:39",
 		"initializeLocator" : "mt 3/8/2013 11:23:20.855",
 		"initializeObjectsBar" : "mt 2/2/2015 13:48",
@@ -60,7 +60,9 @@
 		"scriptArtifacts:" : "mt 7/9/2015 14:34",
 		"sendFeedback" : "mt 3/5/2013 15:02:01.468",
 		"showHowTo" : "mt 5/12/2015 15:22",
+		"tabAmongWindows" : "mt 10/16/2015 20:05",
 		"toolWindows" : "mt 2/8/2015 13:48",
 		"updateBounds" : "mt 11/15/2012 14:47:37.74",
 		"updateFromRepository" : "mt 2/12/2015 11:45",
+		"windowsDashboard" : "mt 10/16/2015 11:21",
 		"yellowButtonActivity:" : "mt 12/10/2012 13:44:11.544" } }

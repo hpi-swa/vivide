@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"darkenValue",
-		"headerButtons" ],
-	"name" : "ViToolWindow",
+		"selectionRectangle" ],
+	"name" : "ViWindowsDashboard",
 	"pools" : [
 		 ],
-	"super" : "ViSystemWindow",
+	"super" : "Morph",
 	"type" : "normal" }
