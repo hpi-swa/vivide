@@ -1,4 +1,4 @@
 *vivide
-actualClass
+classBehindProxy
 
 	^ self class

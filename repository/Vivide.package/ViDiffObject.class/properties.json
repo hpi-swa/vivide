@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"primarySource",
+		"secondarySource" ],
+	"name" : "ViDiffObject",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }

@@ -1,0 +1,4 @@
+fallback
+acceptObjectService: srv
+
+	^ nil

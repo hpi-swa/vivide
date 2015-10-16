@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"isOfPrimitiveType:" : "mt 10/9/2015 13:24",
+		"with:with:" : "mt 10/6/2015 15:21" },
+	"instance" : {
+		"=" : "mt 10/6/2015 15:19",
+		"acceptObjectService:" : "mt 10/6/2015 16:05",
+		"asExplorerString" : "mt 10/6/2015 16:11",
+		"asList" : "mt 10/6/2015 16:20",
+		"copyFrom:" : "mt 10/6/2015 15:23",
+		"doesNotUnderstand:" : "mt 10/9/2015 13:39",
+		"explorerContents" : "mt 10/6/2015 15:55",
+		"hasContentsInExplorer" : "mt 10/6/2015 16:12",
+		"hash" : "mt 10/6/2015 15:20",
+		"in:" : "mt 10/6/2015 15:24",
+		"mergeSources" : "mt 10/6/2015 16:19",
+		"mergeSourcesMatching:" : "mt 10/6/2015 17:16",
+		"primarySource" : "mt 10/6/2015 15:18",
+		"primarySource:" : "mt 10/9/2015 13:27",
+		"printOn:" : "mt 10/6/2015 16:09",
+		"printString" : "mt 10/6/2015 16:11",
+		"respondsTo:" : "mt 10/6/2015 15:55",
+		"secondarySource" : "mt 10/6/2015 15:18",
+		"secondarySource:" : "mt 10/9/2015 13:27",
+		"shouldBePrintedAsLiteralVisiting:" : "mt 10/6/2015 15:24" } }

@@ -17,7 +17,7 @@ collectBaseClassesForContext: someObjects withTuples: findTuples
 			^ result].
 
 	self flag: #optimize. "mt: Stop if there is only Object class left."
-	^ ((someObjects collect: [:obj | obj actualClass withAllSuperclasses])
+	^ ((someObjects collect: [:obj | obj classBehindProxy withAllSuperclasses])
 		inject: OrderedCollection new
 		into: [:all :each | all ifEmpty: [each] ifNotEmpty: [all intersection: each]])
 			ifEmpty: [{Object}]

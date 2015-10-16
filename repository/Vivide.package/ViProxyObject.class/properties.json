@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ObjectCache",
+		"ObjectGate" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"accessString",
+		"returnType" ],
+	"name" : "ViProxyObject",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }
