@@ -25,8 +25,12 @@ initializeResultList
 	self connect: resultList eventHandler signal: #mouseLeftDragging: toSelector: #hideResults.
 	
 	self connect: resultList signal: #doubleClicked: toSelector: #selectResult:.
-	self connect: resultList signal: #returnPressed: toSelector: #selectResult:.
+	self connect: resultList signal: #returnPressed: toSelector: #selectResults.
 	
-	self connect: resultList eventHandler signal: #focusLostInSubmorph: toSelector: #onFocusLost.  
+	self connect: resultList eventHandler signal: #focusLostInSubmorph: toSelector: #onFocusLost.
 	
 	resultList model deferThreshold: 50.
+
+	resultList viewport eventHandler on: #(cmd) -> $o send: #openResults to: self.
+	resultList viewport eventHandler on: #(cmd) -> $e send: #evaluateResults to: self.
+	resultList viewport eventHandler on: #(cmd) -> $s send: #scriptResults to: self.

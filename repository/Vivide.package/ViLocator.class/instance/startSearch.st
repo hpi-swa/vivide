@@ -44,7 +44,10 @@ startSearch
 		
 	tokens first asLowercase = 's'
 		ifTrue: [^ self searchSenders: tokens second].
-		
+
+	tokens first asLowercase = 'b'
+		ifTrue: [^ self searchBookmarks: tokens second].
+
 	tokens first asLowercase = 'p'
 		ifTrue: [^ self searchPackages: tokens second].
 		

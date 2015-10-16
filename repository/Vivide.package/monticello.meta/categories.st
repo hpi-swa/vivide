@@ -30,3 +30,4 @@ SystemOrganization addCategory: #'Vivide-Traits'!
 SystemOrganization addCategory: #'Vivide-Visualizations'!
 SystemOrganization addCategory: #'Vivide-Visualizations-Support'!
 SystemOrganization addCategory: #'Vivide-Voronoi'!
+SystemOrganization addCategory: #'Vivide-Windows'!

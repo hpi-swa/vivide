@@ -6,6 +6,7 @@ addHelpResults
 	resultList model addAllChildren: (#(
 		('.' 'Objects in view')
 		(',' 'Recent changes (2 hours)')
+		(b 'Bookmarks')
 		(p 'Packages')
 		(c 'Classes (refine with ''p'')')
 		(m 'Methods (refine with ''c'' or ''p'')')
@@ -15,7 +16,7 @@ addHelpResults
 		(f 'Source code (full-text)')
 		(l 'Literal strings')
 		(x 'Flags')
-		(q 'Queries')) collect: [:map |
+		(q 'Scripts (resp. ''queries'')')) collect: [:map |
 			UiPropertyItemNode new
 				at: #object put: (ViLocatorOperation new
 					shortcut: map first;
