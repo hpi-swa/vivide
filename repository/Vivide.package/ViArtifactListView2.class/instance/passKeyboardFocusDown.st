@@ -1,10 +1,15 @@
 actions - focus
 passKeyboardFocusDown
 
-	| newEditor methodEditors |
+	| oldEditor newEditor methodEditors |	
+	self artifactContainers last hasAnyKeyboard
+		ifTrue: [self artifactContainerColumn appendCodeSnippet].
+
 	methodEditors := self artifactContainers.
-	newEditor := (methodEditors at: ((methodEditors indexOf:
-		(methodEditors detect: [:m | m hasAnyKeyboard]))
+	oldEditor := self focusedArtifact.
+
+	newEditor := (methodEditors at: (
+		(methodEditors indexOf: oldEditor)
 		+ 1 min: methodEditors size)).
 
 	self passKeyboardFocusTo: newEditor.
