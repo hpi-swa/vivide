@@ -1,8 +1,14 @@
 nil
 openExplorer: anObject
 
+	| explorer |
+	explorer := ViObjectEditor new
+		object: anObject;
+		hResizing: #spaceFill.
+	
 	self artifactContainerColumn
-		addMorph: (ViObjectEditor new
-			object: anObject;
-			hResizing: #spaceFill)
+		addMorph: explorer
 		after: self focusedArtifact.
+		
+	explorer expand.
+	self passKeyboardFocusTo: explorer.
