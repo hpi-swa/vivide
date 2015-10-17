@@ -1,6 +1,6 @@
-organization - accessing
+as yet unclassified
 referenceInArchive
 
 	^ self organization 
-		referenceForDefinition: self
+		referenceForStep: self
 		inQueryArchive: self archive

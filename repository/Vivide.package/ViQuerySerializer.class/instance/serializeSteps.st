@@ -3,24 +3,11 @@ serializeSteps
 
 	steps do: [:step | | category |
 				
-		category := step category
-			ifNil: ['']
-			ifNotNil: [:c | '*', c, '-'].
+		category := self class categoryPrefixFor: step.
 		
-		"Ensure to archive also steps that may be reachable but not registered."
-		#step, (step id copyWithout: $-) in: [:selector |
-
-			self
-				archiveCode: selector, String cr,
-					String tab, '<step>', String cr,
-					String cr,
-					String tab, '^ ', step asDictionary storeString
-				under: category, 'steps'.
-
-			(stepSelectors
-				at: category ifAbsentPut: [OrderedCollection new])
-				add: selector -> step.
+		(stepSelectors
+			at: category ifAbsentPut: [OrderedCollection new])
+			add: (self updateStep: step) -> step.
  
-			"Ensure to archive also definitions that may be reachable but not registered."
-			step definition ifNotNil: [:def | definitions add: def].
-		]].
+		"Ensure to archive also definitions that may be reachable but not registered."
+		step definition ifNotNil: [:def | definitions add: def]].

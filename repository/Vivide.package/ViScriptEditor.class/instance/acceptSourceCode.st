@@ -36,6 +36,7 @@ acceptSourceCode
 
 	"Store changes in object."
 	self updateObject.
+	self updateObjectVersion.
 
 	self updateUi.
 

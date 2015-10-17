@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptVersion",
+	"pools" : [
+		 ],
+	"super" : "ViMethodVersion",
+	"type" : "normal" }

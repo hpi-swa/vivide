@@ -1,11 +1,8 @@
 support
-updateDefinition: def inQueryArchive: aClass
+updateDefinition: def category: category archive: aClass
 
-	| category archive selector |
-	archive := aClass class.
-	category := def category
-		ifNil: ['']
-		ifNotNil: [:c | '*', c, '-'].
+	| archive selector |
+	archive := aClass theMetaClass.
 	selector := #def, (def id copyWithout: $-).
 			
 	self

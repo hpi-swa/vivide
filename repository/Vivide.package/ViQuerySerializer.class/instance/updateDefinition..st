@@ -1,6 +1,7 @@
 support
-updateDefinition: def
+updateDefinition: definition
 
 	^ self class
-		updateDefinition: def
-		inQueryArchive: archive theNonMetaClass
+		updateDefinition: definition
+		category: (self class categoryPrefixFor: definition)
+		archive: archive

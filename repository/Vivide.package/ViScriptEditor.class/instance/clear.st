@@ -6,6 +6,9 @@ clear
 	self inputKind: nil.
 
 	self object ifNotNil: [:step |
+		step referenceInArchive isValid
+			ifFalse: [self updateObjectVersion].
+
 		(step valueOfProperty: #isNew ifAbsent: [false])
 			ifTrue: [self activateWizard]
 			ifFalse: [self deactivateWizard]].	
