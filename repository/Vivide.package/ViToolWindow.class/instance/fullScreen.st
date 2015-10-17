@@ -4,5 +4,5 @@ fullScreen
 
 	(RealEstateAgent maximumUsableAreaInWorld: self world) in: [:maxBounds |
 		self bounds: ((self topLeft
-			extent: (model optimalWidth + self borderWidth + self borderWidth) @ ((model optimalHeight + self borderWidth + self borderWidth + self labelHeight) min: maxBounds height))
+			extent: ((model optimalWidth + self borderWidth + self borderWidth) min: maxBounds width) @ ((model optimalHeight + self borderWidth + self borderWidth + self labelHeight) min: maxBounds height))
 			translatedToBeWithin: maxBounds)].
