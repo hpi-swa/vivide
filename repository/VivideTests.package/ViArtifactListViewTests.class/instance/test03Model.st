@@ -12,6 +12,11 @@ test03Model
 	self assert: (model firstStep flattenedObjects includes: 4). "input"
 	self assert: (sut objects includes: 4). "output"
 	
+	model children.
+	self assert: (sut objects includes: 4).
+	self assert: 4 equals: model nodes size.
+		
 	"stable output"
 	model updateChildren.
 	self assert: (sut objects includes: 4).
+	self assert: 4 equals: model nodes size.
