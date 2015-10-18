@@ -1,0 +1,3 @@
+support
+methodC
+	self methodB.

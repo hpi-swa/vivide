@@ -1,0 +1,17 @@
+{
+	"category" : "VivideTests-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sut",
+		"spy",
+		"process",
+		"helper" ],
+	"name" : "ViStackWatcherTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
