@@ -6,7 +6,9 @@
 		"convertProperty:" : "mt 1/9/2015 16:16:50.973",
 		"createIdentityForTuple:" : "mt 6/8/2015 14:17",
 		"referenceTo:" : "mt 7/22/2015 10:50",
-		"specialProperties" : "mt 7/7/2015 16:01" },
+		"specialProperties" : "mt 7/7/2015 16:01",
+		"useHorizontalLists" : "mt 10/18/2015 10:29:16",
+		"useHorizontalLists:" : "mt 10/18/2015 10:29:18" },
 	"instance" : {
 		"acceptObjectService:" : "mt 10/10/2014 12:13:03.681",
 		"adoptOrganization:" : "mt 7/6/2015 10:08",
@@ -56,4 +58,4 @@
 		"sourceCodeShort" : "mt 10/15/2014 18:28:53.902",
 		"updateClearDefinition" : "mt 10/7/2014 15:27:35.879",
 		"updateSetDefinition" : "mt 10/7/2014 15:27:42.504",
-		"updateView:forEnvironment:" : "mt 9/7/2015 14:40" } }
+		"updateView:forEnvironment:" : "mt 10/18/2015 10:32:56" } }

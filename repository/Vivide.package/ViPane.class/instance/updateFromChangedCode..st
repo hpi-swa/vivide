@@ -9,8 +9,9 @@ updateFromChangedCode: evt
 	self currentQuery ifNil: [^ self].
 	
 	((self view class includesBehavior: evt itemClass)
-		or: [(self currentQuery valueOfProperty: #view ifAbsent: [ProtoObject]) includesBehavior: evt itemClass])
-			ifFalse: [^ self].
+		or: [(self currentQuery valueOfProperty: #view ifAbsent: [ProtoObject]) value "supports blocks"
+			includesBehavior: evt itemClass])
+				ifFalse: [^ self].
 	
 	[
 		evt itemSelector = #setUp:

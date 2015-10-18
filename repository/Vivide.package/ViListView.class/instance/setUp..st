@@ -5,6 +5,6 @@ setUp: script
 	self updateForListForQuery: script.
 
 	self currentViews do: [:view |
-		(script valueOfProperty: #orientation)
+		(script valueOfProperty: #orientation) value
 			ifNil: [view listOrientation: #default]
 			ifNotNil: [:symbol | view listOrientation: symbol]].

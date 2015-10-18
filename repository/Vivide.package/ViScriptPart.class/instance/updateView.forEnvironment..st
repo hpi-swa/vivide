@@ -4,6 +4,7 @@ updateView: view forEnvironment: pane
 
 	^ ((self valueOfProperty: #view)
 		ifNil: [ViProfile active ifNil: [ViTreePlainView] ifNotNil: #defaultView])
+			value "Supports blocks."
 		in: [:viewClass |
 			view class == viewClass
 				ifTrue: [view]
