@@ -14,7 +14,6 @@ test05ArchiveCategory
 
 	self assert: (self archive class organization categories includes: #'*DummyProject-steps').
 	self assert: (self archive class organization categories includes: #'*DummyProject-definitions').
-	self assert: (self archive class organization categories includes: #'*DummyProject-organization').
 	
 	"Stoopid side-effects spoil the image. Clean it up again. *sigh*"
 	PackageOrganizer default unregisterPackageNamed: #DummyProject.
