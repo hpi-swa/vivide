@@ -1,4 +1,4 @@
-support - input kind
+hints - input kind
 setInputKind: class tupleIndex: index
 	"Set the script's input kind. Use the tuple index to update part of the tuple input kind."
 	

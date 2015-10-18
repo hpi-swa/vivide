@@ -1,4 +1,4 @@
-as yet unclassified
+highlights
 highlights
 
 	^ highlights ifNil: [highlights := OrderedCollection new]

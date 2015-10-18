@@ -1,4 +1,4 @@
-support - input kind
+hints - input kind
 updateInputKind
 	"Try to found out about input objects."
 

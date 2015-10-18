@@ -1,4 +1,4 @@
-support - input kind
+hints - input kind
 hasInputKind
 
 	(self object valueOfProperty: #inputKind ifAbsent: [^ false])

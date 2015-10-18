@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 acceptDroppingMorph: aTransferMorph event: evt
 	"Connect dropped script."
 	

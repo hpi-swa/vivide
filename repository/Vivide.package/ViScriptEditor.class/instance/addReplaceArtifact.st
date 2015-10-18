@@ -9,6 +9,7 @@ addReplaceArtifact
 		adoptOrganization: self object organization;
 		sourceCode: self object sourceCode).
 	
+	self flag: #beware. "This messes up history!"
 	self object sourceCode: '[:in :out | out addAll: in]'.
 		
 	"Insert directly."

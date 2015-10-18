@@ -1,4 +1,4 @@
-as yet unclassified
+hints
 removeHint: aMorph
 	"Remove the hint where the given morph is inside."
 	

@@ -1,4 +1,4 @@
-support - input kind
+hints - input kind
 addHintForInputKindTuple
 
 	self inputKind size = 1

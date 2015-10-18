@@ -1,4 +1,4 @@
-as yet unclassified
+actions - profile
 addScript
 
 	ViProfile active addScript: self object.

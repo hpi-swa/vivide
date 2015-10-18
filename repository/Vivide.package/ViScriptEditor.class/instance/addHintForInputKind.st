@@ -1,4 +1,4 @@
-support - input kind
+hints - input kind
 addHintForInputKind
 	"Convenience."
 	

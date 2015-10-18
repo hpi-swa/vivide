@@ -1,4 +1,4 @@
-as yet unclassified
+memento - data
 hasUnacceptedChanges
 
 	^ edit hasUnacceptedChanges

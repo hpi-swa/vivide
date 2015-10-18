@@ -1,4 +1,4 @@
-as yet unclassified
+hints
 addHint: message buttons: someButtons closeable: boolean
 
 	| hint closeBtn |

@@ -1,4 +1,4 @@
-as yet unclassified
+highlights
 discardPaneHighlights
 
 	self highlights ifEmpty: [^ self].

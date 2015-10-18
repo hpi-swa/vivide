@@ -1,4 +1,4 @@
-as yet unclassified
+highlights
 highlightAffectedPanes
 
 	self object ifNil: [^ self].

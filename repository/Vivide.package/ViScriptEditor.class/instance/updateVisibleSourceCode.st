@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateVisibleSourceCode
 	"Interpret current script pointer and update visible code."
 	

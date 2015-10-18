@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateFromChangedScript: event
 
 	self object

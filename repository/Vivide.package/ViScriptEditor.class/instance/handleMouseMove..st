@@ -1,4 +1,4 @@
-as yet unclassified
+events
 handleMouseMove: anEvent
 	"Receive any mouse move event."
 	

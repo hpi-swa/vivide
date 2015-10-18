@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 openScript
 
 	self object openScriptWith: self input.

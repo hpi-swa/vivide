@@ -1,4 +1,4 @@
-as yet unclassified
+actions - profile
 removeScript
 
 "	self object steps do: [:step | step unregister]."

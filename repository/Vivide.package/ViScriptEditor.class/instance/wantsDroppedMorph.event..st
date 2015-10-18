@@ -1,4 +1,4 @@
-as yet unclassified
+drag/drop
 wantsDroppedMorph: morph event: evt
 
 	^ (morph isKindOf: UiTransferMorph)
