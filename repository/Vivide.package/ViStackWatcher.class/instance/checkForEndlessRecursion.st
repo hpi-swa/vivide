@@ -4,6 +4,7 @@ checkForEndlessRecursion
 	| target windowSize stack offset check |
 	windowSize := 10.
 	target := watchedProcess ifNil: [Project current uiProcess].
+	target ifNil: [^ self]. "when switching projects..."
 	target suspendedContext ifNil: [^ self].
 	
 	stack := target suspendedContext stackOfSize: 30.
