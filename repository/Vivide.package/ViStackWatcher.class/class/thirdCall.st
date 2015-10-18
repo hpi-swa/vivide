@@ -1,0 +1,4 @@
+example
+thirdCall
+
+	self firstCall.

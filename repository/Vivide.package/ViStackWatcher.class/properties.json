@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"watchOnly",
+		"watchedProcess" ],
+	"name" : "ViStackWatcher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
