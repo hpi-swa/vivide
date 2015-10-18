@@ -9,6 +9,6 @@ setOrganizer: o archive: aClass
 	definitions := OrderedCollection new.
 	
 	"cache to improve performance"
-	stepSelectors := Dictionary new.
-	commandSelectors := Dictionary new.
+	stepSelectors := OrderedCollection new.
+	commandSelectors := OrderedCollection new.
 	definitionSelectors := OrderedCollection new.

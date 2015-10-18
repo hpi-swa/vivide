@@ -8,13 +8,10 @@
 	"instvars" : [
 		"steps",
 		"definitions",
-		"orderedSteps",
-		"orderedDefinitions",
 		"notifier",
 		"stepsCategorizer",
 		"definitionsCategorizer",
 		"commands",
-		"orderedCommands",
 		"commandsCategorizer" ],
 	"name" : "ViQueryOrganizer",
 	"pools" : [

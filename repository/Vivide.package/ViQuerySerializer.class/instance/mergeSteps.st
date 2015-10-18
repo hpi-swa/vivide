@@ -1,10 +1,9 @@
 private
 mergeSteps
 
-	((archive selectors
-		select: [:symbol | ((archive compiledMethodAt: symbol) pragmaAt: #order) notNil])
-		gather: [:orderSelector | archive theNonMetaClass perform: orderSelector])
-		do: [:selector | | category |
+	archive selectors
+		select: [:symbol | ((archive compiledMethodAt: symbol) pragmaAt: #step) notNil]
+		thenDo: [:selector | | category |
 			category := archive organization categoryOfElement: selector.
 			(category beginsWith: #*)
 				ifFalse: [category := nil]

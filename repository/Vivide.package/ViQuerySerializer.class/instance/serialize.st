@@ -5,9 +5,7 @@ serialize
 		serializeProfile;
 		prepareSerialization;
 		serializeSteps;
-		serializeStepsOrder;
 		serializeCommands;
-		serializeCommandsOrder;
 		serializeDefinitions.
 		
 	self tidyArchive.
