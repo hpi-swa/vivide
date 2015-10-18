@@ -14,13 +14,13 @@ tryDeleteScript
 	senders size > 0
 		ifTrue: [
 			msg
-				message: ('This part has {1} references.' format: {senders size})
-				icon: UiSilkIcons informationIcon;
+				message: ('This script part has {1} references.' format: {senders size})
+				icon: UiSilkIcons informationIcon
 				"addAction: 'Remove, then browse references.' icon: UiSilkIcons binIcon receiver: self selectors: #(browseReferences deleteStep);"
-				addAction: 'Just browse references.' icon: UiFugueIcons arrowStepIcon receiver: self selectors: #(browseReferences)]
+				"addAction: 'Just browse references.' icon: UiFugueIcons arrowStepIcon receiver: self selectors: #(browseReferences)"]
 		ifFalse: [
 			msg
-				message: 'This script part is not used.'
+				message: (self object isDefault ifTrue: ['This is a default script in the current profile!'] ifFalse: ['This script part is not used.'])
 				icon: UiSilkIcons informationIcon].
 			
 	msg addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon.

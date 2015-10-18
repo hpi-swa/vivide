@@ -4,6 +4,7 @@ clear
 	super clear.
 
 	self inputKind: nil.
+	self discardPaneHighlights.
 
 	self object ifNotNil: [:step |
 		step referenceInArchive isValid
