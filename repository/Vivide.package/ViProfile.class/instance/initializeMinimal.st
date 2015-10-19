@@ -20,5 +20,6 @@ initializeMinimal
 				addImplementors;
 				addSnippets;
 								
-				addPaneHierarchy.
+				addPaneHierarchy;
+				addRecoverUnsavedScripts.
 				"debugger"].

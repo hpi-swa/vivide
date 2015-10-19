@@ -5,10 +5,9 @@ mergeProfile
 	
 	profile ifNil: [
 		"Find existing profile automatically. Create a new one if needed."	
-		VivideLight profiles
-			detect: [:p | p id = archive theNonMetaClass id]
-			ifFound: [:p | profile := p]
-			ifNone: [
+		archive theNonMetaClass profile
+			ifNotNil: [:p | profile := p]
+			ifNil: [
 				Transcript showln: '[ViQuerySerializer] Creating new profile...'.
 				profile := ViProfile newEmpty.
 				"profile initializeMinimal."

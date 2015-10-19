@@ -1,6 +1,9 @@
 {
 	"class" : {
 		"merge" : "mt 2/9/2015 10:25",
-		"mergeAll" : "mt 2/9/2015 10:35" },
+		"mergeAll" : "mt 2/9/2015 10:35",
+		"mergeSingleSelector:" : "mt 10/19/2015 15:36:39",
+		"mergeSingleSelectorInLocalArchive:" : "mt 10/19/2015 15:50:01",
+		"profile" : "mt 10/19/2015 14:50:31" },
 	"instance" : {
 		 } }
