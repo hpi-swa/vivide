@@ -1,4 +1,4 @@
-nil
+as yet unclassified
 adoptPaneColor: aColor
 
 	super adoptPaneColor: aColor.

@@ -1,4 +1,4 @@
-nil
+as yet unclassified
 resolve: aString
 
 	(#('thisScript' 'thisPane' 'thisView') includes: aString)

@@ -1,4 +1,4 @@
-nil
+as yet unclassified
 doMethodReference: aMethodReference
 
 	aMethodReference isValid

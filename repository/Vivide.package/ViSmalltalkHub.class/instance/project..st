@@ -1,4 +1,4 @@
-nil
+as yet unclassified
 project: name
 
 	projects ifNil: [self projects].
