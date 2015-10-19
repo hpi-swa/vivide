@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 allStepsDo: aBlock
 	"Avoid infinite recursion."
 	

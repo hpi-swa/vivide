@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 allStepsDo: aBlock ifRecursive: anExceptionBlock
 	
 	self

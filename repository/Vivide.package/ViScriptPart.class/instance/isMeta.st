@@ -1,4 +1,4 @@
-as yet unclassified
+meta-scripts
 isMeta
 
 	^ (self valueOfProperty: #view) in: [:obj |

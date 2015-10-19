@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 allStepsDo: aBlock previousSteps: someSteps ifRecursive: anExceptionBlock
 
 	self stepsDo: [:step |

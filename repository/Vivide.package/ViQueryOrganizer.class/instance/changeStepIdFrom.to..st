@@ -7,5 +7,14 @@ changeStepIdFrom: oldId to: newId
 		(self stepsCategorizer categoryOfElement: oldId) in: [:category |
 			self stepsCategorizer removeElement: oldId.
 			category ifNotNil: [
-				self stepsCategorizer classify: newId under: category]]
-		].
+				self stepsCategorizer classify: newId under: category]].
+		
+		"Update meta-scripts."
+		self metaScripts do: [:metaScript |
+			metaScript metaReferenceId = oldId ifTrue: [
+				metaScript metaReference: step].
+			(metaScript metaScriptReferenceIds includes: oldId) ifTrue: [
+				metaScript metaScriptReferences: ((metaScript metaScriptReferenceIds
+					collect: [:id | id = oldId ifTrue: [newId] ifFalse: [id]])
+					collect: [:id | self stepById: id])]].
+	].

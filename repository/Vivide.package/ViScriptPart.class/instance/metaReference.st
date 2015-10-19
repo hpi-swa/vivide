@@ -1,7 +1,4 @@
-as yet unclassified
+meta-scripts
 metaReference
 
-	self assert: self isMeta.
-	
-	^ self organization
-		stepById: ((Dictionary newFrom: (self process: #(1)) first) at: #current)
+	^ self organization stepById: self metaReferenceId

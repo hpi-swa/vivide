@@ -1,4 +1,4 @@
-as yet unclassified
+meta-scripts
 metaOutput
 
 	self assert: self isMeta.

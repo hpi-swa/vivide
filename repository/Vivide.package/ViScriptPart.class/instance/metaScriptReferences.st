@@ -1,8 +1,6 @@
-as yet unclassified
+meta-scripts
 metaScriptReferences
 
-	self assert: self isMeta.
-	
-	^ ((Dictionary newFrom: (self process: #(1)) first) at: #scripts ifAbsent: [#()])
+	^ self metaScriptReferenceIds
 		collect: [:id | self organization stepById: id]
 		thenSelect: [:scriptOrNil | scriptOrNil notNil] 
