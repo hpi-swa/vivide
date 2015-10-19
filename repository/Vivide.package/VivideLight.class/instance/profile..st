@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 profile: aProfile
 
 	profile := aProfile.

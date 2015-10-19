@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 outOfWorld: aWorld
 
 	aWorld sgDisconnectSignal: #artifactRequested: from: self selector: #openArtifact:.

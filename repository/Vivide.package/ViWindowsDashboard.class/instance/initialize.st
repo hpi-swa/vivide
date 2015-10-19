@@ -15,6 +15,8 @@ initialize
 	self eventHandler on: Character arrowLeft send: #selectPreviousWindow to: self.
 
 	self eventHandler on: $x send: #closeWindow to: self.
+	self eventHandler on: Character delete send: #closeWindow to: self.
+	self eventHandler on: Character backspace send: #closeWindow to: self.	
 
 	self connect: self eventHandler signal: #mousePressed: toSelector: #delete.
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+updating - code
 checkForUpdate
 
 	"#(true false) atRandom

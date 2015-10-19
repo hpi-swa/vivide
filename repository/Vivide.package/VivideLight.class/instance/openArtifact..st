@@ -30,5 +30,5 @@ openArtifact: anObject
 				profile recentScripts addObject: object]]].
 
 	^ VivideLight useClassicMode
-		ifTrue: [self chooseScriptFor: object]
+		ifTrue: [ViPane chooseScriptFor: object]
 		ifFalse: [ViSinglePaneEditor open: #artifacts for: {object}]

@@ -3,7 +3,7 @@ openInWindowAsIs
 
 	| wnd |
 	wnd := self
-		openInWindowBounds: self bounds
+		openInWindowBounds: (self bounds translatedToBeWithin: RealEstateAgent maximumUsableArea)
 		grab: false.
 
 	VivideLight useClassicMode
