@@ -1,3 +1,6 @@
+"Copyright (c) 2014-2015 Software Architecture Group (Hasso Plattner Institute)"
+"Copyright (c) 2015 Fabio Niephaus, Google Inc."
+
 "Get the Metacello configuration (for Squeak users)"
 Installer gemsource
     project: 'metacello';
