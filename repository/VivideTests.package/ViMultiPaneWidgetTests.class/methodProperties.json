@@ -12,4 +12,5 @@
 		"test05DeepCopy" : "mt 7/19/2015 14:21",
 		"test06DeepCopyAndOpen" : "mt 7/19/2015 16:01",
 		"test07MetaScriptWithoutForeignReferences" : "mt 7/21/2015 15:26",
-		"test08MultiPaneToPane" : "mt 9/14/2015 15:40" } }
+		"test08MultiPaneToPane" : "mt 9/14/2015 15:40",
+		"test09MetaScriptIdUpdate" : "mt 10/19/2015 13:56:33" } }
