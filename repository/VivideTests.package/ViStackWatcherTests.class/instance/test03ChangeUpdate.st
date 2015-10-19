@@ -1,5 +1,5 @@
 tests
 test03ChangeUpdate
-	<timeout: 1500>
+	<timeout: 5000>
 	self addDependent: self.
 	self forkAndSpyOn: [self methodD].
