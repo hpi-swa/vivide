@@ -1,6 +1,6 @@
 tests
 test04ChangeUpdateAgain
-	<timeout: 5000>
+	<timeout: 30000>
 	helper := Morph new.
 	helper addDependent: self.
 	self forkAndSpyOn: [helper changed: #helper].
