@@ -14,4 +14,5 @@ mergeStep: selector
 				step notifier doSilently: [
 					step mergeFromDictionary: spec.
 					step category: category].
-				steps add: step]].
+				steps add: step.
+				^ step]].

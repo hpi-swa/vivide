@@ -14,4 +14,5 @@ mergeDefinition: selector
 				definition notifier doSilently: [
 					definition mergeFromDictionary: spec.
 					definition category: category].
-				definitions add: definition]]
+				definitions add: definition.
+				^ definition]]

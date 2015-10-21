@@ -2,7 +2,7 @@ as yet unclassified
 localArchive
 
 	^ (Smalltalk classNamed: 'ViLocalScriptArchive')
-		ifNil: [ViScriptArchive subclass: #ViLocalScriptArchive
+		ifNil: [self subclass: #ViLocalScriptArchive
 			instanceVariableNames: ''
 			classVariableNames: ''
 			poolDictionaries: ''
