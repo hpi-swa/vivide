@@ -7,7 +7,7 @@ deff5282b301fcd31439cd3547c55e05dfb
 	#text -> 'Load'.
 	#clicked -> [ [
 		changeRecord fileIn.
-		changeRecord methodClass theNonMetaClass == ViProfile localArchive
+		changeRecord methodClass theNonMetaClass == ViScriptArchive localArchive
 			ifFalse: [changeRecord methodClass theNonMetaClass mergeSingleSelector: changeRecord methodSelector]
 			ifTrue: [ViScriptArchive mergeSingleSelectorInLocalArchive: changeRecord methodSelector]
 		
@@ -18,7 +18,7 @@ deff5282b301fcd31439cd3547c55e05dfb
 	#text -> ''Load''.
 	#clicked -> [ [
 		changeRecord fileIn.
-		changeRecord methodClass theNonMetaClass == ViProfile localArchive
+		changeRecord methodClass theNonMetaClass == ViScriptArchive localArchive
 			ifFalse: [changeRecord methodClass theNonMetaClass mergeSingleSelector: changeRecord methodSelector]
 			ifTrue: [ViScriptArchive mergeSingleSelectorInLocalArchive: changeRecord methodSelector]
 		
