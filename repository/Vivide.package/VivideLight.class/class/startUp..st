@@ -4,6 +4,9 @@ startUp: resuming
 	ViScriptArchive localOrganization: ViQueryOrganizer new.
 
 	(FileDirectory default fileOrDirectoryExists: 'vivide.ok')
-		ifTrue: [#recoverUnsavedScripts openScript].
+		ifTrue: [
+			self active
+				ifNotNil: [#recoverUnsavedScripts openScript]
+				ifNil: [self inform: 'Squeak was shut down unexpectedly.']].
 
 	FileStream forceNewFileNamed: 'vivide.ok' do: [:stream | ].
