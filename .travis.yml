@@ -10,8 +10,7 @@ smalltalk:
   - Squeak4.6
 
 env:
-  - BASELINE=Vivide
-  - PACKAGES="/repository"
+  - BASELINE=Vivide PACKAGES="/repository"
 
 after_success:
   - chmod +x $PROJECT_HOME/scripts/prepare_image.sh
