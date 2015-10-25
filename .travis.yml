@@ -10,7 +10,10 @@ smalltalk:
   - Squeak4.6
 
 env:
-  - BASELINE=Vivide PACKAGES="/repository"
+  global:
+    - BASELINE=Vivide
+    - PACKAGES="/repository"
+    - EXCLUDE_CLASSES="RxParserTest"
 
 after_success:
   - chmod +x $PROJECT_HOME/scripts/prepare_image.sh
