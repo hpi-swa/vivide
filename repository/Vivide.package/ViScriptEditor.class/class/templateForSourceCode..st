@@ -16,7 +16,9 @@ templateForSourceCode: code
 	
 	node isBlock ifTrue: [
 		node arguments size = 0 ifTrue: [template := self templateGlobal].
-		node arguments size > 1 ifTrue: [template := self templateTuples].
+		node arguments size > 1 ifTrue: [
+			template := self templateTuples.
+			properties at: #inputKind put: (Array new: node arguments size)].
 
 		(node allChildren anySatisfy: [:child |
 			tmp := child.
