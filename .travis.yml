@@ -1,35 +1,17 @@
 # Copyright (c) 2014-2015 Software Architecture Group (Hasso Plattner Institute)
 # Copyright (c) 2015 Fabio Niephaus, Google Inc.
 
-language: erlang
+language: smalltalk
 sudo: false
 
+smalltalk:
+  - SqueakTrunk
+  - Squeak5.0
+  - Squeak4.6
+
 env:
-  global:
-    - BASELINE=Vivide
-    - PACKAGES="/repository"
-  matrix:
-    - SMALLTALK="Squeak4.6"
-    - SMALLTALK="Squeak5.0"
-    - SMALLTALK="SqueakTrunk"
-    
-addons:
-  apt:
-    packages:
-    # 32-bit VM
-    - libc6:i386
-    # UUIDPlugin
-    - libuuid1:i386
-
-install:
-   - export PROJECT_HOME="$(pwd)"
-   - cd $HOME
-   - wget -q -O filetreeCI.zip https://github.com/fniephaus/filetreeCI/archive/master.zip
-   - unzip -q filetreeCI.zip
-   - cd filetreeCI-*
-   - export FILETREE_CI_HOME="$(pwd)"
-
-script: $FILETREE_CI_HOME/run.sh
+  - BASELINE=Vivide
+  - PACKAGES="/repository"
 
 after_success:
   - chmod +x $PROJECT_HOME/scripts/prepare_image.sh
