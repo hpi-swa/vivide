@@ -11,8 +11,10 @@
 		"hasChildrenFor:" : "mt 6/9/2015 16:39",
 		"iconFor:" : "mt 7/28/2015 11:48",
 		"initialize" : "mt 6/10/2015 10:08",
-		"labelFor:" : "mt 6/9/2015 16:41",
+		"labelFor:" : "mt 10/22/2015 16:52:25.602",
 		"model" : "mt 6/9/2015 16:28",
 		"process:" : "mt 9/7/2015 15:48",
 		"reset" : "mt 6/9/2015 16:49",
-		"toplevelNodes" : "mt 9/14/2015 14:34" } }
+		"setUp:" : "mt 10/22/2015 16:52:07.361",
+		"toplevelNodes" : "mt 9/14/2015 14:34",
+		"treeMorph" : "mt 10/22/2015 16:45:44.65" } }
