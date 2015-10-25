@@ -11,7 +11,8 @@
 		"organizer",
 		"outgoingObjects",
 		"connections",
-		"fullScript" ],
+		"fullScript",
+		"lastUpdateId" ],
 	"name" : "ViMultiPaneWidget",
 	"pools" : [
 		 ],

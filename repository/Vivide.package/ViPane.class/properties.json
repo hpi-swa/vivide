@@ -12,7 +12,10 @@
 		"connections",
 		"recentQueries",
 		"errorBtn",
-		"id" ],
+		"id",
+		"lastUpdateId",
+		"lastUpdateWasEmpty",
+		"forceUpdate" ],
 	"name" : "ViPane",
 	"pools" : [
 		 ],

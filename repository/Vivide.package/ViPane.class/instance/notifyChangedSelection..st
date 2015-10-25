@@ -1,6 +1,13 @@
 listening
 notifyChangedSelection: selectedNodes
-	
+
+	"No double empty updates. Free views to watch for it."
+	(lastUpdateWasEmpty == true and: [selectedNodes isEmpty])
+		ifTrue: [^ self "ignore"]
+		ifFalse: [lastUpdateWasEmpty := selectedNodes isEmpty].
+
+	self beginUpdateChain.
+
 	self
 		setProperty: #lastSelection
 		toValue: (selectedNodes collect: [:node | node at: #object]).

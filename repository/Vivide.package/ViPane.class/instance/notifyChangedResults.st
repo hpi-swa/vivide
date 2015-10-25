@@ -1,6 +1,8 @@
 listening
 notifyChangedResults
 
+	self beginUpdateChain.
+
 	self connections
 		select: [:connection | (connection isValid
 			and: [connection isResults])
