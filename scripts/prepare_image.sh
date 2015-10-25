@@ -23,7 +23,7 @@ elif [ -z "$SMALLTALK" ]; then
     print_info "\$SMALLTALK is not defined!"
     exit 1
 elif [ -z "$COG_VM" ]; then
-    print_error "\$COG_VM is not defined!"
+    print_info "\$COG_VM is not defined!"
     exit 1
 fi
 # ==============================================================================
