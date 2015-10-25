@@ -6,4 +6,7 @@ reset
 
 	self updateQueryCommands.
 	self findNext.
-	self ensureSelection.
+	
+	(self valueOfProperty: #selectNone ifAbsent: [false])
+		ifTrue: [self currentViews do: [:view | view selectNone]]
+		ifFalse: [self ensureSelection].

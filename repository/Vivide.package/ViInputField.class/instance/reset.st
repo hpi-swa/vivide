@@ -3,8 +3,7 @@ reset
 
 	self model objects ifNotEmpty: [:objs |
 		self lineEdit
-			theText: objs first;
-			select: (1 to: 0) "none"].
+			theText: objs first].
 	
 	"Restore selection."
 	self selectedNodes

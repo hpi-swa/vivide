@@ -15,3 +15,7 @@ setUp: aScript
 	self
 		setProperty: #expandAll
 		toValue: (aScript valueOfProperty: #expandAll ifAbsent: [false]).
+
+	self
+		setProperty: #selectNone
+		toValue: (aScript valueOfProperty: #selectNone ifAbsent: [false]).
