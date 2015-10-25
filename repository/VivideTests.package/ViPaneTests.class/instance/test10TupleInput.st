@@ -9,7 +9,9 @@ test10TupleInput
 	provider1
 		currentQuery: q;
 		objects: #(a b).
-	provider1 view currentVisibleView selectAll. 
+	
+	provider1 beginUpdateChainWith: [:pane | 
+		pane view currentVisibleView selectAll].
 	
 	self assert: (sut objects hasEqualElements: #(a b)).
 

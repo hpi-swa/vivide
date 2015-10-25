@@ -3,6 +3,7 @@ test03Model
 
 	| model |
 	model := ViQueryNode new.
+	model pane: ViPane new.
 	model firstStep: (ViQueryFillStep new objects: #(1 2 3); yourself).
 	
 	sut process: model.

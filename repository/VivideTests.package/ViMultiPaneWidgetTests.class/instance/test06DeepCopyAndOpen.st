@@ -11,8 +11,9 @@ test06DeepCopyAndOpen
 	
 	tool := ViPane new
 		currentQuery: deepCopy;
-		objects: #(1 2 3 4);
 		yourself.
+		
+	tool beginUpdateChainWith: [:p | p objects: #(1 2 3 4)].
 		
 	"ActiveWorld doOneSubCycle."
 	self assert: (tool view isKindOf: ViMultiPaneWidget).

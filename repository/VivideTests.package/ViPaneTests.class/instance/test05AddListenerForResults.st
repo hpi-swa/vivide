@@ -8,9 +8,13 @@ test05AddListenerForResults
 	(ViResultsConnection from: sut to: listener) attach.
 
 	self assert: listener objects isEmpty.
-	sut objects: #(1 2 3).	
+
+	sut beginUpdateChainWith: [:pane |
+		pane objects: #(1 2 3)].
 	self assert: (listener objects hasEqualElements: sut results).
-	sut currentQuery: [:num | num * num] asScript.
+	
+	sut beginUpdateChainWith: [:pane |
+		pane currentQuery: [:num | num * num] asScript].
 	self assert: (listener objects hasEqualElements: sut results).
 
 	listener clear.

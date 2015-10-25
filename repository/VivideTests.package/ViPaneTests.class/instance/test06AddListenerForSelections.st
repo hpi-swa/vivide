@@ -9,7 +9,7 @@ test06AddListenerForSelections
 
 	self assert: listener objects isEmpty.
 	sut objects: #(1 2 3).	
-	sut view currentVisibleView selectAll.
+	sut beginUpdateChainWith: [:pane | pane view currentVisibleView selectAll].
 	self assert: (listener objects sameElements: sut selectedResults).
 
 	listener clear.

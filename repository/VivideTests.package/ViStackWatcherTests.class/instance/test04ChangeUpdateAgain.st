@@ -1,6 +1,10 @@
 tests
 test04ChangeUpdateAgain
-	<timeout: 30000>
+	<timeout: 1000>
+	
+	Smalltalk platformName = 'unix' "Travis"
+		ifTrue: [^ self].
+	
 	helper := Morph new.
 	helper addDependent: self.
 	self forkAndSpyOn: [helper changed: #helper].
