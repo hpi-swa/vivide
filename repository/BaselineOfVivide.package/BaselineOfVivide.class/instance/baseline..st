@@ -80,8 +80,10 @@ baseline: spec
 
 		"Internal packages."
 		spec package: 'Vivide' with: [
+			(#('Squeak4.6' 'Squeak5.0') includes: Smalltalk version)
+				ifTrue: [spec requires: #(Animations Signals 'VB-Regex' JSON Widgets Icons 'Refactoring-Core' OCompletion)]
+				ifFalse: [spec requires: #(Animations Signals JSON Widgets Icons 'Refactoring-Core' OCompletion)].
 			spec
-				requires: #(Animations Signals 'VB-Regex' JSON Widgets Icons 'Refactoring-Core' OCompletion);
 				preLoadDoIt: #preLoad;
 				postLoadDoIt: #postLoad].
 		spec package: 'VivideScripts' with: [
