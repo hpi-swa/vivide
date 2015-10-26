@@ -6,4 +6,5 @@ flagSpecs
 	^ flagSpecs ifNil: [#(
 		($e 'Evaluate' #evaluate)
 		($s 'Script' #script)
+		($u 'Use' #use)
 		)]
