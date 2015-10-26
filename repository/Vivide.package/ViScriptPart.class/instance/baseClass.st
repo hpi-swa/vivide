@@ -10,8 +10,12 @@ baseClass
 		self stepsDo: [:step | | in |
 			self assert: step isMeta. "Only meta steps allowed."
 			in := Object.
-			(step metaInput anySatisfy: [:specs | specs second = #outer])
-				ifTrue: [in := step metaReference baseClass].
+			(step metaInput anySatisfy: [:specs | specs second = #outer]) ifTrue: [
+				in := step metaReference baseClass.
+				"If outer input is part of a tuple, skip type filter for now..."
+				(ViQueryInterpreter isCollection: in)
+					ifTrue: [in := Object]].
+			
 			(in inheritsFrom: mostSpecific)
 				ifTrue: [mostSpecific := in]].
 		^ mostSpecific].
