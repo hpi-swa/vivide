@@ -1,7 +1,7 @@
 preferences
 useVivideDebugger
-	<preference: 'Use Vivide Debugger'
-		category: 'Vivide'
-		description: 'Let''s you choose between default debugging and Vivide integration.'
+	<preference: 'Use Script Debugger'
+		category: 'Vivide - Debugging'
+		description: 'If enabled, opens the #debugger script with a debugger instance.'
 		type: #Boolean>
 	^ UseVivideDebugger ifNil: [ true ]

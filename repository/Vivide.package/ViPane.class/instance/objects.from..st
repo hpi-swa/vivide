@@ -4,11 +4,17 @@ objects: someObjects from: aPane
 	self assert: self tupleSize > 0. "Must not be called otherwise."
 		
 	(lastUpdateId == aPane lastUpdateId and: [forceUpdate == false])
-		ifTrue: [^ self "abort update cycle"]
+		ifTrue: [
+			(VivideLight animateDataflow and: [self isInWorld]) ifTrue: [
+				aPane showFlashMini.
+				self showFlashCross.
+				(Delay forMilliseconds: 200) wait].
+
+			^ self "abort update cycle"]
 		ifFalse: [
 			forceUpdate := false.
 			lastUpdateId := aPane lastUpdateId].
-	
+
 	self tupleSize = 1
 		ifTrue: [
 			"If we have only one input use it directly."

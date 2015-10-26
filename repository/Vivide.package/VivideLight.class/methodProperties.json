@@ -1,6 +1,8 @@
 {
 	"class" : {
 		"active" : "mt 11/13/2014 10:24:02.669",
+		"animateDataflow" : "mt 10/26/2015 15:58:11.147",
+		"animateDataflow:" : "mt 10/26/2015 15:58:26.698",
 		"appName" : "mt 8/19/2014 10:30:00.132",
 		"appVersion" : "mt 8/19/2014 10:30:06.923",
 		"appVersionString" : "mt 8/19/2014 10:30:13.465",
@@ -16,7 +18,7 @@
 		"startUp:" : "mt 10/25/2015 12:54:24.122",
 		"useClassicMode" : "mt 12/9/2014 15:41:49.544",
 		"useClassicMode:" : "mt 12/9/2014 16:01:29.602",
-		"useVivideDebugger" : "mt 7/24/2014 14:53:41.182",
+		"useVivideDebugger" : "mt 10/26/2015 17:31:27.294",
 		"useVivideDebugger:" : "mt 7/24/2014 14:53:53.241" },
 	"instance" : {
 		"checkForUpdate" : "mt 2/12/2015 11:55",

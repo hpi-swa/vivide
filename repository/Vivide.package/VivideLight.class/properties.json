@@ -3,6 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
+		"AnimateDataflow",
 		"FeedbackServer",
 		"LastProfile",
 		"Profiles",

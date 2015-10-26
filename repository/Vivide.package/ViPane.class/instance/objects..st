@@ -1,6 +1,10 @@
 accessing
 objects: someObjects
-	
+
+	(VivideLight animateDataflow and: [self isInWorld]) ifTrue: [
+		self showFlash.
+		(Delay forMilliseconds: 200) wait].
+
 	self model firstStep objects: someObjects.
 				
 	self currentQuery: (self appropriateQueries
