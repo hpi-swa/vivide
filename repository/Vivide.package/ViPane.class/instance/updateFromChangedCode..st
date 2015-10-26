@@ -2,7 +2,7 @@ updating
 updateFromChangedCode: evt
 	"If there was a change in view code, update my view."
 	
-	({Object. Morph. ViArtifactListView2} includes: evt itemClass)
+	({Object. Morph. ViArtifactListView2. ViMultiPaneWidget} includes: evt itemClass)
 		ifTrue: [^ self "Ignore system classes"].
 	
 	"Check needed for ViQueryNodeTests >> #test11Notifiactions."
