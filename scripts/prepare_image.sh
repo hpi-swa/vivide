@@ -22,9 +22,6 @@ elif [ -z "$FILETREE_CI_HOME" ]; then
 elif [ -z "$SMALLTALK" ]; then
     print_info "\$SMALLTALK is not defined!"
     exit 1
-elif [ -z "$COG_VM" ]; then
-    print_info "\$COG_VM is not defined!"
-    exit 1
 fi
 # ==============================================================================
 
@@ -34,6 +31,8 @@ DEPLOY_PATH="$FILETREE_CI_HOME/deploy"
 VIVIDE_IMAGE="Vivide-$SMALLTALK.image"
 VIVIDE_CHANGES="Vivide-$SMALLTALK.changes"
 DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
+VM_PATH="$FILETREE_CI_HOME/cache/vms"
+COG_VM="$VM_PATH/cogspurlinux/bin/squeak" # Spur by default
 COG_VM_PARAM="-nosound -nodisplay"
 # ==============================================================================
 
@@ -45,6 +44,7 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
     unzip Squeak4.6-15102.zip
     wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
     gunzip SqueakV46.sources.gz
+    COG_VM="$VM_PATH/coglinux/bin/squeak"
 elif [ $SMALLTALK == "Squeak5.0" ]; then
     print_info "Downloading Squeak5.0 image..."
     wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
