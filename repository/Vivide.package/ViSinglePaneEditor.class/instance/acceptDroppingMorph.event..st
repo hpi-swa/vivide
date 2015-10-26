@@ -5,9 +5,7 @@ acceptDroppingMorph: aTransferMorph event: evt
 	self clearDrawFlag: #dropPane.
 
 	(aTransferMorph hasFlag: #use) ifTrue: [
-		self pane
-			beginUpdateChain;
-			objects: aTransferMorph passenger.		
+		self pane objects: aTransferMorph passenger.		
 		^ self].
 
 	self assert: (self pane view isKindOf: ViMultiPaneWidget) not.
