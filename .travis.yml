@@ -4,10 +4,12 @@
 language: smalltalk
 sudo: false
 
+os: osx
+
 smalltalk:
-  - SqueakTrunk
-  - Squeak5.0
-  - Squeak4.6
+  - Squeak-trunk
+  - Squeak-5.0
+  - Squeak-4.6
 
 env:
   global:
