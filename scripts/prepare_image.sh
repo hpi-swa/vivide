@@ -31,7 +31,18 @@ DEPLOY_PATH="$SMALLTALK_CI_HOME/deploy"
 VIVIDE_IMAGE="Vivide-$SMALLTALK.image"
 VIVIDE_CHANGES="Vivide-$SMALLTALK.changes"
 DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
-COG_VM="$SMALLTALK_CI_VMS/cogspurlinux/bin/squeak" # Spur by default
+case "$(uname -s)" in
+    "Linux")
+        COG_VM="$SMALLTALK_CI_VMS/cogspurlinux/bin/squeak" # Spur by default
+        ;;
+    "Darwin")
+        COG_VM="$SMALLTALK_CI_VMS/CogSpur.app/Contents/MacOS/Squeak"
+        ;;
+    *)
+        print_info "Unsupported platform '$(uname -s)'"
+        exit 1
+        ;;
+esac
 COG_VM_PARAM="-nosound -nodisplay"
 # ==============================================================================
 
@@ -43,7 +54,14 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
     unzip Squeak4.6-15102.zip
     wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
     gunzip SqueakV46.sources.gz
-    COG_VM="$SMALLTALK_CI_VMS/coglinux/bin/squeak"
+    case "$(uname -s)" in
+        "Linux")
+            COG_VM="$SMALLTALK_CI_VMS/coglinux/bin/squeak"
+            ;;
+        "Darwin")
+            COG_VM="$SMALLTALK_CI_VMS/Cog.app/Contents/MacOS/Squeak"
+            ;;
+    esac
 elif [ $SMALLTALK == "Squeak5.0" ]; then
     print_info "Downloading Squeak5.0 image..."
     wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
