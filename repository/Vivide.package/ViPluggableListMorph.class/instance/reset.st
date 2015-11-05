@@ -1,12 +1,7 @@
 initialization
 reset
 
-	| oldSelection |
-	oldSelection := self currentSelectionIndex.
 	self selectNone.
-
 	self changed: #list.
-	self currentSelectionIndex: (oldSelection min: self list size).
 	
 	self flag: #todo:. "mt: Restore multi-selection also."
-	self yield: self selectedNodes.

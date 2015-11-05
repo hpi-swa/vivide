@@ -9,7 +9,8 @@
 	"instvars" : [
 		"model",
 		"currentSelectionIndex",
-		"selectionMap" ],
+		"selectionMap",
+		"selectedObjects" ],
 	"name" : "ViPluggableListMorph",
 	"pools" : [
 		 ],
