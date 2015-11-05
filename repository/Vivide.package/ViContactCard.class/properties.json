@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"raw",
+		"fullname",
+		"organization" ],
+	"name" : "ViContactCard",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
