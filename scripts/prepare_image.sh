@@ -31,9 +31,11 @@ DEPLOY_PATH="$SMALLTALK_CI_HOME/deploy"
 VIVIDE_IMAGE="Vivide-$SMALLTALK.image"
 VIVIDE_CHANGES="Vivide-$SMALLTALK.changes"
 DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
+COG_VM_PARAM=""
 case "$(uname -s)" in
     "Linux")
         COG_VM="$SMALLTALK_CI_VMS/cogspurlinux/bin/squeak" # Spur by default
+        COG_VM_PARAM="-nosound -nodisplay"
         ;;
     "Darwin")
         COG_VM="$SMALLTALK_CI_VMS/CogSpur.app/Contents/MacOS/Squeak"
@@ -43,7 +45,6 @@ case "$(uname -s)" in
         exit 1
         ;;
 esac
-COG_VM_PARAM="-nosound -nodisplay"
 # ==============================================================================
 
 mkdir "$DEPLOY_PATH" && cd "$DEPLOY_PATH"
