@@ -12,6 +12,7 @@
 		"interrupt:label:" : "mt 2/3/2015 11:37",
 		"isMethodCodeCategorized:" : "mt 2/14/2014 14:08:15.232",
 		"isTestMethod:" : "mt 11/28/2014 13:20:42.796",
+		"lackOfCohesionInMethods:onAttributes:" : "mt 10/29/2015 17:23:04.175",
 		"linesOfCodeForBlock:" : "mt 2/21/2014 14:02:19.669",
 		"linesOfCodeForBlock:do:" : "mt 2/21/2014 14:01:39.035",
 		"linesOfCodeForClass:" : "mt 2/12/2014 11:43:11.978",
@@ -21,6 +22,9 @@
 		"linesOfCodeForSourceCode:do:" : "mt 2/21/2014 14:00:08.922",
 		"methodCategories" : "mt 2/21/2014 13:45:12.987",
 		"methodNullCategory" : "mt 2/21/2014 13:45:03.018",
-		"printRelativeTimeStamp:" : "mt 7/24/2014 11:03:58.903" },
+		"numberOfMethods:accessing:" : "mt 10/28/2015 14:36:09.932",
+		"printRelativeTimeStamp:" : "mt 7/24/2014 11:03:58.903",
+		"selectFromMethods:thatAccess:" : "mt 10/28/2015 14:29:00.066",
+		"selectInGraphFromMethods:thatAccess:" : "mt 10/29/2015 16:49:55.024" },
 	"instance" : {
 		 } }
