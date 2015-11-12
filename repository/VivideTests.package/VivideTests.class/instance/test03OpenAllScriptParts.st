@@ -9,7 +9,7 @@ test03OpenAllScriptParts
 
 	self assert: 2 equals: script allSteps size.
 
-	wnd := script explore.
+	wnd := #artifacts openScriptWith: {script}.
 	pane := wnd editor pane.
 	
 	self assert: script allSteps size equals: pane objects size.
