@@ -2,4 +2,4 @@ steps
 stepobjectExplorer
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#identity); add: (#class->ViQueryTransformStep); add: (#properties->((Dictionary new) add: (#priority->100); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'11 February 2014 1:01:49 pm'); add: (#copyOfStep->#identity); yourself)); add: (#id->#objectExplorer); add: (#iconCode->'nil'); add: (#next->nil); add: (#label->'Object Explorer'); yourself)
+	^ ((Dictionary new) add: (#definition->#'9f3b781a-255d-f245-bee1-3fcf39040b9d'); add: (#class->ViScriptPart); add: (#properties->((Dictionary new) add: (#priority->500); add: (#view->ViExplorerView); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'12 November 2015 11:56:40 am'); add: (#isNew->false); yourself)); add: (#isProperty->false); add: (#next->nil); add: (#label->'Inspector'); add: (#iconCode->'nil'); add: (#id->#objectExplorer); add: (#isReference->false); yourself)
