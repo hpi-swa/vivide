@@ -1,12 +1,7 @@
 add/remove
 addObject: anObject after: anotherArtifact
 
-	| object |
-	object := (ViQueryInterpreter isCollection: anObject)
-		ifTrue: [anObject "avoid unpacking"]
-		ifFalse: [anObject].
-
-	(ViArtifactLookupService new doObject: object) ifNotNil: [:ac |
+	(ViArtifactLookupService new doObject: anObject) ifNotNil: [:ac |
 		^ self
-			addArtifact: (ac new object: object; hResizing: #spaceFill)
+			addArtifact: (ac new object: anObject; hResizing: #spaceFill)
 			after: anotherArtifact]

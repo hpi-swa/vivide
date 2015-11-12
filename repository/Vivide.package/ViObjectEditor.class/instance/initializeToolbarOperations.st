@@ -16,10 +16,7 @@ initializeToolbarOperations
 		addGroup: #commands
 		icon: UiSilkIcons scriptGearIcon
 		contents: [:editor |
-			(ViQueryCommandsBar commandsForObjects:
-				((ViQueryInterpreter isCollection: editor object)
-					ifTrue: [editor object]
-					ifFalse: [{editor object}])) collect: [:command |
-						{#executeCommand:. command label ifNil: [command definition sourceCode]. command icon. command. "1"}]
+			(ViQueryCommandsBar commandsForObjects: editor object asList) collect: [:command |
+				{#executeCommand:. command label ifNil: [command definition sourceCode]. command icon. command. "1"}]
 			
 			].

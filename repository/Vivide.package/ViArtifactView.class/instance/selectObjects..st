@@ -2,12 +2,9 @@ actions
 selectObjects: someObjects
 	"Explicit selection  mechansim."
 	
-	(ViQueryInterpreter isCollection: someObjects)
-		ifFalse: [^ self selectObjects: {someObjects}].
-
 	self
 		setProperty: #lastSelection
-		toValue: (someObjects collect: [:o |
+		toValue: (someObjects asList collect: [:o |
 			Dictionary newFrom: {#object -> o}]). 
 
 	self yield: self selectedNodes.

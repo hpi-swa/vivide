@@ -13,12 +13,9 @@ showEvaluationResult: anObject
 		labelPosition: m form width @ 0;
 		extent: 50@20."
 	
-	(ViQueryInterpreter isCollection: self context)
-		ifFalse: [	ViObjectChangeNotifier uniqueInstance
-			objectChanged: self context]
-		ifTrue: [self context do: [:obj |
-			ViObjectChangeNotifier uniqueInstance
-				objectChanged: obj]].
+	self context asList do: [:obj |
+		ViObjectChangeNotifier uniqueInstance
+			objectChanged: obj].
 
 	ViAnimatedImageMorph
 		flyOutOn: self
