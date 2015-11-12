@@ -9,7 +9,7 @@ test04OpenAllScriptParts
 
 	self assert: 2 equals: script allSteps size.
 
-	wnd := #foobar explore. "some object"
+	wnd := #artifacts openScriptWith: #(foobar). "some object"
 	pane := wnd editor pane.
 	
 	pane view openArtifact: script.
