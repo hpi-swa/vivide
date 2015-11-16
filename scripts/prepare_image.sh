@@ -49,7 +49,7 @@ esac
 
 mkdir "$DEPLOY_PATH" && cd "$DEPLOY_PATH"
 
-if [ $SMALLTALK == "Squeak4.6" ]; then
+if [ $SMALLTALK == "Squeak-4.6" ]; then
     print_info "Downloading Squeak4.6 image..."
     wget http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
     unzip Squeak4.6-15102.zip
@@ -63,7 +63,7 @@ if [ $SMALLTALK == "Squeak4.6" ]; then
             COG_VM="$SMALLTALK_CI_VMS/Cog.app/Contents/MacOS/Squeak"
             ;;
     esac
-elif [ $SMALLTALK == "Squeak5.0" ]; then
+elif [ $SMALLTALK == "Squeak-5.0" ]; then
     print_info "Downloading Squeak5.0 image..."
     wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
     unzip Squeak5.0-15113.zip
