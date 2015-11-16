@@ -25,7 +25,8 @@ baseline: spec
 		spec project: 'OCompletion' with: [
 			spec
 				className: 'ConfigurationOfOCompletion';
-				repository: 'http://www.squeaksource.com/MetacelloRepository'].
+				repository: 'http://www.squeaksource.com/MetacelloRepository';
+				version: #stable].
 
 		spec project: 'FFI' with: [
 				spec
