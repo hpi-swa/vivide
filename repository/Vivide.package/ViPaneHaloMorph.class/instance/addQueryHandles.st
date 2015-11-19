@@ -23,7 +23,9 @@ addQueryHandles
 				ifFalse: [0]);
 			setProperty: #query toValue: q;
 			dragTransferType: #objects;
-			passenger: self target objects, {q}; "Sufficient. See VivideLight >> #openArtifacts:"
+			passenger: (self target objects
+				ifEmpty: [{}]
+				ifNotEmpty: [{self target objects}]), {q}; "Sufficient. See VivideLight >> #openArtifacts:"
 			yourself].
 	buttons do: [:btn |
 		self connect: btn signal: #clicked: toSelector: #changeToQueryFrom: pattern: #(0)].
