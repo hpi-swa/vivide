@@ -18,6 +18,7 @@ initialize
 			getHelpSelector: #balloonTextFor:;
 			dragItemSelector: #dragPassengerFor:;
 			dragTypeSelector: #dragTypeFor:;
+			getMenuSelector: #menu:evaluate:;
 				dragEnabled: true;
 				autoDeselect: false;
 				yourself).

@@ -13,7 +13,7 @@ initializeForMultiSelection
 			changePrimarySelection: #currentSelectionIndex:
 			listSelection: #isSelectedAt:
 			changeListSelection: #setAt:isSelected:
-			menu: nil)
+			menu: #menu:evaluate:)
 				getIconSelector: #iconAtIndex:;
 				"dragItemSelector: #dragPassengerAtIndex:;
 				dragTypeSelector: #dragTransferTypeAtIndex:;

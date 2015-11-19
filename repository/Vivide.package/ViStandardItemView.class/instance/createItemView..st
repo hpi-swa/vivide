@@ -33,4 +33,6 @@ createItemView: viewClass
 	view viewport eventHandler
 		on: Character escape send: #discardPreview to: previewHandler.
 
+	self connect: view signal: #menuRequestedAt:for: toSelector: #onView:menuRequestedAt:for: pattern: #(0 1 2). 
+
 	^ view

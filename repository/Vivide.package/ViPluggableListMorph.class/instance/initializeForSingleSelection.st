@@ -10,7 +10,8 @@ initializeForSingleSelection
 			on: self
 			list: #list
 			selected: #currentSelectionIndex
-			changeSelected: #currentSelectionIndex:)
+			changeSelected: #currentSelectionIndex:
+			menu: #menu:evaluate:)
 				getIconSelector: #iconAtIndex:;
 				dragItemSelector: #dragPassengerAtIndex:;
 				dragTypeSelector: #dragTransferTypeAtIndex:;

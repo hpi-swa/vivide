@@ -33,6 +33,7 @@ initializeArtifact
 		
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #changeReceiverFor:.
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #focusCurrentNodeIn: pattern: #(0).
+	self connect: contentTree signal: #menuRequestedAt:for: toSelector: #onMenuRequestedAt:for:. 
 	
 	container := Morph new
 		color: Color transparent;
