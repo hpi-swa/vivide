@@ -34,5 +34,5 @@ appropriateQueries
 		"3) Take all other queries if they have labels and match or are global."
 		strm nextPutAll: (
 			self queries value select: [:step | step nextLabel notNil and: [
-				(step isGlobal and: [self objects isEmpty]) or: [check value: step]]])
+				(step isGlobal and: [self objects isEmpty]) or: [step isGlobal not and: [check value: step]]]])
 	]
