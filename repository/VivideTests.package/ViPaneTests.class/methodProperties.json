@@ -27,4 +27,5 @@
 		"test21DirectLoopSelfUpdate" : "mt 10/25/2015 10:51:54.134",
 		"test22DeferredLoop" : "mt 10/25/2015 11:30:09.451",
 		"test23PropagateOnNotifier" : "mt 10/25/2015 12:23:43.649",
-		"test24PropagateOnScriptChange" : "mt 10/25/2015 11:51:39.941" } }
+		"test24PropagateOnScriptChange" : "mt 10/25/2015 11:51:39.941",
+		"test25AppropriateQueries" : "mt 11/19/2015 16:34:38.903" } }
