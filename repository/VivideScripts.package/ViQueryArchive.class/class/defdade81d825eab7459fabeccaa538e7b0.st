@@ -6,16 +6,12 @@ defdade81d825eab7459fabeccaa538e7b0
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> (script baseClassName asText
-		addAttribute: (TextColor color: (Color fromString: #AAAAAA));
-		yourself)}]
+	#text -> script baseClassName}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:o | (
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> (script baseClassName asText
-		addAttribute: (TextColor color: (Color fromString: #AAAAAA));
-		yourself)}]
+	#text -> script baseClassName}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]'); yourself)
