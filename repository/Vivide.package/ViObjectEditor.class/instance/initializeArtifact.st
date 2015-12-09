@@ -32,6 +32,7 @@ initializeArtifact
 			source: self).
 		
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #changeReceiverFor:.
+	self connect: contentTree signal: #currentNodeChanged: toSelector: #showHaloFor:.
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #focusCurrentNodeIn: pattern: #(0).
 	self connect: contentTree signal: #menuRequestedAt:for: toSelector: #onMenuRequestedAt:for:. 
 	

@@ -5,6 +5,7 @@ addQuery
 	newQuery := [:object | object] asScript.
 	newQuery setProperty: #isNew toValue: true. 
 
+	self flag: #meta.
 	self isTopLevel ifFalse: [
 		newQuery adoptOrganization: self currentQuery organization].
 	

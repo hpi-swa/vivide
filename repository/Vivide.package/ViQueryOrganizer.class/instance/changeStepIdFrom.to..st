@@ -9,6 +9,9 @@ changeStepIdFrom: oldId to: newId
 			category ifNotNil: [
 				self stepsCategorizer classify: newId under: category]].
 		
+		"Update reference scripts."
+		self flag: #todo.
+		
 		"Update meta-scripts."
 		self metaScripts do: [:metaScript |
 			metaScript metaReferenceId = oldId ifTrue: [

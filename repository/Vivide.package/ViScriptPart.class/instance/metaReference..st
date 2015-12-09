@@ -4,7 +4,8 @@ metaReference: script
 	| newCode pos |
 	self assert: self isMeta.
 
-	script adoptOrganization: self organization.
+	script isDefault ifFalse: [
+		script adoptOrganization: self organization].
 	
 	newCode := self sourceCode copyFrom: 1 to: (pos := (self sourceCode indexOfSubCollection: '#current -> #')+11).
 	newCode := newCode, script id storeString.

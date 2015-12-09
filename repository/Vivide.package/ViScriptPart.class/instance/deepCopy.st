@@ -2,8 +2,9 @@ as yet unclassified
 deepCopy
 	"Ignore cycles."
 
-	| lastStep newQuery idMap copiedReferences |
+	| lastStep newQuery idMap referencesToCopy copiedReferences |
 	idMap := Dictionary new.
+	referencesToCopy := IdentitySet new.
 	copiedReferences := Dictionary new.
 	
 	newQuery := self notifier doSilently: [self copy].
@@ -30,9 +31,10 @@ deepCopy
 			self assert: (step metaScriptReferences includes: step metaReference).
 
 			step metaScriptReferences do: [:referencedStep |
-				referencedStep deepCopy in: [:r |
-					copiedReferences at: r id put: r.
-					idMap at: referencedStep id put: r id]]].
+				"referencedStep isDefault not" true ifTrue: [
+					referencedStep deepCopy in: [:r |
+						copiedReferences at: r id put: r.
+						idMap at: referencedStep id put: r id]]]].
 			].
 
 	"Resolve references."

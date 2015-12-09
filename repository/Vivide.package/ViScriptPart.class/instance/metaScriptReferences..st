@@ -4,7 +4,9 @@ metaScriptReferences: someScripts
 	| newCode pos |
 	self assert: self isMeta.
 
-	someScripts do: [:script | script adoptOrganization: self organization].
+	someScripts
+		select: [:script | script isDefault not]
+		thenDo: [:script | script adoptOrganization: self organization].
 	
 	newCode := self sourceCode copyFrom: 1 to: (pos := (self sourceCode indexOfSubCollection: '#scripts -> #')+11).
 	newCode := newCode, (someScripts collect: [:script | script id]) storeString.
