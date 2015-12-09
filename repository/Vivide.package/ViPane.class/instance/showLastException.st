@@ -2,4 +2,6 @@ errors
 showLastException
 
 	(self errorBtn valueOfProperty: #error) ifNotNil: [:ex |
-		ex explore].
+		VivideLight active
+			ifNil: [ex explore]
+			ifNotNil: [:vivide | vivide openArtifact: ex]].

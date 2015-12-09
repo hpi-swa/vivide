@@ -1,6 +1,6 @@
 accessing - convenience
 nextIcon
 
-	self stepsDo: [:step |
+	self allStepsDo: [:step |
 		step icon ifNotNil: [^ step icon]].
 	^ nil

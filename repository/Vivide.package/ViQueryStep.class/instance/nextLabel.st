@@ -1,6 +1,6 @@
 accessing - convenience
 nextLabel
 
-	self stepsDo: [:step |
+	self allStepsDo: [:step |
 		step label ifNotNil: [^ step label]].
 	^ nil
