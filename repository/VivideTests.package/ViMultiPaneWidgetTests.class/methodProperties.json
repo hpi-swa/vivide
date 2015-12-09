@@ -13,4 +13,5 @@
 		"test06DeepCopyAndOpen" : "mt 10/25/2015 09:55:56.682",
 		"test07MetaScriptWithoutForeignReferences" : "mt 7/21/2015 15:26",
 		"test08MultiPaneToPane" : "mt 9/14/2015 15:40",
-		"test09MetaScriptIdUpdate" : "mt 10/19/2015 13:56:33" } }
+		"test09MetaScriptIdUpdate" : "mt 10/19/2015 13:56:33",
+		"test10DefaultLookup" : "mt 12/8/2015 10:48:14.484" } }

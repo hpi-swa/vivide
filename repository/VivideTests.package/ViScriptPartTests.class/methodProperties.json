@@ -25,4 +25,5 @@
 		"test20HomogeneousWithReference" : "mt 10/7/2015 17:46",
 		"test21NotHomogeneousWithReference" : "mt 10/7/2015 18:19",
 		"test22Recursive" : "mt 10/7/2015 18:46",
-		"test23AsScriptWithTuples" : "mt 10/25/2015 11:14:20.952" } }
+		"test23AsScriptWithTuples" : "mt 10/25/2015 11:14:20.952",
+		"test24ReferenceIdUpdate" : "mt 12/7/2015 15:27:42.791" } }
