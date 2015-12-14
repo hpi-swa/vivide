@@ -1,14 +1,14 @@
 {
-	"category" : "Vivide-Support-Morphic",
+	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"pane" ],
-	"name" : "ViPaneHighlight",
+		 ],
+	"name" : "ViClassDefinitionEditorView",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ViArtifactView",
 	"type" : "normal" }

@@ -11,7 +11,8 @@
 		"dragTransferType",
 		"source",
 		"dragFlags",
-		"dragFlagSpecs" ],
+		"dragFlagSpecs",
+		"overlayIcon" ],
 	"name" : "ViDraggableButton",
 	"pools" : [
 		 ],

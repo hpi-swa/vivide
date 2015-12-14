@@ -7,7 +7,8 @@ addQueryHandles
 			checkable: true;
 			color: (Color gray: 0.85);
 			checked: self target currentQuery == q;
-			icon: (q nextIcon ifNil: [ViIcons controlRecordSmallSunkenIcon]);
+			icon: (q nextIcon ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
+				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]);
 			balloonText: (q nextLabel
 				ifNil: [q definition sourceCode]
 				ifNotNil: [:label | label]);
@@ -26,6 +27,8 @@ addQueryHandles
 			passenger: (self target objects
 				ifEmpty: [{}]
 				ifNotEmpty: [{self target objects}]), {q}; "Sufficient. See VivideLight >> #openArtifacts:"
+			in: [:btn | q baseClass asList size in: [:sz |
+				sz > 1 ifTrue: [btn setOverlayIconFromNumber: q baseClass asList size colorFont: (Color white) colorBackground: (Color fromString: '#7A86AD')]]];
 			yourself].
 	buttons do: [:btn |
 		self connect: btn signal: #clicked: toSelector: #changeToQueryFrom: pattern: #(0)].
