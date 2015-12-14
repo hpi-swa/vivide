@@ -28,6 +28,7 @@ updateConnections
 	somethingChanged ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script parts reordered.'}].
 
+	"If the first part is different, update all open panes to show the new first."
 	oldFirst ~~ otherSteps first ifTrue: [
 		ViPane allInstancesDo: [:pane | 
 			pane currentQuery == oldFirst

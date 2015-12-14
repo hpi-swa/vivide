@@ -6,7 +6,7 @@ copyQuery
 	
 	newQuery := self currentQuery deepCopy.
 	
-	self flag: #meta.
+	self flag: #metaScript.
 	self isTopLevel ifFalse: [
 		newQuery adoptOrganization: self currentQuery organization].
 	

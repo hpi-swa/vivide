@@ -1,6 +1,6 @@
 support
 convertPanes: paneSpecs toScript: firstPart
-
+	
 	| scripts |
 	scripts := firstPart steps asOrderedCollection.
 
@@ -26,4 +26,5 @@ convertPanes: paneSpecs toScript: firstPart
 			script setProperty: #isProperty toValue: true].
 	].
 
+	self flag: #metaScript.
 	^ firstPart

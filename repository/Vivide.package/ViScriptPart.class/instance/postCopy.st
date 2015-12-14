@@ -9,4 +9,4 @@ postCopy
 
 	next := nil.
 
-	self flag: #meta. "mt: What about copying meta-scripts and its organization?"
+	self flag: #metaScript. "mt: What about copying meta-scripts and its organization?"
