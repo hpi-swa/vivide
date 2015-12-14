@@ -42,6 +42,7 @@ openInWindowBounds: bounds grab: boolean
 	boolean ifTrue: [
 		window setProperty: #initialDrop toValue: true.
 		window hasDropShadow: false.
-		self currentHand attachMorph: window].
+		"Defer attachment to hand because we might have other mouse events in the processing chain."
+		Project current addDeferredUIMessage: [self currentHand attachMorph: window]].
 	
 	^ window

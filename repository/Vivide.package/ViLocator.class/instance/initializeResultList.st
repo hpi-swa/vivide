@@ -26,6 +26,7 @@ initializeResultList
 	
 	self connect: resultList signal: #doubleClicked: toSelector: #selectResult:.
 	self connect: resultList signal: #returnPressed: toSelector: #selectResults.
+	self connect: resultList signal: #menuRequestedAt:for: toSelector: #showScriptsAt:for:. 
 	
 	self connect: resultList eventHandler signal: #focusLostInSubmorph: toSelector: #onFocusLost.
 	

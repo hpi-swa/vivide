@@ -7,4 +7,4 @@ openInWindow
 			initialExtent: self fullBounds extent
 			world: ViActiveVivide world)
 		grab: (MorphicToolBuilder openToolsAttachedToMouseCursor
-				and: [self currentEvent isMouse and: [self currentEvent isMouseUp]])
+				and: [self currentEvent isMouse and: [self currentEvent isMouseUp or: [self currentEvent isMouseOver and: [self currentEvent redButtonPressed]]]])
