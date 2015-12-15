@@ -1,7 +1,7 @@
 preferences
 useClassicMode
 	<preference: 'Use Classic Mode'
-		category: 'Vivide'
+		category: 'Vivide - Experimentation'
 		description: 'This mode hides script editing and dataflow changing facilities. Only predefined scripts and tools can be used.'
 		type: #Boolean>
 	^ UseClassicMode ifNil: [ false ]

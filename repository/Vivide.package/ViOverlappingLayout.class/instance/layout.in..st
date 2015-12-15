@@ -6,7 +6,9 @@ layout: pane in: bounds
 		thenDo: [:m | 
 			(m valueOfProperty: #edgeToAdhereTo) ifNotNil: [:e |
 				e = #topRight
-					ifTrue: [e topRight: bounds topRight]
+					ifTrue: [m topRight: bounds topRight].
+				e = #bottomRight
+					ifTrue: [m bottomRight: bounds bottomRight].
 				] ifNil: [	m bounds: bounds]].
 			
 "| maxExtent |
