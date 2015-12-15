@@ -1,4 +1,0 @@
-accessing
-currentTask
-
-	^ currentTask

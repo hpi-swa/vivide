@@ -6,7 +6,6 @@ SystemOrganization addCategory: #'Vivide-Data'!
 SystemOrganization addCategory: #'Vivide-Editors'!
 SystemOrganization addCategory: #'Vivide-Editors-Support'!
 SystemOrganization addCategory: #'Vivide-Exceptions'!
-SystemOrganization addCategory: #'Vivide-Experimentation'!
 SystemOrganization addCategory: #'Vivide-Feedback'!
 SystemOrganization addCategory: #'Vivide-Help'!
 SystemOrganization addCategory: #'Vivide-Locator'!
