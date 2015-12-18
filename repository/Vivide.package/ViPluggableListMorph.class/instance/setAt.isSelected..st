@@ -3,7 +3,8 @@ setAt: index isSelected: aBoolean
 
 	(self isSelectedAt: index) == aBoolean ifTrue: [^ self].
 	self selectionMap at: index put: aBoolean.
-	selectedObjects
+	
+	self selectedObjects
 		removeAll;
 		addAll: (self selectedNodes collect: [:node | node at: #object]).
 	

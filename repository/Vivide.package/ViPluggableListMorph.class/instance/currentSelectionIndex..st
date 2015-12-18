@@ -1,14 +1,14 @@
 as yet unclassified
 currentSelectionIndex: anInteger
 
-	selectionMap ifNotNil: [^ self changed: #currentSelectionIndex].
+	self hasMultiSelection
+		ifTrue: [^ self changed: #currentSelectionIndex].
 
-	"currentSelectionIndex = anInteger ifTrue: [^ self]."
-	
 	currentSelectionIndex := anInteger.
-	selectedObjects
+	
+	self selectedObjects
 		removeAll;
-		addAll: (self selectedNodes collect: [:node | node at: #object]).
+		add: (self selectedNode ifNotNil: [:node | node at: #object]).
 	
 	self changed: #currentSelectionIndex.
 	self yield: self selectedNodes.
