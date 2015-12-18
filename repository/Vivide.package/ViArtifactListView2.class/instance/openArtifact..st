@@ -2,10 +2,8 @@ actions - open
 openArtifact: anObject
 	"Will reuse an open artifact or open one if nothing is found."
 
-	(anObject isKindOf: ViScriptPart) ifTrue: [
-		anObject steps in: [:steps |
-		"See behavior of ViScriptEditor >> #onContextChanged."
-			steps size > 1 ifTrue: [^ self openArtifacts: steps]]].
+	(anObject isKindOf: ViScriptPart)
+		ifTrue: [^ self artifactRequested: anObject].
 
 	(self artifactContainers
 		detect: [:container | container isObject: anObject]
