@@ -11,9 +11,10 @@ smalltalk:
   - Squeak-5.0
   - Squeak-4.6
 
+baseline: Vivide
+
 env:
   global:
-    - BASELINE=Vivide
     - PACKAGES="/repository"
 
 after_success:
