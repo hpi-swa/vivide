@@ -5,4 +5,4 @@ currentSelection: node
 	currentSelection := node.
 	
 	self changed: #currentSelection.
-	self yield: (node ifNil: [#()] ifNotNil: [{node}])
+	self yield: node asList.
