@@ -16,5 +16,5 @@ initializeForSingleSelection
 				dragItemSelector: #dragPassengerAtIndex:;
 				dragTypeSelector: #dragTransferTypeAtIndex:;
 				dragEnabled: true;
-				autoDeselect: false;
+				autoDeselect: true;
 				yourself).

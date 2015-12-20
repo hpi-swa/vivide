@@ -24,5 +24,6 @@ process: node
 	self selectedObjects addAll: (self selectedNodes collect: [:n | n at: #object]).
 	
 	"If the selection changed, tell the environment about it."
-	(oldSelection size > self selectedObjects size)
-		ifTrue: [self yield: self selectedNodes].
+	self yield: self selectedNodes.
+	"(oldSelection size > self selectedObjects size)
+		ifTrue: [self yield: self selectedNodes]."

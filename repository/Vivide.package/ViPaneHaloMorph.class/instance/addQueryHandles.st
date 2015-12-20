@@ -26,7 +26,7 @@ addQueryHandles
 			dragTransferType: #objects;
 			passenger: (self target objects
 				ifEmpty: [{}]
-				ifNotEmpty: [{self target objects}]), {q}; "Sufficient. See VivideLight >> #openArtifacts:"
+				ifNotEmpty: [self target objects]), {q}; "Sufficient. See VivideLight >> #openArtifacts:"
 			in: [:btn | q baseClass asList size in: [:sz |
 				sz > 1 ifTrue: [btn setOverlayIconFromNumber: q baseClass asList size colorFont: (Color white) colorBackground: (Color fromString: '#7A86AD')]]];
 			yourself].
