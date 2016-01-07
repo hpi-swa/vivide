@@ -19,4 +19,6 @@ deleteScript
 	otherSteps first == self object ifTrue: [
 		ViPane allInstancesDo: [:pane | 
 			pane currentQuery == self object
-				ifTrue: [pane currentQuery: self object next]]].
+				ifTrue: [
+					pane currentQuery: self object next.
+					pane recentQueries remove: self object "not valid anymore"]]].

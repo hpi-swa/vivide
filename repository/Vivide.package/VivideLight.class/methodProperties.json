@@ -12,6 +12,8 @@
 		"initialize" : "mt 10/19/2015 10:06:10",
 		"open" : "mt 1/31/2015 15:15",
 		"openProfile:" : "mt 1/31/2015 15:13",
+		"openProfileById:" : "mt 1/3/2016 13:02:43.957",
+		"openProfileByLabel:" : "mt 1/3/2016 13:03:02.126",
 		"prepareSqueak" : "mt 4/21/2015 09:53",
 		"profiles" : "mt 1/31/2015 13:09",
 		"shutDown:" : "mt 10/19/2015 10:33:11",

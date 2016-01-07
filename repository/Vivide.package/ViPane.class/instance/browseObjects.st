@@ -4,7 +4,7 @@ browseObjects
 
 	| pane |
 	pane := ViPane new
-		currentQuery: {#defaultProperties -> {#view -> ViTreeView}} asScript;
+		currentQuery: {#defaultProperties -> {#view -> ViTreePlainView}} asScript;
 		objects: self objects;
 		yourself.
 	pane

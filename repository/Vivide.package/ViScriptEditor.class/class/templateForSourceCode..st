@@ -33,8 +33,12 @@ templateForSourceCode: code
 						node arguments size = 0
 							ifTrue: [template := self templateWrapper]
 							ifFalse: [template := node arguments size = 1
-								ifTrue: [self templateProperties]
-								ifFalse: [self templateTuplesProperties]]].  
+								ifTrue: [(code includesSubstring: '#object' caseSensitive: true)
+									ifTrue: [self templatePropertiesWithObject]
+									ifFalse: [self templateProperties]]
+								ifFalse: [(code includesSubstring: '#object' caseSensitive: true)
+									ifTrue: [self templateTuplesPropertiesWithoutObject]
+									ifFalse: [self templateTuplesProperties]]]].  
 	].
 
 	(node isMessage and: [node selector = #->]) ifTrue: [
