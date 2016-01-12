@@ -13,7 +13,7 @@ specialProperties
 		#outputKind -> {Object}."
 		#isProperty -> {false}.
 		#isReference -> {false}.
-		#view -> (ViProfile active ifNotNil: #defaultView) asList.
+		"#view -> (ViProfile active ifNotNil: #defaultView) asList."
 		#in -> {OrderedCollection}.
 		#out -> {OrderedCollection}.
 		#async -> {false}.

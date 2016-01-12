@@ -8,8 +8,8 @@ initializeMinimal
 			self
 				addDefaultProperties;
 				addArtifacts;
-
 				addGroupsScript;
+				
 				addExplorer;
 				
 				addFormattedScripts;
@@ -18,8 +18,8 @@ initializeMinimal
 
 				addSenders;
 				addImplementors;
-				addSnippets;
 								
 				addPaneHierarchy;
+				addClassHierarchy; "optional"
 				addRecoverUnsavedScripts.
 				"debugger"].

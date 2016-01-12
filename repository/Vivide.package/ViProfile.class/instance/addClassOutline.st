@@ -13,6 +13,6 @@ addClassOutline
 		[:method | {
 			method methodClass organization categoryOfElement: method selector.
 			method} asTuples].
-		[#groups] -> {#isReference -> true}
-	
+		#groups.
+		
 	} asScript.

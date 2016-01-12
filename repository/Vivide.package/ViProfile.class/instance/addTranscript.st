@@ -7,5 +7,5 @@ addTranscript
 			#icon -> UiFugueIcons applicationTextIcon.
 			#view -> ViTextView}.
 		 [:history | history objects].
-		 [:entry | #text -> (entry key, ' ', entry value)]
+		 [:entry | #text -> (entry key printString, ' ', entry value)]
 	} asScript.

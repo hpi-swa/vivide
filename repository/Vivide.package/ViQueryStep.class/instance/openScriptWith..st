@@ -5,4 +5,4 @@ openScriptWith: someObjects
 	^ VivideLight active ifNotNil: [:vivide |
 		vivide
 			openScript: self
-			withObjects: someObjects]
+			withObjects: someObjects asList "for robustness..."]

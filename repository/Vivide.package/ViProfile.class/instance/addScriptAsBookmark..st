@@ -1,9 +1,6 @@
 add/remove
 addScriptAsBookmark: aScript
 
-	self bookmarks add: ((ViSinglePaneEditor
-		new: aScript
-		for: #())
-			extent: 400@250;
-			fullBounds;
-			asEditorState).
+	self
+		addScriptAsBookmark: aScript
+		withObjects: #()

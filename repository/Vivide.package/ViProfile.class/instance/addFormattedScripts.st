@@ -9,6 +9,7 @@ addFormattedScripts
 			#id -> #formattedQueries.
 			#view -> ViTreeView.
 			#yieldOn -> #(activated)}.
+		[:scripts | scripts reject: [:script | script valueOfProperty: #isNew ifAbsent: false]].
 		[:script | {
 			#icon -> (script nextIcon ifNil: [ViIcons blankIcon]).
 			#text -> (script nextLabel

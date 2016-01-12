@@ -2,11 +2,13 @@ initialization - scripts
 addPaneHierarchy
 
 	self addScript: {
+		[:pane | pane] -> {
+			#label -> 'Pane Hierarchy'.
+			#inputKind -> ViPane.
+			#id -> #paneHierarchy}.
 		[:pane | {
 			#text -> pane printString. 
-			#selectedLater -> [[pane addHalo]] }] -> {
-				#label -> 'Pane Hierarchy'.
-				#id -> #paneHierarchy}.
+			#selectedLater -> [[pane addHalo]] }].
 		[:pane | {pane currentQuery. pane view}].
 		[:scriptOrView | {
 			#text -> scriptOrView printString.
