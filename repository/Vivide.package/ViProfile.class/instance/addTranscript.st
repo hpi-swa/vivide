@@ -5,7 +5,10 @@ addTranscript
 		[ViProfile active transcriptHistory] -> {
 			#label -> 'Transcript'.
 			#icon -> UiFugueIcons applicationTextIcon.
-			#view -> ViTextView}.
+			#view -> ViTextView.
+			#scrollToBottom -> true.
+			#notifier -> [ViObjectHistoryNotifier new
+				history: ViProfile active transcriptHistory]}.
 		 [:history | history objects].
-		 [:entry | #text -> (entry key printString, ' ', entry value)]
+		 [:entry | #text -> ('[', entry key time print24, '] ', entry value)]
 	} asScript.

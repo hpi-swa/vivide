@@ -10,10 +10,13 @@ reset
 		
 	"Control CMD+S and modifications in the text box."
 	textEdit readOnly: (
-		(self script allPropertySteps first
-			valueOfProperty: #editable ifAbsent: [false]) not
-		or: [self model nodes size > 1]).
-		
+		(self script
+			valueOfProperty: #editable
+			ifAbsent: [self script allPropertySteps first
+				valueOfProperty: #editable
+				ifAbsent: [false]]) not
+			or: [self model nodes size > 1]).
+
 	showGroups := self model groups size > 1.
 	self model groups do: [:group |
 		(showGroups and: [(self model childCountInGroup: group) > 0])
@@ -27,4 +30,7 @@ reset
 		(node includesKey: #selection) ifTrue: [
 			textEdit
 				select: (node at: #selection);
-				scrollToShowSelection]]
+				scrollToShowSelection]].
+		
+	(self script valueOfProperty: #scrollToBottom ifAbsent: [false])
+		ifTrue: [textEdit scrollToBottom].
