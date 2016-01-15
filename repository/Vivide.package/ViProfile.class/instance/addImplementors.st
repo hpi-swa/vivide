@@ -9,6 +9,7 @@ addImplementors
 			#label -> 'Implementors'.
 			#id -> #implementors.
 			#priority -> 200}.
+		#defaultPropertiesExtended.
 			
 	} asScript.
 

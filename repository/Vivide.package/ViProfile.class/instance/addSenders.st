@@ -9,6 +9,7 @@ addSenders
 			#label -> 'Senders'.
 			#id -> #senders.
 			#priority -> 200}.
+		#defaultPropertiesExtended.
 			
 	} asScript.
 

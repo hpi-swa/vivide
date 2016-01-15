@@ -2,7 +2,7 @@ as yet unclassified
 drawConnectionsOn: aCanvas
 
 	| font col |
-	font := UiPlatform current standardButtonFont.
+	font := Preferences standardButtonFont.
 	col := (Color r: 0.667 g: 0.667 b: 0.667). "#AAAAAA"
 	
 	self artifactContainers overlappingPairsDo: [:c1 :c2 | | reason1 reason2 pt1 pt2 offset |
@@ -35,6 +35,6 @@ drawConnectionsOn: aCanvas
 				fillOval: ((0@0 extent: 5@5) translateBy: pt2 - (2@2))
 				color: col;
 				drawString: reason2
-				at: (pt1 x + 6) @ (pt1 y + pt2 y // 2 - 3)
+				at: (pt1 x + 6) @ (pt1 y + pt2 y // 2 + 3)
 				font: font
 				color: col]]

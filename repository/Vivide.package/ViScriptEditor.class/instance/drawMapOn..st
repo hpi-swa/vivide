@@ -7,24 +7,30 @@ drawMapOn: aCanvas
 
 	delta := 2@10.
 	offset := self topLeft + (delta // 2). 
-	offsetArguments := 3 @ (offset y -13).
+	offsetArguments := 3 @ (offset y -9).
 
-	1 to: (self mapIndex-1) do: [:i |
+	1 to: (self mapIndex-1) do: [:i | | text |
 		aCanvas
 			line: offset to: offset + (0@ (self height - ((self mapIndex + 1) * 8)))
 			width: 1 color: (Color gray: 0.7);
 			line: offset to: (offsetArguments x @ offset y)
 			width: 1 color: (Color gray: 0.7).
-			
+				
 		i = 1
 			ifTrue: [
-				('<font size="9" color="#000000">', ((self map at: i) ifEmpty: [' ']), '</font>')
-					asHtmlText asMorph topLeft: offset + (3 @ -10); drawOn: aCanvas.
+				text := ((self map at: i) ifEmpty: [' ']) asText.
+				text
+					addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
+					addAttribute: (TextColor color: (Color fromString: '#000000')).
+				text asMorph topLeft: offset + (3 @ -5); drawOn: aCanvas.
 				offsetArguments := offsetArguments + (5@0)]
 			ifFalse: [
-				(('<font size="9" color="#AAAAAA">', (self map at: i), '</font>')
-					asHtmlText asMorph topLeft: offsetArguments; drawOn: aCanvas; width)
-						in: [:w | offsetArguments := offsetArguments + (w @ 0)].
+				text := (self map at: i) asText.
+				text
+					addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
+					addAttribute: (TextColor color: (Color fromString: '#AAAAAA')).
+				(text asMorph topLeft: offsetArguments; drawOn: aCanvas; width)
+					in: [:w | offsetArguments := offsetArguments + (w @ 0)].
 				].
 		i = 1 ifTrue: [delta := delta x @ (delta y + 4)].
 		i = 2 ifTrue: [delta := delta x @ (delta y - 10)].
