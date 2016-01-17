@@ -1,4 +1,6 @@
 as yet unclassified
 doQueryStep: aQueryStep
 
-	^ aQueryStep baseClassName
+	^ aQueryStep isGlobal
+		ifTrue: ['-']
+		ifFalse: [aQueryStep baseClassName]

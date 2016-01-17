@@ -18,5 +18,5 @@ addPaneHierarchy
 			ifTrue: [object panes]
 			ifFalse: [#()]].
 		[:panes | panes sortBy: [:p1 :p2 | p1 topLeft <= p2 topLeft]].
-		1
+		2
 	} asScript.
