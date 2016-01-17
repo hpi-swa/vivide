@@ -1,7 +1,7 @@
 tests
 test22GroupObjectsAgain
 
-	| q |
+	| q cats |
 	q := {
 		[:method | {
 			method methodClass organization categoryOfElement: method selector.
@@ -14,8 +14,14 @@ test22GroupObjectsAgain
 	} asScript.
 	sut firstStep: (ViQueryStep use: Integer methodDict values in: q).
 	
+	"There may be empty categories in the Integer class."
+	cats := Integer organization categories select: [:cat |
+		(Integer organization listAtCategoryNamed: cat) notEmpty].
+	
 	"Check for no duplicate protocols."
-	self assert: sut childCount = Integer organization categories size. 
 	self
-		assert: Integer organization categories size + Integer methodDict size + 1 "root" 
+		assert: cats size
+		equals: sut childCount. 
+	self
+		assert: cats size + Integer methodDict size + 1 "root" 
 		equals: sut allNodes size.
