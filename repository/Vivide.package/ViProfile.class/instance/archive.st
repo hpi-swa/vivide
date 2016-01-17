@@ -1,4 +1,7 @@
 accessing
 archive
 
-	^ archive ifNil: [ViQueryArchive]
+	^ archive ifNil: [
+		self
+			createArchiveNamed: (self label asString ifEmpty: ['unnamed'])
+			inCategory: #VivideTemporary]
