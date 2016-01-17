@@ -1,9 +1,12 @@
 initialization - bookmarks
 addTranscript
 
-	self addScriptAsBookmark: {
+	self addScript: {
 		[ViProfile active transcriptHistory] -> {
+			#id -> #transcript.
 			#label -> 'Transcript'.
+			#isGlobal -> true.
+			#priority -> 500.
 			#icon -> UiFugueIcons applicationTextIcon.
 			#view -> ViTextView.
 			#scrollToBottom -> true.

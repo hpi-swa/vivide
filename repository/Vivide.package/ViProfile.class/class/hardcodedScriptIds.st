@@ -4,6 +4,8 @@ hardcodedScriptIds
 	
 	Hardcoding script ids is necessary to invoke some expected/default behavior in the environment. For example, there has to be a way to browse senders or implementors of a symbol. Then, the contents of classes and packages are of importance, too. Otherwise, the programmer cannot find the places where to write some new code.
 	
+	Excluding code in test classes and ViProfile class.
+	
 	self hardcodedScriptIds."
 	
 	| scriptSelectors scriptIds |
@@ -19,7 +21,7 @@ hardcodedScriptIds
 
 	scriptIds := IdentitySet new.
 	SystemNavigation default allSelectorsAndMethodsDo: [:b :s :method |
-		(b isTestClass not and: [method literals includesAnyOf: scriptSelectors]) ifTrue: [
+		((b isTestClass not and: [b ~~ ViProfile]) and: [method literals includesAnyOf: scriptSelectors]) ifTrue: [
 			| ast |
 			ast := RBParser parseMethod: method getSource asString.
 			ast nodesDo: [:node |

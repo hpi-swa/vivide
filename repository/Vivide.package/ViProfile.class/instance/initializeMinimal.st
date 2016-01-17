@@ -7,18 +7,22 @@ initializeMinimal
 		during: [
 			self
 				addDefaultProperties;
-				addDefaultPropertiesExtended;
+				addDefaultPropertiesExtended; "quasi optional"
 				addArtifacts;
-				addGroupsScript;
+				addGroupsScript; "quasi optional"
 				
 				addExplorer;
 				
 				addFormattedScripts;
 				addClassOutline;
-				addPackageOutline;
+				addPackages; "optional"
+				addPackageOutline; "optional"
 
 				addSenders;
 				addImplementors;
+
+				addWorkspace; "optional"
+				addTranscript; "optional"
 								
 				addPaneHierarchy;
 				addClassHierarchy; "optional"

@@ -5,8 +5,8 @@ initializeBasicBookmarks
 		value: self organization
 		during: [
 			self
-				addWorkspace;
-				addTranscript;
+				addScriptAsBookmark: #workspace asScript;
+				addScriptAsBookmark: #transcript asScript;
 				addBlockForNewSnippet;
 				addBlockForNewClass;
 				addBlockForNewMemo].

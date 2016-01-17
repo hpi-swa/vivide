@@ -1,8 +1,12 @@
 initialization - bookmarks
 addWorkspace
 
-	self addScriptAsBookmark:
-		{ [:object | object] -> {
+	self addScript: {
+		[:object | object] -> {
+			#id -> #workspace.
 			#label -> 'Workspace'.
+			#isGlobal -> true. "Hmm... might be global is more accurate."
+			#priority -> 500.
 			#icon -> UiFugueIcons applicationTerminalIcon.
-			#view -> ViWorkspaceView}} asScript.
+			#view -> ViWorkspaceView}.
+	} asScript.
