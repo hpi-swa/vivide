@@ -8,6 +8,4 @@ initializeArtifact
 		color: (Color gray: 0.85);
 		readOnly: true.
 
-	sourceCodeEdit eventHandler grabKeyboardOnMouseEnter: true.
-
 	self artifact: sourceCodeEdit.

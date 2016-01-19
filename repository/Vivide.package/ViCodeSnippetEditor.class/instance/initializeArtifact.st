@@ -20,8 +20,6 @@ initializeArtifact
 
 "	self sgConnectSignal: #expressionAboutToBeEvaluated toSelector: #updateContext."
 	self sgConnectSignal: #expressionEvaluated: toSelector: #showEvaluationResult:.
-
-	snippetEdit eventHandler grabKeyboardOnMouseEnter: true.
 	
 	"------------------------"
 

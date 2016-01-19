@@ -14,7 +14,5 @@ initializeArtifact
 	"self connect: textEdit signal: #editingFinished: toSelector: #updateToolbars.
 	self connect: textEdit model signal: #contextChanged toSelector: #updateToolbars.
 	self connect: textEdit model signal: #receiverChanged toSelector: #updateToolbars."
-
-	textEdit eventHandler grabKeyboardOnMouseEnter: true.
-
+	
 	self artifact: textEdit.

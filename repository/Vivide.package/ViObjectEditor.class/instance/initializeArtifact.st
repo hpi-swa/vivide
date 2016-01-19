@@ -11,9 +11,7 @@ initializeArtifact
 		colorBackground: Color white;
 		hResizing: #spaceFill;
 		autoAccept: false.
-		
-	sourceCodeEdit eventHandler grabKeyboardOnMouseEnter: true.  
-		
+				
 	contentTree := UiTreeView new
 		addColumns: {
 			UiItemViewColumnSpec newFrom: {#text -> #tag. #headerText -> 'Property'}.

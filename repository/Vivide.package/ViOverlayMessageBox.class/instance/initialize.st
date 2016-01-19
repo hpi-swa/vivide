@@ -12,4 +12,4 @@ initialize
 	
 	self eventHandler: UiEventHandler new. 
 	
-	self ignoresColorMappings: true.  
+	self ignoresColorMappings: true.

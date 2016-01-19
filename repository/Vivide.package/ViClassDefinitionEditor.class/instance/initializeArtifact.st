@@ -11,6 +11,4 @@ initializeArtifact
 	
 	self connect: sourceCodeEdit signal: #editingFinished: toSelector: #updateClass.
 
-	sourceCodeEdit eventHandler grabKeyboardOnMouseEnter: true.
-
 	self artifact: sourceCodeEdit.

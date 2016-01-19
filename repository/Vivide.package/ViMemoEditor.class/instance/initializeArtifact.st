@@ -14,6 +14,4 @@ initializeArtifact
 	self connect: memoEdit signal: #editingFinished: toSelector: #updateText:.
 	self connect: memoEdit signal: #editingFinished: toSelector: #clear.
 
-	memoEdit eventHandler grabKeyboardOnMouseEnter: true.
-
 	self artifact: memoEdit.

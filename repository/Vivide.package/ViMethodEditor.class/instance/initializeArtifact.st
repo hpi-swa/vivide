@@ -11,6 +11,4 @@ initializeArtifact
 		autoCreateArtifacts: true;
 		margins: (4@0 corner: 4@4).
 		
-	sourceCodeEdit eventHandler grabKeyboardOnMouseEnter: true.
-
 	self artifact: sourceCodeEdit.
