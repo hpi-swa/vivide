@@ -6,7 +6,7 @@ turnOnAutoRefresh
 	ActiveWorld
 		startStepping: self
 		at: Time millisecondClockValue
-		selector: #clear
+		selector: #refreshModel
 		arguments: nil stepTime: 5000.
 
 	self world ifNotNil: [

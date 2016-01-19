@@ -12,7 +12,7 @@ initialize
 					ifTrue: [container object: objects first]
 					ifFalse: [container object: objects]].
 		container editVisible: true.
-		container turnOnAutoRefresh.
+		"container turnOnAutoRefresh."
 		container sourceCodeEdit
 			theText: '"Enter code here..."';
 			selectAll].

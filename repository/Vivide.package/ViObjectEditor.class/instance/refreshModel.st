@@ -1,9 +1,19 @@
 as yet unclassified
 refreshModel
 
-	self clear.
+	| currentIndex isExpanded |
+	currentIndex := self contentTree selection currentIndex.
+	isExpanded := false.
+
+	self flag: #informationHiding. "mt: Better API needed?"
+	currentIndex ifNotNil: [:index |
+		isExpanded := self contentTree viewport isExpanded: index].
 	
-	self world ifNotNil: [
+	self contentTree model update.
+	self contentTree expandAllTopLevelNodes.
+	isExpanded ifTrue: [self contentTree expandIndex: currentIndex].
+	
+	"self world ifNotNil: [
 		ViAnimatedImageMorph
 			flyOutOn: self
-			with: UiSilkIcons arrowRefreshSmallIcon].
+			with: UiSilkIcons arrowRefreshSmallIcon]."

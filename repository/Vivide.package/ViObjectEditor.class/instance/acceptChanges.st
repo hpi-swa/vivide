@@ -1,4 +1,4 @@
 memento - data
 acceptChanges
 
-	"Nothing."
+	self sourceCodeEdit acceptChanges.

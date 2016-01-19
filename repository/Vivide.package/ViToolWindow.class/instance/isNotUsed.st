@@ -1,8 +1,8 @@
 testing
 isNotUsed
 
-	^ ((darkenValue >= self darkenThreshold
-		and: [self visibleArea < 5000]))
+	^ (darkenValue >= self darkenThreshold
+		and: [self visibleAreaPercent < 40])
 		and: [self editor
 			ifNil: [true]
 			ifNotNil: [:ed | ed hasUnacceptedChanges not

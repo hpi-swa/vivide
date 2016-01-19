@@ -6,5 +6,6 @@ visibleArea
 	b := self boundsInWorld area.
 	self world submorphsInFrontOf: self do: [:m |
 		self flag: #stupid. "mt: Subtracts too much area if many windows are overlapping."
-		b := b - (self boundsInWorld intersect: m boundsInWorld) area].
+		ActiveHand halo == m ifFalse: [
+			b := b - (self boundsInWorld intersect: m boundsInWorld) area]].
 	^ b

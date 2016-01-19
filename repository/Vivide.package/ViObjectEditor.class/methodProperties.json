@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"acceptChanges" : "mt 8/27/2012 13:48:53.753",
+		"acceptChanges" : "mt 1/19/2016 10:56:45.831",
 		"changeReceiverFor:" : "mt 11/2/2012 15:58:26.247",
-		"clear" : "mt 2/8/2015 12:32",
+		"clear" : "mt 1/19/2016 11:11:09.466",
 		"contentTree" : "mt 8/27/2012 13:43:44.385",
 		"editVisibilityBtn" : "mt 8/27/2012 13:41:45.25",
 		"editVisible" : "mt 8/27/2012 13:44:02.716",
@@ -14,7 +14,7 @@
 		"grabKeyboard" : "mt 8/27/2012 15:16:54.877",
 		"group" : "mt 8/27/2012 13:37:53.239",
 		"hasKeyboard" : "mt 10/17/2015 13:58",
-		"hasUnacceptedChanges" : "mt 8/27/2012 13:48:37.209",
+		"hasUnacceptedChanges" : "mt 1/19/2016 10:56:17.536",
 		"initializeArtifact" : "mt 1/19/2016 11:42:18.358",
 		"initializeResizeHandle" : "mt 5/29/2015 11:14",
 		"initializeToolbarObjects" : "mt 8/29/2012 13:13:31.358",
@@ -25,10 +25,10 @@
 		"onMenuRequestedAt:for:" : "mt 11/19/2015 15:00:45.075",
 		"optimalHeight" : "mt 2/1/2015 20:25",
 		"optimalWidth" : "mt 9/13/2012 16:59:08.801",
-		"refreshModel" : "mt 2/3/2014 11:25:56.551",
+		"refreshModel" : "mt 1/19/2016 11:01:41.247",
 		"showHaloFor:" : "mt 12/9/2015 11:58:13.953",
 		"sourceCodeEdit" : "mt 8/27/2012 13:43:25.91",
 		"theClass" : "mt 11/18/2013 11:37:37.406",
 		"toggleEditVisible" : "mt 9/4/2012 15:09:44.424",
 		"turnOffAutoRefresh" : "mt 2/6/2015 14:29",
-		"turnOnAutoRefresh" : "mt 2/6/2015 14:40" } }
+		"turnOnAutoRefresh" : "mt 1/19/2016 11:02:26.164" } }

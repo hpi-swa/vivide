@@ -1,4 +1,4 @@
 memento - data
 hasUnacceptedChanges
 
-	^ false
+	^ self editVisible and: [self sourceCodeEdit hasUnacceptedChanges]
