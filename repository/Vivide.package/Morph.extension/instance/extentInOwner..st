@@ -11,5 +11,5 @@ extentInOwner: aPoint
 			or: [m owner layoutPolicy isTableLayout])
 			ifTrue: [
 				m extent: m extent + (aPoint - self extent).
-				m fullBounds.
+				"m fullBounds."
 				^ self]].
