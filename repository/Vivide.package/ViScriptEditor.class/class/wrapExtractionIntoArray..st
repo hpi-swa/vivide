@@ -6,7 +6,7 @@ wrapExtractionIntoArray: code
 	inner := code.
 	node := RBParser parseExpression: inner.
 	self assert: node isBlock.
-	node body statements first isArray ifFalse: [
+	node body statements last "Not first to allow temps." isArray ifFalse: [
 		"We need to wrap it into an array."
 		inner := '{1}\{ {2} \}{3}' format: {
 			node source copyFrom: 1 to: node body start - 1.
