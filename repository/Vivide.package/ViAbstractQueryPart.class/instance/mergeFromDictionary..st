@@ -14,4 +14,9 @@ mergeFromDictionary: dict
 		]
 		ifFalse: [
 			self properties: (dict at: #properties).
+			
+			"If de-serialization failed somehow, remove nil-values from properties."
+			self properties keys do: [:key |
+				(self properties at: key)
+					ifNil: [self properties removeKey: key]].
 		]
