@@ -12,7 +12,9 @@ updateScript
 		pane recentQueries: (pane recentQueries select: [:script |
 			script organization == self organization])].
 	
-	paneSpecs := self panes collect: [:pane | pane asDictionary].
+	paneSpecs := (self panes
+		sortBy: [:p1 :p2 | p1 topLeft <= p2 topLeft "keep it stable"])
+		collect: [:pane | pane asDictionary].
 
 	scripts := (ViScriptPart
 		convertPanes: paneSpecs
