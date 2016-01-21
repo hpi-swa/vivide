@@ -1,0 +1,4 @@
+events
+hasKeyboard
+
+	^ textEdit hasKeyboard
