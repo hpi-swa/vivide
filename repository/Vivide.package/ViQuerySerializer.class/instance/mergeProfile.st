@@ -14,13 +14,15 @@ mergeProfile
 				
 				VivideLight profiles add: profile.
 				profile archive: archive theNonMetaClass.
-				profile id: archive theNonMetaClass id]].
+				(archive theNonMetaClass respondsTo: #id)
+					ifTrue: [profile id: archive theNonMetaClass id]]].
 
 	self
 		setOrganizer: profile organization
 		archive: archive theNonMetaClass.
 
-	profile label: archive theNonMetaClass label.
+	(archive theNonMetaClass respondsTo: #label)
+		ifTrue: [profile label: archive theNonMetaClass label].
 	
 	(archive theNonMetaClass respondsTo: #defaultView)
 		ifTrue: [profile defaultView: (archive theNonMetaClass perform: #defaultView)].
