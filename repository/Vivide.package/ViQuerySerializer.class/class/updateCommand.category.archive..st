@@ -10,7 +10,7 @@ updateCommand: command category: category archive: aClass
 		code: selector, String cr,
 			String tab, '<command>', String cr,
 			String cr,
-			String tab, '^ ', command asDictionary storeString
+			String tab, '^ ', command asDictionary compactStoreString
 		under: category, 'commands'.
 		
 	^ selector

@@ -10,7 +10,7 @@ updateDefinition: def category: category archive: aClass
 		code: selector, String cr,
 			String tab, '<definition>', String cr,
 			String cr,
-			String tab, '^ ', def asDictionary storeString
+			String tab, '^ ', def asDictionary compactStoreString
 		under: category, 'definitions'.
 		
 	^ selector

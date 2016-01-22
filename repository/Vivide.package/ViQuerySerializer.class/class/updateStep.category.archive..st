@@ -10,7 +10,7 @@ updateStep: step category: category archive: aClass
 		code: selector, String cr,
 			String tab, '<step>', String cr,
 			String cr,
-			String tab, '^ ', step asDictionary storeString
+			String tab, '^ ', step asDictionary compactStoreString
 		under: category, 'steps'.
 		
 	^ selector
