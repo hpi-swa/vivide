@@ -2,7 +2,8 @@ definitions
 def768fe1d5783ea546b83a016c4db6d552
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'15 December 2015 10:39:29 am'); yourself)); add: (#id->#'768fe1d5-783e-a546-b83a-016c4db6d552'); add: (#block->[:in :out | ([:all | all collect: [:o | (
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
 	[:morph | 
 { #text
 		-> (morph printStringLimitedTo: 20).
@@ -11,7 +12,13 @@ def768fe1d5783ea546b83a016c4db6d552
 	#selectedLater
 		-> [[morph addHalo]] }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:o | (
+			value: in) do: [:result | out add: result]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'768fe1d5-783e-a546-b83a-016c4db6d552').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '15 December 2015 10:39:29 am')})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:morph | 
 { #text
 		-> (morph printStringLimitedTo: 20).
@@ -20,4 +27,4 @@ def768fe1d5783ea546b83a016c4db6d552
 	#selectedLater
 		-> [[morph addHalo]] }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]'); yourself)
+			value: in) do: [:result | out add: result]]')})

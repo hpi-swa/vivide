@@ -2,4 +2,16 @@ definitions
 defb91eac56ad6f3e42940dd558ecbe5eeb
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->ViQueryStepDefinition); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'15 September 2013 4:37:28 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->ViQueryMapDefinition); add: (#id->#'b91eac56-ad6f-3e42-940d-d558ecbe5eeb'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:definitions | definitions select: [:def | def isMapDefinition]]'); add: (#mapType->#all); add: (#block->[:definitions | definitions select: [:def | def isMapDefinition]]); yourself)
+	^ (Dictionary newFrom: {
+(#block -> [:definitions | definitions select: [:def | def isMapDefinition]]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'b91eac56-ad6f-3e42-940d-d558ecbe5eeb').
+(#inputKind -> ViQueryStepDefinition).
+(#mapType -> #all).
+(#outputKind -> ViQueryMapDefinition).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '15 September 2013 4:37:28 pm')})).
+(#sourceCode -> '[:definitions | definitions select: [:def | def isMapDefinition]]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

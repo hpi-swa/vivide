@@ -2,7 +2,8 @@ definitions
 def034fe71c762e35478e4bd55060ebeba3
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 May 2014 2:58:16 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Bag); add: (#id->#'034fe71c-762e-3547-8e4b-d55060ebeba3'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[Bag new
+	^ (Dictionary newFrom: {
+(#block -> [Bag new
 		in: [:histogram | 
 			| obj o |
 			Smalltalk garbageCollect.
@@ -15,7 +16,16 @@ def034fe71c762e35478e4bd55060ebeba3
 					and: [(1 to: obj class instSize) allSatisfy: [:i | (obj instVarAt: i) isNil]])
 						ifTrue: [histogram add: obj class].
 					obj := obj nextObject].
-			histogram]]'); add: (#mapType->#all); add: (#block->[Bag new
+			histogram]]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'034fe71c-762e-3547-8e4b-d55060ebeba3').
+(#inputKind -> Object).
+(#mapType -> #all).
+(#outputKind -> Bag).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 May 2014 2:58:16 pm')})).
+(#sourceCode -> '[Bag new
 		in: [:histogram | 
 			| obj o |
 			Smalltalk garbageCollect.
@@ -28,4 +38,6 @@ def034fe71c762e35478e4bd55060ebeba3
 					and: [(1 to: obj class instSize) allSatisfy: [:i | (obj instVarAt: i) isNil]])
 						ifTrue: [histogram add: obj class].
 					obj := obj nextObject].
-			histogram]]); yourself)
+			histogram]]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

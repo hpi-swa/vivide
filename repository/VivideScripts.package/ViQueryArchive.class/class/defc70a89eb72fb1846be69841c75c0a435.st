@@ -2,4 +2,16 @@ definitions
 defc70a89eb72fb1846be69841c75c0a435
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'2 March 2014 10:06:15 am'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#'c70a89eb-72fb-1846-be69-841c75c0a435'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:morph | {#text -> morph class name. #icon -> (morph imageForm scaledToSize: 16@16)  }]'); add: (#mapType->#each); add: (#block->[:morph | {#text -> morph class name. #icon -> (morph imageForm scaledToSize: 16@16)  }]); yourself)
+	^ (Dictionary newFrom: {
+(#block -> [:morph | {#text -> morph class name. #icon -> (morph imageForm scaledToSize: 16@16)  }]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'c70a89eb-72fb-1846-be69-841c75c0a435').
+(#inputKind -> Object).
+(#mapType -> #each).
+(#outputKind -> Object).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '2 March 2014 10:06:15 am')})).
+(#sourceCode -> '[:morph | {#text -> morph class name. #icon -> (morph imageForm scaledToSize: 16@16)  }]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

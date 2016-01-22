@@ -2,4 +2,13 @@ definitions
 def60c838c8d1a17d4ca00f3210018bcdaa
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQuerySnippetDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'10 February 2014 4:40:47 pm'); yourself)); add: (#id->#'60c838c8-d1a1-7d4c-a00f-3210018bcdaa'); add: (#inputKind->ViToolSet class); add: (#block->nil); add: (#sourceCode->'ViProfile active serializeIntoArchive.'); add: (#receiverIsCollection->false); yourself)
+	^ (Dictionary newFrom: {
+(#block -> nil).
+(#class -> ViQuerySnippetDefinition).
+(#id -> #'60c838c8-d1a1-7d4c-a00f-3210018bcdaa').
+(#inputKind -> ViToolSet class).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '10 February 2014 4:40:47 pm')})).
+(#receiverIsCollection -> false).
+(#sourceCode -> 'ViProfile active serializeIntoArchive.')})

@@ -2,10 +2,18 @@ definitions
 def934e4a5501f2e344963c6e32fe1b86a6
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#copyOf->#'5389ac08-4249-614e-961f-06d2d75458c6'); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'20 May 2015 2:36:10 pm'); yourself)); add: (#id->#'934e4a55-01f2-e344-963c-6e32fe1b86a6'); add: (#block->[:in :out | [#groups] value in: [:result |
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | [#groups] value in: [:result |
 	(ViQueryInterpreter isCollection: result)
 		ifTrue: [out addAll: result]
-		ifFalse: [out add: result]]]); add: (#sourceCode->'[:in :out | [#groups] value in: [:result |
+		ifFalse: [out add: result]]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'934e4a55-01f2-e344-963c-6e32fe1b86a6').
+(#properties -> (Dictionary newFrom: {
+(#copyOf -> #'5389ac08-4249-614e-961f-06d2d75458c6').
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '20 May 2015 2:36:10 pm')})).
+(#sourceCode -> '[:in :out | [#groups] value in: [:result |
 	(ViQueryInterpreter isCollection: result)
 		ifTrue: [out addAll: result]
-		ifFalse: [out add: result]]]'); yourself)
+		ifFalse: [out add: result]]]')})

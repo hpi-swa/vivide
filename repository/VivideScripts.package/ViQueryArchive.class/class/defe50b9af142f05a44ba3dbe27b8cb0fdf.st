@@ -2,7 +2,8 @@ definitions
 defe50b9af142f05a44ba3dbe27b8cb0fdf
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'12 May 2015 4:39:25 pm'); yourself)); add: (#id->#'e50b9af1-42f0-5a44-ba3d-be27b8cb0fdf'); add: (#block->[:in :out | (
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | (
 	[:objects | objects collect: [:cls | 
 	((cls withAllSuperclasses allButLast: 2) reversed collectWithIndex: [:c :i | i -> c]),
 	(cls withAllSuperclasses gather: [:c | c traits]),
@@ -17,7 +18,13 @@ defe50b9af142f05a44ba3dbe27b8cb0fdf
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]); add: (#sourceCode->'[:in :out | (
+				ifFalse: [out add: result]]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'e50b9af1-42f0-5a44-ba3d-be27b8cb0fdf').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '12 May 2015 4:39:25 pm')})).
+(#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:cls | 
 	((cls withAllSuperclasses allButLast: 2) reversed collectWithIndex: [:c :i | i -> c]),
 	(cls withAllSuperclasses gather: [:c | c traits]),
@@ -32,4 +39,4 @@ defe50b9af142f05a44ba3dbe27b8cb0fdf
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]'); yourself)
+				ifFalse: [out add: result]]]')})

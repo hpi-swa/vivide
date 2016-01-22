@@ -2,8 +2,20 @@ definitions
 defallMethodsForClass
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->UiIcons); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->CompiledMethod); add: (#id->#allMethodsForClass); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:cls |
+	^ (Dictionary newFrom: {
+(#block -> [:cls |
 	cls theNonMetaClass methodDict values,
-	cls theMetaClass methodDict values]'); add: (#mapType->#each); add: (#block->[:cls |
+	cls theMetaClass methodDict values]).
+(#class -> ViQueryMapDefinition).
+(#id -> #allMethodsForClass).
+(#inputKind -> UiIcons).
+(#mapType -> #each).
+(#outputKind -> CompiledMethod).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#sourceCode -> '[:cls |
 	cls theNonMetaClass methodDict values,
-	cls theMetaClass methodDict values]); yourself)
+	cls theMetaClass methodDict values]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

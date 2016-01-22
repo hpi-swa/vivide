@@ -2,8 +2,20 @@ definitions
 defhistogram
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->Bag); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'18 November 2013 3:30:24 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#histogram); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:bag | bag sortedCounts in: [:histogram |
+	^ (Dictionary newFrom: {
+(#block -> [:bag | bag sortedCounts in: [:histogram |
 		histogram collect: [:map |
-			{map key. histogram first key. map value}]]]'); add: (#mapType->#each); add: (#block->[:bag | bag sortedCounts in: [:histogram |
+			{map key. histogram first key. map value}]]]).
+(#class -> ViQueryMapDefinition).
+(#id -> #histogram).
+(#inputKind -> Bag).
+(#mapType -> #each).
+(#outputKind -> Object).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '18 November 2013 3:30:24 pm')})).
+(#sourceCode -> '[:bag | bag sortedCounts in: [:histogram |
 		histogram collect: [:map |
-			{map key. histogram first key. map value}]]]); yourself)
+			{map key. histogram first key. map value}]]]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

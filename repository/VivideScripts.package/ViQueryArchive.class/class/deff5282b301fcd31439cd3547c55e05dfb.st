@@ -2,7 +2,8 @@ definitions
 deff5282b301fcd31439cd3547c55e05dfb
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#copyOf->#'1f219126-4aa6-c146-82bc-ec3355f25c46'); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'19 October 2015 2:07 pm'); yourself)); add: (#id->#'f5282b30-1fcd-3143-9cd3-547c55e05dfb'); add: (#block->[:in :out | ([:all | all collect: [:o | (
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
 	[:changeRecord | { 
 	#text -> 'Load'.
 	#clicked -> [ [
@@ -13,7 +14,14 @@ deff5282b301fcd31439cd3547c55e05dfb
 		
 			] ] } ]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:o | (
+			value: in) do: [:result | out add: result]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'f5282b30-1fcd-3143-9cd3-547c55e05dfb').
+(#properties -> (Dictionary newFrom: {
+(#copyOf -> #'1f219126-4aa6-c146-82bc-ec3355f25c46').
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '19 October 2015 2:07 pm')})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:changeRecord | { 
 	#text -> ''Load''.
 	#clicked -> [ [
@@ -24,4 +32,4 @@ deff5282b301fcd31439cd3547c55e05dfb
 		
 			] ] } ]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]'); yourself)
+			value: in) do: [:result | out add: result]]')})

@@ -2,7 +2,8 @@ definitions
 def187d2c6efa015d4ab7481a739c679b7b
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->CompiledMethod); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'14 February 2014 9:28:02 am'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#'187d2c6e-fa01-5d4a-b748-1a739c679b7b'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:method | | loc |
+	^ (Dictionary newFrom: {
+(#block -> [:method | | loc |
 	loc := (Smalltalk at: #LinesOfCode ifAbsentPut: [Dictionary new])
 		at: method methodReference ifAbsentPut: [OrderedCollection new].
 	Array streamContents: [:strm | | source lineIndex |
@@ -24,7 +25,16 @@ def187d2c6efa015d4ab7481a739c679b7b
 		lineIndex < loc size ifTrue: [
 			(Smalltalk at: #LinesOfCode)
 				at: method methodReference
-				put: (loc first: lineIndex)]]]'); add: (#mapType->#each); add: (#block->[:method | | loc |
+				put: (loc first: lineIndex)]]]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'187d2c6e-fa01-5d4a-b748-1a739c679b7b').
+(#inputKind -> CompiledMethod).
+(#mapType -> #each).
+(#outputKind -> Object).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '14 February 2014 9:28:02 am')})).
+(#sourceCode -> '[:method | | loc |
 	loc := (Smalltalk at: #LinesOfCode ifAbsentPut: [Dictionary new])
 		at: method methodReference ifAbsentPut: [OrderedCollection new].
 	Array streamContents: [:strm | | source lineIndex |
@@ -46,4 +56,6 @@ def187d2c6efa015d4ab7481a739c679b7b
 		lineIndex < loc size ifTrue: [
 			(Smalltalk at: #LinesOfCode)
 				at: method methodReference
-				put: (loc first: lineIndex)]]]); yourself)
+				put: (loc first: lineIndex)]]]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

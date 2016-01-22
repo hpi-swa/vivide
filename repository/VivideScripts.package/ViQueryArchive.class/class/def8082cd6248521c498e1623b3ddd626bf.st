@@ -2,7 +2,8 @@ definitions
 def8082cd6248521c498e1623b3ddd626bf
 	<definition>
 
-	^ ((Dictionary new) add: (#class->ViQueryStepDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'12 May 2015 4:43:48 pm'); yourself)); add: (#id->#'8082cd62-4852-1c49-8e16-23b3ddd626bf'); add: (#block->[:in :out | (
+	^ (Dictionary newFrom: {
+(#block -> [:in :out | (
 	[:objects | objects collect: [:object | {
 	object isVariableBinding
 		ifTrue: [object value isBehavior
@@ -17,7 +18,13 @@ def8082cd6248521c498e1623b3ddd626bf
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]); add: (#sourceCode->'[:in :out | (
+				ifFalse: [out add: result]]]).
+(#class -> ViQueryStepDefinition).
+(#id -> #'8082cd62-4852-1c49-8e16-23b3ddd626bf').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '12 May 2015 4:43:48 pm')})).
+(#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:object | {
 	object isVariableBinding
 		ifTrue: [object value isBehavior
@@ -32,4 +39,4 @@ def8082cd6248521c498e1623b3ddd626bf
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]'); yourself)
+				ifFalse: [out add: result]]]')})

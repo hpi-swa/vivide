@@ -2,8 +2,20 @@ definitions
 deficonAndLabel
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->Object); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Object); add: (#id->#iconAndLabel); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:obj | {
+	^ (Dictionary newFrom: {
+(#block -> [:obj | {
 	#text -> (ViLabelService doObject: obj).
-	#icon -> (ViIconService doObject: obj)}]'); add: (#mapType->#each); add: (#block->[:obj | {
+	#icon -> (ViIconService doObject: obj)}]).
+(#class -> ViQueryMapDefinition).
+(#id -> #iconAndLabel).
+(#inputKind -> Object).
+(#mapType -> #each).
+(#outputKind -> Object).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#sourceCode -> '[:obj | {
 	#text -> (ViLabelService doObject: obj).
-	#icon -> (ViIconService doObject: obj)}]); yourself)
+	#icon -> (ViIconService doObject: obj)}]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

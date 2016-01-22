@@ -2,7 +2,8 @@ definitions
 def7d5f2ec334453748b2a27e6b8c4e2d84
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->Behavior); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'19 February 2014 11:33:53 am'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->Behavior); add: (#id->#'7d5f2ec3-3445-3748-b2a2-7e6b8c4e2d84'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:classes | "See TestRunner >> updateClasses, sortClass:before:"
+	^ (Dictionary newFrom: {
+(#block -> [:classes | "See TestRunner >> updateClasses, sortClass:before:"
 	classes sort: [:a :b |
 		| first second |
 		first := a withAllSuperclasses reversed.
@@ -14,7 +15,16 @@ def7d5f2ec334453748b2a27e6b8c4e2d84
 				second includes: a]
 		on: Notification
 		do: [:n | 	(first at: n messageText) name <= (second at: n messageText) name].
-	]]'); add: (#mapType->#all); add: (#block->[:classes | "See TestRunner >> updateClasses, sortClass:before:"
+	]]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'7d5f2ec3-3445-3748-b2a2-7e6b8c4e2d84').
+(#inputKind -> Behavior).
+(#mapType -> #all).
+(#outputKind -> Behavior).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '19 February 2014 11:33:53 am')})).
+(#sourceCode -> '[:classes | "See TestRunner >> updateClasses, sortClass:before:"
 	classes sort: [:a :b |
 		| first second |
 		first := a withAllSuperclasses reversed.
@@ -26,4 +36,6 @@ def7d5f2ec334453748b2a27e6b8c4e2d84
 				second includes: a]
 		on: Notification
 		do: [:n | 	(first at: n messageText) name <= (second at: n messageText) name].
-	]]); yourself)
+	]]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})

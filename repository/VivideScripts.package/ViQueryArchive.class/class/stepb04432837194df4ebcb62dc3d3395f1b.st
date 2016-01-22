@@ -2,4 +2,15 @@ steps
 stepb04432837194df4ebcb62dc3d3395f1b
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#'2ce2840e-16d1-9f43-8532-2ba99b6eebef'); add: (#class->ViQueryPropertyStep); add: (#properties->((Dictionary new) add: (#priority->2810); add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); add: (#headerText->'Contents'); yourself)); add: (#id->#'b0443283-7194-df4e-bcb6-2dc3d3395f1b'); add: (#iconCode->'nil'); add: (#next->nil); add: (#label->nil); yourself)
+	^ (Dictionary newFrom: {
+(#class -> ViQueryPropertyStep).
+(#definition -> #'2ce2840e-16d1-9f43-8532-2ba99b6eebef').
+(#iconCode -> 'nil').
+(#id -> #'b0443283-7194-df4e-bcb6-2dc3d3395f1b').
+(#label -> nil).
+(#next -> nil).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm').
+(#headerText -> 'Contents').
+(#priority -> 2810)}))})

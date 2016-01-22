@@ -2,4 +2,16 @@ steps
 step225b70fb8963d84aa825589a864d6670
 	<step>
 
-	^ ((Dictionary new) add: (#definition->#origin); add: (#class->ViQueryPropertyStep); add: (#properties->((Dictionary new) add: (#labelColor->'#AAAAAA'); add: (#creationTimeStamp->'28 August 2013 2:37:39 pm'); add: (#priority->2870); add: (#creationAuthor->'mt'); add: (#headerText->'Origin'); yourself)); add: (#id->#'225b70fb-8963-d84a-a825-589a864d6670'); add: (#iconCode->'nil'); add: (#next->nil); add: (#label->nil); yourself)
+	^ (Dictionary newFrom: {
+(#class -> ViQueryPropertyStep).
+(#definition -> #origin).
+(#iconCode -> 'nil').
+(#id -> #'225b70fb-8963-d84a-a825-589a864d6670').
+(#label -> nil).
+(#next -> nil).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm').
+(#headerText -> 'Origin').
+(#labelColor -> '#AAAAAA').
+(#priority -> 2870)}))})

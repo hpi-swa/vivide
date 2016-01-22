@@ -2,7 +2,8 @@ definitions
 def1155c220eeaa5a49849d1aad1424f1f6
 	<definition>
 
-	^ ((Dictionary new) add: (#inputKind->ViQueryOrganizer); add: (#class->ViQueryMapDefinition); add: (#properties->((Dictionary new) add: (#creationAuthor->'mt'); add: (#creationTimeStamp->'18 September 2013 9:17:21 am'); yourself)); add: (#updateClearDefinition->nil); add: (#outputKind->ViAbstractQueryPart); add: (#id->#'1155c220-eeaa-5a49-849d-1aad1424f1f6'); add: (#updateSetDefinition->nil); add: (#sourceCode->'[:organizers :context | | result |
+	^ (Dictionary newFrom: {
+(#block -> [:organizers :context | | result |
 	context contents: organizers.
 	result := OrderedCollection new.
 	organizers do: [:o |
@@ -15,7 +16,16 @@ def1155c220eeaa5a49849d1aad1424f1f6
 				o == o2 or: [(o2 definitions keys includes: def id) not]])
 					ifTrue: [result add: def]].		
 		].
-	result]'); add: (#mapType->#all); add: (#block->[:organizers :context | | result |
+	result]).
+(#class -> ViQueryMapDefinition).
+(#id -> #'1155c220-eeaa-5a49-849d-1aad1424f1f6').
+(#inputKind -> ViQueryOrganizer).
+(#mapType -> #all).
+(#outputKind -> ViAbstractQueryPart).
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '18 September 2013 9:17:21 am')})).
+(#sourceCode -> '[:organizers :context | | result |
 	context contents: organizers.
 	result := OrderedCollection new.
 	organizers do: [:o |
@@ -28,4 +38,6 @@ def1155c220eeaa5a49849d1aad1424f1f6
 				o == o2 or: [(o2 definitions keys includes: def id) not]])
 					ifTrue: [result add: def]].		
 		].
-	result]); yourself)
+	result]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})
