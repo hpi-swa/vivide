@@ -8,4 +8,6 @@ copyEditor
 		yourself)
 			openScriptWith: self objects copy) editor in: [:editor |
 				editor extentInOwner: self extent.
+				self flag: #hacky.
+				editor owner fullBounds.
 				editor]
