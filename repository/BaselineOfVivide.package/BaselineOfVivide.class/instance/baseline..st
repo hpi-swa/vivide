@@ -103,5 +103,4 @@ baseline: spec
 			group: 'dev' with: #('Fonts' FFI 'Vivide' 'VivideTests' 'VivideScripts');
 			group: 'dynamic' with: #('core' 'VivideDynamicAnalysis');
 			group: 'cop' with: #('core' 'VivideContextS');
-			group: 'tests' with: #('VivideTests');
-			group: 'TravisCI' with: #('VivideTests')].
+			group: 'tests' with: #('VivideTests')].
