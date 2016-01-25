@@ -4,19 +4,13 @@
 language: smalltalk
 sudo: false
 
-os: osx
+os:
+  - linux
+  - osx
 
 smalltalk:
   - Squeak-trunk
   - Squeak-5.0
   - Squeak-4.6
 
-baseline: Vivide
-
-env:
-  global:
-    - PACKAGES="/repository"
-
-after_success:
-  - chmod +x $PROJECT_HOME/scripts/prepare_image.sh
-  - $PROJECT_HOME/scripts/prepare_image.sh
+after_success: bash $PROJECT_HOME/scripts/prepare_image.sh

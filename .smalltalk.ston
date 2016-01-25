@@ -1,0 +1,13 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Vivide',
+      #directory : 'repository',
+      #load : [ 'tests' ],
+      #platforms : [ #squeak ]
+    }
+  ],
+  #testing : {
+    #categories : [ 'VivideTests-*' ]
+  }
+}
