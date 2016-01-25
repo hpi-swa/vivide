@@ -10,11 +10,10 @@ function print_info {
 
 # Check required arguments
 # ==============================================================================
-# if [ "${TRAVIS_BRANCH}" != "master" ]; then
-#     print_info "Nothing to do, because this is not the master branch."
-#     exit 0
-#el
-if [ "${TRAVIS_OS_NAME}" != "linux" ]; then
+if [ "${TRAVIS_BRANCH}" != "master" ]; then
+    print_info "Nothing to do, because this is not the master branch."
+    exit 0
+elif [ "${TRAVIS_OS_NAME}" != "linux" ]; then
     print_info "Nothing to do, because this is not a Linux build."
     exit 0
 elif [ -z "${TRAVIS_BUILD_DIR}" ]; then
