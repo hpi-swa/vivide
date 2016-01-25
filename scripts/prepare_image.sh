@@ -10,19 +10,19 @@ function print_info {
 
 # Check required arguments
 # ==============================================================================
-if [ "${TRAVIS_BRANCH}" != "master" ]; then
+if [[ "${TRAVIS_BRANCH}" != "master" ]]; then
     print_info "Nothing to do, because this is not the master branch."
     exit 0
-elif [ "${TRAVIS_OS_NAME}" != "linux" ]; then
+elif [[ "${TRAVIS_OS_NAME}" != "linux" ]]; then
     print_info "Nothing to do, because this is not a Linux build."
     exit 0
-elif [ -z "${TRAVIS_BUILD_DIR}" ]; then
+elif [[ -z "${TRAVIS_BUILD_DIR}" ]]; then
     print_info "\$TRAVIS_BUILD_DIR is not defined!"
     exit 1
-elif [ -z "${SMALLTALK_CI_HOME}" ]; then
+elif [[ -z "${SMALLTALK_CI_HOME}" ]]; then
     print_info "\$SMALLTALK_CI_HOME is not defined!"
     exit 1
-elif [ -z "${TRAVIS_SMALLTALK_VERSION}" ]; then
+elif [[ -z "${TRAVIS_SMALLTALK_VERSION}" ]]; then
     print_info "\$TRAVIS_SMALLTALK_VERSION is not defined!"
     exit 1
 fi
@@ -52,7 +52,7 @@ esac
 
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
-if [ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-4.6" ]; then
+if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-4.6" ]]; then
     print_info "Downloading Squeak4.6 image..."
     wget http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
     unzip Squeak4.6-15102.zip
@@ -66,7 +66,7 @@ if [ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-4.6" ]; then
             COG_VM="$SMALLTALK_CI_VMS/Cog.app/Contents/MacOS/Squeak"
             ;;
     esac
-elif [ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.0" ]; then
+elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.0" ]]; then
     print_info "Downloading Squeak5.0 image..."
     wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
     unzip Squeak5.0-15113.zip
@@ -87,7 +87,7 @@ print_info "Preparing Vivide image from ${TRAVIS_SMALLTALK_VERSION} image..."
 EXIT_STATUS=0
 "$COG_VM" $COG_VM_PARAM "${VIVIDE_IMAGE}" "${TRAVIS_BUILD_DIR}/scripts/prepare_image.st" || EXIT_STATUS=$?
 
-if [ $EXIT_STATUS -eq 0 ]; then
+if [[ $EXIT_STATUS -eq 0 ]]; then
     print_info "Uploading ${VIVIDE_IMAGE} and ${VIVIDE_CHANGES}..."
     curl -s -u "${DEPLOY_CREDENTIALS}" -T "${VIVIDE_IMAGE}" "${DEPLOY_TARGET}" && print_info "${VIVIDE_IMAGE} uploaded."
     curl -s -u "${DEPLOY_CREDENTIALS}" -T "${VIVIDE_CHANGES}" "${DEPLOY_TARGET}" && print_info "${VIVIDE_CHANGES} uploaded."
