@@ -1,8 +1,8 @@
 initialization
 initializeBasicBookmarks
 
-	ViActiveOrganizer
-		value: self organization
+	ViActiveProfile 
+		value: self
 		during: [
 			self
 				addScriptAsBookmark: #workspace asScript;

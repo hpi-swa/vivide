@@ -18,8 +18,7 @@ updateView
 
 				"Give views the chance to process the model with changed setup."
 				view process: self model ] ].
-	] on: Error do: [:ex |
-		self showError: (ViShallowException for: ex)].
+	] on: Error do: [:ex | self triggerShowError: ex].
 	
 	"3) Update pane-specific stuff."
 	self updateColor.

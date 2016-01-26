@@ -16,9 +16,6 @@ openArtifact: anObject
 		in: [:evaluateObject | "Unbox bindings, e.g. #a -> aMorph."
 			object := evaluateObject ifTrue: [anObject value] ifFalse: [anObject]].
 
-	(object isKindOf: ViShallowException) ifTrue: [
-		^ self openDebugger: (ViShallowDebugger on: object)].
-
 	(object isKindOf: ViEditorState) ifTrue: [
 		^ self openEditor: object].
 	

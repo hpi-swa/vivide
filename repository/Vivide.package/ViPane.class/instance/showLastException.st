@@ -60,7 +60,9 @@ showLastException
 	
 	
 	errorText := '<b>', (self errorBtn valueOfProperty: #description), '</b>', String cr.
-	scriptText := (self errorBtn valueOfProperty: #maliciousScript) sourceCode.
+	scriptText := (self errorBtn valueOfProperty: #maliciousScript)
+		ifNotNil: [:script | script sourceCode]
+		ifNil: [''].
 	scriptText := ViTextStyler new styledTextFor: scriptText asText.
 	
 	label := (errorText asHtmlText, scriptText asText) asMorph.

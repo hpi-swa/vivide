@@ -19,8 +19,7 @@ updateFromChangedCode: evt
 			
 		evt itemSelector = #process:
 			ifTrue: [^ self view process: self model].
-	] on: Error do: [:ex |
-		self showError: (ViShallowException for: ex)].
+	] on: Error do: [:ex | self triggerShowError: ex].
 	
 	"Re-create the whole view."
 	self view: nil.
