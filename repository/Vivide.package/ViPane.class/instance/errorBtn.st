@@ -6,7 +6,7 @@ errorBtn
 			color: Color white;
 			autoRaise: true;
 			buttonStyle: #iconOnly;
-			icon: UiFugueIcons exclamationRedIcon;
+			icon: UiFugueIcons balloonSmileyIcon;
 			disableTableLayout: true;
 			topRight: self topRight;
 			setToAdhereToEdge: #topRight.

@@ -1,6 +1,6 @@
 triggers for steps
-stepNotEvaluated: aQueryStep becauseOf: anException
+stepNotEvaluated: aQueryStep becauseOf: info
 
 	self trigger: ((ViNotEvaluatedStepEvent item: aQueryStep kind: self class stepKind)
-		context: anException;
+		context: info;
 		yourself).		

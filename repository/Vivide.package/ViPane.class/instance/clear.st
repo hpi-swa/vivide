@@ -8,6 +8,8 @@ clear
 	ViQueryChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
+	self clearError.
+	
 	self view ifNotNil: #clear.
 	self currentQuery: nil.
 	
