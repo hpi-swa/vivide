@@ -13,4 +13,4 @@ smalltalk:
   - Squeak-5.0
   - Squeak-4.6
 
-after_success: bash $PROJECT_HOME/scripts/prepare_image.sh
+after_success: bash $TRAVIS_BUILD_DIR/scripts/prepare_image.sh
