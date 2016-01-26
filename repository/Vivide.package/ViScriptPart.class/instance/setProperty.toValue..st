@@ -6,5 +6,8 @@ setProperty: property toValue: value
 
 	property = #async
 		ifTrue: [^ self isExecutedAsynchronously: value].
-		
+	
+	(property = #inputKind or: [property = #outputKind])
+		ifTrue: [^ super setProperty: property toValue: (self normalizedKind: value)].
+	
 	^ super setProperty: property toValue: value
