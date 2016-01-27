@@ -1,3 +1,4 @@
 halos and balloon help
 wantsHaloFromClick
-	^ VivideLight useClassicMode
+
+	^ VivideLight useClassicMode or: [VivideLight active isNil]

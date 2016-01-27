@@ -1,7 +1,7 @@
 as yet unclassified
 transferHalo: event from: formerHaloOwner
 
-	(VivideLight useClassicMode
+	((VivideLight useClassicMode or: [VivideLight active isNil])
 		or: [(self owner isKindOf: ViMultiPaneWidget) not]) ifTrue: [
 			^ super transferHalo: event from: formerHaloOwner].
 	
