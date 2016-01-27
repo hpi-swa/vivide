@@ -20,19 +20,14 @@ processStepsGuarded
 			
 			[
 				| processToDebug |
+				
+				"1) Copy and clean-up process to debug."
 				processToDebug := thisProcess copyStack.
-				
-				"1) Clean thisProcess to return from this call safely."
-				(thisProcess suspendedContext findContextSuchThat: [:ctxt |
-					ctxt method == (ViQueryNode >> #processStepsGuarded)]) in: [:thisMethodCtxt |
-						thisProcess popTo: thisMethodCtxt sender value: self].
-				
-				"2) Clean-up process to debug."
 				(processToDebug suspendedContext findContextSuchThat: [:ctxt |
 					ctxt method selector isDoIt]) in: [:scriptCtxt |
 						processToDebug popTo: scriptCtxt value: self].
 
-				"3) Schedule GUI notification stuff."
+				"2) Schedule GUI notification stuff."
 				Project current addDeferredUIMessage: [
 					ViQueryChangeNotifier uniqueInstance
 						stepNotEvaluated: self firstStep
