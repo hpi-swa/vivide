@@ -14,7 +14,9 @@ showLastException
 		yourself.
 		
 	box eventHandler: UiEventHandler new.
-	self connect: box eventHandler signal: #focusLost to: box selector: #delete.
+	Preferences mouseOverForKeyboardFocus
+		ifTrue: [self connect: box eventHandler signal: #mouseLeft: to: box selector: #delete]
+		ifFalse: [self connect: box eventHandler signal: #focusLost to: box selector: #delete].
 	
 	buttons := Morph new
 		color: Color transparent;

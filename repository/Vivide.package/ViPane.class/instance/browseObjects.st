@@ -7,6 +7,7 @@ browseObjects
 		currentQuery: {#defaultProperties -> {#view -> ViTreePlainView}} asScript;
 		objects: self objects;
 		yourself.
+	pane grabKeyboard.
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
 		thenNotify: VivideLight active
