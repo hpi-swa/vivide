@@ -61,7 +61,7 @@ showLastException
 		buttons addMorphBack: btn].
 	
 	
-	errorText := '<b>', (self errorBtn valueOfProperty: #description), '</b>', String cr.
+	errorText := '<b>', (self errorBtn valueOfProperty: #description) escapeHtmlText, '</b>', String cr.
 	scriptText := (self errorBtn valueOfProperty: #maliciousScript)
 		ifNotNil: [:script | script sourceCode]
 		ifNil: [''].

@@ -24,7 +24,6 @@
 		"useVivideDebugger:" : "mt 7/24/2014 14:53:53.241" },
 	"instance" : {
 		"checkForUpdate" : "mt 2/12/2015 11:55",
-		"chooseScriptFor:" : "mt 7/14/2015 10:54",
 		"close" : "mt 7/7/2015 12:39",
 		"closeAllWindows" : "mt 5/13/2013 10:24:49.862",
 		"disableGridding" : "mt 9/14/2013 11:30:27.262",
@@ -47,8 +46,8 @@
 		"objects" : "mt 3/8/2013 11:39:31.789",
 		"open" : "mt 7/7/2015 12:42",
 		"openAnimation:" : "mt 3/4/2015 15:34",
-		"openArtifact:" : "mt 1/26/2016 14:11:57.119",
-		"openArtifacts:" : "mt 10/19/2015 10:02:55",
+		"openArtifact:" : "mt 1/27/2016 13:39:38.77",
+		"openArtifacts:" : "mt 1/27/2016 13:39:43.214",
 		"openDebugger:" : "mt 7/6/2015 10:34",
 		"openEditor:" : "mt 8/23/2014 15:30:30.053",
 		"openEditorForArtifact:" : "mt 12/10/2014 11:52:54.843",

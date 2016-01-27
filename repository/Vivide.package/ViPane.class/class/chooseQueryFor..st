@@ -15,6 +15,7 @@ chooseQueryFor: someObjects
 		currentQuery: #formattedQueries asScript;
 		objects: LastHelperPane appropriateQueries;
 		yourself.
+	pane grabKeyboard.
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (5@5)
 		thenNotify: LastHelperPane
