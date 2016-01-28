@@ -3,7 +3,7 @@ beginDarken
 
 	"Assume a natural occlusion of important windows on small displays. No darkening then."
 	Display extent <= (1280@720)
-		ifFalse: [^ self].
+		ifTrue: [^ self].
 
 	self
 		removeAlarm: #darkenWindow;  
