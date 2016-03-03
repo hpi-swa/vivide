@@ -29,4 +29,6 @@
 		"test24ReferenceIdUpdate" : "mt 12/7/2015 15:27:42.791",
 		"test25AutoReference" : "mt 12/18/2015 11:16:11.071",
 		"test26TemplateExtractionWithObject" : "mt 1/5/2016 13:56:17.701",
-		"test27TemplateExtractionTupleWithObject" : "mt 1/5/2016 13:58:18.041" } }
+		"test27TemplateExtractionTupleWithObject" : "mt 1/5/2016 13:58:18.041",
+		"test28TemplateInOut" : "mt 2/1/2016 17:17:20.606",
+		"test29TemplateReference" : "mt 2/1/2016 16:48:09.483" } }

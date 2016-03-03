@@ -1,6 +1,6 @@
 tests
 test04ChangeUpdateAgain
-	<timeout: 1000>
+	<timeout: 500>
 	
 	Smalltalk platformName = 'unix' "Travis"
 		ifTrue: [^ self].
