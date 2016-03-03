@@ -14,17 +14,32 @@ templateForSourceCode: code
 			msg beginsWith: verb]]) ifTrue: [
 			template := self templateAllAtOnce].
 	
+	"Works just in script editor because it is a direct lookup otherwise."
+	(node isBlock not and: [node value isSymbol])
+		ifTrue: [
+			properties at: #isReference put: true.
+			template := self templateReference].	
+	
 	node isBlock ifTrue: [
-		node arguments size = 0 ifTrue: [template := self templateGlobal].
+		node arguments size = 0 ifTrue: [
+			(node body statements size = 1 and: [node body statements first value isSymbol])
+				ifFalse: [template := self templateGlobal]
+				ifTrue: [
+					properties at: #isReference put: true.
+					template := self templateReferenceBlock]].
 		node arguments size > 1 ifTrue: [
-			template := self templateTuples.
-			properties at: #inputKind put: (Array new: node arguments size)].
+			(node arguments size = 2
+				and: [node argumentNames hasEqualElements: #(in out)])
+					ifTrue: [template := self templateGlobalInOut]
+					ifFalse: [
+						template := self templateTuples.
+						properties at: #inputKind put: (Array new: node arguments size)]].
 
 		(node allChildren anySatisfy: [:child |
 			tmp := child.
 			((child isMessage
 				and: [child selector = #->])
-				and: [child receiver isLiteral])
+				and: [child receiver isLiteralNode])
 				"and: [#(text icon color morph icon) includes: child receiver value]"])
 					ifTrue: [ "So we have an association with suspicious keys..."
 						"properties at: #modelClass put: ViQueryNode." "Skip default?"
@@ -38,7 +53,7 @@ templateForSourceCode: code
 									ifFalse: [self templateProperties]]
 								ifFalse: [(code includesSubstring: '#object' caseSensitive: true)
 									ifTrue: [self templateTuplesPropertiesWithoutObject]
-									ifFalse: [self templateTuplesProperties]]]].  
+									ifFalse: [self templateTuplesProperties]]]].
 	].
 
 	(node isMessage and: [node selector = #->]) ifTrue: [

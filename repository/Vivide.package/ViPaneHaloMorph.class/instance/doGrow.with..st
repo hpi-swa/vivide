@@ -5,7 +5,7 @@ doGrow: evt with: growHandle
 	positionOffset ifNil: [^ self].
 
 	evt hand obtainHalo: self.
-	self target extentInOwner: (evt cursorPoint - self target boundsInWorld topLeft - positionOffset).
+	self target extentInOwner: ((evt cursorPoint - self target boundsInWorld topLeft - positionOffset) max: 25@25).
 
 	growHandle position: evt cursorPoint - (growHandle extent // 2) .
 	self extent: target worldBoundsForHalo extent.

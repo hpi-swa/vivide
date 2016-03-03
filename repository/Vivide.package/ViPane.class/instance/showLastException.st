@@ -72,6 +72,8 @@ showLastException
 	box addAllMorphs: {label. buttons}.
 				
 	box topLeft: self errorBtn bottomLeft + (0@5).
+	box bounds: (box bounds translatedToBeWithin: RealEstateAgent maximumUsableArea).
+	
 	box setProperty: #indicateKeyboardFocus toValue: #never.
 	box grabKeyboard.
 	box openInWorld.
