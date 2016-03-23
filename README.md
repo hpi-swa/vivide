@@ -1,10 +1,8 @@
 ![vivide-logo](images/logo.png)
 
-A programming environment and framework that supports *interactive*, *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk.
+A programming environment and framework that supports *interactive*, *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk. [![Join the chat at https://gitter.im/hpi-swa/vivide](https://badges.gitter.im/hpi-swa/vivide.svg)](https://gitter.im/hpi-swa/vivide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ##How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
-
-[![Join the chat at https://gitter.im/hpi-swa/vivide](https://badges.gitter.im/hpi-swa/vivide.svg)](https://gitter.im/hpi-swa/vivide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 1. Get [Squeak 4.6 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
