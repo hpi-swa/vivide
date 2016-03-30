@@ -32,7 +32,8 @@ initializeToolbarOperations
 		addGroup: #protocols
 		icon: UiFugueIcons priceTagIcon
 		contents: [:editor | editor theClass ifNil: [#()] ifNotNil: [:cls | {
+			{#addProtocol. ('Add protocol'). UiFugueIcons newIcon. nil. 1}.
 			{#autoCategorizeMethod. ('Categorize method automatically'). UiFugueIcons priceTagArrowIcon. nil. 1}.
-			{#fileOut. ('File out'). ViIcons blankIcon. nil. 1}.
+			{#fileOut. ('File out'). ViIcons blankIcon. nil. 2}.
 			{#toggleBreakpoint. (((BreakpointManager methodHasBreakpoint: editor method) ifTrue: ['Remove'] ifFalse: ['Add']),
-				' <b>breakpoint</b> on method entry') asHtmlText. ViIcons blankIcon. nil. 2}}]].
+				' <b>breakpoint</b> on method entry') asHtmlText. ViIcons blankIcon. nil. 3}}]].

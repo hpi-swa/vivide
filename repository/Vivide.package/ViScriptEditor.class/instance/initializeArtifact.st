@@ -25,6 +25,7 @@ initializeArtifact
 	edit eventHandler on: #(cmd shift) -> Character arrowLeft send: #goUpToTop to: self.
 	edit eventHandler on: #(cmd shift) -> Character arrowRight send: #goDownToBottom to: self.
 	edit eventHandler on: #(cmd) -> $a send: #selectAll to: self.
+	edit eventHandler on: Character escape send: #deactivateWizard to: self.
 
 	self connect: edit eventHandler signal: #focusReceived toSelector: #highlightAffectedPanes.
 	self connect: edit eventHandler signal: #focusLost toSelector: #discardPaneHighlights.

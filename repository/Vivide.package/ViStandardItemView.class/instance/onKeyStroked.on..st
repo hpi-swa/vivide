@@ -15,3 +15,6 @@ onKeyStroked: evt on: aNode
 		ifTrue: [
 			self searchEdit clear.
 			self findNext].
+		
+	evt keyCharacter = Character delete
+		ifTrue: [(aNode at: #deleted ifAbsent: []) value].

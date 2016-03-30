@@ -1,5 +1,5 @@
 geometry - actions
 collapse
 
-	self layoutPolicy margins: nil.
+	self layoutInset: 0.
 	super collapse.

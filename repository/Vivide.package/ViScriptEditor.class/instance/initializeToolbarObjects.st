@@ -5,17 +5,17 @@ initializeToolbarObjects
 
 	self toolbar leftPanel
 		addGroup: #parts
-		icon: UiSilkIcons folderIcon
+		icon: UiFugueIcons scriptArrowIcon
 		contents: [:editor | editor object ifNil: [#()] ifNotNil: [:s |
 				s allSteps]]
 		helpText: 'No steps found.'.
 
-	self toolbar leftPanel
+	"self toolbar leftPanel
 		addGroup: #definitions
 		icon: UiSilkIcons scriptCodeIcon
 		contents: [:editor | editor object ifNil: [#()] ifNotNil: [:s |
 				s allSteps collect: [:st | st definition] thenSelect: [:st | st notNil]]]
-		helpText: 'No step definitions found'.
+		helpText: 'No step definitions found'."
 		
 	self toolbar leftPanel
 		addGroup: #versions

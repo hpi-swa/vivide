@@ -8,5 +8,7 @@ deactivateWizard
 	code := self object definition sourceCode
 		ifEmpty: ['[:in :out | "Type code here..."]'].
 
+	edit margins: (4@0 corner: 0@7).
+
 	shouldPropose := false.
 	self script: code, String cr, '-> ', self propertiesToString.

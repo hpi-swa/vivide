@@ -7,7 +7,7 @@ drawMapOn: aCanvas
 
 	delta := 2@10.
 	offset := self topLeft + (delta // 2). 
-	offsetArguments := 3 @ (offset y -9).
+	offsetArguments := (self left + 3) @ (offset y -9).
 
 	1 to: (self mapIndex-1) do: [:i | | text |
 		aCanvas

@@ -11,6 +11,14 @@ initializeToolbarObjects
 		helpText: 'No associated classes found.'.
 
 	self toolbar leftPanel
+		addGroup: #protocols
+		icon: UiFugueIcons priceTagIcon
+		contents: [:editor | self theClass ifNil: [#()] ifNotNil: [:cls |
+				{self protocol. '--------------' -> ''}, ((ViProtocol protocolsForClass: cls)
+					sorted: [:p1 :p2 | p1 protocolname  <= p2 protocolname])]]
+		helpText: 'No protocols found.'.
+
+	self toolbar leftPanel
 		addGroup: #methods
 		icon: UiFugueIcons scriptMediumIcon
 		contents: [:editor | editor theClass ifNil: [#()] ifNotNil: [:cls |
@@ -48,7 +56,7 @@ initializeToolbarObjects
 				m hasMethodExtension ifTrue: [m methodExtension tests] ifFalse: [#()]]]]
 		helpText: 'No tests cover this method.'."
 		
-		self toolbar leftPanel
+	self toolbar leftPanel
 		addGroup: #bindings
 		icon: UiFugueIcons blockIcon
 		contents: [:editor | editor bindings]

@@ -19,3 +19,4 @@ proposeScriptTemplate
 	scriptPointer := spec key key ifNil: [1 to: script size].
 	
 	shouldPropose := false.
+	edit margins: (4@0 corner: 0@7).
