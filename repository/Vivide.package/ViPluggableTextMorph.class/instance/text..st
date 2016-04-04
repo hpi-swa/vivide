@@ -1,8 +1,7 @@
 accessing
 text: newText
-
-	self model firstNode ifNotNil: [:n |
-		n at: #text put: newText].
+	
+	self model firstNode ifNotNil: [:n | n text: newText].
 	self changed: #clearUserEdits.
 
 	self yieldObject: newText.
