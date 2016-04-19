@@ -2,8 +2,9 @@ as yet unclassified
 archive
 
 	"Fast path."
-	ViProfile active organization = self organization
-		ifTrue: [^ ViProfile active archive].
+	ViProfile active ifNotNil: [:profile |
+		profile organization = self organization
+			ifTrue: [^ profile archive]].
 
 	^ VivideLight profiles
 		detect: [:profile | profile organization = self organization]
