@@ -7,6 +7,7 @@ initializeMinimal
 		during: [
 			self
 				addDefaultProperties;
+				addDefaultPropertiesMinimal; "optional"
 				addDefaultPropertiesExtended; "quasi optional"
 				addArtifacts;
 				addGroupsScript; "quasi optional"

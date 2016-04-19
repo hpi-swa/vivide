@@ -9,8 +9,11 @@ updateForQuery: query
 	self flag: #performance. "mt: Avoid unnecessary updates, e.g., if no property step changed."
 	
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
-		(UiItemViewSimpleColumnSpec newFrom: (#(text icon color morph balloonText editable selectable)
+		(UiItemViewSimpleColumnSpec newFrom: (#(icon color morph balloonText editable selectable)
 			collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
+				"Provide print-string default if text property is missing."
+				textSelector: #yourself;
+				textConverter: [:node | (node at: ('{1}_text' format: {idx}) asSymbol ifAbsent: [node object printString])];
 				labelColor: (idx > 1 ifTrue: [Color fromString: #AAAAAA] ifFalse: []);
 				yourself].
 	newResizeModes := OrderedCollection new.

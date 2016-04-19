@@ -3,8 +3,6 @@ itemFor: aNode
 
 	| text |
 	text := self textFor: aNode.
-	self textConverter ifNotNil: [:c | text := c value: text].
-
 	text ifNotNil: [
 		text isString ifTrue: [text := text asText].
 		text isString | text isText ifFalse: [text := text asString asText].

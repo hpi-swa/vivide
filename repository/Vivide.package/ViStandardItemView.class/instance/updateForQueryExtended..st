@@ -8,8 +8,11 @@ updateForQueryExtended: query
 		toValue: (query valueOfProperty: #expandAll ifAbsent: [false]).
 
 	newCols := (1 to: query maxPropertyCount) collect: [:idx |
-					(UiItemViewColumnSpec newFrom: (#(text icon color morph balloonText checkable checked editable selectable)
+					(UiItemViewColumnSpec newFrom: (#(icon color morph balloonText checkable checked editable selectable)
 						collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
+							"Provide print-string default if text property is missing."
+							textSelector: #yourself;
+							textConverter: [:node | (node at: ('{1}_text' format: {idx}) asSymbol ifAbsent: [node object printString])];
 							overrideStandardListFont: true].
 	newResizeModes := OrderedCollection new.
 	commandsVisible := true.
