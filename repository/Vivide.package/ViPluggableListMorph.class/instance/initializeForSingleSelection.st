@@ -12,6 +12,7 @@ initializeForSingleSelection
 			selected: #currentSelectionIndex
 			changeSelected: #currentSelectionIndex:
 			menu: #menu:evaluate:)
+				borderColor: Color gray;
 				getIconSelector: #iconAtIndex:;
 				dragItemSelector: #dragPassengerAtIndex:;
 				dragTypeSelector: #dragTransferTypeAtIndex:;

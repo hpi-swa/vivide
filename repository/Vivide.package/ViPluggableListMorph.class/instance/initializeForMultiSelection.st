@@ -14,6 +14,7 @@ initializeForMultiSelection
 			listSelection: #isSelectedAt:
 			changeListSelection: #setAt:isSelected:
 			menu: #menu:evaluate:)
+				borderColor: Color gray;
 				getIconSelector: #iconAtIndex:;
 				"dragItemSelector: #dragPassengerAtIndex:;
 				dragTypeSelector: #dragTransferTypeAtIndex:;

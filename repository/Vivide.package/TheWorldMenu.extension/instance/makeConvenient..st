@@ -21,10 +21,8 @@ makeConvenient: menu
 
 	(queryMenu hasItems or: [commandMenu hasItems]) ifTrue: [
 		menu
-			add: 'Global Queries' subMenu: (queryMenu hasItems
+			add: 'Vivide Tools' subMenu: (queryMenu hasItems
 				ifTrue: [queryMenu] ifFalse: [nil]);
-			add: 'Global Commands' subMenu: (commandMenu hasItems
-				ifTrue: [commandMenu] ifFalse: [nil]);
 			addLine].
 
 	self

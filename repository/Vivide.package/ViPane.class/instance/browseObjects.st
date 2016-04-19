@@ -7,7 +7,8 @@ browseObjects
 		currentQuery: {#defaultProperties -> {#view -> ViTreePlainView}} asScript;
 		objects: self objects;
 		yourself.
-	pane grabKeyboard.
+		
+	self flag: #usability. "mt: May we want to drag out multiple objects of this list?"
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
 		thenNotify: VivideLight active

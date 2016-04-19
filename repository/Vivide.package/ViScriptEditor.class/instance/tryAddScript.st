@@ -1,8 +1,7 @@
 actions - profile
 tryAddScript
 
-	| msg senders |
-	senders := self object references.
+	| msg |
 	
 	msg := ViOverlayMessageBox new title: 'Install In Profile'.
 

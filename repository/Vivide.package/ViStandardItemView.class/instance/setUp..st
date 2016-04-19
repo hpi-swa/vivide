@@ -19,3 +19,10 @@ setUp: aScript
 	self
 		setProperty: #selectNone
 		toValue: (aScript valueOfProperty: #selectNone ifAbsent: [false]).
+
+	(aScript valueOfProperty: #searchBar ifAbsent: [true])
+		ifTrue: [self showSearchBar]
+		ifFalse: [self hideSearchBar].
+	(aScript valueOfProperty: #commandsBar ifAbsent: [true])
+		ifTrue: [self showCommandsBar]
+		ifFalse: [self hideCommandsBar].

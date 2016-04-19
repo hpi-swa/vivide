@@ -6,7 +6,6 @@ chooseQuery
 		currentQuery: #formattedQueries asScript;
 		objects: self appropriateQueries;
 		yourself.
-	pane grabKeyboard.
 	pane
 		chooseObjectAt: ActiveHand cursorPoint - (10@10)
 		thenNotify: self
