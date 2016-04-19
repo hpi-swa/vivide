@@ -8,7 +8,7 @@ SmalltalkCISpec {
     }
   ],
   #testing : {
-    #coverageAgainst : {
+    #coverage : {
       #categories : [ 'Vivide-*' ]
     },
     #categories : [ 'VivideTests-*' ]
