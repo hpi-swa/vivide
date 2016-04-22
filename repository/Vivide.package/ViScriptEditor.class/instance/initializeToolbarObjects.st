@@ -31,3 +31,14 @@ initializeToolbarObjects
 					
 					]] on: Error do: [#()]]
 		helpText: 'No versions found.'.
+
+	self toolbar leftPanel
+		addGroup: #viewScriptProperties
+		icon: UiFugueIcons picturesIcon
+		contents: [:editor | {editor view. '-------------' -> ''}, editor viewExpectedScriptProperties]
+		helpText: 'No script properties used.'.
+	self toolbar leftPanel
+		addGroup: #viewObjectProperties
+		icon: UiFugueIcons pictureMediumIcon
+		contents: [:editor | {editor view. '-------------' -> ''}, editor viewExpectedObjectProperties]
+		helpText: 'No object properties used.'
