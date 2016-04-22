@@ -14,4 +14,5 @@ nextStepsDo: aBlock
 	
 	hasProperties ifFalse: [
 		"Also consider default properties."
-		#defaultProperties asScript nextStepsDo: aBlock].
+		#defaultProperties asScript ifNotNil: [:script |
+			script nextStepsDo: aBlock]].

@@ -16,6 +16,6 @@ allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 	((lastStep isPropertyStep not
 		and: [lastStep next isNil])
 		and: [lastStep isReferenceStep not "Should point to some other property..."]) ifTrue: [
-			#defaultProperties asScript
+			#defaultProperties asScript ifNotNil: [:s | s
 				allPropertyStepsDo: aBlock
-				ifNewSequence: anotherBlock].
+				ifNewSequence: anotherBlock]].

@@ -27,4 +27,4 @@ next
 
 	((step isNil and: [self hasObjects]) and: [self hasProperties not]) ifTrue: [
 		step := #defaultProperties asScript.
-		self assert: step isPropertyStep].
+		self assert: (step isNil or: [step isPropertyStep])].

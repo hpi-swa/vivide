@@ -15,5 +15,5 @@ maxPropertyCount
 	
 	maxCount := maxCount max: currentCount.
 	^ maxCount = 0
-		ifTrue: [#defaultProperties asScript maxPropertyCount]
+		ifTrue: [#defaultProperties asScript ifNil: [1] ifNotNil: [:s | s maxPropertyCount]]
 		ifFalse: [maxCount]

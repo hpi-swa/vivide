@@ -1,11 +1,9 @@
 as yet unclassified
 createNodesForGroup: aGroup
 
-	self properties ifEmpty: [^ #()].
-
-	(self properties at: aGroup) in: [:chunks |
+	(self properties at: aGroup ifAbsent: [#()]) in: [:chunks |
 		| result |
-		result := Array new: chunks first size.
+		result := Array new: (chunks ifEmpty: [0] ifNotEmpty: [:chks | chks first size]).
 		chunks withIndexDo: [:chunk :propertyIndex|
 			result size < chunk size "Jagged chunks?"
 				ifTrue: [result := result, (Array new: chunk size - result size)].
@@ -25,6 +23,12 @@ createNodesForGroup: aGroup
 									at: ('{1}_{2}' format: {propertyIndex. nameToValue key})
 									put: nameToValue value]]
 			]]].
+
+		"If there are no properties, create the #object property."
+		result ifEmpty: [
+			result := 	self allObjects collect: [:ea |
+				Dictionary newFrom: { #object -> ea. #'1_object' -> ea }]].
+
 		^ result collect: [:props |
 			((modelClass ifNil: [ViQueryNode]) newFrom: props associations)
 				in: [:node |

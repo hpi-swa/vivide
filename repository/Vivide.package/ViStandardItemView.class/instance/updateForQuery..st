@@ -23,14 +23,15 @@ updateForQuery: query
 		ifFalse: [newHorizontalHeaderVisible := false]
 		ifTrue: [ | wantsHeader |
 			wantsHeader := false.
-			newCols with: query allPropertySteps do: [:col :prop |
+			newCols with: (query allPropertySteps ifEmpty: [{[:fake | #object -> fake] asScript}]) 
+			do: [:col :prop |
 				commandsVisible := commandsVisible and: [prop valueOfProperty: #showCommands ifAbsent: [true]].
-				newResizeModes add: ((prop valueOfProperty: #resizeMode) ifNil: [#shrinkWrap]).
+				newResizeModes add: (prop valueOfProperty: #resizeMode ifAbsent: [#shrinkWrap]).
 				#(headerText headerIcon headerBalloonText) do: [:colProp | col
-					perform: (colProp, #:) asSymbol
+					perform: colProp asSymbol asMutator
 					with: ((prop valueOfProperty: colProp) ifNotNil: [:val | wantsHeader := true. val])].
 				#(hAlignment vAlignment itemOrientation labelColor) do: [:colProp | col
-					perform: (colProp, #:) asSymbol
+					perform: colProp asSymbol asMutator
 					with: (prop valueOfProperty: colProp)].
 				
 				(prop valueOfProperty: #selectionMode) ifNotNil: [:sm |
