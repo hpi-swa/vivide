@@ -31,4 +31,6 @@
 		"test26TemplateExtractionWithObject" : "mt 1/5/2016 13:56:17.701",
 		"test27TemplateExtractionTupleWithObject" : "mt 1/5/2016 13:58:18.041",
 		"test28TemplateInOut" : "mt 2/1/2016 17:17:20.606",
-		"test29TemplateReference" : "mt 2/1/2016 16:48:09.483" } }
+		"test29TemplateReference" : "mt 2/1/2016 16:48:09.483",
+		"test30AutomaticExtraction" : "mt 4/25/2016 15:17:24.265",
+		"test31EndOfLevel" : "mt 4/25/2016 16:27:17.694" } }
