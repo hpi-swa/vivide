@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Sandbox",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectView classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViMultiPaneABC",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"traitcomposition" : "TViObjectView",
+	"type" : "normal" }
