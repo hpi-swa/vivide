@@ -1,6 +1,8 @@
 drawing
 drawOverlayOn: aCanvas
 
+	| label |
+
 	super drawOverlayOn: aCanvas.
 	self drawMapOn: aCanvas.
 
@@ -16,3 +18,29 @@ drawOverlayOn: aCanvas
 			translucentImage: UiFugueIcons wandSmallIcon
 			at: edit topLeft + (0@2). 
 		].
+
+	"Show end of level in model tree."
+	self object isEndOfLevel ifTrue: [
+		label := 'next level' asText.
+		label
+			addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
+			addAttribute: (TextColor color: (Color gray: 0.3)).
+		label := label asMorph.
+		label
+			autoFit: true;
+			center: self bottomCenter - (0@5).
+		
+		aCanvas
+			line: self bottomLeft - (-5 @ 6)
+			to: self bottomRight - (5 @ 6)
+			width: 1
+			color: (Color gray: 0.3)
+			dashLength: 3
+			secondColor: Color transparent
+			secondDashLength: 6
+			startingOffset: 0.
+		aCanvas
+			fillRectangle: (label bounds outsetBy: (5@ -5 corner: 5@ -5))
+			color: self color.
+		label fullDrawOn: aCanvas.
+			 ].

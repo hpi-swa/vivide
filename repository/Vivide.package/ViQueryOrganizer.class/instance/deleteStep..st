@@ -10,7 +10,7 @@ deleteStep: aQueryStep
 	(self referencesToStep: aQueryStep) do: [:step |
 		step isMeta
 			ifTrue: [step metaReference: aQueryStep next]
-			ifFalse: [step isReference
+			ifFalse: [(step isReference and: [step reference == aQueryStep])
 				ifTrue: [step reference: aQueryStep next]
 				ifFalse: [
 					self assert: step next == aQueryStep .

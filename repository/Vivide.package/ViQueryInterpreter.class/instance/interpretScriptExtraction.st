@@ -11,10 +11,20 @@ interpretScriptExtraction
 	
 	objects keysAndValuesDo: [:group :groupedObjects |
 		(step process: groupedObjects) in: [:newProperties |
+			| propertiesToUse |
+			"Automatically treat results as properties of a node. Expand if necessary. Avoids superfluous scripts."
+			propertiesToUse := newProperties collect: [:thing | thing isDictionary
+				ifTrue: [thing associations]
+				ifFalse: [thing asList
+					ifEmpty: [#()]
+					ifNotEmpty: [:thingAsList | thingAsList first isVariableBinding
+						ifTrue: [thingAsList]
+						ifFalse: [{#object -> thing}]]]].
+			
 			(properties
 				at: group
 				ifAbsentPut: [OrderedCollection new]) add: (
-					newProperties collect: [:p | p collect: [:pp | ViScriptPart convertProperty: pp] ]).
+					propertiesToUse collect: [:p | p collect: [:pp | ViScriptPart convertProperty: pp] ]).
 					
 		"Update objects according to #object or #objects property if existing. See ViQueryNode >> #inputForChildren."
 		step isMeta
@@ -22,16 +32,15 @@ interpretScriptExtraction
 				self flag: #metaScript. "mt: Sigh... See ViScriptPart >> #convertPanes:toScript:."
 				transformedObjects
 					at: group
-					put: (newProperties first detect: [:assoc | assoc key = #objects]) value.
+					put: (propertiesToUse first detect: [:assoc | assoc key = #objects]) value.
 				]
 			ifFalse: [
 				transformedObjects
 					at: group
-					put: (newProperties collect: [:p | (p detect: [:assoc | assoc key = #objects]
+					put: (propertiesToUse collect: [:p | (p detect: [:assoc | assoc key = #objects]
 						ifNone: [p detect: [:assoc | assoc key = #object]
 							ifNone: [Error signal: 'You must not drop object references!']]) value])
 				]
 		]].
 
-	self objectsCache at: step put: objects values concatenation. "store input not results"
 	objects := transformedObjects.

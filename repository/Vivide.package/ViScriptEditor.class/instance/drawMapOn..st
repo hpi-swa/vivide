@@ -21,7 +21,7 @@ drawMapOn: aCanvas
 				text := ((self map at: i) ifEmpty: [' ']) asText.
 				text
 					addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
-					addAttribute: (TextColor color: (Color fromString: '#000000')).
+					addAttribute: (TextColor color: (Color gray: 0.3)).
 				text asMorph topLeft: offset + (3 @ -5); drawOn: aCanvas.
 				offsetArguments := offsetArguments + (5@0)]
 			ifFalse: [

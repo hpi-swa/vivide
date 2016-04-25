@@ -11,5 +11,4 @@ interpretScriptTransformation
 
 	self flag: #noStreamsSupport.
 	
-	self objectsCache at: step put: objects values concatenation. "store input not results"
 	objects := transformedObjects.
