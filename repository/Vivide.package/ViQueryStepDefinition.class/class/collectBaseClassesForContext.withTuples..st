@@ -2,6 +2,7 @@ as yet unclassified
 collectBaseClassesForContext: someObjects withTuples: findTuples
 
 	someObjects ifEmpty: [^ {Object}].
+	self flag: #noStreamsSupport.
 
 	"Find out tuple types."
 	findTuples "(someObjects allSatisfy: [:o | ViQueryInterpreter isCollection: o])"

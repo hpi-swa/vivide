@@ -3,6 +3,8 @@ appropriateQueries
 	"Current query is most appropriate if not nil and still matching the type filter. Prepend it; then append others."
 	
 	| baseClasses tuples check |
+	self flag: #noStreamsSupport.
+	
 	tuples := self tupleSizeDynamic.
 	baseClasses := self objects
 		ifEmpty: [Array new: (tuples max: 1) withAll: Object]

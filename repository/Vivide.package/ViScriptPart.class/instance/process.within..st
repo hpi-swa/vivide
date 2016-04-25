@@ -4,6 +4,8 @@ process: someObjects within: aContext
 	| in out |
 	(self valueOfProperty: #in ifAbsent: [OrderedCollection])
 		in: [:ic |
+			self flag: #implicitConversion. "mt: Maybe consider inheritance chain? Too slow? Can specialized streams be converted?!"
+			self flag: #noStreamsSupport.
 			ic = someObjects species
 				ifTrue: [in := someObjects]
 				ifFalse: [in := (ic isBlock

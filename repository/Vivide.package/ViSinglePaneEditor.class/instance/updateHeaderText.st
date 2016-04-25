@@ -3,7 +3,9 @@ updateHeaderText
 
 	| scriptsSummary objectsSummary |
 	scriptsSummary := (ViLabelService doObject: self pane) asString.
-		
+	
+	self flag: #noStreamsSupport. "mt: Streams do not have a size..."
+	
 	"Append summary for objects if there is only one pane/script."
 	objectsSummary := self objects size = 1
 		ifTrue: ['{1} ({2})' format: {
