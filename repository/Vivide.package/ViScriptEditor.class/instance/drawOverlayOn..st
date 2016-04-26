@@ -1,7 +1,7 @@
 drawing
 drawOverlayOn: aCanvas
 
-	| label |
+	| label end |
 
 	super drawOverlayOn: aCanvas.
 	self drawMapOn: aCanvas.
@@ -20,8 +20,9 @@ drawOverlayOn: aCanvas
 		].
 
 	"Show end of level in model tree."
-	self object isEndOfLevel ifTrue: [
-		label := 'next level' asText.
+	(self object isEndOfLevel and: [self isScriptInaccessible not]) ifTrue: [
+		end := self isScriptEndOfTree.
+		label := (end ifFalse: ['next level'] ifTrue: ['end of tree']) asText.
 		label
 			addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
 			addAttribute: (TextColor color: (Color gray: 0.3)).
