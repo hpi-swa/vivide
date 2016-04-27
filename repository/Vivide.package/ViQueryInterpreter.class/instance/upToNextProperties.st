@@ -6,8 +6,9 @@ upToNextProperties
 	seenPropertySteps := 0.
 	onceNil := false.
 	
-	[step isNil or: [step isPropertyStep not
-		and: [seenPropertySteps > 0]]]
+	[ (step isNil
+		or: [step isPropertyStep not and: [seenPropertySteps > 0]])
+		or: [step mergeConsecutiveExtractions not and: [seenPropertySteps = 1]] ]
 		whileFalse: [
 			step isNil ifTrue: [
 				onceNil ifTrue: [^ self].

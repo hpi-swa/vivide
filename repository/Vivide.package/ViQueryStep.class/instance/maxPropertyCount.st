@@ -8,7 +8,9 @@ maxPropertyCount
 	
 	self allStepsDo: [:step |
 		step isPropertyStep
-			ifTrue: [currentCount := currentCount + 1]
+			ifTrue: [
+				step mergeConsecutiveExtractions ifFalse: [^ 1].
+				currentCount := currentCount + 1]
 			ifFalse: [
 				maxCount := maxCount max: currentCount.
 				currentCount := 0]].

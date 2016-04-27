@@ -4,7 +4,7 @@ isEndOfLevel
 	| found i j |
 	self next ifNil: [^ true].
 	self isPropertyExtraction ifTrue: [
-		^ (self next isPropertyExtraction and: [ViQueryInterpreter mergeConsecutiveExtractions])
+		^ (self next isPropertyExtraction and: [self next mergeConsecutiveExtractions])
 			ifTrue: [false]
 			ifFalse: [true]].
 	
@@ -19,7 +19,7 @@ isEndOfLevel
 				j := i]].
 		found ifTrue: [
 			j < i ifTrue: ["There are other extractions in between." ^ true].
-			^ (self next isPropertyExtraction and: [ViQueryInterpreter mergeConsecutiveExtractions])
+			^ (self next isPropertyExtraction and: [self next mergeConsecutiveExtractions])
 				ifTrue: [false]
 				ifFalse: [true]].
 		].

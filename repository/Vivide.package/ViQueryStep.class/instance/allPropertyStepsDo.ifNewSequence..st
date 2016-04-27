@@ -6,8 +6,10 @@ allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 	lastNonReferenceStep := nil.
 	self allStepsDo: [:step |
 		step isPropertyStep ifTrue: [
-			(lastNonReferenceStep isNil or: [lastNonReferenceStep isPropertyStep not])
-				ifTrue: [anotherBlock value].
+			((step mergeConsecutiveExtractions not
+				or: [lastNonReferenceStep isNil])
+				or: [lastNonReferenceStep isPropertyStep not])
+					ifTrue: [anotherBlock value].
 			aBlock value: step].
 		lastStep := step.
 		step isReferenceStep ifFalse: [lastNonReferenceStep := step]].
