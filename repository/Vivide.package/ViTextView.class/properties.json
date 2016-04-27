@@ -15,5 +15,5 @@
 	"pools" : [
 		 ],
 	"super" : "Morph",
-	"traitcomposition" : "TViObjectView",
+	"traitcomposition" : "TViObjectView + TViObjectViewSupport",
 	"type" : "normal" }

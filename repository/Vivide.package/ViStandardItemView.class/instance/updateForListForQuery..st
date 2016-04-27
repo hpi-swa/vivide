@@ -6,4 +6,10 @@ updateForListForQuery: query
 		view
 			listSpec: ((UiItemViewColumnSpec newFrom: (#(text icon color morph balloonText editable checked checkable selectable)
 				collect: [:p | p -> ('1_{1}' format: {p}) asSymbol]))
-					yourself)].
+					yourself).
+					
+		(query allPropertySteps ifEmpty: [{[:fake | #object -> fake] asScript}]) first in: [:prop |
+			#(hAlignment vAlignment itemOrientation) do: [:colProp |
+				view listSpec
+					perform: colProp asSymbol asMutator
+					with: (prop valueOfProperty: colProp)]]].
