@@ -55,6 +55,8 @@ WorldState addDeferredUIMessage: [
   Morph useSoftDropShadow: true.
   
   VivideLight useVivideDebugger: false.
+  ViScriptEditor showHints: false.
+  
   VivideLight prepareSqueak.
   VivideLight open.
   
