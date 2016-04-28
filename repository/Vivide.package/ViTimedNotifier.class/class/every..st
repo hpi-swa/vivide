@@ -2,5 +2,5 @@ as yet unclassified
 every: milliseconds
 
 	^ self new
-		stepTime: milliseconds;
+		signalDelay: milliseconds;
 		yourself
