@@ -24,3 +24,4 @@ SystemOrganization addCategory: #'Vivide-Visualizations'!
 SystemOrganization addCategory: #'Vivide-Visualizations-Support'!
 SystemOrganization addCategory: #'Vivide-Voronoi'!
 SystemOrganization addCategory: #'Vivide-Windows'!
+SystemOrganization addCategory: #'Vivide-Object-Notifications'!
