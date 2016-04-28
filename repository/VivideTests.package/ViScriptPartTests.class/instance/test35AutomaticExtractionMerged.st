@@ -10,7 +10,7 @@ test35AutomaticExtractionMerged
 	node := script interpretScriptWith: #(3).
 
 	self assert: script isPropertyExtraction.
-	self assert: #(object '2_object' '1_object') = node nodes first properties asArray.
+	self assert: (#(object '2_object' '1_object') includesAllOf: node nodes first properties).
 	self assert: 18 "(3*3)+(3*3)" equals: node nodes first object.
 	self assert: 18 "(3*3)+(3*3)" equals: (node nodes first at: #'2_object'). "same as object"
 	self assert: 9 "(3*3)" equals: (node nodes first at: #'1_object').
