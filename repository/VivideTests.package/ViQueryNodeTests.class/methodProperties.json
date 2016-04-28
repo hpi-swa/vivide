@@ -27,4 +27,5 @@
 		"test20TuplesWithTupleInput" : "mt 7/3/2015 13:56",
 		"test21GroupObjects" : "mt 7/3/2015 14:02",
 		"test22GroupObjectsAgain" : "mt 1/17/2016 16:13:50.8",
-		"test23ObjectEventNotifications" : "mt 4/28/2016 16:59:24.611" } }
+		"test23ObjectEventNotifications" : "mt 4/28/2016 16:59:24.611",
+		"test24ChangeUpdateNotifications" : "mt 4/28/2016 17:13:08.13" } }
