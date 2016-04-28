@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Notifications",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectNotifier classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"event" ],
+	"name" : "ViObjectEventNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TViObjectNotifier",
+	"type" : "normal" }
