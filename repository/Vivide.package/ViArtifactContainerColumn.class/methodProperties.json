@@ -4,6 +4,7 @@
 	"instance" : {
 		"acceptArtifact:fromEditor:event:" : "mt 9/11/2012 14:37:17.371",
 		"acceptObjects:fromEditor:event:" : "mt 12/16/2014 15:39:22.178",
+		"adoptPaneColor:" : "mt 5/3/2016 11:38:25.462",
 		"appendCodeSnippet" : "mt 2/2/2015 13:33",
 		"artifactAdded:" : "mt 11/8/2012 14:50:34.033",
 		"artifactContainers" : "mt 8/6/2012 17:34:36.344",

@@ -8,7 +8,9 @@ updateColor
 	
 	newColor := self currentQuery valueOfProperty: #color ifAbsent: [
 		(self owner == self world or: [self owner class == ViSinglePaneEditor])
-			ifTrue: [Color gray: 0.85]
+			ifTrue: [VivideLight active
+					ifNil: [Preferences uniformWindowColor]
+					ifNotNil: [:vivide | vivide defaultBackgroundColor]]
 			ifFalse: [Color transparent]].
 	
 	"If we are (deeply) embedded in a tool, set our own color."

@@ -1,4 +1,10 @@
 instance creation
 prepareSqueak
 	
-	ActiveWorld color: ViIcons grayWashedWallPattern.
+	"light"
+	Preferences installNormalWindowColors.
+	ActiveWorld color: ViIcons lightWoolPattern.
+
+	"dark"
+	"Preferences installUniformWindowColors.
+	ActiveWorld color: ViIcons grayWashedWallPattern."

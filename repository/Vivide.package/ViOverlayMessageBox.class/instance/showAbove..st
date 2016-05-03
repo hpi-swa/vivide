@@ -8,6 +8,20 @@ showAbove: aMorph
 		topLeft: aMorph topLeft;
 		disableTableLayout: true.
 
+	"Apply current color scheme."
+	VivideLight active ifNotNil: [:vivide |
+		| colorToUse |
+		colorToUse := vivide defaultBackgroundColor.
+		self ui panel color: colorToUse.
+		
+		self ui messageLbl text
+			addAttribute: (TextColor color: colorToUse negated).
+		self ui titleLbl text
+			addAttribute: (TextColor color: colorToUse negated).
+		
+		self ui buttonContainer submorphs do: [:button |
+			button color: colorToUse]].
+
 	aMorph height < self minExtent y
 		ifFalse: [^ aMorph addMorphFront: self].
 		

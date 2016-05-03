@@ -3,7 +3,9 @@ initializeObjectsBar
 
 	objectsBar := ViObjectsBar new
 		drawBackground: false;
-		hResizing: #spaceFill.
+		hResizing: #spaceFill;
+		adoptPaneColor: self color;
+		yourself.
 
 	objectsBar resizeHandle
 		target: self;
