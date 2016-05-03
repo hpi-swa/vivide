@@ -14,6 +14,5 @@ stepobjectExplorer
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 November 2015 11:56:40 am').
-(#inputKind -> #(nil nil nil )).
 (#priority -> 500).
 (#view -> ViExplorerView)}))})
