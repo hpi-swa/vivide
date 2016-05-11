@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViArgumentsCollected",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

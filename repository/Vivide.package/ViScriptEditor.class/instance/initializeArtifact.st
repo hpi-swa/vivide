@@ -30,6 +30,8 @@ initializeArtifact
 	self connect: edit eventHandler signal: #focusReceived toSelector: #highlightAffectedPanes.
 	self connect: edit eventHandler signal: #focusLost toSelector: #discardPaneHighlights.
 
+	self sgConnectSignal: #expressionAboutToBeEvaluated toSelector: #updateBindings. 
+
 	hintBox := Morph new
 		color: Color transparent;
 		layoutPolicy: (ViVerticalLayout new layoutInset: (5@5 corner: 0@0); yourself);

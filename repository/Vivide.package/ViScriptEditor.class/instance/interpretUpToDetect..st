@@ -2,7 +2,7 @@ support - debugging
 interpretUpToDetect: block
 
 	| input |
-	input := self input. "We need to call this here because we need to have updated context."
+	input := self originalInput. "We need to call this here because we need to have updated context."
 
 	otherSteps overlappingPairsDo: [:s1 :s2 |
 		s1 next == s2 ifFalse: [
