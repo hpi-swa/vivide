@@ -31,6 +31,7 @@ initializeToolbarOperations
 		contents: [:editor | {
 			{#tryAddScript. 'Install in profile'. UiSilkIcons databaseEditIcon. nil. 1}.
 			{#tryRemoveScript. 'Remove from profile'. ViIcons blankIcon. nil. 1}.
+			{#copyToClipboard. 'Copy to clipboard'. UiFugueIcons clipboardTextIcon. nil. 2}
 			}].
 		
 	self toolbar rightPanel
