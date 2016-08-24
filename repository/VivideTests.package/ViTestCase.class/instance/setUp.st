@@ -4,11 +4,11 @@ setUp
 	super setUp.
 	
 	previousPreferences := {
-		ToolBuilder openToolsAttachedToMouseCursor.
+		Project uiManager openToolsAttachedToMouseCursor.
 		"Morph useSoftDropShadow.
 		Preferences mouseOverForKeyboardFocus"}.
 		
-	ToolBuilder openToolsAttachedToMouseCursor: false.
+	Project uiManager openToolsAttachedToMouseCursor: false.
 	"Morph useSoftDropShadow: false.
 	Preferences disable: #mouseOverForKeyboardFocus."
 	
