@@ -6,7 +6,7 @@ initialize
 	self textMorph
 		font: UiPlatform current standardCodeFont;
 		styler: ViTextStyler new;
-		margins: (4@0 corner: 4@0).
+		margins: (4@4 corner: 4@0).
 	
 	self connect: self textMorph signal: #focusChanged: toSelector: #onFocusChanged:.
 	self connect: self textMorph signal: #repeatedReturnPressed: toSelector: #onRepeatedReturnPressed:.
