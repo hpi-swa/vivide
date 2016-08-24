@@ -10,7 +10,14 @@ os:
 
 smalltalk:
   - Squeak-trunk
+  - Squeak-5.1
   - Squeak-5.0
   - Squeak-4.6
+
+matrix:
+  allow_failures:
+    - smalltalk: Squeak-5.0
+    - smalltalk: Squeak-4.6
+  fast_finish: true
 
 after_success: bash $TRAVIS_BUILD_DIR/scripts/prepare_image.sh
