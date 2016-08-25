@@ -2,9 +2,9 @@ instance creation
 prepareSqueak
 	
 	"light"
-	Preferences installNormalWindowColors.
+	Model useColorfulWindows: true.
 	ActiveWorld color: ViIcons lightWoolPattern.
 
 	"dark"
-	"Preferences installUniformWindowColors.
+	"Model useColorfulWindows: false.
 	ActiveWorld color: ViIcons grayWashedWallPattern."
