@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2014-2015 Software Architecture Group (Hasso Plattner Institute)
+# Copyright (c) 2014-2016 Software Architecture Group (Hasso Plattner Institute)
 # Copyright (c) 2015 Fabio Niephaus, Google Inc.
 
 set -e
@@ -35,48 +35,36 @@ VIVIDE_IMAGE="Vivide-${TRAVIS_SMALLTALK_VERSION}.image"
 VIVIDE_CHANGES="Vivide-${TRAVIS_SMALLTALK_VERSION}.changes"
 DEPLOY_TARGET="https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/"
 COG_VM_PARAM=""
-case "$(uname -s)" in
-    "Linux")
-        COG_VM="${SMALLTALK_CI_VMS}/cogspurlinux/bin/squeak" # Spur by default
-        COG_VM_PARAM="-nosound -nodisplay"
-        ;;
-    "Darwin")
-        COG_VM="${SMALLTALK_CI_VMS}/CogSpur.app/Contents/MacOS/Squeak"
-        ;;
-    *)
-        print_info "Unsupported platform '$(uname -s)'"
-        exit 1
-        ;;
-esac
+if [[ "$(uname -s)" == "Linux" ]]; then
+    COG_VM_PARAM="-nosound -nodisplay"
+fi
 # ==============================================================================
 
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
 if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-4.6" ]]; then
-    print_info "Downloading Squeak4.6 image..."
-    wget http://ftp.squeak.org/4.6/Squeak4.6-15102.zip
+    print_info "Downloading Squeak-4.6 image..."
+    wget http://files.squeak.org/4.6/Squeak4.6-15102.zip
     unzip Squeak4.6-15102.zip
-    wget http://ftp.squeak.org/sources_files/SqueakV46.sources.gz
+    wget http://files.squeak.org/sources_files/SqueakV46.sources.gz
     gunzip SqueakV46.sources.gz
-    case "$(uname -s)" in
-        "Linux")
-            COG_VM="$SMALLTALK_CI_VMS/coglinux/bin/squeak"
-            ;;
-        "Darwin")
-            COG_VM="$SMALLTALK_CI_VMS/Cog.app/Contents/MacOS/Squeak"
-            ;;
-    esac
 elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.0" ]]; then
-    print_info "Downloading Squeak5.0 image..."
-    wget http://ftp.squeak.org/5.0/Squeak5.0-15113.zip
+    print_info "Downloading Squeak-5.0 image..."
+    wget http://files.squeak.org/5.0/Squeak5.0-15113.zip
     unzip Squeak5.0-15113.zip
-    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
+    gunzip SqueakV50.sources.gz
+elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
+    print_info "Downloading Squeak-5.1 image..."
+    wget http://files.squeak.org/5.1/Squeak5.1-16548-32bit/Squeak5.1-16548-32bit.zip
+    unzip Squeak5.1-16548-32bit.zip
+    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 else
-    print_info "Downloading SqueakTrunk image..."
+    print_info "Downloading Squeak-trunk image..."
     wget http://build.squeak.org/job/Trunk/default/lastSuccessfulBuild/artifact/target/TrunkImage.zip
     unzip TrunkImage.zip
-    wget http://ftp.squeak.org/sources_files/SqueakV50.sources.gz
+    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 fi
 
@@ -85,7 +73,7 @@ mv *.changes "${VIVIDE_CHANGES}"
 
 print_info "Preparing Vivide image from ${TRAVIS_SMALLTALK_VERSION} image..."
 EXIT_STATUS=0
-"$COG_VM" $COG_VM_PARAM "${VIVIDE_IMAGE}" "${TRAVIS_BUILD_DIR}/scripts/prepare_image.st" || EXIT_STATUS=$?
+"${SMALLTALK_CI_VM}" $COG_VM_PARAM "${VIVIDE_IMAGE}" "${TRAVIS_BUILD_DIR}/scripts/prepare_image.st" || EXIT_STATUS=$?
 
 if [[ $EXIT_STATUS -eq 0 ]]; then
     print_info "Uploading ${VIVIDE_IMAGE} and ${VIVIDE_CHANGES}..."
