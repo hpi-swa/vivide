@@ -26,6 +26,8 @@ You can download a Squeak/Smalltalk image with the latest working version of Viv
 ##Applications
 
 * [CCMail](https://github.com/calmez/CCMail) - a mail client by [Conrad Calmez](https://github.com/calmez)
+* [Gramada](https://github.com/HPI-SWA-Lab/Gramada) - interactive DSL creation by [Patrick Rein](https://github/codeZeilen)
+* [Matriona](https://github.com/HPI-SWA-Lab/mod16-matriona) - tools for a new module system by [Matthias Springer](https://github.com/matthias-springer)
 
 ##Videos
 
