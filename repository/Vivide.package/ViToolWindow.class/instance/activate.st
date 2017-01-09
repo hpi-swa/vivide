@@ -13,6 +13,5 @@ activate
 	labelMorph show.
 	
 	self headerButtons do: [:morph | morph showFull].
-	self endDarken.
 	
 	self editor ifNotNil: [:e | e grabKeyboard].

@@ -2,7 +2,7 @@
 	"class" : {
 		"expandBoxImage" : "mt 9/13/2013 14:12:59.874" },
 	"instance" : {
-		"activate" : "mt 5/20/2014 11:56:16.508",
+		"activate" : "mt 9/23/2016 15:01",
 		"adoptPaneColor:" : "mt 5/3/2016 11:20:35.542",
 		"appendHeaderButtons:" : "mt 2/5/2015 10:49",
 		"beginDarken" : "mt 1/28/2016 16:38:51.698",
@@ -20,7 +20,9 @@
 		"initializeLabelAreaContents" : "mt 2/5/2015 10:48",
 		"isNotUsed" : "mt 1/19/2016 10:47:50.065",
 		"label" : "mt 1/31/2013 16:24:44.132",
-		"passivate" : "mt 5/20/2014 11:50:47.654",
+		"lookFocused" : "mt 9/23/2016 15:00",
+		"lookUnfocused" : "mt 9/23/2016 15:00",
+		"passivate" : "mt 9/23/2016 15:00",
 		"visibleArea" : "mt 1/19/2016 10:51:57.675",
 		"visibleAreaPercent" : "mt 1/19/2016 10:26:08.211",
 		"wantsHaloFromClick" : "mt 1/27/2016 09:39:18.835" } }

@@ -9,6 +9,3 @@ passivate
 
 	expandBox hideFull.
 	self headerButtons do: [:morph | morph hideFull].
-	
-	self isSticky
-		ifFalse: [self beginDarken].
