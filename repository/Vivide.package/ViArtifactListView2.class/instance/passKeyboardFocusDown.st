@@ -2,7 +2,7 @@ actions - focus
 passKeyboardFocusDown
 
 	| oldEditor newEditor methodEditors |	
-	self artifactContainers last hasAnyKeyboard
+	(self artifactContainers isEmpty or: [self artifactContainers last hasAnyKeyboard])
 		ifTrue: [self artifactContainerColumn appendCodeSnippet].
 
 	methodEditors := self artifactContainers.

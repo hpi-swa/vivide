@@ -21,8 +21,7 @@ initialize
 	self sgConnectSignal: #artifactRemoved: toSelector: #rememberArtifact:.
 	self connect: self signal: #closed toSelector: #rememberAllArtifacts.
 	
-	
-	ActiveHand addKeyboardListener: self.
+	self addKeyboardCaptureFilter: self. "keyboard shortcuts"
 	
 	self initializeUiSystemChanges.
 	self initializeUiObjectChanges.

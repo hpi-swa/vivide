@@ -4,7 +4,7 @@ passKeyboardFocusUp
 	| newEditor methodEditors |
 	methodEditors := self artifactContainers.
 	newEditor := (methodEditors at: ((methodEditors indexOf:
-		(methodEditors detect: [:m | m hasAnyKeyboard]))
+		(methodEditors detect: [:m | m hasAnyKeyboard] ifNone: [^ self]))
 		- 1 max: 1)).
 	
 	self passKeyboardFocusTo: newEditor.  
