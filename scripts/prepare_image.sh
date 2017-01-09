@@ -42,19 +42,7 @@ fi
 
 mkdir "${DEPLOY_PATH}" && cd "${DEPLOY_PATH}"
 
-if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-4.6" ]]; then
-    print_info "Downloading Squeak-4.6 image..."
-    wget http://files.squeak.org/4.6/Squeak4.6-15102.zip
-    unzip Squeak4.6-15102.zip
-    wget http://files.squeak.org/sources_files/SqueakV46.sources.gz
-    gunzip SqueakV46.sources.gz
-elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.0" ]]; then
-    print_info "Downloading Squeak-5.0 image..."
-    wget http://files.squeak.org/5.0/Squeak5.0-15113.zip
-    unzip Squeak5.0-15113.zip
-    wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
-    gunzip SqueakV50.sources.gz
-elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
+if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
     print_info "Downloading Squeak-5.1 image..."
     wget http://files.squeak.org/5.1/Squeak5.1-16548-32bit/Squeak5.1-16548-32bit.zip
     unzip Squeak5.1-16548-32bit.zip
@@ -62,7 +50,7 @@ elif [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
     gunzip SqueakV50.sources.gz
 else
     print_info "Downloading Squeak-trunk image..."
-    wget http://build.squeak.org/job/Trunk/default/lastSuccessfulBuild/artifact/target/TrunkImage.zip
+    wget http://files.squeak.org/trunk/Squeak6.0alpha-16892-32bit/Squeak6.0alpha-16892-32bit.zip
     unzip TrunkImage.zip
     wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
