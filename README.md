@@ -4,7 +4,7 @@ A programming environment and framework that supports *interactive*, *data-drive
 
 ##How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
 
-1. Get [Squeak 4.6 or later](http://www.squeak.org) with a recent [CogVM](http://www.mirandabanda.org/files/Cog/VM/) for your operating system.
+1. Get [Squeak 5.1 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
 3. Finally, load VIVIDE into your Squeak image:
 
@@ -21,7 +21,7 @@ See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
 ##Latest Stable Build [![Try Now](http://img.shields.io/badge/try-now-green.svg)](https://bertfreudenberg.github.io/SqueakJS/run#url=https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/&files=%5BVivide-Squeak-5.1.image,Vivide-Squeak-5.1.changes,SqueakV50.sources%5D&forceDownload=true)
 
-You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/). Additionally, you may want to get the latest [CogVM](http://www.mirandabanda.org/files/Cog/VM/) and [sources](http://ftp.squeak.org/sources_files/) file.
+You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/). Additionally, you may want to get the latest [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) and [sources](http://ftp.squeak.org/sources_files/) file.
 
 ##Applications
 
