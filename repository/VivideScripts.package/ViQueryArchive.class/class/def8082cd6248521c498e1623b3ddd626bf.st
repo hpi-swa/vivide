@@ -15,10 +15,7 @@ def8082cd6248521c498e1623b3ddd626bf
 	object
 	
 	} asTuples]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'8082cd62-4852-1c49-8e16-23b3ddd626bf').
 (#properties -> (Dictionary newFrom: {
@@ -36,7 +33,4 @@ def8082cd6248521c498e1623b3ddd626bf
 	object
 	
 	} asTuples]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})
