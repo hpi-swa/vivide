@@ -11,6 +11,7 @@ initializeToolbarOperations
 			{#activateWizard. 'Activate wizard'. UiSilkIcons wandIcon. nil. 2}.
 			{#deactivateWizard. 'Deactivate wizard'. ViIcons blankIcon. nil. 2}.
 			{#openScript. 'Open script'. UiFugueIcons controlIcon. nil. 3}.			
+			{#interpretScript. 'Interpret script'. ViIcons blankIcon. nil. 3}.	
 			}].
 		
 	self toolbar rightPanel
@@ -39,9 +40,9 @@ initializeToolbarOperations
 		icon: UiSilkIcons bugIcon
 		contents: [:editor | {
 			{#exploreOutput. 'Explore output'. UiFugueIcons magnifierIcon. nil. 1}.
-"			{#exploreOutputWithoutGroups. 'Explore output (w/o groups)'. ViIcons blankIcon. nil. 1}."
+			{#exploreOutputTrace. 'Explore output trace'. ViIcons blankIcon. nil. 1}.
 			{#exploreOneProperty. 'Explore properties by example'. UiFugueIcons propertyIcon. nil. 2}.
 			{#exploreAllProperties. 'Explore properties'. ViIcons blankIcon. nil. 2}.
 "			{#exploreContexts. 'Explore context variables'. ViIcons blankIcon. nil. 3}."
-			{#exploreStack. 'Explore stack'. ViIcons blankIcon. nil. 3}
+"			{#exploreStack. 'Explore stack'. ViIcons blankIcon. nil. 3}"
 			}].
