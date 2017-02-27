@@ -13,7 +13,7 @@ drawLabelOn: aCanvas color: labelColor
 	pos := self center - ((w @ fontToUse height) // 2).
 	
 	self labelPosition = #topLeft ifTrue: [
-		pos := self topLeft + (self class preferredCornerRadius // 2) asPoint].
+		pos := self topLeft + (self cornerRadius * 0.8) asPoint].
 	
 	aCanvas
 		clipBy: self outerBounds

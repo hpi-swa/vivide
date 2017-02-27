@@ -12,7 +12,8 @@
 		"margin",
 		"selectedItems",
 		"sortByWeight",
-		"layout" ],
+		"layout",
+		"minWeight" ],
 	"name" : "ViTreeMapView",
 	"pools" : [
 		 ],

@@ -7,3 +7,4 @@ setUp: aScript
 	margin := aScript valueOfProperty: #margin.
 	sortByWeight := aScript valueOfProperty: #sort.
 	layout := aScript valueOfProperty: #layout.
+	minWeight := aScript valueOfProperty: #minWeight ifAbsent: [0].

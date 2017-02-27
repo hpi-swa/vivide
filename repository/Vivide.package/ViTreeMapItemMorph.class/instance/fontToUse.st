@@ -1,17 +1,19 @@
 accessing
 fontToUse
 
-	| family |
-	family := self font familyName.
-	
+	| family brd f |	
 	self labelPosition == #topLeft
-		ifTrue: [^ StrikeFont familyName: family pointSize: 12 emphasized: 1].
+		ifTrue: [^ self font "emphasized: 1"].
 
-	(TTCFont pointSizes allButLast: 4) reversed do: [:pt |
-		| f w |
+	family := self font familyName.
+	brd := self cornerRadius * 2.
+	f := self font.
+	
+	(TTCFont pointSizes "allButLast: 4") reversed do: [:pt |
+		| w |
 		f := StrikeFont familyName: family pointSize: pt.
 		w := f widthOfString: self label.
-		((w+10) > self width or: [f height > self height])
+		((w+brd) > self width or: [f height > self height])
 			ifFalse: [^ f]].
 
-	^ self font
+	^ f

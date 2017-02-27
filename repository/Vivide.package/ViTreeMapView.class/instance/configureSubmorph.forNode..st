@@ -20,7 +20,7 @@ configureSubmorph: morph forNode: node
 	morph elevation: (node at: #elevation ifAbsent: [0]).
 	morph layoutInset: (node hasChildren
 		ifFalse: [self margin]
-		ifTrue: [self margin @ 20 corner: self margin @ (self margin + morph elevation)]).
+		ifTrue: [self margin @ (TextStyle defaultFont height * 1.2) truncated corner: self margin @ (self margin + morph elevation)]).
 
 	node hasChildren ifTrue: [
 		morph
