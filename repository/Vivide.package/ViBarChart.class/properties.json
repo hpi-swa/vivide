@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"max" ],
+		"max",
+		"showLabel",
+		"labelHeight" ],
 	"name" : "ViBarChart",
 	"pools" : [
 		 ],

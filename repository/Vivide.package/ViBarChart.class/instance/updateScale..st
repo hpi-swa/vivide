@@ -3,7 +3,7 @@ updateScale: newExtent
 
 	| scale |
 	self columns ifEmpty: [^ self].
-	scale := newExtent y / (max max: 1).
+	scale := newExtent y - self labelHeight / (max max: 1).
 	
 	self columns do: [:column |
 		| bar |
