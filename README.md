@@ -2,7 +2,7 @@
 
 A programming environment and framework that supports *interactive*, *data-driven*, *scriptable* construction of graphical tools with low effort. It is implemented in Squeak/Smalltalk. [![Join the chat at https://gitter.im/hpi-swa/vivide](https://badges.gitter.im/hpi-swa/vivide.svg)](https://gitter.im/hpi-swa/vivide?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-##How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
+## How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
 
 1. Get [Squeak 5.1 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
@@ -19,17 +19,17 @@ Then, create and enter a new *animated Morphic project*. There, your can open Vi
 
 See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
-##Latest Stable Build [![Try Now](http://img.shields.io/badge/try-now-green.svg)](https://bertfreudenberg.github.io/SqueakJS/run#url=https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/&files=%5BVivide-Squeak-5.1.image,Vivide-Squeak-5.1.changes,SqueakV50.sources%5D&forceDownload=true)
+## Latest Stable Build [![Try Now](http://img.shields.io/badge/try-now-green.svg)](https://bertfreudenberg.github.io/SqueakJS/run#url=https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/&files=%5BVivide-Squeak-5.1.image,Vivide-Squeak-5.1.changes,SqueakV50.sources%5D&forceDownload=true)
 
 You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/). Additionally, you may want to get the latest [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) and [sources](http://ftp.squeak.org/sources_files/) file.
 
-##Applications
+## Applications
 
 * [CCMail](https://github.com/calmez/CCMail) - a mail client by [Conrad Calmez](https://github.com/calmez)
 * [Gramada](https://github.com/HPI-SWA-Lab/Gramada) - interactive DSL creation by [Patrick Rein](https://github/codeZeilen)
 * [Matriona](https://github.com/HPI-SWA-Lab/mod16-matriona) - tools for a new module system by [Matthias Springer](https://github.com/matthias-springer)
 
-##Videos
+## Videos
 
 Here is a screencast about exploring the file structure of a C program with treemaps:
 [![VIMEO](https://i.vimeocdn.com/video/540030443_320.jpg)](https://vimeo.com/142670997)
@@ -50,7 +50,7 @@ Here is an older screencast about how to create a code browser and modify its ap
 
 [![VIMEO](http://i.vimeocdn.com/video/434147754_320.jpg)](https://www.vimeo.com/63757592)
 
-##Acknowledgements
+## Acknowledgements
 
 We are very thankful for any feedback in the form of bug reports, discussions, or even custom applications. Vivide is mainly developed by [Marcel Taeumel](https://github.com/marceltaeumel) in context of his PhD thesis. To date, the following people also contributed to this project:
 
