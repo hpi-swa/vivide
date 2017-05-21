@@ -34,3 +34,7 @@ reset
 		
 	(self script valueOfProperty: #scrollToBottom ifAbsent: [false])
 		ifTrue: [textEdit scrollToBottom].
+		
+	self model nodes do: [:node | 
+		(node includesKey: #backgroundColor) ifTrue: [
+			textEdit color: (self model nodes first at: #backgroundColor)]]
