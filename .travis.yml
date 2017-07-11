@@ -8,6 +8,10 @@ os:
   - linux
   - osx
 
+smalltalk_edge:
+  source: hpi-swa/smalltalkCI
+  branch: dev
+
 smalltalk:
   - Squeak-trunk
   - Squeak-5.1
