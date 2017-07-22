@@ -1,0 +1,18 @@
+{
+	"category" : "Vivide-Visualizations",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectView classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"content",
+		"organization" ],
+	"name" : "ViPaneListView",
+	"pools" : [
+		 ],
+	"super" : "UiScrollArea",
+	"traitcomposition" : "TViObjectView",
+	"type" : "normal" }

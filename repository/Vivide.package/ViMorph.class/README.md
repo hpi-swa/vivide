@@ -1,0 +1,1 @@
+Support and compatibility code for morphs for the contemporary Squeak version -- if necessary.

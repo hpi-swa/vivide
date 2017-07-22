@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Visualizations-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

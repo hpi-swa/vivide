@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"adoptPaneColor:" : "mt 7/22/2017 12:14",
+		"content" : "mt 7/22/2017 11:51",
+		"initialize" : "mt 7/22/2017 13:06",
+		"model" : "mt 7/22/2017 11:41",
+		"organization" : "mt 7/22/2017 12:27",
+		"panes" : "mt 7/22/2017 13:40",
+		"process:" : "mt 7/22/2017 11:44",
+		"reset" : "mt 7/22/2017 13:11",
+		"setUp:" : "mt 7/22/2017 12:28",
+		"wantsHaloFromClick" : "mt 7/22/2017 12:21" } }
