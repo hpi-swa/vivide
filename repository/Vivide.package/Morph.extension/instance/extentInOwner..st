@@ -6,8 +6,9 @@ extentInOwner: aPoint
 	
 	self withAllOwnersDo: [:m |
 		"Assume that the world or a morph without layout policy allows for custom resizing of submorphs."
-		((((m owner == m world or: [m owner layoutPolicy isNil]) or: [m owner isNil])
+		(((((m owner == m world or: [m owner layoutPolicy isNil]) or: [m owner isNil])
 			or: [m owner layoutPolicy isKindOf: ViConstraintLayout])
+			or: [m owner layoutPolicy isKindOf: ViVerticalLayout])
 			or: [m owner layoutPolicy isTableLayout])
 			ifTrue: [
 				m extent: m extent + (aPoint - self extent).

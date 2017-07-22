@@ -12,7 +12,7 @@ drawOverlayTopOn: aCanvas
 		autoFit: true.
 			
 	aCanvas
-		fillRectangle: overlay bounds
+		fillRectangle: (self topLeft corner: overlay bounds bottomRight)
 		color: self color.
 
 	gradient := (GradientFillStyle ramp: {

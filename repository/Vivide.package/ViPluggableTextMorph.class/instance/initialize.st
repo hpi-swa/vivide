@@ -6,9 +6,9 @@ initialize
 	self
 		color: Color transparent;
 		layoutPolicy: ViOverlappingLayout new;
-		addMorph: (PluggableTextMorphPlus
+		addMorph: ((PluggableTextMorphPlus
 			on: self
 			text: #text
 			accept: #text:
 			readSelection: #selection
-			menu: nil).
+			menu: nil) balloonTextSelector: #help) .

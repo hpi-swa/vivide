@@ -13,6 +13,9 @@ updateColor
 					ifNotNil: [:vivide | vivide defaultBackgroundColor]]
 			ifFalse: [Color transparent]].
 	
+	"Support blocks in color property."
+	newColor := newColor value.
+	
 	"If we are (deeply) embedded in a tool, set our own color."
 	self owner class == ViSinglePaneEditor
 		ifFalse: [self color: newColor. ^ self].
