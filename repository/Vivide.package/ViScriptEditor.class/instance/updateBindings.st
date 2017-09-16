@@ -3,7 +3,7 @@ updateBindings
 
 	| code argumentNames argumentObjects helpPrefix helpSuffix helpScript helpBlock |
 
-	argumentNames := (RBParser parseExpression: self visibleSourceCode onError: [:msg :i | ^ self]) in: [:node | node isBlock ifTrue: [node argumentNames] ifFalse: [node receiver argumentNames]].
+	argumentNames := (RBParser parseExpression: self visibleSourceCode onError: [:msg :i | self warningSent: 'Cannot parse code.'.^ self]) in: [:node | node isBlock ifTrue: [node argumentNames] ifFalse: [node receiver argumentNames]].
 	
 	argumentNames ifEmpty: [^ self].
 
@@ -34,7 +34,7 @@ updateBindings
 		notifying: nil
 		ifFail: [^ self]
 		logged: true.
-
+		
 	[shouldPropose == true
 		ifTrue: [helpBlock valueWithArguments: self input first asList]
 		ifFalse: [

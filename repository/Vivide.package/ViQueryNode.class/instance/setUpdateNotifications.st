@@ -6,6 +6,7 @@ setUpdateNotifications
 	
 	self firstStep ifNotNil: [:f |
 		self flag: #missing. "mt: What about intermediate objects?"
+		self flag: #bug. "mt: Use #inputForChildren after cleaning up the fill-step issue: https://github.com/hpi-swa/vivide/issues/211."
 		refObjects := f process: #() within: nil.
 		
 		f nextStepsDo: [:step |

@@ -8,6 +8,7 @@ nextStepsDo: aBlock
 		step isPropertyStep
 			ifTrue: [hasProperties := true]
 			ifFalse: [
+				self flag: #bug. "mt: Consider whether properties actually merge. See ViQueryInterpreter >> #upToNextProperties."
 				(step isReferenceStep not and: [hasProperties])
 					ifTrue: [^ self]].
 		aBlock value: step].

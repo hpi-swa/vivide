@@ -39,7 +39,7 @@ interpretScriptExtraction
 					at: group
 					put: (propertiesToUse collect: [:p | (p detect: [:assoc | assoc key = #objects]
 						ifNone: [p detect: [:assoc | assoc key = #object]
-							ifNone: [Error signal: 'You must not drop object references!']]) value])
+							ifNone: [Error signal: 'Extraction step must not omit #object property!']]) value])
 				]
 		]].
 

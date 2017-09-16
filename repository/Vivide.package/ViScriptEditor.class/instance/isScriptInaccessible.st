@@ -1,3 +1,6 @@
 testing - object
 isScriptInaccessible
-	^ self firstStep inaccessibleSteps identityIncludes: self object
+	
+	^ self firstStep
+		ifNil: [false]
+		ifNotNil: [:s | s inaccessibleSteps identityIncludes: self object]

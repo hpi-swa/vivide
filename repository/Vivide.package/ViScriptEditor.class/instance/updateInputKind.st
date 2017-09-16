@@ -15,7 +15,7 @@ updateInputKind
 		
 		(ViQueryStepDefinition
 			collectBaseClassesForContext: objects
-			withTuples: (ViQueryInterpreter isCollection: objects first)) in: [:tmp |
+			withTuples: (objects allSatisfy: #isList)) in: [:tmp |
 				self inputKind: (tmp first isBehavior
 					ifTrue: [{tmp first}]
 					ifFalse: [tmp collect: [:someClasses | someClasses first]])]].

@@ -46,8 +46,8 @@ addQueryHandles
 	box addMorphBack: (Morph new color: Color transparent; extent: 20@12). "spacer"
 	
 	{
-	{'Browse scripts'. (UiFugueIcons control270SmallIcon clippedToSize: 12@12) asWireframeSunken: 0.4. Color yellow darker. #chooseQuery}.
-	{'Debug script'. ViIcons wrenchSmallSunkenIcon. Color gray: 0.85. #debugQuery}.
+	{'Choose script'. (UiFugueIcons control270SmallIcon clippedToSize: 12@12) asWireframeSunken: 0.4. Color yellow darker. #chooseQuery}.
+	{'Edit script'. ViIcons wrenchSmallSunkenIcon. Color gray: 0.85. #debugQuery}.
 	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
 	{'Add script'. ViIcons plusSmallSunkenIcon. Color green darker. #addQuery}.
 	} do: [:spec | | btn |

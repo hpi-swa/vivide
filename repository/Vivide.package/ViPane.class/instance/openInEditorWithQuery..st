@@ -4,5 +4,8 @@ openInEditorWithQuery: script
 	
 	LastHelperPane := nil.
 	self recentQueries removeAll.
+	
 	self currentQuery: script.
+	self queries: [script organization orderedSteps].
+	
 	^ self openInEditor

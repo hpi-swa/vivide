@@ -6,5 +6,7 @@ setUp: aScript
 		ifTrue: [self hasSingleSelection ifTrue: [self initializeForMultiSelection]]
 		ifFalse: [self hasMultiSelection ifTrue: [self initializeForSingleSelection]].
 
+	self morph borderWidth: (aScript valueOfProperty: #borderWidth ifAbsent: [1]).
+
 	self flag: #performance. "mt: Really needed here?"		
 	self reset.

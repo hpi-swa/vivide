@@ -2,7 +2,7 @@ operations
 doCompiledMethodReally: aMethod
 
 	self flag: #performance. "mt: Is it slow?"
-	(aMethod methodClass isMeta and: [aMethod selector endsWith: #Icon]) ifTrue: [
+	(aMethod methodClass isMeta and: [(aMethod selector endsWith: #Icon) or: [aMethod selector beginsWith: #icon]]) ifTrue: [
 		| result |
 		result := aMethod methodClass theNonMetaClass perform: aMethod selector.
 		result class == Form ifTrue: [^ result]].
