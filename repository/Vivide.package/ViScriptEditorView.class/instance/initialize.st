@@ -12,4 +12,6 @@ initialize
 	self setupBlock: [:model :container |
 		model nodes
 			ifEmpty: [	container object: nil]
-			ifNotEmpty: [:nodes | container object: (nodes first at: #object)	]].
+			ifNotEmpty: [:nodes | 
+				container object: (nodes first at: #object).
+				container context: (nodes first at: #context ifAbsent: [#()])]].

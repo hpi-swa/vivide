@@ -3,12 +3,15 @@
 		 },
 	"instance" : {
 		"adoptPaneColor:" : "mt 7/22/2017 12:14",
+		"connections" : "mt 9/16/2017 13:54",
 		"content" : "mt 7/22/2017 11:51",
+		"currentQuery" : "mt 9/16/2017 14:11",
 		"initialize" : "mt 7/22/2017 13:06",
+		"lastUpdateId" : "mt 9/16/2017 14:03",
 		"model" : "mt 7/22/2017 11:41",
 		"organization" : "mt 7/22/2017 12:27",
 		"panes" : "mt 7/22/2017 13:40",
 		"process:" : "mt 7/22/2017 11:44",
-		"reset" : "mt 7/22/2017 13:11",
+		"reset" : "mt 9/16/2017 14:36",
 		"setUp:" : "mt 7/22/2017 12:28",
 		"wantsHaloFromClick" : "mt 7/22/2017 12:21" } }

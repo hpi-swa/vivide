@@ -5,7 +5,7 @@ attachSilently
 	self isValid ifFalse: [^ false "Not allowed."].
 
 	self source in: [:pane |		
-		(pane connections includes: self)
+		((pane connections includes: self) and: [self mustBeUnique])
 			ifTrue: [^ false]
 			ifFalse: [
 				self flag: #metaScript.
@@ -13,7 +13,7 @@ attachSilently
 				
 				pane connections add: self]].
 	self target in: [:pane |
-		(pane connections includes: self)
+		((pane connections includes: self) and: [self mustBeUnique])
 			ifTrue: [^ false]
 			ifFalse: [
 				self flag: #metaScript.

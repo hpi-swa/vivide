@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects" ],
+	"name" : "ViFixedConnection",
+	"pools" : [
+		 ],
+	"super" : "ViPaneConnection",
+	"type" : "normal" }

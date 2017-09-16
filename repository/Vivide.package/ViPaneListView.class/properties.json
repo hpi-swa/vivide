@@ -9,7 +9,8 @@
 	"instvars" : [
 		"model",
 		"content",
-		"organization" ],
+		"organization",
+		"connections" ],
 	"name" : "ViPaneListView",
 	"pools" : [
 		 ],
