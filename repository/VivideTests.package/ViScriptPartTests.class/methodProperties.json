@@ -37,4 +37,5 @@
 		"test32InaccessibleSteps" : "mt 4/26/2016 10:23:54.379",
 		"test33AccessibleSteps" : "mt 4/26/2016 10:41:39.538",
 		"test34MergeConsecutiveExtractions" : "mt 4/27/2016 16:10:58.817",
-		"test35AutomaticExtractionMerged" : "mt 4/28/2016 09:40:04.062" } }
+		"test35AutomaticExtractionMerged" : "mt 4/28/2016 09:40:04.062",
+		"test36HomogeneousRelaxed" : "mt 9/12/2017 11:36" } }
