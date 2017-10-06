@@ -11,7 +11,7 @@ showAbove: aMorph
 	"Apply current color scheme."
 	VivideLight active ifNotNil: [:vivide |
 		| colorToUse |
-		colorToUse := vivide defaultBackgroundColor.
+		colorToUse := Color veryVeryLightGray.
 		self ui panel color: colorToUse.
 		
 		self ui messageLbl text

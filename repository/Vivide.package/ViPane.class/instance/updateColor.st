@@ -8,9 +8,7 @@ updateColor
 	
 	newColor := self currentQuery valueOfProperty: #color ifAbsent: [
 		(self owner == self world or: [self owner class == ViSinglePaneEditor])
-			ifTrue: [VivideLight active
-					ifNil: [Preferences uniformWindowColor]
-					ifNotNil: [:vivide | vivide defaultBackgroundColor]]
+			ifTrue: [Color veryVeryLightGray]
 			ifFalse: [Color transparent]].
 	
 	"Support blocks in color property."

@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	self
-		color: self defaultBackgroundColor darker;
+		color: Color veryVeryLightGray darker;
 		changeTableLayout;
 		listDirection: #topToBottom;  
 		cellPositioning: #topLeft;  
