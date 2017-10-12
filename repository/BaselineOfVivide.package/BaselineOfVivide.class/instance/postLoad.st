@@ -3,15 +3,15 @@ postLoad
 
 	UserInterfaceTheme allSubInstancesDo: [:uit |
 		"Underline the pattern for class-side methods."
-		#(undefinedKeyword undefinedBinary undefinedUnary patternKeyword patternBinary patternUnary) do: [:sym | | spec |
+		#(patternKeyword patternBinary patternUnary) do: [:sym | | spec |
 			"See SHTextStylerST80 for spec definition."
-			spec := (uit get: sym for: #SHTextStylerST80) asList.
+			spec := (uit get: sym for: #SHTextStylerST80) asList copy.
 			spec size > 1 ifTrue: [spec at: 2 put: (spec at: 2) asList].
 			spec isEmpty ifTrue: [spec := {nil}]. "color hint"
 			spec size = 1 ifTrue: [spec := spec, {{}}]. "text emphasis"
 			spec at: 2 put: ((spec at: 2), {TextEmphasis underlined}).
 			uit
-				set: sym for: #ViTextStyler to: spec;
+				"set: sym for: #ViTextStyler to: (uit get: sym for: #SHTextStylerST80);"
 				set: sym for: #ViTextStylerForClass to: spec]].
 	ViTextStyler applyUserInterfaceTheme.
 	ViTextStylerForClass applyUserInterfaceTheme.
