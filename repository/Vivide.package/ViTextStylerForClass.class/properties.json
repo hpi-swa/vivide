@@ -1,7 +1,7 @@
 {
 	"category" : "Vivide-Code",
 	"classinstvars" : [
-		 ],
+		"cache" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

@@ -1,5 +1,7 @@
 {
 	"class" : {
-		 },
+		"resetTextAttributesByPixelHeight" : "mt 10/12/2017 11:46",
+		"textAttributesByPixelHeight" : "mt 10/12/2017 11:45",
+		"textAttributesByPixelHeightAt:put:" : "mt 10/12/2017 11:46" },
 	"instance" : {
 		 } }
