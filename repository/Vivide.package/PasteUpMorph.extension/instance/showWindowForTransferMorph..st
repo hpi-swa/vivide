@@ -4,12 +4,14 @@ showWindowForTransferMorph: aTransferMorph
 	VivideLight active ifNil: [^ self].
 
 	aTransferMorph dragTransferType in: [:type |
-	(#(pane) includes: type)
-		ifTrue: [^ {ViSinglePaneEditor new
-			pane: aTransferMorph passenger;
-			openInWindow;
-			fullBounds; "Needed for correct geometry."
-			window}].
+	(#(pane panes) includes: type)
+		ifTrue: [^ aTransferMorph passenger asList collect: [:ea | 
+			ViSinglePaneEditor new
+				pane: ea;
+				openInWindow;
+				fullBounds; "Needed for correct geometry."
+				window]].
+
 		
 	(aTransferMorph hasFlag: #script)
 		ifTrue: [^ VivideLight active scriptArtifacts: aTransferMorph passenger].  

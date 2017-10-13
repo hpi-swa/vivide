@@ -26,3 +26,6 @@ setUp: aScript
 	(aScript valueOfProperty: #commandsBar ifAbsent: [true])
 		ifTrue: [self showCommandsBar]
 		ifFalse: [self hideCommandsBar].
+
+	self currentViews do: [:view |
+		view dragDropSpec dragTransferType: (aScript valueOfProperty: #dragType ifAbsent: [#objects])]. 

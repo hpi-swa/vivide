@@ -1,7 +1,5 @@
 initialization
 initializeEventHandler
 
-	self eventHandler: UiEventHandler new.
-	self eventHandler setProperty: #handlesMouseWheel toValue: [true].
-	self connect: self eventHandler signal: #mouseWheelUp: toSelector: #zoomInEvent:.
-	self connect: self eventHandler signal: #mouseWheelDown: toSelector: #zoomOutEvent:.
+	self connect: self scroller eventHandler signal: #mouseWheelUp: toSelector: #zoomInEvent:.
+	self connect: self scroller eventHandler signal: #mouseWheelDown: toSelector: #zoomOutEvent:.

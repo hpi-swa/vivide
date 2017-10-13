@@ -11,7 +11,8 @@ initializeToolbarOperations
 			{#activateWizard. 'Activate wizard'. UiSilkIcons wandIcon. nil. 2}.
 			{#deactivateWizard. 'Deactivate wizard'. ViIcons blankIcon. nil. 2}.
 			{#openScript. 'Open script'. UiFugueIcons controlIcon. nil. 3}.			
-			{#interpretScript. 'Interpret script'. ViIcons blankIcon. nil. 3}.	
+			{#interpretScript. 'Interpret script'. ViIcons blankIcon. nil. 3}.
+			{#exploreViews. 'Browse views'. UiFugueIcons picturesStackIcon. nil. 3}.
 			}].
 		
 	self toolbar rightPanel
