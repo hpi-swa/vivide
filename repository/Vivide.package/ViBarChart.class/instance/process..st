@@ -3,7 +3,9 @@ process: root
 
 	self content removeAllMorphs.
 	 
-	max := (root nodes collect: [:node | node at: #value ifAbsent: [0]]) max.
+	max := root nodes
+		ifEmpty: [0]
+		ifNotEmpty: [:nodes | (nodes collect: [:node | node at: #value ifAbsent: [0]]) max].
 	
 	root nodes do: [:node |
 		self content addMorphBack: (self createColumnForNode: node)].

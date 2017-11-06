@@ -1,7 +1,6 @@
 initialization
 initializeForContainerClass: class
 
-	| container |
 	container := class new
 		changeTableLayout;
 		hResizing: #spaceFill;

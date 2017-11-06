@@ -2,6 +2,8 @@ do-its
 evaluateSelectionAndDo: aBlock
 
 	| result b |
+	self lineSelectAndEmptyCheck: [^ nil].
+	
 	b := [:obj | 
 		self
 			logScript: self selection asString
@@ -10,7 +12,7 @@ evaluateSelectionAndDo: aBlock
 			result: obj.	
 		aBlock value: obj].
 	
-	self morph expressionAboutToBeEvaluated.
+	self morph expressionAboutToBeEvaluated: self selection asString.
 	result := super evaluateSelectionAndDo: b.
 	self morph expressionEvaluated: result.  
 	^ result  

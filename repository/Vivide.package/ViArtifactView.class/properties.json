@@ -2,16 +2,17 @@
 	"category" : "Vivide-Visualizations",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViObjectView classTrait",
+	"classtraitcomposition" : "TViObjectView classTrait + TViOverlayMessages classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"model",
-		"setupBlock" ],
+		"setupBlock",
+		"container" ],
 	"name" : "ViArtifactView",
 	"pools" : [
 		 ],
 	"super" : "Morph",
-	"traitcomposition" : "TViObjectView",
+	"traitcomposition" : "TViObjectView + TViOverlayMessages",
 	"type" : "normal" }

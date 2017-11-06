@@ -30,7 +30,7 @@ initializeArtifact
 	self connect: edit eventHandler signal: #focusReceived toSelector: #highlightAffectedPanes.
 	self connect: edit eventHandler signal: #focusLost toSelector: #discardPaneHighlights.
 
-	self sgConnectSignal: #expressionAboutToBeEvaluated toSelector: #updateBindings. 
+	self sgConnectSignal: #expressionAboutToBeEvaluated: toSelector: #updateBindings. 
 
 	hintBox := Morph new
 		color: Color transparent;
