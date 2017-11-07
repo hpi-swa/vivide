@@ -1,24 +1,25 @@
 accessing - view
-view: view
+view: newView
 
 	self view ifNotNil: [:v |
 		self model disconnectSignal: #modelReset from: v selector: #process:.
 		self model disconnectSignal: #propertiesChanged from: v selector: #process:.
 		self model disconnectSignal: #propertiesChanged: from: v selector: #process:.
-		v clear; delete].
+		v clear; delete.
+		v disconnectSignal: #yield: from: self selector: #notifyChangedSelection:].
 	
-	view ifNil: [^ self].
+	newView ifNil: [^ self].
 	
 	self
-		connect: view signal: #yield:
+		connect: newView signal: #yield:
 		toSelector: #notifyChangedSelection:.
 		
-	view connect: self model signal: #modelReset toSelector: #process: pattern: #(0).
-	view connect: self model signal: #propertiesChanged toSelector: #process: pattern: #(0).
-	view connect: self model signal: #propertiesChanged: toSelector: #process: pattern: #(0).
+	newView connect: self model signal: #modelReset toSelector: #process: pattern: #(0).
+	newView connect: self model signal: #propertiesChanged toSelector: #process: pattern: #(0).
+	newView connect: self model signal: #propertiesChanged: toSelector: #process: pattern: #(0).
 
-	view
+	newView
 		hResizing: #spaceFill;
 		vResizing: #spaceFill.
 
-	self addMorphBack: view.
+	self addMorphBack: newView.
