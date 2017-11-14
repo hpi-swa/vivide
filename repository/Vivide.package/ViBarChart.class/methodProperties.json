@@ -2,11 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"columns" : "mt 9/10/2015 15:08",
-		"createColumnForNode:" : "mt 2/2/2017 17:38",
+		"columns" : "mt 11/14/2017 15:35",
+		"createColumnForNode:" : "mt 11/14/2017 16:51",
+		"createColumnForScale" : "mt 11/14/2017 16:49",
 		"indicateKeyboardFocus" : "mt 2/2/2017 17:21",
 		"initialize" : "mt 9/10/2015 15:28",
+		"initializeEventHandler" : "mt 11/14/2017 16:43",
+		"initializeScroller" : "mt 11/14/2017 16:43",
 		"labelHeight" : "mt 2/2/2017 17:39",
-		"process:" : "mt 11/6/2017 15:50",
-		"setUp:" : "mt 2/2/2017 17:37",
-		"updateScale:" : "mt 2/2/2017 17:35" } }
+		"mouseEnter:on:" : "mt 11/14/2017 16:04",
+		"mouseLeave:on:" : "mt 11/14/2017 16:04",
+		"process:" : "mt 11/14/2017 16:29",
+		"setUp:" : "mt 11/14/2017 16:16",
+		"startDrag:event:source:" : "mt 11/14/2017 16:07",
+		"updateScale:" : "mt 11/14/2017 17:01",
+		"zoomFit" : "mt 11/14/2017 16:44" } }
