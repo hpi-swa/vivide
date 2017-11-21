@@ -11,15 +11,6 @@ chooseMostAppropriateQuery
 	
 	VivideLight useClassicMode
 		ifTrue: [^ self].
-	
-	defaultQueryCheck := {
-		[:o | o isBehavior].
-		[:o | o class == PackageInfo].
-		[:o | o class == ViAnimatedImageMorph].
-		[:o | o class == ViExperiment].
-	"	[:o | o isKindOf: ViObjectHistory]."
-	"	[:o | o isKindOf: MessageTally]"
-	}.
 
-	(self objects size = 1 and: [defaultQueryCheck anySatisfy: [:chk | chk value: self objects first]])
+	(self objects size = 1 and: [self objects anySatisfy: [:obj | obj hasVivideTools]])
 		ifTrue: [self currentQuery: self mostAppropriateQuery].
