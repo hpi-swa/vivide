@@ -30,7 +30,7 @@ createColumnForNode: node
 			color: Color transparent;
 			lock;
 			yourself.
-		label firstSubmorph left: label firstSubmorph left - label firstSubmorph width.
+		label firstSubmorph left: label firstSubmorph left - (TextStyle defaultFont widthOfString: (node at: #text ifAbsent: [''])) - 5.
 		label extent: TextStyle defaultFont height @ self labelHeight].
 	
 	column addAllMorphs: {space. bar}.
