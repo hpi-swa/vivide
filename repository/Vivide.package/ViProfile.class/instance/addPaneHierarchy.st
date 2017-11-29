@@ -17,6 +17,6 @@ addPaneHierarchy
 		[:object | (object isKindOf: ViMultiPaneWidget)
 			ifTrue: [object panes]
 			ifFalse: [#()]].
-		[:panes | panes sortBy: [:p1 :p2 | p1 topLeft <= p2 topLeft]].
+		[:panes | panes sorted: [:p1 :p2 | p1 topLeft <= p2 topLeft]].
 		2
 	} asScript.

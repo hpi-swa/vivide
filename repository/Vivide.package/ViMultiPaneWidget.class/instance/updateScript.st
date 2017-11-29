@@ -13,7 +13,7 @@ updateScript
 			script organization == self organization])].
 	
 	paneSpecs := (self panes
-		sortBy: [:p1 :p2 | p1 topLeft <= p2 topLeft "keep it stable"])
+		sorted: [:p1 :p2 | p1 topLeft <= p2 topLeft "keep it stable"])
 		collect: [:pane | pane asDictionary].
 
 	scripts := (ViScriptPart

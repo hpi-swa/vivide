@@ -11,7 +11,7 @@ templateForSourceCode: code
 		onError: [:msg :idx | ^ template -> properties].
 
 	(node sentMessages anySatisfy: [:msg |
-		#(collect: select: gather: reject: reduce: inject: asGroups sort: sorted: sorted sortBy:) anySatisfy: [:verb |  
+		#(collect: select: gather: reject: reduce: inject: asGroups sort: sorted: sorted) anySatisfy: [:verb |  
 			msg beginsWith: verb]]) ifTrue: [
 			template := self templateAllAtOnce].
 	

@@ -7,6 +7,6 @@ addPackages
 			#isGlobal -> true.
 			#priority -> 500.
 			#view -> ViTreeView}.
-		[:packages | packages sortBy: [:p1 :p2 | p1 packageName <= p2 packageName]].
+		[:packages | packages sorted: [:p1 :p2 | p1 packageName <= p2 packageName]].
 		#defaultPropertiesExtended.
 	} asScript.
