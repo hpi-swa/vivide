@@ -7,7 +7,7 @@ def8082cd6248521c498e1623b3ddd626bf
 	[:objects | objects collect: [:object | {
 	object isVariableBinding
 		ifTrue: [object value isBehavior
-			ifTrue: ['** inheritance **']
+			ifTrue: ['** inheritance  **']
 			ifFalse: ['** variables **']]
 		ifFalse: [object isBehavior
 			ifTrue: ['** traits **']
@@ -25,7 +25,7 @@ def8082cd6248521c498e1623b3ddd626bf
 	[:objects | objects collect: [:object | {
 	object isVariableBinding
 		ifTrue: [object value isBehavior
-			ifTrue: [''** inheritance **'']
+			ifTrue: [''** inheritance  **'']
 			ifFalse: [''** variables **'']]
 		ifFalse: [object isBehavior
 			ifTrue: [''** traits **'']
