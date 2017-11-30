@@ -11,3 +11,5 @@ start
 			delay wait.
 		] repeat.
 	] forkAt: Processor highIOPriority.
+
+	process name: (process hash asString first: 5),  ': the stack watcher'.

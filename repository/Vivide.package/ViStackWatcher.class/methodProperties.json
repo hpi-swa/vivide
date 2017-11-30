@@ -8,10 +8,11 @@
 		"secondCall" : "mt 4/14/2015 11:31",
 		"thirdCall" : "mt 4/14/2015 11:31" },
 	"instance" : {
-		"checkForEndlessRecursion" : "mt 10/21/2015 10:51:57",
-		"debugProcess:" : "mt 4/14/2015 11:33",
+		"checkForEndlessRecursion" : "mt 11/30/2017 12:23",
+		"debugProcess:" : "mt 11/30/2017 12:08",
 		"endlessRecursionDetected" : "mt 10/18/2015 16:01:05",
 		"isRunning" : "mt 10/18/2015 17:01:46",
-		"start" : "mt 10/18/2015 16:17:03",
-		"startWatchOnly:" : "mt 10/18/2015 16:14:51",
+		"start" : "mt 11/30/2017 11:40",
+		"startOn:watchOnly:" : "mt 11/30/2017 12:11",
+		"startWatchOnly:" : "mt 11/30/2017 11:45",
 		"stop" : "mt 10/18/2015 16:17:06" } }

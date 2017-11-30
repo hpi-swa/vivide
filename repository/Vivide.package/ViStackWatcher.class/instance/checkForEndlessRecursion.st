@@ -5,6 +5,7 @@ checkForEndlessRecursion
 	windowSize := 30.
 	target := watchedProcess ifNil: [Project current uiProcess].
 	target ifNil: [^ self]. "when switching projects..."
+	target isSuspended ifTrue: [^ self].
 	target suspendedContext ifNil: [^ self].
 	
 	stack := target suspendedContext stackOfSize: 90.
@@ -26,6 +27,7 @@ checkForEndlessRecursion
 			ifFalse: [^ self "Everything looks fine"]].
 				
 	"Recursion detected!"
+	target suspend.
 	watchOnly == true
-		ifTrue: [target suspend. self endlessRecursionDetected]
+		ifTrue: [self endlessRecursionDetected]
 		ifFalse: [self debugProcess: target].
