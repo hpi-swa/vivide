@@ -9,7 +9,10 @@
 		"max",
 		"showLabel",
 		"labelHeight",
-		"numLines" ],
+		"numLines",
+		"animateBars",
+		"animationDelay",
+		"animationDuration" ],
 	"name" : "ViBarChart",
 	"pools" : [
 		 ],

@@ -8,7 +8,6 @@ createColumnForNode: node
 		listDirection: #topToBottom;
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
-		layoutInset: (0@5 corner: 0@5);
 		yourself.
 	space := Morph new
 		changeTableLayout;

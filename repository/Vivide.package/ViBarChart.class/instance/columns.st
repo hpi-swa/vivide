@@ -3,4 +3,4 @@ columns
 
 	^ self content submorphs
 		ifEmpty: [#()]
-		ifNotEmpty: [:m | m allButFirst]
+		ifNotEmpty: [:m | m allButFirst: 2]

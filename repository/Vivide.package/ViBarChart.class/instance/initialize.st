@@ -8,6 +8,7 @@ initialize
 	self content
 		changeTableLayout;
 		cellInset: 1;
+		layoutInset: 5;
 		listDirection: #leftToRight;
 		cellPositioning: #bottomCenter.
  

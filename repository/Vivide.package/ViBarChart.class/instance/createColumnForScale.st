@@ -15,7 +15,6 @@ createColumnForScale
 		cellPositioning: #rightCenter;
 		hResizing: #shrinkWrap;
 		vResizing: #spaceFill;
-		layoutInset: 5;
 		yourself.
 
 	parts
