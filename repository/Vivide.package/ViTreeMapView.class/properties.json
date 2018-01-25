@@ -13,7 +13,8 @@
 		"selectedItems",
 		"sortByWeight",
 		"layout",
-		"minWeight" ],
+		"minWeight",
+		"defaultWeight" ],
 	"name" : "ViTreeMapView",
 	"pools" : [
 		 ],

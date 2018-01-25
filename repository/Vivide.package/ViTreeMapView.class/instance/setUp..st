@@ -8,3 +8,4 @@ setUp: aScript
 	sortByWeight := aScript valueOfProperty: #sort.
 	layout := aScript valueOfProperty: #layout.
 	minWeight := aScript valueOfProperty: #minWeight ifAbsent: [0].
+	defaultWeight := aScript valueOfProperty: #defaultWeight ifAbsent: [1].

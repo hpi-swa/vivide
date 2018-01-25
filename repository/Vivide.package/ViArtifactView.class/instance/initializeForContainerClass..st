@@ -9,9 +9,10 @@ initializeForContainerClass: class
 		yourself.
 	
 	"Never need a resize handle because the view/pane will take care of it."
-	container resizeHandle delete.
-	container resizeHandle fadeInInstantly.
-	container resizeHandle: nil.
+	container resizeHandle ifNotNil: [:handle |
+		handle delete.
+		handle fadeInInstantly.
+		container resizeHandle: nil].
 	container artifact vResizing: #spaceFill.
 	
 	"No controls in this view."
