@@ -5,4 +5,7 @@ addScript: aScript
 	(self organization stepById: aScript id)
 		ifNotNil: [:script | script unregister].
 	
-	aScript adoptOrganization: self organization.  
+	aScript adoptOrganization: self organization.
+
+	"Remove custom colors for global/profile scripts."
+	aScript setProperty: #color toValue: nil.

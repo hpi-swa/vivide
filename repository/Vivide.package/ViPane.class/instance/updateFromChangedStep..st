@@ -11,8 +11,8 @@ updateFromChangedStep: evt
 	evt isPropertiesModified
 		ifTrue: [^ self updateFromChangedStepProperties: evt].
 
-	evt isRenamed
-		ifTrue: [^ self].
+	"evt isRenamed
+		ifTrue: [^ self]."
 		
 	self currentQuery allStepsDo: [:step |
 		step == evt item ifTrue: [self triggerUpdateView. ^ self]].

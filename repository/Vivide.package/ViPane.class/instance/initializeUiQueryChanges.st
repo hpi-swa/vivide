@@ -8,5 +8,9 @@ initializeUiQueryChanges
 		using: #updateFromChangedStep:;
 		notify: self
 		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		change: RenamedEvent changeKind
+		using: #updateFromRenamedStep:;
+		notify: self
+		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
 		change: DoItEvent changeKind
 		using: #updateFromQueryEvaluation:.

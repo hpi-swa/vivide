@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isHomogeneousRelaxed
 	"Only similar chains of properties?"
 	

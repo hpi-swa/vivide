@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isSpecial
 	"Special queries have a custom id."
 	

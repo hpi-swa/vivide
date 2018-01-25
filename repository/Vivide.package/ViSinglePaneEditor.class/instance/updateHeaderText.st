@@ -2,6 +2,14 @@ updating
 updateHeaderText
 
 	| scriptsSummary objectsSummary |
+	
+	"Simplify visual appearance for try-outs."
+	self pane isExperimentalTool
+		ifTrue: [^ self headerText: (self pane currentQuery label ifNil: [''])].
+	"Make script editor more explicit."
+	self pane isScriptEditor
+		ifTrue: [^ self headerText: 'Script Editor'].
+	
 	scriptsSummary := (ViLabelService doObject: self pane) asString.
 	
 	self flag: #noStreamsSupport. "mt: Streams do not have a size..."

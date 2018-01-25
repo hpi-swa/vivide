@@ -5,6 +5,10 @@ initializeMetaScriptFromPane: pane
 	metaScript := ViScriptPart convertPanes: {pane asDictionary}.
 	metaWidget := ViMultiPaneTiled new addPane: pane; yourself.
 
+	"Preserve window color and label."
+	metaScript color: pane currentQuery color.
+	metaScript label: pane currentQuery label.
+
 	"Adopt organization of single pane's script."
 	metaScript adoptOrganization: pane currentQuery organization.
 	metaWidget adoptOrganization: pane currentQuery organization.

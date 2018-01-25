@@ -11,13 +11,15 @@ showAbove: aMorph
 	"Apply current color scheme."
 	VivideLight active ifNotNil: [:vivide |
 		| colorToUse |
-		colorToUse := Color veryVeryLightGray.
+		colorToUse := aMorph containingWindow
+			ifNil: [Color veryVeryLightGray]
+			ifNotNil: [:wnd | wnd color].
 		self ui panel color: colorToUse.
 		
 		self ui messageLbl text
-			addAttribute: (TextColor color: colorToUse negated).
+			addAttribute: (TextColor color: (colorToUse adjustBrightness: -0.6)).
 		self ui titleLbl text
-			addAttribute: (TextColor color: colorToUse negated).
+			addAttribute: (TextColor color: (colorToUse adjustBrightness: -0.6)).
 		
 		self ui buttonContainer submorphs do: [:button |
 			button color: colorToUse]].
