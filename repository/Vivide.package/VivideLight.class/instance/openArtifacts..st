@@ -22,4 +22,4 @@ openArtifacts: someObjects
 	
 	^ VivideLight useClassicMode
 		ifTrue: [ViPane chooseQueryFor: objects]
-		ifFalse: [ViSinglePaneEditor open: #artifacts for: objects]
+		ifFalse: [self openScript: #artifacts withObjects: objects]

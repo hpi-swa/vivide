@@ -19,9 +19,7 @@ scriptArtifacts: someObjects
 	"Flatten nested collections if feasible."
 	objects := objects gather: [:o | o asList].
 	
-	toolWnd := ViSinglePaneEditor
-		open: script
-		for: objects.
+	toolWnd := self openScript: script withObjects: objects.
 	editorWnd := toolWnd editor pane debugQuery.
 
 	^ {toolWnd. editorWnd}

@@ -1,4 +1,4 @@
 actions - open
 openScript: script
 
-	^ ViSinglePaneEditor open: script for: {}
+	^ self openScript: script withObjects: {}

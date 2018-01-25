@@ -1,8 +1,7 @@
 as yet unclassified
 editScriptWith: someObjects
 
-	^ ViSinglePaneEditor
-		open: #artifacts
-		for: (someObjects
+	^ #artifacts openScriptWith: 
+		(someObjects
 			ifEmpty: [{}]
 			ifNotEmpty: [{someObjects}]), self steps

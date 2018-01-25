@@ -17,7 +17,7 @@ hardcodedScriptIds
 					symbol includesSubstring: token caseSensitive: false]])]].
 	
 	"Add constructors for (single-pane) editors."
-	scriptSelectors addAll: #(new:for: open:for:).
+	scriptSelectors addAll: #(new:for: open:for: openScript:withObjects:).
 
 	scriptIds := IdentitySet new.
 	SystemNavigation default allSelectorsAndMethodsDo: [:b :s :method |
@@ -31,10 +31,11 @@ hardcodedScriptIds
 					and: [node receiver value isSymbol]) "Ignore script strings."
 						ifTrue: [scriptIds add: node receiver value].
 						
-				((((node isMessage "ViSinglePaneEditor new: #artifacts for: someObjects"
+				(((((node isMessage "ViSinglePaneEditor new: #artifacts for: someObjects; VivideLight openScript:withObjects:"
+					and: [node numArgs > 0])
 					and: [scriptSelectors includes: node selector]) "#new:for:"
-					and: [node receiver isVariable]) "ViSinglePaneEditor"
-					and: [(Smalltalk at: node receiver token value asSymbol ifAbsent: []) isBehavior])
+					and: [node receiver isVariable]) "ViSinglePaneEditor or self"
+					and: [(#(self super) includes: node receiver token value) or: [(Smalltalk classNamed: node receiver token value) notNil]])
 					and: [node arguments first value isSymbol]) "no temps"
 						ifTrue: [scriptIds add: node arguments first value].
 	]]].

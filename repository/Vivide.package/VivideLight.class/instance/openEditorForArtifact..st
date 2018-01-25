@@ -7,4 +7,4 @@ openEditorForArtifact: anArtifactContainer
 	anArtifactContainer hasUnacceptedChanges
 		ifFalse: [anArtifactContainer delete].
 		
-	^ ViSinglePaneEditor open: #artifacts for: {object}
+	^ self openScript: #artifacts withObjects: {object}

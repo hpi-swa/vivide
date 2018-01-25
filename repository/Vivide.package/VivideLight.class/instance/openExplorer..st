@@ -1,4 +1,4 @@
 actions - open
 openExplorer: anObject
 
-	^ #objectExplorer openScriptWith: anObject asList
+	^ self openScript: #objectExplorer withObjects: anObject asList

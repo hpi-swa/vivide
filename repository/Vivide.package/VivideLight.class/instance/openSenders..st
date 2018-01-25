@@ -1,4 +1,4 @@
 actions - open
 openSenders: aSymbol
 
-	^ ViSinglePaneEditor open: #senders for: {aSymbol}
+	^ self openScript: #senders withObjects: {aSymbol}
