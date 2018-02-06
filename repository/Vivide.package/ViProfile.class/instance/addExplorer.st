@@ -5,6 +5,7 @@ addExplorer
 	
 		[:in :out | out addAll: in] asScript -> {
 			#label -> 'Inspector'.
+			#windowTitle -> #simple.
 			#view -> ViExplorerView.
 			#id -> #objectExplorer.
 			#priority -> 500}.

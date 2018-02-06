@@ -23,7 +23,7 @@ openInWindowBounds: bounds grab: boolean
 	window extent: extent.
 	
 	"Move bounds right to currently focused window."
-	ViSystemWindow activeWindow ifNotNil: [:tw |
+	ViSystemWindow focusedWindow ifNotNil: [:tw |
 		tw bounds in: [:b |
 			b right + window width < ViActiveVivide world right
 				ifTrue: [window topLeft: b topRight]]].

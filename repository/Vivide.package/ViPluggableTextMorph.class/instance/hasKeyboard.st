@@ -1,4 +1,3 @@
 as yet unclassified
 hasKeyboard
-
-	^ self container hasKeyboard
+	^ self textMorph hasKeyboard

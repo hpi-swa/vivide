@@ -13,8 +13,8 @@ initialize
 					ifFalse: [container object: objects]].
 		container editVisible: true.
 		"container turnOnAutoRefresh."
-		container sourceCodeEdit
-			theText: '"Enter code here..."';
-			selectAll].
+"		container sourceCodeEdit
+			theText: '';
+			selectAll"].
 
 	self connect: self container contentTree signal: #selectionChanged: toSelector: #selectObjects:.
