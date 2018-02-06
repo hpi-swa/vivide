@@ -2,6 +2,8 @@ initialization
 open 
 	"See #close."
 
+	TheWorldMainDockingBar showWorldMainDockingBar: false.	
+
 	self openInWorld.
 	
 	self assert: self world == ActiveWorld.

@@ -8,9 +8,9 @@ initialize
 		changeTableLayout;
 		listDirection: #topToBottom;  
 		cellPositioning: #topLeft;  
-		cellInset: 20;
+		cellInset: 5;
 		vResizing: #spaceFill;
-		hResizing: #rigid; width: 200;
+		hResizing: #rigid; width: 150;
 		setToAdhereToEdge: #left;
 		beSticky.
 	
@@ -23,4 +23,4 @@ initialize
 				initializeObjectsBar;
 				initializeLocator].
 	
-	self addAllMorphs: {titleBar.objectsBar}.
+	self addAllMorphs: {titleBar. objectsBar}.

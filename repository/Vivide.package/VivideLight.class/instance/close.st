@@ -15,3 +15,5 @@ close
 		ifTrue: [ActiveVivide := nil].
 
 	self delete.
+
+	TheWorldMainDockingBar showWorldMainDockingBar: true.

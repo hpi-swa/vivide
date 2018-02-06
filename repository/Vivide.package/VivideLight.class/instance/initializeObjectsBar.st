@@ -9,4 +9,4 @@ initializeObjectsBar
 
 	objectsBar resizeHandle
 		target: self;
-		minSize: 200.
+		minSize: 150.

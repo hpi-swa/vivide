@@ -1,7 +1,7 @@
 initialization
 initializeTitleBar
 
-	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn helpBtn |
+	| closeBtn closeWndBtn feedbackBtn profileLabel changeProfileBtn helpBtn clock fullscreenBtn |
 	titleBar := Morph new
 		color: Color veryVeryLightGray;
 		changeTableLayout;
@@ -11,11 +11,26 @@ initializeTitleBar
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap.
 	
+	clock := ClockMorph new
+			font: TextStyle defaultFont;
+			color: (Color fromString: '#444444');
+			show24hr: true;
+			showSeconds: true;
+			yourself.
+	
 	closeBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
+		balloonText: 'Close Vivide';
 		icon: ViIcons crossSmallSunkenIcon.
 	self connect: closeBtn signal: #clicked: toSelector: #close.
+	
+	fullscreenBtn := UiToolButton new
+		buttonStyle: #iconOnly;
+		color: Color veryVeryLightGray;
+		balloonText: 'Toggle full screen mode';
+		icon: (MenuIcons fullscreenWireframeIconColorized: (Color fromString: '#444444')).
+	self connect: fullscreenBtn signal: #clicked: to: DisplayScreen selector: #toggleFullScreen.
 	
 	closeWndBtn := UiToolButton new
 		buttonStyle: #iconOnly;
@@ -27,7 +42,7 @@ initializeTitleBar
 	changeProfileBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
-		balloonText: 'Switch user profile.';
+		balloonText: 'Current profile: ', ViProfile active label;
 		icon: UiFugueIcons userIcon asWireframeSunken.
 	self connect: changeProfileBtn signal: #clicked: to: VivideLight selector: #open.
 
@@ -59,11 +74,14 @@ initializeTitleBar
 	
 	titleBar addAllMorphs: {
 		closeBtn.
-		(ViIcons vivideLogo asWireframeSunken: 0.45) asMorph.
 		UiSpacer new orientation: #horizontal.
-		updateBtn.
+		clock.
+		"(ViIcons vivideLogo asWireframeSunken: 0.45) asMorph."
+		UiSpacer new orientation: #horizontal.
+		"updateBtn."
 		changeProfileBtn.
 		closeWndBtn.
-		helpBtn.
-		profileLabel}.
-	updateBtn hideFull.
+		fullscreenBtn.
+		"helpBtn."}.
+		
+	"updateBtn hideFull."
