@@ -4,8 +4,8 @@ updateHeaderText
 	| scriptsSummary objectsSummary |
 	
 	"Simplify visual appearance for try-outs."
-	(self pane isExperimentalTool or: [(self pane currentQuery valueOfProperty: #windowTitle ifAbsent: [#full]) = #simple])
-		ifTrue: [^ self headerText: (self pane currentQuery label ifNil: [''])].
+	(self pane isExperimentalTool or: [self pane useSimpleWindowTitle])
+		ifTrue: [^ self headerText: (self pane currentQuery ifNil: [''] ifNotNil: [:q | q label ifNil: ['']])].
 	"Make script editor more explicit."
 	self pane isScriptEditor
 		ifTrue: [^ self headerText: 'Script Editor'].
