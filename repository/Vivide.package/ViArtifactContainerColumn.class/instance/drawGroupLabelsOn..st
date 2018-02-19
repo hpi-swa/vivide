@@ -2,23 +2,29 @@ drawing
 drawGroupLabelsOn: aCanvas
 	"Depends on layouting. See ViArtifactContainerColumnLayout for space dimensions."
 
-	| lastGroup label |
+	| lastGroup label font |
 	lastGroup := nil.
+	font := Preferences standardButtonFont.
+	
 	self artifactContainers do: [:container | 		
 		(lastGroup ~= container group and: [container group notNil]) ifTrue: [
 			aCanvas
-				fillRectangle: (container topLeft - (0@12) corner: container topRight)
+				fillRectangle: (container topLeft - (0@ font height) corner: container topRight)
 				color: Color white.
 			
 			aCanvas
-				line: (self left + 5) @ (container top - 5)
-				to: (self right - 5) @ (container top - 5)
-				color: (Color fromString: #AAAAAA).
+				line: (self left + 5) @ (container top - (font height // 2))
+				to: (self right - 5) @ (container top - (font height // 2))
+				color: (Color gray: 0.66).
 			
-			label := ('<font family="Bitmap Segoe UI" size="10" color="#AAAAAA">', container group asString, '</font>') asHtmlText asMorph.
+			label := container group asString asText.
+			label
+				addAttribute: (TextFontReference toFont: font);
+				addAttribute: (TextColor color: (Color gray: 0.66)).
+			label := label asMorph.
 			label
 				autoFit: true;
-				topLeft: (container left + (container width - label width // 2)) @ (container top - 13).
+				topLeft: (container left + (container width - label width // 2)) @ (container top - font height).
 
 			aCanvas
 				fillRectangle: (label bounds outsetBy: (5@ -5 corner: 5@ -5))

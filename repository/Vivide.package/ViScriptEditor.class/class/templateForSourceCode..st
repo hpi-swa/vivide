@@ -11,8 +11,7 @@ templateForSourceCode: code
 		onError: [:msg :idx | ^ template -> properties].
 
 	(node sentMessages anySatisfy: [:msg |
-		#(collect: select: gather: reject: reduce: inject: asGroups sort: sorted: sorted) anySatisfy: [:verb |  
-			msg beginsWith: verb]]) ifTrue: [
+		self isTransformationSelector: msg]) ifTrue: [
 			template := self templateAllAtOnce].
 	
 	"Works just in script editor because it is a direct lookup otherwise."

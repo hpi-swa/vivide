@@ -2,7 +2,7 @@ initialization
 initializeSecondaryList
 
 	secondaryList := UiListView new
-		width: 200;
+		width: (TextStyle defaultFont widthOf: $m) * 15;
 		color: self highlightColor;
 		listSpec: (UiItemViewColumnSpec newFrom: {#text -> #text. #icon -> #icon});
 		selectionMode: UiViewExtendedSelection;

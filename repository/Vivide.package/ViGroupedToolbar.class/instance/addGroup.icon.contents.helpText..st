@@ -5,7 +5,7 @@ addGroup: label icon: aForm contents: blockOrList helpText: aString
 		contents: blockOrList;
 		helpText: aString).
 	
-	primaryList addMorphBack: (aForm asMorph balloonText: label).
-	secondaryList height: (primaryList fullBounds height max: 100).
+	primaryList addMorphBack: (aForm scaledToDisplay asMorph balloonText: label).
+	secondaryList height: (primaryList fullBounds height max: TextStyle defaultFont height * 6).
 	
 	^ self groups last value

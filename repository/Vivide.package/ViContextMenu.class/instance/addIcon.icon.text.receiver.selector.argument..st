@@ -6,7 +6,7 @@ addIcon: aForm icon: anotherForm text: aString receiver: anObject selector: aSym
 		color: (Color gray: 0.85);
 		buttonStyle: (aForm ifNil: [#textBesideIcon] ifNotNil: [#iconOnly]);
 		balloonText: aString;
-		icon: aForm;
+		icon: aForm scaledToDisplay;
 		setIcon: anotherForm.
 	
 	arg

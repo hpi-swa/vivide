@@ -9,7 +9,7 @@ layout: anArtifactContainerColumn in: newBounds
 			width: anArtifactContainerColumn width;
 			topLeft: offset + (0@ ((lastGroup = container group or: [container group isNil])
 				ifTrue: [0]
-				ifFalse: [12])).
+				ifFalse: [Preferences standardButtonFont height])).
 		container fullBounds.
 		
 		container group ifNotNil: [
