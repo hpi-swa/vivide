@@ -15,4 +15,5 @@ stepobjectExplorer
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 November 2015 11:56:40 am').
 (#priority -> 500).
-(#view -> ViExplorerView)}))})
+(#view -> ViExplorerView).
+(#windowTitle -> #simple)}))})

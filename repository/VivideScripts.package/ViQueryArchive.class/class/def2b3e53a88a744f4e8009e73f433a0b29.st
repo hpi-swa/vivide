@@ -4,7 +4,11 @@ def2b3e53a88a744f4e8009e73f433a0b29
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | (
-	[:objects | objects collect: [:group | {{#separator. {{('<font size="8" color="#AAAAAA">' , (ViLabelStringService doObject: group first) , '</font>') asHtmlText}}}. group}]]
+	[:objects | objects collect: [:group | {{#separator. {{
+	(ViLabelStringService doObject: group first) asText
+		addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
+		addAttribute: (TextColor color: (Color gray: 0.66));
+		yourself}}}. group}]]
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
@@ -16,7 +20,11 @@ def2b3e53a88a744f4e8009e73f433a0b29
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 May 2015 4:36:46 pm')})).
 (#sourceCode -> '[:in :out | (
-	[:objects | objects collect: [:group | {{#separator. {{(''<font size="8" color="#AAAAAA">'' , (ViLabelStringService doObject: group first) , ''</font>'') asHtmlText}}}. group}]]
+	[:objects | objects collect: [:group | {{#separator. {{
+	(ViLabelStringService doObject: group first) asText
+		addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
+		addAttribute: (TextColor color: (Color gray: 0.66));
+		yourself}}}. group}]]
 		value: in) do: [:result |
 			(ViQueryInterpreter isCollection: result)
 				ifTrue: [out addAll: result]
