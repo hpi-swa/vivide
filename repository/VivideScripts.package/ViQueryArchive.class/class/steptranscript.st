@@ -3,13 +3,20 @@ steptranscript
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryTransformStep).
-(#definition -> #'64d8a552-c567-6b4e-aa78-382859927a24').
-(#iconCode -> 'ViEclipseIcons consoleViewIcon').
+(#class -> ViScriptPart).
+(#definition -> #'947b5711-7f96-b84e-b377-552af88bcea8').
+(#iconCode -> 'UiFugueIcons applicationTextIcon').
 (#id -> #transcript).
+(#isProperty -> false).
+(#isReference -> false).
 (#label -> 'Transcript').
-(#next -> #'28be6316-8868-744c-9db7-0ec219020611').
+(#next -> #'a6cec8a8-3004-2247-9d7c-1eb029cb617c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '13 September 2013 6:06:33 pm').
-(#priority -> 830)}))})
+(#creationTimeStamp -> '24 August 2016 4:50:38 pm').
+(#isGlobal -> true).
+(#notifier -> [ViObjectHistoryNotifier new
+		history: (ViProfile active ifNotNil: #transcriptHistory)]).
+(#priority -> 500).
+(#scrollToBottom -> true).
+(#view -> ViTextView)}))})
