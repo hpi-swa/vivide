@@ -8,10 +8,10 @@ tryClear
 		
 	msg := ViOverlayMessageBox new
 		title: 'Close editor';
-		message: 'There are unaccepted changes.' icon: UiSilkIcons informationIcon.
-	msg addAction: 'Accept all changes.' icon: UiSilkIcons diskMultipleIcon receiver: self selectors: #(acceptChanges tryClose).
-	msg addAction: 'Ignore all changes.' icon: UiSilkIcons binIcon receiver: self selectors: #(clear tryClose).
-	msg addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon receiver: self selectors: #(grabKeyboard).
+		message: 'There are unaccepted changes.' icon: ViIcons icons8Info64px1Icon.
+	msg addAction: 'Accept all changes.' icon: ViIcons icons8Save64px1Icon receiver: self selectors: #(acceptChanges tryClose).
+	msg addAction: 'Ignore all changes.' icon: ViIcons icons8Trash64px2Icon receiver: self selectors: #(clear tryClose).
+	msg addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon receiver: self selectors: #(grabKeyboard).
 	
 	msg showAbove: self.
 	

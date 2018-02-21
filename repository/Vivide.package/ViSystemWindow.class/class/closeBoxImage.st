@@ -1,4 +1,4 @@
 initializing
 closeBoxImage
 
-	^ ViIcons crossSmallSunkenIcon
+	^ ViIcons icons8Delete64px1Icon scaledToDisplay.

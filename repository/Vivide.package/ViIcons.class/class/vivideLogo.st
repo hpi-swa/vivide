@@ -1,4 +1,4 @@
-accessing
+random-accessing
 vivideLogo
 	"self vivideLogo asMorph openInHand"
 	^ Icons

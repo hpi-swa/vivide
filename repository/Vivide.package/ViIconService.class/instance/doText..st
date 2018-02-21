@@ -1,4 +1,4 @@
 operations
 doText: aText
 
-	^ UiFugueIcons stickyNoteMediumIcon
+	^ ViIcons icons8Note64px1Icon

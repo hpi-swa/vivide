@@ -1,4 +1,4 @@
 initializing
 collapseBoxImage
 
-	^ UiFugueIcons minusSmallIcon asWireframeSunken
+	^ ViIcons icons8Subtract64px1Icon scaledToDisplay

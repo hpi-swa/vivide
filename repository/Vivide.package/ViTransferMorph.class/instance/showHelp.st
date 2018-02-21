@@ -10,10 +10,9 @@ showHelp
 			inject: ''
 			into: [:label :spec | label, String cr, String tab, spec first asString, ' ... ', spec second]	
 		})) asHtmlText asMorph.
-	text backgroundColor: Color black.
 	
-	helpBox := (ViDropShadowManager default formForBounds: (text fullBounds outsetBy: 15)) asMorph.
-	text topLeft: helpBox topLeft + (25@25).
+	helpBox := Morph new color: (Color gray:0.3); bounds: (text fullBounds outsetBy: 15); addDropShadow; yourself.
+	text center: helpBox center.
 	helpBox addMorphFront: text.
 
 	helpBoxPositions := OrderedCollection new.

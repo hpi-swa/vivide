@@ -8,7 +8,7 @@ addQueryHandles
 			color: (Color gray: 0.85);
 			checked: self target currentQuery == q;
 			icon: (q nextIcon ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
-				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]);
+				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]) scaledToDisplay;
 			balloonText: (q nextLabel
 				ifNil: [q definition sourceCode]
 				ifNotNil: [:label | label]);

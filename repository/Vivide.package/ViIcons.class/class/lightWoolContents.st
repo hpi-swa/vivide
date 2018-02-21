@@ -1,4 +1,4 @@
-contents - patterns
+patterns-contents
 lightWoolContents
 	"(c) 2015, Subtle Patterns, http://subtlepatterns.com/light-wool/"
 	

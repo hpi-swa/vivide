@@ -1,4 +1,4 @@
-contents
+random-contents
 vivideLogoContents
 
 	^ 'iVBORw0KGgoAAAANSUhEUgAAAD8AAAAaCAYAAAAAPoRaAAAACXBIWXMAABcSAAAXEgFnn9JS

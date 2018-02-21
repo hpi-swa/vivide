@@ -1,0 +1,13 @@
+windows-contents
+icons8PlusMath64px1IconContents
+	"Auto-generated.
+	Icon8
+	© 2018 Icon8
+	Website: https://icons8.com
+	License: https://creativecommons.org/licenses/by-nd/3.0/"
+	^ 'iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAA
+10lEQVRYCe2YsRGAMAwDgTUzX+aEVpcqhQ7Q6alcGfv1SZHj4IMABCAAAQhAAAIQ6CRwfrX2
+GOPWf885P5nl0iEaawA0pq47Y4DSaKwxoDF13RkDlEZjjQGNqevOGKA0GmsMaExdd8YApdFY
+Y0Bj6rrz9jvc+oanTf5Y774xcgT+mN6bM9UbsH0HuFNZ75TdM+ueo94AALiVSuuHAWmJuefF
+ADfRtH4YkJaYe14McBNN64cBaYm558UAN9G0fhiQlph7XgxwE6UfBCAAAQhAAAIQgAAEMgg8
+4/gMVlZYObQAAAAASUVORK5CYII='

@@ -2,14 +2,14 @@
 	"class" : {
 		"example01" : "mt 4/29/2011 10:28:12.065" },
 	"instance" : {
-		"addAction:icon:" : "mt 4/29/2011 15:51:29.39",
-		"addAction:icon:receiver:selector:" : "mt 4/29/2011 15:51:34.855",
-		"addAction:icon:receiver:selectors:" : "mt 4/29/2011 15:51:40.011",
+		"addAction:icon:" : "mt 2/21/2018 18:50",
+		"addAction:icon:receiver:selector:" : "mt 2/21/2018 18:51",
+		"addAction:icon:receiver:selectors:" : "mt 2/21/2018 18:51",
 		"extent:" : "mt 8/28/2012 11:05:26.68",
 		"indicateKeyboardFocus" : "mt 1/19/2016 11:48:49.403",
 		"initialize" : "mt 1/19/2016 11:48:44.865",
 		"message:" : "mt 5/2/2011 15:54:49.573",
-		"message:icon:" : "mt 5/2/2011 15:54:45.89",
+		"message:icon:" : "mt 2/21/2018 18:44",
 		"showAbove:" : "mt 1/25/2018 14:11",
 		"title:" : "mt 4/29/2011 10:26:32.788",
 		"ui" : "mt 4/25/2011 17:14:24.177",

@@ -1,4 +1,4 @@
 accessing
 editorIcon
 
-	^ UiFugueIcons questionWhiteIcon
+	^ ViIcons blankIcon

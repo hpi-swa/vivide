@@ -1,4 +1,4 @@
-contents
+random-contents
 instanceSideIconContents
 
 	^ 'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1B

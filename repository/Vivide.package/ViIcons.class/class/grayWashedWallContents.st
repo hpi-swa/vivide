@@ -1,4 +1,4 @@
-contents - patterns
+patterns-contents
 grayWashedWallContents
 	"(c) 2013, Subtle Patterns, http://subtlepatterns.com/grey-washed-wall/"
 	

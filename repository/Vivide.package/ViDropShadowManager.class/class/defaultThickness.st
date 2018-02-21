@@ -1,4 +1,0 @@
-defaults
-defaultThickness
-
-	^ 10

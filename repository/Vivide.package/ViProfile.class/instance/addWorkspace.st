@@ -7,6 +7,6 @@ addWorkspace
 			#label -> 'Workspace'.
 			#isGlobal -> true. "Hmm... might be global is more accurate."
 			#priority -> 500.
-			#icon -> UiFugueIcons applicationTerminalIcon.
+			#icon -> ViIcons icons8Console64px1Icon.
 			#view -> ViWorkspaceView}.
 	} asScript.

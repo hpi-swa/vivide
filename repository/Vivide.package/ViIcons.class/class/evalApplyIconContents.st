@@ -1,4 +1,4 @@
-contents
+random-contents
 evalApplyIconContents
 
 	^ 'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlw

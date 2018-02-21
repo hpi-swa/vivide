@@ -7,13 +7,13 @@ tryAddScript
 
 	msg
 		message: 'The scripts will be accessible from the current profile.'
-		icon: UiSilkIcons informationIcon.
+		icon: ViIcons icons8Info64px1Icon.
 		
 	msg
 		addAction: 'Install scripts'
-		icon: UiSilkIcons binIcon
+		icon: ViIcons icons8Ok64px1Icon
 		receiver: self selectors: #(addScript);
-		addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon.
+		addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.
 	

@@ -7,7 +7,7 @@ addTranscript
 			#label -> 'Transcript'.
 			#isGlobal -> true.
 			#priority -> 500.
-			#icon -> UiFugueIcons applicationTextIcon.
+			#icon -> ViIcons icons8BulletedList64px2Icon.
 			#view -> ViTextView.
 			#scrollToBottom -> true.
 			#notifier -> [ViObjectHistoryNotifier new

@@ -11,7 +11,7 @@ initializeUi
 		hResizing: #spaceFill;
 		vResizing: #spaceFill.
 	
-	self ui addPaneBtn icon: self ui addPaneBtn icon asWireframeSunken.
+	self ui addPaneBtn icon: ViIcons icons8Copy64px1Icon scaledToDisplay.
 	self connect: self ui addPaneBtn signal: #clicked: toSelector: #copyEditor.
 	self ui addPaneBtn
 		balloonText: 'Copy or save tool';

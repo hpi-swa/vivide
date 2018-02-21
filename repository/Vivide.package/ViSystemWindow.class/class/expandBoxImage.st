@@ -1,4 +1,4 @@
 initializing
 expandBoxImage
 
-	^ UiFugueIcons plusSmallIcon asWireframeSunken
+	^ ViIcons icons8PlusMath64px1Icon scaledToDisplay.

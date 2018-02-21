@@ -1,4 +1,4 @@
-contents
+random-contents
 evalApplySunkenContents
 
 	^ 'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAARCAAAEQgGZ/ByL

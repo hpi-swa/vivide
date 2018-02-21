@@ -1,0 +1,17 @@
+windows-contents
+icons8MoveGrabber64pxIconContents
+	"Auto-generated.
+	Icon8
+	© 2018 Icon8
+	Website: https://icons8.com
+	License: https://creativecommons.org/licenses/by-nd/3.0/"
+	^ 'iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAB
+wklEQVRYCe2ZQW6DMBBF7aZqu+UkvkIWPQX4HumiUqnURXsPuEUXOYMPQrbtyvVERLIQJIDw
+jNwZS4CFbM//z2NsJUpJEQJCQAgQESjL8gAXUfhz2N35TnCz1tZKqQ+t9bMxRjvnjoqgkAAA
+8977t8jvngoCOoAR8xcOJBBQAVwxTwYBDcAM8yQQUAAsMI8OITmAFeZRIehLNOxnVVU+jtm2
+LYmWu1gEx7oA4DjrsWfJgJgGx7pkAMdZjz1P7r3DfTrulGN96pwhSyDH2dxSM/sM2BKmjCUE
+hIAQEAK5EZCTYG4ztrVe9gch9gC2zigZTwgIASEgBHIicO0k+JuTkVtaw2+Cj2Nt7sde9u8e
++ue/frA/CLEHMLkEuq57Spn7RVH8xOOfTqek8eJYcX3yIxg3SlEf/vESPlIkWtgvAQGQIr1z
+GlMyIKfZSqGVfQYk33qstZ/e+8Oa2dNafzVN87Km79w+u7kN17Zzzn0bYwD0Xi0owfx7MP+6
+oMuqpskBgKoA4bgEQm++VggFBQD4mAsB0zzoQgMAwW5BwDYPmlABQMApCBTmQQ86AAg6hEBl
+HrSQXmGLrOEiFSHBhYAQYE3gD07lj7Us0Lu4AAAAAElFTkSuQmCC'

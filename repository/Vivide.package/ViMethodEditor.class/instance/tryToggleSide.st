@@ -15,9 +15,9 @@ tryToggleSide
 		
 	msg := ViOverlayMessageBox new
 		title: 'Move Method';
-		message: 'There are unaccepted changes.' icon: UiSilkIcons informationIcon.
-	msg addAction: 'Accept all changes then move.' icon: UiFugueIcons tickSmallIcon receiver: self selectors: #(acceptChanges tryToggleSide).
-	msg addAction: 'Ignore all changes.' icon: UiFugueIcons crossSmallIcon receiver: self selectors: #(clear toggleSide).
-	msg addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon.
+		message: 'There are unaccepted changes.' icon: ViIcons icons8Info64px1Icon.
+	msg addAction: 'Accept all changes then move.' icon: ViIcons icons8Save64px1Icon receiver: self selectors: #(acceptChanges tryToggleSide).
+	msg addAction: 'Ignore all changes.' icon: ViIcons icons8Trash64px2Icon receiver: self selectors: #(clear toggleSide).
+	msg addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.

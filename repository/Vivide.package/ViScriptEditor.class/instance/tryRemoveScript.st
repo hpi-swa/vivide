@@ -8,13 +8,13 @@ tryRemoveScript
 
 	msg
 		message: 'The scripts will not be accessible anymore.'
-		icon: UiSilkIcons informationIcon.
+		icon: ViIcons icons8Info64px1Icon.
 		
 	msg
 		addAction: 'Remove scripts'
-		icon: UiSilkIcons binIcon
+		icon: ViIcons icons8Trash64px2Icon
 		receiver: self selectors: #(removeScript);
-		addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon.
+		addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.
 	

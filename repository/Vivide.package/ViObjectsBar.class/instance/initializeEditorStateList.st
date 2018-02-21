@@ -9,7 +9,9 @@ initializeEditorStateList
 	editorStateList := UiListView new
 		animated: true;
 		selectionColor: (Color fromString: '#C6CBD6');
-		listSpec: ((UiItemViewColumnSpec newFrom: {#text -> #text. #icon -> #icon. #balloonText -> #balloonText. #editable -> true}));
+		listSpec: ((UiItemViewColumnSpec newFrom: {#text -> #text. #icon -> #icon. #balloonText -> #balloonText. #editable -> true})
+			iconConverter: [:icon | icon scaledToDisplay];
+			yourself);
 		dragDropSpec: (ViUnboxingDragDropSpec new
 			key: #state;
 			dropMode: #between;

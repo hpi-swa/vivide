@@ -22,28 +22,28 @@ initializeTitleBar
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
 		balloonText: 'Close Vivide';
-		icon: ViIcons crossSmallSunkenIcon.
+		icon: ViIcons icons8Delete64px1Icon scaledToDisplay.
 	self connect: closeBtn signal: #clicked: toSelector: #close.
 	
 	fullscreenBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
 		balloonText: 'Toggle full screen mode';
-		icon: (MenuIcons fullscreenWireframeIconColorized: (Color fromString: '#444444')).
+		icon: ViIcons icons8FittoWidth64px1Icon scaledToDisplay.
 	self connect: fullscreenBtn signal: #clicked: to: DisplayScreen selector: #toggleFullScreen.
 	
 	closeWndBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
 		balloonText: 'Close all open Vivide windows.';
-		icon: UiFugueIcons broomIcon asWireframeSunken.
+		icon: ViIcons icons8Broom64px1Icon scaledToDisplay.
 	self connect: closeWndBtn signal: #clicked: toSelector: #closeAllWindows.
 	
 	changeProfileBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		color: Color veryVeryLightGray;
 		balloonText: 'Current profile: ', ViProfile active label;
-		icon: UiFugueIcons userIcon asWireframeSunken.
+		icon: ViIcons icons8User64px1Icon scaledToDisplay.
 	self connect: changeProfileBtn signal: #clicked: to: VivideLight selector: #open.
 
 	helpBtn := UiToolButton new
