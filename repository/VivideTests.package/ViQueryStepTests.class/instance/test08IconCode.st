@@ -1,14 +1,14 @@
 tests
 test08IconCode
 
-	sut := ViScriptPart new icon: ViIcons vivideLogo.
+	sut := ViScriptPart new icon: ViIcons icons8User64px1Icon.
 	self
-		assert: 'ViIcons vivideLogo'
+		assert: 'ViIcons icons8User64px1Icon'
 		equals: sut iconCode.
 		
 	sut
 		icon: nil;
-		iconCode: 'ViIcons vivideLogo'.
+		iconCode: 'ViIcons icons8User64px1Icon'.
 	self
-		assert: ViIcons vivideLogo
+		assert: ViIcons icons8User64px1Icon
 		equals: sut icon.
