@@ -5,10 +5,10 @@ addScriptBtn
 	scriptBtn := UiToolButton new
 		buttonStyle: #iconOnly;
 		autoRaise: true;
-		balloonText: 'Add snippet';
+		balloonText: 'Add workspace';
 		layoutInset: 0;
 		color: (Color gray: 0.3);
-		icon: UiFugueIcons plusSmallIcon asWireframeSunken;
+		icon: ViIcons icons8Console64px1Icon scaledToDisplay;
 		topLeft: self topLeft + (5@5).
 	self addMorph: scriptBtn.
 	self connect: scriptBtn signal: #clicked: toSelector: #codeSnippetRequested.

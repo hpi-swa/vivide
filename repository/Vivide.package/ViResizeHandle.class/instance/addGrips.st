@@ -1,25 +1,20 @@
 initialization
 addGrips
 
-	| container |
-	container := Morph new
-		color: Color transparent;
-		changeTableLayout;
-		listDirection: (self orientation = #vertical ifTrue: [#topToBottom] ifFalse: [#leftToRight]);  
-		vResizing: (self orientation = #vertical ifTrue: [#spaceFill] ifFalse: [#shrinkWrap]);
-		hResizing: (self orientation = #vertical ifTrue: [#shrinkWrap] ifFalse: [#spaceFill]);
-		cellInset: 1;
-		addMorphBack: (UiSpacer new orientation: self orientation; extent: 5@5).
-		  
-	4 timesRepeat: [container addMorphBack: (
-		Morph new
-			extent: 3@3;
-			color: (Color gray: 0.7);
-			borderStyle: (BorderStyle raised width: 1);
-			ignoresColorMappings: true)].
-		
-	container addMorphBack: (UiSpacer new orientation: self orientation; extent: 5@5).
+	| points |
+	self removeAllMorphs.
 	
-	self
-		removeAllMorphs;
-		addMorphBack: container.  
+	points := self orientation = #vertical
+		ifTrue: [ViIcons icons8MenuVertical32pxIcon scaledToDisplay asMorph]
+		ifFalse: [ViIcons icons8More32pxIcon scaledToDisplay asMorph].	
+	
+	points layoutFrame: (LayoutFrame
+		fractions: (0@0 corner: 1@1) 
+		offsets: (
+			self orientation = #vertical
+				ifTrue: [((self width - points width) // 2 min: 0) @ 0 corner: 0@0]
+				ifFalse: [0 @ ((self height - points height) // 2 min: 0) corner: 0@0])).
+	
+	points ignoresColorMappings: true.
+	
+	self addMorphBack: points.

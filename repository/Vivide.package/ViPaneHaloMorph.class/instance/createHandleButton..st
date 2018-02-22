@@ -6,7 +6,8 @@ createHandleButton: spec
 		layoutInset: 0;
 		buttonStyle: #iconOnly;
 		autoRaise: false;
-		color: (Color gray: 0.85);
+		color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);
 		balloonText: spec second;
 		fullBounds;
-		center: spec third.
+		center: spec third;
+		addDropShadow.

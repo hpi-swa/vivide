@@ -1,0 +1,20 @@
+arrows-contents
+icons8DoubleRight32pxIconContents
+	"Auto-generated.
+	Icon8
+	© 2018 Icon8
+	Website: https://icons8.com
+	License: https://creativecommons.org/licenses/by-nd/3.0/"
+	^ 'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAC
+UElEQVRYCe1WTWsaURSdD7NR2kULtiHoInXVFMxWd23TxEW6FBRRxIV/IVt/h5sIoghuCl10
+Ve2itFmUIi6FBEk2WUVSpFi/pucODozzceeN6a7KPfPuvHPfuXfuzHsoSdvf/94B1asBlUpF
+iUQiwX6/P7PGcpw11u1ecSNonhIMBoPz5XL5tVAoPKU5AxxnxIiMbAHD4TAsy/JbCB0uFouP
+uVzuMXzdOE4PELywBdRqtVtVVZPQugISKOZLOp1+Al+qMRzxopBFAtH+KDrQRew+8HM6nb5r
+t9t38CWOI94LQgWQCJeI42gtB+ECSMSaSNO0o2azOfLiiHeDrwJIhIrArugg+QvcXwAnjUbj
+F0b9dbhxxDvBdwEkkslkIoFAoKtpGhXxHXMpowiOQ5zNNiqAVLhEHEdrzVDMN378Vqt1M5/P
+X8uyfIl1CeBTqVR6hFHiOOLN2LgAEqFEeOfH8K+B5GQy+VAul4Pw9SLcOOINKIbzL0Z0IzQa
+jXactNy4BxWAo/klhL8hYRTohkKhNzig7uFLHEe8gY0/QkoAkQ7wDKDkp9Vq9Td8PTlGRw7z
+a7ZRB7LZ7AFUHBNwHNbYzHcHKIGiKJ+hZHtyjkO8o/kqYJWAnjwMtbW2cxxiXU11ZSxEPp9/
+hSnH5ByHNawJdYASYE9T221PznFs5hXpWQCXgONW+p4DW0CxWHw+m81+QGUPuMAfkZSxzzkO
+scLGfgO9Xm8cj8d3ofYHh0yqXq+P4evGcXqA4MXzHIjFYmfYdu+NQ8asy3HmuK2/7QDXgb9X
+y4rbajfd0QAAAABJRU5ErkJggg=='

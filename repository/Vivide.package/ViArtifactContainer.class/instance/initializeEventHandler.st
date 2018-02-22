@@ -3,4 +3,4 @@ initializeEventHandler
 
 	self eventHandler: UiEventHandler new.
 	
-	self connect: self eventHandler signal: #mouseEntered: toSelector: #showToolbar.
+	self connect: self eventHandler signal: #mouseEntered: toSelector: #showToolbar:.

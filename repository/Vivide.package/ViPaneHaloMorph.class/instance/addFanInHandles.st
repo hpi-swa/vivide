@@ -11,12 +11,13 @@ addFanInHandles
 				color: self fanInColor;
 				autoRaise: false;
 				buttonStyle: #iconOnly;
-				icon: connection class icon;
+				icon: connection class icon scaledToDisplay;
 				layoutInset: 2;
 				balloonText: (connection source currentQuery
 					ifNil: ['(no query)']
 					ifNotNil: [:q | q nextLabel]);
-				setProperty: #paneIn toValue: connection source;   
+				setProperty: #paneIn toValue: connection source;
+				addDropShadow;
 				yourself).
 			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
 			self connect: buttons last signal: #clicked: to: connection selector: #detach.
@@ -26,8 +27,10 @@ addFanInHandles
 		color: self fanInColor;
 		autoRaise: false;
 		buttonStyle: #iconOnly;
-		icon: (ViIcons controlRecordSmallSunkenIcon clippedToSize: 10@10);
+		icon: ViIcons icons8Login32pxIcon scaledToDisplay;
+		balloonText: 'Explore input objects';
 		layoutInset: 2;
+		addDropShadow;
 		yourself.
 	self connect: inBtn signal: #clicked: to: self target selector: #browseObjects.
 	self connect: inBtn signal: #clicked: toSelector: #delete.
@@ -38,7 +41,8 @@ addFanInHandles
 		listDirection: #topToBottom;
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
-		layoutInset: 3.
+		layoutInset: 3;
+		cellInset: (inBtn height // 2).
 	box addAllMorphs: {inBtn}, buttons.
 
 	box fullBounds.

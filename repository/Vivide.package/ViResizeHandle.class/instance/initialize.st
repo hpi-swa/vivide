@@ -6,9 +6,9 @@ initialize
 	super initialize.
 	
 	self
-		extent: 9@10;
+		extent: ((9@9) * RealEstateAgent scaleFactor) rounded;
 		color: (Color gray: 0.85);
-		listCentering: #center;
+		changeProportionalLayout;
 		layoutInset: 0;
 		updateLayout;
 		fadeOutInstantly.

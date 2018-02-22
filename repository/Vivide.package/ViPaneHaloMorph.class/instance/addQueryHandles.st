@@ -5,7 +5,7 @@ addQueryHandles
 	buttons := self target recentQueries collect: [:q |
 		ViDraggableButton new
 			checkable: true;
-			color: (Color gray: 0.85);
+			color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);
 			checked: self target currentQuery == q;
 			icon: (q nextIcon ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
 				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]) scaledToDisplay;
@@ -35,21 +35,22 @@ addQueryHandles
 
 	box := BorderedMorph new
 		changeTableLayout;
-		color: (Color gray: 0.85);
+		color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);
 		borderColor: (Color gray: 0.6);
 		borderWidth: 1;
 		layoutInset: 3;
 		listDirection: #leftToRight;
 		hResizing: #shrinkWrap;
-		vResizing: #shrinkWrap.
+		vResizing: #shrinkWrap;
+		addDropShadow.
 	box addAllMorphs: buttons.
 	box addMorphBack: (Morph new color: Color transparent; extent: 20@12). "spacer"
 	
 	{
-	{'Choose script'. (UiFugueIcons control270SmallIcon clippedToSize: 12@12) asWireframeSunken: 0.4. Color yellow darker. #chooseQuery}.
-	{'Edit script'. ViIcons wrenchSmallSunkenIcon. Color gray: 0.85. #debugQuery}.
+	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseQuery}.
+	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #debugQuery}.
 	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
-	{'Add script'. ViIcons plusSmallSunkenIcon. Color green darker. #addQuery}.
+	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #addQuery}.
 	} do: [:spec | | btn |
 		btn := UiToolButton new
 			buttonStyle: #iconOnly;

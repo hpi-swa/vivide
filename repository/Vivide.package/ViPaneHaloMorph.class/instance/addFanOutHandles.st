@@ -11,12 +11,13 @@ addFanOutHandles
 				color: self fanOutColor;
 				autoRaise: false;
 				buttonStyle: #iconOnly;
-				icon: connection class icon;
+				icon: connection class icon scaledToDisplay;
 				layoutInset: 2;
 				balloonText: (connection target currentQuery
 					ifNil: ['(no query)']
 					ifNotNil: [:q | q nextLabel]);
-				setProperty: #paneOut toValue: connection target;   
+				setProperty: #paneOut toValue: connection target;
+				addDropShadow;
 				yourself).
 			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
 			self connect: buttons last signal: #clicked: to: connection selector: #detach.
@@ -26,8 +27,10 @@ addFanOutHandles
 		color: self fanOutColor;
 		autoRaise: false;
 		buttonStyle: #iconOnly;
-		icon: (ViIcons plusSmallSunkenIcon clippedToSize: 10@10);
+		icon: ViIcons icons8Add32pxIcon scaledToDisplay;
+		balloonText: 'Drag and drop to add a new connection.';
 		layoutInset: 2;
+		addDropShadow;
 		yourself.
 
 	addBtn eventHandler dragThreshold: 0.
@@ -39,8 +42,10 @@ addFanOutHandles
 		color: self fanOutColor;
 		autoRaise: false;
 		buttonStyle: #iconOnly;
-		icon: (ViIcons controlRecordSmallSunkenIcon clippedToSize: 10@10);
+		icon: ViIcons icons8SignOut32pxIcon scaledToDisplay;
+		balloonText: 'Explore output objects';
 		layoutInset: 2;
+		addDropShadow;
 		yourself.
 	self connect: outBtn signal: #clicked: to: self target selector: #browseResults.
 	self connect: outBtn signal: #clicked: toSelector: #delete.
@@ -51,7 +56,8 @@ addFanOutHandles
 		listDirection: #topToBottom;
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
-		layoutInset: 3.
+		layoutInset: 3;
+		cellInset: (outBtn height // 2).
 	box addAllMorphs: {outBtn}, buttons, {addBtn}.
 
 	box fullBounds.

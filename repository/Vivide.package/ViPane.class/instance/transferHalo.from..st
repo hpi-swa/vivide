@@ -1,4 +1,4 @@
-as yet unclassified
+halos and balloon help
 transferHalo: event from: formerHaloOwner
 
 	((VivideLight useClassicMode or: [VivideLight active isNil])

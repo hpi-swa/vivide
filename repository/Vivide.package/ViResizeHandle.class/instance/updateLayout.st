@@ -6,13 +6,11 @@ updateLayout
 	self orientation = #horizontal ifTrue: [
 		self
 			hResizing: #spaceFill;
-			vResizing: #rigid;
-			listDirection: #topToBottom].
+			vResizing: #rigid].
 	
 	self orientation = #vertical ifTrue: [
 		self
 			hResizing: #rigid;
-			vResizing: #spaceFill;
-			listDirection: #leftToRight].
+			vResizing: #spaceFill].
 
 	self addGrips.
