@@ -50,8 +50,8 @@ if [[ "${TRAVIS_SMALLTALK_VERSION}" == "Squeak-5.1" ]]; then
     gunzip SqueakV50.sources.gz
 else
     print_info "Downloading Squeak-trunk image..."
-    wget http://files.squeak.org/trunk/Squeak6.0alpha-17474-32bit/Squeak6.0alpha-17474-32bit.zip
-    unzip Squeak6.0alpha-17474-32bit.zip
+    wget http://files.squeak.org/trunk/Squeak6.0alpha-17967-32bit/Squeak6.0alpha-17967-32bit.zip
+    unzip Squeak6.0alpha-17967-32bit.zip
     wget http://files.squeak.org/sources_files/SqueakV50.sources.gz
     gunzip SqueakV50.sources.gz
 fi
