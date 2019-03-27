@@ -1,8 +1,6 @@
 OrderedDictionary {
 	'repository\/Vivide.package' : #SquotCypressCodeSerializer,
-	'repository\/VivideDynamicAnalysis.package' : #SquotCypressCodeSerializer,
 	'repository\/VivideScripts.package' : #SquotCypressCodeSerializer,
 	'repository\/VivideTests.package' : #SquotCypressCodeSerializer,
-	'repository\/VivideContextS.package' : #SquotCypressCodeSerializer,
 	'repository\/BaselineOfVivide.package' : #SquotCypressCodeSerializer
 }
