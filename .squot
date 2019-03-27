@@ -3,7 +3,7 @@ OrderedDictionary {
 	'repository\/VivideVoronoi.package' : #SquotCypressCodeSerializer,
 	'repository\/VivideDynamicAnalysis.package' : #SquotCypressCodeSerializer,
 	'repository\/VivideScripts.package' : #SquotCypressCodeSerializer,
-	'repository\/VivideTests.package' : nil,
+	'repository\/VivideTests.package' : #SquotCypressCodeSerializer,
 	'repository\/VivideContextS.package' : #SquotCypressCodeSerializer,
-	'repository\/BaselineOfVivide.package' : nil
+	'repository\/BaselineOfVivide.package' : #SquotCypressCodeSerializer
 }
