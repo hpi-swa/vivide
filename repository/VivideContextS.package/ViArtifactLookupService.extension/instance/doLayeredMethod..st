@@ -1,4 +1,0 @@
-*vividecontexts
-doLayeredMethod: layeredMethod
-
-	^ nil

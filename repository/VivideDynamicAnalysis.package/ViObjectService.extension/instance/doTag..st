@@ -1,4 +1,0 @@
-*VivideDynamicAnalysis
-doTag: aTag
-
-	^ nil

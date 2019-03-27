@@ -1,4 +1,0 @@
-*vividecontexts
-doLayer: aLayer
-
-	^ 'Layers'
