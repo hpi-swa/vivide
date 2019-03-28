@@ -5,7 +5,10 @@ process: root
 	 
 	max := root nodes
 		ifEmpty: [0]
-		ifNotEmpty: [:nodes | (nodes collect: [:node | (node at: #value ifAbsent: [0]) asNumber]) max].
+		ifNotEmpty: [:nodes | (nodes collect: [:node | (node at: #value ifAbsent: [-9999]) asNumber]) max].
+	min := root nodes
+		ifEmpty: [0]
+		ifNotEmpty: [:nodes | (nodes collect: [:node | (node at: #value ifAbsent: [9999]) asNumber]) min].
 	
 	self content
 		addMorphBack: self createColumnForScale;

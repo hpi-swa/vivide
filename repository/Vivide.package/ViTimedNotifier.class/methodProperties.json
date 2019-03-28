@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"every:" : "mt 4/28/2016 15:00:09.061" },
+		"every:" : "mt 2/15/2018 09:28" },
 	"instance" : {
 		"shouldSignal" : "mt 4/28/2016 14:57:25.328",
 		"shouldSignal:" : "mt 4/28/2016 14:56:43.043",
 		"signal" : "mt 4/28/2016 15:59:30.905",
 		"signalDelay" : "mt 4/28/2016 14:57:06.767",
-		"signalDelay:" : "mt 4/28/2016 14:56:43.056",
+		"signalDelay:" : "mt 2/15/2018 09:27",
 		"subscribe" : "mt 4/28/2016 14:59:20.19",
 		"unsubscribe" : "mt 4/28/2016 14:59:34.647" } }

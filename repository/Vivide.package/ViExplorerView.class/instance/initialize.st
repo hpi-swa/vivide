@@ -11,7 +11,7 @@ initialize
 				objects size = 1
 					ifTrue: [container object: objects first]
 					ifFalse: [container object: objects]].
-		container editVisible: true.
+		"container editVisible: false."
 		"container turnOnAutoRefresh."
 "		container sourceCodeEdit
 			theText: '';

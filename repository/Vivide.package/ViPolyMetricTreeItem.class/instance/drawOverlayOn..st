@@ -1,8 +1,8 @@
 as yet unclassified
-drawOn: aCanvas
+drawOverlayOn: aCanvas
 
 	| anchor |
-	super drawOn: aCanvas.
+	super drawOverlayOn: aCanvas.
 	
 	anchor := self itemMorph bottomCenter.
 	

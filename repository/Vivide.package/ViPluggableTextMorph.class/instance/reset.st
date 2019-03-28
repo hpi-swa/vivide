@@ -1,5 +1,7 @@
 initialization
 reset
 
+	self model ifNil: [^self].
+
 	self changed: #text.
-	self yieldObject: self text.
+	self yield: self model nodes.

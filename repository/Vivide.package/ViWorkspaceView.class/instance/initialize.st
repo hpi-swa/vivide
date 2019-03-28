@@ -19,7 +19,7 @@ initialize
 				newBindings associationsDo: [:ass | container snippetEdit model bindings add: ass]]].
 
 		"Try to evaluate the last expression again."
-		self evaluateLastExpression.
+		"self evaluateLastExpression."
 	].
 
 	self container object: nil. "default snippet"

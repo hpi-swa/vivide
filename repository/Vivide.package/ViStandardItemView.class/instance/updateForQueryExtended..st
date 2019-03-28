@@ -12,7 +12,12 @@ updateForQueryExtended: query
 						collect: [:p | p -> ('{1}_{2}' format: {idx.p}) asSymbol]))
 							"Provide print-string default if text property is missing."
 							textSelector: #yourself;
-							textConverter: [:node | (node at: ('{1}_text' format: {idx}) asSymbol ifAbsent: [node object printString])];
+							textConverter: [:node | 
+								| allBold text |
+								allBold := node at: ('{1}_bold' format: {idx}) asSymbol ifAbsent: [false].
+								text := (node at: ('{1}_text' format: {idx}) asSymbol ifAbsent: [node object printString]).
+								allBold ifFalse: [text] ifTrue: [text asText addAttribute: TextEmphasis bold; yourself]
+								];
 							overrideStandardListFont: true].
 	newResizeModes := OrderedCollection new.
 	commandsVisible := true.

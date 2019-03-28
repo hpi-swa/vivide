@@ -1,4 +1,4 @@
 as yet unclassified
 zoomFit
 
-	self scroller transformMorph scale: 1.0.
+	self content submorphsDo: [:ea | ea zoomFit].
