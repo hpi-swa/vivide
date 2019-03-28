@@ -14,6 +14,7 @@ stepobjectExplorer
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 November 2015 11:56:40 am').
+(#editable -> true).
 (#priority -> 500).
 (#view -> ViExplorerView).
 (#windowTitle -> #simple)}))})
