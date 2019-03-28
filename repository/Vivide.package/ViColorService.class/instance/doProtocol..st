@@ -1,4 +1,4 @@
-operations
+vivide - other
 doProtocol: aProtocol
 
 	aProtocol protocolname = Categorizer default
@@ -10,4 +10,4 @@ doProtocol: aProtocol
 	aProtocol isExtension
 		ifTrue: [^ (Color gray: 0.85) alpha: 0.7].
 		
-	^ nil
+	^ Color transparent

@@ -3,6 +3,8 @@ drawOverlayOn: aCanvas
 
 	super drawOverlayOn: aCanvas.
 	
+	self isInWorld ifFalse: [^ self].
+	
 	darkenValue ifNotNil: [
 		aCanvas
 			fillRectangle: self bounds

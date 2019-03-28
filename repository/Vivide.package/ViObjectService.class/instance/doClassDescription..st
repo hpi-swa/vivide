@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doClassDescription: aClassDescription
 
 	^ nil

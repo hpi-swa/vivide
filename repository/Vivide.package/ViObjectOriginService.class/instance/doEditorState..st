@@ -1,4 +1,4 @@
-operations
+vivide - other
 doEditorState: anEditorState
 
 	| outerObjects innerObjects |

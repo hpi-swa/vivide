@@ -1,4 +1,4 @@
-operations
+squeak - tools
 doPackageInfo: aPackageInfo
 
 	| mcp wc |

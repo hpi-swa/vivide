@@ -1,4 +1,4 @@
-operations
+vivide - other
 doFlagComment: aFlagComment
 	
 	^ panel := self

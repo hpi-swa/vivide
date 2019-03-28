@@ -1,4 +1,4 @@
-operations
+vivide - other
 doMethodVersion: aMethodVersion
 
 	aMethodVersion theClass ifNil: [^ super doMethodVersion: aMethodVersion].

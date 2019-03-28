@@ -1,4 +1,4 @@
-private
+preview - private
 discardPreviewLater
 	
 	self panel

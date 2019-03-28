@@ -1,4 +1,4 @@
-as yet unclassified
+preview - accessing
 panel: aMorph
 
 	panel := aMorph.

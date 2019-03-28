@@ -1,4 +1,4 @@
-building
+preview - building
 textboxFor: aStringOrText
 
 	^ self

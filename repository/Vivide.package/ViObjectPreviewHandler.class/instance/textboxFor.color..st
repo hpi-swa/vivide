@@ -1,4 +1,4 @@
-building
+preview - building
 textboxFor: aStringOrText color: aColor
 
 	| box |
@@ -14,6 +14,6 @@ textboxFor: aStringOrText color: aColor
 		readOnly: true;  
 		theText: aStringOrText asHtmlText.
 		
-	box width: (box optimalWidth min: 400).
+	box width: (box optimalWidth min: (400 * RealEstateAgent scaleFactor) rounded).
 	
 	^ box

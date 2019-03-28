@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doObjectUnscaled: anObject
 	"Use Morphic implementation as fallback."
 

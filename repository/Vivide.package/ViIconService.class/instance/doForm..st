@@ -1,4 +1,4 @@
-operations
+squeak - graphics
 doForm: aForm
 
 	^ aForm

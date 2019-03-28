@@ -1,4 +1,4 @@
-as yet unclassified
+vivide - kernel
 doQueryStep: aQueryStep
 
 	^ panel := self

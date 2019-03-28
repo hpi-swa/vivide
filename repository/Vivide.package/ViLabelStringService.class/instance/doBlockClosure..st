@@ -1,0 +1,4 @@
+squeak - kernel
+doBlockClosure: aBlockClosure
+
+	^ '[]'

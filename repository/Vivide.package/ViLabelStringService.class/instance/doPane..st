@@ -1,4 +1,4 @@
-as yet unclassified
+vivide - kernel
 doPane: aPane
 
 	((aPane currentQuery ifNil: false ifNotNil: #isMeta) and: [aPane currentQuery nextLabel isNil])

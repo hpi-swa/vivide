@@ -1,4 +1,4 @@
 *vivide
 acceptObjectService: anObjectService
 
-	^ anObjectService doBlock: self
+	^ anObjectService doBlockClosure: self

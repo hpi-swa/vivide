@@ -1,4 +1,4 @@
-as yet unclassified
+vivide - kernel
 doQueryStepDefinition: def
 
 	^ panel := self

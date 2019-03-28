@@ -1,4 +1,4 @@
-as yet unclassified
+squeak - collections
 doString: anObject
 
 	^ nil

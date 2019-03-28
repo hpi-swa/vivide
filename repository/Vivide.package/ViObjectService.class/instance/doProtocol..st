@@ -1,4 +1,4 @@
-operations
+vivide - other
 doProtocol: aProtocol
 
 	^ nil  

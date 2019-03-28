@@ -12,6 +12,7 @@ SystemOrganization addCategory: #'Vivide-Locator'!
 SystemOrganization addCategory: #'Vivide-Logging'!
 SystemOrganization addCategory: #'Vivide-Memento'!
 SystemOrganization addCategory: #'Vivide-Notifications'!
+SystemOrganization addCategory: #'Vivide-Object-Notifications'!
 SystemOrganization addCategory: #'Vivide-Queries'!
 SystemOrganization addCategory: #'Vivide-Queries-Notifications'!
 SystemOrganization addCategory: #'Vivide-Queries-OLD'!
@@ -24,4 +25,3 @@ SystemOrganization addCategory: #'Vivide-Visualizations'!
 SystemOrganization addCategory: #'Vivide-Visualizations-Support'!
 SystemOrganization addCategory: #'Vivide-Voronoi'!
 SystemOrganization addCategory: #'Vivide-Windows'!
-SystemOrganization addCategory: #'Vivide-Object-Notifications'!

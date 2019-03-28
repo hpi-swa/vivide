@@ -1,4 +1,4 @@
-as yet unclassified
+vivide - kernel
 doScriptPart: aScriptPart
 
 	^ aScriptPart nextLabel ifNil: [

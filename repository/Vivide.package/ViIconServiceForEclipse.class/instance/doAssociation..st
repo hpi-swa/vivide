@@ -1,4 +1,4 @@
-as yet unclassified
+squeak - collections
 doAssociation: assoc
 
 	^ assoc key isBehavior

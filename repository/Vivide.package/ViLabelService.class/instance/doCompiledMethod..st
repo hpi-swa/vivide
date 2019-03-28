@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doCompiledMethod: aMethod
 
 	^ (super doCompiledMethod: aMethod) asHtmlText

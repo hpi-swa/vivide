@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doObject: anObject
 
 	^ (super doObject: anObject)
