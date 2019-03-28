@@ -10,6 +10,9 @@ setUpdateNotifications
 		refObjects := f process: #() within: nil.
 		
 		f nextStepsDo: [:step |
+			self flag: #cachedResults. "mt: Use the results cache to provide the correct objects to each notifier builder."
+			"refObjects := self cachedResults at: step ifAbsent: [#()]. -- Beware to remove that fill-step thing first!"
+
 			(step objectNotifiersWith: refObjects) do: [:notifier |
 				self updateNotifiers add: notifier.
 				notifier subscribe.
