@@ -28,6 +28,11 @@ initializeArtifact
 			key: #object;
 			dragTransferType: #objects;
 			source: self).
+			
+	contentTree viewport
+			indent: (16 * RealEstateAgent scaleFactor) rounded;
+			expandedIcon: ViIcons icons8ChevronDownSmall64px1Icon   scaledToDisplay;
+			collapsedIcon: ViIcons icons8ChevronRightSmall64px1Icon  scaledToDisplay.
 		
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #changeReceiverFor:.
 	self connect: contentTree signal: #currentNodeChanged: toSelector: #showHaloFor:.

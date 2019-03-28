@@ -9,7 +9,7 @@ makeConvenient: menu
 			target: VivideLight active
 			selector: #openScript:
 			argument: query.
-		queryMenu lastItem icon: (query nextIcon ifNil: [ViIcons blankIcon])].
+		queryMenu lastItem icon: (query nextIcon ifNil: [ViIcons blankIcon]) scaledToDisplay].
 			
 	commandMenu := MenuMorph new.
 	(ViQueryOrganizer active ifNil: [#()] ifNotNil: #globalCommands) do: [:command |

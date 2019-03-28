@@ -16,7 +16,7 @@ updateColor
 	
 	"If we are (deeply) embedded in a tool, set our own color."
 	self owner class == ViSinglePaneEditor
-		ifFalse: [self color: newColor. ^ self].
+		ifFalse: [self borderColor: newColor; color: newColor. ^ self].
 	
 	"Colorize the window if we are toplevel."
 	(self firstOwnerSuchThat: [:m | m isSystemWindow])
