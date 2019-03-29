@@ -2,21 +2,11 @@ initialization - scripts
 addGroupsScript
 
 	self addScript: {
-	
-		[:tuples | tuples asGroups] -> {
+		#groupsMinimal -> {
 			#inputKind -> #(nil nil).
 			#view -> ViTreeView.
 			#id -> #groups}.
-		[:groups | groups sorted: [:g1 :g2 | g1 first asString <= g2 first asString]].
-		[:group | { "Prepend separators to groups."
-			{#separator. {{
-				group first asString asText
-					addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
-					addAttribute: (TextColor color: (Color gray: 0.66));
-					yourself}}}.
-			group}].
-		[:group | group expandGroup].
-		[:label :object | object].
+
 		[:object | {
 			#text -> (object isText ifFalse: [ViLabelService doObject: object]).
 			#icon -> (object isText ifFalse: [ViIconService doObject: object]).

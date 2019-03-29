@@ -10,6 +10,8 @@ initializeMinimal
 				addDefaultPropertiesMinimal; "optional"
 				addDefaultPropertiesExtended; "quasi optional"
 				addArtifacts;
+				
+				addGroupsMinimalScript; "quasi optional"
 				addGroupsScript; "quasi optional"
 				
 				addExplorer;

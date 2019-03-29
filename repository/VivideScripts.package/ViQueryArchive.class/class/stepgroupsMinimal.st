@@ -1,18 +1,18 @@
 steps
-stepgroups
+stepgroupsMinimal
 	<step>
 
 	^ (Dictionary newFrom: {
 (#class -> ViScriptPart).
-(#definition -> #'35a0b9b2-b526-b544-8986-611c3a032ccd').
+(#definition -> #'1aa18191-d968-b347-aad8-96e6fc1ecd3d').
 (#iconCode -> 'nil').
-(#id -> #groups).
+(#id -> #groupsMinimal).
 (#isProperty -> false).
-(#isReference -> true).
+(#isReference -> false).
 (#label -> nil).
-(#next -> #'a86abb2d-0d7b-2049-a6f8-c1cde8336246').
+(#next -> #'ebf5af18-bb7d-144d-b688-d977edb554da').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 March 2019 2:52:43.089235 pm').
+(#creationTimeStamp -> '29 March 2019 2:44:51.101235 pm').
 (#inputKind -> #(nil nil)).
 (#view -> ViTreeView)}))})
