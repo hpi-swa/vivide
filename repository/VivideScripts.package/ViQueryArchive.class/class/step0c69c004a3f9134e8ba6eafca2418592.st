@@ -5,7 +5,7 @@ step0c69c004a3f9134e8ba6eafca2418592
 	^ (Dictionary newFrom: {
 (#class -> ViQueryTransformStep).
 (#definition -> #'1db1df87-dcb9-2542-b17b-bc902869ba5d').
-(#iconCode -> 'UiDiagonaIcons icon0132Normal').
+(#iconCode -> 'UiSilkIcons starIcon').
 (#id -> #'0c69c004-a3f9-134e-8ba6-eafca2418592').
 (#label -> 'Singletons and defaults').
 (#next -> #'f45b857e-e698-274c-b3d6-467851b2d5dc').

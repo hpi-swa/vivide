@@ -14,4 +14,4 @@ step94e3fbd008adea49aa1d8bf2961de5fc
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 October 2015 11:12:34 am').
-(#inputKind -> #(nil nil ))}))})
+(#inputKind -> #(nil nil))}))})

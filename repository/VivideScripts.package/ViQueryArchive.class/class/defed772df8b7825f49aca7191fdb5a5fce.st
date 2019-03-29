@@ -12,7 +12,7 @@ defed772df8b7825f49aca7191fdb5a5fce
 		nm -> (object debuggerMap namedTempAt: idx in: object)])]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'ed772df8-b782-5f49-aca7-191fdb5a5fce').
-(#inputKind -> MethodContext).
+(#inputKind -> Context).
 (#mapType -> #each).
 (#outputKind -> Association).
 (#properties -> (Dictionary newFrom: {

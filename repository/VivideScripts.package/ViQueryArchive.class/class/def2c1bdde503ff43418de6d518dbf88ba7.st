@@ -1,14 +1,14 @@
 definitions
-def947b57117f96b84eb377552af88bcea8
+def2c1bdde503ff43418de6d518dbf88ba7
 	<definition>
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [ViProfile active ifNotNil: #transcriptHistory] value in: [:result |
 	out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
-(#id -> #'947b5711-7f96-b84e-b377-552af88bcea8').
+(#id -> #'2c1bdde5-03ff-4341-8de6-d518dbf88ba7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 August 2016 4:50:38 pm')})).
+(#creationTimeStamp -> '21 February 2018 6:39:39 pm')})).
 (#sourceCode -> '[:in :out | [ViProfile active ifNotNil: #transcriptHistory] value in: [:result |
 	out addAll: result asList]]')})

@@ -5,7 +5,7 @@ step77862f460851124eb1ff6cb2e962a0c8
 	^ (Dictionary newFrom: {
 (#class -> ViQueryTransformStep).
 (#definition -> #'8a8d6ac7-0a64-2e4d-942f-654924a02c68').
-(#iconCode -> 'UiDiagonaIcons icon0223Normal').
+(#iconCode -> 'ViIcons blueFlagIcon').
 (#id -> #'77862f46-0851-124e-b1ff-6cb2e962a0c8').
 (#label -> 'Flags').
 (#next -> #'fd3c0b79-142a-ee4e-9f27-4da12eba946f').

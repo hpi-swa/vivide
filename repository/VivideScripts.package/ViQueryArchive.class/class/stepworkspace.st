@@ -4,8 +4,8 @@ stepworkspace
 
 	^ (Dictionary newFrom: {
 (#class -> ViScriptPart).
-(#definition -> #'fece5f9a-89de-2e4e-b5e6-8f0c8255c2c5').
-(#iconCode -> 'UiFugueIcons applicationTerminalIcon').
+(#definition -> #'2564f7ee-3d4f-8c4a-bee8-3965a3002ceb').
+(#iconCode -> 'ViIcons icons8Console64px1Icon').
 (#id -> #workspace).
 (#isProperty -> false).
 (#isReference -> false).
@@ -13,7 +13,7 @@ stepworkspace
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 August 2016 4:50:38 pm').
+(#creationTimeStamp -> '21 February 2018 6:39:39 pm').
 (#isGlobal -> true).
 (#priority -> 500).
 (#view -> ViWorkspaceView)}))})

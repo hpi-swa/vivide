@@ -6,7 +6,7 @@ def514e33c149efdb4aab271b67d793b46b
 (#block -> [:ctxt | ctxt method]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'514e33c1-49ef-db4a-ab27-1b67d793b46b').
-(#inputKind -> MethodContext).
+(#inputKind -> Context).
 (#mapType -> #each).
 (#outputKind -> CompiledMethod).
 (#properties -> (Dictionary newFrom: {

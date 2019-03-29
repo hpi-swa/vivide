@@ -17,4 +17,4 @@ stepformattedQueries
 (#inputKind -> ViQueryStep).
 (#outputKind -> ViQueryStep).
 (#view -> ViTreeView).
-(#yieldOn -> #(#activated ))}))})
+(#yieldOn -> #(#activated))}))})

@@ -14,7 +14,7 @@ def4f4a5855cc447948bb200381aae59f41
 			nm -> (ctxt namedTempAt: idx)])]]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'4f4a5855-cc44-7948-bb20-0381aae59f41').
-(#inputKind -> ContextPart).
+(#inputKind -> AnObsoleteContextPart).
 (#mapType -> #all).
 (#outputKind -> Object).
 (#properties -> (Dictionary newFrom: {

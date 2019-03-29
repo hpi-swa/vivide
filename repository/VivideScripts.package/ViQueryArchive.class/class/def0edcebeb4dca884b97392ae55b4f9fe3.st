@@ -1,5 +1,5 @@
 definitions
-def177fc530e0455f4c96d6d074e991c669
+def0edcebeb4dca884b97392ae55b4f9fe3
 	<definition>
 
 	^ (Dictionary newFrom: {
@@ -8,10 +8,10 @@ def177fc530e0455f4c96d6d074e991c669
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViQueryStepDefinition).
-(#id -> #'177fc530-e045-5f4c-96d6-d074e991c669').
+(#id -> #'0edcebeb-4dca-884b-9739-2ae55b4f9fe3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 August 2016 4:50:38 pm')})).
+(#creationTimeStamp -> '21 February 2018 6:39:39 pm')})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:entry | { #text -> (''['' , entry key time print24 , ''] '' , entry value) }]
 		value: o), { #object -> o }]]
