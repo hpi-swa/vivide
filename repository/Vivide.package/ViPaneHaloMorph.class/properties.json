@@ -6,13 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"target",
-		"positionOffset",
 		"inputPanes",
 		"outputPanes",
 		"newOutputPane" ],
 	"name" : "ViPaneHaloMorph",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "SimpleHaloMorph",
 	"type" : "normal" }
