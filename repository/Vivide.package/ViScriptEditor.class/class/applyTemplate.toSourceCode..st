@@ -9,11 +9,12 @@ applyTemplate: aTemplateOrSymbol toSourceCode: aString
 	can be applied to
 		'[:num | num + num]' "
 
-	| template |
+	| template sourceCode |
 	template := aTemplateOrSymbol isSymbol
 		ifFalse: [aTemplateOrSymbol]
 		ifTrue: [self perform: ('template', aTemplateOrSymbol asString withFirstCharacterUppercase) asSymbol].
+	sourceCode := aString withPunctuationTrimmed.
 
 	^ (template value first: template key first - 1),
-		aString,
+		sourceCode,
 		(template value last: template value size - template key last)
