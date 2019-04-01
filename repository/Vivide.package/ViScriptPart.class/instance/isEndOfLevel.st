@@ -12,7 +12,7 @@ isEndOfLevel
 		found := false.
 		i := 0.
 		j := 0.
-		self allStepsDo: [:step |
+		self reference allStepsDo: [:step |
 			i := i + 1.
 			step isPropertyExtraction ifTrue: [
 				found := true.
