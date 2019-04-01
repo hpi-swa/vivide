@@ -13,4 +13,5 @@ step96d9ab1f38366b4c9f56ee9989b7d3a8
 (#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
-(#priority -> 5810)}))})
+(#priority -> 5810).
+(#view -> ViTreeViewExtended)}))})

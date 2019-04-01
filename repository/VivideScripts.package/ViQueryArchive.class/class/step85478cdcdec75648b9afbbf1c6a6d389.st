@@ -14,4 +14,5 @@ step85478cdcdec75648b9afbbf1c6a6d389
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#hAlignment -> #right).
 (#labelColor -> '#AAAAAA').
-(#priority -> 2220)}))})
+(#priority -> 2220).
+(#view -> ViTreeViewExtended)}))})

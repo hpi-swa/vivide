@@ -13,4 +13,5 @@ stepcodeDefinitions
 (#copyOfStep -> #codeDefinitions).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '3 September 2013 1:46 pm').
-(#priority -> 400)}))})
+(#priority -> 400).
+(#view -> ViTreeViewExtended)}))})

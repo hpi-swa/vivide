@@ -13,4 +13,5 @@ stepd1e78e71956eb045a15ec15acbbeab0f
 (#copyOfStep -> #debuggerStack).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 5150)}))})
+(#priority -> 5150).
+(#view -> ViTreeViewExtended)}))})

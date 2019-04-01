@@ -12,4 +12,5 @@ stepsimilarDefinitions
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '4 September 2013 12:59:07 pm').
-(#priority -> 650)}))})
+(#priority -> 650).
+(#view -> ViTreeViewExtended)}))})

@@ -12,4 +12,5 @@ stepupdateDefinitions
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 September 2013 8:27:11 pm').
-(#priority -> 410)}))})
+(#priority -> 410).
+(#view -> ViTreeViewExtended)}))})

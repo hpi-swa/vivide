@@ -11,5 +11,6 @@ step07d98c15a20c0b459dc3ba44905e9a7a
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 March 2019 5:00:11.34035 pm')})).
+(#creationTimeStamp -> '29 March 2019 5:00:11.34035 pm').
+(#view -> ViTreeViewExtended)})).
 (#reference -> #'37989d23-0602-ed44-ad37-440cccc8d6d9')})

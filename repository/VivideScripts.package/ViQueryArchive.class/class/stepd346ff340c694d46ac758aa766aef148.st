@@ -14,4 +14,5 @@ stepd346ff340c694d46ac758aa766aef148
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#labelColor -> '#999999').
-(#priority -> 2000)}))})
+(#priority -> 2000).
+(#view -> ViTreeViewExtended)}))})

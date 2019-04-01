@@ -13,4 +13,5 @@ step6cd4db5cd2de844892b74f3c52589cf8
 (#copyOfStep -> #'728402d7-f870-e743-8d2a-abf2353efba1').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 4670)}))})
+(#priority -> 4670).
+(#view -> ViTreeViewExtended)}))})

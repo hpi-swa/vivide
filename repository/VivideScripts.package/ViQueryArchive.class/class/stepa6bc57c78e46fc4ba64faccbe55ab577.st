@@ -12,4 +12,5 @@ stepa6bc57c78e46fc4ba64faccbe55ab577
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 460)}))})
+(#priority -> 460).
+(#view -> ViTreeViewExtended)}))})

@@ -12,4 +12,5 @@ steporderedSteps
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '3 September 2013 3:26:55 pm').
-(#priority -> 390)}))})
+(#priority -> 390).
+(#view -> ViTreeViewExtended)}))})
