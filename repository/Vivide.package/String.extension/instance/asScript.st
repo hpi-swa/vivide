@@ -13,7 +13,7 @@ asScript
 		
 		ViScriptPart new in: [:script |
 			script notifier doSilently: [
-				script sourceCode: (ViScriptEditor applySourceCode: code toTemplate: template).
+				script sourceCode: (ViScriptEditor applyTemplate: template toSourceCode: code).
 				properties keysAndValuesDo: [:key :value |
 					script setProperty: key toValue: value]].
 			

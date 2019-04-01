@@ -1,11 +1,13 @@
 as yet unclassified
-applySourceCode: aString toTemplate: aTemplate
+applyTemplate: aTemplate toSourceCode: aString
 	" For example
-		[:num | num + num]
-	can be applied to
 		(45 to: 62) -> '[:in :out | (
 			[:objects | objects collect: [:object | object]]
-				value: in) do: [:result | out addAll: result asList]]' "
+				value: in) do: [:result | out addAll: result asList]]'
+	or
+		#standard
+	can be applied to
+		'[:num | num + num]' "
 
 	^ (aTemplate value first: aTemplate key first - 1),
 		aString,
