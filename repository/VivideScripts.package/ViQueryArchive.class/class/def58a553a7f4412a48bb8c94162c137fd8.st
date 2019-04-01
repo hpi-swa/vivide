@@ -14,12 +14,12 @@ def58a553a7f4412a48bb8c94162c137fd8
 			ifFalse: [(records at: 2) string]].
 	sourceString := class prettyPrinterClass format: sourceString in: class notifying: nil.
 	
-	#text -> (prior ifNil: [sourceString] ifNotNil: [
+	{ #text -> (prior ifNil: [sourceString] ifNotNil: [
 			TextDiffBuilder
 				buildDisplayPatchFrom: prior
 				to: sourceString
 				inClass: class
-				prettyDiffs: true]) asText]).
+				prettyDiffs: true]) asText }]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'58a553a7-f441-2a48-bb8c-94162c137fd8').
 (#inputKind -> CompiledMethod).
@@ -39,11 +39,11 @@ def58a553a7f4412a48bb8c94162c137fd8
 			ifFalse: [(records at: 2) string]].
 	sourceString := class prettyPrinterClass format: sourceString in: class notifying: nil.
 	
-	#text -> (prior ifNil: [sourceString] ifNotNil: [
+	{ #text -> (prior ifNil: [sourceString] ifNotNil: [
 			TextDiffBuilder
 				buildDisplayPatchFrom: prior
 				to: sourceString
 				inClass: class
-				prettyDiffs: true]) asText]').
+				prettyDiffs: true]) asText }]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})

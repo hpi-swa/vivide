@@ -8,7 +8,7 @@ defb6a92974d1651d4d9061a006207ac4a8
 	| poss aClass aSelector |
 	aClass := method methodClass.
 	aSelector := method selector.
-	#text -> ((poss := aClass precodeCommentOrInheritedCommentFor: aSelector)
+	{ #text -> ((poss := aClass precodeCommentOrInheritedCommentFor: aSelector)
 		isEmptyOrNil
 			ifTrue: [aSelector
 				ifNotNil: [((aClass methodHeaderFor: aSelector), '
@@ -21,7 +21,7 @@ Has no comment') asText makeSelectorBoldIn: aClass]
 ', poss) asText makeSelectorBoldIn: aClass]
 				ifNil: [poss]])
 
-]).
+}]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'b6a92974-d165-1d4d-9061-a006207ac4a8').
 (#inputKind -> CompiledMethod).
@@ -35,7 +35,7 @@ Has no comment') asText makeSelectorBoldIn: aClass]
 	| poss aClass aSelector |
 	aClass := method methodClass.
 	aSelector := method selector.
-	#text -> ((poss := aClass precodeCommentOrInheritedCommentFor: aSelector)
+	{ #text -> ((poss := aClass precodeCommentOrInheritedCommentFor: aSelector)
 		isEmptyOrNil
 			ifTrue: [aSelector
 				ifNotNil: [((aClass methodHeaderFor: aSelector), ''
@@ -48,6 +48,6 @@ Has no comment'') asText makeSelectorBoldIn: aClass]
 '', poss) asText makeSelectorBoldIn: aClass]
 				ifNil: [poss]])
 
-]').
+}]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})

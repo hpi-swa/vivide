@@ -8,9 +8,9 @@ def0481a903f8da2d429c11991745884f3d
 	class := method methodClass.
 	selector := method selector.
 	sourceString := class ultimateSourceCodeAt: selector ifAbsent: ['error'].
-	#text -> (ViTextStyler new
+	{ #text -> (ViTextStyler new
 		classOrMetaClass: class;
-		styledTextFor: (class prettyPrinterClass format: sourceString in: class notifying: nil) asText)]).
+		styledTextFor: (class prettyPrinterClass format: sourceString in: class notifying: nil) asText) }]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'0481a903-f8da-2d42-9c11-991745884f3d').
 (#inputKind -> CompiledMethod).
@@ -24,8 +24,8 @@ def0481a903f8da2d429c11991745884f3d
 	class := method methodClass.
 	selector := method selector.
 	sourceString := class ultimateSourceCodeAt: selector ifAbsent: [''error''].
-	#text -> (ViTextStyler new
+	{ #text -> (ViTextStyler new
 		classOrMetaClass: class;
-		styledTextFor: (class prettyPrinterClass format: sourceString in: class notifying: nil) asText)]').
+		styledTextFor: (class prettyPrinterClass format: sourceString in: class notifying: nil) asText) }]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})

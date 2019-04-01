@@ -9,14 +9,14 @@ def6cc037e36bf3f24ebc65d7b765664a5d
 		new: 2 * (0 max: class allSuperclasses size - offset contents)
 		withAll: $ .
 
-	#text -> (
+	{ #text -> (
 		class isAbstract
 			ifFalse: [ ident , class name ]
 			ifTrue: [ 
 				ident asText , class name asText 
 					addAttribute: TextEmphasis italic;
 					yourself ]
-	)]).
+	) }]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'6cc037e3-6bf3-f24e-bc65-d7b765664a5d').
 (#inputKind -> Behavior).
@@ -31,13 +31,13 @@ def6cc037e36bf3f24ebc65d7b765664a5d
 		new: 2 * (0 max: class allSuperclasses size - offset contents)
 		withAll: $ .
 
-	#text -> (
+	{ #text -> (
 		class isAbstract
 			ifFalse: [ ident , class name ]
 			ifTrue: [ 
 				ident asText , class name asText 
 					addAttribute: TextEmphasis italic;
 					yourself ]
-	)]').
+	) }]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})

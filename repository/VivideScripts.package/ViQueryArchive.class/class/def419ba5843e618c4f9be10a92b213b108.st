@@ -81,7 +81,7 @@ def419ba5843e618c4f9be10a92b213b108
 								do: [:aChangeSet | aStream nextPutAll: aChangeSet name , ' ']]
 						ifFalse: [aStream nextPutAll: 'in no change set'].
 					aStream nextPutAll: separator]].
-	#text -> aStream contents]).
+	{ #text -> aStream contents }]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'419ba584-3e61-8c4f-9be1-0a92b213b108').
 (#inputKind -> CompiledMethod).
@@ -168,6 +168,6 @@ def419ba5843e618c4f9be10a92b213b108
 								do: [:aChangeSet | aStream nextPutAll: aChangeSet name , '' '']]
 						ifFalse: [aStream nextPutAll: ''in no change set''].
 					aStream nextPutAll: separator]].
-	#text -> aStream contents]').
+	{ #text -> aStream contents }]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})
