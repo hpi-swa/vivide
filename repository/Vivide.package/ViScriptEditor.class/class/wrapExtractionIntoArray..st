@@ -3,7 +3,7 @@ wrapExtractionIntoArray: code
 	"Insert missing curly brackets for property steps."
 
 	| inner node |
-	inner := code.
+	inner := code withPunctuationTrimmed.
 	node := RBParser parseExpression: inner.
 	self assert: node isBlock.
 	node body statements last "Not first to allow temps." isArray ifFalse: [
