@@ -7,6 +7,8 @@ baseClass
 	self flag: #tofix.
 
 	self isMeta ifTrue: [
+		self flag: #metaScript.
+		
 		self stepsDo: [:step | | in |
 			self assert: step isMeta. "Only meta steps allowed."
 			in := Object.

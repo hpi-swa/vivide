@@ -2,10 +2,13 @@ initialization - scripts
 addGroupsScript
 
 	self addScript: {
-		#groupsMinimal -> {
+		[:tuples | tuples sorted: [:t1 :t2 | t1 second asString <= t2 second asString]]
+			-> {
 			#inputKind -> #(nil nil).
 			#view -> ViTreeView.
 			#id -> #groups}.
+			
+		#groupsMinimal.
 
 		[:object | {
 			#text -> (object isText ifFalse: [ViLabelService doObject: object]).
