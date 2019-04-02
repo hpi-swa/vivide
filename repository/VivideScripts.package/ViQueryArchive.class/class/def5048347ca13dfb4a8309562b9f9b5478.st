@@ -3,9 +3,9 @@ def5048347ca13dfb4a8309562b9f9b5478
 	<definition>
 
 	^ (Dictionary newFrom: {
-(#block -> [:context |
+(#block -> [:context | #text -> ( 
 	"See Debugger >> newStack:"
-	context printString]).
+	context printString ) ]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'5048347c-a13d-fb4a-8309-562b9f9b5478').
 (#inputKind -> Object).
@@ -14,8 +14,8 @@ def5048347ca13dfb4a8309562b9f9b5478
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 February 2014 5:43:01 pm')})).
-(#sourceCode -> '[:context |
+(#sourceCode -> '[:context | #text -> ( 
 	"See Debugger >> newStack:"
-	context printString]').
+	context printString ) ]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})
