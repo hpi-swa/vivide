@@ -3,10 +3,12 @@ stepdebuggerBindings
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryTransformStep).
-(#definition -> #'4f4a5855-cc44-7948-bb20-0381aae59f41').
+(#class -> ViScriptPart).
+(#definition -> #'1c0a54ab-f2e4-7747-a0b9-5b9444e5d0dd').
 (#iconCode -> 'UiFugueIcons blockIcon').
 (#id -> #debuggerBindings).
+(#isProperty -> false).
+(#isReference -> false).
 (#label -> 'Bindings').
 (#next -> #'89162c9a-8847-4744-abdb-1031a61c2898').
 (#properties -> (Dictionary newFrom: {

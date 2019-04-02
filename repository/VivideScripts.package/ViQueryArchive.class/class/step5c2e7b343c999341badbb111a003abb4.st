@@ -3,10 +3,12 @@ step5c2e7b343c999341badbb111a003abb4
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryPropertyStep).
-(#definition -> #'c7b9f779-af5c-f242-acdd-5b98ebc17cb5').
+(#class -> ViScriptPart).
+(#definition -> #'40748765-88db-4945-8d6b-9c7f2debf6fb').
 (#iconCode -> 'nil').
 (#id -> #'5c2e7b34-3c99-9341-badb-b111a003abb4').
+(#isProperty -> true).
+(#isReference -> false).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

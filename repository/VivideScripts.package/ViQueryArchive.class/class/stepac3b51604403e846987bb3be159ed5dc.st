@@ -3,13 +3,17 @@ stepac3b51604403e846987bb3be159ed5dc
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQuerySortStep).
-(#definition -> #'d94d89dd-c32f-f144-b8b5-f265d775a7f5').
+(#class -> ViScriptPart).
+(#definition -> #'bee7c683-9667-a94a-b75b-5d1f78775626').
 (#iconCode -> 'nil').
 (#id -> #'ac3b5160-4403-e846-987b-b3be159ed5dc').
+(#isProperty -> false).
+(#isReference -> false).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '27 May 2014 2:54:18 pm').
+(#inputKind -> PackageInfo).
+(#outputKind -> Boolean).
 (#priority -> 6360)}))})

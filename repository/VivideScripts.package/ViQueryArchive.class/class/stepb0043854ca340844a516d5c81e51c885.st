@@ -3,10 +3,12 @@ stepb0043854ca340844a516d5c81e51c885
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryTransformStep).
-(#definition -> #'15beca97-e0c0-1e44-81d7-45840aeb820b').
+(#class -> ViScriptPart).
+(#definition -> #'8a228145-11c6-f34e-a4ee-2edd4c5766e0').
 (#iconCode -> 'nil').
 (#id -> #'b0043854-ca34-0844-a516-d5c81e51c885').
+(#isProperty -> false).
+(#isReference -> false).
 (#label -> 'Variables for whileTrue senders').
 (#next -> #'5c3b9aae-476e-cc4f-96a1-da5e5ab421ad').
 (#properties -> (Dictionary newFrom: {

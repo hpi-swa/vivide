@@ -3,12 +3,14 @@ stepc7e12f641638ba4392a55110b39063f2
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryGroupStep).
-(#definition -> #'5f9c4c42-67c8-c44c-99bc-c4bbff0a8363').
+(#class -> ViScriptPart).
+(#definition -> #'06866ea3-c061-0042-ba48-bf733322d2d6').
 (#iconCode -> 'nil').
 (#id -> #'c7e12f64-1638-ba43-92a5-5110b39063f2').
+(#isProperty -> false).
+(#isReference -> false).
 (#label -> nil).
-(#next -> #'4b813e3f-30bb-714c-9658-02f84e1ecc5b').
+(#next -> #'1a41c168-d896-8c4d-bdc8-b6e9ecdd16ea').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 September 2013 6:58:12 pm').
