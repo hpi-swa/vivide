@@ -1,5 +1,5 @@
 definitions
-deff7713f3d1af3de439510b66470425a96
+def58d9e6a581ebe94682437b088803d44e
 	<definition>
 
 	^ (Dictionary newFrom: {
@@ -9,11 +9,8 @@ deff7713f3d1af3de439510b66470425a96
 	(obj isForm
 		ifTrue: ['Picture successfully loaded.\ Width: {1}\ Height: {2}\ Depth: {3}' withCRs format: {obj width.obj height.obj depth}]
 		ifFalse: [obj asString])]).
-(#class -> ViQueryMapDefinition).
-(#id -> #'f7713f3d-1af3-de43-9510-b66470425a96').
-(#inputKind -> Object).
-(#mapType -> #each).
-(#outputKind -> Object).
+(#class -> ViQueryStepDefinition).
+(#id -> #'58d9e6a5-81eb-e946-8243-7b088803d44e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 December 2013 5:17:12 pm')})).
@@ -22,6 +19,4 @@ deff7713f3d1af3de439510b66470425a96
 	
 	(obj isForm
 		ifTrue: [''Picture successfully loaded.\ Width: {1}\ Height: {2}\ Depth: {3}'' withCRs format: {obj width.obj height.obj depth}]
-		ifFalse: [obj asString])]').
-(#updateClearDefinition -> nil).
-(#updateSetDefinition -> nil)})
+		ifFalse: [obj asString])]')})

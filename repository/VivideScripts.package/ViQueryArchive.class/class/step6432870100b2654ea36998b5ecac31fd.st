@@ -4,7 +4,7 @@ step6432870100b2654ea36998b5ecac31fd
 
 	^ (Dictionary newFrom: {
 (#class -> ViQueryPropertyStep).
-(#definition -> #'0fee1e3f-c9f8-9042-b646-88feee2a13c8').
+(#definition -> #'dfc52635-0f67-ec44-95da-0015581b3976').
 (#iconCode -> 'nil').
 (#id -> #'64328701-00b2-654e-a369-98b5ecac31fd').
 (#label -> nil).

@@ -4,7 +4,7 @@ step83cf71976cf5554eb5352b2ebf2fb60e
 
 	^ (Dictionary newFrom: {
 (#class -> ViQueryPropertyStep).
-(#definition -> #'729f566c-cae2-d342-b313-485aece0c9f6').
+(#definition -> #'0e8d96d2-e161-4642-8ab8-9c4f1e307194').
 (#iconCode -> 'nil').
 (#id -> #'83cf7197-6cf5-554e-b535-2b2ebf2fb60e').
 (#label -> 'Byte codes').

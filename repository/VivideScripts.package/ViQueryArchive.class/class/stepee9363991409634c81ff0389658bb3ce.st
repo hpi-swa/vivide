@@ -4,7 +4,7 @@ stepee9363991409634c81ff0389658bb3ce
 
 	^ (Dictionary newFrom: {
 (#class -> ViQueryPropertyStep).
-(#definition -> #'f7713f3d-1af3-de43-9510-b66470425a96').
+(#definition -> #'58d9e6a5-81eb-e946-8243-7b088803d44e').
 (#iconCode -> 'nil').
 (#id -> #'ee936399-1409-634c-81ff-0389658bb3ce').
 (#label -> nil).
