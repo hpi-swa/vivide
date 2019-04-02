@@ -1,12 +1,12 @@
 definitions
-def35a0b9b2b526b5448986611c3a032ccd
+def045ec7be6ef32448b846acab2248a757
 	<definition>
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#groupsMinimal] value]]).
 (#class -> ViQueryStepDefinition).
-(#id -> #'35a0b9b2-b526-b544-8986-611c3a032ccd').
+(#id -> #'045ec7be-6ef3-2448-b846-acab2248a757').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 March 2019 2:52:43.089235 pm')})).
+(#creationTimeStamp -> '2 April 2019 3:12:48.400594 pm')})).
 (#sourceCode -> '[:in :out | in ifNotEmpty: [out add: [#groupsMinimal] value]]')})
