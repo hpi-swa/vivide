@@ -4,9 +4,14 @@ defa6a9170d91dd6842868906bf8889c622
 
 	^ (Dictionary newFrom: {
 (#block -> [:obj | ViObjectOriginService doObject: obj]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViQueryMapDefinition).
 (#id -> #'a6a9170d-91dd-6842-8689-06bf8889c622').
+(#inputKind -> Object).
+(#mapType -> #each).
+(#outputKind -> Object).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
-(#sourceCode -> '[:obj | ViObjectOriginService doObject: obj]')})
+(#sourceCode -> '[:obj | ViObjectOriginService doObject: obj]').
+(#updateClearDefinition -> nil).
+(#updateSetDefinition -> nil)})
