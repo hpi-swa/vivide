@@ -3,7 +3,7 @@ def9ff42a6106dedb4f8bdef07db577c02f
 	<definition>
 
 	^ (Dictionary newFrom: {
-(#block -> [:objects :context | objects select: [:cls |
+(#block -> [:objects | objects select: [:cls |
 	(cls inheritsFrom: Morph) and: [(cls methodDict keys count: [:selector |
 			#(grabKeyboard hasKeyboard) includes: selector]) == 1]]]).
 (#class -> ViQueryMapDefinition).
@@ -14,7 +14,7 @@ def9ff42a6106dedb4f8bdef07db577c02f
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
-(#sourceCode -> '[:objects :context | objects select: [:cls |
+(#sourceCode -> '[:objects | objects select: [:cls |
 	(cls inheritsFrom: Morph) and: [(cls methodDict keys count: [:selector |
 			#(grabKeyboard hasKeyboard) includes: selector]) == 1]]].').
 (#updateClearDefinition -> nil).

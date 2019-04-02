@@ -6,9 +6,9 @@ def69d885825b2fab488b6499d72b1432a0
 (#block -> [:ctxts | ctxts gather: [:ctxt | ctxt stack]]).
 (#class -> ViQueryMapDefinition).
 (#id -> #'69d88582-5b2f-ab48-8b64-99d72b1432a0').
-(#inputKind -> AnObsoleteContextPart).
+(#inputKind -> Context).
 (#mapType -> #all).
-(#outputKind -> Object).
+(#outputKind -> Context).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).

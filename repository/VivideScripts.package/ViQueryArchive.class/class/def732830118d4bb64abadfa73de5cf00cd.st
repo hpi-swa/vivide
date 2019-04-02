@@ -12,7 +12,7 @@ def732830118d4bb64abadfa73de5cf00cd
 (#id -> #'73283011-8d4b-b64a-badf-a73de5cf00cd').
 (#inputKind -> Process).
 (#mapType -> #each).
-(#outputKind -> AnObsoleteContextPart).
+(#outputKind -> Context).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 February 2014 5:50:41 pm')})).

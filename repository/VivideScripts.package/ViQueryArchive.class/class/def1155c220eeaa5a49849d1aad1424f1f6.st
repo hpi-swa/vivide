@@ -3,8 +3,7 @@ def1155c220eeaa5a49849d1aad1424f1f6
 	<definition>
 
 	^ (Dictionary newFrom: {
-(#block -> [:organizers :context | | result |
-	context contents: organizers.
+(#block -> [:organizers | | result |
 	result := OrderedCollection new.
 	organizers do: [:o |
 		o orderedSteps do: [:step |
@@ -25,8 +24,7 @@ def1155c220eeaa5a49849d1aad1424f1f6
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 September 2013 9:17:21 am')})).
-(#sourceCode -> '[:organizers :context | | result |
-	context contents: organizers.
+(#sourceCode -> '[:organizers | | result |
 	result := OrderedCollection new.
 	organizers do: [:o |
 		o orderedSteps do: [:step |

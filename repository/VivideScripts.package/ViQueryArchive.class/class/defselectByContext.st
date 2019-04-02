@@ -3,7 +3,7 @@ defselectByContext
 	<definition>
 
 	^ (Dictionary newFrom: {
-(#block -> [:objects :context | objects select: [:obj | context contents includes: obj]]).
+(#block -> [:objects | objects select: [:obj | true]]).
 (#class -> ViQueryMapDefinition).
 (#id -> #selectByContext).
 (#inputKind -> Object).
@@ -12,6 +12,6 @@ defselectByContext
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
-(#sourceCode -> '[:objects :context | objects select: [:obj | context contents includes: obj]]').
+(#sourceCode -> '[:objects | objects select: [:obj | true]]').
 (#updateClearDefinition -> nil).
 (#updateSetDefinition -> nil)})
