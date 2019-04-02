@@ -8,11 +8,7 @@ asNewStyleScript
 	convertedScript sourceCode: (ViScriptEditor
 		applyTemplate: #properties
 		toSourceCode: ('[:textOrObject | textOrObject isText ifTrue: [ \{ #text -> textOrObject \} ] ifFalse: [ {1} value: textOrObject]]'
-		format: {ViScriptEditor wrapExtractionIntoArray: 
-			((self definition sourceCode
-				copyReplaceAll: 'out' with: 'outt') "avoid name clashes"
-				copyReplaceAll: 'all' with: 'alll') "avoid name clashes"		
-		})).
+		format: {ViScriptEditor wrapExtractionIntoArray: self definition sourceCode})).
 	convertedScript isProperty: true.
 	
 	"2) Copy all meta data."

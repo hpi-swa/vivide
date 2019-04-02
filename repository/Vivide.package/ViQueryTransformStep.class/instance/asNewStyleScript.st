@@ -12,9 +12,7 @@ asNewStyleScript
 		applyTemplate: (self isGlobal
 			ifTrue: [#global]
 			ifFalse: [self definition mapType = #each ifTrue: [#standard] ifFalse: [#allAtOnce]])
-		toSourceCode: ((self definition sourceCode
-			copyReplaceAll: 'out' with: 'outt') "avoid name clashes"
-			copyReplaceAll: 'all' with: 'alll') "avoid name clashes").
+		toSourceCode: self definition sourceCode).
 	
 	"2) Copy all meta data."
 	convertedScript

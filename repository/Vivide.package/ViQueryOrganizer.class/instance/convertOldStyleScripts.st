@@ -8,6 +8,8 @@ convertOldStyleScripts
 	oldStyleScripts := (oldStyleScripts gather: [:ea | ea allSteps "follow refs"]) asSet
 		select: [:ea | ea isScript not and: [ea isGroupSortStep not]].
 
+	self assert: oldStyleScripts size > 0.
+
 	"Sort for better debugging."
 "	oldStyleScripts := oldStyleScripts sorted: [:a :b |	
 		a nextLabel <= b nextLabel or: [
@@ -52,6 +54,20 @@ convertOldStyleScripts
 		self assert: (ea definition isDefault or: [ea definition organization == newOrganization]).
 	]].
 	
+	"Clean-up inputKind and outputKind."
+	newOrganization orderedSteps do: [:step |
+		#(inputKind outputKind) do: [:property |
+			#( (Object 'nil') (AnObsoleteContextPart Context) ) do: [:mapping |
+				(step valueOfProperty: property) name = mapping first 
+					ifTrue: [step setProperty: property toValue: (Compiler evaluate: mapping second)]]]].
+	
 	"Register in this organization."
-	"TODO"
-	self halt.
+	self steps values
+		select: [:ea | ea isScript not]
+		thenDo: [:ea | ea unregister. ea definition ifNotNil: #unregister].
+	newOrganization orderedSteps
+		select: [:ea | ea nextLabel notNil or: [ea isSpecial]]
+		thenDo: [:ea | ea adoptOrganization: self].
+		
+	"Final check."
+	self assert: newOrganization orderedSteps isEmpty.
