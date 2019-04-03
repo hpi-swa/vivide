@@ -1,5 +1,6 @@
 tests
-test02TemplateDetection
+test01TemplateDetection
+	"Low-level template detection."
 
 	{
 		'[:num | num * num]' -> ViScriptEditor templateStandard.

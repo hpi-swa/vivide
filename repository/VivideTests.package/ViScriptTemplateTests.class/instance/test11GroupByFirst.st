@@ -1,5 +1,5 @@
-tests
-test07GroupBy
+tests - collection patterns
+test11GroupByFirst
 
 	self
 		assert: #((odd ((1) (3) (5))) (even ((2) (4) (6))))
