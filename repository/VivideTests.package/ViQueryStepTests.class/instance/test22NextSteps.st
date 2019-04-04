@@ -9,4 +9,4 @@ test22NextSteps
 	
 	self
 		assert: ({q1.p} hasEqualElements: q1 nextSteps);
-		assert: ({q2}, ViQueryStep defaultProperties allSteps hasEqualElements: q2 nextSteps).
+		assert: ({q2}, #defaultProperties asScript allSteps hasEqualElements: q2 nextSteps).

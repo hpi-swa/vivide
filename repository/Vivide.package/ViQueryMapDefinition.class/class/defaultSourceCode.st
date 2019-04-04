@@ -1,4 +1,0 @@
-defaults
-defaultSourceCode
-
-	^ '[:obj | obj]'

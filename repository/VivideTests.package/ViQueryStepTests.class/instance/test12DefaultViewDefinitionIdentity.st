@@ -3,6 +3,5 @@ test12DefaultViewDefinitionIdentity
 
 	| q |
 	q := [:morph | morph color] asScript.
-	self
-		assert: q viewDefinition == q viewDefinition;
-		assert: ViQueryStep defaultViewDefinition == ViQueryStep defaultViewDefinition.
+	
+	self flag: #todo. "mt: Fetch defaultView from some local profile and check against that. Maybe move this test to ViScriptTemplateTests or interpreter tests."

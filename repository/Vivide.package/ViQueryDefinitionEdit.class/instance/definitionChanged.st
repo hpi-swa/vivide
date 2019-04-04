@@ -1,4 +1,0 @@
-signals
-definitionChanged
-
-	self emit.

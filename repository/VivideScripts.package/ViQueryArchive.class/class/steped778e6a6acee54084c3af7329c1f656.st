@@ -15,6 +15,6 @@ steped778e6a6acee54084c3af7329c1f656
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 September 2013 8:27:31 pm').
 (#inputKind -> ViQueryStepDefinition).
-(#outputKind -> ViQueryUpdateDefinition).
+(#outputKind -> AnObsoleteViQueryUpdateDefinition).
 (#priority -> 1000).
 (#view -> ViTreeViewExtended)}))})
