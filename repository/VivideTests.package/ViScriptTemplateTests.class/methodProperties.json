@@ -18,6 +18,7 @@
 		"test03InjectInto" : "mt 4/3/2019 13:46",
 		"test03TransformEachReduce" : "mt 4/3/2019 15:02",
 		"test03TupleUnpackExtractEachWithObject" : "mt 4/4/2019 13:56",
+		"test04ExtractNew" : "mt 4/4/2019 14:45",
 		"test04ScriptProperties" : "mt 4/3/2019 10:44",
 		"test04Sorted" : "mt 4/3/2019 13:51",
 		"test04TupleUnpackExtractEachWithObjects" : "mt 4/3/2019 14:32",
