@@ -1,4 +1,4 @@
 as yet unclassified
 currentQuery
 
-	^ self model "root" firstStep next
+	^ self model "root" firstStep

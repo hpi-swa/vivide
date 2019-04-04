@@ -1,4 +1,4 @@
 accessing - pane api
 currentQuery
 
-	^ self model ifNotNil: [:m | m firstStep next]
+	^ self model ifNotNil: [:m | m firstStep]

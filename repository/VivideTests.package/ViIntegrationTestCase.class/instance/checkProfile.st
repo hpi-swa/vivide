@@ -1,4 +1,6 @@
 support
 checkProfile
 
-	self assert: ViProfile active isValid.
+	| testProfile |
+	testProfile := ViProfile active. "Temporary variable for debugging."
+	self assert: testProfile isValid.

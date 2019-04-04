@@ -3,7 +3,7 @@ upToDetect: block
 
 	self clearProperties.
 	
-	[step isNil or: [block value: step]] whileFalse: [self next].
+	[step isNil or: [block cull: step cull: self]] whileFalse: [self next].
 	
 	"Interpret the given step if found."
 	step ifNotNil: [self next].

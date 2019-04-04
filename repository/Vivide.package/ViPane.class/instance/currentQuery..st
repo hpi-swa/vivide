@@ -10,7 +10,7 @@ currentQuery: aQueryStep
 				self layoutChanged].
 			
 			self model resetSilently.
-			self model firstStep next: aQueryStep.
+			self model firstStep: aQueryStep.
 			self updateView. "Evaluation will happen lazily."
 			
 			aQueryStep ifNotNil: [

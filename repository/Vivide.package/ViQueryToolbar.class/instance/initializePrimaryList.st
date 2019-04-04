@@ -15,6 +15,6 @@ initializePrimaryList
 				reject: [:obj | obj isNil]].
 	
 	self halt.
-	self groups add: #Queries -> (ViQueryNode new inputForChildren: {self object}; firstStep: #orderedSteps asScript).
+	"self groups add: #Queries -> (ViQueryNode new inputForChildren: {self object}; firstStep: #orderedSteps asScript)."
 	
 	primaryList addMorph: dropTarget.
