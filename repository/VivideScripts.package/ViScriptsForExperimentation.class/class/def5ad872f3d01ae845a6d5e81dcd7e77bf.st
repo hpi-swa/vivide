@@ -9,7 +9,7 @@ def5ad872f3d01ae845a6d5e81dcd7e77bf
 	#text -> 'Proceed'.
 	#icon -> UiFugueIcons controlIcon.
 	#clicked -> [ [ debugger proceed: (view firstOwnerSuchThat: [:m | m isSystemWindow]) ] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | | view |
 	view := thisView. 
@@ -17,5 +17,5 @@ def5ad872f3d01ae845a6d5e81dcd7e77bf
 	#text -> ''Proceed''.
 	#icon -> UiFugueIcons controlIcon.
 	#clicked -> [ [ debugger proceed: (view firstOwnerSuchThat: [:m | m isSystemWindow]) ] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)

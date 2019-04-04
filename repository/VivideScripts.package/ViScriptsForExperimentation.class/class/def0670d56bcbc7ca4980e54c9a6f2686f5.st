@@ -10,7 +10,7 @@ def0670d56bcbc7ca4980e54c9a6f2686f5
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			stepIntoBlock] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | {
 	#text -> ''Through''.
@@ -19,5 +19,5 @@ def0670d56bcbc7ca4980e54c9a6f2686f5
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			stepIntoBlock] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)

@@ -10,7 +10,7 @@ defba33fb6bf6f85947b0e3d70108ea1c6c
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			doStep] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | {
 	#text -> ''Over''.
@@ -19,5 +19,5 @@ defba33fb6bf6f85947b0e3d70108ea1c6c
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			doStep] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)

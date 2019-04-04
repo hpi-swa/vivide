@@ -10,7 +10,7 @@ def18c970cee5f93f419f29a9ea7cf38df5
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			send] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | {
 	#text -> ''Into''.
@@ -19,5 +19,5 @@ def18c970cee5f93f419f29a9ea7cf38df5
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			send] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)

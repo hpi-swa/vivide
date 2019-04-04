@@ -11,7 +11,7 @@ def39199be1b491d345a8cb61ca01ab3043
 	#clicked -> [ [
 		debugger interruptedProcess terminate.
 		(view firstOwnerSuchThat: [:m | m isSystemWindow]) closeBoxHit ] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | | view |
 	view := thisView. 
@@ -21,5 +21,5 @@ def39199be1b491d345a8cb61ca01ab3043
 	#clicked -> [ [
 		debugger interruptedProcess terminate.
 		(view firstOwnerSuchThat: [:m | m isSystemWindow]) closeBoxHit ] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)

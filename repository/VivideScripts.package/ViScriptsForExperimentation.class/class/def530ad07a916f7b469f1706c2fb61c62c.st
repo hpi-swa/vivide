@@ -10,7 +10,7 @@ def530ad07a916f7b469f1706c2fb61c62c
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			restart] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]); add: (#sourceCode->'[:in :out | ([:all | all collect: [:t | (
 	[:debugger :context | {
 	#text -> ''Restart''.
@@ -19,5 +19,5 @@ def530ad07a916f7b469f1706c2fb61c62c
 		[debugger 
 			toggleContextStackIndex: (debugger contextStackList indexOf: context printString);
 			restart] ]}]
-		valueWithArguments: t), { #object -> t first. #objects -> t }]]
+		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]'); yourself)
