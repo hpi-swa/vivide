@@ -5,7 +5,7 @@ objects: someObjects
 		self showFlash.
 		(Delay forMilliseconds: 200) wait].
 
-	self model firstStep objects: someObjects.
+	self model inputForChildren: someObjects.
 				
 	self currentQuery: (self appropriateQueries
 		ifEmpty: [self createIdentityScript]

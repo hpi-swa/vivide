@@ -5,7 +5,7 @@ test07PropertyReadBlock
 	q := [:morph | #color -> [morph color]] asScript.
 	m := Morph new.
 	
-	sut := ViQueryInterpreter on: (ViQueryStep use: {m} in: q).
+	sut := ViQueryInterpreter on: q using: {m}.
 	sut upToNextProperties.
 	
 	b := (sut propertiesFor: m) at: #color.

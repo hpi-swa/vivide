@@ -9,7 +9,9 @@ test04NestedQueries
 	"The following code is the reason for introducing references."
 	outerQuery next: {[:ea | ea + 1]. [:ea | #text -> ea asString]} asScript.
 		
-	sut firstStep: (ViQueryStep use: #(1 2 3) in: outerQuery).
+	sut
+		inputForChildren: #(1 2 3);
+		firstStep: outerQuery.
 	self
 		assert: 3 equals: sut childCount;
 		assert: (1 * 1 + 1) asString equals: ((sut childAt: 1) at: #'1_text');

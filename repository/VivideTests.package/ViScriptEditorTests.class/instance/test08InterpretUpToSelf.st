@@ -17,11 +17,11 @@ test08InterpretUpToSelf
 	editor := view artifactContainers second.
 	editor interpretUpToSelf in: [:interpreter |
 		self assert: interpreter notNil.
-		self assert: #(2 4 6 8) equals: interpreter allObjects].
+		self assert: #(2 4 6 8) equals: interpreter objects].
 
 	editor := view artifactContainers third.
 	editor interpretUpToSelf in: [:interpreter |
 		self assert: interpreter notNil.
-		self assert: #(4 6 8 10) equals: interpreter allObjects].
+		self assert: #(4 6 8 10) equals: interpreter objects].
 	
 	view close.

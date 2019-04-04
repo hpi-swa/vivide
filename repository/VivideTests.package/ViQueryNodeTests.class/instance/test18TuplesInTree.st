@@ -9,11 +9,13 @@ test18TuplesInTree
 		[:sym :size | {size. size * 2}]
 			-> {#inputKind -> {Symbol.Integer}. #outputKind -> Integer}.
 	} asScript.
-	sut firstStep: (ViQueryStep use: #(foo bary) in: q).
+	sut
+		inputForChildren: #(foo bary);
+		firstStep: q.
 
 	n := sut childAt: 1.
 	self
 		assert: 2 equals: n childCount;
 		assert: 3 equals: (n childAt: 1) object;
 		assert: 6 equals: (n childAt: 2) object;
-		assert: (n childAt: 2) inputForChildren = 6.
+		assert: (n childAt: 2) inputForChildren = #(6).

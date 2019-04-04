@@ -3,7 +3,7 @@ upToEnd
 
 	| previousSteps |
 	previousSteps := OrderedCollection new.
-	properties := Dictionary new.
+	self clearProperties.
 	
 	[step isNil or: [previousSteps includes: step]]
 		whileFalse: [

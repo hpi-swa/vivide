@@ -6,7 +6,9 @@ test15ResultObjects
 		[:cls | #text -> cls name].
 		[:cls | cls subclasses] } asScript.
 	
-	sut firstStep: (ViQueryStep use: {Morph} in: script).
+	sut
+		inputForChildren: {Morph};
+		firstStep: script.
 
 	self
 		assert: 1 equals: sut childCount;

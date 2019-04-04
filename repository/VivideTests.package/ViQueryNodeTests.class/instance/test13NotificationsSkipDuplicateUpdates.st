@@ -14,7 +14,9 @@ test13NotificationsSkipDuplicateUpdates
 	view setUp: script.
 	
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: {self class} in: script).
+	sut
+		inputForChildren: {self class};
+		firstStep: script.
 	view process: sut.
 	
 	self assert: 1 equals: (Smalltalk globals at: #queryNode).

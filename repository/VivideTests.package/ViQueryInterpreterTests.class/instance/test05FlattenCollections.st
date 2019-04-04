@@ -1,13 +1,12 @@
 tests
 test05FlattenCollections
 
-	| q1 q2 |
-	q2 := {
+	| script |
+	script := {
 		[:number | number]. "This will get code appended to flatten collections."
 		[:number | #text -> number asString]. "This will not flatten collections."} asScript.
-	q1 := ViQueryStep use: #((1 2) 3 (4 5)) in: q2.
 	
-	sut := ViQueryInterpreter on: q1.
+	sut := ViQueryInterpreter on: script using: #((1 2) 3 (4 5)).
 	
 	sut upToNextProperties.
-	self assert: 5 equals: (sut objectsFor: #all) size.
+	self assert: 5 equals: sut objects size.

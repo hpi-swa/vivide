@@ -1,8 +1,7 @@
 instance creation
-on: aQueryStep
+on: aScriptStep
 
 	^ self new
-		currentStep: aQueryStep;
-		objects: (Dictionary new at: #all put: #(); yourself);
-		groups: #(all);
+		currentStep: aScriptStep;
+		objects: #();
 		stack: Stack new

@@ -12,7 +12,9 @@ test22GroupObjectsAgain
 		[:protocol :method | method].
 		[:method | #text -> method selector].
 	} asScript.
-	sut firstStep: (ViQueryStep use: Integer methodDict values in: q).
+	sut
+		inputForChildren: Integer methodDict values;
+		firstStep: q.
 	
 	"There may be empty categories in the Integer class."
 	cats := Integer organization categories select: [:cat |

@@ -6,7 +6,9 @@ test03SimpleQuery
 		[:ea | ea + 1].
 		[:ea | #text -> ea asString] } asScript.
 		
-	sut firstStep: (ViQueryStep use: #(1 2 3) in: query).
+	sut
+		inputForChildren: #(1 2 3);
+		firstStep: query.
 	self
 		assert: 3 equals: sut childCount;
 		assert: '2' equals: ((sut childAt: 1) at: #'1_text');

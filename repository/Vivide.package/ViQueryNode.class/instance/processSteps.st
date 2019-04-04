@@ -26,16 +26,13 @@ processSteps
 	
 	self cachedResults: interpreter objectsCache.
 	
-	"Prepare model."
-	groups := interpreter groups.
-	groups do: [:group | children at: group put: OrderedCollection new].
-	
-	"Create child nodes."
-	groups do: [:group | children
-		at: group
-		put: ((interpreter createNodesForGroup: group)
+	"Prepare model. Create child nodes."
+	groups := {self defaultGroup}.
+	children
+		at: self defaultGroup
+		put: (interpreter createNodes
 			do: [:node |
 				node
 					pane: self pane;
 					depth: self depth + 1];
-			yourself)].
+			yourself).

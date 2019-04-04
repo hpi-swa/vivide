@@ -9,6 +9,8 @@ interpretUpToDetect: block
 			self warningSent: 'Some steps are not connected. Fix that first.'.
 			^ nil]].
 		
-	^ (ViQueryInterpreter on: (ViQueryStep use: input in: otherSteps first))
-		upToDetect: block;
-		yourself
+	^ (ViQueryInterpreter
+		on: otherSteps first
+		using: input)
+			upToDetect: block;
+			yourself

@@ -1,18 +1,18 @@
-as yet unclassified
+interpreting - background
 upToNextPropertiesAsync
 	"Watch for asynchronous steps and manage evaluation in this case."
 
-	| seenPropertySteps |
-	properties := Dictionary new.
-	seenPropertySteps := 0.
+	| seenPropertyExtractions |
+	self clearProperties.
+	seenPropertyExtractions := 0.
 	
 	[
 		(step isNil
 			or: [step isExecutedAsynchronously])
-			or: [step isPropertyStep not and: [seenPropertySteps > 0]]
+			or: [step isPropertyExtraction not and: [seenPropertyExtractions > 0]]
 	] whileFalse: [
-		step isPropertyStep
-			ifTrue: [seenPropertySteps := seenPropertySteps + 1].
+		step isPropertyExtraction
+			ifTrue: [seenPropertyExtractions := seenPropertyExtractions + 1].
 		self next].
 
 	(step notNil and: [step isExecutedAsynchronously])

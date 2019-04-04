@@ -5,6 +5,9 @@ test06Script
 	script := [:num | num * 2] asScript.
 	model := ViQueryNode new.
 	
-	model firstStep: (ViQueryStep use: #(1 2 3 4) in: script).
+	model
+		inputForChildren: #(1 2 3 4);
+		firstStep: script.
+		
 	sut process: model. 
 	self assert: (sut objects hasEqualElements: #(2 4 6 8)).

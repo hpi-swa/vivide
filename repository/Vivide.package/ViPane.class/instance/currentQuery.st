@@ -1,4 +1,4 @@
 accessing
 currentQuery
 
-	^ self model firstStep next
+	^ self model firstStep

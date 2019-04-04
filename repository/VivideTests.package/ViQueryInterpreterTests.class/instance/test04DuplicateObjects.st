@@ -1,14 +1,12 @@
 tests
 test04DuplicateObjects
 
-	| q1 q2 |
-	q2 := {
+	| script |
+	script := {
 		[:number | number * number].
 		[:number | #text -> number asString]} asScript.
-
-	q1 := ViQueryStep use: #(1 1 1 1) in: q2.
 	
-	sut := ViQueryInterpreter on: q1.
+	sut := ViQueryInterpreter on: script using: #(1 1 1 1).
 	
 	sut upToNextProperties.
-	self assert: 4 equals: (sut createNodesForGroup: #all) size.
+	self assert: 4 equals: sut createNodes size.

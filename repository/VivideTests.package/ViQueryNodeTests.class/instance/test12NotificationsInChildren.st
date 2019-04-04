@@ -10,7 +10,9 @@ test12NotificationsInChildren
 			[:class | class methodDict values] -> {#notifier -> ViSystemChangeNotifier}} asScript.
 	
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: {self class category} in: script).
+	sut
+		inputForChildren: {self class category};
+		firstStep: script.
 	oldNodes := sut allNodes.
 	topCount := (SystemOrganization listAtCategoryNamed: self class category) size.
 

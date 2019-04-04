@@ -22,7 +22,9 @@ test14NotificationsSkipNestedUpdates
 	view setUp: script.
 	
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: {self class category} in: script).
+	sut
+		inputForChildren: {self class category};
+		firstStep: script.
 	view process: sut.
 	view currentVisibleView expandAllTopLevelNodes.
 	

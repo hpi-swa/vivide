@@ -2,5 +2,6 @@ as yet unclassified
 interpretScriptWith: someObjects
 
 	^ ViQueryNode new
-		firstStep: (ViQueryStep use: someObjects in: self);
+		inputForChildren: someObjects;
+		firstStep: self;
 		yourself

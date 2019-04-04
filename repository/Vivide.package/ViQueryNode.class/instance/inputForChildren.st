@@ -4,6 +4,6 @@ inputForChildren
 
 	^ self
 		at: #objects
-		ifAbsent: [self
-			at: #object
-			ifAbsent: [nil]]
+		ifAbsent: [(self at: #object ifAbsent: [nil])
+			"Avoid tuple flattening by accident; wrap into array."
+			ifNil: [#()] ifNotNil: [:anObject | {anObject}]]

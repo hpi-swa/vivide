@@ -6,4 +6,4 @@ test15Script
 	sut := ViQueryInterpreter on: q.
 	sut next.
 
-	self assert: (sut allObjects hasEqualElements: #(test)).
+	self assert: (sut objects hasEqualElements: #(test)).

@@ -9,7 +9,7 @@ updateInputKind
 				ifTrue: [self inputKind: k]
 				ifFalse: [self inputKind: (k isArray ifTrue: [k] ifFalse: [{k}]). ^ self]]."
 
-	([(self interpretUpToDetect: [:script | script next == self object]) allObjects]
+	([(self interpretUpToDetect: [:script | script next == self object]) objects]
 	on: Error do: [self inputKind: {nil}. ^ self]) ifEmpty: [self input: #("empty"); inputKind: {"global"}] ifNotEmpty: [:objects |
 		self input: objects.
 		

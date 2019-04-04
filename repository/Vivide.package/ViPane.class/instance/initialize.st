@@ -10,7 +10,8 @@ initialize
 	
 	model := ViQueryNode new
 		pane: self;
-		firstStep: (ViQueryFillStep new objects: #()).
+		inputForChildren: #();
+		firstStep: nil.
 	
 	self
 		initializeUiObjectChanges;

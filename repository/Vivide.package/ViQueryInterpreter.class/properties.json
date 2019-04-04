@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"objects",
-		"groups",
 		"stack",
 		"step",
 		"properties",

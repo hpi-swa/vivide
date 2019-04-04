@@ -18,7 +18,7 @@ test06ReferencedProperties
 	self assert: outer isReference.
 	self assert: outer reference == inner.
 	
-	sut := ViQueryInterpreter on: (ViQueryStep use: #(1 2 3 4) in: outer).
+	sut := ViQueryInterpreter on: outer using: #(1 2 3 4).
 	sut upToNextProperties.
 
 	self

@@ -9,9 +9,9 @@ test02CyclicQuery
 	} asScript.
 	query steps last next: query.
 
-	sut firstStep: (ViQueryFillStep new
-		objects: {ActiveWorld};
-		next: query).
+	sut
+		inputForChildren: {ActiveWorld};
+		firstStep: query.
 		
 	self
 		assert: (sut childrenInDefaultGroup hasEqualElements: (sut childAt: 1) childrenInDefaultGroup);

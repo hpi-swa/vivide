@@ -14,7 +14,9 @@ test21GroupObjects
 		[:ref | #text -> ref selector].
 	} asScript.
 	
-	sut firstStep: (ViQueryStep use: {testClass} in: q).
+	sut
+		inputForChildren: {testClass};
+		firstStep: q.
 	self assert: sut childCount = testClass organization categories size.
 	sut nodes with: testClass organization categories do: [:node :protocol |
 		self

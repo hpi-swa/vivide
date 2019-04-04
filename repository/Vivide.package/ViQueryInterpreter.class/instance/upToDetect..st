@@ -1,7 +1,7 @@
 interpreting
 upToDetect: block
 
-	properties := Dictionary new.
+	self clearProperties.
 	
 	[step isNil or: [block value: step]] whileFalse: [self next].
 	

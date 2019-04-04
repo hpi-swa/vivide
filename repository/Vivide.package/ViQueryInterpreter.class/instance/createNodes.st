@@ -1,7 +1,7 @@
 as yet unclassified
-createNodesForGroup: aGroup
+createNodes
 
-	(self properties at: aGroup ifAbsent: [#()]) in: [:chunks |
+	self properties in: [:chunks |
 		| result |
 		result := Array new: (chunks ifEmpty: [0] ifNotEmpty: [:chks | chks first size]).
 		chunks withIndexDo: [:chunk :propertyIndex|
@@ -26,7 +26,7 @@ createNodesForGroup: aGroup
 
 		"If there are no properties, create the #object property."
 		result ifEmpty: [
-			result := 	self allObjects collect: [:ea |
+			result := self objects collect: [:ea |
 				Dictionary newFrom: { #object -> ea. #'1_object' -> ea }]].
 
 		^ result collect: [:props |

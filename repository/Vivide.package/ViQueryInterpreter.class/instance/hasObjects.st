@@ -1,4 +1,4 @@
 testing
 hasObjects
 
-	^ objects values anySatisfy: [:groupedObjects | groupedObjects notEmpty]
+	^ self objects notNil and: [self objects notEmpty]

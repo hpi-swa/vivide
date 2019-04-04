@@ -3,7 +3,7 @@ test09FlattenInput
 
 	| q |
 	q := [:morph | morph color] asScript.
-	sut := ViQueryInterpreter on: (ViQueryStep use: {{Morph new. Morph new}. {Morph new. Morph new}} in: q).
+	sut := ViQueryInterpreter on: q using: {{Morph new. Morph new}. {Morph new. Morph new}}.
 
 	"There is no auto-magic flattening of input here."
 	self

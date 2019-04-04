@@ -9,7 +9,9 @@ test09WithAllObjectsCyclic
 	} asScript.
 	q1 steps last next: q1.
 	
-	sut firstStep: (ViQueryStep use: {ActiveWorld} in: q1).
+	sut
+		inputForChildren: {ActiveWorld};
+		firstStep: q1.
 	
 	self
 		assert: sut childCount = ActiveWorld submorphs size;

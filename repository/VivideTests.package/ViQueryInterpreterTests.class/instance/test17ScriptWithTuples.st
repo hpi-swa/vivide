@@ -11,5 +11,5 @@ test17ScriptWithTuples
 	sut := ViQueryInterpreter on: q1.
 	sut upToNextProperties.
 
-	self assert: ((sut propertiesFor: sut allObjects first) at: #objects) = #(a b).
-	self assert: ((sut propertiesFor: sut allObjects first) at: #object) = #a.
+	self assert: ((sut propertiesFor: sut objects first) at: #objects) = #(a b).
+	self assert: ((sut propertiesFor: sut objects first) at: #object) = #a.

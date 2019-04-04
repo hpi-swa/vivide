@@ -5,7 +5,9 @@ test11Notifications
 	script := {[:class | class] -> {#notifier -> ViSystemChangeNotifier}} asScript.
 		
 	"Prepare view to update."
-	sut firstStep: (ViQueryStep use: self class withAllSuperclasses in: script).
+	sut
+		inputForChildren: self class withAllSuperclasses;
+		firstStep: script.
 	oldNodes := sut nodes.
 	self assert: self class withAllSuperclasses size equals: oldNodes size.
 	

@@ -1,10 +1,8 @@
 instance creation
-onNode: aQueryNode
+onNode: aModelNode
+	"Configure a new interpreter based on information from the given model node."
 
 	^ self new
-		currentStep: aQueryNode firstStep;
-		objects: (Dictionary new
-			at: aQueryNode defaultGroup put: {aQueryNode inputForChildren}; "void tuple flattening by accident; wrap into array"
-			yourself);
-		groups: {aQueryNode defaultGroup} asOrderedCollection;
-		stack: aQueryNode referenceStack copy
+		currentStep: aModelNode firstStep;
+		objects: aModelNode inputForChildren;
+		stack: aModelNode referenceStack copy

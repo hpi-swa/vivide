@@ -15,10 +15,10 @@ test08WithAllObjects
 	} asScript.
 	q1 steps last next: q1 steps second asReference. 
 		
-	sut firstStep: (ViQueryStep use: (PackageInfo named: packageName) classes in: q1).
+	sut
+		inputForChildren: (PackageInfo named: packageName) classes;
+		firstStep: q1.
 	
-	self
-		assert: sut childCount < sut firstStep objects size;
-		assert: sut allObjects size = sut firstStep objects size.
+	self assert: sut childCount < sut inputForChildren size.
 	
 	Smalltalk globals removeKey: #test08WithAllObjects.

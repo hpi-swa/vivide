@@ -7,14 +7,17 @@ interpretScript
 		ifTrue: [^ step := step next].  
 
 	"Keep track of the current input to make intermediate script notifiers work."
-	self objectsCache at: step put: objects values concatenation.
+	self objectsCache at: step put: self objects copy.
 
 	step isPropertyExtraction ifTrue: [
-		self interpretScriptExtraction.
+		self interpretPropertyExtraction.
 		^ step := step next].
 	
 	step isReferenceStep ifTrue: [
 		^ self interpretScriptReference].
 	
-	self interpretScriptTransformation.
-	step := step next.
+	step isObjectTransformation ifTrue: [
+		self interpretObjectTransformation.
+		^ step := step next].
+	
+	Error signal: 'Cannot interpret'.
