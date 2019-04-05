@@ -14,7 +14,6 @@ def532b388ce4eeb544be597d3619e04e42
 (#class -> ViQueryStepDefinition).
 (#id -> #'532b388c-e4ee-b544-be59-7d3619e04e42').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'e289bd6c-b383-c943-b655-c502679e2cfc').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm')})).
 (#sourceCode -> '[:in :out | out add: {#objects -> in}, [{

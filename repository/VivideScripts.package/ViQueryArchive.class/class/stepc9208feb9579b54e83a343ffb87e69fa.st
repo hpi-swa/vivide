@@ -12,7 +12,6 @@ stepc9208feb9579b54e83a343ffb87e69fa
 (#label -> 'Diff').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> RBAddMethodChange).

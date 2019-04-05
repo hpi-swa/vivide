@@ -12,7 +12,6 @@ stepd1e78e71956eb045a15ec15acbbeab0f
 (#label -> 'Debugger').
 (#next -> #'d1fc3ac8-c0bb-cf47-955a-7e0b24221803').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #debuggerStack).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> Process).

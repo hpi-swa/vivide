@@ -12,6 +12,5 @@ step6b83183f11b1294bbfa711e681f78ad8
 (#label -> nil).
 (#next -> #'c8d02930-5618-4644-9d24-456f53f464bc').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'4e96ab7f-cc8d-1040-aad0-ed4e9026b875').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 June 2015 10:20:57 am')}))})

@@ -12,7 +12,6 @@ step70f2866cc1934849bbc6734357c4521f
 (#label -> 'Script Objects').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#priority -> 6590).

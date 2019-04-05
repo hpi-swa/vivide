@@ -12,7 +12,6 @@ stepa6b7eb35f794e7419102f303b6594f32
 (#label -> 'Count Authors').
 (#next -> #'d82ec0a6-a967-514a-953c-27fcb67ec3d3').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> SystemNavigation).

@@ -12,7 +12,6 @@ step11617cd4f3dab347b26437a8dd9e6a46
 (#label -> 'Users').
 (#next -> #'43770565-2816-9048-8e6e-7364ba7aab35').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ViSmalltalkHub).

@@ -12,7 +12,6 @@ step62ec2d2dbc826d42a3177bfe67ea01bb
 (#label -> 'Load Picture').
 (#next -> #'ee936399-1409-634c-81ff-0389658bb3ce').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> DirectoryEntryFile).

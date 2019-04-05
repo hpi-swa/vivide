@@ -12,7 +12,6 @@ step4bab61711c6c504b98ae553b38d3d886
 (#label -> nil).
 (#next -> #'0d9ec3b0-a6f2-3642-a305-d1b6a7827856').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'f4803742-eb44-0846-9085-92c09d525159').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 September 2013 8:28:17 pm').
 (#inputKind -> ViQueryStepDefinition).

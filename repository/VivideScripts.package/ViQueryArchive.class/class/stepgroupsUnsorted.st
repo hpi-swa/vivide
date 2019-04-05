@@ -12,7 +12,6 @@ stepgroupsUnsorted
 (#label -> nil).
 (#next -> #'e91a4f52-5c39-4c4c-b5c5-1311bacd5025').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #groups).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 June 2015 10:20:57 am').
 (#inputKind -> {Object. Object}).

@@ -12,7 +12,6 @@ stepe412ba6347696448bdf0693f6bf51a84
 (#label -> 'Documentation').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> CompiledMethod).

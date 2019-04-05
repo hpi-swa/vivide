@@ -12,7 +12,6 @@ stepf128659b7f02364dafc1143f418bf135
 (#label -> nil).
 (#next -> #'266651fd-1b71-0244-ac45-79f564404cc5').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'b9b1a3c9-cfc9-ea4b-a67b-6a2ce4d34918').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '7 November 2013 10:51:34 am').
 (#priority -> 5460)}))})

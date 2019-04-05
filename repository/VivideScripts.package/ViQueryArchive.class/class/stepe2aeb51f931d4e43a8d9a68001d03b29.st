@@ -13,7 +13,6 @@ stepe2aeb51f931d4e43a8d9a68001d03b29
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#color -> (Color r: 0.553 g: 0.796 b: 0.553)).
-(#copyOfStep -> #'6a945c46-e2f2-ac41-8b3e-dadc1328d8a3').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '24 February 2014 11:02:55 am').
 (#inputKind -> CompiledMethod).

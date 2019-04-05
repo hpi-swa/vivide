@@ -12,7 +12,6 @@ stepb3b8787175165049b09272ad966f3216
 (#label -> 'Special Scripts').
 (#next -> #'757cd24a-516e-bf45-ad50-d29635e9bbee').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> ViQueryOrganizer).

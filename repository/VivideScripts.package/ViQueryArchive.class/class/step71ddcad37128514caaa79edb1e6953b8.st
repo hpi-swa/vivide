@@ -12,7 +12,6 @@ step71ddcad37128514caaa79edb1e6953b8
 (#label -> 'Method tags').
 (#next -> #'d5db789c-076f-b740-9144-a2bd2740df7f').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> CompiledMethod).

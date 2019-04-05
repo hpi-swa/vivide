@@ -12,7 +12,6 @@ step37989d230602ed44ad37440cccc8d6d9
 (#label -> 'Submorphs').
 (#next -> #'9a36a312-8950-9d4e-9c29-7386596f007f').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> Morph).

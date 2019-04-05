@@ -12,7 +12,6 @@ step5b4abb4561e5164d96ae140ddcba171d
 (#label -> 'Referenced Behaviors').
 (#next -> #'60f99406-f09f-354a-9ed2-91ddd9060fc4').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'728402d7-f870-e743-8d2a-abf2353efba1').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ClassDescription).

@@ -12,7 +12,6 @@ step3d9d6bb7e6bc5444b1a396219e51fe10
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'69e497c2-4f93-4d49-84b1-94178c53e847').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 September 2013 8:38:52 pm').
 (#inputKind -> ViAbstractQueryPart).

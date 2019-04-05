@@ -12,7 +12,6 @@ step0c69c004a3f9134e8ba6eafca2418592
 (#label -> 'Singletons and defaults').
 (#next -> #'f45b857e-e698-274c-b3d6-467851b2d5dc').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> SystemNavigation).

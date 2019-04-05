@@ -12,7 +12,6 @@ stepd346ff340c694d46ac758aa766aef148
 (#label -> 'Chase pointers').
 (#next -> #'8173a10a-ef99-b643-819d-530c4a9f806f').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#labelColor -> '#999999').

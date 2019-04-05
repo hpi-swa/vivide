@@ -12,7 +12,6 @@ step317d2dd4f6026f428e660e85184667f6
 (#label -> 'Categories of subclasses').
 (#next -> #'a8d9e9fc-0bb3-384b-9bae-e3c1edb07163').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> Behavior).

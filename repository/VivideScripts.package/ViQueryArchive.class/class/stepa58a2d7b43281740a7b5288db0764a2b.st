@@ -12,6 +12,5 @@ stepa58a2d7b43281740a7b5288db0764a2b
 (#label -> nil).
 (#next -> #'b15f906e-0d17-994c-9585-d7487285b6d2').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'012db9f4-4e1e-cc49-aa55-265d82592ec7').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm')}))})

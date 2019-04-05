@@ -12,7 +12,6 @@ stepde02f05659273144a71d76088dd47944
 (#label -> 'Files').
 (#next -> #'268f1e29-abfa-184e-9be9-0f251cf2d31b').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'d70d563f-bdd7-1842-9175-cf758450e227').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> FileDirectory).

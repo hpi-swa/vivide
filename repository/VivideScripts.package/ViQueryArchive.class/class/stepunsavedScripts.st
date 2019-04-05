@@ -12,7 +12,6 @@ stepunsavedScripts
 (#label -> nil).
 (#next -> #'a709a161-d05f-ed44-97e2-165f6f140ada').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #unsavedChanges).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm').
 (#isGlobal -> true).

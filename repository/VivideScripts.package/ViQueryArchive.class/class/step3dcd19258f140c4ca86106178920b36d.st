@@ -12,7 +12,6 @@ step3dcd19258f140c4ca86106178920b36d
 (#label -> 'Pretty printed methods').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> CompiledMethod).

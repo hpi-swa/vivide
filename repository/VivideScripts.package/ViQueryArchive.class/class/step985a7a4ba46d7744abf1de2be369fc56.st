@@ -12,7 +12,6 @@ step985a7a4ba46d7744abf1de2be369fc56
 (#label -> 'Receiver Inspector').
 (#next -> #'bce4eb13-a02d-144e-96b2-cd2944b85fee').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> Context).

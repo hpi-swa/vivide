@@ -12,7 +12,6 @@ step5b87b137752eb346a7fb46bd574a4330
 (#label -> nil).
 (#next -> #'acc3ad31-29c9-cd45-8ccc-e801aaadd858').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'fd3c0b79-142a-ee4e-9f27-4da12eba946f').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '13 September 2013 7:00:36 pm').
 (#inputKind -> ViFlagComment).

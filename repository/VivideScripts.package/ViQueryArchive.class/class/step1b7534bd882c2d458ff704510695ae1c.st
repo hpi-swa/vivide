@@ -12,7 +12,6 @@ step1b7534bd882c2d458ff704510695ae1c
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'e3c616ba-4453-c04b-b997-91416620222a').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm').
 (#view -> ViMultiPaneTiled)}))})

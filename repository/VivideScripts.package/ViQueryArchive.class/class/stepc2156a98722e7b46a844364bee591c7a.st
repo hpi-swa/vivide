@@ -12,7 +12,6 @@ stepc2156a98722e7b46a844364bee591c7a
 (#label -> 'Preview').
 (#next -> #'d62c8659-3292-5541-b3b6-08b9ff46de99').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> RBRefactoring).

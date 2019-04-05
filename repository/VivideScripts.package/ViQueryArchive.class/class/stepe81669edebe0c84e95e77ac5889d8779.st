@@ -12,7 +12,6 @@ stepe81669edebe0c84e95e77ac5889d8779
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'e81669ed-ebe0-c84e-95e7-7ac5889d8779').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '3 September 2013 1:56:59 pm').
 (#inputKind -> ViAbstractQueryPart).

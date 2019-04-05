@@ -12,7 +12,6 @@ stepe36efb5e3ac6e540af1c498872dec4b2
 (#label -> 'Type Hierarchy').
 (#next -> #'328d2fd9-190c-6f40-accd-afc2029f12c4').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> PackageInfo).

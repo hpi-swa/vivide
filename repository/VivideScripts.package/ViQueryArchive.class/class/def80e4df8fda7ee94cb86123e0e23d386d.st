@@ -24,7 +24,6 @@ def80e4df8fda7ee94cb86123e0e23d386d
 (#class -> ViQueryStepDefinition).
 (#id -> #'80e4df8f-da7e-e94c-b861-23e0e23d386d').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'b45c17af-a58f-0e4c-9df3-a0fe684a4ae0').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm')})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (

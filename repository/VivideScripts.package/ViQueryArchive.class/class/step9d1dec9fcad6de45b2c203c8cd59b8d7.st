@@ -12,7 +12,6 @@ step9d1dec9fcad6de45b2c203c8cd59b8d7
 (#label -> 'Diff').
 (#next -> #'64c67351-149a-5b41-9de2-aa23b19628a8').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ViQueryOrganizer).

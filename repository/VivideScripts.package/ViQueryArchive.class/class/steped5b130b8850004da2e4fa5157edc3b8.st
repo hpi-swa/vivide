@@ -12,6 +12,5 @@ steped5b130b8850004da2e4fa5157edc3b8
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #'14bc7fef-be90-a949-91f7-a0b9c1d7f2ff').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 June 2015 10:20:57 am')}))})

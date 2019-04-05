@@ -12,7 +12,6 @@ step4e83040adb7bc9418c4ff03b8556fca4
 (#label -> 'Methods by Protocol').
 (#next -> #'601f4f47-9545-0e4e-abef-e7b5dc4c0c3e').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> ClassDescription).

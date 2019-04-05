@@ -12,7 +12,6 @@ step3f7e4a145a931c4484e012fc74706383
 (#label -> 'Classes').
 (#next -> #'8c98ea10-5364-be4b-b343-835196faca7e').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> PackageInfo).

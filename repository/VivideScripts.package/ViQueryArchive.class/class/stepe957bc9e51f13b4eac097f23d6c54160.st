@@ -12,7 +12,6 @@ stepe957bc9e51f13b4eac097f23d6c54160
 (#label -> 'Commands').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#priority -> 6450).

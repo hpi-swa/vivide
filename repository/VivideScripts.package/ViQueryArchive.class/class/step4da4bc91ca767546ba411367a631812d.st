@@ -12,7 +12,6 @@ step4da4bc91ca767546ba411367a631812d
 (#label -> 'Change Set').
 (#next -> #'c67f9784-9909-ad41-9da5-97b166608217').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> ChangeSet).

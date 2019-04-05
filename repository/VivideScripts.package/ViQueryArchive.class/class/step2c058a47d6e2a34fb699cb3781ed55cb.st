@@ -12,7 +12,6 @@ step2c058a47d6e2a34fb699cb3781ed55cb
 (#label -> 'Outline').
 (#next -> #'c7e12f64-1638-ba43-92a5-5110b39063f2').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> MethodReference).

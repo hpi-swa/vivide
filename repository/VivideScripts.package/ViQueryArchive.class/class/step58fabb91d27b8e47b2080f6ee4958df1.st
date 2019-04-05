@@ -12,7 +12,6 @@ step58fabb91d27b8e47b2080f6ee4958df1
 (#label -> nil).
 (#next -> #'19aa31e9-da2d-0646-bcb5-c43217a64c10').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> Array).

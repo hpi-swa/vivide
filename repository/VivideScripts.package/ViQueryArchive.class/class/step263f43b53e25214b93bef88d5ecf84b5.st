@@ -12,7 +12,6 @@ step263f43b53e25214b93bef88d5ecf84b5
 (#label -> 'Breakpoints').
 (#next -> #'829e7d5e-2892-544a-a015-d5efe0983785').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> PackageInfo).

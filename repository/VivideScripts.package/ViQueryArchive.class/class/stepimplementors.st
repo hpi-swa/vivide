@@ -12,7 +12,6 @@ stepimplementors
 (#label -> 'Implementors').
 (#next -> #'8c058833-34df-6a4c-a717-5b1be5ea7200').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #senders).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 2:36:10 pm').
 (#inputKind -> ByteSymbol).

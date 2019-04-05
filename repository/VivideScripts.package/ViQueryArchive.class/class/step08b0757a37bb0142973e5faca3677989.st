@@ -12,7 +12,6 @@ step08b0757a37bb0142973e5faca3677989
 (#label -> 'Question Body (Stackoverflow)').
 (#next -> #'14c2d4d3-e9a4-a049-b911-1bd24ba1ee34').
 (#properties -> (Dictionary newFrom: {
-(#copyOf -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '21 October 2014 2:50:51 pm').
 (#priority -> 8390).

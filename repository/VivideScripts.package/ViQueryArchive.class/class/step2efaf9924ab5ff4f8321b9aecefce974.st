@@ -12,7 +12,6 @@ step2efaf9924ab5ff4f8321b9aecefce974
 (#label -> 'Last exceptions').
 (#next -> #'931fac93-b85b-1c42-bcc2-435f7486a3e6').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #defaultProperties).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ViExceptionHistory).

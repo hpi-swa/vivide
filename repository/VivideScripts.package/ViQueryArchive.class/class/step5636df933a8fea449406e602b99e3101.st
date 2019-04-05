@@ -12,7 +12,6 @@ step5636df933a8fea449406e602b99e3101
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #'fb5f9d48-49cf-774c-921f-e9598b74d2c7').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 November 2013 4:58:54 pm').
 (#priority -> 6390)}))})

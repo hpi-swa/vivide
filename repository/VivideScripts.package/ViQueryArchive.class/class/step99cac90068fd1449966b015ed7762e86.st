@@ -12,7 +12,6 @@ step99cac90068fd1449966b015ed7762e86
 (#label -> '[DEBUG] Categorize lines of code').
 (#next -> #'56b2492f-f394-db42-ade3-e2d633f5230d').
 (#properties -> (Dictionary newFrom: {
-(#copyOfStep -> #identity).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '11 February 2014 1:01:49 pm').
 (#inputKind -> CompiledMethod).
