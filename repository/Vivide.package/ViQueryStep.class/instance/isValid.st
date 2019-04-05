@@ -11,7 +11,7 @@ isValid
 			ifFalse: [^ false].
 			
 		"Mismatch between script properties and source code?"
-		(step isReferenceStep and: [step reference isSymbol])
+		(step isReference and: [step reference isSymbol])
 			ifTrue: [^ false]].
 		
 	^ true

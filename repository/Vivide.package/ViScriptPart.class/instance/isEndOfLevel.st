@@ -8,7 +8,7 @@ isEndOfLevel
 			ifTrue: [false]
 			ifFalse: [true]].
 	
-	self isReferenceStep ifTrue: [
+	self isReference ifTrue: [
 		found := false.
 		i := 0.
 		j := 0.

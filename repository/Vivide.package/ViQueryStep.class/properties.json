@@ -9,8 +9,7 @@
 		"next",
 		"definition",
 		"label",
-		"icon",
-		"viewDefinition" ],
+		"icon" ],
 	"name" : "ViQueryStep",
 	"pools" : [
 		 ],

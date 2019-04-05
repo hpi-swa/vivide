@@ -10,7 +10,7 @@ test34MergeConsecutiveExtractions
 	} asScript.
 	node := script interpretScriptWith: #(2).
 
-	self assert: (script steps allSatisfy: [:step | step isPropertyStep]).
+	self assert: (script steps allSatisfy: [:step | step isPropertyExtraction]).
 	self assert: 1 equals: script maxPropertyCount.
 
 	self assert: 1 equals: node nodes size.

@@ -14,4 +14,5 @@ step41f64542f4fbc3418ee9d1adfceebe00
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '23 July 2014 2:47:45 pm').
+(#headerText -> '# senders').
 (#priority -> 6710)}))})

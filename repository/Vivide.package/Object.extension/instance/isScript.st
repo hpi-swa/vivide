@@ -1,4 +1,4 @@
-testing
+*vivide
 isScript
 
 	^ false

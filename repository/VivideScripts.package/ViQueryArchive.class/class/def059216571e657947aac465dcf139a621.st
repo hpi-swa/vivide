@@ -4,7 +4,9 @@ def059216571e657947aac465dcf139a621
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | { (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
+	[:textOrObject | textOrObject isText
+		ifTrue: [ { #text -> textOrObject } ]
+		ifFalse: [ [:step | { #text -> (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViQueryStepDefinition).
@@ -13,6 +15,8 @@ def059216571e657947aac465dcf139a621
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 December 2013 11:55:55 am')})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | { (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
+	[:textOrObject | textOrObject isText
+		ifTrue: [ { #text -> textOrObject } ]
+		ifFalse: [ [:step | { #text -> (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

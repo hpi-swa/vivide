@@ -5,7 +5,7 @@ doScriptPart: aScriptPart
 		aScriptPart isSpecial
 			ifTrue: ['#', aScriptPart id]
 			ifFalse: [
-				aScriptPart isPropertyStep
+				aScriptPart isPropertyExtraction
 					ifTrue: [(aScriptPart valueOfProperty: #headerText)
 						ifNil: [(aScriptPart sourceCodeShort ifNil: ['']) escapeHtmlText]
 						ifNotNil: [:txt | '\<', txt, '\>']]

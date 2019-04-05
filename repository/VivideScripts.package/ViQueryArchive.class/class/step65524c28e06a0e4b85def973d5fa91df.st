@@ -16,6 +16,5 @@ step65524c28e06a0e4b85def973d5fa91df
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 September 2013 4:36:44 pm').
 (#inputKind -> ViQueryStepDefinition).
-(#outputKind -> AnObsoleteViQueryMapDefinition).
 (#priority -> 990).
 (#view -> ViTreeViewExtended)}))})

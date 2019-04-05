@@ -5,19 +5,19 @@ allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 	lastStep := nil.
 	lastNonReferenceStep := nil.
 	self allStepsDo: [:step |
-		step isPropertyStep ifTrue: [
+		step isPropertyExtraction ifTrue: [
 			((step mergeConsecutiveExtractions not
 				or: [lastNonReferenceStep isNil])
-				or: [lastNonReferenceStep isPropertyStep not])
+				or: [lastNonReferenceStep isPropertyExtraction not])
 					ifTrue: [anotherBlock value].
 			aBlock value: step].
 		lastStep := step.
-		step isReferenceStep ifFalse: [lastNonReferenceStep := step]].
+		step isReference ifFalse: [lastNonReferenceStep := step]].
 
 	"Also consider default properties if needed."
-	((lastStep isPropertyStep not
+	((lastStep isPropertyExtraction not
 		and: [lastStep next isNil])
-		and: [lastStep isReferenceStep not "Should point to some other property..."]) ifTrue: [
+		and: [lastStep isReference not "Should point to some other property..."]) ifTrue: [
 			#defaultProperties asScript ifNotNil: [:s | s
 				allPropertyStepsDo: aBlock
 				ifNewSequence: anotherBlock]].

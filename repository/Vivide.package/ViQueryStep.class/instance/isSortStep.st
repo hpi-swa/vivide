@@ -1,4 +1,0 @@
-testing - old
-isSortStep
-
-	^ false

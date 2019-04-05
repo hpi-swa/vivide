@@ -2,7 +2,7 @@ categories
 classify: queryPart under: category
 
 	| categorizer |
-	categorizer := queryPart isQueryStep
+	categorizer := queryPart isScript
 		ifTrue: [self stepsCategorizer]
 		ifFalse: [self definitionsCategorizer].
 		

@@ -21,7 +21,7 @@ deepCopy
 				lastStep := lastStep next.
 				copiedReferences at: lastStep id put: lastStep.
 				idMap at: step id put: lastStep id].
-		step isReferenceStep ifTrue: [step reference ifNotNil: [:referencedStep |
+		step isReference ifTrue: [step reference ifNotNil: [:referencedStep |
 			"Copy only if not already there and not a default."
 			((self steps includes: referencedStep) not and: [referencedStep isDefault not])
 				ifTrue: [referencedStep deepCopy in: [:r |
@@ -39,7 +39,7 @@ deepCopy
 
 	"Resolve references."
 	newQuery stepsDo: [:step |
-		step isReferenceStep ifTrue: [(step process: #(1)) in: [:someIds |
+		step isReference ifTrue: [(step process: #(1)) in: [:someIds |
 			self flag: #refactor. "mt: Maybe it is better to rewrite the code in the reference step instead of changing the target step's id back to old? Conflicts later?"
 			(idMap includesKey: someIds first)
 				ifFalse: [

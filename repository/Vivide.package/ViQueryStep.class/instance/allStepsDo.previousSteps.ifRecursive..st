@@ -8,7 +8,7 @@ allStepsDo: aBlock previousSteps: someSteps ifRecursive: anExceptionBlock
 		someSteps add: step.
 		aBlock value: step.
 		
-		step isReferenceStep ifTrue: [
+		step isReference ifTrue: [
 			step reference ifNotNil: [:referencedStep |
 				referencedStep
 					allStepsDo: aBlock

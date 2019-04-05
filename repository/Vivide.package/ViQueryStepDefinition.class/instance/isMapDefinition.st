@@ -1,4 +1,0 @@
-testing
-isMapDefinition
-
-	^ false

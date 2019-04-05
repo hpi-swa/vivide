@@ -6,11 +6,8 @@ mergeDefinitionsFor: step
 	oldDef := step definition.
 	(self orderedDefinitions detect: [:def |
 		def == oldDef or: [
-			(def species = oldDef species
-				and: [(def isMapDefinition & oldDef isMapDefinition) not
-					or: [def mapType = oldDef mapType]])
-				and: [(Decompiler new decompileBlock: def block) decompileString
-					= (Decompiler new decompileBlock: oldDef block) decompileString]]] ifNone: [])
+			def block decompile decompileString
+				= oldDef block decompile decompileString]] ifNone: [])
 		ifNil: [
 			oldDef register.
 			Transcript cr; show: ('[ViQueryOrganizer] New definition registered: ''{1}'''

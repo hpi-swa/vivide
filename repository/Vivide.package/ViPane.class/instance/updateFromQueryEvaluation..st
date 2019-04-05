@@ -11,8 +11,10 @@ updateFromQueryEvaluation: evt
 						ifFalse: [self clearError].
 					^ self]].
 			^ self].
-		
-	self model firstStep allStepsDo: [:step |
+	
+	self currentQuery ifNil: [^ self].
+	
+	self currentQuery allStepsDo: [:step |
 		step == evt item ifTrue: [
 			evt hasFailed 
 				ifTrue: [self showError: evt context]

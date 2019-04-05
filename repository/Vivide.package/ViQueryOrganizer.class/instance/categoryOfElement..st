@@ -2,7 +2,7 @@ categories
 categoryOfElement: queryPart
 
 	| categorizer |
-	categorizer := queryPart isQueryStep
+	categorizer := queryPart isScript
 		ifTrue: [self stepsCategorizer]
 		ifFalse: [self definitionsCategorizer].
 

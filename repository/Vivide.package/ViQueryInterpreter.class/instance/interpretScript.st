@@ -13,7 +13,7 @@ interpretScript
 		self interpretPropertyExtraction.
 		^ step := step next].
 	
-	step isReferenceStep ifTrue: [
+	step isReference ifTrue: [
 		^ self interpretScriptReference].
 	
 	step isObjectTransformation ifTrue: [

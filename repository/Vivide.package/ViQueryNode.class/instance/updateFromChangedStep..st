@@ -11,7 +11,7 @@ updateFromChangedStep: evt
 	(((evt isPropertiesModified
 		or: [evt isDefinitionChanged])
 		or: [evt isNextChanged])
-		or: [evt item isReferenceStep and: [evt isReferenceChanged]])
+		or: [evt item isReference and: [evt isReferenceChanged]])
 			ifFalse: [^ self].
 	
 	"Special handling for meta scripts. Do not traverse the whole chain."

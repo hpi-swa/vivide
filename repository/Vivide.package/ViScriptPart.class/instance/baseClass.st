@@ -39,7 +39,7 @@ baseClass
 		(in inheritsFrom: mostSpecific)
 			ifTrue: [mostSpecific := in].
 			
-		(step isPropertyStep not and: [in ~~ out]) "type change!"
+		(step isPropertyExtraction not and: [in ~~ out]) "type change!"
 			ifTrue: [^ mostSpecific].
 		].
 	^ mostSpecific

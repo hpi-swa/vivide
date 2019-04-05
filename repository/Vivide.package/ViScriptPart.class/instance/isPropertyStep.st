@@ -1,4 +1,0 @@
-testing
-isPropertyStep
-
-	^ self isPropertyExtraction

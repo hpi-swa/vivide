@@ -1,4 +1,0 @@
-accessing
-viewDefinition: aDefinition
-
-	"Obsolete."

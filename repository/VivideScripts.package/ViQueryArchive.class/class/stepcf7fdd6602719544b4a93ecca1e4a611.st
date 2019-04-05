@@ -14,4 +14,5 @@ stepcf7fdd6602719544b4a93ecca1e4a611
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '23 July 2014 2:54:01 pm').
+(#headerText -> 'view class').
 (#priority -> 6720)}))})

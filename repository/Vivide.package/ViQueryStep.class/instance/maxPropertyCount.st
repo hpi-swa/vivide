@@ -7,7 +7,7 @@ maxPropertyCount
 	currentCount := 0.
 	
 	self allStepsDo: [:step |
-		step isPropertyStep
+		step isPropertyExtraction
 			ifTrue: [
 				step mergeConsecutiveExtractions ifFalse: [^ 1].
 				currentCount := currentCount + 1]

@@ -5,11 +5,11 @@ nextStepsDo: aBlock
 	| hasProperties |
 	hasProperties := false.
 	self allStepsDo: [:step |
-		step isPropertyStep
+		step isPropertyExtraction
 			ifTrue: [hasProperties := true]
 			ifFalse: [
 				self flag: #bug. "mt: Consider whether properties actually merge. See ViQueryInterpreter >> #upToNextProperties."
-				(step isReferenceStep not and: [hasProperties])
+				(step isReference not and: [hasProperties])
 					ifTrue: [^ self]].
 		aBlock value: step].
 	
