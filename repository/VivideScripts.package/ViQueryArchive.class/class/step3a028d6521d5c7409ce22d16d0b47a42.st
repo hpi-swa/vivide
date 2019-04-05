@@ -14,6 +14,7 @@ step3a028d6521d5c7409ce22d16d0b47a42
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '23 July 2014 3:01:21 pm').
+(#isGlobal -> true).
 (#outputKind -> ViQueryOrganizer).
 (#priority -> 6660).
 (#view -> ViTreeViewExtended)}))})

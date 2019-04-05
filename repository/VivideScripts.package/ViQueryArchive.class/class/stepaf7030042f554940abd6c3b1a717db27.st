@@ -15,5 +15,6 @@ stepaf7030042f554940abd6c3b1a717db27
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ProtoObject).
+(#isGlobal -> true).
 (#priority -> 930).
 (#view -> ViTreeViewExtended)}))})

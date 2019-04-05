@@ -15,6 +15,7 @@ step600d833722a7304b8565430e818154ce
 (#copyOfStep -> #'0bf4254a-c615-9549-8fa0-434b920f8c2a').
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 February 2014 3:56:01 pm').
+(#isGlobal -> true).
 (#outputKind -> SystemOrganizer).
 (#priority -> 5640).
 (#view -> ViTreeViewExtended)}))})

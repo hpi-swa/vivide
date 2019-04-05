@@ -14,4 +14,5 @@ stepunsavedChanges
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 10:57:19 am').
+(#isGlobal -> true).
 (#notifier -> ViSystemChangeNotifier)}))})

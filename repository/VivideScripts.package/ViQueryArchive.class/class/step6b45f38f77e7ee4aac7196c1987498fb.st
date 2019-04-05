@@ -14,6 +14,7 @@ step6b45f38f77e7ee4aac7196c1987498fb
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 May 2014 2:58:16 pm').
+(#isGlobal -> true).
 (#outputKind -> Bag).
 (#priority -> 6130).
 (#view -> ViTreeViewExtended)}))})
