@@ -40,6 +40,7 @@ initializeToolbarOperations
 		addGroup: #debug
 		icon: UiSilkIcons bugIcon
 		contents: [:editor | {
+			{#exploreInput. 'Explore input'. ViIcons blankIcon. nil. 0}.
 			{#exploreOutput. 'Explore output'. UiFugueIcons magnifierIcon. nil. 1}.
 			{#exploreOutputTrace. 'Explore output trace'. ViIcons blankIcon. nil. 1}.
 			{#exploreOneProperty. 'Explore properties by example'. UiFugueIcons propertyIcon. nil. 2}.
