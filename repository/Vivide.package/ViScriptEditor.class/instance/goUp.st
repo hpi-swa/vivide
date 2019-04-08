@@ -5,7 +5,7 @@ goUp
 	self hasUnacceptedChanges ifTrue: [^ self].
 	
 	node := RBParser parseExpression: self script.
-	cursor := edit cursorPosition + self scriptPointer first - 1.
+	cursor := self textField cursorPosition + self scriptPointer first - 1.
 	result := node.
 	index := 1.
 	[(result isBlock
@@ -22,5 +22,5 @@ goUp
 	result ifNil: [result := node].
 	
 	self scriptPointer: result sourceInterval.
-	edit select: ((cursor - result start + 1) to: (cursor - result start)).
+	self textField select: ((cursor - result start + 1) to: (cursor - result start)).
 	self mapIndex: index.

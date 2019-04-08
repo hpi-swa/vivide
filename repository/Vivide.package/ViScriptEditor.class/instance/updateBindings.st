@@ -43,6 +43,6 @@ updateBindings
 				value: (self object valueOfProperty: #out ifAbsent: [OrderedCollection new])]
 	] on: ViArgumentsCollected do: [:ex | "Abort." ].
 
-	edit model bindings removeAll.
+	self textField model bindings removeAll.
 	argumentNames with: argumentObjects do: [:name :object |
-		edit model bindings at: name put: object].
+		self textField model bindings at: name put: object].

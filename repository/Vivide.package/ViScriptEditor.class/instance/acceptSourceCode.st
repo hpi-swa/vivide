@@ -4,7 +4,7 @@ acceptSourceCode
 	| code |
 	shouldPropose ifTrue: [self proposeScriptTemplate].
 	
-	code := edit theText asString withBlanksTrimmed.
+	code := self visibleSourceCode withBlanksTrimmed.
 	
 	[code endsWith: '.'] whileTrue: [
 		"No trailing points for intermediate code blocks."
@@ -31,8 +31,9 @@ acceptSourceCode
 			updateMapIndex: n].
 	
 	"Update visuals if code was fixed automatically."
-	code size ~= edit theText size
-		ifTrue: [edit theText: code].
+	self flag: #suspicious. "mt: Why the size? Just #= would be better? Is it slower?"
+	code size ~= self visibleSourceCode size
+		ifTrue: [self visibleSourceCode: code].
 
 	"Store changes in object."
 	self updateObject.

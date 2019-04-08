@@ -2,13 +2,13 @@ actions - editing
 proposeScriptTemplate
 
 	| inner spec properties |
-	inner := edit theText asString.
+	inner := self visibleSourceCode.
 	properties := self object properties copy.
 	spec := ViScriptEditor templateForSourceCode: inner.
 	
 	"Insert missing curly brackets for property steps."
 	(spec value includesKey: #isProperty) ifTrue: [
-		edit theText: (ViScriptEditor wrapExtractionIntoArray: inner)].
+		self visibleSourceCode: (ViScriptEditor wrapExtractionIntoArray: inner)].
 
 	"Merge proposed properties with existing ones."
 	spec value keysAndValuesDo: [:key :value |
@@ -19,4 +19,4 @@ proposeScriptTemplate
 	scriptPointer := spec key key ifNil: [1 to: script size].
 	
 	shouldPropose := false.
-	edit margins: (4@0 corner: 0@7).
+	self textField margins: (4@0 corner: 0@7).

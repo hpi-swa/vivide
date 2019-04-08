@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	self initializeForContainerClass: ViScriptEditor.
 	
-	self container edit
+	self container textField
 		scrollingMode: #none;
 		vResizing: #spaceFill;
 		autoCreateArtifacts: false.

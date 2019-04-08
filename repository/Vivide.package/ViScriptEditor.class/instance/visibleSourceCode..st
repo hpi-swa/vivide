@@ -1,4 +1,4 @@
-accessing
+accessing - ui
 visibleSourceCode: someText
 
-	edit theText: someText.
+	self textField theText: someText.

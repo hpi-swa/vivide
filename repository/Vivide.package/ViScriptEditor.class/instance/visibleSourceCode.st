@@ -1,3 +1,3 @@
-accessing
+accessing - ui
 visibleSourceCode
-	^ edit theText asString
+	^ self textField theText asString

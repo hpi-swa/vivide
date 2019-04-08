@@ -4,7 +4,7 @@ activateWizard
 
 	shouldPropose := true.
 	
-	edit margins: ((14 * RealEstateAgent scaleFactor) rounded @0 corner: 0@7).
+	self textField margins: ((14 * RealEstateAgent scaleFactor) rounded @0 corner: 0@7).
 	
 	self script: (self inputKind
 		ifEmpty: ['["Type code here..."]']

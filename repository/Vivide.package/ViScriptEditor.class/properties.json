@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"edit",
 		"script",
 		"scriptPointer",
 		"shouldPropose",
@@ -14,7 +13,9 @@
 		"map",
 		"mapIndex",
 		"thisStep",
-		"allSteps" ],
+		"allSteps",
+		"navigationBar",
+		"textField" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],

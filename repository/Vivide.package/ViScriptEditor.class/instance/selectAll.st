@@ -1,9 +1,9 @@
 actions - navigation
 selectAll
 
-	edit selection size > 1
-		ifTrue: [edit selectAll]
+	self textField selection size > 1
+		ifTrue: [self textField selectAll]
 		ifFalse: [self selectBlockStatements].
 
 	"Fall back."
-	edit selection ifEmpty: [edit selectAll].
+	self textField selection ifEmpty: [self textField selectAll].

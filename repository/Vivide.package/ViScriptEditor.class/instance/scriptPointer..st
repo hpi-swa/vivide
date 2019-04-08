@@ -1,4 +1,4 @@
-accessing
+accessing - ui
 scriptPointer: anInterval
 
 	scriptPointer := anInterval.

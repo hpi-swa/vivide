@@ -4,5 +4,5 @@ drawWizardIndicationOn: aCanvas
 	shouldPropose == true ifTrue: [
 		aCanvas
 			translucentImage: UiFugueIcons wandSmallIcon scaledToDisplay
-			at: edit topLeft + (0@2). 
+			at: self textField topLeft + (0@2). 
 		].
