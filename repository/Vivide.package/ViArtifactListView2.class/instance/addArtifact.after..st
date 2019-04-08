@@ -1,4 +1,4 @@
-add/remove
+editors - add/remove
 addArtifact: anArtifactContainer after: anotherArtifact
 
 	anArtifactContainer grabKeyboard.

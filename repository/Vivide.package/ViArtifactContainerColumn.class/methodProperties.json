@@ -20,7 +20,7 @@
 		"drawOverlayOn:" : "mt 9/15/2013 11:51:35.607",
 		"dropRectanglesForPoint:" : "mt 8/13/2012 10:20:09.267",
 		"editors" : "mt 7/27/2012 09:57:44.628",
-		"editors:" : "mt 10/7/2014 16:58:12.952",
+		"editors:" : "mt 4/8/2019 11:39",
 		"initialize" : "mt 1/31/2015 13:08",
 		"initializeEventHandler" : "mt 8/7/2013 16:54:39.142",
 		"lastArtifactRemoved" : "mt 11/8/2012 14:58:05.241",
@@ -30,4 +30,4 @@
 		"privateAddMorph:atIndex:" : "mt 4/25/2014 08:25:15.025",
 		"removeAllMorphsIn:" : "mt 4/25/2014 08:44:00.128",
 		"removeMorph:" : "mt 2/10/2014 13:40:12.208",
-		"removedMorph:" : "mt 2/10/2014 13:40:06.604" } }
+		"removedMorph:" : "mt 4/8/2019 11:16" } }

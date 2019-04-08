@@ -1,4 +1,4 @@
-add/remove
+editors - add/remove
 addObject: anObject after: anotherArtifact
 
 	(ViArtifactLookupService new doObject: anObject) ifNotNil: [:ac |

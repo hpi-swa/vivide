@@ -1,5 +1,6 @@
 accessing - objects
 objects: someObjects
+	"Resets all open editors."
 	
 	| editors |
 
@@ -12,6 +13,7 @@ objects: someObjects
 				yourself]].
 	
 	self artifactContainers: editors.
+	self onObjectsChanged.
 
 	"After updating the list of all containers, give each the chance to update. We need to make this now because they may depend of neighbours."
 	self setProperty: #isUpdatingAllArtifacts toValue: true. 
