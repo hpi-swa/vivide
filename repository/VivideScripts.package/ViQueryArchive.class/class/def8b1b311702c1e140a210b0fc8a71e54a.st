@@ -9,9 +9,11 @@ def8b1b311702c1e140a210b0fc8a71e54a
 	numAccesses := foo isText ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
 	{
 		#text -> (foo isText ifTrue: [' '] ifFalse: [numAccesses]).
-		#color -> (numAccesses <= 2
-			ifTrue: [Color moss alpha: 0.3]
-			ifFalse: [numAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: []]).
+		#color -> (numAccesses = 0
+			ifTrue: [(Color gray: 0.8) alpha: 0.3]
+			ifFalse: [numAccesses <= 2
+				ifTrue: [Color moss alpha: 0.3]
+				ifFalse: [numAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: ["white"]]]).
 			 }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
@@ -26,9 +28,11 @@ def8b1b311702c1e140a210b0fc8a71e54a
 	numAccesses := foo isText ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
 	{
 		#text -> (foo isText ifTrue: ['' ''] ifFalse: [numAccesses]).
-		#color -> (numAccesses <= 2
-			ifTrue: [Color moss alpha: 0.3]
-			ifFalse: [numAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: []]).
+		#color -> (numAccesses = 0
+			ifTrue: [(Color gray: 0.8) alpha: 0.3]
+			ifFalse: [numAccesses <= 2
+				ifTrue: [Color moss alpha: 0.3]
+				ifFalse: [numAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: ["white"]]]).
 			 }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})
