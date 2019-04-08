@@ -4,9 +4,8 @@ def68f069190e39c84d8bf6c4fdab66c7c8
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | (
-	[:objects | objects collect: [:group | {{#separator. {{group first asString asText
+	[:objects | objects collect: [:group | {{#separator. {{(ViLabelService doObject: group first) asText
 		addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
-		
 		addAttribute: (TextColor
 				color: (Color gray: 0.66));
 		 yourself}}}. group}]]
@@ -17,9 +16,8 @@ def68f069190e39c84d8bf6c4fdab66c7c8
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '29 March 2019 2:44:51.107235 pm')})).
 (#sourceCode -> '[:in :out | (
-	[:objects | objects collect: [:group | {{#separator. {{group first asString asText
+	[:objects | objects collect: [:group | {{#separator. {{(ViLabelService doObject: group first) asText
 		addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
-		
 		addAttribute: (TextColor
 				color: (Color gray: 0.66));
 		 yourself}}}. group}]]

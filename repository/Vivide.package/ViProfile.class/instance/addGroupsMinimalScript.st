@@ -10,7 +10,7 @@ addGroupsMinimalScript
 		[:groups | groups sorted: [:g1 :g2 | g1 first asString <= g2 first asString]].
 		[:group | { "Prepend separators to groups."
 			{#separator. {{
-				group first asString asText
+				(ViLabelService doObject: group first) asText
 					addAttribute: (TextFontReference toFont: Preferences standardButtonFont);
 					addAttribute: (TextColor color: (Color gray: 0.66));
 					yourself}}}.
