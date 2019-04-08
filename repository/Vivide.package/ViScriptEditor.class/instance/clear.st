@@ -3,8 +3,8 @@ clear
 
 	super clear.
 
-	self inputKind: nil.
-	self discardPaneHighlights.
+	self input: nil.
+	self removePaneHighlights.
 
 	self object ifNotNil: [:step |
 		step referenceInArchive isValid

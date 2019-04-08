@@ -1,4 +1,4 @@
-accessing
+accessing - script
 input
 
-	^ input ifNil: [self updateInputKind. input]
+	^ input ifNil: [self updateInput. input]

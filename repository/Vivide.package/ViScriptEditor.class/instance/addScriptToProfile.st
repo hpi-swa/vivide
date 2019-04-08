@@ -1,5 +1,5 @@
 actions - profile
-addScript
+addScriptToProfile
 
 	ViProfile active addScript: self object.
 

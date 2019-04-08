@@ -1,4 +1,4 @@
-as yet unclassified
+actions - debugging
 exploreInput
 
 	self input explore.

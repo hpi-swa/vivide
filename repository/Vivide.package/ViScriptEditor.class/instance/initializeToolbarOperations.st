@@ -31,8 +31,8 @@ initializeToolbarOperations
 		addGroup: #profile
 		icon: UiFugueIcons userSilhouetteIcon
 		contents: [:editor | {
-			{#tryAddScript. 'Install in profile'. UiSilkIcons databaseEditIcon. nil. 1}.
-			{#tryRemoveScript. 'Remove from profile'. ViIcons blankIcon. nil. 1}.
+			{#tryAddScriptToProfile. 'Install in profile'. UiSilkIcons databaseEditIcon. nil. 1}.
+			{#tryRemoveScriptFromProfile. 'Remove from profile'. ViIcons blankIcon. nil. 1}.
 			{#copyToClipboard. 'Copy to clipboard'. UiFugueIcons clipboardTextIcon. nil. 2}
 			}].
 		

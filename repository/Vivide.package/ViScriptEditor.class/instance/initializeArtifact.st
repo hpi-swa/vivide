@@ -19,7 +19,7 @@ initializeArtifact
 		
 	self connect: edit signal: #editingFinished: toSelector: #acceptSourceCode.
 	
-	"Text morph gets all events. So register some shortcuts for navigation from heve."
+	"Text morph gets all events. So register some shortcuts for navigation from here."
 	edit eventHandler on: #(cmd) -> Character arrowLeft send: #goUp to: self.
 	edit eventHandler on: #(cmd) -> Character arrowRight send: #goDown to: self.
 	edit eventHandler on: #(cmd shift) -> Character arrowLeft send: #goUpToTop to: self.
@@ -27,23 +27,16 @@ initializeArtifact
 	edit eventHandler on: #(cmd) -> $a send: #selectAll to: self.
 	edit eventHandler on: Character escape send: #tryDeactivateWizard to: self.
 
-	self connect: edit eventHandler signal: #focusReceived toSelector: #highlightAffectedPanes.
-	self connect: edit eventHandler signal: #focusLost toSelector: #discardPaneHighlights.
+	self connect: edit eventHandler signal: #focusReceived toSelector: #addPaneHighlights.
+	self connect: edit eventHandler signal: #focusLost toSelector: #removePaneHighlights.
 
 	self sgConnectSignal: #expressionAboutToBeEvaluated: toSelector: #updateBindings. 
-
-	hintBox := Morph new
-		color: Color transparent;
-		layoutPolicy: (ViVerticalLayout new layoutInset: (5@5 corner: 0@0); yourself);
-		vResizing: #shrinkWrap;
-		hResizing: #spaceFill.
 	
 	container := Morph new
 		color: Color transparent;
 		layoutPolicy: ViVerticalLayout new;
 		vResizing: #shrinkWrap;
 		hResizing: #spaceFill.
-	container addAllMorphs: {edit. hintBox}.
+	container addAllMorphs: {edit}.
 	
-	hintBox hideFull.
 	self artifact: container.

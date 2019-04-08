@@ -1,5 +1,9 @@
 accessing - object
 context: someObjects
 
-	context := someObjects.
-	otherSteps := someObjects select: [:obj | obj isKindOf: ViScriptPart].
+	self setProperty: #artifactContext toValue: someObjects.
+	
+	"Reset editor-specific caches."
+	self
+		allSteps: (someObjects select: [:obj | obj isScript]);
+		input: nil.

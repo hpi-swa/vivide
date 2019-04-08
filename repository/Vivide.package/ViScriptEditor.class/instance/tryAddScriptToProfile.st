@@ -1,5 +1,5 @@
 actions - profile
-tryAddScript
+tryAddScriptToProfile
 
 	| msg |
 	
@@ -12,7 +12,7 @@ tryAddScript
 	msg
 		addAction: 'Install scripts'
 		icon: ViIcons icons8Ok64px1Icon
-		receiver: self selectors: #(addScript);
+		receiver: self selectors: #(addScriptToProfile);
 		addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.

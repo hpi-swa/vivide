@@ -1,5 +1,5 @@
 actions - profile
-tryRemoveScript
+tryRemoveScriptFromProfile
 
 	| msg senders |
 	senders := self object references.
@@ -13,7 +13,7 @@ tryRemoveScript
 	msg
 		addAction: 'Remove scripts'
 		icon: ViIcons icons8Trash64px2Icon
-		receiver: self selectors: #(removeScript);
+		receiver: self selectors: #(removeScriptFromProfile);
 		addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.

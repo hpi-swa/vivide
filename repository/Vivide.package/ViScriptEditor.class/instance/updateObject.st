@@ -24,7 +24,4 @@ updateObject
 	(self inputKind size > 1 and: [(self object hasProperty: #inputKind) not])
 		ifTrue: [self object setProperty: #inputKind toValue: (Array new: self inputKind size)].
 
-	"Remind the user to set the input kind."
-	self hasInputKind ifFalse: [self addHintForInputKindTuple].
-
 	self removeProperty: #isUpdating.

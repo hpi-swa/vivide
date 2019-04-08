@@ -1,5 +1,5 @@
 actions - profile
-removeScript
+removeScriptFromProfile
 
 	self object isDefault ifTrue: [
 		self object unregister].

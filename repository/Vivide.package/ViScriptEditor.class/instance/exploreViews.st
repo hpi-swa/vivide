@@ -1,4 +1,4 @@
-as yet unclassified
+actions - debugging
 exploreViews
 	"Try out all available views from the system."
 	

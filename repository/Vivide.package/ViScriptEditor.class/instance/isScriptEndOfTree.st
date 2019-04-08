@@ -1,3 +1,3 @@
 testing - object
 isScriptEndOfTree
-	^ self firstStep isRecursive and: [self firstStep accessibleSteps last == self object]
+	^ self allSteps first isRecursive and: [self allSteps first accessibleSteps last == self thisStep]

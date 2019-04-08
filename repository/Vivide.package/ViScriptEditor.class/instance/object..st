@@ -1,5 +1,4 @@
 accessing - object
 object: aQueryStep
 
-	step := aQueryStep.
-	self clear.
+	self thisStep: aQueryStep.

@@ -11,11 +11,11 @@ addArtifact
 
 	ViLoggingService trigger: {#message -> 'Script part created.'}.
 
-	editor := ViScriptEditor new.
+	editor := self class new.
 	editor object: script.
 	
 	self artifactCreated: editor.
 	editor activateWizard.
 	
 	"We need to update the pane highlights because only now we have a system window."
-	editor highlightAffectedPanes.
+	editor addPaneHighlights.

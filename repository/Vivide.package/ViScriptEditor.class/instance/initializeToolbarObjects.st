@@ -35,10 +35,10 @@ initializeToolbarObjects
 	self toolbar leftPanel
 		addGroup: #viewScriptProperties
 		icon: UiFugueIcons picturesIcon
-		contents: [:editor | {editor firstStep viewClass. '-------------' -> ''}, editor viewExpectedScriptProperties]
+		contents: [:editor | {editor allSteps first viewClass. '-------------' -> ''}, editor viewExpectedScriptProperties]
 		helpText: 'No script properties used.'.
 	self toolbar leftPanel
 		addGroup: #viewObjectProperties
 		icon: UiFugueIcons pictureMediumIcon
-		contents: [:editor | {editor firstStep viewClass. '-------------' -> ''}, editor viewExpectedObjectProperties]
+		contents: [:editor | {editor allSteps first viewClass. '-------------' -> ''}, editor viewExpectedObjectProperties]
 		helpText: 'No object properties used.'

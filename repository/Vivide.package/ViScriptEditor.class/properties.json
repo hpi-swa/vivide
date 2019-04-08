@@ -3,22 +3,18 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"ShowHints" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"step",
 		"edit",
 		"script",
 		"scriptPointer",
 		"shouldPropose",
-		"context",
-		"otherSteps",
 		"input",
-		"inputKind",
 		"map",
 		"mapIndex",
-		"highlights",
-		"hintBox" ],
+		"thisStep",
+		"allSteps" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],
