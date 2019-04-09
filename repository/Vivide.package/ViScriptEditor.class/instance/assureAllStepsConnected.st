@@ -19,6 +19,7 @@ assureAllStepsConnected
 	self allSteps overlappingPairsDo: [:step1 :step2 |
 		somethingChanged := somethingChanged | (step1 next ~~ step2).
 		step1 next: step2].
+	self allSteps last next: nil.
 	
 	somethingChanged ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script parts reordered.'}].
