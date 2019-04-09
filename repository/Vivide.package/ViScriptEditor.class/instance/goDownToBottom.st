@@ -3,6 +3,7 @@ goDownToBottom
 
 	| node cursor result lastBlock |
 	self hasUnacceptedChanges ifTrue: [^ self].
+	self isWizardActive ifTrue: [^ self].
 	
 	node := RBParser parseExpression: self fullSourceCode.
 	cursor := self textField cursorPosition + self fullSourceCodeInterval first - 1.

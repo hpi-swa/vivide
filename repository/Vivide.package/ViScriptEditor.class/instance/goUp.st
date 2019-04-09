@@ -3,6 +3,7 @@ goUp
 
 	| node cursor result previousResult index |
 	self hasUnacceptedChanges ifTrue: [^ self].
+	self isWizardActive ifTrue: [^ self].
 	
 	node := RBParser parseExpression: self fullSourceCode.
 	

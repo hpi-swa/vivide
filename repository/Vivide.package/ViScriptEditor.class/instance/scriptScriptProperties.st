@@ -5,4 +5,4 @@ scriptScriptProperties
 	^ Dictionary newFrom: (
 		self fullSourceCode
 			ifNil: [{}]
-			ifNotNil: [:expression | (Compiler evaluate: self fullSourceCode) value])
+			ifNotNil: [:expression | (Compiler evaluate: expression) value])

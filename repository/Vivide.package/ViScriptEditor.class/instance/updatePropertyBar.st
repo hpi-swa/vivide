@@ -10,6 +10,9 @@ updatePropertyBar
 			| propertyValue text icon |
 			propertyValue := (self thisStep valueOfProperty: property) "no blocks" value.
 			
+			"The WHAT is more important than the TRUTH."
+			propertyValue = true ifTrue: [propertyValue := property].
+			
 			icon := ViIconService doObject: propertyValue.
 			(icon notNil and: [icon isTransparent]) ifTrue: [icon := nil].
 			text := (ViLabelService doObject: propertyValue) ifNotNil: #asString.

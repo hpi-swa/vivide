@@ -1,11 +1,16 @@
 updating
 updateBindings
 
-	| code argumentNames argumentObjects helpPrefix helpSuffix helpScript helpBlock |
+	| code argumentNames outerArgumentNames argumentObjects helpPrefix helpSuffix helpScript helpBlock |
 
-	argumentNames := (RBParser parseExpression: self visibleSourceCode onError: [:msg :i | self warningSent: 'Cannot parse code.'.^ self]) in: [:node | node isBlock ifTrue: [node argumentNames] ifFalse: [node receiver argumentNames]].
+	"1) Collect the identifiers we are interested in."
+	argumentNames := OrderedCollection new.
+	([(RBParser parseExpression: self visibleSourceCode onError: [:msg :i | nil])] on: Error do: [nil])
+		ifNotNil: [:node | argumentNames addAll: (node isBlock ifTrue: [node argumentNames] ifFalse: [node receiver argumentNames])].
+	outerArgumentNames := OrderedCollection new.
+	self hiddenBlockNodes do: [:node | outerArgumentNames addAll: node argumentNames].
 	
-	argumentNames ifEmpty: [^ self].
+	argumentNames, outerArgumentNames ifEmpty: [^ self].
 
 	self isWizardActive
 		ifTrue: [helpPrefix := helpSuffix := '']
@@ -19,12 +24,15 @@ updateBindings
 				to: (code size max: self fullSourceCodeInterval last)].
 			
 	helpScript := helpPrefix,	
-		('[:{1} |
-			argumentObjects := \{{2}\}.
+		('[{1}{2} {3}
+			argumentObjects := \{{4}\}.
+			Transcript showln: argumentObjects asString.
 			ViArgumentsCollected signal.
 			Error signal: ''Should never see me!'']' format: {
+				argumentNames ifEmpty: [''] ifNotEmpty: [':'].
 				argumentNames joinSeparatedBy: ' :'.
-				argumentNames joinSeparatedBy: $.}),
+				argumentNames ifEmpty: [''] ifNotEmpty: ['|'].
+				argumentNames, outerArgumentNames joinSeparatedBy: '. '}),
 		helpSuffix.
 
 	helpBlock := Compiler new
@@ -44,5 +52,9 @@ updateBindings
 	] on: ViArgumentsCollected do: [:ex | "Abort." ].
 
 	self textField model bindings removeAll.
-	argumentNames with: argumentObjects do: [:name :object |
+	argumentObjects ifNil: [
+		self warningSent: 'Failed to update bindings. Code unreachable?'.
+		^ self].
+	
+	argumentNames, outerArgumentNames with: argumentObjects do: [:name :object |
 		self textField model bindings at: name put: object].
