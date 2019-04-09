@@ -7,6 +7,7 @@ activateWizard
 
 	"Propose a starting point for the user."
 	self fullSourceCode: nil.
+	self setFullSourceCodeInterval.
 	self visibleSourceCode: (self inputKind
 		ifEmpty: [
 			'["Type code here..."]']
@@ -16,6 +17,3 @@ activateWizard
 
 	"If the user starts typing, any 'type code here' information should be removed."
 	self selectBlockStatements.
-	
-	"..."
-	self mapIndex: 1.

@@ -7,8 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"input",
-		"map",
-		"mapIndex",
 		"thisStep",
 		"allSteps",
 		"navigationBar",

@@ -3,6 +3,10 @@ updateUi
 
 	self object ifNil: [^ self].
 
+	self updatePropertyBar.
+	self updateNavigationBar.
+
+	"General colors."
 	self isScriptInaccessible
 		ifTrue: [
 			self color: (Color fromString: '#FFCFCF'). 

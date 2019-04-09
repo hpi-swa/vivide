@@ -2,6 +2,11 @@ initialization
 initializeNavigationBar
 
 	self navigationBar: (Morph new
-		color: Color red;
-		extent: 100@20;
+		color: Color transparent;
+		extent: 5@5;
+		layoutPolicy: TableLayout new;
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap;
+		listDirection: #leftToRight;
+		wrapDirection: #topToBottom;
 		yourself).

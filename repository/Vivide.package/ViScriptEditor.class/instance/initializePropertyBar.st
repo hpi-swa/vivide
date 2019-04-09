@@ -2,6 +2,11 @@ initialization
 initializePropertyBar
 
 	self propertyBar: (Morph new
-		color: Color green;
-		extent: 100@20;
+		color: Color transparent;
+		extent: 5@5;
+		layoutPolicy: TableLayout new;
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap;
+		listDirection: #leftToRight;
+		wrapDirection: #topToBottom;
 		yourself).
