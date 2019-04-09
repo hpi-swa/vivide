@@ -8,9 +8,9 @@ clear
 
 	self object ifNotNil: [:step |
 		step referenceInArchive isValid
-			ifFalse: [self updateObjectVersion].
+			ifFalse: [step serializeIntoArchive].
 
-		(step valueOfProperty: #isNew ifAbsent: [false])
+		(step hasProperty: #isNew)
 			ifTrue: [self activateWizard]
 			ifFalse: [self deactivateWizard]].	
 

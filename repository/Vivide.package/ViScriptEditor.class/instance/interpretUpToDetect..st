@@ -1,9 +1,13 @@
 support - debugging
 interpretUpToDetect: block
-
+	"Interprets the entire visible script with the objects on top as input."
+	
 	| input |
-	input := self originalInput. "We need to call this here because we need to have updated context."
-
+	input := Array streamContents: [:stream |
+		self context detect: [:obj | obj isScript
+				ifTrue: [true "stop here"]
+				ifFalse: [stream nextPutAll: obj asList. false]]].
+	
 	self checkAllStepsConnected ifFalse: [^ nil].
 		
 	^ (ViQueryInterpreter

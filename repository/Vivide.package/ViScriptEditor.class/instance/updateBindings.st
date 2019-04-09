@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateBindings
 
 	| code argumentNames argumentObjects helpPrefix helpSuffix helpScript helpBlock |
@@ -7,16 +7,16 @@ updateBindings
 	
 	argumentNames ifEmpty: [^ self].
 
-	shouldPropose == true
+	self isWizardActive
 		ifTrue: [helpPrefix := helpSuffix := '']
 		ifFalse: [
-			code := self sourceCode.
+			code := self scriptSourceCode.
 			helpPrefix := code
 				copyFrom: 1
-				to: self scriptPointer first - 1.
+				to: self fullSourceCodeInterval first - 1.
 			helpSuffix := code
-				copyFrom: self scriptPointer last + 1
-				to: (code size max: self scriptPointer last)].
+				copyFrom: self fullSourceCodeInterval last + 1
+				to: (code size max: self fullSourceCodeInterval last)].
 			
 	helpScript := helpPrefix,	
 		('[:{1} |
@@ -35,12 +35,12 @@ updateBindings
 		ifFail: [^ self]
 		logged: true.
 		
-	[shouldPropose == true
+	[self isWizardActive
 		ifTrue: [helpBlock valueWithArguments: self input first asList]
 		ifFalse: [
 			helpBlock
 				value: self input
-				value: (self object valueOfProperty: #out ifAbsent: [OrderedCollection new])]
+				value: (self thisStep valueOfProperty: #out ifAbsent: [OrderedCollection new])]
 	] on: ViArgumentsCollected do: [:ex | "Abort." ].
 
 	self textField model bindings removeAll.

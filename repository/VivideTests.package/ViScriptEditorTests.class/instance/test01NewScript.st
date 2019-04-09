@@ -6,13 +6,13 @@ test01NewScript
 	editor object: script.
 
 	self assert: editor object == script.
-	self assert: script sourceCode equals: editor sourceCode.
-	self assert: (editor script includesSubstring: script sourceCode caseSensitive: true).
-	self deny: editor shouldPropose.
+	self assert: script sourceCode equals: editor scriptSourceCode.
+	self assert: (editor fullSourceCode includesSubstring: script sourceCode caseSensitive: true).
+	self deny: editor isWizardActive.
 
 	editor object: {[:object | object] -> {#isNew -> true}} asScript.
-	self assert: editor shouldPropose.
+	self assert: editor isWizardActive.
 
 	editor acceptSourceCode.
-	self deny: editor shouldPropose.
+	self deny: editor isWizardActive.
 	self assert: (editor object valueOfProperty: #isNew) ~~ true.

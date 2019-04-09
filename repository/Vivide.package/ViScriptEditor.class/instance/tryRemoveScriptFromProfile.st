@@ -2,7 +2,7 @@ actions - profile
 tryRemoveScriptFromProfile
 
 	| msg senders |
-	senders := self object references.
+	senders := self thisStep references.
 	
 	msg := ViOverlayMessageBox new title: 'Remove From Profile'.
 

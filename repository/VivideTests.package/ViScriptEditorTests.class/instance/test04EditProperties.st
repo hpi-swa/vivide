@@ -12,7 +12,7 @@ test04EditProperties
 }' equals: editor propertiesToString.
 
 	editor goUpToTop.
-	editor visibleSourceCode: editor sourceCode, (' -> \{{1} {2} {3} {4}\}' format: {
+	editor visibleSourceCode: editor scriptSourceCode, (' -> \{{1} {2} {3} {4}\}' format: {
 		'#color -> #yellow.'. "Change property"
 		'#selectionMode -> #multi.'. "Add new property"
 		'#foo -> nil.'. "Remove property"

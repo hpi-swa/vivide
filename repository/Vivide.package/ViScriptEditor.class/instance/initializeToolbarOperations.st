@@ -7,7 +7,7 @@ initializeToolbarOperations
 		addGroup: #add
 		icon: UiFugueIcons newIcon
 		contents: [:editor | {
-			{#addArtifact. 'Insert new part'. UiFugueIcons newIcon. nil. 1}.
+			{#addStep. 'Add script'. UiFugueIcons newIcon. nil. 1}.
 			{#activateWizard. 'Activate wizard'. UiSilkIcons wandIcon. nil. 2}.
 			{#deactivateWizard. 'Deactivate wizard'. ViIcons blankIcon. nil. 2}.
 			{#openScript. 'Open script'. UiFugueIcons controlIcon. nil. 3}.			

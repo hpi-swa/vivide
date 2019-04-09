@@ -4,8 +4,9 @@ goUpToTop
 	| cursor |
 	self hasUnacceptedChanges ifTrue: [^ self].
 	
-	cursor := self textField cursorPosition + self scriptPointer first - 1.
+	cursor := self textField cursorPosition + self fullSourceCodeInterval first - 1.
 	
-	self scriptPointer: (1 to: self script size).
+	self fullSourceCodeInterval: (1 to: self fullSourceCode size).
+	self setVisibleSourceCode.
+	
 	self textField select: (cursor to: cursor - 1).
-	self mapIndex: 1.

@@ -2,7 +2,7 @@ actions
 tryDeleteScript
 
 	| msg senders |
-	senders := self object references.
+	senders := self thisStep references.
 	
 	msg := ViOverlayMessageBox new title: 'Remove Script Part'.
 
@@ -20,7 +20,9 @@ tryDeleteScript
 				"addAction: 'Just browse references.' icon: UiFugueIcons arrowStepIcon receiver: self selectors: #(browseReferences)"]
 		ifFalse: [
 			msg
-				message: (self object isDefault ifTrue: ['This is a default script in the current profile!'] ifFalse: ['This script part is not used.'])
+				message: (self thisStep isDefault
+					ifTrue: ['This is a default script in the current profile!']
+					ifFalse: ['This script part is not used.'])
 				icon: ViIcons icons8Info64px1Icon].
 			
 	msg addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.

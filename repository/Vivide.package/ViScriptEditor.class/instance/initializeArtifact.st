@@ -12,6 +12,7 @@ initializeArtifact
 		
 	self initializeTextField.
 	self initializeNavigationBar.
+	self initializePropertyBar.
 	
 	container := Morph new
 		color: Color transparent;
@@ -19,6 +20,7 @@ initializeArtifact
 		vResizing: #shrinkWrap;
 		hResizing: #spaceFill.
 	container addAllMorphs: {
+		self propertyBar.
 		self navigationBar.
 		self textField.
 	}.

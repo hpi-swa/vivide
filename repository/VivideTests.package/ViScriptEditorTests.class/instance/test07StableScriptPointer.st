@@ -6,7 +6,7 @@ test07StableScriptPointer
 	editor object: script.
 
 	editor goUp.
-	old := editor scriptPointer.	
+	old := editor fullSourceCodeInterval.	
 	
 	editor clear.
-	self assert: old equals: editor scriptPointer.
+	self assert: old equals: editor fullSourceCodeInterval.

@@ -1,4 +1,4 @@
-testing - object
+testing
 knowsObject: anObject
 
 	"((anObject isKindOf: ViQueryStep) and: [anObject next == self object])

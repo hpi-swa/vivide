@@ -2,13 +2,11 @@ actions - editing
 deactivateWizard
 	"Show actual source code but fall back if not present."
 	
-	| code |
-	self object setProperty: #isNew toValue: nil.  
+	self thisStep setProperty: #isNew toValue: nil.  
 	
-	code := self object definition sourceCode
-		ifEmpty: ['[:in :out | "Type code here..."]'].
-
+	"Remove the room for the magic wand. See #drawWizardIndicationOn:."
 	self textField margins: (4@0 corner: 0@7).
 
-	shouldPropose := false.
-	self script: code, String cr, '-> ', self propertiesToString.
+	self setFullSourceCode.
+	self setFullSourceCodeInterval. "Keep or reset."
+	self setVisibleSourceCode.

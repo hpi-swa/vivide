@@ -1,5 +1,5 @@
-support - properties
-propertiesFromList: dict
+updating
+updateObjectProperties: dict
 	"Set script properties from the given dictionary."
 	
 	| propertiesToSkip propertiesToRemove propertiesToSet |
@@ -20,5 +20,6 @@ propertiesFromList: dict
 			ifFalse: [self object setProperty: property toValue: (dict at: property)]].
 
 	"Update visuals."
-	self propertiesVisible
-		ifTrue: [self flag: #todo. "mt: Maybe we should reset everything?! Watch for #initializeScriptPointer and layout stability!!"]
+	self areScriptPropertiesVisible
+		ifTrue: [
+			self flag: #todo. "mt: Maybe we should reset everything?! Watch for #initializeScriptPointer and layout stability!!"]

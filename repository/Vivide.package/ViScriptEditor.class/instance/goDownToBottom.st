@@ -4,8 +4,8 @@ goDownToBottom
 	| node cursor result lastBlock |
 	self hasUnacceptedChanges ifTrue: [^ self].
 	
-	node := RBParser parseExpression: self script.
-	cursor := self textField cursorPosition + self scriptPointer first - 1.
+	node := RBParser parseExpression: self fullSourceCode.
+	cursor := self textField cursorPosition + self fullSourceCodeInterval first - 1.
 	result := node.
 	[result isNil or: [result children isEmpty]] whileFalse: [
 		result isBlock ifTrue: [lastBlock := result].
@@ -16,6 +16,7 @@ goDownToBottom
 	result := lastBlock.
 	result ifNil: [^ self].
 
-	self scriptPointer: result sourceInterval.
+	self fullSourceCodeInterval: result sourceInterval.
+	self setVisibleSourceCode.
+	
 	self textField select: ((cursor - result start + 1) to: (cursor - result start)).
-	self mapIndex: self map size.

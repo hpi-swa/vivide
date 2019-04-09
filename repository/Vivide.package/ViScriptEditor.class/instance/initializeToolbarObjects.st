@@ -6,21 +6,13 @@ initializeToolbarObjects
 	self toolbar leftPanel
 		addGroup: #parts
 		icon: UiFugueIcons scriptArrowIcon
-		contents: [:editor | editor object ifNil: [#()] ifNotNil: [:s |
-				s allSteps]]
+		contents: [:editor | editor thisStep ifNil: [#()] ifNotNil: [:s | s allSteps]]
 		helpText: 'No steps found.'.
-
-	"self toolbar leftPanel
-		addGroup: #definitions
-		icon: UiSilkIcons scriptCodeIcon
-		contents: [:editor | editor object ifNil: [#()] ifNotNil: [:s |
-				s allSteps collect: [:st | st definition] thenSelect: [:st | st notNil]]]
-		helpText: 'No step definitions found'."
 		
 	self toolbar leftPanel
 		addGroup: #versions
 		icon: UiSilkIcons timeIcon
-		contents: [:editor | [(ViMethodVersion versionsOfMethod: editor object definition referenceInArchive) in: [:versions |
+		contents: [:editor | [(ViMethodVersion versionsOfMethod: editor thisStep definition referenceInArchive) in: [:versions |
 			| result |
 			result := Dictionary new.
 			versions do: [:v | result at: v stamp put: v].

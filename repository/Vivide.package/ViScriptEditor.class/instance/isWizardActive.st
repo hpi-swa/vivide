@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isWizardActive
 
-	^ script isNil
+	^ self fullSourceCode isNil

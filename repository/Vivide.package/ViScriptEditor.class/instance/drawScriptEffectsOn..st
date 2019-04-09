@@ -7,7 +7,7 @@ drawScriptEffectsOn: aCanvas
 	
 	font := Preferences standardButtonFont.
 	
-	(self object isEndOfLevel and: [self isScriptInaccessible not]) ifTrue: [
+	(self isScriptEndOfLevel and: [self isScriptInaccessible not]) ifTrue: [
 		end := self isScriptEndOfTree.
 		label := (end ifFalse: ['next level'] ifTrue: ['end of tree']) asText.
 		label

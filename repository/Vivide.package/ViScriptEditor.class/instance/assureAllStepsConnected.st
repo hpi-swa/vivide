@@ -12,14 +12,13 @@ assureAllStepsConnected
 	
 	"Support drops from other editors."
 	self allSteps do: [:step |
-		step adoptOrganization: self object organization].
+		step adoptOrganization: self thisStep organization].
 	
 	"Assure connections of visible steps."
 	somethingChanged := false.
 	self allSteps overlappingPairsDo: [:step1 :step2 |
 		somethingChanged := somethingChanged | (step1 next ~~ step2).
 		step1 next: step2].
-	"self allSteps last next: nil."
 	
 	somethingChanged ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script parts reordered.'}].

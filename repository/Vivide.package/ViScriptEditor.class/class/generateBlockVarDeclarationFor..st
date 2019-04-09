@@ -1,8 +1,9 @@
 support
-generateBlockVarDeclarationFor: someClasses
+generateBlockVarDeclarationFor: someClassesOrNils
 
-	| classCount |
+	| classCount someClasses |
 	classCount := Dictionary new.
+	someClasses := someClassesOrNils collect: [:cls | cls ifNil: [Object]].
 	
 	^ someClasses
 		inject: '' into: [:pattern :cls |

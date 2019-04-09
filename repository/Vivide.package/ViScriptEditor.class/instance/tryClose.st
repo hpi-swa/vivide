@@ -1,6 +1,6 @@
-as yet unclassified
+memento - cleanup
 tryClose
 
-	self object isDefault
+	self thisStep isDefault
 		ifTrue: [self tryDeleteScript]
 		ifFalse: [self deleteScript].

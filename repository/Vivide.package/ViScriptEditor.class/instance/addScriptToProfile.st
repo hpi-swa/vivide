@@ -1,7 +1,7 @@
 actions - profile
 addScriptToProfile
 
-	ViProfile active addScript: self object.
+	ViProfile active addScript: self thisStep.
 
 	ViAnimatedImageMorph
 		flyOutOn: self

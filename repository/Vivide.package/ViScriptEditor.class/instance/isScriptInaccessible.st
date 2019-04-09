@@ -1,4 +1,6 @@
-testing - object
+testing
 isScriptInaccessible
 	
-	^ self allSteps first inaccessibleSteps identityIncludes: self thisStep
+	^ self thisStep
+		ifNil: [false]
+		ifNotNil: [self allSteps first inaccessibleSteps identityIncludes: self thisStep]

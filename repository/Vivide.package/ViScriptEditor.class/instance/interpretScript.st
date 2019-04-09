@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 interpretScript
 
-	(self object interpretScriptWith: self input) explore.
+	(self thisStep interpretScriptWith: self input) explore.
