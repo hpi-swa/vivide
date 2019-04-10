@@ -1,5 +1,5 @@
-actions - editing
-tryDeactivateWizard
+memento - cleanup
+tryQuickClear
 
 	self hasUnacceptedChanges ifTrue: [
 		
@@ -11,10 +11,10 @@ tryDeactivateWizard
 			ifTrue: [self setProperty: #clearCounter toValue: (self valueOfProperty: #clearCounter) + 1].  
 		
 		(self valueOfProperty: #clearCounter) = 1 ifTrue: [
-			self warningSent: 'Hit again to discard all changes.'.
+			self warningSent: 'Hit twice quickly to discard all changes.'.
 			^ self].
 		
 		self informationSent: 'All changes discarded.'.
 		self resetClearCounter].
 	
-	self deactivateWizard.
+	self clear.

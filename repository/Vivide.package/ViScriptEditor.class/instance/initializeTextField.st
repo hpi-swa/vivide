@@ -16,7 +16,7 @@ initializeTextField
 	self textField eventHandler on: #(cmd shift) -> Character arrowLeft send: #goUpToTop to: self.
 	self textField eventHandler on: #(cmd shift) -> Character arrowRight send: #goDownToBottom to: self.
 	self textField eventHandler on: #(cmd) -> $a send: #selectAll to: self.
-	self textField eventHandler on: Character escape send: #tryDeactivateWizard to: self.
+	self textField eventHandler on: Character escape send: #tryQuickClear to: self.
 
 	self connect: self textField eventHandler signal: #focusReceived toSelector: #addPaneHighlights.
 	self connect: self textField eventHandler signal: #focusLost toSelector: #removePaneHighlights.
