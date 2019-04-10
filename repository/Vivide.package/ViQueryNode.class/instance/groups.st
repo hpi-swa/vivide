@@ -2,6 +2,7 @@ item model - hierarchy
 groups
 
 	^ groups ifNil: [
+		updateCount := false. "Discard deferred update requests."
 		self
 			processStepsGuarded;
 			setUpdateNotifications;

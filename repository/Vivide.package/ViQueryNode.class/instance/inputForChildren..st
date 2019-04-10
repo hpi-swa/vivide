@@ -1,8 +1,13 @@
 as yet unclassified
 inputForChildren: someObjects
 
-	someObjects ifNil: [^ self removeKey: #objects ifAbsent: []].
+	| previousInput |
+	previousInput := self inputForChildren.
 	
-	^ self
-		at: #objects
-		put: someObjects asList
+	someObjects
+		ifNil: [self removeKey: #objects ifAbsent: []]
+		ifNotNil: [self at: #objects put: someObjects asList].
+	
+	self flag: #performance. "mt: Does it make sense to check for input equality?"
+	(previousInput hasEqualElements: self inputForChildren)
+		ifFalse: [self triggerUpdateChildren].

@@ -2,15 +2,11 @@ reset
 updateChildren
 
 	| workBlock |
-	"No need to call this method if never initialized lazily!"
-	self assert: groups notNil.
-
-	workBlock := [
-		self clearAllUpdateNotifications.
-		self clearAllQueryChangeNotifications.
-		self processStepsGuarded.
-
-		self modelReset].
+	children ifNil: [
+		"The view did never request the children yet."
+		^ self].
+	
+	workBlock := [self resetChildren].
 
 	self pane
 		ifNil: [workBlock value]

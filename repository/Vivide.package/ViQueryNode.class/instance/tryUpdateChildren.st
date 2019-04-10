@@ -1,4 +1,4 @@
-private
+reset
 tryUpdateChildren
 
 	updateCount == true ifTrue: [

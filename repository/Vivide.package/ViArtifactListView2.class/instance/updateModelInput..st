@@ -6,9 +6,6 @@ updateModelInput: newObjects
 		self onObjectsChanged.
 		^ self].
 	
-	"See #onObjectsChanged."
-	(self hasProperty: #isReadingModel) ifTrue: [^ self].
-
-	self setProperty: #isReadingModel toValue: true.
-	[self model inputForChildren: self objects. self onObjectsChanged]
-		ensure: [self removeProperty: #isReadingModel].
+	self doNonReentrant: [
+		self model inputForChildren: newObjects.
+		self onObjectsChanged].

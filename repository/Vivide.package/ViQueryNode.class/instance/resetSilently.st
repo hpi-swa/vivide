@@ -1,11 +1,11 @@
 reset
 resetSilently
+	"Discard all children and unsubscribe from any related notifier."
+
+	children ifNil: [^ self].
 
 	self
 		clearUpdateNotifications;
-		clearAllUpdateNotifications;
-		clearQueryChangeNotifications;
-		clearAllQueryChangeNotifications.
-
-	children := nil.
-	groups := nil.
+		clearQueryChangeNotifications.
+		
+	self resetChildrenSilently.

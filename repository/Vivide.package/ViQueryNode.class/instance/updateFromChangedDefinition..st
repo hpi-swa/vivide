@@ -12,9 +12,9 @@ updateFromChangedDefinition: evt
 		ifTrue: [
 			self firstStep stepsDo: [:step |
 			evt item == step definition ifTrue: [
-				self refresh. ^ self]].
+				self triggerUpdateChildren. ^ self]].
 			^ self].
 
 	self firstStep nextStepsDo: [:step |
 		evt item == step definition ifTrue: [
-			self refresh. ^ self]].
+			self triggerUpdateChildren. ^ self]].

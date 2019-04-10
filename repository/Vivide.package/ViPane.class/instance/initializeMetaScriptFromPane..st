@@ -16,7 +16,6 @@ initializeMetaScriptFromPane: pane
 	self view: metaWidget.
 	"Avoid unnecessary updates by setting inst vars directly."
 	queries := pane queries.
-	self model resetSilently.
 	self model firstStep: metaScript.
 	self model inputForChildren: pane objects.
 	metaWidget model: self model.

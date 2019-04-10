@@ -1,5 +1,5 @@
-as yet unclassified
+running
 setUp
 
 	super setUp.
-	sut := ViArtifactListView2 new.
+	view := ViArtifactListView2 new.

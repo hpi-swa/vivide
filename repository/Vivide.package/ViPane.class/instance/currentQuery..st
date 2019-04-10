@@ -9,7 +9,6 @@ currentQuery: aQueryStep
 				self flag: #metaScript.
 				self layoutChanged].
 			
-			self model resetSilently.
 			self model firstStep: aQueryStep.
 			self updateView. "Evaluation will happen lazily."
 			

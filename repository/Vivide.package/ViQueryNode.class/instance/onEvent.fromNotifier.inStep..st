@@ -7,4 +7,4 @@ onEvent: event fromNotifier: notifier inStep: step
 
 	(objects isEmpty or: [objects anySatisfy: [:object |
 		notifier filter value: object value: event]])
-			ifTrue: [self refresh].
+			ifTrue: [self triggerUpdateChildren].

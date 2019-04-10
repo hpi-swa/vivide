@@ -2,6 +2,7 @@ private
 children
 
 	^ children ifNil: [
+		updateCount := false. "Discard deferred update requests."
 		self
 			processStepsGuarded;
 			setUpdateNotifications;
