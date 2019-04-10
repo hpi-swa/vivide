@@ -5,5 +5,5 @@ clearQueryChangeNotifications
 
 	self depth > self class updateDepthThreshold ifTrue: [^ self].
 	
-	ViQueryChangeNotifier uniqueInstance
+	ViQueryChangeNotifier active
 		noMoreNotificationsFor: self.

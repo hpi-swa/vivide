@@ -5,7 +5,7 @@ clear
 		connection detach].
 	
 	ViObjectChangeNotifier uniqueInstance noMoreNotificationsFor: self.
-	ViQueryChangeNotifier uniqueInstance noMoreNotificationsFor: self.
+	ViQueryChangeNotifier active noMoreNotificationsFor: self.
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
 	self clearError.

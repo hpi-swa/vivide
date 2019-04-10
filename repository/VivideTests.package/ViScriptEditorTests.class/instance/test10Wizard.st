@@ -1,4 +1,4 @@
-tests
+tests - single
 test10Wizard
 
 	editor object: [:object | object] asScript.

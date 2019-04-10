@@ -1,7 +1,7 @@
 initialization
 initializeUiQueryChanges
 
-	ViQueryChangeNotifier uniqueInstance
+	ViQueryChangeNotifier active
 		notify: self
 		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
 		change: ModifiedEvent changeKind

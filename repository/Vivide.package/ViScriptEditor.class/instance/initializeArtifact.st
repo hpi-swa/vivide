@@ -3,10 +3,10 @@ initializeArtifact
 
 	| container |
 
-	ViQueryChangeNotifier uniqueInstance
+	ViQueryChangeNotifier active
 		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
 		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
-	ViQueryChangeNotifier uniqueInstance
+	ViQueryChangeNotifier active
 		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier definitionKind
 		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
 		

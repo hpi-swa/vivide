@@ -5,7 +5,7 @@ setQueryChangeNotifications
 	
 	self depth > self class updateDepthThreshold ifTrue: [^ self].
 	
-	ViQueryChangeNotifier uniqueInstance
+	ViQueryChangeNotifier active
 		notify: self
 		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
 		change: ModifiedEvent changeKind

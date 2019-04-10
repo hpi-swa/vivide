@@ -1,4 +1,4 @@
-tests
+tests - single
 test05UpdateOnChangedSourceCode
 
 	| script |

@@ -1,4 +1,4 @@
-tests
+tests - multiple
 test09RemovePart
 
 	| script view parts |

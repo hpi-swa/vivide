@@ -1,0 +1,4 @@
+instances
+active
+
+	^ ViActiveNotifier value

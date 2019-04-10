@@ -1,4 +1,4 @@
-tests
+tests - single
 test04EditProperties
 
 	| script |

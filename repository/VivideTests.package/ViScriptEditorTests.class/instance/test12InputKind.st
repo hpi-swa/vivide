@@ -1,4 +1,4 @@
-as yet unclassified
+tests - multiple
 test12InputKind
 
 	| script view editor |

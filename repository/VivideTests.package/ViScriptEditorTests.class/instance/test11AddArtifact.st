@@ -1,4 +1,4 @@
-tests
+tests - multiple
 test11AddArtifact
 
 	| script view editor |

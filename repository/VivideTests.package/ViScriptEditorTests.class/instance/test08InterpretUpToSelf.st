@@ -1,4 +1,4 @@
-tests
+tests - multiple
 test08InterpretUpToSelf
 
 	| script view editor |

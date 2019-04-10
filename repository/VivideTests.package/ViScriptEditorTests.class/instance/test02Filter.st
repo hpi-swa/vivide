@@ -1,4 +1,4 @@
-tests
+tests - single
 test02Filter
 
 	| script inner |

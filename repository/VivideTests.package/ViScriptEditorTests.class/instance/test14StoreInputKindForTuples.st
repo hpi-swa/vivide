@@ -1,4 +1,4 @@
-as yet unclassified
+tests - multiple
 test14StoreInputKindForTuples
 
 	| script view editor |

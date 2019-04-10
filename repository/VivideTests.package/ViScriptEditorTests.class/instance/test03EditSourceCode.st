@@ -1,4 +1,4 @@
-tests
+tests - single
 test03EditSourceCode
 
 	| script |

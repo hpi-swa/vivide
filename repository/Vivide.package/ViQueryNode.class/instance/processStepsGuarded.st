@@ -30,7 +30,7 @@ processStepsGuarded
 
 				"2) Schedule GUI notification stuff."
 				Project current addDeferredUIMessage: [
-					ViQueryChangeNotifier uniqueInstance
+					ViQueryChangeNotifier active
 						stepNotEvaluated: self firstStep
 						becauseOf: {processToDebug. errorWasInUIProcess. description. maliciousScript}.
 				].

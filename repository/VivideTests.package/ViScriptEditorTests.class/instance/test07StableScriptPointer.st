@@ -1,4 +1,4 @@
-tests
+tests - single
 test07StableScriptPointer
 
 	| script old |
