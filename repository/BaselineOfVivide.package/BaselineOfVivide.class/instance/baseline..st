@@ -4,15 +4,15 @@ baseline: spec
 	
 	spec for: #common do: [
 		spec baseline: 'Signals' with: [
-			spec repository: 'github://hpi-swa/signals:master/repository'].
+			spec repository: 'github://hpi-swa/signals:master-squot/repository'].
 
 		spec baseline: 'Animations' with: [
 			spec
-				repository: 'github://hpi-swa/animations:master/repository'].
+				repository: 'github://hpi-swa/animations:master-squot/repository'].
 
 		spec baseline: 'Widgets' with: [
 			spec
-				repository: 'github://hpi-swa/widgets:master/repository';
+				repository: 'github://hpi-swa/widgets:master-squot/repository';
 				loads: #(full)].
 		
 		spec project: 'Refactoring-Core' with: [
