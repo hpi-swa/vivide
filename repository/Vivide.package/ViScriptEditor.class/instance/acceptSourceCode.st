@@ -25,10 +25,7 @@ acceptSourceCode
 		code,
 		(self fullSourceCode last: self fullSourceCode size - self fullSourceCodeInterval last).
 	self fullSourceCodeInterval: (self fullSourceCodeInterval first to: self fullSourceCodeInterval first + code size - 1).
-	
-	"Update visuals if code was fixed automatically."
-	self flag: #suspicious. "mt: Why the size? Just #= would be better? Is it slower?"
-	code ~= self visibleSourceCode ifTrue: [self visibleSourceCode: code].
+	self setVisibleSourceCode.
 
 	"Store changes in object."
 	self updateObject.

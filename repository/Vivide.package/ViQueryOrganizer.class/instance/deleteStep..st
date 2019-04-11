@@ -16,5 +16,8 @@ deleteStep: aQueryStep
 					self assert: step next == aQueryStep .
 					step next: aQueryStep next]]].
 	
-	"2) Forget about it."
+	"2) Do not point to anything anymore."
+	aQueryStep next: nil.
+	
+	"3) Forget about it."
 	aQueryStep unregister.

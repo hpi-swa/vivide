@@ -19,10 +19,6 @@ updateObject
 	self thisStep setProperty: #isNew toValue: nil.   
 	self updateObjectProperties: (Dictionary newFrom: spec value).
 
-	"Ensure tuple information such as #(nil nil) for pairs."
-	(self inputKind size > 1 and: [(self object hasProperty: #inputKind) not])
-		ifTrue: [self thisStep setProperty: #inputKind toValue: (Array new: self inputKind size)].
-
 	self thisStep serializeIntoArchive.
 
 	self removeProperty: #isUpdating.
