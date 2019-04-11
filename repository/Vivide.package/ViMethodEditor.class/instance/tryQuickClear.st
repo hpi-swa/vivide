@@ -11,10 +11,10 @@ tryQuickClear
 			ifTrue: [self setProperty: #clearCounter toValue: (self valueOfProperty: #clearCounter) + 1].  
 		
 		(self valueOfProperty: #clearCounter) = 1 ifTrue: [
-			self warningSent: 'Hit twice quickly to discard all changes.'.
+			self warn: 'Hit twice quickly to discard all changes.' for: self.
 			^ self].
 		
-		self informationSent: 'All changes discarded.'.
+		self inform: 'All changes discarded.' for: self.
 		self resetClearCounter].
 	
 	self clear.
