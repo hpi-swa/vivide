@@ -16,6 +16,7 @@ goDownToBottom
 
 	result := lastBlock.
 	result ifNil: [^ self].
+	result := self class detectObjectTransformation: result.
 
 	self fullSourceCodeInterval: result sourceInterval.
 	self setVisibleSourceCode.
