@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test01Objects
 
 	view objects: #(1 2 3).

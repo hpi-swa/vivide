@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test07NonIdentityScript
 	"There can be scripts that actually transform the input object. This might interfere with the view trying to update model input."
 

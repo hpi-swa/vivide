@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 subjectClass
 	"Infer subject class from test case class name."
 	

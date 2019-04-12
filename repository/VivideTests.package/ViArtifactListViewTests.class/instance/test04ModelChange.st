@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test04ModelChange
 	"Any change in the model's child nodes should be noticed in this view."
 	

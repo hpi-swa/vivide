@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test02ObjectsDuplicate
 	"The list should keep track of duplicate editors for identical objects."
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test03ModelRead
 	"This view should read all top-level nodes in any given model."
 	

@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 test06OpenEditorForObject
 	"Editors are able to communicate new objects and new editors."
 
