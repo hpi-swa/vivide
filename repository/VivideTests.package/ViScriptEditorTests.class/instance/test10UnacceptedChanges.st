@@ -6,23 +6,14 @@ test10UnacceptedChanges
 		deny: editor hasUnacceptedChanges;
 		assert: #(1 4 9) equals: (script interpretScriptWith: #(1 2 3)) objects.
 		
-	editor visibleSourceCode: '[:num | num + num]'.
-	
-	self flag: #hacky.
-	editor grabKeyboard.
-	ActiveHand keyboardFocus processFocusEvent: (KeyboardEvent new
-		setType: #keystroke
-		buttons: 0 "no modifiers"
-		position: editor center
-		keyValue: Character space asciiValue
-		hand: ActiveHand
-		stamp: Time millisecondClockValue).
-	
+	editor visibleSourceCode: '[:num | "... type here ..." ]'.
+	editor selectBlockStatements.
+	self type: 'num + num' in: editor.
 	self assert: editor hasUnacceptedChanges.
-	
+
 	script sourceCode: [:num | num * 100] asScript sourceCode.
 	self
-		assert: '[:num |  num + num]' equals: editor visibleSourceCode;
+		assert: '[:num | num + num ]' equals: editor visibleSourceCode;
 		assert: #(100 200 300) equals: (script interpretScriptWith: #(1 2 3)) objects.
 	
 	"User can overwrite external changes."
