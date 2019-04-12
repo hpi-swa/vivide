@@ -1,7 +1,7 @@
 tests - single
-test02Filter
+test11CodeFolding
 
-	| script inner |
+	| inner |
 	script := [:in :out | ([in collect: [:each | [:num | num * num] value: each]] value: in) in: [:result | out addAll: result asList]] asRawScript.
 	editor object: script.
 
@@ -49,4 +49,3 @@ test02Filter
 	self
 		assert: ((0 to: inner size - 1) + (editor scriptSourceCode findString: inner))
 		equals: editor fullSourceCodeInterval.
-			
