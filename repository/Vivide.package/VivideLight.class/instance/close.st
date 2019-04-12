@@ -8,6 +8,9 @@ close
 
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
+	(self valueOfProperty: #previousToolSet) ifNotNil: [:ts |
+		ToolSet default: ts].
+	
 	self world == ActiveWorld
 		ifTrue: [ActiveHand removeKeyboardListener: self].
 

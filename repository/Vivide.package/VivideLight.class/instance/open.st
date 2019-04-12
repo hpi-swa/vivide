@@ -11,6 +11,11 @@ open
 	ActiveVivide := self.
 	ActiveHand addKeyboardListener: self.
 	
+	(Smalltalk classNamed: #ViToolSet)
+		ifNotNil: [:ts | 
+			self setProperty: #previousToolSet toValue: ToolSet default. 
+			ToolSet default: ts].
+	
 	self initializeSystemChangeNotifications.
 
 	"Allow dropping things in the world."
