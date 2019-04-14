@@ -9,10 +9,7 @@ defc77245e2be55c749a0b3b89f7bad59d9
 	result addAll: package classes.
 	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (package perform: check) ifTrue: [result add: script -> (package perform: script)]].
 	result]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'c77245e2-be55-c749-a0b3-b89f7bad59d9').
 (#properties -> (Dictionary newFrom: {
@@ -24,7 +21,4 @@ defc77245e2be55c749a0b3b89f7bad59d9
 	result addAll: package classes.
 	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (package perform: check) ifTrue: [result add: script -> (package perform: script)]].
 	result]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})

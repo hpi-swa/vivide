@@ -10,10 +10,7 @@ def5e31638abe439f4bbbc30248666964f2
 	('</code>' '</font>')
 	('=>' '=\>') ('<=' '\<=')
 	) reduce: [:s :fromTo | s copyReplaceAll: fromTo first with: fromTo second]]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'5e31638a-be43-9f4b-bbc3-0248666964f2').
 (#properties -> (Dictionary newFrom: {
@@ -26,7 +23,4 @@ def5e31638abe439f4bbbc30248666964f2
 	(''</code>'' ''</font>'')
 	(''=>'' ''=\>'') (''<='' ''\<='')
 	) reduce: [:s :fromTo | s copyReplaceAll: fromTo first with: fromTo second]]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})

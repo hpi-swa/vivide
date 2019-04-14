@@ -6,10 +6,7 @@ def0f9ac2ef3c101e4db61f4780483b5f29
 (#block -> [:in :out | (
 	[:objects | objects collect: [:tuple |
 		[:label :object | object] valueWithArguments: tuple]]
-			value: in) do: [:result |
-				(ViQueryInterpreter isCollection: result)
-					ifTrue: [out addAll: result]
-					ifFalse: [out add: result]]]).
+			value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'0f9ac2ef-3c10-1e4d-b61f-4780483b5f29').
 (#properties -> (Dictionary newFrom: {
@@ -18,7 +15,4 @@ def0f9ac2ef3c101e4db61f4780483b5f29
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:tuple |
 		[:label :object | object] valueWithArguments: tuple]]
-			value: in) do: [:result |
-				(ViQueryInterpreter isCollection: result)
-					ifTrue: [out addAll: result]
-					ifFalse: [out add: result]]]')})
+			value: in) do: [:result | out addAll: result asList]]')})

@@ -8,10 +8,7 @@ defecc7884ca7d8df4685ee57b6050211bc
 	PackageOrganizer default packageOfMethod: reference ifNone: ['(no package)'].
 	reference
 	} asTuples]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'ecc7884c-a7d8-df46-85ee-57b6050211bc').
 (#properties -> (Dictionary newFrom: {
@@ -22,7 +19,4 @@ defecc7884ca7d8df4685ee57b6050211bc
 	PackageOrganizer default packageOfMethod: reference ifNone: [''(no package)''].
 	reference
 	} asTuples]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})

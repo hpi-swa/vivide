@@ -5,10 +5,7 @@ defef49f0fbb0d03548994913882c7248a3
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | (
 	[:objects | objects collect: [:byteString | byteString unescapeEntities convertFromEncoding: 'utf-8'  ]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'ef49f0fb-b0d0-3548-9949-13882c7248a3').
 (#properties -> (Dictionary newFrom: {
@@ -16,7 +13,4 @@ defef49f0fbb0d03548994913882c7248a3
 (#creationTimeStamp -> '21 October 2014 3:26:15 pm')})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:byteString | byteString unescapeEntities convertFromEncoding: ''utf-8''  ]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})

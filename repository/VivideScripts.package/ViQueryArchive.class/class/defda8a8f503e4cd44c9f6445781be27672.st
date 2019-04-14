@@ -5,10 +5,7 @@ defda8a8f503e4cd44c9f6445781be27672
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | (
 	[:objects | objects collect: [:behavior | behavior subclasses]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]).
+		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
 (#id -> #'da8a8f50-3e4c-d44c-9f64-45781be27672').
 (#properties -> (Dictionary newFrom: {
@@ -16,7 +13,4 @@ defda8a8f503e4cd44c9f6445781be27672
 (#creationTimeStamp -> '20 May 2015 2:49:42 pm')})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:behavior | behavior subclasses]]
-		value: in) do: [:result |
-			(ViQueryInterpreter isCollection: result)
-				ifTrue: [out addAll: result]
-				ifFalse: [out add: result]]]')})
+		value: in) do: [:result | out addAll: result asList]]')})
