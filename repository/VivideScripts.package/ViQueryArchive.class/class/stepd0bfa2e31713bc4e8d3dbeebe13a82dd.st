@@ -15,5 +15,6 @@ stepd0bfa2e31713bc4e8d3dbeebe13a82dd
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 May 2018 4:36:50 pm').
 (#inputKind -> ClassDescription).
+(#notifier -> ViSystemChangeNotifier).
 (#priority -> 270).
 (#view -> ViTreeViewExtended)}))})
