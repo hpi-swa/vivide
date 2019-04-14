@@ -6,10 +6,16 @@ setFullSourceCodeInterval
 	
 	"Try to find the currently visible code in the new text representation."
 	self fullSourceCodeInterval ifNotNil: [:interval |
-		| newStart |
-		newStart := self fullSourceCode findString: self visibleSourceCode.
+		| newStart code |
+		code := self textField originalText. "The unmodified text." 
+		"self hasUnacceptedChanges
+			ifTrue: [self fullSourceCode copyFrom: interval first to: interval last]
+			ifFalse: [self visibleSourceCode].
+		"
+		newStart := self fullSourceCode findString: code.
 		newStart > 0 ifTrue: [
-			self fullSourceCodeInterval: (newStart to: newStart + self visibleSourceCode size - 1).
+			self fullSourceCodeInterval: (newStart to: newStart + code size - 1).
+			self selectBlockStatementsStart.
 			^ self]].
 		
 	"Reset the interval to show all the code."

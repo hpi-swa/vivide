@@ -17,4 +17,7 @@ tryQuickClear
 		self inform: 'All changes discarded.' for: self.
 		self resetClearCounter].
 	
+	self isWizardActive
+		ifTrue: [self thisStep setProperty: #isNew toValue: nil].
+		
 	self clear.

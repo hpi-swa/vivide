@@ -36,4 +36,6 @@
 		"test15CodeFoldingStabilityWhenAllVisible" : "mt 4/12/2019 15:44",
 		"test15WizardTemplate" : "mt 4/11/2019 11:22",
 		"test16CodeFoldingStabilityWhenCodeVisible" : "mt 4/12/2019 15:54",
-		"test16InputKindOverride" : "mt 4/11/2019 11:24" } }
+		"test16InputKindOverride" : "mt 4/11/2019 11:24",
+		"test17CodeFoldingStabilityWhenRevertingChanges" : "mt 4/14/2019 16:29",
+		"test17WizardTemplateForNewScripts" : "mt 4/14/2019 16:13" } }
