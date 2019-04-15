@@ -1,5 +1,6 @@
 interpreting - private
-next
+doNext
+	"Interpret the next script step using objects as input."
 	
 	step ifNil: [self assert: stack isEmpty. ^ self].
 	

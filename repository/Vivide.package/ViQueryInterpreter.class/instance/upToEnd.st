@@ -8,4 +8,4 @@ upToEnd
 	[step isNil or: [previousSteps includes: step]]
 		whileFalse: [
 			previousSteps add: step.
-			self next].
+			self doNext].

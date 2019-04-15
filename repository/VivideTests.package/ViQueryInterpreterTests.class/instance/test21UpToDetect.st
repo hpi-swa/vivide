@@ -15,7 +15,7 @@ test21UpToDetect
 		assert: #two equals: sut currentStep id;
 		assert: #(1 4 9 16) "result of #one" equals: sut objects asArray.
 		
-	sut next.
+	sut doNext.
 	self
 		assert: #defaultProperties equals: sut currentStep id;
 		assert: #(2 8 18 32) equals: sut objects asArray.

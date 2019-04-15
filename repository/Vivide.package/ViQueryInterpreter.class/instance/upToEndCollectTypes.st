@@ -10,6 +10,6 @@ upToEndCollectTypes
 		step in: [:prevStep |
 			prevStep definition ifNotNil: [:def |
 				def inputKind: (self anyObject ifNil: [Object] ifNotNil: [:o | o class])].
-			self next.
+			self doNext.
 			prevStep definition ifNotNil: [:def |
 				def outputKind: (self anyObject ifNil: [Object] ifNotNil: [:o | o class])]]].

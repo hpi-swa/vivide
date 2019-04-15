@@ -13,7 +13,7 @@ upToNextPropertiesAsync
 	] whileFalse: [
 		step isPropertyExtraction
 			ifTrue: [seenPropertyExtractions := seenPropertyExtractions + 1].
-		self next].
+		self doNext].
 
 	(step notNil and: [step isExecutedAsynchronously])
 		ifTrue: [

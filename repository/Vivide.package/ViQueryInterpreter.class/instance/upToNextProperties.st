@@ -15,4 +15,4 @@ upToNextProperties
 				onceNil := true].
 			step isPropertyExtraction ifTrue: [
 				seenPropertySteps := seenPropertySteps + 1].
-			self next].
+			self doNext].
