@@ -11,7 +11,7 @@ logScript: string receiver: recvr context: ctxt result: obj
 	VivideLight active ifNil: [^ self].
 
 	selfSent := string includesSubstring: 'self' caseSensitive: true.
-	receiverIsCollection := ViQueryInterpreter isCollection: recvr.
+	receiverIsCollection := recvr isList.
 	
 	self flag: #suspicious. "mt: Not so easy to hide collections, eh?"
 	(receiverIsCollection and: [recvr isEmpty])

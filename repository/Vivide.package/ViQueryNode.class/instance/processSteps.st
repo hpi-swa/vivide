@@ -12,7 +12,7 @@ processSteps
 	children := Dictionary new.
 	groups := #().
 
-	interpreter := ViQueryInterpreter onNode: self.
+	interpreter := ViQueryInterpreter fromNode: self.
 
 	(Smalltalk at: #thisPane) in: [:oldThisPane |
 		(Smalltalk at: #thisView) in: [:oldThisView |

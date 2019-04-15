@@ -3,7 +3,7 @@ test34Join
 
 	| o r e |
 	o := #(1 (2 3) (4 5) (6)).
-	r := ViQueryInterpreter productOfCollections: o.
+	r := o asTuples.
 	e := #(
 		(1 2 4 6)
 		(1 2 5 6)

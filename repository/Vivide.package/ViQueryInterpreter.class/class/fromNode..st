@@ -1,5 +1,5 @@
 instance creation
-onNode: aModelNode
+fromNode: aModelNode
 	"Configure a new interpreter based on information from the given model node."
 
 	^ self new

@@ -7,7 +7,7 @@ baseClass
 		in := step definition ifNil: [Object] ifNotNil: [:def | def inputKind].
 		out := step definition ifNil: [Object] ifNotNil: [:def | def outputKind].
 		
-		(ViQueryInterpreter isCollection: in)
+		in isList
 			ifTrue: [^ in].
 		
 		(in inheritsFrom: mostSpecific)

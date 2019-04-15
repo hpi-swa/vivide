@@ -1,7 +1,7 @@
 as yet unclassified
 executeWith: anObject
 
-	^ {(ViQueryInterpreter isCollection: anObject). self definition receiverIsCollection}
+	^ {anObject isList. self definition receiverIsCollection}
 		caseOf: {
 			[{false.false}] -> [
 				"Just as expected. :)"
