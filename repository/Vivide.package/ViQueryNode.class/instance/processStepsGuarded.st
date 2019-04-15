@@ -26,7 +26,7 @@ processStepsGuarded
 						processToDebug popTo: scriptCtxt value: self].
 
 				maliciousScript := (thisProcess suspendedContext findContextSuchThat: [:ctxt |
-					ctxt receiver class == ViQueryInterpreter]) receiver currentStep.
+					ctxt receiver class == ViQueryInterpreter]) receiver next.
 
 				"2) Schedule GUI notification stuff."
 				Project current addDeferredUIMessage: [

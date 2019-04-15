@@ -12,10 +12,10 @@ test21UpToDetect
 
 	sut upToDetect: [:step :interpreter | step id = #one].
 	self
-		assert: #two equals: sut currentStep id;
+		assert: #two equals: sut next id;
 		assert: #(1 4 9 16) "result of #one" equals: sut objects asArray.
 		
 	sut doNext.
 	self
-		assert: #defaultProperties equals: sut currentStep id;
+		assert: #defaultProperties equals: sut next id;
 		assert: #(2 8 18 32) equals: sut objects asArray.

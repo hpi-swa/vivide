@@ -1,4 +1,4 @@
 accessing
-currentStep
+next
 
 	^ step

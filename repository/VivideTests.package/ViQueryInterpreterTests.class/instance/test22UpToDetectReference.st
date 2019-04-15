@@ -16,5 +16,5 @@ test22UpToDetectReference
 
 	sut upToDetect: [:step :interpreter | step id = #outer].
 	self
-		assert: #defaultProperties equals: sut currentStep id;
+		assert: #defaultProperties equals: sut next id;
 		assert: #(2 8 18 32) "result of #two" equals: sut objects asArray.

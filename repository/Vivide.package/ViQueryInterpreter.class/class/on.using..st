@@ -1,7 +1,7 @@
 instance creation
-on: aScript using: someObjects
+on: aScriptStep using: someObjects
 
 	^ self new
-		currentStep: aScript;
+		next: aScriptStep;
 		objects: someObjects;
 		stack: Stack new

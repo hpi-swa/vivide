@@ -33,6 +33,6 @@ createNodes
 			((modelClass ifNil: [ViQueryNode]) newFrom: props associations)
 				in: [:node |
 					node
-						firstStep: self currentStep;
+						firstStep: self next;
 						referenceStack: self stack;
 						yourself]]]
