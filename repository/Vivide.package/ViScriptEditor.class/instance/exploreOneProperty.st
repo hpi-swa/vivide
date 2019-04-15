@@ -5,7 +5,7 @@ exploreOneProperty
 		interpreter hasObjects ifFalse: [
 			self warningSent: 'There are no objects.'.
 			^ self].
-		interpreter anyObject in: [:obj |
+		interpreter objects anyOne in: [:obj |
 		(interpreter
 			propertiesFor: obj
 			ifNone: [

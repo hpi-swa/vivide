@@ -9,7 +9,7 @@ upToEndCollectTypes
 	[step isNil] whileFalse: [
 		step in: [:prevStep |
 			prevStep definition ifNotNil: [:def |
-				def inputKind: (self anyObject ifNil: [Object] ifNotNil: [:o | o class])].
+				def inputKind: (self objects ifEmpty: [Object] ifNotEmpty: [:objs | objs anyOne class])].
 			self doNext.
 			prevStep definition ifNotNil: [:def |
-				def outputKind: (self anyObject ifNil: [Object] ifNotNil: [:o | o class])]]].
+				def outputKind: (self objects ifEmpty: [Object] ifNotEmpty: [:objs | objs anyOne class])]]].

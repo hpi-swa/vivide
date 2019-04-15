@@ -1,4 +1,4 @@
-accessing
+accessing - transformation
 stack: aStack
 
 	stack := aStack.

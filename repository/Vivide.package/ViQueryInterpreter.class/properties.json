@@ -11,7 +11,9 @@
 		"step",
 		"properties",
 		"modelClass",
-		"objectsCache" ],
+		"objectsCache",
+		"bindings",
+		"first" ],
 	"name" : "ViQueryInterpreter",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-accessing - convenience
+accessing - extraction
 propertiesFor: anObject ifNone: block
 
 	| objectIndex result |

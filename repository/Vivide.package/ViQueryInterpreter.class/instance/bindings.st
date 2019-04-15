@@ -1,4 +1,3 @@
 accessing - transformation
-next
-
-	^ step
+bindings
+	^ bindings

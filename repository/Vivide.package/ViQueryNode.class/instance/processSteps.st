@@ -13,16 +13,7 @@ processSteps
 	groups := #().
 
 	interpreter := ViQueryInterpreter fromNode: self.
-
-	(Smalltalk at: #thisPane) in: [:oldThisPane |
-		(Smalltalk at: #thisView) in: [:oldThisView |
-			[
-				Smalltalk at: #thisPane put: self pane.
-				Smalltalk at: #thisView put: (self pane ifNotNil: [:p | p view]).
-				interpreter upToNextProperties.
-			] ensure: [
-				Smalltalk at: #thisView put: oldThisView.
-				Smalltalk at: #thisPane put: oldThisPane]]].
+	interpreter upToNextProperties.
 	
 	self cachedResults: interpreter objectsCache.
 	

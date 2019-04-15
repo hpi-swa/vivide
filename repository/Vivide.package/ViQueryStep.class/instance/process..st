@@ -1,6 +1,7 @@
 processing
 process: someObjects
-
+	"Callback from script interpreter. Do something with the given objects."
+	
 	| in out |
 	(self valueOfProperty: #in ifAbsent: [OrderedCollection])
 		in: [:ic |
@@ -18,13 +19,10 @@ process: someObjects
 				ifTrue: [oc value]
 				ifFalse: [oc new])].
 
-	(Smalltalk at: #thisScript) in: [:old |
-		[
-			Smalltalk at: #thisScript put: self.
-			ViActiveOrganizer
-				value: self organization
-				during: [definition block value: in value: out].
-		] ensure: [
-			Smalltalk at: #thisScript put: old]].
-	
+	"Support #asScript for symbols in script code."
+	self flag: #refactor. "mt: Should this be moved to the script interpreter? It is like the #thisStep binding."
+	ViActiveOrganizer
+		value: self organization
+		during: [definition block value: in value: out].
+		
 	^ out
