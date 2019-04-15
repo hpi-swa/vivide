@@ -10,7 +10,7 @@ clear
 		step referenceInArchive isValid
 			ifFalse: [step serializeIntoArchive].
 
-		(step hasProperty: #isNew)
+		(step valueOfProperty: #isNew) == true
 			ifTrue: [self activateWizard]
 			ifFalse: [self deactivateWizard]].	
 
