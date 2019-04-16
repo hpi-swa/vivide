@@ -14,7 +14,7 @@
 		"objectsCache",
 		"bindings",
 		"first" ],
-	"name" : "ViQueryInterpreter",
+	"name" : "ViScriptInterpreter",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -10,8 +10,8 @@ test24EmptyInput
 			out add: 42].
 	} asScript.
 	
-	sut := ViQueryInterpreter on: script using: #(1 2 3).
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: script using: #(1 2 3).
+	sut upToExtraction.
 	
 	self
 		assert: #(42)

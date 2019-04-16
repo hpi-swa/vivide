@@ -8,8 +8,8 @@ test08PropertyWriteBlock
 			<- [:newColor | morph color: newColor]] asScript.
 	m := Morph new.
 	
-	sut := ViQueryInterpreter on: q using: {m}.
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: q using: {m}.
+	sut upToExtraction.
 	
 	"Expected block: [:object :isSet | ... ]"
 	b := (sut propertiesFor: m) at: #color.

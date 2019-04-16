@@ -2,4 +2,4 @@
 expandGroup
 	"I am a group."
 	
-	^ ViQueryInterpreter expandTuple: self
+	^ ViScriptInterpreter expandTuple: self

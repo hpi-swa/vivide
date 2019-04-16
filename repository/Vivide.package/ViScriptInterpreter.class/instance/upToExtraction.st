@@ -1,8 +1,10 @@
 interpreting
-upToNextProperties
+upToExtraction
+	"Interpret the next script steps until completing the next property extraction."
 	
 	| seenPropertySteps onceNil |
 	self clearProperties.
+	
 	seenPropertySteps := 0.
 	onceNil := false.
 	

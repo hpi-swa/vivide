@@ -8,8 +8,8 @@ test17ScriptWithTuples
 	q2 setProperty: #isProperty toValue: true.    
 	
 	q1 next: q2. 
-	sut := ViQueryInterpreter on: q1.
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: q1.
+	sut upToExtraction.
 
 	self assert: ((sut propertiesFor: sut objects first) at: #objects) = #( (a b) ).
 	self assert: ((sut propertiesFor: sut objects first) at: #object) = #a.

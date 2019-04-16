@@ -12,8 +12,8 @@ processSteps
 	children := Dictionary new.
 	groups := #().
 
-	interpreter := ViQueryInterpreter fromNode: self.
-	interpreter upToNextProperties.
+	interpreter := ViScriptInterpreter fromNode: self.
+	interpreter upToExtraction.
 	
 	self cachedResults: interpreter objectsCache.
 	

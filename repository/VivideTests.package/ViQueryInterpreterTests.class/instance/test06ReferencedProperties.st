@@ -18,8 +18,8 @@ test06ReferencedProperties
 	self assert: outer isReference.
 	self assert: outer reference == inner.
 	
-	sut := ViQueryInterpreter on: outer using: #(1 2 3 4).
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: outer using: #(1 2 3 4).
+	sut upToExtraction.
 
 	self
 		assert: outer isHomogeneous;

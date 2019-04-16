@@ -11,7 +11,7 @@ test22UpToDetectReference
 	scriptOne id: #outer.
 	scriptOne adoptOrganization: organization.
 	
-	sut := ViQueryInterpreter on: scriptOne using: #(1 2 3 4).
+	sut := ViScriptInterpreter on: scriptOne using: #(1 2 3 4).
 	self assert: #(1 2 3 4) equals: sut objects.
 
 	sut upToDetect: [:step :interpreter | step id = #outer].

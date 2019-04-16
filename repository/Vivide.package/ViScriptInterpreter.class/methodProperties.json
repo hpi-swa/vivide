@@ -12,6 +12,7 @@
 		"productOfCollections:" : "mt 4/14/2019 15:29",
 		"unpackTuples:" : "mt 6/12/2014 12:03:18.303" },
 	"instance" : {
+		"atEnd" : "mt 4/16/2019 09:29",
 		"bind:to:" : "mt 4/15/2019 16:23",
 		"bindings" : "mt 4/15/2019 16:21",
 		"bindings:" : "mt 4/15/2019 16:21",
@@ -24,6 +25,7 @@
 		"first:" : "mt 4/15/2019 16:49",
 		"hasObjects" : "mt 4/4/2019 10:53",
 		"hasProperties" : "mt 4/4/2019 10:37",
+		"initialize" : "mt 4/16/2019 09:26",
 		"interpretObjectTransformation" : "mt 4/4/2019 10:44",
 		"interpretPropertyExtraction" : "mt 4/4/2019 14:01",
 		"interpretScript" : "mt 4/4/2019 18:02",
@@ -43,8 +45,8 @@
 		"upToDetect:" : "mt 4/15/2019 15:53",
 		"upToEnd" : "mt 4/15/2019 15:54",
 		"upToEndCollectTypes" : "mt 4/15/2019 16:12",
-		"upToNextProperties" : "mt 4/15/2019 15:54",
+		"upToExtraction" : "mt 4/16/2019 09:46",
 		"upToNextPropertiesAsync" : "mt 4/15/2019 15:54",
-		"upToNextPropertiesForced" : "mt 11/17/2014 10:14:52.245",
+		"upToNextPropertiesForced" : "mt 4/16/2019 09:46",
 		"upToStep:" : "mt 10/20/2014 11:35:32.912",
 		"withBindingsDo:" : "mt 4/15/2019 16:44" } }

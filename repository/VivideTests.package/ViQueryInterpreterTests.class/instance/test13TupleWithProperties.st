@@ -12,8 +12,8 @@ test13TupleWithProperties
 				ifFalse: [UiFugueIcons crossSmallIcon])}] 
 			-> {#inputKind -> {Integer.Boolean}}.
 	} asScript.
-	sut := ViQueryInterpreter on: q using: #(1 2 3 4).
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: q using: #(1 2 3 4).
+	sut upToExtraction.
 
 	self
 		assert: (sut objects hasEqualElements: #((1 false)(2 true)(3 false)(4 true)));

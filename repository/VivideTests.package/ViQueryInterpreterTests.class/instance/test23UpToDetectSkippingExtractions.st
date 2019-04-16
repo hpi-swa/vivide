@@ -12,7 +12,7 @@ test23UpToDetectSkippingExtractions
 		[:num | #text -> num asString].	
 	} asScript.
 	
-	sut := ViQueryInterpreter on: script using: #(1 2 3).
+	sut := ViScriptInterpreter on: script using: #(1 2 3).
 	self
 		assert: sut hasObjects;
 		deny: sut hasProperties.

@@ -4,4 +4,4 @@ mergeConsecutiveExtractions
 	
 	^ self
 		valueOfProperty: #mergeProperty
-		ifAbsent: [ViQueryInterpreter mergeConsecutiveExtractions] 
+		ifAbsent: [ViScriptInterpreter mergeConsecutiveExtractions] 

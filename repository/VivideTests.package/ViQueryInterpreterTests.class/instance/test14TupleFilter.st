@@ -6,8 +6,8 @@ test14TupleFilter
 			ifTrue: [#()]
 			ifFalse: [{a.b} asTuples]]} asScript.
 	
-	sut := ViQueryInterpreter on: q using: #((1 2 3 4)(1 2 3 4)) asTuples.
-	sut upToNextProperties.
+	sut := ViScriptInterpreter on: q using: #((1 2 3 4)(1 2 3 4)) asTuples.
+	sut upToExtraction.
 	
 	self
 		assert: (sut objects hasEqualElements: #((1 2)(1 3)(1 4)(2 3)(2 4)(3 4))).

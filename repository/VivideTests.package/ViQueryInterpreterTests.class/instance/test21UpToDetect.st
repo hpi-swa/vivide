@@ -7,7 +7,7 @@ test21UpToDetect
 		[:number | number + number] -> { #id -> #two }.
 	} asScript.
 	
-	sut := ViQueryInterpreter on: script using: #(1 2 3 4).
+	sut := ViScriptInterpreter on: script using: #(1 2 3 4).
 	self assert: #(1 2 3 4) equals: sut objects.
 
 	sut upToDetect: [:step :interpreter | step id = #one].

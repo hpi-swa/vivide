@@ -6,7 +6,7 @@ test04DuplicateObjects
 		[:number | number * number].
 		[:number | #text -> number asString]} asScript.
 	
-	sut := ViQueryInterpreter on: script using: #(1 1 1 1).
+	sut := ViScriptInterpreter on: script using: #(1 1 1 1).
 	
-	sut upToNextProperties.
+	sut upToExtraction.
 	self assert: 4 equals: sut createNodes size.

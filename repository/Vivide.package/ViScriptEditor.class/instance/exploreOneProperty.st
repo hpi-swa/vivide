@@ -11,7 +11,7 @@ exploreOneProperty
 			ifNone: [
 				self warningSent: 'Using default properties...'.
 				"Just use default properties for the object at hand."
-				(ViQueryInterpreter
+				(ViScriptInterpreter
 					on: #defaultProperties asScript
-					using:{obj}) upToNextProperties; propertiesFor: obj])
+					using:{obj}) upToExtraction; propertiesFor: obj])
 			explore]].

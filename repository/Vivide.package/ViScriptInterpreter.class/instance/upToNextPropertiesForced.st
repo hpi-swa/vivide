@@ -1,5 +1,5 @@
 interpreting - background
 upToNextPropertiesForced
 
-	[self upToNextProperties]
+	[self upToExtraction]
 		on: ViAsyncError do: [:ex | ex resume].

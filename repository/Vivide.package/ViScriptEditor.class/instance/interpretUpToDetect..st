@@ -10,7 +10,7 @@ interpretUpToDetect: block
 	
 	self checkAllStepsConnected ifFalse: [^ nil].
 		
-	^ (ViQueryInterpreter
+	^ (ViScriptInterpreter
 		on: self allSteps first
 		using: input)
 			upToDetect: block;

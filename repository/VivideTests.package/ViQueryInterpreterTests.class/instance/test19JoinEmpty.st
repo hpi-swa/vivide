@@ -1,4 +1,4 @@
 tests
 test19JoinEmpty
 
-	self assert: (ViQueryInterpreter productOfCollections: #(1 () (4 5))) isEmpty.
+	self assert: (ViScriptInterpreter productOfCollections: #(1 () (4 5))) isEmpty.

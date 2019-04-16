@@ -7,7 +7,7 @@ test20ExtractionConsistency
 		[:num | num + num].
 	} asScript.
 
-	sut := ViQueryInterpreter on: script using: #(5).
+	sut := ViScriptInterpreter on: script using: #(5).
 	sut upToDetect: [:step | step == script steps second].
 
 	self assert: 1 equals: sut objects size.

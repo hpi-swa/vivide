@@ -1,4 +1,4 @@
-interpreting - private
+interpreting
 doNext
 	"Interpret the next script step using objects as input."
 	
