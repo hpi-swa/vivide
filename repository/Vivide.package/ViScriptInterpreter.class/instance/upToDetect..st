@@ -1,9 +1,9 @@
 interpreting
 upToDetect: block
-
-	self clearProperties.
+	"Might not return. Can be used for finite but recursive scripts. For example, interpret until the input is empty."
 	
-	[step isNil or: [block cull: step cull: self]] whileFalse: [self doNext].
-	
-	"Interpret the given step if found."
-	step ifNotNil: [self doNext].
+	[self atEnd] whileFalse: [
+		self clearProperties.
+		self upToExtractionDo: [:nextStep :input :interpreter |
+			(block cull: nextStep cull: input cull: interpreter)
+				ifTrue: [self doNext. ^ self]]].

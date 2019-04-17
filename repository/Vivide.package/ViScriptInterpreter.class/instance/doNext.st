@@ -10,11 +10,16 @@ doNext
 	self bind: #thisScript to: self first.
 	self bind: #thisStep to: self next.
 	
-	self withBindingsDo: [self interpretScript].
+	self withBindingsDo: [
 		
-	[step isNil and: [stack isEmpty not]] whileTrue: [
-		step := stack pop next].
+		self interpretScript.
+		
+		[step isNil and: [stack isEmpty not]] whileTrue: [
+			step := stack pop next].
 
-	((step isNil and: [self hasObjects]) and: [self hasProperties not]) ifTrue: [
-		step := #defaultProperties asScript.
-		self assert: (step isNil or: [step isPropertyExtraction])].
+		((self atEnd and: [self hasObjects]) and: [self hasProperties not]) ifTrue: [
+			self next: #defaultProperties asScript.
+			
+			self atEnd
+				ifTrue: [self simulatePropertyExtraction]
+				ifFalse: [self assert: self next isPropertyExtraction]]. ].

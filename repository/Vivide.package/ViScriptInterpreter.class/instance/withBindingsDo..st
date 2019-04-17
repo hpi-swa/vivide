@@ -11,8 +11,11 @@ withBindingsDo: workBlock
 	[
 		self bindings keysAndValuesDo: [:name :object |
 			Smalltalk globals bind: name to: object].
-		
-		workBlock value.
+
+		"Set active organizer to support #asScript sent to symbols."		
+		ViActiveOrganizer
+			value: self next organization
+			during: workBlock.
 		
 	] ensure: [
 		"Restore previous bindings."

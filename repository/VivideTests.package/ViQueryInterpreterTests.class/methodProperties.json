@@ -2,26 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "mt 4/5/2019 09:34",
-		"test01UpToNextProperties" : "mt 4/16/2019 09:46",
-		"test02UpToEnd" : "mt 4/16/2019 09:19",
-		"test03UpToStep" : "mt 4/16/2019 09:19",
-		"test04DuplicateObjects" : "mt 4/16/2019 09:46",
-		"test06ReferencedProperties" : "mt 4/16/2019 09:47",
 		"test07PropertyReadBlock" : "mt 4/16/2019 09:47",
 		"test08PropertyWriteBlock" : "mt 4/16/2019 09:47",
-		"test09FlattenInput" : "mt 4/16/2019 09:19",
-		"test10FlattenOutput" : "mt 4/16/2019 09:19",
-		"test11TupleInput" : "mt 4/16/2019 09:19",
-		"test12TupleOutput" : "mt 4/16/2019 09:19",
-		"test13TupleWithProperties" : "mt 4/16/2019 09:47",
-		"test14TupleFilter" : "mt 4/16/2019 09:47",
-		"test16ScriptWithProperties" : "mt 4/16/2019 09:47",
-		"test17ScriptWithTuples" : "mt 4/16/2019 09:47",
-		"test18GroupBy" : "mt 4/16/2019 09:20",
-		"test19JoinEmpty" : "mt 4/16/2019 09:20",
-		"test20ExtractionConsistency" : "mt 4/16/2019 09:20",
-		"test21UpToDetect" : "mt 4/16/2019 09:20",
-		"test22UpToDetectReference" : "mt 4/16/2019 09:20",
-		"test23UpToDetectSkippingExtractions" : "mt 4/16/2019 09:20",
-		"test24EmptyInput" : "mt 4/16/2019 09:47" } }
+		"test19JoinEmpty" : "mt 4/16/2019 09:20" } }

@@ -19,10 +19,6 @@ process: someObjects
 				ifTrue: [oc value]
 				ifFalse: [oc new])].
 
-	"Support #asScript for symbols in script code."
-	self flag: #refactor. "mt: Should this be moved to the script interpreter? It is like the #thisStep binding."
-	ViActiveOrganizer
-		value: self organization
-		during: [definition block value: in value: out].
+	definition block value: in value: out.
 		
 	^ out

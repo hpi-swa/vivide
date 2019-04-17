@@ -1,4 +1,4 @@
 interpreting
-upToStep: aQueryStep
+upToStep: aStep
 
-	self upToDetect: [:step | step == aQueryStep].
+	self upToDetect: [:nextStep | nextStep = aStep].

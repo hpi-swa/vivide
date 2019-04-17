@@ -4,7 +4,7 @@ exploreOutputTrace
 	| result |
 	result := OrderedDictionary new.
 
-	(self interpretUpToDetect: [:step :interpreter |
+	(self interpretUpToDetect: [:step :input :interpreter |
 		result
 			at: step
 			put: {interpreter objects copy. interpreter properties copy}.

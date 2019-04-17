@@ -1,6 +1,7 @@
-as yet unclassified
+tests
 test03InterpretScriptSteps
-
+	"Test basic object transformation and property extraction."
+	
 	| interpreter step |
 	step := {
 		[:num | num * num].

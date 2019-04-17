@@ -1,11 +1,11 @@
 interpreting
 upToEnd
-
-	| previousSteps |
-	previousSteps := OrderedCollection new.
-	self clearProperties.
+	"Safe. Stop at first repeating step. Does not work for finite but recursive scripts."
 	
-	[step isNil or: [previousSteps includes: step]]
-		whileFalse: [
-			previousSteps add: step.
-			self doNext].
+	| previousSteps |
+	self flag: #rename. "mt: Maybe #upToEndOrRecursion?"
+	previousSteps := OrderedCollection new.
+	
+	[self atEnd or: [previousSteps includes: self next]] whileFalse: [
+		self clearProperties.
+		self upToExtractionDo: [:nextStep | previousSteps add: nextStep]].

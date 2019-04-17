@@ -31,6 +31,7 @@ interpretPropertyExtraction
 			transformedObjects := (propertiesToUse first detect: [:assoc | assoc key = #objects]) value.
 			]
 		ifFalse: [
+			self flag: #refactor. "mt: Same code as in #inputForChildren in model nodes!"
 			transformedObjects := (propertiesToUse gather: [:p |
 				(p detect: [:assoc | assoc key = #objects]
 					ifFound: [:assoc | assoc value]

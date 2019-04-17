@@ -2,6 +2,26 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "mt 4/17/2019 07:54",
 		"test01Start" : "mt 4/16/2019 09:25",
+		"test01TuplesAsInput" : "mt 4/17/2019 07:50",
 		"test02InterpretScriptStep" : "mt 4/16/2019 09:31",
-		"test03InterpretScriptSteps" : "mt 4/16/2019 09:36" } }
+		"test02TuplesAsOutput" : "mt 4/17/2019 08:14",
+		"test03InterpretScriptSteps" : "mt 4/16/2019 14:01",
+		"test03TuplesInObjects" : "mt 4/17/2019 08:24",
+		"test04GroupByFirst" : "mt 4/17/2019 08:27",
+		"test04UpToExtraction" : "mt 4/16/2019 09:58",
+		"test05UpToEnd" : "mt 4/16/2019 10:29",
+		"test06UpToStep" : "mt 4/16/2019 10:56",
+		"test07UpToDetect" : "mt 4/16/2019 11:08",
+		"test08UpToDetectSkippingExtractions" : "mt 4/16/2019 11:19",
+		"test09UpToDetectReference" : "mt 4/16/2019 13:53",
+		"test10ExtractProperties" : "mt 4/16/2019 14:12",
+		"test11ExtractPropertiesOverloaded" : "mt 4/16/2019 14:17",
+		"test12ExtractPropertiesOverloadedWithReference" : "mt 4/16/2019 14:33",
+		"test13DefaultProperties" : "mt 4/16/2019 14:48",
+		"test14DefaultPropertiesAtEnd" : "mt 4/16/2019 15:21",
+		"test15ExtractPropertiesWithObject" : "mt 4/16/2019 15:17",
+		"test16DuplicateObjects" : "mt 4/17/2019 07:42",
+		"test17DefaultPropertiesFallback" : "mt 4/17/2019 07:58",
+		"test18EmptyInputEmptyOutput" : "mt 4/17/2019 09:07" } }
