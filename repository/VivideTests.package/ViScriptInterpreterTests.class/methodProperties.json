@@ -3,10 +3,13 @@
 		 },
 	"instance" : {
 		"expectedFailures" : "mt 4/17/2019 07:54",
+		"test01ExtractPropertyAsReadBlock" : "mt 4/17/2019 11:55",
 		"test01Start" : "mt 4/16/2019 09:25",
 		"test01TuplesAsInput" : "mt 4/17/2019 07:50",
+		"test02ExtractPropertyAsWriteBlock" : "mt 4/17/2019 11:58",
 		"test02InterpretScriptStep" : "mt 4/16/2019 09:31",
 		"test02TuplesAsOutput" : "mt 4/17/2019 08:14",
+		"test03ExtractPropertyAsReadWriteBlock" : "mt 4/17/2019 11:59",
 		"test03InterpretScriptSteps" : "mt 4/16/2019 14:01",
 		"test03TuplesInObjects" : "mt 4/17/2019 08:24",
 		"test04GroupByFirst" : "mt 4/17/2019 08:27",
