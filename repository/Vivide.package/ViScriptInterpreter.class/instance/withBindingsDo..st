@@ -13,7 +13,7 @@ withBindingsDo: workBlock
 			Smalltalk globals bind: name to: object].
 
 		"Set active organizer to support #asScript sent to symbols."		
-		ViActiveOrganizer
+		ViActiveScriptOrganizer
 			value: self next organization
 			during: workBlock.
 		

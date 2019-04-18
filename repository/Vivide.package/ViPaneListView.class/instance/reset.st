@@ -20,7 +20,7 @@ reset
 		
 		customScript := (node at: #script ifAbsent: [defaultScript]).
 		customScript isSymbol "Just identifier given?" ifTrue: [
-			(ViActiveOrganizer value: self organization during: [customScript asScript])
+			(ViActiveScriptOrganizer value: self organization during: [customScript asScript])
 				ifNil: [customScript := [:object | object] asScript
 							id: customScript;
 							setProperty: #isNew toValue: true;

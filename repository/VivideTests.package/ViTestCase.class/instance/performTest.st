@@ -1,6 +1,6 @@
 private
 performTest
 
-	ViActiveOrganizer
+	ViActiveScriptOrganizer
 		value: organization
 		during: [super performTest].

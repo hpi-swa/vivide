@@ -1,7 +1,7 @@
 running
 tearDown
 
-	ViActiveOrganizer
+	ViActiveScriptOrganizer
 		value: organization
 		during: [self forceGuiUpdate].
 

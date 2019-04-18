@@ -1,4 +1,4 @@
 instances
 active
 
-	^ ViActiveOrganizer value
+	^ ViActiveScriptOrganizer value

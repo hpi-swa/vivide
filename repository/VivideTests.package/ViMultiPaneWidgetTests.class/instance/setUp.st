@@ -3,7 +3,7 @@ setUp
 
 	super setUp.
 	
-	ViActiveOrganizer
+	ViActiveScriptOrganizer
 		value: organization
 		during: [
 			pane := ViPane new
