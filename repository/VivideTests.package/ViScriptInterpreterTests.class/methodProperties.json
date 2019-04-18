@@ -18,6 +18,7 @@
 		"test03InterpretScriptSteps" : "mt 4/16/2019 14:01",
 		"test03ReferenceCycle" : "mt 4/18/2019 09:51",
 		"test03TuplesInObjects" : "mt 4/17/2019 08:24",
+		"test04BindActiveScriptOrganizerDouble" : "mt 4/18/2019 10:30",
 		"test04BindForScriptLookup" : "mt 4/18/2019 09:30",
 		"test04GroupByFirst" : "mt 4/17/2019 08:27",
 		"test04ReferenceMultiple" : "mt 4/18/2019 09:54",

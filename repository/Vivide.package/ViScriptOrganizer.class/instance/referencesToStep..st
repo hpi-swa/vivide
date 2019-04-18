@@ -1,4 +1,4 @@
-accessing - convenience
+navigation
 referencesToStep: aQueryStep
 	"Should be fast. Assume that all steps are registered."
 	

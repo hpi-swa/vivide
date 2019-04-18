@@ -1,9 +1,9 @@
 categories
-categoryOfElement: queryPart
+categoryOfElement: aStep
 
 	| categorizer |
-	categorizer := queryPart isScript
+	categorizer := aStep isScript
 		ifTrue: [self stepsCategorizer]
 		ifFalse: [self definitionsCategorizer].
 
-	^ categorizer categoryOfElement: queryPart id
+	^ categorizer categoryOfElement: aStep id

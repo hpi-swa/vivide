@@ -1,4 +1,4 @@
-accessing - convenience
+navigation
 referenceForStep: step inQueryArchive: aClass
 
 	^ MethodReference

@@ -1,4 +1,4 @@
-accessing - convenience
+navigation
 referenceForDefinition: def inQueryArchive: aClass
 
 	^ MethodReference

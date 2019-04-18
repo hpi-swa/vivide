@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 metaScripts
 
 	^ self orderedSteps select: [:step | step isMeta]

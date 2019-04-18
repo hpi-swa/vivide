@@ -1,4 +1,4 @@
-accessing - convenience
+navigation
 referencesToDefinition: aDefinition
  	"Should be fast. Assume that all steps are registered."
 	

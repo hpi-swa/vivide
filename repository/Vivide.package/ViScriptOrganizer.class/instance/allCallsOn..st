@@ -1,4 +1,4 @@
-accessing - convenience
+navigation
 allCallsOn: literal
 	"See SystemNavigation >> allCallsOn:."
 	
