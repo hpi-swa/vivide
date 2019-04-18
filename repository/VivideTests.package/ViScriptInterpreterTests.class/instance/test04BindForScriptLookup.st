@@ -2,6 +2,8 @@ tests - bindings
 test04BindForScriptLookup
 	
 	| far near interpreter |
+	self assert: #far asScript isNil.
+	
 	far := { [:num | num * num] -> { #id -> #far } } asScript.
 	near := [:num | #far asScript process: {num}] asScript.
 	far adoptOrganization: near organization.
