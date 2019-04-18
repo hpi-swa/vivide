@@ -8,7 +8,10 @@ def97a39793e99b4d4ca8f5037c909dceb8
 	#text -> (ViLabelService doObject: obj).
 	#icon -> (ViIconService doObject: obj).
 	#color -> ((obj category includesSubstring: 'override' caseSensitive: false)
-		ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
+		ifTrue: [Color red muchLighter paler] ifFalse: [
+			(#(acceptObjectService: asList isList asScript isScript open openScript openScriptWith: storeOn: storeCompactOn: asTuples) includes: obj selector)
+				ifTrue: [Color clover alpha: 0.2] ifFalse: []
+			])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViQueryStepDefinition).
@@ -21,6 +24,9 @@ def97a39793e99b4d4ca8f5037c909dceb8
 	#text -> (ViLabelService doObject: obj).
 	#icon -> (ViIconService doObject: obj).
 	#color -> ((obj category includesSubstring: ''override'' caseSensitive: false)
-		ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
+		ifTrue: [Color red muchLighter paler] ifFalse: [
+			(#(acceptObjectService: asList isList asScript isScript open openScript openScriptWith: storeOn: storeCompactOn: asTuples) includes: obj selector)
+				ifTrue: [Color clover alpha: 0.2] ifFalse: []
+			])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})
