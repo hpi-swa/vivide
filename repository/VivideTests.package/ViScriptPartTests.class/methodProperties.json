@@ -32,4 +32,5 @@
 		"test34MergeConsecutiveExtractions" : "mt 4/4/2019 17:56",
 		"test35AutomaticExtractionMerged" : "mt 4/28/2016 09:40:04.062",
 		"test36DuplicateObjectsInListModel" : "mt 11/7/2017 18:04",
-		"test36HomogeneousRelaxed" : "mt 9/12/2017 11:36" } }
+		"test36HomogeneousRelaxed" : "mt 9/12/2017 11:36",
+		"test37JoinEmpty" : "mt 4/18/2019 08:38" } }
