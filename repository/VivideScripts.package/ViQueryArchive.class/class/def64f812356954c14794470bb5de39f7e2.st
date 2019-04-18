@@ -7,7 +7,7 @@ def64f812356954c14794470bb5de39f7e2
 	[:objects | objects collect: [:pkg | | result |
 	result := OrderedCollection new.
 	result addAll: pkg classes.
-	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (pkg perform: check) ifTrue: [result add: script -> (pkg perform: script)]].
+"	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (pkg perform: check) ifTrue: [result add: script -> (pkg perform: script)]]."
 	result]]
 		value: in) do: [:result | out addAll: result asList]]).
 (#class -> ViQueryStepDefinition).
@@ -19,6 +19,6 @@ def64f812356954c14794470bb5de39f7e2
 	[:objects | objects collect: [:pkg | | result |
 	result := OrderedCollection new.
 	result addAll: pkg classes.
-	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (pkg perform: check) ifTrue: [result add: script -> (pkg perform: script)]].
+"	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (pkg perform: check) ifTrue: [result add: script -> (pkg perform: script)]]."
 	result]]
 		value: in) do: [:result | out addAll: result asList]]')})

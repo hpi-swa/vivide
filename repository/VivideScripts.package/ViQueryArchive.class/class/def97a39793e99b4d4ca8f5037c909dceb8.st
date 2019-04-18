@@ -7,7 +7,8 @@ def97a39793e99b4d4ca8f5037c909dceb8
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
 	#text -> (ViLabelService doObject: obj).
 	#icon -> (ViIconService doObject: obj).
-	#color -> ((obj category includesSubstring: 'override' caseSensitive: false) ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
+	#color -> ((obj category includesSubstring: 'override' caseSensitive: false)
+		ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViQueryStepDefinition).
@@ -19,6 +20,7 @@ def97a39793e99b4d4ca8f5037c909dceb8
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
 	#text -> (ViLabelService doObject: obj).
 	#icon -> (ViIconService doObject: obj).
-	#color -> ((obj category includesSubstring: ''override'' caseSensitive: false) ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
+	#color -> ((obj category includesSubstring: ''override'' caseSensitive: false)
+		ifTrue: [Color red muchLighter paler] ifFalse: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})
