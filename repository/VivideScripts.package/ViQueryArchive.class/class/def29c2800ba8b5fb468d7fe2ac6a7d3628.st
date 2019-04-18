@@ -5,7 +5,7 @@ def29c2800ba8b5fb468d7fe2ac6a7d3628
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:organizers | 
 	| orga |
-	orga := ViQueryOrganizer new.
+	orga := ViScriptOrganizer new.
 	orga notifier: ViQueryChangeNotifier new.
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive
@@ -18,7 +18,7 @@ def29c2800ba8b5fb468d7fe2ac6a7d3628
 (#creationTimeStamp -> '18 September 2013 10:03:33 am')})).
 (#sourceCode -> '[:in :out | out addAll: ([:organizers | 
 	| orga |
-	orga := ViQueryOrganizer new.
+	orga := ViScriptOrganizer new.
 	orga notifier: ViQueryChangeNotifier new.
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive

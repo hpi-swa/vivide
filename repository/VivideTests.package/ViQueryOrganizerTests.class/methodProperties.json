@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mt 8/26/2013 13:17:29.461",
+		"setUp" : "mt 4/18/2019 09:21",
 		"tearDown" : "mt 12/19/2013 16:32:17.514",
 		"test01Registration" : "mt 7/6/2015 15:23",
 		"test02Namespaces" : "mt 7/6/2015 15:38",

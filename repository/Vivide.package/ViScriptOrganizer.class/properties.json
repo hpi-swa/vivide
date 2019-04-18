@@ -13,7 +13,7 @@
 		"definitionsCategorizer",
 		"commands",
 		"commandsCategorizer" ],
-	"name" : "ViQueryOrganizer",
+	"name" : "ViScriptOrganizer",
 	"pools" : [
 		 ],
 	"super" : "Object",

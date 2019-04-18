@@ -4,11 +4,11 @@ setUp
 	super setUp.
 	
 	profile := ViProfile new.
-	organizer := ViQueryOrganizer new.
+	organizer := ViScriptOrganizer new.
 	
 	profile organization: organizer.
 	profile archive: self archive.
 
 	newProfile := ViProfile new.
-	newOrganizer := ViQueryOrganizer new.
+	newOrganizer := ViScriptOrganizer new.
 	newProfile organization: newOrganizer.

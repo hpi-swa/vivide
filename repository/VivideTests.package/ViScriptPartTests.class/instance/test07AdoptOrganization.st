@@ -6,7 +6,7 @@ test07AdoptOrganization
 		[:number | number * 2].
 		[:number | number + 7].
 		[:result | #text -> result printString]} asScript.
-	organizer := ViQueryOrganizer new.
+	organizer := ViScriptOrganizer new.
 	
 	script adoptOrganization: organizer.
 	self assert: 3 equals: organizer orderedSteps size.

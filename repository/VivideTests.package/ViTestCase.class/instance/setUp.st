@@ -12,7 +12,7 @@ setUp
 	"Morph useSoftDropShadow: false.
 	Preferences disable: #mouseOverForKeyboardFocus."
 	
-	organization := ViQueryOrganizer new.
+	organization := ViScriptOrganizer new.
 	organization notifier: ViQueryChangeNotifier new.
 	
 	{[:object | #text -> object printString] -> {#id -> #defaultProperties}} asScript

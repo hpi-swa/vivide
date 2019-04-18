@@ -2,7 +2,7 @@ tests
 test08AdoptOrganization
 
 	| organizer |
-	organizer := ViQueryOrganizer new.
+	organizer := ViScriptOrganizer new.
 
 	self assert: 0 equals: organizer orderedSteps size.
 	self assert: 0 equals: organizer orderedDefinitions size.

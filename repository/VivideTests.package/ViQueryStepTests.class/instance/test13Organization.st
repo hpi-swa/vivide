@@ -2,7 +2,7 @@ tests
 test13Organization
 
 	| q orga |
-	orga := ViQueryOrganizer new.
+	orga := ViScriptOrganizer new.
 	q := [:method | method methodReference] asScript.
 	q
 		id: #test13Organization;

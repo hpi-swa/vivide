@@ -8,7 +8,7 @@ chooseQueryFor: someObjects
 		objects: (Sensor shiftPressed
 			ifTrue: [someObjects asList collect: [:o | o value]]
 			ifFalse: [someObjects asList]);
-		queries: [ViQueryOrganizer active orderedSteps];
+		queries: [ViScriptOrganizer active orderedSteps];
 		yourself.
 	
 	pane := ViPane new

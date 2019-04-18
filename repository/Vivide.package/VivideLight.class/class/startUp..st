@@ -1,7 +1,7 @@
 system startup
 startUp: resuming
 
-	ViScriptArchive localOrganization: ViQueryOrganizer new.
+	ViScriptArchive localOrganization: ViScriptOrganizer new.
 
 	(FileDirectory default fileOrDirectoryExists: 'vivide.ok')
 		ifTrue: [

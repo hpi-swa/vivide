@@ -3,7 +3,7 @@ makeConvenient: menu
 
 	| queryMenu commandMenu |
 	queryMenu := MenuMorph new defaultTarget: VivideLight active.
-	(ViQueryOrganizer active ifNil: [#()] ifNotNil: #globalQueries) do: [:query |
+	(ViScriptOrganizer active ifNil: [#()] ifNotNil: #globalQueries) do: [:query |
 		queryMenu
 			add: query nextLabel
 			target: VivideLight active
@@ -12,7 +12,7 @@ makeConvenient: menu
 		queryMenu lastItem icon: (query nextIcon ifNil: [ViIcons blankIcon]) scaledToDisplay].
 			
 	commandMenu := MenuMorph new.
-	(ViQueryOrganizer active ifNil: [#()] ifNotNil: #globalCommands) do: [:command |
+	(ViScriptOrganizer active ifNil: [#()] ifNotNil: #globalCommands) do: [:command |
 		commandMenu
 			add: (command label ifNil: [command definition sourceCode])
 			target: command

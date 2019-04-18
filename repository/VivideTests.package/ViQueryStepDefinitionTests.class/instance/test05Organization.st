@@ -2,7 +2,7 @@ tests
 test05Organization
 
 	| def orga |
-	orga := ViQueryOrganizer new.
+	orga := ViScriptOrganizer new.
 	def := ViQueryStepDefinition new
 		organization: orga;
 		id: #test05Organization;

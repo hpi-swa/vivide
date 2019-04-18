@@ -27,12 +27,12 @@ logScript: string receiver: recvr context: ctxt result: obj
 					ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
 					ifFalse: [recvr class]])].
 	
-	similarDef := ViQueryOrganizer active snippetDefinitions
+	similarDef := ViScriptOrganizer active snippetDefinitions
 		detect: [:def | (def method = newDef method
 			and: [def inputKind = newDef inputKind])
 			and: [def receiverIsCollection = newDef receiverIsCollection]]
 		ifNone: [
-			newDef adoptOrganization: ViQueryOrganizer active.
+			newDef adoptOrganization: ViScriptOrganizer active.
 			^ self].
 
 	self flag: #merge. "mt: Merge similarDef with newDef."

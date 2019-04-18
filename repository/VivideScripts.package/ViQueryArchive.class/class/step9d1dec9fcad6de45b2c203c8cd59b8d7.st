@@ -14,7 +14,7 @@ step9d1dec9fcad6de45b2c203c8cd59b8d7
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#inputKind -> ViQueryOrganizer).
+(#inputKind -> ViScriptOrganizer).
 (#outputKind -> ViAbstractQueryPart).
 (#priority -> 3610).
 (#view -> ViTreeViewExtended)}))})

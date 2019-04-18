@@ -2,7 +2,7 @@ tests
 test12AdoptOrganizationForDefaultScript
 
 	| newOrga |
-	newOrga := ViQueryOrganizer new.
+	newOrga := ViScriptOrganizer new.
 
 	#identityTest asScript adoptOrganization: newOrga.
 	self assert: #identityTest asScript notNil.

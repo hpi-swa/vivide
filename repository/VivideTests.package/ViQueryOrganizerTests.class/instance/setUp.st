@@ -2,4 +2,4 @@ running
 setUp
 
 	super setUp.
-	sut := ViQueryOrganizer new.
+	sut := ViScriptOrganizer new.

@@ -1,6 +1,6 @@
 accessing
 default
 
-	^ ViQueryOrganizer active
+	^ ViScriptOrganizer active
 		ifNil: [ViQueryChangeNotifier uniqueInstance]
 		ifNotNil: [:organizer | organizer notifier]

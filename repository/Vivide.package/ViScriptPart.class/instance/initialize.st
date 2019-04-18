@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self
-		organization: ViQueryOrganizer new;
+		organization: ViScriptOrganizer new;
 		register.
 
 	self notifier doSilently: [
