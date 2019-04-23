@@ -14,7 +14,6 @@
 		"test10ReferenceToDefault" : "mt 7/6/2015 09:59",
 		"test11AsReference" : "mt 7/6/2015 10:00",
 		"test12AdoptOrganizationForDefaultScript" : "mt 4/18/2019 09:21",
-		"test15ProcessWithGroups" : "mt 7/16/2015 13:34",
 		"test17ScriptNotFound" : "mt 7/15/2015 17:19",
 		"test18DeepCopy" : "mt 7/19/2015 14:49",
 		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51",
@@ -31,5 +30,4 @@
 		"test34MergeConsecutiveExtractions" : "mt 4/4/2019 17:56",
 		"test35AutomaticExtractionMerged" : "mt 4/28/2016 09:40:04.062",
 		"test36DuplicateObjectsInListModel" : "mt 11/7/2017 18:04",
-		"test36HomogeneousRelaxed" : "mt 9/12/2017 11:36",
-		"test37JoinEmpty" : "mt 4/18/2019 08:38" } }
+		"test36HomogeneousRelaxed" : "mt 9/12/2017 11:36" } }

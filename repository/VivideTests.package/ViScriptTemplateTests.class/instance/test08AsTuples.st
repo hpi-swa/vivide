@@ -1,5 +1,5 @@
-tests
-test34Join
+tests - tuple patterns
+test08AsTuples
 
 	| o r e |
 	o := #(1 (2 3) (4 5) (6)).
@@ -9,4 +9,4 @@ test34Join
 		(1 2 5 6)
 		(1 3 4 6)
 		(1 3 5 6)).
-	self assert: (r hasEqualElements: e).	
+	self assert: (r hasEqualElements: e).
