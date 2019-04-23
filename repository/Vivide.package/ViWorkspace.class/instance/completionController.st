@@ -2,4 +2,4 @@ completion
 completionController
 	
 	^ completionController ifNil: [
-		completionController := ViCompletionController model: self]
+		completionController := ECController model: self]
