@@ -8,7 +8,7 @@ defd7fd2feade65994cabc6920aa07b41d7
 	#text -> (ref isSymbol ifTrue: [''] ifFalse: [ViObjectOriginService doObject: ref])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d7fd2fea-de65-994c-abc6-920aa07b41d7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

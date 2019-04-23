@@ -8,7 +8,7 @@ def74d6323e625fab4f8593da781d60d7fc
 	((Smalltalk at: #MethodTags ifAbsentPut: [Dictionary new])
 		at: method methodReference ifAbsentPut: [Set new]) -> method]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'74d6323e-625f-ab4f-8593-da781d60d7fc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

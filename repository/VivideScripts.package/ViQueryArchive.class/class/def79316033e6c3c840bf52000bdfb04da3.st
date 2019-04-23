@@ -12,7 +12,7 @@ def79316033e6c3c840bf52000bdfb04da3
 		ifFalse: [line key hasCategory: #callSelf]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'79316033-e6c3-c840-bf52-000bdfb04da3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

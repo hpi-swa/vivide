@@ -9,7 +9,7 @@ defc4da742e4271244c8108eb04103dd8bd
 	#icon -> (ViIconServiceForEclipse doObject: obj)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c4da742e-4271-244c-8108-eb04103dd8bd').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

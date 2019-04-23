@@ -5,7 +5,7 @@ def0d9c1713c12c064eb583ff4df2c3f4de
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [#groupsUnsorted] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0d9c1713-c12c-064e-b583-ff4df2c3f4de').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

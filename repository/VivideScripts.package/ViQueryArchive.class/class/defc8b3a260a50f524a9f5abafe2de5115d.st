@@ -4,7 +4,7 @@ defc8b3a260a50f524a9f5abafe2de5115d
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:definitions | definitions select: [:def | def isSnippetDefinition]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c8b3a260-a50f-524a-9f5a-bafe2de5115d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

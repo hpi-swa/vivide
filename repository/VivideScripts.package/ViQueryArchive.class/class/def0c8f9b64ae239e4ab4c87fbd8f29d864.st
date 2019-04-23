@@ -4,7 +4,7 @@ def0c8f9b64ae239e4ab4c87fbd8f29d864
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#outline] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0c8f9b64-ae23-9e4a-b4c8-7fbd8f29d864').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

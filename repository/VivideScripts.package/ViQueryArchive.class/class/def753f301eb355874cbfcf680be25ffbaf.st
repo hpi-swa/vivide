@@ -7,7 +7,7 @@ def753f301eb355874cbfcf680be25ffbaf
 	[:objects | objects collect: [:tuple |
 		[:class :sel | (class includesSelector: sel) ifTrue: [class >> sel]] valueWithArguments: tuple]]
 			value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'753f301e-b355-874c-bfcf-680be25ffbaf').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

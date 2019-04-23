@@ -9,7 +9,7 @@ def87f0e99074fda74f90cb783416715f96
 			ifTrue: [assoc key]
 			ifFalse: [assoc key packageName]))
 	collect: [:vn | assoc value versionNamed: vn]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'87f0e990-74fd-a74f-90cb-783416715f96').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

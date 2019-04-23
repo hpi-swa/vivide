@@ -7,7 +7,7 @@ defeca041aba8c28841a7fe769ec3a220c2
 			[[:obj1 :obj2 | obj1 selector <= obj2 selector] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'eca041ab-a8c2-8841-a7fe-769ec3a220c2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

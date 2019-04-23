@@ -9,7 +9,7 @@ def6494337522d7314f9d385be28169ee58
 	(stamp value description withNoLineLongerThan: 35) escapeHtmlText}) asHtmlText }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'64943375-22d7-314f-9d38-5be28169ee58').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

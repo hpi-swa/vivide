@@ -5,7 +5,7 @@ def757d1b4715a6c340a4aa7a62a3a4d909
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [SystemNavigation default] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'757d1b47-15a6-c340-a4aa-7a62a3a4d909').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

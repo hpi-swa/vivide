@@ -8,7 +8,7 @@ def2a4b9a22ca9a9e4bb865d53c9d8ed827
 	ifNil: ['local']
 	ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2a4b9a22-ca9a-9e4b-b865-d53c9d8ed827').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

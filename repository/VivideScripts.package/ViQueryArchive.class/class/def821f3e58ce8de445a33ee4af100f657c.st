@@ -7,7 +7,7 @@ def821f3e58ce8de445a33ee4af100f657c
 			[[:e1 :e2 | e1 isDirectory or: [e2 isDirectory not]] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'821f3e58-ce8d-e445-a33e-e4af100f657c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

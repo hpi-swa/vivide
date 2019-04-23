@@ -8,7 +8,7 @@ defd2142fe8f6bd1543aafe1d2cbad14f7d
 	([:obj | (obj selector beginsWith: #baseline) not] value: someObject) &
 	([:obj | (obj selector endsWith: #Form) not] value: someObject) &
 	([:obj | (obj selector beginsWith: #version) not] value: someObject) ]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d2142fe8-f6bd-1543-aafe-1d2cbad14f7d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

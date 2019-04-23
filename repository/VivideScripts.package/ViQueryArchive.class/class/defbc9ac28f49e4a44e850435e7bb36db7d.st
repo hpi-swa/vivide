@@ -6,7 +6,7 @@ defbc9ac28f49e4a44e850435e7bb36db7d
 (#block -> [:in :out | (
 	[:objects | objects collect: [:histogramSpec | histogramSpec third]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bc9ac28f-49e4-a44e-8504-35e7bb36db7d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

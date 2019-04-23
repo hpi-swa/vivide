@@ -4,7 +4,7 @@ def1aa18191d968b347aad896e6fc1ecd3d
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:tuples | tuples asGroups] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1aa18191-d968-b347-aad8-96e6fc1ecd3d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

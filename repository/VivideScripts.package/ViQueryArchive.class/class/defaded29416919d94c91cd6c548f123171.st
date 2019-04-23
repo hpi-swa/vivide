@@ -9,7 +9,7 @@ defaded29416919d94c91cd6c548f123171
 			#icon -> step viewClass widgetClassIcon }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'aded2941-6919-d94c-91cd-6c548f123171').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -8,7 +8,7 @@ def83fdd12ec8ffd04caca78a67eac8a477
 		[:object | #text -> object printString] value: obj }]
 			value: o), { #object -> o }]]
 				value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'83fdd12e-c8ff-d04c-aca7-8a67eac8a477').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

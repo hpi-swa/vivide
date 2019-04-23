@@ -10,7 +10,7 @@ def2bffc076d91ea843a8db0a5d01c978c9
 		' (', (ViLabelServiceForEclipse doObject: flag reference actualClass), ')')}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2bffc076-d91e-a843-a8db-0a5d01c978c9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

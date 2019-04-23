@@ -14,7 +14,7 @@ deffc8caaaa466e5746bdbedfd804bb5571
 		[op isRemoval] -> [UiFugueIcons minusSmallIcon]} otherwise: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fc8caaaa-466e-5746-bdbe-dfd804bb5571').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

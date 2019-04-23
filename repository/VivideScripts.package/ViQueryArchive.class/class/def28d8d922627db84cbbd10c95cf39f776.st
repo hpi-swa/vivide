@@ -16,7 +16,7 @@ def28d8d922627db84cbbd10c95cf39f776
 						ifFalse: [ViIcons blankIcon]]) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'28d8d922-627d-b84c-bbd1-0c95cf39f776').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

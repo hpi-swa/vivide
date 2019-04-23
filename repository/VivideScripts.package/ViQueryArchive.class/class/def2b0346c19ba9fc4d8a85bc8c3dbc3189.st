@@ -8,7 +8,7 @@ def2b0346c19ba9fc4d8a85bc8c3dbc3189
 	#text -> ((ViMethodVersion versionsOfMethod: obj methodReference) size)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2b0346c1-9ba9-fc4d-8a85-bc8c3dbc3189').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

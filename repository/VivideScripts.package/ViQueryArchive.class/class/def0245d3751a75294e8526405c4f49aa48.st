@@ -7,7 +7,7 @@ def0245d3751a75294e8526405c4f49aa48
 	[:morph | { #text -> morph layoutPolicy class name }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0245d375-1a75-294e-8526-405c4f49aa48').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

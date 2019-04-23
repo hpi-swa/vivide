@@ -9,7 +9,7 @@ def84116ddf3a24e74ea42c36c2a854dd77
 		ifTrue: [t1 selector <= t2 selector]
 		ifFalse: [t1 class name <= t2 class name]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'84116ddf-3a24-e74e-a42c-36c2a854dd77').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

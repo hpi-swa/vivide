@@ -8,7 +8,7 @@ def3c662290020ccf4d853e8062a9ff1cb7
 	ifTrue: [thisContext]
 	ifFalse: [process suspendedContext]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3c662290-020c-cf4d-853e-8062a9ff1cb7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

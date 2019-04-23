@@ -6,7 +6,7 @@ defc199aae473d9574690164e66df9f6434
 (#block -> [:in :out | (
 	[:objects | objects collect: [:method | {method methodClass theNonMetaClass. method} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c199aae4-73d9-5746-9016-4e66df9f6434').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -4,7 +4,7 @@ def4ed05dfa6ede1545957e941970dd8869
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objs | objs select: [:step | step nextLabel notNil]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4ed05dfa-6ede-1545-957e-941970dd8869').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

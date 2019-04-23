@@ -9,7 +9,7 @@ def36a58b830ad6ab4583c44ad328747a8a
 	instVarNamed: #currentCompiledMethod put: method;
 	yourself]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'36a58b83-0ad6-ab45-83c4-4ad328747a8a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

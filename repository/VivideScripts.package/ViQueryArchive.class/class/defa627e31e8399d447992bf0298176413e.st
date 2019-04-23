@@ -7,7 +7,7 @@ defa627e31e8399d447992bf0298176413e
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  ViObjectOriginService doObject: obj ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a627e31e-8399-d447-992b-f0298176413e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

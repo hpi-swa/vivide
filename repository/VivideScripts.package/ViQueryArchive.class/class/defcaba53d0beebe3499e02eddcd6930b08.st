@@ -9,7 +9,7 @@ defcaba53d0beebe3499e02eddcd6930b08
 	ifFalse: [(obj size // 1024 max: 1) asString, ' KB']) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'caba53d0-beeb-e349-9e02-eddcd6930b08').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

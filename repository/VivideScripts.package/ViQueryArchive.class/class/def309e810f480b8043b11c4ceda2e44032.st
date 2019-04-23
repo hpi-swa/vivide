@@ -13,7 +13,7 @@ def309e810f480b8043b11c4ceda2e44032
 				text addAttribute: TextColor red from: 1 to: text size; yourself]]]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'309e810f-480b-8043-b11c-4ceda2e44032').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

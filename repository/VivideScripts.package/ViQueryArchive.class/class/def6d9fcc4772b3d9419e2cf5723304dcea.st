@@ -9,7 +9,7 @@ def6d9fcc4772b3d9419e2cf5723304dcea
 	ifNotNil: [:v | v timestamp]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6d9fcc47-72b3-d941-9e2c-f5723304dcea').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

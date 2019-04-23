@@ -7,7 +7,7 @@ def6b27229b8de9af488277e920eda66d72
 	[:changeRecord | { #text -> changeRecord stamp }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6b27229b-8de9-af48-8277-e920eda66d72').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

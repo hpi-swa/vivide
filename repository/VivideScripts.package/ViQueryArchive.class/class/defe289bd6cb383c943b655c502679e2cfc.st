@@ -11,7 +11,7 @@ defe289bd6cb383c943b655c502679e2cfc
 	#out -> #(#(#interactive #'4cc8c555-00fc-e049-b56d-1ca0013dea25' ) #(#interactive #outer ) ).
 	#in -> #(#(#automatic #outer ) ).
 }] value]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e289bd6c-b383-c943-b655-c502679e2cfc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

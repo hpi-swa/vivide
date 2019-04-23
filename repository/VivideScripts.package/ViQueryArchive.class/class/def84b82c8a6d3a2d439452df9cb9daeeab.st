@@ -9,7 +9,7 @@ def84b82c8a6d3a2d439452df9cb9daeeab
 	ifNotNil: [:v | v versionNumber]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'84b82c8a-6d3a-2d43-9452-df9cb9daeeab').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

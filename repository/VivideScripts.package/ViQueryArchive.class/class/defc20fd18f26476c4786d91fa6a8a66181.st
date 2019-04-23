@@ -4,7 +4,7 @@ defc20fd18f26476c4786d91fa6a8a66181
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:protocols | protocols sorted: [:a :b | a baseName asLowercase <= b baseName asLowercase]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c20fd18f-2647-6c47-86d9-1fa6a8a66181').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

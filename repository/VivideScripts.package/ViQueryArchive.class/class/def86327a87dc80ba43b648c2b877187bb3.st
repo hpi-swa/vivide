@@ -7,7 +7,7 @@ def86327a87dc80ba43b648c2b877187bb3
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:flag | { #text -> (flag comment ifNil: [('<i>\<', flag symbol, '\></i>') asHtmlText]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'86327a87-dc80-ba43-b648-c2b877187bb3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

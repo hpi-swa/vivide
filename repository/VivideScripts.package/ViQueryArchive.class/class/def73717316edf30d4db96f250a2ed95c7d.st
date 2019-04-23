@@ -4,7 +4,7 @@ def73717316edf30d4db96f250a2ed95c7d
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#senders] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'73717316-edf3-0d4d-b96f-250a2ed95c7d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

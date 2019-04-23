@@ -12,7 +12,7 @@ defb9270222242dd0419224403ba422d264
 		ifFalse: [line key hasCategory: #callModel]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b9270222-242d-d041-9224-403ba422d264').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

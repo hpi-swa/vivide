@@ -13,7 +13,7 @@ def397cc4e01a323d4daf37dcef863d4d5d
 	} otherwise: [ViIcons blankIcon])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'397cc4e0-1a32-3d4d-af37-dcef863d4d5d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

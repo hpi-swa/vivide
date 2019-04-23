@@ -12,7 +12,7 @@ defb3493c791f39ee43adf3ac6248655918
 				ifNotEmpty: [o third]
 				ifEmpty: [c atLast: 2 "Object"]]]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b3493c79-1f39-ee43-adf3-ac6248655918').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

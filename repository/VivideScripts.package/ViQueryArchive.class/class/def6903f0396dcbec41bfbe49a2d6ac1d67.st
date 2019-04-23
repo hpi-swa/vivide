@@ -11,7 +11,7 @@ def6903f0396dcbec41bfbe49a2d6ac1d67
 	]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6903f039-6dcb-ec41-bfbe-49a2d6ac1d67').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

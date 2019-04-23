@@ -4,7 +4,7 @@ defc05078c360b7974f963811f50024055a
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: in]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c05078c3-60b7-974f-9638-11f50024055a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

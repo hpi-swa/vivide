@@ -8,7 +8,7 @@ def9b6db2244a1e6440bb822a953d250713
 	ifNil: ['Other Processes']
 	ifNotNil: [:p | p browserPrintString escapeHtmlText]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'9b6db224-4a1e-6440-bb82-2a953d250713').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

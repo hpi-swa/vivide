@@ -7,7 +7,7 @@ defe98ce1d58aa020429ae6c9abd20c0fa7
 			[[:f1 :f2 | f1 symbol <= f2 symbol] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e98ce1d5-8aa0-2042-9ae6-c9abd20c0fa7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

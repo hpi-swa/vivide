@@ -7,7 +7,7 @@ def74765119fd5d5142bff9b1fa29c63f9a
 			[[:def1 :def2 | def1 sourceCode <= def2 sourceCode] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'74765119-fd5d-5142-bff9-b1fa29c63f9a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

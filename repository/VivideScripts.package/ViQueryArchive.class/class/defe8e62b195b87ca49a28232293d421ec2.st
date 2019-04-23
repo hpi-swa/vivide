@@ -7,7 +7,7 @@ defe8e62b195b87ca49a28232293d421ec2
 	[:mail | { #text -> (mail senderName) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e8e62b19-5b87-ca49-a282-32293d421ec2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

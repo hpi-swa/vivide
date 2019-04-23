@@ -7,7 +7,7 @@ def0edcebeb4dca884b97392ae55b4f9fe3
 	[:entry | { #text -> ('[' , entry key time print24 , '] ' , entry value) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0edcebeb-4dca-884b-9739-2ae55b4f9fe3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

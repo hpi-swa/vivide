@@ -18,7 +18,7 @@ defa2fbc9b1b3f29d4f85eb12128c1679ad
 					obj := obj nextObject].
 			histogram]] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a2fbc9b1-b3f2-9d4f-85eb-12128c1679ad').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -6,7 +6,7 @@ deffdc64c2ee431d24da8daff219e7e9b9d
 (#block -> [:in :out | (
 	[:objects | objects collect: [:fileEntry | [fileEntry readStream upToEnd asText] on: Error do: [:ex | ex]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fdc64c2e-e431-d24d-a8da-ff219e7e9b9d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

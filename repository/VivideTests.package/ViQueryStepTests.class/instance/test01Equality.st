@@ -5,7 +5,7 @@ test01Equality
 	step1 := ViScriptPart new
 		label: 'Foobar';
 		icon: Morph new;
-		definition: ViQueryStepDefinition new;
+		definition: ViScriptDefinition new;
 		next: ViScriptPart new.
 	step2 := ViScriptPart new
 		label: 'Same here!';

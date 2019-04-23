@@ -15,7 +15,7 @@ def821a5cd981495a4484c8b57a49837356
 			(visible includes: each)
 				ifTrue: [ stream nextPut: each ] ] ] ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'821a5cd9-8149-5a44-84c8-b57a49837356').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

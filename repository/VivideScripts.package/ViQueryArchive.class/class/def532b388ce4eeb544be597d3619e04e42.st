@@ -11,7 +11,7 @@ def532b388ce4eeb544be597d3619e04e42
 	#out -> #().
 	#in -> #(#(#interactive #'40a98164-6ab3-db44-8db2-caa27b0c9f0c' ) ).
 }] value]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'532b388c-e4ee-b544-be59-7d3619e04e42').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

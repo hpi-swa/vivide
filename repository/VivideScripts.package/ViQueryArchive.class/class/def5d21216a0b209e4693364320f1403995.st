@@ -5,7 +5,7 @@ def5d21216a0b209e4693364320f1403995
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:tuples | tuples
 		sorted: [:t1 :t2 | t1 second asString <= t2 second asString]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5d21216a-0b20-9e46-9336-4320f1403995').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

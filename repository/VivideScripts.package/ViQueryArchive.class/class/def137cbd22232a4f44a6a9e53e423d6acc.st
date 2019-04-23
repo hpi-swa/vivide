@@ -10,7 +10,7 @@ def137cbd22232a4f44a6a9e53e423d6acc
 			histogram add: obj class].
 		histogram]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'137cbd22-232a-4f44-a6a9-e53e423d6acc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

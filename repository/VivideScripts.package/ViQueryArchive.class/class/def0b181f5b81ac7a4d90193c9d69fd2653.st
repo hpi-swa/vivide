@@ -5,7 +5,7 @@ def0b181f5b81ac7a4d90193c9d69fd2653
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:groups | groups
 		sorted: [:g1 :g2 | g1 first asString <= g2 first asString]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0b181f5b-81ac-7a4d-9019-3c9d69fd2653').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

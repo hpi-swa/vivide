@@ -11,7 +11,7 @@ def49f5375e5751224bb2c7bba5510ac649
 	[op definition isOrganizationDefinition] -> ['Organizations'].
 	[op definition isScriptDefinition] -> ['Scripts']}] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'49f5375e-5751-224b-b2c7-bba5510ac649').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

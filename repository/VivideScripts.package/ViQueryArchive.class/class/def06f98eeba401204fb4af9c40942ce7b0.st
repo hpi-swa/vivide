@@ -6,7 +6,7 @@ def06f98eeba401204fb4af9c40942ce7b0
 (#block -> [:in :out | (
 	[:objects | objects collect: [:orga | orga orderedSteps select: [:step | step isSpecial]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'06f98eeb-a401-204f-b4af-9c40942ce7b0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

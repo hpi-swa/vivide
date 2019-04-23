@@ -10,7 +10,7 @@ defdade81d825eab7459fabeccaa538e7b0
 	#text -> script baseClassName}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'dade81d8-25ea-b745-9fab-eccaa538e7b0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

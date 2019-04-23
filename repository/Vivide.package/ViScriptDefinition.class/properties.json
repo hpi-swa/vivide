@@ -8,7 +8,7 @@
 	"instvars" : [
 		"sourceCode",
 		"block" ],
-	"name" : "ViQueryStepDefinition",
+	"name" : "ViScriptDefinition",
 	"pools" : [
 		 ],
 	"super" : "ViAbstractQueryPart",

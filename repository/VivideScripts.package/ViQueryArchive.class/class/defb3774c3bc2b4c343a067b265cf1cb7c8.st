@@ -11,7 +11,7 @@ defb3774c3bc2b4c343a067b265cf1cb7c8
 	}, (view isMorph ifFalse: [{}]ifTrue: [{#selectedLater -> [[view addHalo]]}])]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b3774c3b-c2b4-c343-a067-b265cf1cb7c8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

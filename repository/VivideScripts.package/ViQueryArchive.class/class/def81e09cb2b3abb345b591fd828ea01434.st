@@ -10,7 +10,7 @@ def81e09cb2b3abb345b591fd828ea01434
 	#tooltip -> [ViObjectPreviewHandler doObject: object]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'81e09cb2-b3ab-b345-b591-fd828ea01434').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

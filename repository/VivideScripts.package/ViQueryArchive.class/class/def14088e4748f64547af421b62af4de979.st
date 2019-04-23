@@ -6,7 +6,7 @@ def14088e4748f64547af421b62af4de979
 (#block -> [:in :out | (
 	[:objects | objects collect: [:sysO | sysO categories collect: [:cat | cat -> sysO]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'14088e47-48f6-4547-af42-1b62af4de979').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

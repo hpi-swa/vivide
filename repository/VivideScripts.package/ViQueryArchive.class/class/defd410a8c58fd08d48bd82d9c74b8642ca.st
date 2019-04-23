@@ -6,7 +6,7 @@ defd410a8c58fd08d48bd82d9c74b8642ca
 (#block -> [:in :out | out addAll: ([:objects | objects select: [:cls |
 	(cls inheritsFrom: Morph) and: [(cls methodDict keys count: [:selector |
 			#(grabKeyboard hasKeyboard) includes: selector]) == 1]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d410a8c5-8fd0-8d48-bd82-d9c74b8642ca').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

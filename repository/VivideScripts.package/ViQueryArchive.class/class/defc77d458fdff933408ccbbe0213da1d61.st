@@ -9,7 +9,7 @@ defc77d458fdff933408ccbbe0213da1d61
 	#balloonText -> obj selector}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c77d458f-dff9-3340-8ccb-be0213da1d61').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

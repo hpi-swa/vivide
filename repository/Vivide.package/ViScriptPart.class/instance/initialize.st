@@ -8,7 +8,7 @@ initialize
 
 	self notifier doSilently: [
 		self
-			definition: (ViQueryStepDefinition new
+			definition: (ViScriptDefinition new
 				organization: self organization;
 				register;
 				yourself).

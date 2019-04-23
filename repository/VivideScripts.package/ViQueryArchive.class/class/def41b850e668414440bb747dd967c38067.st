@@ -17,7 +17,7 @@ def41b850e668414440bb747dd967c38067
 	#tooltip -> [(object isText ifFalse: [ViObjectPreviewHandler doObject: object])]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'41b850e6-6841-4440-bb74-7dd967c38067').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -10,7 +10,7 @@ defbef82bf3b23cf44d9d6bc86d59afa5c8
 	otherwise: [process name])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bef82bf3-b23c-f44d-9d6b-c86d59afa5c8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

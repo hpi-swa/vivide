@@ -5,7 +5,7 @@ defa2abf77450cf1e4097a2fff5c93885ca
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [ChangeSet allChangeSets] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a2abf774-50cf-1e40-97a2-fff5c93885ca').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

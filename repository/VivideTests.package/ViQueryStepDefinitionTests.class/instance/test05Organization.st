@@ -3,7 +3,7 @@ test05Organization
 
 	| def orga |
 	orga := ViScriptOrganizer new.
-	def := ViQueryStepDefinition new
+	def := ViScriptDefinition new
 		organization: orga;
 		id: #test05Organization;
 		sourceCode: '[:obj | obj asString]'.

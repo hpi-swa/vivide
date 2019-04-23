@@ -18,7 +18,7 @@ def8a22814511c6f34ea4ee2edd4c5766e0
 				next addAll: n children]].
 		vars asSet]) asSet asOrderedCollection] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'8a228145-11c6-f34e-a4ee-2edd4c5766e0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

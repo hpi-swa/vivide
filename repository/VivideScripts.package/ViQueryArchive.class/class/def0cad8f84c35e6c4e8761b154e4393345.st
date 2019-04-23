@@ -8,7 +8,7 @@ def0cad8f84c35e6c4e8761b154e4393345
 	ifNil: ['(no package)']
 	ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0cad8f84-c35e-6c4e-8761-b154e4393345').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

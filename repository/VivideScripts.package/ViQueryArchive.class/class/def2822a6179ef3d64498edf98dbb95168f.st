@@ -11,7 +11,7 @@ def2822a6179ef3d64498edf98dbb95168f
 				from: Smalltalk lastQuitLogPosition
 				to: changeFile size) changeList]] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2822a617-9ef3-d644-98ed-f98dbb95168f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

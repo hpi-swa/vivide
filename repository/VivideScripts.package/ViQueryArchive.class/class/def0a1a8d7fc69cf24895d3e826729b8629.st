@@ -13,7 +13,7 @@ def0a1a8d7fc69cf24895d3e826729b8629
 			ifFalse: [' (', receiverClass theNonMetaClass name, ')']))}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0a1a8d7f-c69c-f248-95d3-e826729b8629').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

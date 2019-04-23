@@ -9,7 +9,7 @@ def75c634ed8fd6f941bb35bd5e0be17eaa
 	#icon -> (ViIconService doObject: obj)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'75c634ed-8fd6-f941-bb35-bd5e0be17eaa').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

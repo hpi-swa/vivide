@@ -4,7 +4,7 @@ def400936732fdfb84088df27cb7e5cce38
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:entries | entries select: [:entry | entry isDirectory]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'40093673-2fdf-b840-88df-27cb7e5cce38').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -8,7 +8,7 @@ deffa9ad535af43d64daf546c375a48611e
 	ClassOrganizer allCategory -> class},
 	(class organization categories collect: [:category | category -> class])]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fa9ad535-af43-d64d-af54-6c375a48611e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

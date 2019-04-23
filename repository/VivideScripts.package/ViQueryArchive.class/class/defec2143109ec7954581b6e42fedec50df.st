@@ -11,7 +11,7 @@ defec2143109ec7954581b6e42fedec50df
 	otherwise: [ViIcons blankIcon]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ec214310-9ec7-9545-81b6-e42fedec50df').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

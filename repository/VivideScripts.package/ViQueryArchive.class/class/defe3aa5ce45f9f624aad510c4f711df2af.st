@@ -13,7 +13,7 @@ defe3aa5ce45f9f624aad510c4f711df2af
 		ifFalse: [tag key includes: flag]]}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e3aa5ce4-5f9f-624a-ad51-0c4f711df2af').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

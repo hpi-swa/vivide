@@ -7,7 +7,7 @@ def725b8468cb5c0641bbb5c3b42a45caae
 	[:objects | objects collect: [:assoc | (assoc value listAtCategoryNamed: assoc key)
 	collect: [:nm | Smalltalk at: nm]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'725b8468-cb5c-0641-bbb5-c3b42a45caae').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

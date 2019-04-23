@@ -11,7 +11,7 @@ deff009b85efe0f544ebe0732772fd16970
 	
 	bag sortedCounts]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f009b85e-fe0f-544e-be07-32772fd16970').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

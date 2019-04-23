@@ -9,7 +9,7 @@ def72345acc63d9a6499a3ca8e82b0f7f94
 	ifFalse: [obj1 selector <= obj2 selector]] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'72345acc-63d9-a649-9a3c-a8e82b0f7f94').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

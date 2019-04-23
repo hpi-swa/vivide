@@ -8,7 +8,7 @@ appropriateQueries
 	tuples := self tupleSizeDynamic.
 	baseClasses := self objects
 		ifEmpty: [Array new: (tuples max: 1) withAll: Object]
-		ifNotEmpty: [:o | ViQueryStepDefinition
+		ifNotEmpty: [:o | ViScriptDefinition
 			collectBaseClassesForContext: o
 			withTuples: tuples > 1].
 	

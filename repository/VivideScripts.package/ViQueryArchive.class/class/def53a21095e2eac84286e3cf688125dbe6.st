@@ -16,7 +16,7 @@ def53a21095e2eac84286e3cf688125dbe6
 		on: Notification
 		do: [:n | 	(first at: n messageText) name <= (second at: n messageText) name].
 	]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'53a21095-e2ea-c842-86e3-cf688125dbe6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

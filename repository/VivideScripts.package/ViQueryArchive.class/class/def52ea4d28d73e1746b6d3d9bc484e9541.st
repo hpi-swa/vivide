@@ -9,7 +9,7 @@ def52ea4d28d73e1746b6d3d9bc484e9541
 	someObjects do: [:ea | (ea notNil and: [(result identityIncludes: ea) not])
 		ifTrue: [result add: ea]].
 	result] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'52ea4d28-d73e-1746-b6d3-d9bc484e9541').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

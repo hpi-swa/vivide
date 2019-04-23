@@ -12,7 +12,7 @@ def567c07acc21d17409fb2955b2c713b0a
 		ifFalse: [line key hasCategory: #setupCallbackModel]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'567c07ac-c21d-1740-9fb2-955b2c713b0a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

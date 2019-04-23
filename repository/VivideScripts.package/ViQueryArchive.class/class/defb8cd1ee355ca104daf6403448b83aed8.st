@@ -7,7 +7,7 @@ defb8cd1ee355ca104daf6403448b83aed8
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:pkg | { #morph -> (Morph new color: Color green muchDarker; extent: (pkg linesOfCode // 100) @ 10) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b8cd1ee3-55ca-104d-af64-03448b83aed8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

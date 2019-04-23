@@ -7,7 +7,7 @@ def81948c0e8882e34f9ceb0ec2ebedc648
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | { #text -> (step definition ifNotNil: [:def | def category ifNotNil: [:lbl | ('<font color="#000088">', lbl, '</font>') asHtmlText]]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'81948c0e-8882-e34f-9ceb-0ec2ebedc648').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

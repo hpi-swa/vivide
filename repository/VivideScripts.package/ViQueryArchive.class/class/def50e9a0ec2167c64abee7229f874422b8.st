@@ -6,7 +6,7 @@ def50e9a0ec2167c64abee7229f874422b8
 (#block -> [:in :out | (
 	[:objects | objects collect: [:className | Smalltalk classNamed: className]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'50e9a0ec-2167-c64a-bee7-229f874422b8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -10,7 +10,7 @@ def78ad143ca506de4fb4abdc169e051970
 		ifNotNil: [:def | ViTextStyler new styledTextFor: def sourceCode asText]]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'78ad143c-a506-de4f-b4ab-dc169e051970').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

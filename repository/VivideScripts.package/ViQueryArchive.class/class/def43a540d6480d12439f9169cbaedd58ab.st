@@ -6,7 +6,7 @@ def43a540d6480d12439f9169cbaedd58ab
 (#block -> [:in :out | (
 	[:objects | objects collect: [:symbol | SystemNavigation default allImplementorsOf: symbol]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'43a540d6-480d-1243-9f91-69cbaedd58ab').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

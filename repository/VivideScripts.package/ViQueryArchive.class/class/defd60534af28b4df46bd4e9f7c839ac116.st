@@ -12,7 +12,7 @@ defd60534af28b4df46bd4e9f7c839ac116
 	(object tempNames withIndexCollect: [:nm :idx |
 		nm -> (object debuggerMap namedTempAt: idx in: object)])]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d60534af-28b4-df46-bd4e-9f7c839ac116').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

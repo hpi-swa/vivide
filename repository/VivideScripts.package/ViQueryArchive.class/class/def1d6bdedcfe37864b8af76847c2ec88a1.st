@@ -13,7 +13,7 @@ def1d6bdedcfe37864b8af76847c2ec88a1
 	#icon -> ((ViThumbnailCache default thumbnailForEntry: entry size: 100@100) clippedToSize: 105@105)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1d6bdedc-fe37-864b-8af7-6847c2ec88a1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

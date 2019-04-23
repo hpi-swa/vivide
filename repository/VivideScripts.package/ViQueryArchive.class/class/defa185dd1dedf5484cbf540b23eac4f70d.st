@@ -7,7 +7,7 @@ defa185dd1dedf5484cbf540b23eac4f70d
 	[:objects | objects collect: [:tuple |
 		[:label :object | object] valueWithArguments: tuple]]
 			value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a185dd1d-edf5-484c-bf54-0b23eac4f70d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

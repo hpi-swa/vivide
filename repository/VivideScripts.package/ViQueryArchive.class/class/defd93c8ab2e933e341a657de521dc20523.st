@@ -10,7 +10,7 @@ defd93c8ab2e933e341a657de521dc20523
 		ifNil: [step baseClass category]
 		ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d93c8ab2-e933-e341-a657-de521dc20523').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

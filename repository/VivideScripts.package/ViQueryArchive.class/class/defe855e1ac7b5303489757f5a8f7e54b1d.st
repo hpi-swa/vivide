@@ -8,7 +8,7 @@ defe855e1ac7b5303489757f5a8f7e54b1d
 		-> (ViObjectOriginService doObject: cls) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e855e1ac-7b53-0348-9757-f5a8f7e54b1d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

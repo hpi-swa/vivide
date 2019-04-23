@@ -7,7 +7,7 @@ def0966e95026e6d542a2aa2e1e6ea3e0f6
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:category | { #text -> (  category ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0966e950-26e6-d542-a2aa-2e1e6ea3e0f6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

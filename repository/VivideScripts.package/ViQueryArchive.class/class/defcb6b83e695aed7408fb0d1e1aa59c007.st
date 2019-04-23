@@ -4,7 +4,7 @@ defcb6b83e695aed7408fb0d1e1aa59c007
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:mails | mails reject: [:m | m sender beginsWith: 'commits']] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'cb6b83e6-95ae-d740-8fb0-d1e1aa59c007').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

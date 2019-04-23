@@ -12,7 +12,7 @@ def4dd99bc14d737f47b92cdf264e88d9e1
 				thenSelect: [:o | o isSymbol]]
 		ifTrue: [SystemNavigation default allImplementorsOf: ref]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4dd99bc1-4d73-7f47-b92c-df264e88d9e1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

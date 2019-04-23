@@ -16,7 +16,7 @@ def8082cd6248521c498e1623b3ddd626bf
 	
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'8082cd62-4852-1c49-8e16-23b3ddd626bf').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

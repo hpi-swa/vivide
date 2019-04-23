@@ -11,7 +11,7 @@ deff8634096d4583544a4e12326cba8bd5b
 		ifFalse: ["transparent"])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f8634096-d458-3544-a4e1-2326cba8bd5b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

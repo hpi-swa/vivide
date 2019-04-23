@@ -9,7 +9,7 @@ defb41b99d39f476242bf1f28dcc2c72674
 		(SystemNavigation allCallsOn: symbol localToPackage: pkg) gather: [:ref |
 			ViFlagComment newListFromReference: ref message: symbol]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b41b99d3-9f47-6242-bf1f-28dcc2c72674').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

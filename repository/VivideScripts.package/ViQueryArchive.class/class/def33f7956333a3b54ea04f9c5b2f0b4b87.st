@@ -15,7 +15,7 @@ def33f7956333a3b54ea04f9c5b2f0b4b87
 			((class methodDict values size * 1) max: 1)) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'33f79563-33a3-b54e-a04f-9c5b2f0b4b87').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

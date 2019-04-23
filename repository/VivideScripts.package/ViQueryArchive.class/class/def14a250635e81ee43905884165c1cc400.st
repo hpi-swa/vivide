@@ -7,7 +7,7 @@ def14a250635e81ee43905884165c1cc400
 			[[:obj1 :obj2 | obj1 selector <= obj2 selector] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'14a25063-5e81-ee43-9058-84165c1cc400').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

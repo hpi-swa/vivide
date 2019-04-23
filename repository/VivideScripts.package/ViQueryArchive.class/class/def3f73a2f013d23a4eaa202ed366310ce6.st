@@ -10,7 +10,7 @@ def3f73a2f013d23a4eaa202ed366310ce6
 	method selector.
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3f73a2f0-13d2-3a4e-aa20-2ed366310ce6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

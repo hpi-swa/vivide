@@ -16,7 +16,7 @@ defed1a253aff93ff46839e0b9fe0538bc0
 	current
 	 ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ed1a253a-ff93-ff46-839e-0b9fe0538bc0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

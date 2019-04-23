@@ -9,7 +9,7 @@ def064de4ea4a9ad549942b960508fd4d6c
 		ifFalse: ['-']]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'064de4ea-4a9a-d549-942b-960508fd4d6c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

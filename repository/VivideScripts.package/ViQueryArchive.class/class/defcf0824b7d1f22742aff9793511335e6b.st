@@ -25,7 +25,7 @@ Has no comment') asText makeSelectorBoldIn: aClass]
 }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'cf0824b7-d1f2-2742-aff9-793511335e6b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

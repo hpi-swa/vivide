@@ -9,7 +9,7 @@ def1d5b5851231cfb4e80dff487c7e36540
 	reference
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1d5b5851-231c-fb4e-80df-f487c7e36540').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -4,7 +4,7 @@ def1f30e674908fd248acfa51961b671597
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:pkgs | (pkgs gather: [:pkg | pkg workingCopy repositoryGroup repositories]) asSet asOrderedCollection] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1f30e674-908f-d248-acfa-51961b671597').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

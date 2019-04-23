@@ -7,7 +7,7 @@ def0dd38407434f4e4cb128867eb22c193e
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:ref | { #text -> ref classSymbol } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0dd38407-434f-4e4c-b128-867eb22c193e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

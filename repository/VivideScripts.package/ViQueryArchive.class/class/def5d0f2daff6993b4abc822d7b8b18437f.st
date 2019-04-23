@@ -12,7 +12,7 @@ def5d0f2daff6993b4abc822d7b8b18437f
 		ifFalse: [line key hasCategory: #callHelper]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5d0f2daf-f699-3b4a-bc82-2d7b8b18437f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

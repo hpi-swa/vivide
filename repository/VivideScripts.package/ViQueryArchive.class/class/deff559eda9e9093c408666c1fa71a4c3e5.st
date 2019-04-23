@@ -4,7 +4,7 @@ deff559eda9e9093c408666c1fa71a4c3e5
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objects | objects select: [:entry | entry isDirectory not and: [#(jpg png gif) includes: entry extension]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f559eda9-e909-3c40-8666-c1fa71a4c3e5').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

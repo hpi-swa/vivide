@@ -11,7 +11,7 @@ defd414bc8a2daa1a4ebf6a3c97908e3939
 		ifFalse: [binding value organization listAtCategoryNamed: binding key])
 		collect: [:selector | binding value >> selector]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d414bc8a-2daa-1a4e-bf6a-3c97908e3939').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

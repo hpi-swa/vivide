@@ -21,7 +21,7 @@ deff4edd9d8b9089c40a911a9a20d4e20fe
 	authors sortedCounts in: [:histogram |
 		histogram collect: [:map | {map key. histogram first key. map value}]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f4edd9d8-b908-9c40-a911-a9a20d4e20fe').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -6,7 +6,7 @@ defef49f0fbb0d03548994913882c7248a3
 (#block -> [:in :out | (
 	[:objects | objects collect: [:byteString | byteString unescapeEntities convertFromEncoding: 'utf-8'  ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ef49f0fb-b0d0-3548-9949-13882c7248a3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

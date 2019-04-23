@@ -4,7 +4,7 @@ defcac998b8e21cda49ac93f204a193cbd9
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out add: [#groupsMinimal] value]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'cac998b8-e21c-da49-ac93-f204a193cbd9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ deff05ec72394c81c4082d5f606aade5b23
 	[:foo | { #text -> (foo isText ifTrue: [' '] ifFalse: [foo category asText addAttribute: (TextColor color: Color gray)])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f05ec723-94c8-1c40-82d5-f606aade5b23').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

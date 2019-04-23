@@ -12,5 +12,5 @@
 	"name" : "ViQuerySnippetDefinition",
 	"pools" : [
 		 ],
-	"super" : "ViQueryStepDefinition",
+	"super" : "ViScriptDefinition",
 	"type" : "normal" }

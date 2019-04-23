@@ -11,7 +11,7 @@ defb6ce0874004f42458c30280b2bec1485
 				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b6ce0874-004f-4245-8c30-280b2bec1485').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

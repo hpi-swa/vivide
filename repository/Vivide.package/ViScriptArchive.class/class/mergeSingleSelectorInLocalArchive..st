@@ -12,7 +12,7 @@ mergeSingleSelectorInLocalArchive: selector
 					ifFound: [:s | s organization]
 					ifNone: [self localOrganization])].	
 	(selector beginsWith: #def)
-		ifTrue: [organization := (ViQueryStepDefinition allInstances
+		ifTrue: [organization := (ViScriptDefinition allInstances
 					detect: [:d | (d isDefault not
 						and: [d archive == self localArchive])
 						and: [d referenceInArchive selector = selector]]

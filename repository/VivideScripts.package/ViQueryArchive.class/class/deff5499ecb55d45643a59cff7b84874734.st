@@ -12,7 +12,7 @@ deff5499ecb55d45643a59cff7b84874734
 		ifFalse: [line key hasCategory: #dataModelRaw]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f5499ecb-55d4-5643-a59c-ff7b84874734').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

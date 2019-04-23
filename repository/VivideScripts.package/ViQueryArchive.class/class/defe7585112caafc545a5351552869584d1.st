@@ -6,7 +6,7 @@ defe7585112caafc545a5351552869584d1
 (#block -> [:in :out | (
 	[:objects | objects collect: [:entry | entry asFileDirectory]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e7585112-caaf-c545-a535-1552869584d1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

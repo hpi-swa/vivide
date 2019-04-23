@@ -12,7 +12,7 @@ def038ed42c83a7fb4da82e3db71584ebc8
 	#tooltip -> [object isText ifFalse: [ViObjectPreviewHandler doObject: object]]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'038ed42c-83a7-fb4d-a82e-3db71584ebc8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

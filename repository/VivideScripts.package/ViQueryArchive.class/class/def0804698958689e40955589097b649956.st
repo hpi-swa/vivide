@@ -7,7 +7,7 @@ def0804698958689e40955589097b649956
 	[:objects | objects collect: [:viQueryStepDefinition | viQueryStepDefinition references
 	]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'08046989-5868-9e40-9555-89097b649956').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

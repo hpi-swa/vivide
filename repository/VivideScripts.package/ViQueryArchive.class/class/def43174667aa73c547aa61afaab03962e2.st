@@ -7,7 +7,7 @@ def43174667aa73c547aa61afaab03962e2
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:def | { #text -> (  ViLabelService doObject: def outputKind ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'43174667-aa73-c547-aa61-afaab03962e2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

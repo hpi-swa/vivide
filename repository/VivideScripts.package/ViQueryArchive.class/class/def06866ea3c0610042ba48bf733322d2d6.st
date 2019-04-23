@@ -10,7 +10,7 @@ def06866ea3c0610042ba48bf733322d2d6
 		ifTrue: ['classes']
 		ifFalse: ['methods']]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'06866ea3-c061-0042-ba48-bf733322d2d6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

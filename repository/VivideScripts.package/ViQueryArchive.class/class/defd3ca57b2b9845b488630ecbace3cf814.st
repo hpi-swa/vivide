@@ -9,7 +9,7 @@ defd3ca57b2b9845b488630ecbace3cf814
 	#value -> association key }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d3ca57b2-b984-5b48-8630-ecbace3cf814').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

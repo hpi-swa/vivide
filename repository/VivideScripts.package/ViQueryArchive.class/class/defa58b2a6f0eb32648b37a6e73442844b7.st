@@ -4,7 +4,7 @@ defa58b2a6f0eb32648b37a6e73442844b7
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#groupsUnsorted] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a58b2a6f-0eb3-2648-b37a-6e73442844b7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

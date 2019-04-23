@@ -9,7 +9,7 @@ def4074876588db49458d6b9c7f2debf6fb
 	#balloonText -> 'Recategorized'}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'40748765-88db-4945-8d6b-9c7f2debf6fb').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

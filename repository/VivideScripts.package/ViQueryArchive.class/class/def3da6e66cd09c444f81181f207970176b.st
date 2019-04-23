@@ -7,7 +7,7 @@ def3da6e66cd09c444f81181f207970176b
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3da6e66c-d09c-444f-8118-1f207970176b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

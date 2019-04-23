@@ -10,7 +10,7 @@ defbee72a9845a1024bac4282fcdc3d1df5
 	#balloonText -> 'Time stamp changed'}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bee72a98-45a1-024b-ac42-82fcdc3d1df5').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

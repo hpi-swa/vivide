@@ -8,7 +8,7 @@ defdea80ea8d8f4d643b24bc7b6174863ff
 	ifNil: ['local']
 	ifNotNil: [:pkg | (ViLabelServiceForEclipse new doMCPackage: pkg mcPackage), '.', pkg name asLowercase]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'dea80ea8-d8f4-d643-b24b-c7b6174863ff').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

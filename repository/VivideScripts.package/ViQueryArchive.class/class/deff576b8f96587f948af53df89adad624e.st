@@ -28,7 +28,7 @@ deff576b8f96587f948af53df89adad624e
 				#icon -> (ViIconService doObject: obj)}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f576b8f9-6587-f948-af53-df89adad624e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

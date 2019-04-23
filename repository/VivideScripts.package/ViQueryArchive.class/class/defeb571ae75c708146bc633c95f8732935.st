@@ -7,7 +7,7 @@ defeb571ae75c708146bc633c95f8732935
 	[:mail | { #text -> mail date relativePrintString }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'eb571ae7-5c70-8146-bc63-3c95f8732935').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

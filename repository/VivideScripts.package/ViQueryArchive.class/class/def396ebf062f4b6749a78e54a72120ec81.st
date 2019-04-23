@@ -85,7 +85,7 @@ def396ebf062f4b6749a78e54a72120ec81
 	{ #text -> aStream contents }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'396ebf06-2f4b-6749-a78e-54a72120ec81').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

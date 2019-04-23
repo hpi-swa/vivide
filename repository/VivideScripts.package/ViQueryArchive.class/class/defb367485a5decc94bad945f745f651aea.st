@@ -6,7 +6,7 @@ defb367485a5decc94bad945f745f651aea
 (#block -> [:in :out | out addAll: ([:classes | classes gather: [:cls |
 	(SystemNavigation allCallsOn: #changed: localTo: cls) gather: [:ref |
 		ViFlagComment newListFromReference: ref message: #changed:]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b367485a-5dec-c94b-ad94-5f745f651aea').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

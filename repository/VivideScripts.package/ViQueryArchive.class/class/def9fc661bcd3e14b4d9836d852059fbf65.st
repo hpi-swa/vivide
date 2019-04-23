@@ -9,7 +9,7 @@ def9fc661bcd3e14b4d9836d852059fbf65
 	ifNone: []) ifNotNil: [:s | [(MethodReference class: cls theMetaClass selector: s) -> (cls perform: s)] on: Error do: []]]
 		thenSelect: [:obj | obj value notNil]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'9fc661bc-d3e1-4b4d-9836-d852059fbf65').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

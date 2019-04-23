@@ -12,7 +12,7 @@ def6cf2af5249e3484ca2688783121ba43a
 			ifFalse: ['** inheritance **']]
 		ifFalse: [obj methodClass organization categoryOfElement: obj selector]]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6cf2af52-49e3-484c-a268-8783121ba43a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

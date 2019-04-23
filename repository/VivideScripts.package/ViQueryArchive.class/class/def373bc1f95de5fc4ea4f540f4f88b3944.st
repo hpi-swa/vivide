@@ -12,7 +12,7 @@ def373bc1f95de5fc4ea4f540f4f88b3944
 "		width: (((def first log: 10) / (def second log: 10) ceiling) * 200) truncated)"}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'373bc1f9-5de5-fc4e-a4f5-40f4f88b3944').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -4,7 +4,7 @@ defca3d16edddad314ba3229da44f9e1ea2
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objs | objs select: [:o | (o first > 0 or: [o third subclasses notEmpty]) and: [o third isMeta not]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ca3d16ed-ddad-314b-a322-9da44f9e1ea2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

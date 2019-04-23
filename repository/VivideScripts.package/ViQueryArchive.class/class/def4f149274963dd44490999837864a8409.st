@@ -6,7 +6,7 @@ def4f149274963dd44490999837864a8409
 (#block -> [:in :out | (
 	[:objects | objects collect: [:json | (((json at: #result) at: #hits) at: #hit) ifNil: [#()]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4f149274-963d-d444-9099-9837864a8409').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

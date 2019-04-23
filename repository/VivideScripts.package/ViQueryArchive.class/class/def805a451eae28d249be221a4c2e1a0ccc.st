@@ -7,7 +7,7 @@ def805a451eae28d249be221a4c2e1a0ccc
 	[:association | { #icon -> association key. #balloonText -> association value asString }]
 		value: o), { #object -> o key }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'805a451e-ae28-d249-be22-1a4c2e1a0ccc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

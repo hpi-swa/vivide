@@ -6,7 +6,7 @@ def2f12cab0c913b8479cf808603c49889e
 (#block -> [:in :out | (
 	[:objects | objects collect: [:protocol | {protocol containingPackage. protocol} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2f12cab0-c913-b847-9cf8-08603c49889e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

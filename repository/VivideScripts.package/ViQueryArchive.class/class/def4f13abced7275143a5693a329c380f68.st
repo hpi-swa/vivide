@@ -10,7 +10,7 @@ def4f13abced7275143a5693a329c380f68
 	{'Methods'. profile recentMethods objects} asTuples,
 	{'Scripts'. profile recentScripts objects} asTuples ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4f13abce-d727-5143-a569-3a329c380f68').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

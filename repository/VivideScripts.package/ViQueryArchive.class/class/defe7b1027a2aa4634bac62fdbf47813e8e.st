@@ -7,7 +7,7 @@ defe7b1027a2aa4634bac62fdbf47813e8e
 	[:script | { #text -> (script priority >= 9999 ifFalse: [script priority]) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e7b1027a-2aa4-634b-ac62-fdbf47813e8e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

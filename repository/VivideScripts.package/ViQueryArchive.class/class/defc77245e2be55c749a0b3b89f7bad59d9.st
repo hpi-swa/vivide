@@ -10,7 +10,7 @@ defc77245e2be55c749a0b3b89f7bad59d9
 	#(hasPreamble preamble hasPostscript postscript hasPreambleOfRemoval preambleOfRemoval hasPostscriptOfRemoval postscriptOfRemoval) pairsDo: [:check :script | (package perform: check) ifTrue: [result add: script -> (package perform: script)]].
 	result]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c77245e2-be55-c749-a0b3-b89f7bad59d9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

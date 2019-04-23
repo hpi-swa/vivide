@@ -4,7 +4,7 @@ defc634d79589e7024988d2e94f6ad48bba
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#inheritance] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c634d795-89e7-0249-88d2-e94f6ad48bba').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -6,7 +6,7 @@ def11a05738cd994b4c8219090dd6bf4a19
 (#block -> [:in :out | (
 	[:objects | objects collect: [:method | RBParser parseMethod: method getSource asString]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'11a05738-cd99-4b4c-8219-090dd6bf4a19').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

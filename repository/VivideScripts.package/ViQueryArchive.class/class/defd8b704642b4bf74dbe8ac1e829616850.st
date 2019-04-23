@@ -9,7 +9,7 @@ defd8b704642b4bf74dbe8ac1e829616850
 	thenCollect: [:assoc | assoc key -> (assoc value collect: [:selector |
 		testClass selector: selector])]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d8b70464-2b4b-f74d-be8a-c1e829616850').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -9,7 +9,7 @@ def3acead787edd4142b254601110223ce5
 	#icon -> ((ViIconService doObject: obj value) ifNil: [ViIcons blankIcon])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3acead78-7edd-4142-b254-601110223ce5').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

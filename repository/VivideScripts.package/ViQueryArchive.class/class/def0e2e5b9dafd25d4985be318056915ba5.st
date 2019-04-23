@@ -7,7 +7,7 @@ def0e2e5b9dafd25d4985be318056915ba5
 	[:objects | objects collect: [:fileEntry | [ImageReadWriter formFromFileNamed: fileEntry fullName]
 	on: Error do: [:ex | ex]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0e2e5b9d-afd2-5d49-85be-318056915ba5').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

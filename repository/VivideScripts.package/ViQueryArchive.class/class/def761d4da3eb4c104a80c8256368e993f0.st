@@ -6,7 +6,7 @@ def761d4da3eb4c104a80c8256368e993f0
 (#block -> [:in :out | (
 	[:objects | objects collect: [:morph | morph submorphs]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'761d4da3-eb4c-104a-80c8-256368e993f0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

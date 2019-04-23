@@ -9,7 +9,7 @@ def0ccd9b0306d644428f39b1e25dcedbd0
 	#icon -> (obj isSuspended ifTrue: [UiFugueIcons controlPauseSmallIcon] ifFalse: [ViIcons blankIcon])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0ccd9b03-06d6-4442-8f39-b1e25dcedbd0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

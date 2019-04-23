@@ -16,7 +16,7 @@ def3737fbff7efa514292d30742a28234c7
 					ifTrue: [result add: def]].		
 		].
 	result] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3737fbff-7efa-5142-92d3-0742a28234c7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

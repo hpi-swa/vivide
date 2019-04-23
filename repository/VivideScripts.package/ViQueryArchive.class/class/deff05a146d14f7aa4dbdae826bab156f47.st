@@ -7,7 +7,7 @@ deff05a146d14f7aa4dbdae826bab156f47
 	[:object | { #text -> (object isText ifFalse: [object category])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f05a146d-14f7-aa4d-bdae-826bab156f47').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

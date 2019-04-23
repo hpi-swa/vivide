@@ -4,7 +4,7 @@ deffcbaa99581abb14281d3a5c97399ca7e
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:dirs | dirs gather: [:dir | dir entries]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fcbaa995-81ab-b142-81d3-a5c97399ca7e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -11,7 +11,7 @@ def67ae669c22a9054cbd81fc6b015f784c
 	#text -> def inputKind asString}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'67ae669c-22a9-054c-bd81-fc6b015f784c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

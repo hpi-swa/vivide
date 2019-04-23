@@ -12,7 +12,7 @@ def15b5a43f9ee38a4d8f7cd4a82a0de634
 		ifFalse: [line key hasCategory: #dataModelAdditional]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'15b5a43f-9ee3-8a4d-8f7c-d4a82a0de634').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

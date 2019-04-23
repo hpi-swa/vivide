@@ -8,7 +8,7 @@ def82e3a88ddd39da49a629fc0c17c469e1
 	#text -> (ViObjectOriginService doObject: obj reference)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'82e3a88d-dd39-da49-a629-fc0c17c469e1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

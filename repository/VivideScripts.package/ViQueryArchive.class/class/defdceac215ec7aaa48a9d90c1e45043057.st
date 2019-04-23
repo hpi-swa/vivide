@@ -6,7 +6,7 @@ defdceac215ec7aaa48a9d90c1e45043057
 (#block -> [:in :out | (
 	[:objects | objects collect: [:cls | cls subclasses select: [:c | c category = cls category]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'dceac215-ec7a-aa48-a9d9-0c1e45043057').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

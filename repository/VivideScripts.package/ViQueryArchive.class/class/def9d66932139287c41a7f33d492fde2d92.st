@@ -7,7 +7,7 @@ def9d66932139287c41a7f33d492fde2d92
 			[[:hit1 :hit2 | (hit1 at: '@score') asInteger >= (hit2 at: '@score') asInteger] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'9d669321-3928-7c41-a7f3-3d492fde2d92').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -5,7 +5,7 @@ def8f43765376f47543b2e3bce0f89efa11
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:changeRecords | changeRecords select: [:changeRecord |
 		changeRecord type = #method and: [changeRecord methodClass theNonMetaClass inheritsFrom: ViScriptArchive]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'8f437653-76f4-7543-b2e3-bce0f89efa11').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

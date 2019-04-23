@@ -10,7 +10,7 @@ def6d70e1a8c3b45645b6708094af824d8f
 		ifFalse: [(timestamp date printFormat: #(1 2 3 $- 1 1 2)), ', ', timestamp time print24]] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6d70e1a8-c3b4-5645-b670-8094af824d8f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

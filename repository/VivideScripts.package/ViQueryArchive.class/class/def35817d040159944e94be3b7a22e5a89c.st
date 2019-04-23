@@ -4,7 +4,7 @@ def35817d040159944e94be3b7a22e5a89c
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out add: [#groupsMinimal] value]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'35817d04-0159-944e-94be-3b7a22e5a89c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

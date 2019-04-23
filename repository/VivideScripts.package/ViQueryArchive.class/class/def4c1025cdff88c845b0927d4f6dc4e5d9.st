@@ -7,7 +7,7 @@ def4c1025cdff88c845b0927d4f6dc4e5d9
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:tally | {#text -> tally tally}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4c1025cd-ff88-c845-b092-7d4f6dc4e5d9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

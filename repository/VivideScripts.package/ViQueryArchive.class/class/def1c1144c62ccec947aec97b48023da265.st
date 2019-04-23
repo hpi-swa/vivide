@@ -14,7 +14,7 @@ def1c1144c62ccec947aec97b48023da265
 		s do: [:each | each at: 2 put: max].
 		s]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1c1144c6-2cce-c947-aec9-7b48023da265').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ defa5557fdb68302e40b84025e66a690c42
 	(1 to: ref compiledMethod numLiterals - 2)
 			collect: [:i | (ref compiledMethod literalAt: i)]
 			thenSelect: [:o | o isSymbol]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a5557fdb-6830-2e40-b840-25e66a690c42').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

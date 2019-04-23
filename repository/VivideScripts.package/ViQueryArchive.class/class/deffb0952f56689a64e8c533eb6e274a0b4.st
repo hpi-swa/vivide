@@ -7,7 +7,7 @@ deffb0952f56689a64e8c533eb6e274a0b4
 	select: [:nm | nm beginsWith: #ConfigurationOf]
 	thenCollect: [:nm | (Smalltalk at: nm) project]] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fb0952f5-6689-a64e-8c53-3eb6e274a0b4').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

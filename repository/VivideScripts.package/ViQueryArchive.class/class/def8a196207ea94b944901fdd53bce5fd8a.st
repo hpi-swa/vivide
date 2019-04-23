@@ -6,7 +6,7 @@ def8a196207ea94b944901fdd53bce5fd8a
 (#block -> [:in :out | (
 	[:objects | objects collect: [:category | SystemOrganization listAtCategoryNamed: category]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'8a196207-ea94-b944-901f-dd53bce5fd8a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

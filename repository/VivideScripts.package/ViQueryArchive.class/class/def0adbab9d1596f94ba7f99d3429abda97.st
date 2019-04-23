@@ -28,7 +28,7 @@ def0adbab9d1596f94ba7f99d3429abda97
 				at: method methodReference
 				put: (loc first: lineIndex)]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'0adbab9d-1596-f94b-a7f9-9d3429abda97').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

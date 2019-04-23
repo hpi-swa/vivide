@@ -7,7 +7,7 @@ defbfc68b2c3616794682eca8d68d677b72
 			[[:o1 :o2 | o1 value selector <= o2 value selector] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bfc68b2c-3616-7946-82ec-a8d68d677b72').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

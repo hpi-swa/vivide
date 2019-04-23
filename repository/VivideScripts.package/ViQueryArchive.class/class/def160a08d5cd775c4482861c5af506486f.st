@@ -9,7 +9,7 @@ def160a08d5cd775c4482861c5af506486f
 	ifFalse: [(obj size // 1024 max: 1) asString, ' KB']) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'160a08d5-cd77-5c44-8286-1c5af506486f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

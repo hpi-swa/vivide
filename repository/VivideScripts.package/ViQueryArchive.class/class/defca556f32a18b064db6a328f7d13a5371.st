@@ -7,7 +7,7 @@ defca556f32a18b064db6a328f7d13a5371
 	[:morph | { #text -> morph hResizing }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ca556f32-a18b-064d-b6a3-28f7d13a5371').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

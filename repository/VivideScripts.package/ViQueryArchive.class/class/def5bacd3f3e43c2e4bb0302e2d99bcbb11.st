@@ -7,7 +7,7 @@ def5bacd3f3e43c2e4bb0302e2d99bcbb11
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:flag | { #icon -> (flag priority = #high ifTrue: [ViEclipseIcons hprioTskIcon] ifFalse: []) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5bacd3f3-e43c-2e4b-b030-2e2d99bcbb11').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

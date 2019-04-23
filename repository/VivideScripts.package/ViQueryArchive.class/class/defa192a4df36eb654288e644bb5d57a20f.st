@@ -7,7 +7,7 @@ defa192a4df36eb654288e644bb5d57a20f
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:cs | {#text -> (ChangeSet current = cs ifTrue: [('<b>', cs name, '</b>') asHtmlText] ifFalse: [cs name])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a192a4df-36eb-6542-88e6-44bb5d57a20f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

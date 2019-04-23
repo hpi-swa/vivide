@@ -9,7 +9,7 @@ defdac0f8b12ad86c42992607278d236bb0
 		and: [ref1 classSymbol <= ref2 classSymbol]]] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'dac0f8b1-2ad8-6c42-9926-07278d236bb0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

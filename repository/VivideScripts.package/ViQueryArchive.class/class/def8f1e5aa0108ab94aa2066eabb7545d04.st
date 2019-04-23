@@ -9,7 +9,7 @@ def8f1e5aa0108ab94aa2066eabb7545d04
 	#text -> (ViLabelService doObject: flag reference)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'8f1e5aa0-108a-b94a-a206-6eabb7545d04').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

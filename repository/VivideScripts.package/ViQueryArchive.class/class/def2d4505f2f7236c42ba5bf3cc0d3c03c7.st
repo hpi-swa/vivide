@@ -4,7 +4,7 @@ def2d4505f2f7236c42ba5bf3cc0d3c03c7
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#defaultPropertiesExtended] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2d4505f2-f723-6c42-ba5b-f3cc0d3c03c7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -2,5 +2,5 @@ running
 setUp
 
 	super setUp.
-	sut := ViQueryStepDefinition new.
+	sut := ViScriptDefinition new.
 	sut adoptOrganization: organization.

@@ -7,7 +7,7 @@ def002e2364d4504944a46020f93f2ada42
 	[:objects | objects collect: [:author | (Array streamContents: [:strm | SystemNavigation default allBehaviorsDo: [:b | (b methodDict values anySatisfy: [:m |
 	m timeStamp beginsWith: author]) ifTrue: [strm nextPut: b theNonMetaClass]]]) asSet asOrderedCollection sorted: [:c1 :c2 | c1 name <= c2 name]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'002e2364-d450-4944-a460-20f93f2ada42').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ defbfa04c1c116ea34fbda4f81147cb89d9
 	[:objects | objects collect: [:ref | ref isValid
 		ifTrue: [ref compiledMethod]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bfa04c1c-116e-a34f-bda4-f81147cb89d9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

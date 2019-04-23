@@ -13,7 +13,7 @@ def768fe1d5783ea546b83a016c4db6d552
 		-> [[morph addHalo]] }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'768fe1d5-783e-a546-b83a-016c4db6d552').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

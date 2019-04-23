@@ -4,7 +4,7 @@ def62f98c5fd39299408b5fa629bb10b412
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objs | objs gather: [:obj | obj categories]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'62f98c5f-d392-9940-8b5f-a629bb10b412').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

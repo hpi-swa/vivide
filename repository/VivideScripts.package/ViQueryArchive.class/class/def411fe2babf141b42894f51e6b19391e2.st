@@ -12,7 +12,7 @@ def411fe2babf141b42894f51e6b19391e2
 			ifTrue: [Color red muchLighter paler] ifFalse: []) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'411fe2ba-bf14-1b42-894f-51e6b19391e2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

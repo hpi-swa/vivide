@@ -7,7 +7,7 @@ def1cd0d4517d6e3f419ae486f88b5b436b
 	[:object | { #text -> (object isText ifFalse: [object className])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1cd0d451-7d6e-3f41-9ae4-86f88b5b436b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

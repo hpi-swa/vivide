@@ -6,7 +6,7 @@ def98f794ef01966a4cac474064b701a2cd
 (#block -> [:in :out | (
 	[:objects | objects select: [:methodReference | methodReference actualClass == ViQueryArchive class  ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'98f794ef-0196-6a4c-ac47-4064b701a2cd').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

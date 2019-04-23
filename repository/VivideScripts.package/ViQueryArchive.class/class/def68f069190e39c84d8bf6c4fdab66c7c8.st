@@ -10,7 +10,7 @@ def68f069190e39c84d8bf6c4fdab66c7c8
 				color: (Color gray: 0.66));
 		 yourself}}}. group}]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'68f06919-0e39-c84d-8bf6-c4fdab66c7c8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ def66fd08e2e278674a87188113d0c269eb
 			[[:o1 :o2 | o2 third withAllSuperclasses includes: o1 third] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'66fd08e2-e278-674a-8718-8113d0c269eb').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -5,7 +5,7 @@ def6fc7a56de6dd484492dec7d721dfc839
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objects | objects select: [:object | object isBehavior not or: [
 	(objects includes: object superclass) not]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'6fc7a56d-e6dd-4844-92de-c7d721dfc839').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -11,7 +11,7 @@ def703358319949444e8021484a03699add
 		ifFalse: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'70335831-9949-444e-8021-484a03699add').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

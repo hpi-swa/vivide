@@ -7,7 +7,7 @@ defa5d3d64d28a1be4985df9c94537ddf9a
 	[:object | { #text -> ' ' }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a5d3d64d-28a1-be49-85df-9c94537ddf9a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -4,7 +4,7 @@ defd11fd676c93090419741c3b05ed28509
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out add: [#'37989d23-0602-ed44-ad37-440cccc8d6d9'] value]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d11fd676-c930-9041-9741-c3b05ed28509').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

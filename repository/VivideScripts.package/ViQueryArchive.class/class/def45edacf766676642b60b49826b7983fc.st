@@ -9,7 +9,7 @@ def45edacf766676642b60b49826b7983fc
 			collect: [:each | Smalltalk at: each])
 			select: [:each | each includesBehavior: TestCase]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'45edacf7-6667-6642-b60b-49826b7983fc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

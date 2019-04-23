@@ -7,7 +7,7 @@ defd06a16b40527554abb45faee57328b27
 			[[:obj1 :obj2 | obj1 timeStamp >= obj2 timeStamp] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d06a16b4-0527-554a-bb45-faee57328b27').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

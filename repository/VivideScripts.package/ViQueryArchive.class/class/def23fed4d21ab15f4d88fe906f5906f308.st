@@ -7,7 +7,7 @@ def23fed4d21ab15f4d88fe906f5906f308
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:def | { #text -> ('<font color="#AAAAAA">', def id, '</font>') asHtmlText }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'23fed4d2-1ab1-5f4d-88fe-906f5906f308').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

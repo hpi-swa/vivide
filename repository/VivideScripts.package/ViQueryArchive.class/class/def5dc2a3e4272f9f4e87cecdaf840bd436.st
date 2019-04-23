@@ -10,7 +10,7 @@ def5dc2a3e4272f9f4e87cecdaf840bd436
 	cls theNonMetaClass methodDict values,
 	cls theMetaClass methodDict values]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5dc2a3e4-272f-9f4e-87ce-cdaf840bd436').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

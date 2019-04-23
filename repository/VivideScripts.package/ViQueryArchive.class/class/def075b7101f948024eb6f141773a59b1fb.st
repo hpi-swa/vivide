@@ -6,7 +6,7 @@ def075b7101f948024eb6f141773a59b1fb
 (#block -> [:in :out | (
 	[:objects | objects collect: [:set | set asArray]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'075b7101-f948-024e-b6f1-41773a59b1fb').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

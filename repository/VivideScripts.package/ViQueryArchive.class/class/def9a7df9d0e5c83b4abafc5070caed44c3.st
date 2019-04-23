@@ -7,7 +7,7 @@ def9a7df9d0e5c83b4abafc5070caed44c3
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:process | { #text -> process priority }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'9a7df9d0-e5c8-3b4a-bafc-5070caed44c3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

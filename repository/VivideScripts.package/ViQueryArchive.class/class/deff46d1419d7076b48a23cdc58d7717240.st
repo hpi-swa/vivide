@@ -4,7 +4,7 @@ deff46d1419d7076b48a23cdc58d7717240
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:panes | panes sortBy: [:p1 :p2 | p1 topLeft <= p2 topLeft]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f46d1419-d707-6b48-a23c-dc58d7717240').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

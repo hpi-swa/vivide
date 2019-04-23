@@ -6,7 +6,7 @@ defdf292972deb5624c9eced3afe484dd06
 (#block -> [:in :out | (
 	[:objects | objects collect: [:packageOrganizer | packageOrganizer packages]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'df292972-deb5-624c-9ece-d3afe484dd06').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

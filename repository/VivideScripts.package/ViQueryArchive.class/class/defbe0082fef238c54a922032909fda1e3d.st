@@ -10,7 +10,7 @@ defbe0082fef238c54a922032909fda1e3d
 			ifTrue: [result add: method]].
 	result] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'be0082fe-f238-c54a-9220-32909fda1e3d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -14,7 +14,7 @@ def2049b680ff5b91428d468747950a70d2
 		styledTextFor: (class prettyPrinterClass format: sourceString in: class notifying: nil) asText) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'2049b680-ff5b-9142-8d46-8747950a70d2').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

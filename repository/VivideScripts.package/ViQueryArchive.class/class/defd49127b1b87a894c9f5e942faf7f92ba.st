@@ -7,7 +7,7 @@ defd49127b1b87a894c9f5e942faf7f92ba
 			[[:cat1 :cat2 | cat1 <= cat2] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d49127b1-b87a-894c-9f5e-942faf7f92ba').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

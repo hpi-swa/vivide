@@ -9,7 +9,7 @@ defc70fcef0cd7ecc4897354721bc04f148
 	ifFalse: [symbol isSymbol ifTrue: [symbol] ifFalse: [nil]]]) collect: [:s | Smalltalk at: s ifAbsent: []])
 	reject: [:o | o isNil or: [o isBehavior not]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c70fcef0-cd7e-cc48-9735-4721bc04f148').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

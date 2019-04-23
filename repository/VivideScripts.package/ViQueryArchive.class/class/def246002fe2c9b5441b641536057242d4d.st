@@ -12,7 +12,7 @@ def246002fe2c9b5441b641536057242d4d
 		ifFalse: [line key hasCategory: #return]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'246002fe-2c9b-5441-b641-536057242d4d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

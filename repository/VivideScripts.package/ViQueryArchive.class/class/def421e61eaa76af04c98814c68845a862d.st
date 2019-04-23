@@ -17,7 +17,7 @@ def421e61eaa76af04c98814c68845a862d
 				obj value class allInstVarNames collect: [:nm |
 					nm -> (obj value instVarNamed: nm)]]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'421e61ea-a76a-f04c-9881-4c68845a862d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

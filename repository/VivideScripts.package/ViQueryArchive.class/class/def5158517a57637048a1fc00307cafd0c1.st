@@ -7,7 +7,7 @@ def5158517a57637048a1fc00307cafd0c1
 	[:objects | objects collect: [:ungroupedObject | { [:ref | (PackageOrganizer default packageOfClass: ref actualClass ifNone: [])
 	ifNil: ['(no package)'] ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5158517a-5763-7048-a1fc-00307cafd0c1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ defa7b9762e38a5ad4784c445ab8a195604
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:cs | { #icon -> ((cs instVarNamed: #revertable) == true ifTrue: [UiFugueIcons arrowCurve180LeftIcon] ifFalse: [ ]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a7b9762e-38a5-ad47-84c4-45ab8a195604').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

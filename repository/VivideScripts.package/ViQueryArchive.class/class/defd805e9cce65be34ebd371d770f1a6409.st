@@ -4,7 +4,7 @@ defd805e9cce65be34ebd371d770f1a6409
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:behaviors | SystemNavigation allCallsOn: #flag: fromBehaviors: behaviors sorted: true] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d805e9cc-e65b-e34e-bd37-1d770f1a6409').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

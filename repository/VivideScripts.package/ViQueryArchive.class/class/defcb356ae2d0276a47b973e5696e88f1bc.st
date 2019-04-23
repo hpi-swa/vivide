@@ -7,7 +7,7 @@ defcb356ae2d0276a47b973e5696e88f1bc
 	[:obj | {#text -> obj printString}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'cb356ae2-d027-6a47-b973-e5696e88f1bc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

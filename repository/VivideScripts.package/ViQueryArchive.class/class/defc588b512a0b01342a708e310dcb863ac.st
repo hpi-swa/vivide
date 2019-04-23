@@ -7,7 +7,7 @@ defc588b512a0b01342a708e310dcb863ac
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | { #text -> (step label ifNotNil: [:lbl | ('<b>', lbl, '</b>') asHtmlText]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'c588b512-a0b0-1342-a708-e310dcb863ac').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

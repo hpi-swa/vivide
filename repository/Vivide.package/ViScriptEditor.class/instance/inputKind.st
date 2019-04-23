@@ -8,7 +8,7 @@ inputKind
 			ifTrue: [^ spec asList]].
 		
 	"2) Collect base classes from input."
-	^ (ViQueryStepDefinition
+	^ (ViScriptDefinition
 		collectBaseClassesForContext: self input
 		withTuples: (self input allSatisfy: #isList)) in: [:tmp |
 			tmp first isBehavior

@@ -9,7 +9,7 @@ def059216571e657947aac465dcf139a621
 		ifFalse: [ [:step | { #text -> (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'05921657-1e65-7947-aac4-65dcf139a621').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -14,7 +14,7 @@ def4e5774bdf1055c4cb2aadc1bf152d439
 			ifNil: [ViIconService doObject: (state properties at: #object ifAbsent: [nil])])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4e5774bd-f105-5c4c-b2aa-dc1bf152d439').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

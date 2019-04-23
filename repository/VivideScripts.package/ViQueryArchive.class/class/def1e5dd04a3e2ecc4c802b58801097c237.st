@@ -6,7 +6,7 @@ def1e5dd04a3e2ecc4c802b58801097c237
 (#block -> [:in :out | (
 	[:objects | objects collect: [:ctxt | ctxt method]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1e5dd04a-3e2e-cc4c-802b-58801097c237').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

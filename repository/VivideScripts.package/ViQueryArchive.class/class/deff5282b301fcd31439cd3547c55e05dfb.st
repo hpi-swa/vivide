@@ -15,7 +15,7 @@ deff5282b301fcd31439cd3547c55e05dfb
 			] ] } ]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f5282b30-1fcd-3143-9cd3-547c55e05dfb').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

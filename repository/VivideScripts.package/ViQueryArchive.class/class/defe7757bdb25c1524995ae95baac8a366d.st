@@ -4,7 +4,7 @@ defe7757bdb25c1524995ae95baac8a366d
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | in ifNotEmpty: [out add: [#'8451e0da-6c99-7f41-9483-316176f07642'] value]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e7757bdb-25c1-5249-95ae-95baac8a366d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

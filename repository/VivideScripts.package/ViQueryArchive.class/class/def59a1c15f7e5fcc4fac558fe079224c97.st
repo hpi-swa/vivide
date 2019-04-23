@@ -7,7 +7,7 @@ def59a1c15f7e5fcc4fac558fe079224c97
 			[[:obj1 :obj2 | obj1 name asLowercase <= obj2 name asLowercase] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'59a1c15f-7e5f-cc4f-ac55-8fe079224c97').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

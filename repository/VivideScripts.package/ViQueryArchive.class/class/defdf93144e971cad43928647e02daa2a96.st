@@ -10,7 +10,7 @@ defdf93144e971cad43928647e02daa2a96
 			class: ((Smalltalk classNamed: change key) ifNil: [UndefinedObject])
 			selector: item key)]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'df93144e-971c-ad43-9286-47e02daa2a96').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

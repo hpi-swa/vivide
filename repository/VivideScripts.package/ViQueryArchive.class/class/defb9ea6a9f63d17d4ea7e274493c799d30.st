@@ -7,7 +7,7 @@ defb9ea6a9f63d17d4ea7e274493c799d30
 	gather: [:ll | ll asOrderedCollection])
 	copyWith: Processor activeProcess)] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'b9ea6a9f-63d1-7d4e-a7e2-74493c799d30').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

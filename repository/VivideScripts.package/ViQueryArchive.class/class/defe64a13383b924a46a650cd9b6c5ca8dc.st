@@ -5,7 +5,7 @@ defe64a13383b924a46a650cd9b6c5ca8dc
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [#recentlyOpened] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e64a1338-3b92-4a46-a650-cd9b6c5ca8dc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -14,7 +14,7 @@ defeeb4a8f8acd3d540b76306d686bb7a33
 			-> ['2) Arguments']
 	} otherwise: ['3) Temporaries']] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'eeb4a8f8-acd3-d540-b763-06d686bb7a33').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

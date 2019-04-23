@@ -8,7 +8,7 @@ defbf27ad253a73494b9dd1a09083c1dc83
 	or: [method selector includesSubstring: #bullet caseSensitive: false])
 		ifTrue: ['1) Small Icons'] ifFalse: ['2) Regular Icons']] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'bf27ad25-3a73-494b-9dd1-a09083c1dc83').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

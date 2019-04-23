@@ -9,7 +9,7 @@ deff7529f37e9c87b4ba182d4677089bb61
 			ifFalse: [#()] ifTrue: [(mcp workingCopy changesRelativeToRepository:
 				(mcp workingCopy repositoryGroup repositories in: [:repos |
 					repos detect: [:repo | (repo isKindOf: MCCacheRepository) not] ifNone: [repos first]])) operations]]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f7529f37-e9c8-7b4b-a182-d4677089bb61').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

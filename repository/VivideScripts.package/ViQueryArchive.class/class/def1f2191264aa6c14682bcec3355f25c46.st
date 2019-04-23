@@ -9,7 +9,7 @@ def1f2191264aa6c14682bcec3355f25c46
 	#clicked -> [ [changeRecord fileIn] ] } ]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1f219126-4aa6-c146-82bc-ec3355f25c46').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -7,7 +7,7 @@ def49e2992c3cdea6488e8683a5cebe767e
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:def | { #text -> (ViTextStyler new styledTextFor: def sourceCode asText) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'49e2992c-3cde-a648-8e86-83a5cebe767e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

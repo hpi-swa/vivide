@@ -5,7 +5,7 @@ def59426283fddab34692ea5fb39aebb54b
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | [ViProfile active] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'59426283-fdda-b346-92ea-5fb39aebb54b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

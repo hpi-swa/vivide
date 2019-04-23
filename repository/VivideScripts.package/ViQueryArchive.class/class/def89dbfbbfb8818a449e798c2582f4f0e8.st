@@ -12,7 +12,7 @@ def89dbfbbfb8818a449e798c2582f4f0e8
 	] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'89dbfbbf-b881-8a44-9e79-8c2582f4f0e8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

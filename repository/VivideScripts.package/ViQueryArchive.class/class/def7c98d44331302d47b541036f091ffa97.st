@@ -13,7 +13,7 @@ def7c98d44331302d47b541036f091ffa97
 			ifTrue: ['2) Squeak'] ifFalse: [
 				'3) Other Packages']]]]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'7c98d443-3130-2d47-b541-036f091ffa97').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

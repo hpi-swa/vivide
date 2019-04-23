@@ -5,7 +5,7 @@ def5dae62e91976c94dbf24d48085622337
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:classes | classes
 		reject: [:c | classes includes: c superclass]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'5dae62e9-1976-c94d-bf24-d48085622337').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

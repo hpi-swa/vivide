@@ -6,7 +6,7 @@ defd62d3ec69c8dd740a414f9e8aaf082fe
 (#block -> [:in :out | (
 	[:objects | objects collect: [:ungroupedObject | { [:flag | flag reference actualClass category] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d62d3ec6-9c8d-d740-a414-f9e8aaf082fe').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

@@ -6,7 +6,7 @@ defe35033ecdd91fe4b8f5913e3c734740e
 (#block -> [:in :out | (
 	[:objects | objects collect: [:group | {{#separator. {{('<font size="8" color="#AAAAAA">' , (ViLabelStringService doObject: group first) , '</font>') asHtmlText}}}. group}]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e35033ec-dd91-fe4b-8f59-13e3c734740e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

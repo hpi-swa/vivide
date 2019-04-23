@@ -7,7 +7,7 @@ defa150785b2faf41408261ca76555615a9
 			[[:pkg1 :pkg2 | pkg1 packageName <= pkg2 packageName] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'a150785b-2faf-4140-8261-ca76555615a9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

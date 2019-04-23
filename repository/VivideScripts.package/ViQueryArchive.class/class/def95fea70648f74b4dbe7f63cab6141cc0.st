@@ -7,7 +7,7 @@ def95fea70648f74b4dbe7f63cab6141cc0
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:flag | { #text -> (ViObjectOriginServiceForEclipse doObject: flag reference) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'95fea706-48f7-4b4d-be7f-63cab6141cc0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

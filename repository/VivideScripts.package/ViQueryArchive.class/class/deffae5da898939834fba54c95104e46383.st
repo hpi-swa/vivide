@@ -9,7 +9,7 @@ deffae5da898939834fba54c95104e46383
 	context printString ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'fae5da89-8939-834f-ba54-c95104e46383').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

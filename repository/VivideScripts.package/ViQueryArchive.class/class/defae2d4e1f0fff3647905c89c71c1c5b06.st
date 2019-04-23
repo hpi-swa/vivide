@@ -23,7 +23,7 @@ defae2d4e1f0fff3647905c89c71c1c5b06
 				prettyDiffs: true]) asText }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'ae2d4e1f-0fff-3647-905c-89c71c1c5b06').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

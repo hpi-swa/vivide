@@ -6,7 +6,7 @@ defe107394e979a814bb60fd35cdf88fb2f
 (#block -> [:in :out | (
 	[:objects | objects collect: [:className | Smalltalk classNamed: className]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'e107394e-979a-814b-b60f-d35cdf88fb2f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

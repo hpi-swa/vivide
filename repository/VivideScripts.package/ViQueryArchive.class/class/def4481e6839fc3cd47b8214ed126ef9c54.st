@@ -4,7 +4,7 @@ def4481e6839fc3cd47b8214ed126ef9c54
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:objs | objs asSet asOrderedCollection] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'4481e683-9fc3-cd47-b821-4ed126ef9c54').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

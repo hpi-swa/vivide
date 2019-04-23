@@ -9,7 +9,7 @@ defd0c702ef1b75e64aad14203f1076b0f1
 	part1 block decompile decompileString <= part2 block decompile decompileString]] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'d0c702ef-1b75-e64a-ad14-203f1076b0f1').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

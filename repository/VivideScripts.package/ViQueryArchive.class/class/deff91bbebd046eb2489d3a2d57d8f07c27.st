@@ -6,7 +6,7 @@ deff91bbebd046eb2489d3a2d57d8f07c27
 (#block -> [:in :out | (
 	[:objects | objects collect: [:ref | ViFlagComment newListFromReference: ref]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'f91bbebd-046e-b248-9d3a-2d57d8f07c27').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

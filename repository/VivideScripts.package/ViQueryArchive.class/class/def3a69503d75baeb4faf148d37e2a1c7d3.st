@@ -7,7 +7,7 @@ def3a69503d75baeb4faf148d37e2a1c7d3
 			[[:obj1 :obj2 | obj1 asString <= obj2 asString] value: tempA value: tempB]
 				on: MessageNotUnderstood
 				do: [:ex | true]]] value: in)]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'3a69503d-75ba-eb4f-af14-8d37e2a1c7d3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').

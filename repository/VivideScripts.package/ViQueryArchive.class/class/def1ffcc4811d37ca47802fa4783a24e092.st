@@ -6,7 +6,7 @@ def1ffcc4811d37ca47802fa4783a24e092
 (#block -> [:in :out | (
 	[:objects | objects collect: [:morph | morph]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViQueryStepDefinition).
+(#class -> ViScriptDefinition).
 (#id -> #'1ffcc481-1d37-ca47-802f-a4783a24e092').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
