@@ -9,8 +9,7 @@ initialize
 	self notifier doSilently: [
 		self
 			definition: (ViScriptDefinition new
-				organization: self organization;
-				register;
+				adoptOrganization: self organization;
 				yourself).
 		self definition notifier doSilently: [
 			self definition sourceCode: '']].

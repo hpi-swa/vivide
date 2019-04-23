@@ -1,5 +1,5 @@
 tests
-test03ChangeId
+test03ChangeStepId
 
 	| step |
 	step := { [:num | num] -> { #id -> #test } } asScript.
