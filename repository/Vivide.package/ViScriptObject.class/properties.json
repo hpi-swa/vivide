@@ -9,7 +9,7 @@
 		"id",
 		"properties",
 		"organization" ],
-	"name" : "ViAbstractQueryPart",
+	"name" : "ViScriptObject",
 	"pools" : [
 		 ],
 	"super" : "Object",

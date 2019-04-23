@@ -14,5 +14,5 @@ step23d4adf141b29845aeb22b496e4ea663
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#inputKind -> ViAbstractQueryPart).
+(#inputKind -> ViScriptObject).
 (#priority -> 3620)}))})

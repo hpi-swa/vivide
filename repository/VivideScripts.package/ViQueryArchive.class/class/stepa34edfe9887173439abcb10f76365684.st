@@ -15,6 +15,6 @@ stepa34edfe9887173439abcb10f76365684
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '9 September 2013 11:55:52 am').
 (#inputKind -> ViScriptDefinition).
-(#outputKind -> ViAbstractQueryPart).
+(#outputKind -> ViScriptObject).
 (#priority -> 520).
 (#view -> ViTreeViewExtended)}))})

@@ -11,5 +11,5 @@
 	"name" : "ViScriptDefinition",
 	"pools" : [
 		 ],
-	"super" : "ViAbstractQueryPart",
+	"super" : "ViScriptObject",
 	"type" : "normal" }

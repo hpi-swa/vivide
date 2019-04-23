@@ -12,5 +12,5 @@
 	"name" : "ViQueryCommand",
 	"pools" : [
 		 ],
-	"super" : "ViAbstractQueryPart",
+	"super" : "ViScriptObject",
 	"type" : "normal" }

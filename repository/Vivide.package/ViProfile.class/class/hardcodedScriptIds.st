@@ -10,7 +10,7 @@ hardcodedScriptIds
 	
 	| scriptSelectors scriptIds |
 	scriptSelectors := OrderedCollection new.
-	ViAbstractQueryPart withAllSubclassesDo: [:cls |
+	ViScriptObject withAllSubclassesDo: [:cls |
 		#(asScript openScript) in: [:tokens |
 			scriptSelectors addAll: (cls selectors select: [:symbol |
 				tokens anySatisfy: [:token |

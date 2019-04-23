@@ -15,6 +15,6 @@ step8579d16a7cedf746893390568d7c97e0
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 September 2013 9:31:08 am').
 (#headerText -> '2').
-(#inputKind -> ViAbstractQueryPart).
+(#inputKind -> ViScriptObject).
 (#labelColor -> #'000000').
 (#priority -> 3630)}))})
