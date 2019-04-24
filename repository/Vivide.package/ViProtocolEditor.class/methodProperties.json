@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"acceptChanges" : "mt 2/19/2013 11:05:09.334",
+		"addMethod" : "mt 4/24/2019 15:13",
 		"changeProtocolFor:" : "mt 2/4/2014 14:54:30.486",
 		"checkProtocol" : "mt 2/4/2014 14:56:40.653",
 		"clear" : "mt 2/8/2015 12:32",
@@ -16,7 +17,7 @@
 		"initializeArtifact" : "mt 2/20/2013 13:54:06.777",
 		"initializeResizeHandle" : "mt 2/20/2013 13:20:29.115",
 		"initializeToolbarObjects" : "mt 11/16/2013 13:57:01.894",
-		"initializeToolbarOperations" : "mt 3/27/2013 17:45:24.988",
+		"initializeToolbarOperations" : "mt 4/24/2019 15:03",
 		"isAffectedBy:" : "mt 7/8/2013 14:04:03.528",
 		"object" : "mt 2/19/2013 11:21:38.43",
 		"object:" : "mt 7/13/2018 16:09",
