@@ -8,10 +8,10 @@ test27CopyQueryCyclic
 	q1 next: q2.
 	q2 next: q1.
 	
-	self assert: q1 hasCycle.
+	self assert: q1 hasLocalCycle.
 	
 	copy1 := q1 deepCopy.
 	
 	self
-		deny: copy1 hasCycle;
+		deny: copy1 hasLocalCycle;
 		assert: copy1 next next isNil.

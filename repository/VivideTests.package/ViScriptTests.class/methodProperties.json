@@ -3,5 +3,19 @@
 		 },
 	"instance" : {
 		"test01CacheCompiledCode" : "mt 4/23/2019 09:50",
+		"test01NewInstance" : "mt 4/24/2019 13:10",
+		"test01Steps" : "mt 4/24/2019 13:03",
+		"test02NextStep" : "mt 4/24/2019 13:13",
 		"test02OrganizeDefinitions" : "mt 4/23/2019 10:37",
-		"test03SyntaxError" : "mt 4/23/2019 10:40" } }
+		"test02StepsNoDefault" : "mt 4/24/2019 13:04",
+		"test03NoLocalCycles" : "mt 4/24/2019 14:31",
+		"test03StepsDo" : "mt 4/24/2019 15:26",
+		"test03SyntaxError" : "mt 4/23/2019 10:40",
+		"test04Recursion" : "mt 4/24/2019 14:52",
+		"test04StepsDoNoReference" : "mt 4/24/2019 17:12",
+		"test05NextSteps" : "mt 4/24/2019 16:33",
+		"test06NextStepsDefault" : "mt 4/24/2019 16:51",
+		"test07NextStepsWithReference" : "mt 4/24/2019 17:14",
+		"test08AllSteps" : "mt 4/24/2019 17:26",
+		"test09AllStepsDefault" : "mt 4/24/2019 17:27",
+		"test10AllStepsWithReference" : "mt 4/24/2019 17:39" } }

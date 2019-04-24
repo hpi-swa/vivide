@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 allPropertyStepsDo: aBlock ifNewSequence: anotherBlock
 
 	| lastStep lastNonReferenceStep |

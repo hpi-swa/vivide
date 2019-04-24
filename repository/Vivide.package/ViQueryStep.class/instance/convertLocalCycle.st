@@ -1,10 +1,8 @@
-as yet unclassified
-breakCycle
-	"Replace cyclic step with reference."
+local cycles
+convertLocalCycle
+	"Replace cyclic step with script reference."
 
-	self hasCycle ifFalse: [^ self].
-
-	self assert: self isScript not. "There should be no cycles in new-style scripts."
+	self hasLocalCycle ifFalse: [^ self].
 
 	self cycleStep in: [:cycleStep |
 		cycleStep next in: [:nextStep |

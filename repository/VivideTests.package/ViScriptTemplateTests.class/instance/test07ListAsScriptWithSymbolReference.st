@@ -13,6 +13,7 @@ test07ListAsScriptWithSymbolReference
 		} asScript.
 	
 		self
+			deny: script isReference;
 			assert: script next isScript;
 			assert: script next isReference;
 			assert: script next reference == far.

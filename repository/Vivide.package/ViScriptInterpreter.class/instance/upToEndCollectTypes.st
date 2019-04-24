@@ -1,8 +1,8 @@
 interpreting
 upToEndCollectTypes
 
-	(step notNil and: [step hasCycle])
-		ifTrue: [Error signal: 'This query is cyclic! Cannot interpret up to end.'].
+	(step notNil and: [step hasLocalCycle])
+		ifTrue: [Error signal: 'This script has a local cycle! Cannot interpret up to end.'].
 
 	self clearProperties.
 

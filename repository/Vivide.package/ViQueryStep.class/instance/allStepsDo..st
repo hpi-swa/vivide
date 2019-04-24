@@ -1,7 +1,4 @@
 enumerating
 allStepsDo: aBlock
-	"Avoid infinite recursion."
 	
-	self
-		allStepsDo: aBlock
-		ifRecursive: [].
+	self subclassResponsibility .

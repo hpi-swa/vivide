@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "mt 4/17/2019 07:54",
+		"expectedFailures" : "mt 4/24/2019 16:48",
 		"test01Bindings" : "mt 4/18/2019 08:55",
 		"test01ExtractPropertyAsReadBlock" : "mt 4/17/2019 11:55",
 		"test01Reference" : "mt 4/18/2019 09:44",

@@ -8,17 +8,17 @@ test11DefaultView
 	
 	env := ViPane new.
 	
-	view := q updateView: nil forEnvironment: env.
+	view := q viewClass new.
 	view setUp: q.
 	
 	self
 		assert: (view isKindOf: ViStandardItemView);
-		assert: view == (q updateView: view forEnvironment: env);
+		assert: view == (env updateView; view);
 		assert: 1 equals: view currentVisibleView columnCount.
 	
 	p next: [:color | #text -> (ViObjectOriginService doObject: color)] asScript.
 	view setUp: q.	
 	
 	self
-		assert: view == (q updateView: view forEnvironment: env);
+		assert: view == (env updateView; view);
 		assert: 2 equals: view currentVisibleView columnCount.

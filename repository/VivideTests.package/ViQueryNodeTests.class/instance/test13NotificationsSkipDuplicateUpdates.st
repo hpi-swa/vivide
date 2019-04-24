@@ -10,7 +10,7 @@ test13NotificationsSkipDuplicateUpdates
 		class] -> {#notifier -> ViSystemChangeNotifier}} asScript.
 
 	env := ViPane new.
-	view := script updateView: nil forEnvironment: env.
+	view := script viewClass new.
 	view setUp: script.
 	
 	"Prepare view to update."

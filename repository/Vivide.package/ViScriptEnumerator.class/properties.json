@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Queries",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptEnumerator",
+	"pools" : [
+		 ],
+	"super" : "ViScriptInterpreter",
+	"type" : "normal" }

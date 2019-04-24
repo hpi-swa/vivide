@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"convert:" : "mt 1/25/2018 11:38",
+		"convert:" : "mt 4/24/2019 16:24",
 		"convertPanes:" : "mt 11/28/2014 14:35:40.774",
 		"convertPanes:toScript:" : "mt 12/11/2015 12:53:24.171",
 		"convertProperty:" : "mt 1/9/2015 16:16:50.973",
@@ -15,8 +15,7 @@
 		"adoptOrganization:" : "mt 7/6/2015 10:08",
 		"allMetaReferences" : "mt 2/12/2015 15:10",
 		"allStepsDo:" : "mt 10/7/2015 18:06",
-		"allStepsDo:ifRecursive:" : "mt 10/7/2015 18:06",
-		"allStepsDo:previousSteps:ifRecursive:" : "mt 4/4/2019 18:04",
+		"allStepsDo:ifRecursive:" : "mt 4/24/2019 17:35",
 		"asDictionary" : "mt 1/21/2015 09:01:26.176",
 		"asReference" : "mt 1/21/2015 09:38:21.996",
 		"baseClass" : "mt 4/14/2019 15:22",

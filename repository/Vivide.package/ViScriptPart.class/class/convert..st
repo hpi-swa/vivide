@@ -13,8 +13,8 @@ convert: object
 	
 	"Set the given associations as properties: [:n | n * n] -> {#foo -> 5. #bar -> 7}"
 	^ (self convert: object key) in: [:s |
-		"Do not overwrite the properties of default scripts."
-		(s isDefault ifTrue: [s asReference] ifFalse: [s]) in: [:script |
+		"Script identifiers will be treated as references here."
+		(object key isSymbol ifTrue: [s asReference] ifFalse: [s]) in: [:script |
 			script notifier doSilently: [
 				object value do: [:property |
 					script setProperty: property key toValue: property value]].
