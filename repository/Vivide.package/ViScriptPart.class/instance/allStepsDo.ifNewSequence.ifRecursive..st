@@ -5,6 +5,8 @@ allStepsDo: aBlock ifNewSequence: anotherBlock ifRecursive: anExceptionBlock
 	previousSteps := OrderedCollection new.
 	enumerator := ViScriptEnumerator on: self.
 	
+	self flag: #bug. "mt: Cannot work because of referencing the same step multiple times such as #groups. See test02RecursionVersusReuse."	
+	
 	[enumerator atEnd] whileFalse: [
 		anotherBlock value.	
 	
@@ -12,7 +14,7 @@ allStepsDo: aBlock ifNewSequence: anotherBlock ifRecursive: anExceptionBlock
 	
 			(previousSteps identityIncludes: step)
 				ifTrue: [^ anExceptionBlock cull: previousSteps last cull: step]. 
-						
+				
 			previousSteps add: step.
 			aBlock value: step.		
 	] ]

@@ -1,5 +1,5 @@
-tests
-test33AccessibleSteps
+tests - recursion
+test05InaccessibleSteps
 
 	| script |
 	script := {
@@ -9,4 +9,4 @@ test33AccessibleSteps
 		[:num | num + num] -> {#id -> #inaccessible}.
 	} asScript.
 
-	self assert: (script accessibleSteps hasEqualElements: (script steps first: 3)).
+	self assert: #inaccessible equals: script inaccessibleSteps first id.
