@@ -2,7 +2,7 @@ as yet unclassified
 convertList: someObjects
 	"Default scripts will be wrapped as reference. Numbers can be used to refer to locally defined scripts and, for example, describe recursive structures."
 
-	^ (someObjects collect: [:o | self convert: o])
+	^ (someObjects collect: [:o | o isSymbol ifTrue: [(self convert: o) asReference] ifFalse: [self convert: o]])
 		in: [:stepsAndIndices |
 			| steps |
 			steps := stepsAndIndices collect: [:stepOrIndex |

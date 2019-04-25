@@ -6,12 +6,13 @@ allStepsDo: aBlock ifNewSequence: anotherBlock ifRecursive: anExceptionBlock
 	enumerator := ViScriptEnumerator on: self.
 	
 	[enumerator atEnd] whileFalse: [
+		anotherBlock value.	
+	
 		enumerator upToExtractionDo: [:step |
 	
 			(previousSteps identityIncludes: step)
 				ifTrue: [^ anExceptionBlock cull: previousSteps last cull: step]. 
-			
-			anotherBlock value.				
+						
 			previousSteps add: step.
 			aBlock value: step.		
 	] ]

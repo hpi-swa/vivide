@@ -12,8 +12,11 @@ test17DefaultPropertiesFallback
 	self
 		assert: interpreter atEnd;
 		assert: '1' equals: ((interpreter propertiesFor: 1) at: #text);
+		assert: true equals: ((interpreter propertiesFor: 1) at: #'_simulated');		
 		assert: 1 equals: ((interpreter propertiesFor: 1) at: #object);
 		assert: '4' equals: ((interpreter propertiesFor: 4) at: #text);
+		assert: true equals: ((interpreter propertiesFor: 4) at: #'_simulated');		
 		assert: 4 equals: ((interpreter propertiesFor: 4) at: #object);
 		assert: '9' equals: ((interpreter propertiesFor: 9) at: #text);
+		assert: true equals: ((interpreter propertiesFor: 9) at: #'_simulated');		
 		assert: 9 equals: ((interpreter propertiesFor: 9) at: #object).

@@ -4,4 +4,4 @@ simulatePropertyExtraction
 	
 	self clearProperties.
 	self properties add: (self objects collect: [:object |
-		{ #object -> object. #text -> object printString }]).
+		{ #object -> object. #text -> object printString. #'_simulated' -> true }]).

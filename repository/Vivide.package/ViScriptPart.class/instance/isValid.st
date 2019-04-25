@@ -7,7 +7,7 @@ isValid
 			ifTrue: [^ false].
 			
 		"Mixed code?"
-		step organization == self organization
+		(step organization == self organization or: [step isDefault])
 			ifFalse: [^ false].
 			
 		"Mismatch between script properties and source code?"

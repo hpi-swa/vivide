@@ -7,7 +7,7 @@ isHomogeneous
 	self
 		allPropertyStepsDo: [:p | ]
 		ifNewSequence: [
-			count = 1 ifTrue: [^ false].
-			count := count + 1].
+			count := count + 1.
+			count > 1 ifTrue: [^ false]].
 		
 	^ true

@@ -1,4 +1,4 @@
 as yet unclassified
 popUpFor: morph
 
-	self popUpFor: morph event: nil 
+	self popUpFor: morph event: self currentEvent 
