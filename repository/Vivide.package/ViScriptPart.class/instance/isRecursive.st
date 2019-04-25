@@ -1,4 +1,4 @@
-as yet unclassified
+recursion
 isRecursive
 
 	self allStepsDo: [:step | ] ifRecursive: [^ true].

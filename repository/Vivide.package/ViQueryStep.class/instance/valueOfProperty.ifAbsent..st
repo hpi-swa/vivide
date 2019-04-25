@@ -1,4 +1,4 @@
-as yet unclassified
+properties
 valueOfProperty: symbol ifAbsent: block
 	"Try to resolve property in definition if existing. If fails, use own properties dictionary."
 

@@ -1,6 +1,6 @@
 tests - construction
-test04Recursion
-	"Construct a recursive script using references."
+test04RecursionWithReference
+	"Construct a recursive script using a reference to some previous step."
 
 	| step reference |
 	step := [:num | num * num] asScript.

@@ -9,7 +9,7 @@ setUp: query
 				yourself].
 	
 	query isHomogeneous ifTrue: [ 
-		newSpecs with: (query allPropertySteps ifEmpty: [{[:fake | #object -> fake] asScript}]) do: [:col :prop |
+		newSpecs with: (query allExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) do: [:col :prop |
 			#(hAlignment vAlignment itemOrientation labelColor) do: [:colProp | col
 				perform: colProp asSymbol asMutator
 				with: (prop valueOfProperty: colProp)]]].

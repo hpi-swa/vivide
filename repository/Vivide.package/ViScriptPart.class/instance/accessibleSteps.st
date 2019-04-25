@@ -1,4 +1,4 @@
-accessing
+recursion
 accessibleSteps
 	"May be not the save as #steps due to recursive definition."
 	

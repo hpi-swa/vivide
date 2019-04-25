@@ -5,7 +5,7 @@ isHomogeneous
 	| count |
 	count := 0.
 	self
-		allPropertyStepsDo: [:p | ]
+		allExtractionStepsDo: [:step | ]
 		ifNewSequence: [
 			count := count + 1.
 			count > 1 ifTrue: [^ false]].

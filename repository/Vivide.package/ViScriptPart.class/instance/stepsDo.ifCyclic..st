@@ -1,4 +1,4 @@
-enumerating
+enumerating - local
 stepsDo: aBlock ifCyclic: anExceptionBlock
 
 	| lastSteps |

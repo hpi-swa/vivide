@@ -12,7 +12,7 @@ reset
 	textEdit readOnly: (
 		(self script
 			valueOfProperty: #editable
-			ifAbsent: [(self script allPropertySteps ifEmpty: [{[:fake | #object -> fake] asScript}]) first
+			ifAbsent: [(self script allExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) first
 				valueOfProperty: #editable
 				ifAbsent: [false]]) not
 			or: [self model nodes size > 1]).

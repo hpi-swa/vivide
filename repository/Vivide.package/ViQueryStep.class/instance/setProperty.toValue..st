@@ -1,4 +1,4 @@
-as yet unclassified
+properties
 setProperty: property toValue: newValue
 
 	(self valueOfProperty: property) in: [:oldValue |

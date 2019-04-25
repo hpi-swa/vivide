@@ -2,7 +2,7 @@ meta-scripts
 allMetaReferences
 
 	^ Array streamContents: [:strm |
-		self allPropertyStepsDo: [:step |
+		self allExtractionStepsDo: [:step |
 			step isMeta ifTrue: [
 				step metaReference ifNotNil: [:ref |
 					strm nextPut: ref]]]]

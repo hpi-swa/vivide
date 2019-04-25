@@ -1,5 +1,5 @@
 tests - enumeration
-test13AllPropertyStepsWithReference
+test13AllExtractionStepsWithReference
 
 	| script far |
 	far := {
@@ -18,6 +18,6 @@ test13AllPropertyStepsWithReference
 		
 		self
 			assert: #(one two)
-			equals: (script allPropertySteps collect: [:ea | ea id]) asArray.
+			equals: (script allExtractionSteps collect: [:ea | ea id]) asArray.
 			
 	].

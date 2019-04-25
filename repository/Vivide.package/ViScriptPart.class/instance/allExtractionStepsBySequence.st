@@ -1,9 +1,9 @@
 enumerating
-allPropertyStepsBySequence
+allExtractionStepsBySequence
 
 	| result |
 	result := OrderedCollection new.
 	 self
-		allPropertyStepsDo: [:step | result last add: step]
+		allExtractionStepsDo: [:step | result last add: step]
 		ifNewSequence: [result add: OrderedCollection new].
 	^ result

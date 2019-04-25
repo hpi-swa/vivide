@@ -1,4 +1,4 @@
-enumerating
+enumerating - local
 stepsDoUnsafe: aBlock
 	"Beware of queries with cycles!"
 	

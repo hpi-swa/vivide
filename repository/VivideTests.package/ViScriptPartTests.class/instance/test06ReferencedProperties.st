@@ -18,4 +18,4 @@ test06ReferencedProperties
 		assert: outer isReference;
 		assert: inner equals: outer reference;
 		assert: outer isHomogeneous;
-		assert: 2 equals: outer allPropertySteps size.
+		assert: 2 equals: outer allExtractionSteps size.

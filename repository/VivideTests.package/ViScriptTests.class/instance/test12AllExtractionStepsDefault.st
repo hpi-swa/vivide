@@ -1,5 +1,5 @@
 tests - enumeration
-test12AllPropertyStepsDefault
+test12AllExtractionStepsDefault
 
 	| script default |
 	script := {
@@ -13,4 +13,4 @@ test12AllPropertyStepsDefault
 
 	self
 		assert: #(one defaultProperties)
-		equals: (script allPropertySteps collect: [:ea | ea id]) asArray.
+		equals: (script allExtractionSteps collect: [:ea | ea id]) asArray.

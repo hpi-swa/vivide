@@ -1,4 +1,4 @@
-accessing - convenience
+accessing - many
 nextSteps
 
 	^ Array streamContents: [:strm |

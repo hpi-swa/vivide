@@ -10,4 +10,4 @@ test29AllPropertiesCycle
 	p next: q2.
 	q2 next: p.
 	
-	self assert: 1 equals: q allPropertySteps size.
+	self assert: 1 equals: q allExtractionSteps size.
