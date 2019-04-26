@@ -1,4 +1,4 @@
-as yet unclassified
+interactive tools
 openScript
 
 	^ VivideLight active ifNotNil: [:vivide | vivide openScript: self]

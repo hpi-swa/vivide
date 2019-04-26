@@ -1,5 +1,5 @@
 vivide - kernel
-doQueryStepDefinition: def
+doScriptDefinition: def
 
 	^ panel := self
 		codeboxFor: ('"{1} - {2}"', String cr, '{3}' format: {

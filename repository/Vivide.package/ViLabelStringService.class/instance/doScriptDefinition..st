@@ -1,4 +1,4 @@
 vivide - kernel
-doQueryStepDefinition: def
+doScriptDefinition: def
 
 	^ (ViTextStyler new styledTextFor: def sourceCode asText)

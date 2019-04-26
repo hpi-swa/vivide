@@ -1,4 +1,4 @@
-as yet unclassified
+interactive tools
 openScriptWith: someObjects
 	"Idiomatic with String, BlockClosure, etc."
 

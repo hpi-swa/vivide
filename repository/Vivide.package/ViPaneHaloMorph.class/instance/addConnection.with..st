@@ -14,7 +14,7 @@ addConnection: event with: connectHandle
 			newWindows first editor pane currentQuery in: [:script |
 				"New scripts are green by default."
 				self flag: #newbie.
-				(script isProfileScript not and: [script color isNil])
+				(script isDefault not and: [script color isNil])
 					ifTrue: [script color: (Color fromString: '#8DCB8D')]].
 			
 			event shiftPressed

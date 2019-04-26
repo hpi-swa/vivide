@@ -1,4 +1,4 @@
-as yet unclassified
+interactive tools
 editScript
 
 	^ self editScriptWith: #()

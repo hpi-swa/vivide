@@ -1,4 +1,4 @@
-processing
+interpretation
 process: someObjects
 	"Callback from script interpreter. Do something with the given objects."
 	

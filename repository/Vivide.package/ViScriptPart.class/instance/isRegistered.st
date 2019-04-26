@@ -1,4 +1,4 @@
-organization - testing
+organization
 isRegistered
 
 	^ self organization hasStep: self

@@ -1,9 +1,9 @@
-as yet unclassified
+interactive tools
 editScriptWith: someObjects
 
 	"New scripts are green by default."
 	self flag: #newbie.
-	(self isProfileScript not and: [self color isNil])
+	(self isDefault not and: [self color isNil])
 		ifTrue: [self color: (Color fromString: '#8DCB8D')].
 
 	^ #artifacts openScriptWith: 

@@ -1,4 +1,4 @@
 vivide - kernel
 doScriptPart: aScriptPart
 
-	^ self doQueryStep: aScriptPart
+	^ self doScriptObject: aScriptPart

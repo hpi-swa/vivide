@@ -1,4 +1,4 @@
 object service
 acceptObjectService: anObjectService
 
-	^ anObjectService doQueryStep: self
+	^ anObjectService doScriptObject: self

@@ -1,4 +1,4 @@
-organization - accessing
+accessing - many
 references
 
 	self isRegistered ifFalse: [#()].
