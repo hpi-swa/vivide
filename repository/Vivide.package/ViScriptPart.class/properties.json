@@ -8,7 +8,11 @@
 	"instvars" : [
 		"isProperty",
 		"isReference",
-		"isExecutedAsynchronously" ],
+		"isExecutedAsynchronously",
+		"definition",
+		"icon",
+		"label",
+		"next" ],
 	"name" : "ViScriptPart",
 	"pools" : [
 		 ],
