@@ -3,10 +3,10 @@ postCopy
 
 	super postCopy.
 	
-	definition := definition copy.
-	definition organization: self organization.
-	definition register.  
+	self setDefinition: self definition copy.
+	self definition organization: self organization.
+	self definition register.  
 
-	next := nil.
+	self setNext: nil.
 
 	self flag: #metaScript. "mt: What about copying meta-scripts and its organization?"

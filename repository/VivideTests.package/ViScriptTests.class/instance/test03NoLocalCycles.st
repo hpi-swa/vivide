@@ -6,13 +6,13 @@ test03NoLocalCycles
 	step := [:num | num * num] asScript.
 	self
 		deny: step hasLocalCycle;
-		assert: step cycleStep isNil.
+		assert: step cyclicStep isNil.
 
 	step next: step.
 	self
 		deny: step hasNext;
 		deny: step hasLocalCycle;
-		assert: step cycleStep isNil.
+		assert: step cyclicStep isNil.
 	
 	step next: {
 		[:num | num + 1].
@@ -21,10 +21,10 @@ test03NoLocalCycles
 	self
 		assert: step hasNext;
 		deny: step hasLocalCycle;
-		assert: step cycleStep isNil.
+		assert: step cyclicStep isNil.
 
 	step steps last next: step.
 	self
 		deny: step steps last hasNext;
 		deny: step hasLocalCycle;
-		assert: step cycleStep isNil.
+		assert: step cyclicStep isNil.

@@ -4,10 +4,10 @@ convertLocalCycle
 
 	self hasLocalCycle ifFalse: [^ self].
 
-	self cycleStep in: [:cycleStep |
-		cycleStep next in: [:nextStep |
-			cycleStep next: nextStep asReference.
-			cycleStep next
+	self cyclicStep in: [:step |
+		step next in: [:nextStep |
+			step next: nextStep asReference.
+			step next
 				unregister;
-				organization: cycleStep organization;
+				organization: step organization;
 				register]].

@@ -1,4 +1,4 @@
-enumerating
+recursion
 allStepsDo: aBlock ifNewSequence: anotherBlock ifRecursive: anExceptionBlock
 	
 	| previousSteps enumerator |

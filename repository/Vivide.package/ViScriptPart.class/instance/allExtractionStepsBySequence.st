@@ -1,4 +1,4 @@
-enumerating
+accessing - many
 allExtractionStepsBySequence
 
 	| result |
