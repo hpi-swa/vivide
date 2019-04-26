@@ -6,16 +6,11 @@ maxPropertyCount
 	maxCount := 0.
 	currentCount := 0.
 	
-	self allStepsDo: [:step |
-		step isPropertyExtraction
-			ifTrue: [
-				step mergeConsecutiveExtractions ifFalse: [^ 1].
-				currentCount := currentCount + 1]
-			ifFalse: [
-				maxCount := maxCount max: currentCount.
-				currentCount := 0]].
+	self
+		allExtractionStepsDo: [:step |
+			currentCount := currentCount + 1]
+		ifNewSequence: [
+			maxCount := maxCount max: currentCount.
+			currentCount := 0].
 	
-	maxCount := maxCount max: currentCount.
-	^ maxCount = 0
-		ifTrue: [#defaultProperties asScript ifNil: [1] ifNotNil: [:s | s maxPropertyCount]]
-		ifFalse: [maxCount]
+	^ maxCount := maxCount max: currentCount

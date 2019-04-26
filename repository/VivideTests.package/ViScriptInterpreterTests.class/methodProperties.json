@@ -36,4 +36,7 @@
 		"test15ExtractPropertiesWithObject" : "mt 4/16/2019 15:17",
 		"test16DuplicateObjects" : "mt 4/17/2019 07:42",
 		"test17DefaultPropertiesFallback" : "mt 4/25/2019 09:53",
-		"test18EmptyInputEmptyOutput" : "mt 4/17/2019 09:07" } }
+		"test18EmptyInputEmptyOutput" : "mt 4/17/2019 09:07",
+		"test19FailedExtraction" : "mt 4/26/2019 16:38",
+		"test20MergeConsecutiveExtractions" : "mt 4/26/2019 16:46",
+		"test21FailedExtractionMerged" : "mt 4/26/2019 16:54" } }

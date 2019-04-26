@@ -29,6 +29,7 @@
 		"test04ScriptProperties" : "mt 4/3/2019 10:44",
 		"test04Sorted" : "mt 4/3/2019 13:51",
 		"test04TupleUnpackExtractEachWithObjects" : "mt 4/3/2019 14:32",
+		"test05RetainNamesAndFormatting" : "mt 4/26/2019 16:09",
 		"test05Reversed" : "mt 4/3/2019 13:51",
 		"test05SymbolAsScript" : "mt 4/23/2019 11:48",
 		"test05TupleUnpackExtractEachWithObjectAndObjects" : "mt 4/3/2019 14:34",
@@ -49,4 +50,5 @@
 		"test11GroupByFirst" : "mt 4/3/2019 14:12",
 		"test11ListAsScriptWithLocalReferenceAndProperties" : "mt 4/24/2019 16:18",
 		"test12SymbolAsScriptNotFound" : "mt 4/26/2019 10:53",
-		"test12TransformAllToSingle" : "mt 4/3/2019 14:56" } }
+		"test12TransformAllToSingle" : "mt 4/3/2019 14:56",
+		"test13BlockAsScriptWithSymbolReference" : "mt 4/26/2019 16:22" } }
