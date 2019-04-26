@@ -1,6 +1,15 @@
 accessing
-id: object
+id: aSymbolOrNil
+	"Avoid setting the id to nil. Generate new id instead."
+	
+	| newId |
+	self id = aSymbolOrNil ifTrue: [^ self].
+	newId := aSymbolOrNil ifNil: [UUID new asString asSymbol].
+	
+	self id in: [:oldId |
+		super id: newId.
 
-	^ object
-		ifNil: [super id: UUID new asString asSymbol]
-		ifNotNil: [:o | super id: o].
+		oldId ifNotNil: [
+			self organization
+				changeStepIdFrom: oldId
+				to: newId]].

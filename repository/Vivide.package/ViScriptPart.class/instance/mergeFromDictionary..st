@@ -8,7 +8,7 @@ mergeFromDictionary: dict
 		self perform: (prop, #:) asSymbol with: (dict at: prop)].
 	
 	"Set references by id only."
-	self definition: (dict at: #definition).
+	self setDefinition: (dict at: #definition).
 	self setNext: (dict at: #next).
 	
 	#(isProperty isReference) do: [:prop |

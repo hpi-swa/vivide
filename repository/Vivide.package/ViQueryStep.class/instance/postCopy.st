@@ -2,4 +2,4 @@ copying
 postCopy
 
 	super postCopy.
-	label ifNotNil: [label := 'Copy of ', label].
+	self label ifNotNil: [:lbl | self setLabel: 'Copy of ', lbl].

@@ -19,6 +19,6 @@ process: someObjects
 				ifTrue: [oc value]
 				ifFalse: [oc new])].
 
-	definition block value: in value: out.
+	self definition block value: in value: out.
 		
 	^ out
