@@ -1,5 +1,5 @@
 tests - recursion
-test07EndOfTree
+test07IsEndOfTreeRecursive
 
 	| script |
 	script := {
