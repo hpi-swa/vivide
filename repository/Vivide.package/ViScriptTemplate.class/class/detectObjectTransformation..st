@@ -1,4 +1,4 @@
-as yet unclassified
+navigation - ast
 detectObjectTransformation: innerNode
 	"Skip all parent nodes that do no actual object transformation."
 	

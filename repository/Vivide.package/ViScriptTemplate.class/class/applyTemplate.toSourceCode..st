@@ -1,4 +1,4 @@
-as yet unclassified
+templates - support
 applyTemplate: aTemplateOrSymbol toSourceCode: aString
 	" For example
 		(45 to: 62) -> '[:in :out | (

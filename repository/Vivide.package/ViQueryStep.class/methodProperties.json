@@ -1,11 +1,9 @@
 {
 	"class" : {
-		"convert:" : "mt 4/18/2019 09:18",
-		"convertList:" : "mt 4/25/2019 10:33" },
+		 },
 	"instance" : {
 		"adoptOrganization:" : "mt 3/29/2019 17:22",
 		"asReference" : "mt 4/4/2019 16:20",
-		"asScript" : "mt 7/6/2015 10:37",
 		"baseClass" : "mt 4/14/2019 15:23",
 		"baseClassName" : "mt 8/29/2013 11:21:42.057",
 		"deepCopy" : "mt 2/1/2015 19:11",

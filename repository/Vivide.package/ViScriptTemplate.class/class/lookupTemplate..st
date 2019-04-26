@@ -1,5 +1,5 @@
-templates - support
-templateForSourceCode: code
+navigation
+lookupTemplate: code
 	"Guess the underlying script template given the code."
 
 	| node template properties tmp globalInOut |

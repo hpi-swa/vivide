@@ -5,11 +5,11 @@ setScriptTemplate
 	| inner spec properties |
 	inner := self visibleSourceCode.
 	properties := self thisStep properties copy.
-	spec := ViScriptEditor templateForSourceCode: inner.
+	spec := ViScriptTemplate lookupTemplate: inner.
 	
 	"Insert missing curly brackets for property steps."
 	(spec value includesKey: #isProperty) ifTrue: [
-		self visibleSourceCode: (ViScriptEditor wrapExtractionIntoArray: inner)].
+		self visibleSourceCode: (ViScriptTemplate wrapExtractionIntoArray: inner)].
 
 	"Merge proposed properties with existing ones."
 	spec value keysAndValuesDo: [:key :value |

@@ -1,0 +1,4 @@
+converting
+convertFromScript: aScriptStep
+
+	^ aScriptStep

@@ -8,12 +8,7 @@ activateWizard
 	"Propose a starting point for the user."
 	self fullSourceCode: nil.
 	self setFullSourceCodeInterval.
-	self visibleSourceCode: (self inputKind
-		ifEmpty: [
-			'["Type code here..."]']
-		ifNotEmpty: [:someClasses |
-			'[{1}| "Type code here..."]' format: {
-				self class generateBlockVarDeclarationFor: someClasses}]).
-
+	self visibleSourceCode: (ViScriptTemplate generateEmptyScriptCodeFor: self inputKind).
+	
 	"If the user starts typing, any 'type code here' information should be removed."
 	self selectBlockStatements.

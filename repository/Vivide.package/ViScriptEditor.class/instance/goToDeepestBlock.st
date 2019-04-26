@@ -8,9 +8,9 @@ goToDeepestBlock
 	outer := RBParser parseExpression: self fullSourceCode.
 	cursor := self textField cursorPosition + self fullSourceCodeInterval first - 1.
 
-	inner := self class detectDeepestBlockNode: outer.
+	inner := ViScriptTemplate detectDeepestBlockNode: outer.
 	inner ifNil: [^ self].
-	inner := self class detectObjectTransformation: inner.
+	inner := ViScriptTemplate detectObjectTransformation: inner.
 		
 	self fullSourceCodeInterval: inner sourceInterval.
 	self setVisibleSourceCode.

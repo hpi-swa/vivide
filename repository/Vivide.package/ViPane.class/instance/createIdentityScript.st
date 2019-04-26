@@ -6,7 +6,7 @@ createIdentityScript
 	script := (tupleSize <= 1
 		ifTrue: [ [:object | object] asScript ]
 		ifFalse: [
-			ViScriptPart createIdentityForTuple: (self objects
+			ViScriptTemplate createIdentityForTuple: (self objects
 				ifEmpty: [Array new: tupleSize withAll: Object]
 				ifNotEmpty: [:objs | objs first "tuple" collect: [:o | o class]]) ]).
 

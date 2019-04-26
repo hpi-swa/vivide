@@ -1,4 +1,4 @@
-converting
-asReference
+*vivide
+asScript
 
 	self subclassResponsibility.

@@ -2,7 +2,7 @@ tests
 test35BaseClassWithTuples
 
 	| q |
-	q := ViScriptPart convert: [:a :b | a + b].
+	q := [:a :b | a + b] asScript.
 	q setProperty: #inputKind toValue: {Integer.Integer}.
 	q setProperty: #outputKind toValue: Integer.
 

@@ -1,5 +1,5 @@
-support
-convertProperty: property
+interpretation
+convertObjectProperty: property
 	"Converte read/write blocks."
 
 	^ ((property isVariableBinding

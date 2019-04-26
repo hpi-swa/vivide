@@ -1,4 +1,4 @@
-as yet unclassified
+templates - support
 isTransformationSelector: aSelector
 
 	^ #(collect: select: gather: reject: reduce: inject: asGroups sort: sorted reversed first last detect:)

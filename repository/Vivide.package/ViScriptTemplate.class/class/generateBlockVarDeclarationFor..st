@@ -1,4 +1,4 @@
-support
+templates - support
 generateBlockVarDeclarationFor: someClassesOrNils
 
 	| classCount someClasses |

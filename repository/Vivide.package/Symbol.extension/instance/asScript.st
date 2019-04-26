@@ -1,4 +1,4 @@
 *vivide-queries
 asScript
 
-	^ ViQueryStep convert: self
+	^ ViScriptTemplate convertFromSymbol: self

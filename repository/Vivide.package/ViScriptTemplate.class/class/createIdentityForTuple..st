@@ -1,9 +1,9 @@
-as yet unclassified
+templates - support
 createIdentityForTuple: someClasses
 	"Creates a script that does not modify its input tuples for the given types."
 	
 	| decl | 
-	decl := (ViScriptEditor generateBlockVarDeclarationFor: someClasses)
+	decl := (self generateBlockVarDeclarationFor: someClasses)
 		withBlanksTrimmed.
 	^ ('[{1} | \{{2}\} asTuples]' format: {
 		decl.

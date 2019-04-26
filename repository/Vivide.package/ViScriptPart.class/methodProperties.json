@@ -1,10 +1,7 @@
 {
 	"class" : {
-		"convert:" : "mt 4/24/2019 16:24",
 		"convertPanes:" : "mt 11/28/2014 14:35:40.774",
 		"convertPanes:toScript:" : "mt 12/11/2015 12:53:24.171",
-		"convertProperty:" : "mt 1/9/2015 16:16:50.973",
-		"createIdentityForTuple:" : "mt 6/8/2015 14:17",
 		"referenceTo:" : "mt 2/1/2016 16:38:12.367",
 		"specialProperties" : "mt 1/12/2016 09:29:11.86",
 		"useHorizontalLists" : "mt 12/15/2015 09:41:52.057",
@@ -25,6 +22,7 @@
 		"allStepsDo:ifRecursive:" : "mt 4/24/2019 18:07",
 		"asDictionary" : "mt 4/26/2019 08:24",
 		"asReference" : "mt 1/21/2015 09:38:21.996",
+		"asScript" : "mt 4/26/2019 13:58",
 		"baseClass" : "mt 4/14/2019 15:22",
 		"breakLocalCycle" : "mt 4/26/2019 08:01",
 		"color" : "mt 4/26/2019 08:29",
@@ -103,7 +101,7 @@
 		"setProperty:toValue:" : "mt 1/26/2016 12:31:18.962",
 		"sourceCode" : "mt 10/5/2014 13:05:17.191",
 		"sourceCode:" : "mt 10/5/2014 13:05:28.339",
-		"sourceCodeShort" : "mt 10/15/2014 18:28:53.902",
+		"sourceCodeShort" : "mt 4/26/2019 15:02",
 		"steps" : "mt 4/25/2019 11:33",
 		"stepsDo:" : "mt 4/25/2019 10:56",
 		"stepsDo:ifCyclic:" : "mt 4/25/2019 10:56",

@@ -22,7 +22,7 @@ interpretPropertyExtraction
 					ifFalse: [{#object -> thing}]]]].
 		
 		self properties add: (
-				propertiesToUse collect: [:p | p collect: [:pp | ViScriptPart convertProperty: pp] ]).
+				propertiesToUse collect: [:p | p collect: [:pp | ViScriptTemplate convertObjectProperty: pp] ]).
 				
 	"Update objects according to #object or #objects property if existing. See ViQueryNode >> #inputForChildren."
 	step isMeta

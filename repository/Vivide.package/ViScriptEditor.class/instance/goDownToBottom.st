@@ -16,7 +16,7 @@ goDownToBottom
 
 	result := lastBlock.
 	result ifNil: [^ self].
-	result := self class detectObjectTransformation: result.
+	result := ViScriptTemplate detectObjectTransformation: result.
 
 	self fullSourceCodeInterval: result sourceInterval.
 	self setVisibleSourceCode.

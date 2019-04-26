@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "mt 4/24/2019 16:19",
+		"expectedFailures" : "mt 4/26/2019 14:34",
 		"test01ExtractEach" : "mt 4/3/2019 14:19",
 		"test01IsList" : "mt 4/23/2019 11:13",
 		"test01Select" : "mt 4/3/2019 13:45",
-		"test01TemplateDetection" : "mt 4/3/2019 14:50",
+		"test01TemplateDetection" : "mt 4/26/2019 14:47",
 		"test01TransformEach" : "mt 4/3/2019 15:02",
 		"test01TransformInOut" : "mt 4/3/2019 13:35",
 		"test01TupleUnpack" : "mt 4/3/2019 14:24",
@@ -40,7 +40,7 @@
 		"test07TupleFilter" : "mt 4/17/2019 08:52",
 		"test08AsTuples" : "mt 4/23/2019 12:12",
 		"test08Gather" : "mt 4/3/2019 13:58",
-		"test08ListAsScriptWithLocalReference" : "mt 4/23/2019 11:55",
+		"test08ListAsScriptWithLocalReference" : "mt 4/26/2019 14:37",
 		"test09AsTuplesEmpty" : "mt 4/23/2019 12:12",
 		"test09Flattened" : "mt 4/3/2019 13:59",
 		"test09ListAsScriptWithProperties" : "mt 4/23/2019 11:59",
@@ -48,4 +48,5 @@
 		"test10ListAsScriptWithSymbolReferenceAndProperties" : "mt 4/24/2019 16:09",
 		"test11GroupByFirst" : "mt 4/3/2019 14:12",
 		"test11ListAsScriptWithLocalReferenceAndProperties" : "mt 4/24/2019 16:18",
+		"test12SymbolAsScriptNotFound" : "mt 4/26/2019 10:53",
 		"test12TransformAllToSingle" : "mt 4/3/2019 14:56" } }
