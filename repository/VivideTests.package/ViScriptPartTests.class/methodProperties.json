@@ -1,8 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"setUp" : "mt 7/8/2015 10:16",
-		"test01CopyWithDefinition" : "mt 10/10/2014 11:20:36.304",
-		"test18DeepCopy" : "mt 7/19/2015 14:49",
-		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51" } }

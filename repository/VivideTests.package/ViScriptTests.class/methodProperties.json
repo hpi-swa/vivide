@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "mt 4/29/2019 13:31",
+		"expectedFailures" : "mt 4/29/2019 13:47",
 		"test01CacheCompiledCode" : "mt 4/23/2019 09:50",
 		"test01Copy" : "mt 4/29/2019 13:23",
 		"test01IsEndOfLevel" : "mt 4/26/2019 09:13",
@@ -42,6 +42,7 @@
 		"test05MaxPropertyCount" : "mt 4/26/2019 16:04",
 		"test05NextSteps" : "mt 4/24/2019 16:33",
 		"test06AdoptOrganizationForDefaultScript" : "mt 4/26/2019 10:48",
+		"test06CopyWithoutDefaultScripts" : "mt 4/29/2019 13:46",
 		"test06Equality" : "mt 4/29/2019 08:50",
 		"test06IsEndOfLevelRecursive" : "mt 4/26/2019 09:16",
 		"test06NextStepsDefault" : "mt 4/24/2019 16:51",
