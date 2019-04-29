@@ -3,7 +3,6 @@
 		 },
 	"instance" : {
 		"adoptOrganization:" : "mt 3/29/2019 17:22",
-		"asReference" : "mt 4/4/2019 16:20",
 		"isExecutedAsynchronously" : "mt 11/17/2014 09:56:35.853",
 		"isGlobal" : "mt 8/28/2013 16:49:14",
 		"isMeta" : "mt 2/1/2015 20:36",
@@ -13,6 +12,4 @@
 		"objectNotifiers" : "mt 5/27/2015 08:50",
 		"objectNotifiersWith:" : "mt 6/15/2015 09:49",
 		"priority" : "mt 2/1/2015 20:35",
-		"referenceInArchive" : "mt 10/17/2015 17:31",
-		"setProperty:toValue:" : "mt 7/7/2015 17:06",
-		"valueOfProperty:ifAbsent:" : "mt 10/6/2014 09:16:18.779" } }
+		"referenceInArchive" : "mt 10/17/2015 17:31" } }
