@@ -6,7 +6,7 @@ def89dbfbbfb8818a449e798c2582f4f0e8
 (#block -> [:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | {
 	#icon -> (step class == ViScriptPart ifTrue: [] ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> (step baseClassName asText
+	#text -> (step baseClass name asText
 	addAttribute: (TextColor color: (Color fromString: #AAAAAA));
 	yourself)}
 	] value: textOrObject]]
@@ -20,7 +20,7 @@ def89dbfbbfb8818a449e798c2582f4f0e8
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | {
 	#icon -> (step class == ViScriptPart ifTrue: [] ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> (step baseClassName asText
+	#text -> (step baseClass name asText
 	addAttribute: (TextColor color: (Color fromString: #AAAAAA));
 	yourself)}
 	] value: textOrObject]]

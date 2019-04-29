@@ -3,4 +3,4 @@ doScriptPart: aStep
 
 	^ aStep isGlobal
 		ifTrue: ['-']
-		ifFalse: [aStep baseClassName]
+		ifFalse: [aStep baseClass name]

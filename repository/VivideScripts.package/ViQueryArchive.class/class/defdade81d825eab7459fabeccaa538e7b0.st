@@ -7,7 +7,7 @@ defdade81d825eab7459fabeccaa538e7b0
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> script baseClassName}]
+	#text -> script baseClass name}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViScriptDefinition).
@@ -19,6 +19,6 @@ defdade81d825eab7459fabeccaa538e7b0
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> script baseClassName}]
+	#text -> script baseClass name}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

@@ -14,6 +14,6 @@ addFormattedScripts
 			#icon -> (script nextIcon ifNil: [ViIcons blankIcon]).
 			#text -> (script nextLabel
 				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}].
-		[:script | #text -> script baseClassName]
+		[:script | #text -> script baseClass name]
 	
 	} asScript.
