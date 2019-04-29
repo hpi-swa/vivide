@@ -1,4 +1,4 @@
-as yet unclassified
+interpretation
 viewClass: aClass
 	
 	^ self setProperty: #view toValue: aClass

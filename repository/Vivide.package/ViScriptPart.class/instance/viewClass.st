@@ -1,4 +1,4 @@
-as yet unclassified
+interpretation
 viewClass
 	"Returns the class for the preferred view. Those are classes or blocks. See TViObjectView trait and its implementors."
 	

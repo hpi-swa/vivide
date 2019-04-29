@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - convenience
 sourceCodeShort
 
 	^ (ViScriptTemplate detectDeepestBlockNode: (RBParser parseExpression: self sourceCode))

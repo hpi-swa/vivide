@@ -10,7 +10,7 @@ upToExtractionDo: aBlock
 	
 	[ (step isNil
 		or: [step isPropertyExtraction not and: [seenPropertySteps > 0]])
-		or: [step mergeConsecutiveExtractions not and: [seenPropertySteps = 1]] ]
+		or: [step shouldAppendExtraction not and: [seenPropertySteps = 1]] ]
 		whileFalse: [
 			step isNil ifTrue: [
 				onceNil ifTrue: [^ self].

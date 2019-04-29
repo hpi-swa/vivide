@@ -1,4 +1,4 @@
-as yet unclassified
+serialization
 storeOn: stream
 	"Flatten this script. No support for meta-scripts. Write only the minimal set of properties."
 

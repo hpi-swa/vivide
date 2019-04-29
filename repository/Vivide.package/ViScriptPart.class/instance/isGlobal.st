@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isGlobal
 
 	"Here is a manual approach:

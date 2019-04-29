@@ -1,8 +1,7 @@
-as yet unclassified
+organization
 adoptOrganization: aQueryOrganizer
 
-	(self isDefault or: [self organization = aQueryOrganizer])
-		ifTrue: [^ self "no change"].
+	self isDefault ifTrue: [^ self "no change"].
 
 	self
 		unregister;
