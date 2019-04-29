@@ -2,7 +2,7 @@ tests - single
 test11CodeFolding
 
 	| inner |
-	script := [:in :out | ([in collect: [:each | [:num | num * num] value: each]] value: in) in: [:result | out addAll: result asList]] asRawScript.
+	script := [:in :out | ([in collect: [:each | [:num | num * num] value: each]] value: in) in: [:result | out addAll: result asList]] asScript.
 	editor object: script.
 
 	self assert: editor scriptSourceCode ~= editor visibleSourceCode.

@@ -4,4 +4,4 @@ isScriptEditor
 	
 	^ (self currentQuery notNil
 		and: [self currentQuery id = #artifacts])
-		and: [self objects anySatisfy: [:ea | ea isKindOf: ViScriptPart]]
+		and: [self objects anySatisfy: [:ea | ea isScript]]

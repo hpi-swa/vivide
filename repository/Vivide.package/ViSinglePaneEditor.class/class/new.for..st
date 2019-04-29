@@ -17,7 +17,7 @@ new: symbolOrBlockOrScript for: objects
 
 	self flag: #noStreamsSupport. "mt: May need explicit check?"
 
-	(objects notEmpty and: [objects last isKindOf: ViScriptPart]) ifTrue: [
+	(objects notEmpty and: [objects last isScript]) ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script editor(s) opened.'}].  
 
 	objects do: [:object | ViProfile active ifNotNil: [:profile |

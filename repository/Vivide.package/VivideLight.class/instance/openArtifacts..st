@@ -7,7 +7,7 @@ openArtifacts: someObjects
 	
 	objects := someObjects.
 	
-	(someObjects detect: [:obj | obj isKindOf: ViScriptPart] ifNone: [])
+	(someObjects detect: [:obj | obj isScript] ifNone: [])
 		ifNotNil: [:script | 
 			ViProfile active ifNotNil: [:profile |
 				profile recentScripts addObject: script].
