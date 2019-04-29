@@ -5,7 +5,6 @@ postCopy
 	oldId := id.
 	id := UUID new asString asSymbol.
 
-	"DeepCopy does not work for blocks. I think sharing of values if fine because editors will overwrite them anyway..."
 	properties := properties copy.
 	
 	self organization: ViScriptOrganizer new.

@@ -1,5 +1,5 @@
-tests
-test35BaseClassWithTuples
+tests - interpretation
+test04BaseClassWithTuples
 
 	| q |
 	q := [:a :b | a + b] asScript.

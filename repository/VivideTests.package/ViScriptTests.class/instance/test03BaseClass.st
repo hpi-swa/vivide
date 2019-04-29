@@ -1,5 +1,5 @@
-tests
-test20BaseClass
+tests - interpretation
+test03BaseClass
 	"Which kind of input objects are appropriate for a query step?"
 	
 	| sameType sameType2 changedType changedType2 changedType3 |

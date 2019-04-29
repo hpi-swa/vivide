@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"test20BaseClass" : "mt 11/13/2014 14:27:39.896",
-		"test26CopyQuery" : "mt 2/1/2015 19:13",
-		"test27CopyQueryCyclic" : "mt 4/24/2019 14:26",
-		"test35BaseClassWithTuples" : "mt 4/26/2019 13:46",
-		"test40InterpretScript" : "mt 4/18/2016 15:38:04.198" } }

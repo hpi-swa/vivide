@@ -1,4 +1,4 @@
-accessing - convenience
+interpretation
 baseClass
 
 	| mostSpecific |

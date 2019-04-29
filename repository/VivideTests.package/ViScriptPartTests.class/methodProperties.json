@@ -5,5 +5,4 @@
 		"setUp" : "mt 7/8/2015 10:16",
 		"test01CopyWithDefinition" : "mt 10/10/2014 11:20:36.304",
 		"test18DeepCopy" : "mt 7/19/2015 14:49",
-		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51",
-		"test24ReferenceIdUpdate" : "mt 12/7/2015 15:27:42.791" } }
+		"test19DeepCopyWithoutDefaults" : "mt 7/19/2015 14:51" } }
