@@ -1,4 +1,4 @@
-accessing - convenience
+serialization
 iconCode
 	"Code snippet to generate or find the icon."
 	

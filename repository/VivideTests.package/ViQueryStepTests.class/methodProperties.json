@@ -2,12 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"test01Equality" : "mt 4/23/2019 09:29",
-		"test08IconCode" : "mt 2/21/2018 21:21",
-		"test11DefaultView" : "mt 4/24/2019 14:13",
 		"test20BaseClass" : "mt 11/13/2014 14:27:39.896",
 		"test26CopyQuery" : "mt 2/1/2015 19:13",
 		"test27CopyQueryCyclic" : "mt 4/24/2019 14:26",
-		"test28HomogeneousCycle" : "mt 11/13/2014 14:37:56.594",
 		"test35BaseClassWithTuples" : "mt 4/26/2019 13:46",
 		"test40InterpretScript" : "mt 4/18/2016 15:38:04.198" } }

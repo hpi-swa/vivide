@@ -22,11 +22,11 @@ updateForQueryExtended: query
 	newResizeModes := OrderedCollection new.
 	commandsVisible := true.
 	
-	query isHomogeneous
+	query isHomogeneousRelaxed
 		ifFalse: [newHorizontalHeaderVisible := false]
 		ifTrue: [ | wantsHeader |
 			wantsHeader := false.
-			newCols with: (query allExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}])  do: [:col :prop |
+			newCols with: (query nextExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}])  do: [:col :prop |
 				commandsVisible := commandsVisible and: [prop valueOfProperty: #showCommands ifAbsent: [true]].
 				newResizeModes add: (prop valueOfProperty: #resizeMode ifAbsent: [#shrinkWrap]).
 				#(headerText headerIcon headerBalloonText) do: [:colProp | col

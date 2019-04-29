@@ -8,8 +8,8 @@ setUp: query
 				labelColor: (idx > 1 ifTrue: [Color fromString: #AAAAAA] ifFalse: []);
 				yourself].
 	
-	query isHomogeneous ifTrue: [ 
-		newSpecs with: (query allExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) do: [:col :prop |
+	query isHomogeneousRelaxed ifTrue: [ 
+		newSpecs with: (query nextExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) do: [:col :prop |
 			#(hAlignment vAlignment itemOrientation labelColor) do: [:colProp | col
 				perform: colProp asSymbol asMutator
 				with: (prop valueOfProperty: colProp)]]].
