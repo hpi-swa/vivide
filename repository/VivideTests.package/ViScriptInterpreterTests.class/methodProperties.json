@@ -29,8 +29,8 @@
 		"test08UpToDetectSkippingExtractions" : "mt 4/16/2019 11:19",
 		"test09UpToDetectReference" : "mt 4/16/2019 13:53",
 		"test10ExtractProperties" : "mt 4/16/2019 14:12",
-		"test11ExtractPropertiesOverloaded" : "mt 4/16/2019 14:17",
-		"test12ExtractPropertiesOverloadedWithReference" : "mt 4/16/2019 14:33",
+		"test11ExtractPropertiesOverloaded" : "mt 4/29/2019 14:53",
+		"test12ExtractPropertiesOverloadedWithReference" : "mt 4/29/2019 14:54",
 		"test13DefaultProperties" : "mt 4/16/2019 14:48",
 		"test14DefaultPropertiesAtEnd" : "mt 4/16/2019 15:21",
 		"test15ExtractPropertiesWithObject" : "mt 4/16/2019 15:17",
@@ -38,5 +38,5 @@
 		"test17DefaultPropertiesFallback" : "mt 4/25/2019 09:53",
 		"test18EmptyInputEmptyOutput" : "mt 4/17/2019 09:07",
 		"test19FailedExtraction" : "mt 4/26/2019 16:38",
-		"test20MergeConsecutiveExtractions" : "mt 4/26/2019 16:46",
+		"test20AppendPropertyExtractions" : "mt 4/29/2019 14:55",
 		"test21FailedExtractionMerged" : "mt 4/26/2019 16:54" } }

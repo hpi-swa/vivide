@@ -15,6 +15,6 @@ steporderedSteps
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '3 September 2013 3:26:55 pm').
 (#inputKind -> ViScriptOrganizer).
-(#outputKind -> ViQueryStep).
+(#outputKind -> ViScriptPart).
 (#priority -> 390).
 (#view -> ViTreeViewExtended)}))})

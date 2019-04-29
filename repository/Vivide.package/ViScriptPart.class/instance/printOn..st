@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printOn: stream
 
 	self isMeta ifTrue: [stream nextPutAll: ' <meta>'].

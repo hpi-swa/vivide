@@ -1,4 +1,4 @@
-as yet unclassified
+notification
 objectNotifiersWith: someObjects
 	"Supports notifiers by class, by block, and as lists of the same.
 	For example, '... #notifier -> { [:incoming | MyNotifier createWith: incoming]. MyOtherGenericNotifier } ' "

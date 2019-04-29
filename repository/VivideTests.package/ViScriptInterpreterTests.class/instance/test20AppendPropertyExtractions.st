@@ -1,5 +1,5 @@
 tests
-test20MergeConsecutiveExtractions
+test20AppendPropertyExtractions
 	"Consecutive extraction steps are merged by default. You can use a script property to control that."
 	
 	| script interpreter |

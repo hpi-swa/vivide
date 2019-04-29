@@ -11,7 +11,7 @@ initializePrimaryList
 		text: '+';
 		acceptedDropBlock: [:passenger :type | #(objects artifact queries) includes: type];
 		convertPassengerBlock: [:objects | (objects collect: [:obj |
-			(obj isKindOf: ViQueryStep) ifTrue: [obj] ifFalse: []])
+			obj isScript ifTrue: [obj] ifFalse: []])
 				reject: [:obj | obj isNil]].
 	
 	self halt.

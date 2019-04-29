@@ -1,4 +1,4 @@
-as yet unclassified
+notification
 nextObjectNotifiers
 
 	^ Array streamContents: [:strm | self nextStepsDo: [:step |

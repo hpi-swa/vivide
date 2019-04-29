@@ -14,7 +14,7 @@ stepformattedQueries
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '7 December 2015 2:00:40 pm').
-(#inputKind -> ViQueryStep).
-(#outputKind -> ViQueryStep).
+(#inputKind -> ViScriptPart).
+(#outputKind -> ViScriptPart).
 (#view -> ViTreeView).
 (#yieldOn -> #(#activated))}))})

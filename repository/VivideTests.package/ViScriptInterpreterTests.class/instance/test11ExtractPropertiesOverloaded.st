@@ -4,7 +4,7 @@ test11ExtractPropertiesOverloaded
 	| script interpreter |
 	script := {
 		[:num | #text -> num asString].
-		[:num | #text -> num class name].
+		[:num | #text -> num class name] -> { #mergeProperty -> true }.
 	} asScript.
 	interpreter := ViScriptInterpreter on: script using: #(2 3).
 	interpreter upToExtraction.

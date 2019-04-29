@@ -8,7 +8,7 @@ test12ExtractPropertiesOverloadedWithReference
 	} asScript.
 	outer := inner asReference.
 	outer adoptOrganization: inner organization.
-	outer next: ([:num | #text -> num asString] asScript
+	outer next: ({[:num | #text -> num asString] -> { #mergeProperty -> true }} asScript
 					adoptOrganization: outer organization;
 					yourself).
 	
