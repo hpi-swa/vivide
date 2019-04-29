@@ -3,7 +3,7 @@ stepd0ae6ef9b997c244a7b405e84e02e54b
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'87f0e990-74fd-a74f-90cb-783416715f96').
 (#iconCode -> 'UiSilkIcons pageWhiteWorldIcon').
 (#id -> #'d0ae6ef9-b997-c244-a7b4-05e84e02e54b').

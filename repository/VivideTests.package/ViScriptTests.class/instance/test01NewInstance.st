@@ -2,7 +2,7 @@ tests - construction
 test01NewInstance
 
 	| script |
-	script := ViScriptPart new.
+	script := ViScriptStep new.
 	self
 		assert: script id notEmpty;
 		assert: script sourceCode isEmpty;

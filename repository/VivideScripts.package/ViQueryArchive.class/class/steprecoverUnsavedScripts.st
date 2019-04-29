@@ -3,7 +3,7 @@ steprecoverUnsavedScripts
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'110ae7b7-c003-5f4f-8bce-b8ec5d33741f').
 (#iconCode -> 'nil').
 (#id -> #recoverUnsavedScripts).

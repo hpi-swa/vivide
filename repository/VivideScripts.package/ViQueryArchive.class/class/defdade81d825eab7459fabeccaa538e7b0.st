@@ -6,7 +6,7 @@ defdade81d825eab7459fabeccaa538e7b0
 (#block -> [:in :out | ([:all | all collect: [:o | (
 	[:script | {
 	"Provide hint about old-style scripts."
-	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
+	#icon -> (script class == ViScriptStep ifFalse: [UiFugueIcons exclamationSmallIcon]).
 	#text -> script baseClass name}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
@@ -18,7 +18,7 @@ defdade81d825eab7459fabeccaa538e7b0
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:script | {
 	"Provide hint about old-style scripts."
-	#icon -> (script class == ViScriptPart ifFalse: [UiFugueIcons exclamationSmallIcon]).
+	#icon -> (script class == ViScriptStep ifFalse: [UiFugueIcons exclamationSmallIcon]).
 	#text -> script baseClass name}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

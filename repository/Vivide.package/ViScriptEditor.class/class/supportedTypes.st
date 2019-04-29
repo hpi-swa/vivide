@@ -3,4 +3,4 @@ supportedTypes
 
 	VivideLight useClassicMode ifTrue: [^ {}].
 
-	^ {ViScriptPart}
+	^ {ViScriptStep}

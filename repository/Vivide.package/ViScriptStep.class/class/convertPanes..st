@@ -4,4 +4,4 @@ convertPanes: paneSpecs
 
 	^ self
 		convertPanes: paneSpecs
-		toScript: ViScriptPart new   
+		toScript: ViScriptStep new   

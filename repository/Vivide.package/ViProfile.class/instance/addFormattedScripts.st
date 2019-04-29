@@ -4,7 +4,7 @@ addFormattedScripts
 	self addScript: {
 	
 		[:scripts | scripts sorted: [:s1 :s2 | s1 priority <= s2 priority]] -> {
-			#inputKind -> ViScriptPart. #outputKind -> ViScriptPart.
+			#inputKind -> ViScriptStep. #outputKind -> ViScriptStep.
 			#label -> 'Scripts'.
 			#id -> #formattedQueries.
 			#view -> ViTreeView.

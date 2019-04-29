@@ -3,7 +3,7 @@ stepgroupsUnsorted
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'c9ef82bd-db12-d446-a43f-558a04f98be2').
 (#iconCode -> 'nil').
 (#id -> #groupsUnsorted).

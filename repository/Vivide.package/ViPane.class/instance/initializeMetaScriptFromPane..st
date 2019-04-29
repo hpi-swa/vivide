@@ -2,7 +2,7 @@ initialization
 initializeMetaScriptFromPane: pane
 
 	| metaScript metaWidget |
-	metaScript := ViScriptPart convertPanes: {pane asDictionary}.
+	metaScript := ViScriptStep convertPanes: {pane asDictionary}.
 	metaWidget := ViMultiPaneTiled new addPane: pane; yourself.
 
 	"Preserve window color and label."

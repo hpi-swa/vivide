@@ -3,7 +3,7 @@ steptranscript
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'2c1bdde5-03ff-4341-8de6-d518dbf88ba7').
 (#iconCode -> 'ViIcons icons8BulletedList64px2Icon').
 (#id -> #transcript).

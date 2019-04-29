@@ -3,7 +3,7 @@ stepdebuggerBindings
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'1c0a54ab-f2e4-7747-a0b9-5b9444e5d0dd').
 (#iconCode -> 'UiFugueIcons blockIcon').
 (#id -> #debuggerBindings).

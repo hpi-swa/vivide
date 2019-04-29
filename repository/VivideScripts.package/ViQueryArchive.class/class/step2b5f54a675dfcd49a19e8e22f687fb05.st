@@ -3,7 +3,7 @@ step2b5f54a675dfcd49a19e8e22f687fb05
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'9d09ac24-315c-ac4c-af8b-ca5eb7b05f23').
 (#iconCode -> 'UiFugueIcons priceTagIcon').
 (#id -> #'2b5f54a6-75df-cd49-a19e-8e22f687fb05').
@@ -15,10 +15,6 @@ step2b5f54a675dfcd49a19e8e22f687fb05
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '18 October 2015 11:03:50 am').
 (#inputKind -> ClassDescription).
-(#orientation -> [ViScriptPart useHorizontalLists
-		ifTrue: [#horizontal]
-		ifFalse: [#default]]).
+(#orientation -> #default).
 (#priority -> 110).
-(#view -> [ViScriptPart useHorizontalLists
-		ifTrue: [ViListView]
-		ifFalse: [ViTreeViewExtended]])}))})
+(#view -> ViTreeViewExtended)}))})

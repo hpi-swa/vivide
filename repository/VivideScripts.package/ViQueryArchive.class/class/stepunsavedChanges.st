@@ -3,7 +3,7 @@ stepunsavedChanges
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'2822a617-9ef3-d644-98ed-f98dbb95168f').
 (#iconCode -> 'nil').
 (#id -> #unsavedChanges).

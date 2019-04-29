@@ -3,7 +3,7 @@ step894088c29d245b4092462e1a298fe761
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'405e59d0-1889-a842-a4e4-d779e69f8968').
 (#iconCode -> 'UiSilkIcons chartBarIcon').
 (#id -> #'894088c2-9d24-5b40-9246-2e1a298fe761').

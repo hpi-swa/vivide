@@ -3,7 +3,7 @@ stepartifacts
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'e06097d2-1a38-4845-ae0e-d68113bd2be5').
 (#iconCode -> 'nil').
 (#id -> #artifacts).

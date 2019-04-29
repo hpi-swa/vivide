@@ -1,4 +1,4 @@
 support - properties
 propertiesToIgnore
 
-	^ ViScriptPart specialProperties
+	^ ViScriptStep specialProperties

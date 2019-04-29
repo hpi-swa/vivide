@@ -9,7 +9,7 @@ convertFromString: aString
 		(properties value includesKey: #isProperty) ifTrue: [
 			code := self wrapExtractionIntoArray: code].
 		
-		ViScriptPart new in: [:script |
+		ViScriptStep new in: [:script |
 			script notifier doSilently: [
 				script sourceCode: (self applyTemplate: template toSourceCode: code).
 				properties keysAndValuesDo: [:key :value |

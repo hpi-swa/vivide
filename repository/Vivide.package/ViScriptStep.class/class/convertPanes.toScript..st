@@ -11,7 +11,7 @@ convertPanes: paneSpecs toScript: firstPart
 			scripts removeLast unregister].
 		(paneSpecs size - scripts size max: 0) timesRepeat: [
 			"Append trailing scripts."
-			scripts add: ViScriptPart new.
+			scripts add: ViScriptStep new.
 			(scripts atLast: 2) next: scripts last].
 		scripts with: paneSpecs do: [:script :spec |
 			| template |

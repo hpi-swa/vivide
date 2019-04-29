@@ -16,9 +16,9 @@ updateScript
 		sorted: [:p1 :p2 | p1 topLeft <= p2 topLeft "keep it stable"])
 		collect: [:pane | pane asDictionary].
 
-	scripts := (ViScriptPart
+	scripts := (ViScriptStep
 		convertPanes: paneSpecs
-		toScript: (self currentQuery ifNil: [ViScriptPart new]))
+		toScript: (self currentQuery ifNil: [ViScriptStep new]))
 			steps.   
 			
 	"Ensure same tool-local organization."

@@ -3,7 +3,7 @@ stepoutline
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'e50b9af1-42f0-5a44-ba3d-be27b8cb0fdf').
 (#iconCode -> 'nil').
 (#id -> #outline).
@@ -16,10 +16,6 @@ stepoutline
 (#creationTimeStamp -> '12 May 2015 4:39:25 pm').
 (#inputKind -> ClassDescription).
 (#notifier -> ViSystemChangeNotifier).
-(#orientation -> [ViScriptPart useHorizontalLists
-		ifTrue: [#horizontal]
-		ifFalse: [#default]]).
+(#orientation -> #default).
 (#priority -> 40).
-(#view -> [ViScriptPart useHorizontalLists
-		ifTrue: [ViListView]
-		ifFalse: [ViTreeViewExtended]])}))})
+(#view -> ViTreeViewExtended)}))})

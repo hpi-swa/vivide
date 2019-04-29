@@ -5,7 +5,7 @@ mergeSingleSelectorInLocalArchive: selector
 	
 	self flag: #todo. "mt: Are there other was to find the correct organization of a temporary script, which is not part of any profile?"
 	(selector beginsWith: #step)
-		ifTrue: [organization := (ViScriptPart allInstances
+		ifTrue: [organization := (ViScriptStep allInstances
 					detect: [:s | (s isDefault not
 						and: [s archive == self localArchive])
 						and: [s referenceInArchive selector = selector]]

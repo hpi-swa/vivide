@@ -3,7 +3,7 @@ stepgroupsMinimal
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'1aa18191-d968-b347-aad8-96e6fc1ecd3d').
 (#iconCode -> 'nil').
 (#id -> #groupsMinimal).

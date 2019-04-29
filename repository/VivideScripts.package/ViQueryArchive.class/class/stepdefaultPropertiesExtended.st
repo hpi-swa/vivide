@@ -3,7 +3,7 @@ stepdefaultPropertiesExtended
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'81e09cb2-b3ab-b345-b591-fd828ea01434').
 (#iconCode -> 'nil').
 (#id -> #defaultPropertiesExtended).

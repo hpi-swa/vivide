@@ -3,7 +3,7 @@ stepgroups
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'5d21216a-0b20-9e46-9336-4320f1403995').
 (#iconCode -> 'nil').
 (#id -> #groups).

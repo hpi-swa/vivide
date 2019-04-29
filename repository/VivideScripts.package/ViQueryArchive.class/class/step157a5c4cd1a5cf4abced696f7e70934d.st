@@ -3,7 +3,7 @@ step157a5c4cd1a5cf4abced696f7e70934d
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'5426a091-f7c0-7144-9fa4-0e95573f4f65').
 (#iconCode -> 'nil').
 (#id -> #'157a5c4c-d1a5-cf4a-bced-696f7e70934d').

@@ -3,7 +3,7 @@ stepinheritance
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'3f73a2f0-13d2-3a4e-aa20-2ed366310ce6').
 (#iconCode -> 'nil').
 (#id -> #inheritance).

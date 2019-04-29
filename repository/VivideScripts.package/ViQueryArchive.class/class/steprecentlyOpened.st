@@ -3,7 +3,7 @@ steprecentlyOpened
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'4f13abce-d727-5143-a569-3a329c380f68').
 (#iconCode -> 'nil').
 (#id -> #recentlyOpened).

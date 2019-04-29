@@ -3,7 +3,7 @@ step34d74f0397696140afa3e3b7a3f2cd59
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'714534c0-32b8-8444-af6f-b7e2f4be6913').
 (#iconCode -> 'UiFugueIcons uiTextFieldIcon').
 (#id -> #'34d74f03-9769-6140-afa3-e3b7a3f2cd59').

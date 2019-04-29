@@ -3,7 +3,7 @@ stepsendersScripts
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'cd20d484-7acf-1d4b-8ad9-77735038cbf7').
 (#iconCode -> 'nil').
 (#id -> #sendersScripts).

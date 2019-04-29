@@ -3,7 +3,7 @@ stepe36efb5e3ac6e540af1c498872dec4b2
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'6dd427e2-9e4e-b745-bda4-948a2487eccb').
 (#iconCode -> 'ViEclipseIcons classHiIcon').
 (#id -> #'e36efb5e-3ac6-e540-af1c-498872dec4b2').

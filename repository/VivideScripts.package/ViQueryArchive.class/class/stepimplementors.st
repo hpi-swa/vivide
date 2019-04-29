@@ -3,7 +3,7 @@ stepimplementors
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#class -> ViScriptStep).
 (#definition -> #'43a540d6-480d-1243-9f91-69cbaedd58ab').
 (#iconCode -> 'UiFugueIcons scriptsTextIcon').
 (#id -> #implementors).
