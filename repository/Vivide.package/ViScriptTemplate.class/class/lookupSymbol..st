@@ -6,7 +6,13 @@ lookupSymbol: aSymbol
 
 	ViScriptOrganizer active ifNotNil: [:organization |
 		(organization stepById: aSymbol) ifNotNil: [:script | ^ script]].
-		
+
+	ViProfile active ifNotNil: [:profile |
+		(profile organization stepById: aSymbol) ifNotNil: [:script | ^ script]].
+
+	VivideLight active ifNotNil: [:vivide |
+		(vivide profile organization stepById: aSymbol) ifNotNil: [:script | ^ script]].
+	
 	VivideLight defaultScriptOrganization ifNotNil: [:organization |
 		(organization stepById: aSymbol) ifNotNil: [:script | ^ script]].
 	
