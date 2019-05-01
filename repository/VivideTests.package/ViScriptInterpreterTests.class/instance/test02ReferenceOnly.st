@@ -9,12 +9,14 @@ test02ReferenceOnly
 	interpreter := ViScriptInterpreter on: near using: #(1 2 3).
 	
 	self
-		assert: interpreter stack isEmpty;
+		assert: 1 equals: interpreter stack size;
+		assert: near equals: interpreter stack top thisStep;
 		assert: near equals: interpreter next;
 		deny: interpreter atEnd.
 	interpreter doNext.
 	self
-		assert: near equals: interpreter stack top;
+		assert: 2 equals: interpreter stack size;
+		assert: far equals: interpreter stack top thisStep;
 		assert: far equals: interpreter next;
 		deny: interpreter atEnd.
 	interpreter doNext.

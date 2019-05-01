@@ -1,4 +1,4 @@
 accessing
 referenceStack
 
-	^ referenceStack ifNil: [referenceStack := Stack new]
+	^ referenceStack ifNotNil: [self copyStack: referenceStack]

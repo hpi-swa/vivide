@@ -7,10 +7,10 @@ interpretPropertyExtraction
 	
 	"Look for model class for later node creation."
 	self flag: #documentation. "mt: Is this discoverable?!"
-	(step valueOfProperty: #modelClass)
+	(self next valueOfProperty: #modelClass)
 		ifNotNil: [:cls | modelClass := cls].   
 	
-	(step process: self objects) in: [:extractedProperties |
+	(self next process: self objects) in: [:extractedProperties |
 		| propertiesToUse |
 		"Automatically treat results as properties of a node. Expand if necessary. Avoids superfluous scripts."
 		propertiesToUse := extractedProperties collect: [:thing | thing isDictionary
@@ -25,7 +25,7 @@ interpretPropertyExtraction
 				propertiesToUse collect: [:p | p collect: [:pp | ViScriptTemplate convertObjectProperty: pp] ]).
 				
 	"Update objects according to #object or #objects property if existing. See ViQueryNode >> #inputForChildren."
-	step isMeta
+	self next isMeta
 		ifTrue: [
 			self flag: #metaScript. "mt: Sigh... See ViScriptPart >> #convertPanes:toScript:."
 			transformedObjects := (propertiesToUse first detect: [:assoc | assoc key = #objects]) value.
@@ -41,4 +41,4 @@ interpretPropertyExtraction
 			]
 		].
 
-	objects := transformedObjects.
+	self objects: transformedObjects.

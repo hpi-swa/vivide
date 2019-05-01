@@ -2,12 +2,26 @@ instance creation
 fromNode: node
 	"Configure a new interpreter based on information from the given model node."
 
-	^ self new
+	| newInstance |
+	newInstance := self new.
+	
+	newInstance
 		first: node firstStep;
-		next: node firstStep;
 		objects: node inputForChildren;
-		stack: node referenceStack copy;
 		bindings: Dictionary new;
 		bind: #thisPane to: node pane;
-		bind: #thisView to: (node pane ifNotNil: #view);
-		yourself
+		bind: #thisView to: (node pane ifNotNil: #view).
+		
+	node referenceStack
+		ifNil: [
+			"Root node."
+			newInstance
+				stack: (Stack new push: node firstStep activate; yourself);
+				activateNext]
+		ifNotNil: [:stack |
+			"Intermediate node."
+			newInstance
+				next: node firstStep;
+				stack: stack].
+			
+	^ newInstance

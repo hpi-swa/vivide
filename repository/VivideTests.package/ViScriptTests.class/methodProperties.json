@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "mt 4/29/2019 13:47",
+		"expectedFailures" : "mt 5/1/2019 16:08",
 		"test01CacheCompiledCode" : "mt 4/23/2019 09:50",
 		"test01Copy" : "mt 4/29/2019 13:23",
 		"test01IsEndOfLevel" : "mt 4/26/2019 09:13",

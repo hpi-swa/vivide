@@ -15,7 +15,8 @@ test04ReferenceMultiple
 	interpreter := ViScriptInterpreter on: near using: #(1 2 3).
 	
 	self
-		assert: interpreter stack isEmpty;
+		assert: 1 equals: interpreter stack size;
+		assert: near equals: interpreter stack top thisStep;
 		assert: near equals: interpreter next;
 		deny: interpreter atEnd.
 

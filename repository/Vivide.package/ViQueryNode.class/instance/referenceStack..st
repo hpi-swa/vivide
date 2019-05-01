@@ -1,5 +1,4 @@
 accessing
 referenceStack: aStack
-	"Referenced queries in progress."
 	
-	referenceStack := aStack.
+	referenceStack := self copyStack: aStack.

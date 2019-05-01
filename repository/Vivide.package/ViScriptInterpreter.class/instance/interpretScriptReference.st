@@ -1,6 +1,6 @@
 interpreting - private
 interpretScriptReference
-
-	self stack push: self next.
+	"Backwards compatiblilty."
 	
-	self next: self next reference.
+	self next reference ifNotNil: [:step |
+		self stack push: step activate].

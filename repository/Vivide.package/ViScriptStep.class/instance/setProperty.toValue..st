@@ -14,7 +14,12 @@ setProperty: property toValue: newValue
 		"Normalize #inputKind and #outputKind."
 		(property = #inputKind or: [property = #outputKind])
 			ifTrue: [super setProperty: property toValue: (self normalizedKind: newValue)]
-			ifFalse: [super setProperty: property toValue: newValue].
+			ifFalse: [
+				"Normalize #before and #after."
+				(property = #before or: [property = #after])
+					ifTrue: [super setProperty: property toValue: 
+							(newValue asList collect: [:each | each isScript ifFalse: [each] ifTrue: [each id]])]
+					ifFalse: [super setProperty: property toValue: newValue]].
 			
 		"The #isNew property is for temporary use only."
 		self flag: #refactor. "mt: Find another way to store #isNew property?"

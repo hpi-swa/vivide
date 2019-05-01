@@ -1,10 +1,12 @@
 instance creation
-on: aScriptStep using: someObjects
+on: firstStep using: someObjects
 
 	^ self new
-		first: aScriptStep;
-		next: aScriptStep;
+		first: firstStep;
 		objects: someObjects;
-		stack: Stack new;
 		bindings: Dictionary new;
+
+		stack: (Stack new push: firstStep activate; yourself);
+		activateNext; 		"next: nil;"
+		
 		yourself

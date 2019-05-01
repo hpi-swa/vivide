@@ -9,4 +9,5 @@ expectedFailures
 	(#defaultProperties asScript ifNotNil: [#()] ifNil: [#(
 		test05IsDefault
 		test06AdoptOrganizationForDefaultScript
-		test06CopyWithoutDefaultScripts)])
+		test06CopyWithoutDefaultScripts
+		test05MaxPropertyCount)])

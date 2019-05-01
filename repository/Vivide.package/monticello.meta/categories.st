@@ -13,9 +13,8 @@ SystemOrganization addCategory: #'Vivide-Logging'!
 SystemOrganization addCategory: #'Vivide-Memento'!
 SystemOrganization addCategory: #'Vivide-Notifications'!
 SystemOrganization addCategory: #'Vivide-Object-Notifications'!
-SystemOrganization addCategory: #'Vivide-Queries'!
+SystemOrganization addCategory: #'Vivide-Scripts'!
 SystemOrganization addCategory: #'Vivide-Queries-Notifications'!
-SystemOrganization addCategory: #'Vivide-Queries-OLD'!
 SystemOrganization addCategory: #'Vivide-Sandbox'!
 SystemOrganization addCategory: #'Vivide-Services'!
 SystemOrganization addCategory: #'Vivide-Support'!

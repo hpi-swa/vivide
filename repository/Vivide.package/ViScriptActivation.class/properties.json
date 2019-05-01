@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"thisStep",
+		"nextSteps" ],
+	"name" : "ViScriptActivation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
