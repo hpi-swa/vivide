@@ -19,4 +19,4 @@ test04ArchiveReference
 	self merge.
 
 	self assert: 2 equals: newOrganizer orderedSteps size.
-	self assert: (newOrganizer stepById: reference id) reference == (newOrganizer stepById: script id).
+	self assert: (newOrganizer stepById: reference id) afterScripts first == (newOrganizer stepById: script id).

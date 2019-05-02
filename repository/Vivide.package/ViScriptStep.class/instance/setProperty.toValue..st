@@ -2,7 +2,7 @@ properties
 setProperty: property toValue: newValue
 	"Use accessors if possible."
 
-	(#(icon id label isProperty isReference) includes: property)
+	(#(icon id label isProperty) includes: property)
 		ifTrue: [^ self perform: (property, #:) asSymbol with: newValue].  
 
 	property = #async

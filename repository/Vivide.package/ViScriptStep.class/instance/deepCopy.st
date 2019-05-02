@@ -21,12 +21,15 @@ deepCopy
 				lastStep := lastStep next.
 				copiedReferences at: lastStep id put: lastStep.
 				idMap at: step id put: lastStep id].
-		step isReference ifTrue: [step reference ifNotNil: [:referencedStep |
-			"Copy only if not already there and not a default."
+		
+		self flag: #todo. "mt: Consider #before and #after."
+		"step isReference ifTrue: [step reference ifNotNil: [:referencedStep |
+			""Copy only if not already there and not a default.""
 			((self steps includes: referencedStep) not and: [referencedStep isDefault not])
 				ifTrue: [referencedStep deepCopy in: [:r |
 					copiedReferences at: r id put: r.
-					idMap at: referencedStep id put: r id]]]].
+					idMap at: referencedStep id put: r id]]]]."
+	
 		step isMeta ifTrue: [
 			self assert: (step metaScriptReferences includes: step metaReference).
 
@@ -39,15 +42,15 @@ deepCopy
 
 	"Resolve references."
 	newQuery stepsDo: [:step |
-		step isReference ifTrue: [(step process: #(1)) in: [:someIds |
-			self flag: #refactor. "mt: Maybe it is better to rewrite the code in the reference step instead of changing the target step's id back to old? Conflicts later?"
+		"step isReference ifTrue: [(step process: #(1)) in: [:someIds |
+			self flag: #refactor. ""mt: Maybe it is better to rewrite the code in the reference step instead of changing the target step's id back to old? Conflicts later?""
 			(idMap includesKey: someIds first)
 				ifFalse: [
-					"Check whether we can resolve the ID as default script because it was not copied."
+					""Check whether we can resolve the ID as default script because it was not copied.""
 					someIds first asScript ifNil: [Error signal: 'Script copy failed! Could not resolve reference to default script.']]
 				ifTrue: [(copiedReferences at: (idMap at: someIds first))
 					in: [:target | target notifier doSilently: [target id: someIds first]]] 
-			]].
+			]]."
 		step isMeta ifTrue: [
 			((Dictionary newFrom: (step process: #(1)) first) at: #current) in: [:someId |
 				(copiedReferences at: (idMap at: someId))

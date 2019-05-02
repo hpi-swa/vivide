@@ -11,7 +11,9 @@ isValid
 			ifFalse: [^ false].
 			
 		"Mismatch between script properties and source code?"
-		(step isReference and: [step reference isNil])
+		(step before size ~= step beforeScripts size)
+			ifTrue: [^ false].
+		(step after size ~= step afterScripts size)
 			ifTrue: [^ false].
 		(step isMeta and: [step metaReference isNil])
 			ifTrue: [^ false]].

@@ -1,7 +1,17 @@
 as yet unclassified
 asReference
-	"Backwards compatibility."
+	"Backwards compatibility. Use #before and #after instead."
 	
-	^ { [:in :out | out addAll: in] -> { #after -> self id asList } } asScript
-		adoptOrganization: self organization;
-		yourself
+	| ref |
+	ref := { [:in :out | out addAll: in] -> { #after -> self id asList } } asScript.
+	
+	ref
+		unregister;
+		organization: self organization;
+		register.
+	ref definition;
+		unregister;
+		organization: self organization;
+		register.
+		
+	^ ref

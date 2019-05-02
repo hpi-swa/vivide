@@ -25,9 +25,11 @@ activateNext
 	
 	(self hasObjects and: [self hasProperties not]) ifTrue: [
 		"Use default property extraction"	
-		#defaultProperties asScript
-			ifNil: [self simulatePropertyExtraction]
-			ifNotNil: [:defaultScript |
-				self stack push: defaultScript activate.
-				self activateNext.
-				self assert: self next isPropertyExtraction]].
+		(ViScriptTemplate
+			lookupSymbol: #defaultProperties
+			startingAt: self first organization)
+				ifNil: [self simulatePropertyExtraction]
+				ifNotNil: [:defaultScript |
+					self stack push: defaultScript activate.
+					self activateNext.
+					self assert: self next isPropertyExtraction]].

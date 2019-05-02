@@ -4,14 +4,15 @@ test04ReferenceAcrossOrganizations
 	
 	| far near |
 	far := {[:num | num * num] -> { #id -> #far }} asScript.
-	near := [#far] asScript.
+	near := [:object | object] asScript.
+	near after: #far.
 	
 	self
-		assert: near reference isNil;
+		assert: near afterScripts isEmpty;
 		deny: near organization == far organization.
 	
 	ViActiveScriptOrganizer value: far organization during: [
 		self
-			assert: near reference == far;
+			assert: near afterScripts first == far;
 			deny: near organization == far organization.
 	].

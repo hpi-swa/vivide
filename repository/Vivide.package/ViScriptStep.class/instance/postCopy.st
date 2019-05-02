@@ -20,7 +20,7 @@ postCopy
 		self next register].
 
 	"Copy references?"
-	self isReference ifTrue: [
-		"??? #copyOf holds old id ???"].
+	self flag: #todo. "mt: Consider #before and #after."
+	"??? #copyOf holds old id ???"
 
 	self flag: #metaScript. "mt: What about copying meta-scripts and its organization?"

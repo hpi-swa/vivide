@@ -1,7 +1,7 @@
 properties
 valueOfProperty: property ifAbsent: block
 
-	^ (#(icon id label isProperty isReference) includes: property)
+	^ (#(icon id label isProperty) includes: property)
 		ifTrue: [self perform: property asSymbol]
 		ifFalse: [
 			"Try to resolve property in definition if existing. If fails, use own properties dictionary."			

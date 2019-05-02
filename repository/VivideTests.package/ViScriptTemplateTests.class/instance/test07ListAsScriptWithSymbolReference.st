@@ -1,9 +1,10 @@
 tests - list and script conversion
 test07ListAsScriptWithSymbolReference
 
-	| far script |
+	| far script organization |
 	far := [:num | num * num] asScript.
 	far id: #test07.
+	organization := far organization.
 
 	ViActiveScriptOrganizer value: far organization during: [
 		
@@ -13,6 +14,7 @@ test07ListAsScriptWithSymbolReference
 		} asScript.
 	
 		self
+			assert: far organization equals: organization; "No Change"
 			deny: script hasAfterScripts;
 			assert: script next isScript;
 			assert: script next hasAfterScripts;

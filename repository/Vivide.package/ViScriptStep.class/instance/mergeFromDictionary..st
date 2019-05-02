@@ -11,5 +11,5 @@ mergeFromDictionary: dict
 	self setDefinition: (dict at: #definition).
 	self setNext: (dict at: #next).
 	
-	#(isProperty isReference) do: [:prop |
+	#(isProperty) do: [:prop |
 		self perform: (prop, #:) asSymbol with: (dict at: prop)]. 

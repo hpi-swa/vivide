@@ -3,11 +3,12 @@ test03AdoptOrganizationWithReferences
 
 	| far near organization |
 	far := {[:num | num * num] -> { #id -> #far }} asScript.
-	near := [#far] asScript.
+	near := [:object | object] asScript.
+	near after: #far.
 	organization := ViScriptOrganizer new.
 	
 	self
-		assert: near reference isNil;
+		assert: near afterScripts isEmpty;
 		deny: near organization == far organization;
 		deny: near organization == organization;
 		deny: far organization == organization.
@@ -15,7 +16,7 @@ test03AdoptOrganizationWithReferences
 	"Bring far and near together."
 	far adoptOrganization: near organization.
 	self
-		assert: near reference == far;
+		assert: near afterScripts first == far;
 		assert: near organization == far organization;
 		deny: near organization == organization;
 		deny: far organization == organization.

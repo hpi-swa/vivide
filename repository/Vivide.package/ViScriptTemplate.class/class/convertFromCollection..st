@@ -24,7 +24,15 @@ convertFromCollection: someObjects
 	].
 			
 	"It is very important to give all script parts the same organization."
-	steps do: [:step | step adoptOrganization: steps first organization].
+	steps allButFirst do: [:step |
+		step
+			unregister;
+			organization: steps first organization;
+			register.
+		step definition;
+			unregister;
+			organization: steps first organization;
+			register].
 			
 	steps first notifier doSilently: [
 		steps overlappingPairsDo: [:s1 :s2 | s1 next: s2]].
