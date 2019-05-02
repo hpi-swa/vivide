@@ -2,7 +2,7 @@
 	"class" : {
 		"supportedTypes" : "mt 4/29/2019 17:57" },
 	"instance" : {
-		"acceptDroppingMorph:event:" : "mt 7/6/2015 09:39",
+		"acceptDroppingMorph:event:" : "mt 5/2/2019 09:24",
 		"acceptSourceCode" : "mt 4/11/2019 10:26",
 		"activateWizard" : "mt 4/26/2019 14:57",
 		"addArtifact" : "mt 4/9/2019 08:05",
@@ -65,7 +65,7 @@
 		"inputKind" : "mt 4/23/2019 09:29",
 		"interpretScript" : "mt 4/9/2019 07:44",
 		"interpretUpToDetect:" : "mt 4/16/2019 09:20",
-		"interpretUpToSelf" : "mt 4/16/2019 10:43",
+		"interpretUpToSelf" : "mt 5/2/2019 09:40",
 		"isScriptEndOfLevel" : "mt 4/9/2019 11:54",
 		"isScriptEndOfTree" : "mt 4/25/2019 14:40",
 		"isScriptInaccessible" : "mt 4/9/2019 11:55",
@@ -102,7 +102,7 @@
 		"setFullSourceCodeProperties" : "mt 4/12/2019 15:00",
 		"setScriptTemplate" : "mt 4/26/2019 14:52",
 		"setVisibleSourceCode" : "mt 4/9/2019 09:18",
-		"specialProperties" : "mt 4/9/2019 07:52",
+		"specialProperties" : "mt 5/2/2019 09:44",
 		"textField" : "mt 4/8/2019 14:00",
 		"textField:" : "mt 4/8/2019 14:00",
 		"thisStep" : "mt 4/5/2019 16:19",

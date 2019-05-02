@@ -28,8 +28,8 @@ test05MaxPropertyCount
 		} asScript.
 		
 		self
-			assert: script next isReference;
-			assert: script next reference == default;
+			assert: script next hasAfterScripts;
+			assert: script next afterScripts first == default;
 			assert: 2 equals: script maxPropertyCount.
 			
 		script next next: nil.

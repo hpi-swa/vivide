@@ -5,6 +5,4 @@ interpretUpToSelf
 	self flag: #tofix. "mt: Once we got rid of reference steps and work with #next only, this can become clearer."
 	
 	^ self interpretUpToDetect: [:step :input :interpreter | 
-		(self thisStep isReference)
-			ifTrue: [step = self thisStep next]
-			ifFalse: [step = self thisStep]]  
+		step = self thisStep]  

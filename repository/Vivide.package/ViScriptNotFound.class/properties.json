@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptNotFound",
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

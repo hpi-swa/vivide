@@ -2,11 +2,8 @@ drag/drop
 acceptDroppingMorph: aTransferMorph event: evt
 	"Connect dropped script."
 	
-	| script reference |
-	script := aTransferMorph passenger.
+	| sourceStep targetStep reference |
+	sourceStep := aTransferMorph passenger.
+	targetStep := self object.
 	
-	reference := self object asReference.
-	reference adoptOrganization: script organization.
-	
-	script next: reference.
-	aTransferMorph source requestArtifact: script next.  
+	sourceStep afterAdd: targetStep.

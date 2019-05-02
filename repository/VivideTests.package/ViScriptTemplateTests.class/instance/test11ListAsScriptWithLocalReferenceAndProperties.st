@@ -11,8 +11,8 @@ test11ListAsScriptWithLocalReferenceAndProperties
 	self
 		assert: 3 equals: script allSteps size;
 		assert: script steps last isScript;
-		assert: script steps last isReference;
-		assert: script steps last reference == script;
+		assert: script steps last hasAfterScripts;
+		assert: script steps last afterScripts first == script;
 		assert: #blue equals: (script valueOfProperty: #color);
 		assert: #yellow equals: (script next valueOfProperty: #color);
 		assert: #green equals: (script next next valueOfProperty: #color).	.

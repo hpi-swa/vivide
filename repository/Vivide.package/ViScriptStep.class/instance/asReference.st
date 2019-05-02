@@ -1,4 +1,7 @@
 as yet unclassified
 asReference
-
-	^ self class referenceTo: self  
+	"Backwards compatibility."
+	
+	^ { [:in :out | out addAll: in] -> { #after -> self id asList } } asScript
+		adoptOrganization: self organization;
+		yourself

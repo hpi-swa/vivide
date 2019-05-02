@@ -35,6 +35,6 @@ appropriateQueries
 		strm nextPutAll: ((self recentQueries copyWithout: self currentQuery) select: check).
 		"3) Take all other queries if they have labels and match or are global."
 		strm nextPutAll: (
-			self queries value select: [:step | (step isReference not and: [step nextLabel notNil]) and: [
+			self queries value select: [:step | step nextLabel notNil and: [
 				(step isGlobal and: [self objects isEmpty]) or: [(step isGlobal not and: [self objects notEmpty]) and: [check value: step]]]])
 	]

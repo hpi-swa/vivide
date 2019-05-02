@@ -7,7 +7,7 @@ addClassHierarchy
 			#view -> ViTreeView.
 			#label -> 'Class Hierarchy'.
 			#priority -> 45}.
-		[#defaultPropertiesExtended] -> {#isReference -> true}.
+		#defaultPropertiesExtended.
 		[:class | class subclasses].
 		2
 	} asScript.

@@ -8,13 +8,13 @@ test06CopyWithoutDefaultScripts
 	script next: default asReference.
 	
 	self
-		assert: script next isReference;
-		assert: script next reference isDefault; "... if Vivide is running ..."
-		assert: script next reference == default.
+		assert: script next hasAfterScripts;
+		assert: script next afterScripts first isDefault; "... if Vivide is running ..."
+		assert: script next afterScripts first == default.
 	
 	copy := script copy.
 
 	self
-		assert: copy next isReference;
-		assert: copy next reference isDefault; "... if Vivide is running ..."
-		assert: copy next reference == default.
+		assert: copy next hasAfterScripts;
+		assert: copy next afterScripts first isDefault; "... if Vivide is running ..."
+		assert: copy next afterScripts first == default.

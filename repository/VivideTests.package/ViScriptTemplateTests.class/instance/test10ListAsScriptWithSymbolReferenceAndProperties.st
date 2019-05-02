@@ -14,8 +14,8 @@ test10ListAsScriptWithSymbolReferenceAndProperties
 	
 		self
 			assert: script next isScript;
-			assert: script next isReference;
-			assert: script next reference == far;
+			assert: script next hasAfterScripts;
+			assert: script next afterScripts first == far;
 			assert: #blue equals: (script valueOfProperty: #color);
 			assert: #yellow equals: (script next valueOfProperty: #color).	
 	].

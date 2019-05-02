@@ -8,10 +8,9 @@ updateFromChangedStep: evt
 		ifTrue: [^ self].
 	
 	"Only things that could modify the result of #processSteps."
-	(((evt isPropertiesModified
+	((evt isPropertiesModified
 		or: [evt isDefinitionChanged])
 		or: [evt isNextChanged])
-		or: [evt item isReference and: [evt isReferenceChanged]])
 			ifFalse: [^ self].
 	
 	"Special handling for meta scripts. Do not traverse the whole chain."
