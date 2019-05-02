@@ -14,4 +14,8 @@
 		"test04OrganizationsAsNamespaces" : "mt 4/18/2019 10:22",
 		"test05ReferencesToStep" : "mt 4/18/2019 14:54",
 		"test06OrderByPriority" : "mt 4/18/2019 14:56",
-		"test07StepsWithLabel" : "mt 4/18/2019 14:58" } }
+		"test07StepsWithLabel" : "mt 4/18/2019 14:58",
+		"test08DeleteStep" : "mt 5/2/2019 13:42",
+		"test09DeleteStepWithReferences" : "mt 5/2/2019 14:04",
+		"test10DeleteStepWithBeforeAfter" : "mt 5/2/2019 14:24",
+		"test11DeleteStepWithNoReplacement" : "mt 5/2/2019 14:48" } }

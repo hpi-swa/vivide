@@ -17,16 +17,11 @@ lookupTemplate: code
 	"Works just in script editor because it is a direct lookup otherwise."
 	(node isBlock not and: [node value isSymbol])
 		ifTrue: [
-			properties at: #isReference put: true.
+			properties at: #after put: node value asList.
 			template := self templateReference].	
 	
 	node isBlock ifTrue: [
-		node arguments size = 0 ifTrue: [
-			(node body statements size = 1 and: [node body statements first value isSymbol])
-				ifFalse: [template := self templateGlobal]
-				ifTrue: [
-					properties at: #isReference put: true.
-					template := self templateReferenceBlock]].
+		node arguments size = 0 ifTrue: [template := self templateGlobal].
 		node arguments size > 1 ifTrue: [
 			(node arguments size = 2
 				and: [node argumentNames hasEqualElements: #(in out)])

@@ -1,23 +1,33 @@
 maintenance
-deleteStep: aQueryStep
-	"Unregister and remove from all queries. DANGEROUS!"
+deleteStep: aStep
+	"Unregister and remove from all scripts. DANGEROUS!"
 	
+	| removal replacement |
 	self
-		assert: aQueryStep isRegistered;
-		assert: aQueryStep organization == self.
+		assert: aStep isRegistered;
+		assert: aStep organization == self.
 	
-	"1) Skip this step in all queries."
-	(self referencesToStep: aQueryStep) do: [:step |
+	"1) Skip this step in all scripts."
+	removal := aStep.
+	replacement := aStep next.
+	(self referencesToStep: removal) do: [:step |
 		step isMeta
-			ifTrue: [step metaReference: aQueryStep next]
-			ifFalse: [(step isReference and: [step reference == aQueryStep])
-				ifTrue: [step reference: aQueryStep next]
-				ifFalse: [
-					self assert: step next == aQueryStep .
-					step next: aQueryStep next]]].
+			ifTrue: [step metaReference: replacement]
+			ifFalse: [
+				"A) #before and #after" 
+				replacement
+					ifNil: [
+						step before: (step before copyWithout: removal id).
+						step after: (step after copyWithout: removal id)]
+					ifNotNil: [
+						step before: (step before copyReplaceAll: {removal id} with: {replacement id}).
+						step after: (step after copyReplaceAll: {removal id} with: {replacement id})].
+				"B) #next"
+				step next == removal
+					ifTrue: [step next: replacement]]].
 	
 	"2) Do not point to anything anymore."
-	aQueryStep next: nil.
+	aStep next: nil.
 	
 	"3) Forget about it."
-	aQueryStep unregister.
+	aStep unregister.

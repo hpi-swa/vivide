@@ -12,11 +12,7 @@ interpretScript
 	step isPropertyExtraction ifTrue: [
 		self interpretPropertyExtraction.
 		^ step := nil].
-	
-	step isReference ifTrue: [
-		self interpretScriptReference.
-		^ step := nil].
-	
+		
 	step isObjectTransformation ifTrue: [
 		self interpretObjectTransformation.
 		^ step := nil].
