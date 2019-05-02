@@ -8,7 +8,6 @@ step70f2866cc1934849bbc6734357c4521f
 (#iconCode -> 'nil').
 (#id -> #'70f2866c-c193-4849-bbc6-734357c4521f').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Script Objects').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

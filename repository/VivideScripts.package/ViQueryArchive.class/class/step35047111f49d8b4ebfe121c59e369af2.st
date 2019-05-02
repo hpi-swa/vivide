@@ -8,9 +8,9 @@ step35047111f49d8b4ebfe121c59e369af2
 (#iconCode -> 'nil').
 (#id -> #'35047111-f49d-8b4e-bfe1-21c59e369af2').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groupsUnsorted)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '9 December 2015 11:55:27 am')}))})

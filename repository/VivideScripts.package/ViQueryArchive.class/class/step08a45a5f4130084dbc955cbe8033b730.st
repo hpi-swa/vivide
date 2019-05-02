@@ -8,7 +8,6 @@ step08a45a5f4130084dbc955cbe8033b730
 (#iconCode -> 'nil').
 (#id -> #'08a45a5f-4130-084d-bc95-5cbe8033b730').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Message tally').
 (#next -> #'b44723c5-0063-0f4d-a4b7-1bd13591ae84').
 (#properties -> (Dictionary newFrom: {

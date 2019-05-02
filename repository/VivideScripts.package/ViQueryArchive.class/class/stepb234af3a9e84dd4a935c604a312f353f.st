@@ -8,7 +8,6 @@ stepb234af3a9e84dd4a935c604a312f353f
 (#iconCode -> 'UiSilkIcons timeIcon').
 (#id -> #'b234af3a-9e84-dd4a-935c-604a312f353f').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Method Versions').
 (#next -> #'4ee8e2d8-9bc6-7645-b541-f743df30fe9d').
 (#properties -> (Dictionary newFrom: {

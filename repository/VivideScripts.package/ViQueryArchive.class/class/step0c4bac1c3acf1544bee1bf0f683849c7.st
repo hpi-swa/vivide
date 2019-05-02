@@ -8,7 +8,6 @@ step0c4bac1c3acf1544bee1bf0f683849c7
 (#iconCode -> 'UiFugueIcons plusSmallIcon').
 (#id -> #'0c4bac1c-3acf-1544-bee1-bf0f683849c7').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Extensions').
 (#next -> #'ed98259d-40ba-b843-bb32-4e77d29904ec').
 (#properties -> (Dictionary newFrom: {

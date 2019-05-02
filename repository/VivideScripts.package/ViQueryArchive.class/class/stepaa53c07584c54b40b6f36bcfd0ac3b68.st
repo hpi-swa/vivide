@@ -8,7 +8,6 @@ stepaa53c07584c54b40b6f36bcfd0ac3b68
 (#iconCode -> 'UiFugueIcons picturesIcon').
 (#id -> #'aa53c075-84c5-4b40-b6f3-6bcfd0ac3b68').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Pictures').
 (#next -> #'78d3db6d-6a90-614d-88f9-eed2f96f9d05').
 (#properties -> (Dictionary newFrom: {

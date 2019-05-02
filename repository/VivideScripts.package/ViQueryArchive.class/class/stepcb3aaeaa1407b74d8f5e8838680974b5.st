@@ -8,7 +8,6 @@ stepcb3aaeaa1407b74d8f5e8838680974b5
 (#iconCode -> 'nil').
 (#id -> #'cb3aaeaa-1407-b74d-8f5e-8838680974b5').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Bookmarks').
 (#next -> #'acccd738-5017-5e44-ba68-cc46761670dc').
 (#properties -> (Dictionary newFrom: {

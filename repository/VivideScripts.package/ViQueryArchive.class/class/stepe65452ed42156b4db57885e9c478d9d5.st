@@ -8,7 +8,6 @@ stepe65452ed42156b4db57885e9c478d9d5
 (#iconCode -> 'nil').
 (#id -> #'e65452ed-4215-6b4d-b578-85e9c478d9d5').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'e412ba63-4769-6448-bdf0-693f6bf51a84').
 (#properties -> (Dictionary newFrom: {

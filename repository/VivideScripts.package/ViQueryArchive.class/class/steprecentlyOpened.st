@@ -8,7 +8,6 @@ steprecentlyOpened
 (#iconCode -> 'nil').
 (#id -> #recentlyOpened).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Recently Opened').
 (#next -> #'c4ee7c1c-d764-1148-89be-c82a7c91889c').
 (#properties -> (Dictionary newFrom: {

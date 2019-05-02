@@ -8,7 +8,6 @@ stepgroups
 (#iconCode -> 'nil').
 (#id -> #groups).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'21bca680-25a5-1e4b-8a4b-de8ef046376f').
 (#properties -> (Dictionary newFrom: {

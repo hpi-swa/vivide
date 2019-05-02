@@ -8,7 +8,6 @@ step78a4e23d75dc65458dfa2e3ec49b7eb8
 (#iconCode -> 'nil').
 (#id -> #'78a4e23d-75dc-6545-8dfa-2e3ec49b7eb8').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Class metrics (NOM, NOA)').
 (#next -> #'524b534f-b2f5-2447-a4d0-9a1769f2d123').
 (#properties -> (Dictionary newFrom: {

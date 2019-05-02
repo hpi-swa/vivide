@@ -8,7 +8,6 @@ step34d74f0397696140afa3e3b7a3f2cd59
 (#iconCode -> 'UiFugueIcons uiTextFieldIcon').
 (#id -> #'34d74f03-9769-6140-afa3-e3b7a3f2cd59').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Input field').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

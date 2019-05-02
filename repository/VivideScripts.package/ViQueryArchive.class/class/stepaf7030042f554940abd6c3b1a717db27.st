@@ -8,7 +8,6 @@ stepaf7030042f554940abd6c3b1a717db27
 (#iconCode -> 'nil').
 (#id -> #'af703004-2f55-4940-abd6-c3b1a717db27').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Methods w/ Longest History').
 (#next -> #'59e1a354-ea9e-3d4d-b4c6-70d3a9eb6d48').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ steprecoverUnsavedScripts
 (#iconCode -> 'nil').
 (#id -> #recoverUnsavedScripts).
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Recover Unsaved Scripts').
 (#next -> #'1b7534bd-882c-2d45-8ff7-04510695ae1c').
 (#properties -> (Dictionary newFrom: {

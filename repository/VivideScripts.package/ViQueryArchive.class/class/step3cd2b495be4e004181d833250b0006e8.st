@@ -8,7 +8,6 @@ step3cd2b495be4e004181d833250b0006e8
 (#iconCode -> 'UiSilkIcons worldIcon').
 (#id -> #'3cd2b495-be4e-0041-81d8-33250b0006e8').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'MC Repositories').
 (#next -> #'df738ebd-6882-8743-9dbb-746c1bba0641').
 (#properties -> (Dictionary newFrom: {

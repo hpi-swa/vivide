@@ -8,7 +8,6 @@ step78cd19878352584e9b6b7582a5be6451
 (#iconCode -> 'UiSilkIcons pencilIcon').
 (#id -> #'78cd1987-8352-584e-9b6b-7582a5be6451').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Source code').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

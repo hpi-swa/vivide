@@ -8,7 +8,6 @@ stepeb55b2aeb8c0504395aba2f9497d4956
 (#iconCode -> 'UiSilkIcons pencilIcon').
 (#id -> #'eb55b2ae-b8c0-5043-95ab-a2f9497d4956').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Source code').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

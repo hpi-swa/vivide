@@ -8,7 +8,6 @@ step761098d48a292a47be447677570b352e
 (#iconCode -> 'nil').
 (#id -> #'761098d4-8a29-2a47-be44-7677570b352e').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Global variables').
 (#next -> #'b193f637-d3a4-cb4b-9b3e-94c7b7ba29e9').
 (#properties -> (Dictionary newFrom: {

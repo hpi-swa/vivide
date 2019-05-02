@@ -8,7 +8,6 @@ step3f2ccc8f3fd62243b5e41a2f686ed9bc
 (#iconCode -> 'nil').
 (#id -> #'3f2ccc8f-3fd6-2243-b5e4-1a2f686ed9bc').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Decompile w/ temps').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

@@ -8,9 +8,9 @@ stepf3d7bcce59e76248811fb04d54ba406d
 (#iconCode -> 'nil').
 (#id -> #'f3d7bcce-59e7-6248-811f-b04d54ba406d').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groups)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '2 April 2019 4:48:13.102834 pm')}))})

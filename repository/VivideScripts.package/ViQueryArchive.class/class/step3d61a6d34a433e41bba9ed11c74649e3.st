@@ -8,7 +8,6 @@ step3d61a6d34a433e41bba9ed11c74649e3
 (#iconCode -> 'nil').
 (#id -> #'3d61a6d3-4a43-3e41-bba9-ed11c74649e3').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Change Set Preamble').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

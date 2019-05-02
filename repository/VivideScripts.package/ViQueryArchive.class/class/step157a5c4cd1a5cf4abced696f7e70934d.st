@@ -8,7 +8,6 @@ step157a5c4cd1a5cf4abced696f7e70934d
 (#iconCode -> 'nil').
 (#id -> #'157a5c4c-d1a5-cf4a-bced-696f7e70934d').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'fb20347b-7a6f-be43-bd78-88492dc2d4b1').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ stepe91a4f525c394c4cb5c51311bacd5025
 (#iconCode -> 'nil').
 (#id -> #'e91a4f52-5c39-4c4c-b5c5-1311bacd5025').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'8ebc1c71-5396-204d-98e9-e545b22d0823').
 (#properties -> (Dictionary newFrom: {

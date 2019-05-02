@@ -8,9 +8,9 @@ stepfb29cb249914764a864e6e8e1cf8ace2
 (#iconCode -> 'nil').
 (#id -> #'fb29cb24-9914-764a-864e-6e8e1cf8ace2').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> #'89c40fb8-551c-9e46-9651-f11978e9ff30').
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groupsMinimal)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '2 April 2019 4:48:11.276834 pm')}))})

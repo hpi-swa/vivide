@@ -8,7 +8,6 @@ step0ea571f72db0b843a9ee8203b56d13c9
 (#iconCode -> 'UiFugueIcons scriptAttributeMIcon').
 (#id -> #'0ea571f7-2db0-b843-a9ee-8203b56d13c9').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Metacello Projects').
 (#next -> #'a5b86741-46bd-5b47-ab8d-a79879a3b859').
 (#properties -> (Dictionary newFrom: {

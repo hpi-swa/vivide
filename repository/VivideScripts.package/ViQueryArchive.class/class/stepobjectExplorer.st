@@ -8,7 +8,6 @@ stepobjectExplorer
 (#iconCode -> 'UiFugueIcons magnifierMediumIcon').
 (#id -> #objectExplorer).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Inspector').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

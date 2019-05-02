@@ -8,7 +8,6 @@ stepdefaultPropertiesExtended
 (#iconCode -> 'nil').
 (#id -> #defaultPropertiesExtended).
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'4ea99278-df36-f648-a9dc-f35da9d613ed').
 (#properties -> (Dictionary newFrom: {

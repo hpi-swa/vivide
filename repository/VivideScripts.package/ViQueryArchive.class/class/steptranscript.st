@@ -8,7 +8,6 @@ steptranscript
 (#iconCode -> 'ViIcons icons8BulletedList64px2Icon').
 (#id -> #transcript).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Transcript').
 (#next -> #'c71cedcd-3e52-a742-8417-e71572b1560e').
 (#properties -> (Dictionary newFrom: {

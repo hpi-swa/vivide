@@ -8,7 +8,6 @@ step88256e17259b9c43973b01a903ccc633
 (#iconCode -> 'nil').
 (#id -> #'88256e17-259b-9c43-973b-01a903ccc633').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Test results').
 (#next -> #'8137f2f3-0fb0-d44b-a9b5-af172fdbc83d').
 (#properties -> (Dictionary newFrom: {

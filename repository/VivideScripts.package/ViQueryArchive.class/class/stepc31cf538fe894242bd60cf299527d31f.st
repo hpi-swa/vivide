@@ -8,9 +8,9 @@ stepc31cf538fe894242bd60cf299527d31f
 (#iconCode -> 'nil').
 (#id -> #'c31cf538-fe89-4242-bd60-cf299527d31f').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#recentlyOpened)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '22 July 2015 9:48:05 am')}))})

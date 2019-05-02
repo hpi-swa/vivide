@@ -8,7 +8,6 @@ stepoutline
 (#iconCode -> 'nil').
 (#id -> #outline).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Outline').
 (#next -> #'dd56b3e9-9e71-b44e-9a60-5319116f9cdd').
 (#properties -> (Dictionary newFrom: {

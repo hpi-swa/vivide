@@ -8,7 +8,6 @@ stepe25bde3e7c879f44800a93ffa8166301
 (#iconCode -> 'nil').
 (#id -> #'e25bde3e-7c87-9f44-800a-93ffa8166301').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Packages').
 (#next -> #'ac3b5160-4403-e846-987b-b3be159ed5dc').
 (#properties -> (Dictionary newFrom: {

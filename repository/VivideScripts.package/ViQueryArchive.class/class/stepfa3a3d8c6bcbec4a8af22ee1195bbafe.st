@@ -8,9 +8,9 @@ stepfa3a3d8c6bcbec4a8af22ee1195bbafe
 (#iconCode -> 'nil').
 (#id -> #'fa3a3d8c-6bcb-ec4a-8af2-2ee1195bbafe').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#inheritance)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '1 February 2016 2:17:14 pm')}))})

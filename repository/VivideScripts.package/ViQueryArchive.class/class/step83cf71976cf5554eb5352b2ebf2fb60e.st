@@ -8,7 +8,6 @@ step83cf71976cf5554eb5352b2ebf2fb60e
 (#iconCode -> 'nil').
 (#id -> #'83cf7197-6cf5-554e-b535-2b2ebf2fb60e').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Byte codes').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

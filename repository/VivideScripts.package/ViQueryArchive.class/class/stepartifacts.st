@@ -8,7 +8,6 @@ stepartifacts
 (#iconCode -> 'nil').
 (#id -> #artifacts).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Artifacts').
 (#next -> #'11ba89fb-aa6d-264a-92c1-cba5506abae1').
 (#properties -> (Dictionary newFrom: {

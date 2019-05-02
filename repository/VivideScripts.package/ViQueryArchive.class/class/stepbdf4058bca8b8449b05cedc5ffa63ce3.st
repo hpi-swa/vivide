@@ -8,7 +8,6 @@ stepbdf4058bca8b8449b05cedc5ffa63ce3
 (#iconCode -> 'nil').
 (#id -> #'bdf4058b-ca8b-8449-b05c-edc5ffa63ce3').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Mail Box').
 (#next -> #'74960bc8-7b30-5845-b46c-415c93eeb270').
 (#properties -> (Dictionary newFrom: {

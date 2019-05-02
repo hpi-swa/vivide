@@ -8,7 +8,6 @@ stepd0ae6ef9b997c244a7b405e84e02e54b
 (#iconCode -> 'UiSilkIcons pageWhiteWorldIcon').
 (#id -> #'d0ae6ef9-b997-c244-a7b4-05e84e02e54b').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Package versions in repository').
 (#next -> #'c56e2e0c-6b9a-7b43-a503-dfea27e23d82').
 (#properties -> (Dictionary newFrom: {

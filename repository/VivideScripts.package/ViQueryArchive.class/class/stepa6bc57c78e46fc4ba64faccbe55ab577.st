@@ -8,7 +8,6 @@ stepa6bc57c78e46fc4ba64faccbe55ab577
 (#iconCode -> 'nil').
 (#id -> #'a6bc57c7-8e46-fc4b-a64f-accbe55ab577').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Closed objects').
 (#next -> #'56d4e61d-ee76-514b-bc24-e352a53b0d46').
 (#properties -> (Dictionary newFrom: {

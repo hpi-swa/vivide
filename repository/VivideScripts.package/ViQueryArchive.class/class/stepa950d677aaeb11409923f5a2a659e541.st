@@ -8,7 +8,6 @@ stepa950d677aaeb11409923f5a2a659e541
 (#iconCode -> 'nil').
 (#id -> #'a950d677-aaeb-1140-9923-f5a2a659e541').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Mail Sender Histogram').
 (#next -> #'200451f4-6f37-ab48-876b-2719c863b2c9').
 (#properties -> (Dictionary newFrom: {

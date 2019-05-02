@@ -8,10 +8,10 @@ step07d98c15a20c0b459dc3ba44905e9a7a
 (#iconCode -> 'nil').
 (#id -> #'07d98c15-a20c-0b45-9dc3-ba44905e9a7a').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#'37989d23-0602-ed44-ad37-440cccc8d6d9')).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '29 March 2019 5:00:11.34035 pm').
 (#view -> ViTreeViewExtended)}))})

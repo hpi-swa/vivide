@@ -8,7 +8,6 @@ stepb3b8787175165049b09272ad966f3216
 (#iconCode -> 'nil').
 (#id -> #'b3b87871-7516-5049-b092-72ad966f3216').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Special Scripts').
 (#next -> #'757cd24a-516e-bf45-ad50-d29635e9bbee').
 (#properties -> (Dictionary newFrom: {

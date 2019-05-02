@@ -8,7 +8,6 @@ step7f804761434fc9439d9bd3e24e534b7f
 (#iconCode -> 'nil').
 (#id -> #'7f804761-434f-c943-9d9b-d3e24e534b7f').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Remove duplicates').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

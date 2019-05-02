@@ -8,7 +8,6 @@ stepa34edfe9887173439abcb10f76365684
 (#iconCode -> 'UiFugueIcons arrowStepIcon').
 (#id -> #'a34edfe9-8871-7343-9abc-b10f76365684').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'References').
 (#next -> #'47ebfeaf-f6ff-624a-8fc6-078f452527db').
 (#properties -> (Dictionary newFrom: {

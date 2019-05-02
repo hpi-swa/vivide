@@ -8,7 +8,6 @@ stepdebuggerStack
 (#iconCode -> 'nil').
 (#id -> #debuggerStack).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Suspended context').
 (#next -> #'2fdb319c-765a-1a43-863e-792e14de2c1e').
 (#properties -> (Dictionary newFrom: {

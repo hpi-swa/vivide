@@ -8,7 +8,6 @@ stepb0043854ca340844a516d5c81e51c885
 (#iconCode -> 'nil').
 (#id -> #'b0043854-ca34-0844-a516-d5c81e51c885').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Variables for whileTrue senders').
 (#next -> #'5c3b9aae-476e-cc4f-96a1-da5e5ab421ad').
 (#properties -> (Dictionary newFrom: {

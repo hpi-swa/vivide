@@ -8,7 +8,6 @@ stepgroupsUnsorted
 (#iconCode -> 'nil').
 (#id -> #groupsUnsorted).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'e91a4f52-5c39-4c4c-b5c5-1311bacd5025').
 (#properties -> (Dictionary newFrom: {

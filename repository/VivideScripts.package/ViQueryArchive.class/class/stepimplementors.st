@@ -8,7 +8,6 @@ stepimplementors
 (#iconCode -> 'UiFugueIcons scriptsTextIcon').
 (#id -> #implementors).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Implementors').
 (#next -> #'8c058833-34df-6a4c-a717-5b1be5ea7200').
 (#properties -> (Dictionary newFrom: {

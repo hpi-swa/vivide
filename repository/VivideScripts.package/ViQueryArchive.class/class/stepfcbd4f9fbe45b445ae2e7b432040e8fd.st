@@ -8,7 +8,6 @@ stepfcbd4f9fbe45b445ae2e7b432040e8fd
 (#iconCode -> 'UiSilkIcons pageWhiteTextWidthIcon').
 (#id -> #'fcbd4f9f-be45-b445-ae2e-7b432040e8fd').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Load Text File').
 (#next -> #'b0443283-7194-df4e-bcb6-2dc3d3395f1b').
 (#properties -> (Dictionary newFrom: {

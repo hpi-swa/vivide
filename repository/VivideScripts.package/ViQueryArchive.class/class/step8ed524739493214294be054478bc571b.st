@@ -8,7 +8,6 @@ step8ed524739493214294be054478bc571b
 (#iconCode -> 'nil').
 (#id -> #'8ed52473-9493-2142-94be-054478bc571b').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Properties for Map Definitions').
 (#next -> #'e63568e8-5926-f640-9527-117c4e70e841').
 (#properties -> (Dictionary newFrom: {

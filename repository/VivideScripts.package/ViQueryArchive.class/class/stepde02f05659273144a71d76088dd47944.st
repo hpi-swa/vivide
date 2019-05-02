@@ -8,7 +8,6 @@ stepde02f05659273144a71d76088dd47944
 (#iconCode -> 'UiFugueIcons documentListIcon').
 (#id -> #'de02f056-5927-3144-a71d-76088dd47944').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Files').
 (#next -> #'268f1e29-abfa-184e-9be9-0f251cf2d31b').
 (#properties -> (Dictionary newFrom: {

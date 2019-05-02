@@ -8,7 +8,6 @@ step317d2dd4f6026f428e660e85184667f6
 (#iconCode -> 'nil').
 (#id -> #'317d2dd4-f602-6f42-8e66-0e85184667f6').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Categories of subclasses').
 (#next -> #'a8d9e9fc-0bb3-384b-9bae-e3c1edb07163').
 (#properties -> (Dictionary newFrom: {

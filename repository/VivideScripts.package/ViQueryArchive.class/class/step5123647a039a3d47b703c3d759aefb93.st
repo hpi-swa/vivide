@@ -8,7 +8,6 @@ step5123647a039a3d47b703c3d759aefb93
 (#iconCode -> 'UiSilkIcons carIcon').
 (#id -> #'5123647a-039a-3d47-b703-c3d759aefb93').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Class hierarchy (subclasses)').
 (#next -> #'4f14fbe5-65d1-c74f-ab1f-7751495fcf7c').
 (#properties -> (Dictionary newFrom: {

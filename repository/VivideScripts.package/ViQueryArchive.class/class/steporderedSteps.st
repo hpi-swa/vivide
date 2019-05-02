@@ -8,7 +8,6 @@ steporderedSteps
 (#iconCode -> 'UiFugueIcons scriptMediumIcon').
 (#id -> #orderedSteps).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Ordered Queries').
 (#next -> #'7fd41212-698d-ee43-8d8f-0dc8fb2b9a9e').
 (#properties -> (Dictionary newFrom: {

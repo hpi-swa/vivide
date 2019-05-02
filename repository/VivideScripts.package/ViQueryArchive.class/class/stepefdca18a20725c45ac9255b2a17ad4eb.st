@@ -8,9 +8,9 @@ stepefdca18a20725c45ac9255b2a17ad4eb
 (#iconCode -> 'nil').
 (#id -> #'efdca18a-2072-5c45-ac92-55b2a17ad4eb').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#outline)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '9 December 2015 10:14:14 am')}))})

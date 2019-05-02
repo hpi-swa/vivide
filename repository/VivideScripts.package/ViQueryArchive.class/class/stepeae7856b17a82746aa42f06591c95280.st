@@ -8,7 +8,6 @@ stepeae7856b17a82746aa42f06591c95280
 (#iconCode -> 'nil').
 (#id -> #'eae7856b-17a8-2746-aa42-f06591c95280').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'7faad50a-ce32-d04b-93a5-abcb22ff458e').
 (#properties -> (Dictionary newFrom: {

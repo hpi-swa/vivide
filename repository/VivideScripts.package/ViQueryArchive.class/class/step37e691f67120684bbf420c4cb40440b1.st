@@ -8,7 +8,6 @@ step37e691f67120684bbf420c4cb40440b1
 (#iconCode -> 'nil').
 (#id -> #'37e691f6-7120-684b-bf42-0c4cb40440b1').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Vocabulary').
 (#next -> #'ba4b7a9c-c7c9-5145-a45e-2cdf2b0a3940').
 (#properties -> (Dictionary newFrom: {

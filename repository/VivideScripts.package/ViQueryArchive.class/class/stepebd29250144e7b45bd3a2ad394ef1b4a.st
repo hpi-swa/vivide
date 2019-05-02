@@ -8,7 +8,6 @@ stepebd29250144e7b45bd3a2ad394ef1b4a
 (#iconCode -> 'nil').
 (#id -> #'ebd29250-144e-7b45-bd3a-2ad394ef1b4a').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'8451e0da-6c99-7f41-9483-316176f07642').
 (#properties -> (Dictionary newFrom: {

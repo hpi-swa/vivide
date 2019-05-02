@@ -8,7 +8,6 @@ stepe548783510a59d408ab06f95df9b5740
 (#iconCode -> 'nil').
 (#id -> #'e5487835-10a5-9d40-8ab0-6f95df9b5740').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'DBLP Search').
 (#next -> #'b1afac3a-0000-8544-9dce-ebfda96b30b6').
 (#properties -> (Dictionary newFrom: {

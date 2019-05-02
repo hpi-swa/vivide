@@ -8,7 +8,6 @@ stepunsavedScripts
 (#iconCode -> 'nil').
 (#id -> #unsavedScripts).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'a709a161-d05f-ed44-97e2-165f6f140ada').
 (#properties -> (Dictionary newFrom: {

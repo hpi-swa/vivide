@@ -8,7 +8,6 @@ stepd0bfa2e31713bc4e8d3dbeebe13a82dd
 (#iconCode -> 'nil').
 (#id -> #'d0bfa2e3-1713-bc4e-8d3d-beebe13a82dd').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Instance variable references').
 (#next -> #'15556af2-d4c7-2546-a094-08a896f718e0').
 (#properties -> (Dictionary newFrom: {

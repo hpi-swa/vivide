@@ -8,7 +8,6 @@ step263f43b53e25214b93bef88d5ecf84b5
 (#iconCode -> 'ViEclipseIcons breakpointViewIcon').
 (#id -> #'263f43b5-3e25-214b-93be-f88d5ecf84b5').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Breakpoints').
 (#next -> #'829e7d5e-2892-544a-a015-d5efe0983785').
 (#properties -> (Dictionary newFrom: {

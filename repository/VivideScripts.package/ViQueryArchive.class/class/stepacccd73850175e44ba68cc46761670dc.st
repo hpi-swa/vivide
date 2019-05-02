@@ -8,7 +8,6 @@ stepacccd73850175e44ba68cc46761670dc
 (#iconCode -> 'nil').
 (#id -> #'acccd738-5017-5e44-ba68-cc46761670dc').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

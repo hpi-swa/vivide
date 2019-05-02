@@ -9,7 +9,7 @@ asDictionary
 		(#(definition next) do: [:objProp |
 			dict at: objProp put: ((self perform: objProp) ifNotNil: [:obj | obj id])]).
 		"denoted properties for script interpretation."
-		#(isProperty isReference) do: [:prop |
+		#(isProperty) do: [:prop |
 			dict at: prop put: (self perform: prop)].
 		
 		^ dict]

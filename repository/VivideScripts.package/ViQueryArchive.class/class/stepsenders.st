@@ -8,7 +8,6 @@ stepsenders
 (#iconCode -> 'UiFugueIcons arrowStepIcon').
 (#id -> #senders).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Senders').
 (#next -> #'e67a3ef7-7a93-634e-86af-5740774f3bb9').
 (#properties -> (Dictionary newFrom: {

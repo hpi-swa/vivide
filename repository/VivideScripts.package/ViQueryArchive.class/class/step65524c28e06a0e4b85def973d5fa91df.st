@@ -8,7 +8,6 @@ step65524c28e06a0e4b85def973d5fa91df
 (#iconCode -> 'UiSilkIcons scriptCodeIcon').
 (#id -> #'65524c28-e06a-0e4b-85de-f973d5fa91df').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Code Definitions').
 (#next -> #'8ed52473-9493-2142-94be-054478bc571b').
 (#properties -> (Dictionary newFrom: {

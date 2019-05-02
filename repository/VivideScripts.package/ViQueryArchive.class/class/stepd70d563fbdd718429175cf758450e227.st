@@ -8,7 +8,6 @@ stepd70d563fbdd718429175cf758450e227
 (#iconCode -> 'UiSilkIcons folderIcon').
 (#id -> #'d70d563f-bdd7-1842-9175-cf758450e227').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Files & Folders').
 (#next -> #'6094f78a-9d34-d844-8e98-bc414b414eb2').
 (#properties -> (Dictionary newFrom: {

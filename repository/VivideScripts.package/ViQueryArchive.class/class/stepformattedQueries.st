@@ -8,7 +8,6 @@ stepformattedQueries
 (#iconCode -> 'nil').
 (#id -> #formattedQueries).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Scripts').
 (#next -> #'1af811b8-5914-fa4a-a308-6a17174c3d9c').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ step600d833722a7304b8565430e818154ce
 (#iconCode -> 'nil').
 (#id -> #'600d8337-22a7-304b-8565-430e818154ce').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Classes by Category').
 (#next -> #'0d396a44-b27e-f545-a69d-d25485dfe138').
 (#properties -> (Dictionary newFrom: {

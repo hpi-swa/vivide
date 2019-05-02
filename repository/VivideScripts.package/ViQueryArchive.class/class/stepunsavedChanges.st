@@ -8,7 +8,6 @@ stepunsavedChanges
 (#iconCode -> 'nil').
 (#id -> #unsavedChanges).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'012db9f4-4e1e-cc49-aa55-265d82592ec7').
 (#properties -> (Dictionary newFrom: {

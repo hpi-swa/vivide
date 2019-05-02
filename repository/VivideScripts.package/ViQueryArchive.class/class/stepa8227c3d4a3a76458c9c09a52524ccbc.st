@@ -8,7 +8,6 @@ stepa8227c3d4a3a76458c9c09a52524ccbc
 (#iconCode -> 'nil').
 (#id -> #'a8227c3d-4a3a-7645-8c9c-09a52524ccbc').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Layout properties').
 (#next -> #'494f08ea-fbe5-8341-b949-c5ac1b22c09b').
 (#properties -> (Dictionary newFrom: {

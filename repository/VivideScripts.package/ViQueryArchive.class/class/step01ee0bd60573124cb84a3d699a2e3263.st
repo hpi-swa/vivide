@@ -8,9 +8,9 @@ step01ee0bd60573124cb84a3d699a2e3263
 (#iconCode -> 'nil').
 (#id -> #'01ee0bd6-0573-124c-b84a-3d699a2e3263').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#defaultPropertiesExtended)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '14 December 2015 11:30:58 am')}))})

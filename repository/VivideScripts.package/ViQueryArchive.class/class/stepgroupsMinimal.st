@@ -8,7 +8,6 @@ stepgroupsMinimal
 (#iconCode -> 'nil').
 (#id -> #groupsMinimal).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'ebf5af18-bb7d-144d-b688-d977edb554da').
 (#properties -> (Dictionary newFrom: {

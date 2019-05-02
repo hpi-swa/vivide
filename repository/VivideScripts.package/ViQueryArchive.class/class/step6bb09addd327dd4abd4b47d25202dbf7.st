@@ -8,7 +8,6 @@ step6bb09addd327dd4abd4b47d25202dbf7
 (#iconCode -> 'ViEclipseIcons tasksTskIcon').
 (#id -> #'6bb09add-d327-dd4a-bd4b-47d25202dbf7').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Tasks').
 (#next -> #'5b87b137-752e-b346-a7fb-46bd574a4330').
 (#properties -> (Dictionary newFrom: {

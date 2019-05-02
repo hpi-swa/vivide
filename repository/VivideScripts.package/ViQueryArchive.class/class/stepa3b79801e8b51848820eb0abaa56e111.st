@@ -8,7 +8,6 @@ stepa3b79801e8b51848820eb0abaa56e111
 (#iconCode -> 'nil').
 (#id -> #'a3b79801-e8b5-1848-820e-b0abaa56e111').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Browse method''s class').
 (#next -> #'0a45fa5f-6f7b-a74b-b15f-868dcf6a9799').
 (#properties -> (Dictionary newFrom: {

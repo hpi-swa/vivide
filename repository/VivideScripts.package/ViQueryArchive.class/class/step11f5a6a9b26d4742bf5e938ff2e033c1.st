@@ -8,7 +8,6 @@ step11f5a6a9b26d4742bf5e938ff2e033c1
 (#iconCode -> 'nil').
 (#id -> #'11f5a6a9-b26d-4742-bf5e-938ff2e033c1').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Context Inspector').
 (#next -> #'07d417c7-f871-9c41-873d-4413efec391d').
 (#properties -> (Dictionary newFrom: {

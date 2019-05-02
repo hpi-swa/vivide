@@ -8,7 +8,6 @@ stepd346ff340c694d46ac758aa766aef148
 (#iconCode -> 'nil').
 (#id -> #'d346ff34-0c69-4d46-ac75-8aa766aef148').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Chase pointers').
 (#next -> #'8173a10a-ef99-b643-819d-530c4a9f806f').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ stepdebuggerBindings
 (#iconCode -> 'UiFugueIcons blockIcon').
 (#id -> #debuggerBindings).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Bindings').
 (#next -> #'89162c9a-8847-4744-abdb-1031a61c2898').
 (#properties -> (Dictionary newFrom: {

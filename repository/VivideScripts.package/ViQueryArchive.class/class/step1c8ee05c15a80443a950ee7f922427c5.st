@@ -8,7 +8,6 @@ step1c8ee05c15a80443a950ee7f922427c5
 (#iconCode -> 'nil').
 (#id -> #'1c8ee05c-15a8-0443-a950-ee7f922427c5').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Count Instances').
 (#next -> #'894088c2-9d24-5b40-9246-2e1a298fe761').
 (#properties -> (Dictionary newFrom: {

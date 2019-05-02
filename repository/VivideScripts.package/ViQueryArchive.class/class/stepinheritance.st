@@ -8,7 +8,6 @@ stepinheritance
 (#iconCode -> 'nil').
 (#id -> #inheritance).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Inheritance').
 (#next -> #'d26547cf-b2f4-db40-936b-bd8537ca6228').
 (#properties -> (Dictionary newFrom: {

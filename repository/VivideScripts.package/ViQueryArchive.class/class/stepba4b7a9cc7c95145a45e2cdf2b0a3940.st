@@ -8,7 +8,6 @@ stepba4b7a9cc7c95145a45e2cdf2b0a3940
 (#iconCode -> 'UiFugueIcons bookBrownIcon').
 (#id -> #'ba4b7a9c-c7c9-5145-a45e-2cdf2b0a3940').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Vocabulary (for class)').
 (#next -> #'95c74daf-50da-9d48-956b-a1e377ae9019').
 (#properties -> (Dictionary newFrom: {

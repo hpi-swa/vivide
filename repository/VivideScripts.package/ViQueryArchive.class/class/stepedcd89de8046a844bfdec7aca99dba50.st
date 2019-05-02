@@ -8,7 +8,6 @@ stepedcd89de8046a844bfdec7aca99dba50
 (#iconCode -> 'UiFugueIcons categoryIcon').
 (#id -> #'edcd89de-8046-a844-bfde-c7aca99dba50').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Categories').
 (#next -> #'e9f4b617-ab3a-cd41-9a5b-9f547aa04c9d').
 (#properties -> (Dictionary newFrom: {

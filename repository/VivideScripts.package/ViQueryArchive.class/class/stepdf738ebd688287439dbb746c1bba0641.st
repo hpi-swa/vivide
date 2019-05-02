@@ -8,7 +8,6 @@ stepdf738ebd688287439dbb746c1bba0641
 (#iconCode -> 'nil').
 (#id -> #'df738ebd-6882-8743-9dbb-746c1bba0641').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'343a2282-782f-4d4b-8e98-ab5ca5e0fd36').
 (#properties -> (Dictionary newFrom: {

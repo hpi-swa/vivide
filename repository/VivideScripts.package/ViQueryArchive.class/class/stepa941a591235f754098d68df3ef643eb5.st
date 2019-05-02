@@ -8,7 +8,6 @@ stepa941a591235f754098d68df3ef643eb5
 (#iconCode -> 'UiSilkIcons databaseIcon').
 (#id -> #'a941a591-235f-7540-98d6-8df3ef643eb5').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'MC File Repository').
 (#next -> #'9d1d6fe1-e07c-9f4a-97aa-452c1fbcc9af').
 (#properties -> (Dictionary newFrom: {

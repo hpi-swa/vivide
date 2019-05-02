@@ -8,7 +8,6 @@ step074a7165102004428a76a2ce9f8ab3e6
 (#iconCode -> 'UiFugueIcons questionBalloonIcon').
 (#id -> #'074a7165-1020-0442-8a76-a2ce9f8ab3e6').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Uncommented Classes').
 (#next -> #'e847db70-263a-3b49-a792-9d80a42da426').
 (#properties -> (Dictionary newFrom: {

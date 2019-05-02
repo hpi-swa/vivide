@@ -8,7 +8,6 @@ stepab2beffcf1ae014ea424a1270d4facd9
 (#iconCode -> 'nil').
 (#id -> #'ab2beffc-f1ae-014e-a424-a1270d4facd9').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> nil).
 (#next -> #'8d3e35af-10d4-a346-9157-f3ad76331d4d').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ step46817f32e66b9342a3adabe14e9713c9
 (#iconCode -> 'nil').
 (#id -> #'46817f32-e66b-9342-a3ad-abe14e9713c9').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Methods by Author').
 (#next -> #'51d8a538-95c9-ce4b-9e21-ac726be7665b').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ step09ffbad63a278b489dad264b9c41c6f9
 (#iconCode -> 'nil').
 (#id -> #'09ffbad6-3a27-8b48-9dad-264b9c41c6f9').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'World submorphs').
 (#next -> #'045e9d2c-b29a-4641-b942-d4b769535d4a').
 (#properties -> (Dictionary newFrom: {

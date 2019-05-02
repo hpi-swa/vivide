@@ -8,7 +8,6 @@ step661f2767d34f6a4fb8ff8ec4307d757f
 (#iconCode -> 'nil').
 (#id -> #'661f2767-d34f-6a4f-b8ff-8ec4307d757f').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Recently Opened').
 (#next -> #'c31cf538-fe89-4242-bd60-cf299527d31f').
 (#properties -> (Dictionary newFrom: {

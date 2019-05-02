@@ -8,7 +8,6 @@ step3dcd19258f140c4ca86106178920b36d
 (#iconCode -> 'nil').
 (#id -> #'3dcd1925-8f14-0c4c-a861-06178920b36d').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Pretty printed methods').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

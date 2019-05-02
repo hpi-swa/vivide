@@ -8,7 +8,6 @@ step77862f460851124eb1ff6cb2e962a0c8
 (#iconCode -> 'ViIcons blueFlagIcon').
 (#id -> #'77862f46-0851-124e-b1ff-6cb2e962a0c8').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Flags').
 (#next -> #'fd3c0b79-142a-ee4e-9f27-4da12eba946f').
 (#properties -> (Dictionary newFrom: {

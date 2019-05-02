@@ -8,7 +8,6 @@ step5e2dceb99ba3484cb969cc38d82aeaf1
 (#iconCode -> 'UiFugueIcons balloonExclamationIcon').
 (#id -> #'5e2dceb9-9ba3-484c-b969-cc38d82aeaf1').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Unsent Messages').
 (#next -> #'233b181d-fccc-094d-8b70-ba191cfe05ba').
 (#properties -> (Dictionary newFrom: {

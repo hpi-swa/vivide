@@ -8,7 +8,6 @@ step37989d230602ed44ad37440cccc8d6d9
 (#iconCode -> 'nil').
 (#id -> #'37989d23-0602-ed44-ad37-440cccc8d6d9').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Submorphs').
 (#next -> #'9a36a312-8950-9d4e-9c29-7386596f007f').
 (#properties -> (Dictionary newFrom: {

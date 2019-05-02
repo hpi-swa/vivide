@@ -8,9 +8,9 @@ step8729d44582f27f4dabfa8044a4165d7f
 (#iconCode -> 'nil').
 (#id -> #'8729d445-82f2-7f4d-abfa-8044a4165d7f').
 (#isProperty -> false).
-(#isReference -> true).
 (#label -> nil).
 (#next -> #'45fb3a38-39dc-2144-a747-a51f5e49f729').
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groupsMinimal)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '2 April 2019 4:48:11.442834 pm')}))})

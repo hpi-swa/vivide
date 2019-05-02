@@ -8,7 +8,6 @@ stepbce4eb13a02d144e96b2cd2944b85fee
 (#iconCode -> 'UiFugueIcons magnifierMediumIcon').
 (#id -> #'bce4eb13-a02d-144e-96b2-cd2944b85fee').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Inspector').
 (#next -> #'c50d0c14-b3eb-cf47-9e8a-7ba23cb2c4dd').
 (#properties -> (Dictionary newFrom: {

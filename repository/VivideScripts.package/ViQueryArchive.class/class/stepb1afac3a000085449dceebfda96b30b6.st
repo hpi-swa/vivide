@@ -8,7 +8,6 @@ stepb1afac3a000085449dceebfda96b30b6
 (#iconCode -> 'nil').
 (#id -> #'b1afac3a-0000-8544-9dce-ebfda96b30b6').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'DBLP Result').
 (#next -> #'cf42cf45-c23c-c149-81f2-1b262f58b7d3').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ step42ed5d046483c94482c80339789652e4
 (#iconCode -> 'UiFugueIcons priceTagExclamationIcon').
 (#id -> #'42ed5d04-6483-c944-82c8-0339789652e4').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Unclassified methods').
 (#next -> #'24f23db6-299d-cc46-bb92-693cb90073d6').
 (#properties -> (Dictionary newFrom: {

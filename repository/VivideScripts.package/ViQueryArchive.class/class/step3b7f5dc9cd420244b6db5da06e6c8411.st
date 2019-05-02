@@ -8,7 +8,6 @@ step3b7f5dc9cd420244b6db5da06e6c8411
 (#iconCode -> 'nil').
 (#id -> #'3b7f5dc9-cd42-0244-b6db-5da06e6c8411').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Mail').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

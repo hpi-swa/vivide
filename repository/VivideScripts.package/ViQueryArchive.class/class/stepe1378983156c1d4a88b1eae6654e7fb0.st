@@ -8,7 +8,6 @@ stepe1378983156c1d4a88b1eae6654e7fb0
 (#iconCode -> 'UiFugueIcons layersStackArrangeIcon').
 (#id -> #'e1378983-156c-1d4a-88b1-eae6654e7fb0').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Call stack').
 (#next -> #'1bb6538b-c256-b34b-958e-5996dea59092').
 (#properties -> (Dictionary newFrom: {

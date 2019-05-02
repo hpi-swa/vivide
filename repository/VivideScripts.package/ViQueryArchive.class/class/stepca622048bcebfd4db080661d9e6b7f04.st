@@ -8,7 +8,6 @@ stepca622048bcebfd4db080661d9e6b7f04
 (#iconCode -> 'nil').
 (#id -> #'ca622048-bceb-fd4d-b080-661d9e6b7f04').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Test classes').
 (#next -> #'94740283-5bf2-514e-8eef-b18ce867137a').
 (#properties -> (Dictionary newFrom: {

@@ -8,7 +8,6 @@ stepworkspace
 (#iconCode -> 'ViIcons icons8Console64px1Icon').
 (#id -> #workspace).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Workspace').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

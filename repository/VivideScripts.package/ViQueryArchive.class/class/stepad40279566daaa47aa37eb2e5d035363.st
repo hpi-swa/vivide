@@ -8,7 +8,6 @@ stepad40279566daaa47aa37eb2e5d035363
 (#iconCode -> 'nil').
 (#id -> #'ad402795-66da-aa47-aa37-eb2e5d035363').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'All test classes').
 (#next -> #'94740283-5bf2-514e-8eef-b18ce867137a').
 (#properties -> (Dictionary newFrom: {

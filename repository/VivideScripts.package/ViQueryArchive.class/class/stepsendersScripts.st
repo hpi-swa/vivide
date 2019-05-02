@@ -8,7 +8,6 @@ stepsendersScripts
 (#iconCode -> 'nil').
 (#id -> #sendersScripts).
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Senders (Scripts)').
 (#next -> #'afe34ca0-aa48-bd43-8eeb-7d8059eae2d1').
 (#properties -> (Dictionary newFrom: {

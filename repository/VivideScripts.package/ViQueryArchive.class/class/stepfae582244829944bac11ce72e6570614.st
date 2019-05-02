@@ -8,7 +8,6 @@ stepfae582244829944bac11ce72e6570614
 (#iconCode -> 'nil').
 (#id -> #'fae58224-4829-944b-ac11-ce72e6570614').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> nil).
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {

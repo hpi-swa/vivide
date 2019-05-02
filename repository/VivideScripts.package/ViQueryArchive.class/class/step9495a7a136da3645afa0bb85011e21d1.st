@@ -8,7 +8,6 @@ step9495a7a136da3645afa0bb85011e21d1
 (#iconCode -> 'nil').
 (#id -> #'9495a7a1-36da-3645-afa0-bb85011e21d1').
 (#isProperty -> true).
-(#isReference -> false).
 (#label -> 'Recover Unsaved Changes').
 (#next -> #'e3c616ba-4453-c04b-b997-91416620222a').
 (#properties -> (Dictionary newFrom: {
