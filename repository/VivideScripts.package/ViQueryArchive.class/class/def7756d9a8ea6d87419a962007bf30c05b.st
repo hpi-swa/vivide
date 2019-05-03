@@ -1,18 +1,18 @@
 definitions
-deff05ec72394c81c4082d5f606aade5b23
+def7756d9a8ea6d87419a962007bf30c05b
 	<definition>
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:foo | { #text -> (foo class == ViSeparator ifTrue: [' '] ifFalse: [foo category asText addAttribute: (TextColor color: Color gray)])}]
+	[:object | { #text -> (ViObjectOriginService doObject: object) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViScriptDefinition).
-(#id -> #'f05ec723-94c8-1c40-82d5-f606aade5b23').
+(#id -> #'7756d9a8-ea6d-8741-9a96-2007bf30c05b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 May 2018 9:29:06 am')})).
+(#creationTimeStamp -> '3 May 2019 10:47:42.408161 am')})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:foo | { #text -> (foo class == ViSeparator ifTrue: ['' ''] ifFalse: [foo category asText addAttribute: (TextColor color: Color gray)])}]
+	[:object | { #text -> (ViObjectOriginService doObject: object) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

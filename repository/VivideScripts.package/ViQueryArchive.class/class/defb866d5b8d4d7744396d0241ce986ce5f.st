@@ -6,7 +6,7 @@ defb866d5b8d4d7744396d0241ce986ce5f
 (#block -> [:in :out | ([:all | all collect: [:o | (
 	[:object | 
 	| numNewAccesses ignore |
-	ignore := object isText or: [object key instVarNames includes: object value].
+	ignore := object class == ViSeparator or: [object key instVarNames includes: object value].
 	numNewAccesses := ignore
 		ifTrue: [5]
 		ifFalse: [(SystemNavigation default allSuperAccessesTo: object value from: object key) size]. 
@@ -29,7 +29,7 @@ defb866d5b8d4d7744396d0241ce986ce5f
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:object | 
 	| numNewAccesses ignore |
-	ignore := object isText or: [object key instVarNames includes: object value].
+	ignore := object class == ViSeparator or: [object key instVarNames includes: object value].
 	numNewAccesses := ignore
 		ifTrue: [5]
 		ifFalse: [(SystemNavigation default allSuperAccessesTo: object value from: object key) size]. 

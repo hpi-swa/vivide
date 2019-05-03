@@ -6,10 +6,10 @@ defce022f63453fe84992433d862411aa07
 (#block -> [:in :out | ([:all | all collect: [:o | (
 	[:object | 
 	| numNewAccesses |
-	numNewAccesses := object isText ifTrue: [5] ifFalse: [(SystemNavigation default allLocalAccessesTo: object value from: object key) size]. 
+	numNewAccesses := object class == ViSeparator ifTrue: [5] ifFalse: [(SystemNavigation default allLocalAccessesTo: object value from: object key) size]. 
 		
 		{
-		#text -> (object isText ifTrue: [' '] ifFalse: [numNewAccesses]).
+		#text -> (object class == ViSeparator ifTrue: [' '] ifFalse: [numNewAccesses]).
 		#color -> (numNewAccesses = 0
 			ifTrue: [(Color gray: 0.8) alpha: 0.3]
 			ifFalse: [numNewAccesses <= 2
@@ -26,10 +26,10 @@ defce022f63453fe84992433d862411aa07
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:object | 
 	| numNewAccesses |
-	numNewAccesses := object isText ifTrue: [5] ifFalse: [(SystemNavigation default allLocalAccessesTo: object value from: object key) size]. 
+	numNewAccesses := object class == ViSeparator ifTrue: [5] ifFalse: [(SystemNavigation default allLocalAccessesTo: object value from: object key) size]. 
 		
 		{
-		#text -> (object isText ifTrue: ['' ''] ifFalse: [numNewAccesses]).
+		#text -> (object class == ViSeparator ifTrue: ['' ''] ifFalse: [numNewAccesses]).
 		#color -> (numNewAccesses = 0
 			ifTrue: [(Color gray: 0.8) alpha: 0.3]
 			ifFalse: [numNewAccesses <= 2

@@ -15,7 +15,7 @@ steptranscript
 (#creationTimeStamp -> '21 February 2018 6:39:39 pm').
 (#isGlobal -> true).
 (#notifier -> [ViObjectHistoryNotifier new
-		history: (ViProfile active ifNotNil: #transcriptHistory)]).
+		history: (VivideLight historyFor: #transcript)]).
 (#priority -> 500).
 (#scrollToBottom -> true).
 (#view -> ViTextView)}))})

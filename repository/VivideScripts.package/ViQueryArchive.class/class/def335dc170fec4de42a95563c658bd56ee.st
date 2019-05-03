@@ -4,7 +4,7 @@ def335dc170fec4de42a95563c658bd56ee
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:object | { #text -> (object isText ifFalse: [object className])}]
+	[:object | { #text -> (object class == ViSeparator ifFalse: [object className])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#class -> ViScriptDefinition).
@@ -13,6 +13,6 @@ def335dc170fec4de42a95563c658bd56ee
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 2:36:10 pm')})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:object | { #text -> (object isText ifFalse: [object className])}]
+	[:object | { #text -> (object class == ViSeparator ifFalse: [object className])}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

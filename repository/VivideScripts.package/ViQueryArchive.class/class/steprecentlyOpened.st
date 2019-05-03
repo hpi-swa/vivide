@@ -9,9 +9,17 @@ steprecentlyOpened
 (#id -> #recentlyOpened).
 (#isProperty -> false).
 (#label -> 'Recently Opened').
-(#next -> #'c4ee7c1c-d764-1148-89be-c82a7c91889c').
+(#next -> #'9e7e3607-1a59-fe4a-a65e-f1f49efaba06').
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groupsMinimal #defaultPropertiesExtended)).
+(#before -> #()).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 June 2015 9:17:12 am').
 (#inputKind -> ViProfile).
-(#notifier -> {[:t1 | ViObjectHistoryNotifier new history: t1 recentPackages]. [:t1 | ViObjectHistoryNotifier new history: t1 recentClasses]. [:t1 | ViObjectHistoryNotifier new history: t1 recentMethods]. [:t1 | ViObjectHistoryNotifier new history: t1 recentScripts]})}))})
+(#isGlobal -> true).
+(#notifier -> {[ViObjectHistoryNotifier new
+		history: (VivideLight historyFor: #packages)]. [ViObjectHistoryNotifier new
+		history: (VivideLight historyFor: #classes)]. [ViObjectHistoryNotifier new
+		history: (VivideLight historyFor: #methods)]. [ViObjectHistoryNotifier new
+		history: (VivideLight historyFor: #scripts)]}).
+(#view -> ViTreeViewExtended)}))})

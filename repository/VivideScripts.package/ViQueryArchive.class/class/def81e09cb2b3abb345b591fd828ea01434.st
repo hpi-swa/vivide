@@ -7,6 +7,8 @@ def81e09cb2b3abb345b591fd828ea01434
 	[:object | {
 	#text -> (ViLabelService doObject: object).
 	#icon -> (ViIconService doObject: object).
+	#morph -> (ViMorphService doObject: object).
+	#selectable -> (object class ~~ ViSeparator).
 	#tooltip -> [ViObjectPreviewHandler doObject: object]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
@@ -19,6 +21,8 @@ def81e09cb2b3abb345b591fd828ea01434
 	[:object | {
 	#text -> (ViLabelService doObject: object).
 	#icon -> (ViIconService doObject: object).
+	#morph -> (ViMorphService doObject: object).
+	#selectable -> (object class ~~ ViSeparator).
 	#tooltip -> [ViObjectPreviewHandler doObject: object]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')})

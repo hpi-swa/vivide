@@ -6,9 +6,9 @@ def8b1b311702c1e140a210b0fc8a71e54a
 (#block -> [:in :out | ([:all | all collect: [:o | (
 	[:foo | 
 	| numAccesses |
-	numAccesses := foo isText ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
+	numAccesses := foo class == ViSeparator ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
 	{
-		#text -> (foo isText ifTrue: [' '] ifFalse: [numAccesses]).
+		#text -> (foo class == ViSeparator ifTrue: [' '] ifFalse: [numAccesses]).
 		#color -> (numAccesses = 0
 			ifTrue: [(Color gray: 0.8) alpha: 0.3]
 			ifFalse: [numAccesses <= 2
@@ -25,9 +25,9 @@ def8b1b311702c1e140a210b0fc8a71e54a
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:foo | 
 	| numAccesses |
-	numAccesses := foo isText ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
+	numAccesses := foo class == ViSeparator ifTrue: [5] ifFalse: [(SystemNavigation default allAccessesTo: foo value from: foo key) size].
 	{
-		#text -> (foo isText ifTrue: ['' ''] ifFalse: [numAccesses]).
+		#text -> (foo class == ViSeparator ifTrue: ['' ''] ifFalse: [numAccesses]).
 		#color -> (numAccesses = 0
 			ifTrue: [(Color gray: 0.8) alpha: 0.3]
 			ifFalse: [numAccesses <= 2
