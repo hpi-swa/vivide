@@ -1,7 +1,5 @@
 actions
 debugQuery: aQuery
 
-	ViProfile active ifNotNil: [:profile |
-		profile recentScripts addObject: aQuery].
-
+	aQuery retain.
 	^ aQuery editScriptWith: self objects

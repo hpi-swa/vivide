@@ -4,8 +4,8 @@ initialize
 	super initialize.
 	
 	self flag: #refactor. "mt: Is a copy really needed? See #removeObject..."
-	packages := ViProfile active recentPackages objects copy asOrderedCollection.
-	classes := ViProfile active recentClasses objects copy asOrderedCollection.
-	methods := ViProfile active recentMethods objects copy asOrderedCollection.
+	packages := (VivideLight historyFor: #packages) objects copy asOrderedCollection.
+	classes := (VivideLight historyFor: #classes) objects copy asOrderedCollection.
+	methods := (VivideLight historyFor: #methods) objects copy asOrderedCollection.
 	
 	self initializeUpdates.

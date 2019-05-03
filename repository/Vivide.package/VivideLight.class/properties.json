@@ -5,6 +5,7 @@
 	"classvars" : [
 		"AnimateDataflow",
 		"FeedbackServer",
+		"History",
 		"LastProfile",
 		"Profiles",
 		"UseClassicMode",

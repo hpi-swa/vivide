@@ -23,9 +23,7 @@ openArtifact: anObject
 		object steps in: [:steps |
 		"See behavior of ViScriptEditor >> #onContextChanged."
 			steps size > 1 ifTrue: [^ self openArtifacts: steps].
-			
-			ViProfile active ifNotNil: [:profile |
-				profile recentScripts addObject: object]]].
+			object retain]].
 
 	^ VivideLight useClassicMode
 		ifTrue: [ViPane chooseQueryFor: {object}]

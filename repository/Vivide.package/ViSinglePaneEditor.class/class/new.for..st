@@ -20,7 +20,6 @@ new: symbolOrBlockOrScript for: objects
 	(objects notEmpty and: [objects last isScript]) ifTrue: [
 		ViLoggingService trigger: {#message -> 'Script editor(s) opened.'}].  
 
-	objects do: [:object | ViProfile active ifNotNil: [:profile |
-		profile addObject: object]].
-
+	objects do: #retain.
+	
 	^ instance

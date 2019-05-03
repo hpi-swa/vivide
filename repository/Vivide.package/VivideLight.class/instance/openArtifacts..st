@@ -9,8 +9,7 @@ openArtifacts: someObjects
 	
 	(someObjects detect: [:obj | obj isScript] ifNone: [])
 		ifNotNil: [:script | 
-			ViProfile active ifNotNil: [:profile |
-				profile recentScripts addObject: script].
+			script retain.
 			
 			(script steps hasEqualElements: someObjects) ifFalse: [
 				"Open the script and the rest as input if it."

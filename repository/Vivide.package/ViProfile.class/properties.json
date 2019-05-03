@@ -8,12 +8,6 @@
 	"instvars" : [
 		"organization",
 		"bookmarks",
-		"closedObjects",
-		"recentClasses",
-		"recentMethods",
-		"recentPackages",
-		"recentScripts",
-		"transcriptHistory",
 		"label",
 		"archive",
 		"id",
