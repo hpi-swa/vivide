@@ -5,7 +5,7 @@ isValid
 	
 	missingScripts := OrderedCollection new.	
 	self organization steps keys in: [:allScriptIds |
-		missingScripts := self class requiredScripts copyWithoutAll: allScriptIds].
+		missingScripts := ViScriptTemplate requiredScriptIds copyWithoutAll: allScriptIds].
 
 	invalidScripts := OrderedCollection new.
 	self organization orderedSteps do: [:step |

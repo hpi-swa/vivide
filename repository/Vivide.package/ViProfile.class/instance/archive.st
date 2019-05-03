@@ -1,4 +1,4 @@
-accessing
+serialization
 archive
 
 	^ archive ifNil: [

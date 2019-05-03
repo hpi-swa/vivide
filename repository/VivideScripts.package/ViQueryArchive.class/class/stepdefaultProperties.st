@@ -12,5 +12,4 @@ stepdefaultProperties
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '30 December 2014 5:04:25 pm').
-(#view -> ViExplorerView)}))})
+(#creationTimeStamp -> '30 December 2014 5:04:25 pm')}))})

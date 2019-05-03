@@ -1,4 +1,4 @@
-as yet unclassified
+serialization
 serializeIntoArchive
 
 	self assert: self archive notNil.

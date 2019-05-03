@@ -1,4 +1,4 @@
-as yet unclassified
+navigation - kernel
 hardcodedScriptIds
 	"Returns a list of all script ids that are directly referenced in Smalltalk code. This means that a profile's organization must provide some scripts that match those ids. Otherwise Vivide cannot work properly.
 	

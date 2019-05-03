@@ -5,7 +5,7 @@ newFrom: anotherProfile
 	| instance |
 	instance := self new.
 	instance label: 'Copy of ', anotherProfile label.
-	self requiredScripts do: [:id |
+	ViScriptTemplate requiredScriptIds do: [:id |
 		(anotherProfile organization stepById: id) in: [:script |
 			script deepCopy
 				adoptOrganization: instance organization;
