@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"chooseQueryFor:" : "mt 4/18/2019 09:22" },
+		"chooseQueryFor:" : "mt 5/3/2019 16:02" },
 	"instance" : {
 		"acceptChanges" : "mt 5/7/2014 08:14:08.201",
 		"acceptObjectService:" : "mt 11/28/2014 13:30:31.166",
@@ -17,7 +17,7 @@
 		"chooseMostAppropriateQuery" : "pre 11/21/2017 11:11",
 		"chooseObject" : "mt 4/19/2016 14:45:23.91",
 		"chooseObjectAt:thenNotify:with:" : "mt 4/19/2016 14:39:10.79",
-		"chooseQuery" : "mt 4/19/2016 14:36:27.668",
+		"chooseQuery" : "mt 5/3/2019 16:02",
 		"clear" : "mt 4/10/2019 09:10",
 		"clearError" : "mt 1/26/2016 09:58:24.69",
 		"connections" : "mt 11/25/2014 10:03:48.045",

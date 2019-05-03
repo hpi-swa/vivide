@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"test01NewEmpty" : "mt 5/3/2019 15:32",
+		"test02NewMinimal" : "mt 5/3/2019 15:45",
+		"test03SerializeAndMerge" : "mt 5/3/2019 15:57" } }

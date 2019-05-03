@@ -9,7 +9,7 @@ steprecentlyOpened
 (#id -> #recentlyOpened).
 (#isProperty -> false).
 (#label -> 'Recently Opened').
-(#next -> #'9e7e3607-1a59-fe4a-a65e-f1f49efaba06').
+(#next -> nil).
 (#properties -> (Dictionary newFrom: {
 (#after -> #(#groupsMinimal #defaultPropertiesExtended)).
 (#before -> #()).

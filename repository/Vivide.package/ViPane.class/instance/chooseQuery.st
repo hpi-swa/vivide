@@ -3,7 +3,7 @@ chooseQuery
 
 	| pane |
 	pane := ViPane new
-		currentQuery: #formattedQueries asScript;
+		currentQuery: #formattedScripts asScript;
 		objects: self appropriateQueries;
 		yourself.
 	pane

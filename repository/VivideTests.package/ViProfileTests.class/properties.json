@@ -1,0 +1,14 @@
+{
+	"category" : "VivideTests-Kernel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViProfileTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

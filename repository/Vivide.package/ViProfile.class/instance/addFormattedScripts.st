@@ -6,7 +6,7 @@ addFormattedScripts
 		[:scripts | scripts sorted: [:s1 :s2 | s1 priority <= s2 priority]] -> {
 			#inputKind -> ViScriptStep. #outputKind -> ViScriptStep.
 			#label -> 'Scripts'.
-			#id -> #formattedQueries.
+			#id -> #formattedScripts.
 			#view -> ViTreeView.
 			#yieldOn -> #(activated)}.
 		[:scripts | scripts reject: [:script | script valueOfProperty: #isNew ifAbsent: false]].

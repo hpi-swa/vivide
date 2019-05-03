@@ -3,5 +3,5 @@ archive
 
 	^ archive ifNil: [
 		self
-			createArchiveNamed: (self label asString ifEmpty: ['unnamed'])
+			createArchiveNamed: ((label isNil or: [self label isEmpty]) ifTrue: [self id asString])
 			inCategory: #VivideTemporary]

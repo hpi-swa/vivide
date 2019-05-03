@@ -12,7 +12,7 @@ chooseQueryFor: someObjects
 		yourself.
 	
 	pane := ViPane new
-		currentQuery: #formattedQueries asScript;
+		currentQuery: #formattedScripts asScript;
 		objects: LastHelperPane appropriateQueries;
 		yourself.
 		
