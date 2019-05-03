@@ -8,7 +8,9 @@ convertFromAssociation: anAssociation
 		^ anAssociation].
 
 	"1) Construct, look up, or wrap script."
-	script := anAssociation key asScript.
+	[script := anAssociation key asScript]
+		on: ViScriptNotFound
+		do: [:notification | ViScriptConversionFailed signal: notification messageText].
 	"Script identifiers will be treated as references here. Example: (#defaultProperties -> { #foo -> 5 })"
 	anAssociation key isSymbol
 		ifTrue: [script := script asReference].

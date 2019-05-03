@@ -16,5 +16,5 @@ lookupSymbol: aSymbol
 	VivideLight defaultScriptOrganization ifNotNil: [:organization |
 		(organization stepById: aSymbol) ifNotNil: [:script | ^ script]].
 	
-	ViScriptNotFound signal.
+	ViScriptNotFound signal: ('Script identifier {1} not found.' translated format: {aSymbol printString}).
 	^ nil "Not found."
