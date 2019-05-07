@@ -1,5 +1,6 @@
-as yet unclassified
-viewExpectedPropertiesReceivers: receiverTerms accessor: accessorSymbol iterator: iteratorSymbol
+navigation - views
+lookupPropertiesForView: aViewClass receivers: receiverTerms accessor: accessorSymbol iterator: iteratorSymbol
+	"Analyses the implementation of the view class to find the properties a view uses from the script or its model nodes."
 
 	| result merged receiverCheck |
 	result := OrderedCollection new.
@@ -8,7 +9,7 @@ viewExpectedPropertiesReceivers: receiverTerms accessor: accessorSymbol iterator
 			(recv isVariable and: [recv name includesSubstring: term caseSensitive: false])
 				or: [(recv isMessage and: [recv selector includesSubstring: term caseSensitive: false])]]].
 	
-	(self allSteps first viewClass withAllSuperclasses copyWithoutAll: Morph withAllSuperclasses) do: [:cls |
+	(aViewClass withAllSuperclasses copyWithoutAll: Morph withAllSuperclasses) do: [:cls |
 		cls methodDict values do: [:method |
 			([RBParser parseMethod: method getSource asString onError: [:what :where | Error signal]] on: Error do: [:ex | "Ignore"]) ifNotNil: [:node |
 				node nodesDo: [:n |
