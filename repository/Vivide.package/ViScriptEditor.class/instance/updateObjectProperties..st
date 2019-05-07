@@ -5,9 +5,10 @@ updateObjectProperties: dict
 	| propertiesToSkip propertiesToRemove propertiesToSet |
 	propertiesToSkip := self propertiesToIgnore keys select: [:property |
 		(self propertiesToIgnore at: property) isNil].
-	propertiesToRemove := self object properties keys
-		copyWithoutAll: dict keys, propertiesToSkip.
-	propertiesToSet := dict keys copyWithoutAll: propertiesToSkip.  
+	propertiesToSet := dict keys
+		copyWithoutAll: propertiesToSkip.  
+	propertiesToRemove := (dict keys select: [:property |
+		(dict at: property) isNil]) copyWithoutAll: propertiesToSkip.
 
 	"Remove properties."
 	propertiesToRemove do: [:property |

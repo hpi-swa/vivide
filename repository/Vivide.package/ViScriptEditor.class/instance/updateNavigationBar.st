@@ -11,6 +11,7 @@ updateNavigationBar
 			color: Color silver;
 			layoutInset: (-3 @ -2 corner: -3 @ -1);
 			icon: ViIcons icons8ChevronRightSmall64px1Icon scaledToDisplay;
+			text: '';
 			buttonStyle: #iconOnly;
 			in: [:btn | self connect: btn signal: #clicked: toSelector: #goUp];
 			yourself).
@@ -26,6 +27,7 @@ updateNavigationBar
 			color: Color silver;
 			layoutInset: (-3 @ -2 corner: -3 @ -1);
 			icon: ViIcons icons8ChevronRightSmall64px1Icon scaledToDisplay;
+			text: '';
 			buttonStyle: #iconOnly;
 			in: [:btn | self connect: btn signal: #clicked: toSelector: #goUp];
 			yourself).

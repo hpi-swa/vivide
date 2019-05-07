@@ -2,7 +2,7 @@ updating
 updateFromChangedScript: event
 
 	self object ifNil: [^ self].
-	(self hasProperty: #isUpdating) ifTrue: [^ self].
+	self isDoingNonReentrantWork ifTrue: [^ self].
 	
 	(event item == self object or: [event item == self object definition])
 		ifFalse: [^ self].

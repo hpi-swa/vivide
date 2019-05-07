@@ -3,6 +3,7 @@ acceptSourceCode
 	"Accept the visible source code."
 
 	| code |
+	self textField parse ifFalse: [^ self].
 	self isWizardActive ifTrue: [self setScriptTemplate].
 	
 	code := self visibleSourceCode withPunctuationTrimmed.
@@ -30,6 +31,7 @@ acceptSourceCode
 	"Store changes in object."
 	self updateObject.
 	self updateUi.
+	self updatePropertyBar.
 
 	ViLoggingService trigger: {
 		#message -> 'Script modified.'.
