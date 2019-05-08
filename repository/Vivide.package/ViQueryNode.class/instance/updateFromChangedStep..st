@@ -23,7 +23,7 @@ updateFromChangedStep: evt
 			^ self].
 	
 	"Only if at least one of my next steps is this changed step."
-	self firstStep nextStepsDo: [:step |
+	self firstStep allStepsDo: [:step |
 		evt item == step ifTrue: [
 			(evt isPropertiesModified and: [evt newProperties includesKey: #notifier])
 				ifTrue: [self clearUpdateNotifications; setUpdateNotifications].
