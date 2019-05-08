@@ -5,6 +5,9 @@ activateWizard
 	"Make room for the magic wand. See #drawWizardIndicationOn:."
 	self textField margins: ((14 * RealEstateAgent scaleFactor) rounded @0 corner: 0@7).
 
+	"New scripts are green by default."
+	self thisStep checkNewToolColor. 
+
 	"Propose a starting point for the user."
 	self fullSourceCode: nil.
 	self setFullSourceCodeInterval.

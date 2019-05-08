@@ -11,11 +11,7 @@ addConnection: event with: connectHandle
 			newWindows first center: event position.
 			"newWindows second topLeft: newWindows first topRight."
 			
-			newWindows first editor pane currentQuery in: [:script |
-				"New scripts are green by default."
-				self flag: #newbie.
-				(script isDefault not and: [script color isNil])
-					ifTrue: [script color: (Color fromString: '#8DCB8D')]].
+			newWindows first editor pane currentQuery checkNewToolColor.
 			
 			event shiftPressed
 				ifFalse: [(ViSelectionConnection from: self target to: newWindows first editor pane) attach]

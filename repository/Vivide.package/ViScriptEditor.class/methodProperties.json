@@ -4,11 +4,12 @@
 		"afterBarTextColor" : "mt 5/8/2019 08:56",
 		"beforeBarBackgroundColor" : "mt 5/8/2019 14:06",
 		"beforeBarTextColor" : "mt 5/8/2019 08:56",
+		"newScriptToolColor" : "mt 5/8/2019 14:29",
 		"supportedTypes" : "mt 4/29/2019 17:57" },
 	"instance" : {
 		"acceptDroppingMorph:event:" : "mt 5/2/2019 09:24",
 		"acceptSourceCode" : "mt 5/7/2019 15:09",
-		"activateWizard" : "mt 4/26/2019 14:57",
+		"activateWizard" : "mt 5/8/2019 14:33",
 		"addArtifact" : "mt 4/9/2019 08:05",
 		"addPaneHighlights" : "mt 4/5/2019 15:52",
 		"addScriptToProfile" : "mt 4/8/2019 16:34",
