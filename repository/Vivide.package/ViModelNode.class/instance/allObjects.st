@@ -1,7 +1,8 @@
 accessing - convenience
 allObjects
 
-	(self allNodes collect: [:node | node object]) in: [:result |
-		^ self depth = 0 "root"
-			ifTrue: [result allButFirst]
-			ifFalse: [result]]
+	| skipFirst |
+	skipFirst := self depth = 0. "root"
+	^ Array streamContents: [:s | self allNodesDo: [:node |
+			(skipFirst and: [node == self])
+				ifFalse: [s nextPut: node object]]]

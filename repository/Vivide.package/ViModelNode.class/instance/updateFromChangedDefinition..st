@@ -1,4 +1,4 @@
-query change events
+script change events
 updateFromChangedDefinition: evt
 
 	self firstStep ifNil: [^ self].

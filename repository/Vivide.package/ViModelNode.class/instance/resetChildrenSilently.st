@@ -7,4 +7,3 @@ resetChildrenSilently
 	self clearAllQueryChangeNotifications.
 
 	children := nil.
-	groups := nil.

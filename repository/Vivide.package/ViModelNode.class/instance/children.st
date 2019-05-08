@@ -8,4 +8,6 @@ children
 			setUpdateNotifications;
 			setQueryChangeNotifications.
 		"Only one chance for lazy initialization."
-		children ifNil: [children := Dictionary new]]
+		children ifNil: [
+			children := Dictionary new.
+			children at: self defaultGroup put: {}]]

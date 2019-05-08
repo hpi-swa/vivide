@@ -1,4 +1,4 @@
 accessing - convenience
 objects
 
-	^ self nodes collect: [:node | node object]
+	^ Array streamContents: [:s | self nodesDo: [:node | s nextPut: node object]]
