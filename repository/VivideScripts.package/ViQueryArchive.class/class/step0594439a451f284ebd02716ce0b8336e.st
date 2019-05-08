@@ -9,7 +9,9 @@ step0594439a451f284ebd02716ce0b8336e
 (#id -> #'0594439a-451f-284e-bd02-716ce0b8336e').
 (#isProperty -> false).
 (#label -> nil).
-(#next -> #'c3e6cb7a-e058-2445-a4c0-8ac75e508c9b').
+(#next -> #'0d761852-6cd4-fd4e-8264-1ec9396e2865').
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groups)).
+(#before -> #()).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '29 May 2018 9:24:20 am')}))})
