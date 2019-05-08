@@ -15,6 +15,7 @@ historyReset
 		at: #transcript put: (ViTranscriptHistory new limit: 200; yourself).
 	
 	History
-		at: #scripts put: (ViRecentlyUsedHistory new limit: 150).
+		at: #scripts put: (ViRecentlyUsedHistory new limit: 150);
+		at: #snippets put: (ViStampedHistory new limit: 2000; yourself). "Do its."
 	
 	^ History
