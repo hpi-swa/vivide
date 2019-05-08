@@ -2,5 +2,5 @@ running
 setUp
 
 	super setUp.
-	sut := ViQueryNode new.
+	sut := ViModelNode new.
 	sut pane: ViPane new.

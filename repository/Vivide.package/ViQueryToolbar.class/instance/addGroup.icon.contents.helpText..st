@@ -2,7 +2,7 @@ as yet unclassified
 addGroup: label icon: aForm contents: aQuery helpText: aString
 
 	self groups
-		add: label -> (ViQueryNode new
+		add: label -> (ViModelNode new
 			inputForChildren: {self object};
 			firstStep: aQuery)
 		beforeIndex: self groups size.

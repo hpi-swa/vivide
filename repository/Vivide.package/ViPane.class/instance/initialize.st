@@ -8,7 +8,7 @@ initialize
 		color: Color transparent;
 		extent: 150@150.
 	
-	model := ViQueryNode new
+	model := ViModelNode new
 		pane: self;
 		inputForChildren: #();
 		firstStep: nil.

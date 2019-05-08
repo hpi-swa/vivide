@@ -3,7 +3,7 @@ test06NestedCyclicQueries
 	"NEVER Break the cycle if results are empty."
 	
 	| innerQuery outerQuery |
-	sut := ViQueryNode new.
+	sut := ViModelNode new.
 	innerQuery := {
 		[:objs | objs select: [:num | num odd]].
 		[:ea | #text -> ea asString]} asScript.

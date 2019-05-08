@@ -1,7 +1,7 @@
 interpretation
 interpretScriptWith: someObjects
 
-	^ ViQueryNode new
+	^ ViModelNode new
 		inputForChildren: someObjects;
 		firstStep: self;
 		yourself

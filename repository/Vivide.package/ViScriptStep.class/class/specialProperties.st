@@ -5,7 +5,7 @@ specialProperties
 	property -> <list of default values, nil means all of them>"
 		
 	^ Dictionary newFrom: {
-		#modelClass -> {ViQueryNode}.
+		#modelClass -> {ViModelNode}.
 		#creationAuthor -> nil. "skipped/preserved"
 		#creationTimeStamp -> nil. "skipped/preserved"
 		#copyOf -> nil. "skipped/preserved"

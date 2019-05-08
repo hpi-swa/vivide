@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mt 10/25/2015 12:19:18.373",
+		"setUp" : "mt 5/8/2019 15:57",
 		"simulateSystemChangeAndCallbacks" : "mt 7/3/2015 13:21",
 		"tearDown" : "mt 9/6/2013 18:50:48.486",
 		"test01EmptyQuery" : "mt 4/4/2019 13:55",
@@ -10,7 +10,7 @@
 		"test03SimpleQuery" : "mt 4/4/2019 11:34",
 		"test04NestedQueries" : "mt 4/4/2019 11:35",
 		"test05DefaultProperties" : "mt 4/4/2019 11:35",
-		"test06NestedCyclicQueries" : "mt 4/4/2019 11:47",
+		"test06NestedCyclicQueries" : "mt 5/8/2019 15:57",
 		"test07Context" : "mt 7/3/2015 10:57",
 		"test08WithAllObjects" : "mt 4/4/2019 11:51",
 		"test09WithAllObjectsCyclic" : "mt 4/4/2019 11:51",

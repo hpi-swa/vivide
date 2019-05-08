@@ -30,7 +30,7 @@ createNodes
 				Dictionary newFrom: { #object -> ea. #'1_object' -> ea }]].
 
 		^ result collect: [:props |
-			((modelClass ifNil: [ViQueryNode]) newFrom: props associations)
+			((modelClass ifNil: [ViModelNode]) newFrom: props associations)
 				in: [:node |
 					node
 						firstStep: self next;
