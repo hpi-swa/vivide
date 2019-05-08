@@ -5,7 +5,7 @@ updatePropertyBar
 		removeAllMorphs;
 		height: 1.
 	
-	(self propertiesToIgnore keys select: [:key | (self propertiesToIgnore at: key) isNil]) in: [:ignore | 
+	(self propertiesToIgnore keys select: [:key | (self propertiesToIgnore at: key) isNil]), #(before after) in: [:ignore | 
 		(self scriptScriptProperties keys copyWithoutAll: ignore) do: [:property |
 			| propertyValue text icon |
 			propertyValue := (self thisStep valueOfProperty: property) "no blocks" value.
@@ -18,7 +18,7 @@ updatePropertyBar
 			text := (ViLabelService doObject: propertyValue) ifNotNil: #asString.
 			
 			(text notNil or: [icon notNil]) ifTrue: [
-				self propertyBar addMorphBack: (UiToolButton new
+				self propertyBar addMorphBack: (ViDraggableButton new
 					autoRaise: true;
 					color: Color white;
 					layoutInset: (-1@ -2 corner: -2@ -1);
@@ -27,7 +27,12 @@ updatePropertyBar
 						((text padded: #left to: 3 with: Character space) truncateWithElipsisTo: 10) asText addAttribute: (TextColor color: (Color gray: 0.3))]]);
 					icon: icon;
 					buttonStyle: (icon notNil ifTrue: [#iconOnly] ifFalse: [#textOnly]);
+					
+					"The object behind the button..."
 					in: [:btn | self connect: btn signal: #clicked: to: propertyValue selector: #open];
+					dragTransferType: #object;
+					passenger: propertyValue;
+					
 					yourself).
 					].
 				].
