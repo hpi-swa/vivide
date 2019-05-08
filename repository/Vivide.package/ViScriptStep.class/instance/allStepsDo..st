@@ -5,4 +5,4 @@ allStepsDo: aBlock
 	self
 		allStepsDo: aBlock
 		ifNewSequence: nil
-		ifRecursive: [].
+		ifRecursive: [true].

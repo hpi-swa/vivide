@@ -17,4 +17,6 @@ specialProperties
 		#out -> {OrderedCollection}.
 		#async -> {false}.
 		#isNew -> nil.
+		#after -> {{}}.
+		#before -> {{}}.
 		}

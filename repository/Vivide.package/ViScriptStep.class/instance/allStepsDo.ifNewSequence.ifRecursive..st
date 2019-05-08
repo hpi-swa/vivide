@@ -13,7 +13,7 @@ allStepsDo: aBlock ifNewSequence: anotherBlock ifRecursive: anExceptionBlock
 		enumerator upToExtractionDo: [:step |
 	
 			(previousSteps identityIncludes: step)
-				ifTrue: [^ anExceptionBlock cull: previousSteps last cull: step]. 
+				ifTrue: [(anExceptionBlock cull: previousSteps last cull: step) == true ifTrue: [^ self]]. 
 				
 			previousSteps add: step.
 			aBlock value: step.		

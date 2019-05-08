@@ -4,4 +4,4 @@ allStepsDo: aBlock ifNewSequence: anotherBlock
 	self
 		allStepsDo: aBlock
 		ifNewSequence: anotherBlock
-		ifRecursive: [].
+		ifRecursive: [true].
