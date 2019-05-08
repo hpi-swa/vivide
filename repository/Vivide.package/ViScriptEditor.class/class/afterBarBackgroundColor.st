@@ -1,4 +1,4 @@
 colors
 afterBarBackgroundColor
 
-	^ Color r: 217 / 255 g: 237 / 255 b: 247 / 255
+	^ Color r: 223 / 255 g: 240 / 255 b: 216 / 255
