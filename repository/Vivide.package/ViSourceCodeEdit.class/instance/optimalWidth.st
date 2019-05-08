@@ -1,13 +1,16 @@
 accessing
 optimalWidth
-	"Override to ignore comments."
+	"Override to ignore full-line comments."
 	
 	| maxWidth |
 	maxWidth := 0.
 
-	((self theText asString copyWithRegex: '"[^"]*"' matchesReplacedWith: '')
-		copyReplaceAll: String tab with: '   ')
+	(self theText asString copyReplaceAll: String tab with: '      ')
 	   linesDo: [:line | 
-			maxWidth := maxWidth max: (self textMorph textStyle defaultFont widthOfString: line)].
+		| firstChar firstCharIndex |
+		firstCharIndex := line indexOfAnyOf: CharacterSet nonSeparators startingAt: 1.
 		
-	^ maxWidth + self scrollBarThickness + 20 
+		(firstCharIndex > 0 and: [(line at: firstCharIndex) ~= $"])
+			ifTrue: [maxWidth := maxWidth max: (self textMorph textStyle defaultFont widthOfString: line)]].
+		
+	^ maxWidth + (self scrollBarThickness * 3)
