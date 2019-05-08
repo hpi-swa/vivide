@@ -32,6 +32,7 @@ acceptSourceCode
 	self updateObject.
 	self updateUi.
 	self updatePropertyBar.
+	self updateReferenceBars.
 
 	ViLoggingService trigger: {
 		#message -> 'Script modified.'.

@@ -13,7 +13,9 @@
 		"textField",
 		"propertyBar",
 		"fullSourceCode",
-		"fullSourceCodeInterval" ],
+		"fullSourceCodeInterval",
+		"referenceBeforeBar",
+		"referenceAfterBar" ],
 	"name" : "ViScriptEditor",
 	"pools" : [
 		 ],
