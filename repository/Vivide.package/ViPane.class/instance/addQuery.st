@@ -2,8 +2,7 @@ actions
 addQuery
 
 	| newQuery |
-	newQuery := [:object | object] asScript.
-	newQuery setProperty: #isNew toValue: true. 
+	newQuery := self createIdentityScript. 
 
 	self flag: #metaScript.
 	self isTopLevel ifFalse: [

@@ -4,7 +4,7 @@ createIdentityScript
 	| script tupleSize |
 	tupleSize := self tupleSizeDynamic.
 	script := (tupleSize <= 1
-		ifTrue: [ [:object | object] asScript ]
+		ifTrue: [ '[:object | object]' asScript ]
 		ifFalse: [
 			ViScriptTemplate createIdentityForTuple: (self objects
 				ifEmpty: [Array new: tupleSize withAll: Object]

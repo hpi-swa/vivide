@@ -12,9 +12,7 @@ scriptArtifacts: someObjects andEdit: aBoolean
 	objects := (self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		ifTrue: [objects collect: [:o | o value]] ifFalse: [objects].
 	
-	script := [:object | object] asScript
-		setProperty: #isNew toValue: true;
-		yourself.
+	script := ( '[:object | object]' -> { #isNew -> true } ) asScript.
 	
 	"Flatten nested collections if feasible."
 	objects := objects gather: [:o | o asList].

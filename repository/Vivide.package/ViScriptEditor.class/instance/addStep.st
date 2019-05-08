@@ -3,7 +3,7 @@ addStep
 	"Insert a new script step after thisStep including a script editor."
 
 	| editor newStep |	
-	newStep := [:in :out | out addAll: in] asScript.
+	newStep := '[:in :out | out addAll: in]' asScript.
 	newStep adoptOrganization: self thisStep organization.
 	
 	newStep next: self thisStep next.
