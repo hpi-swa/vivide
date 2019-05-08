@@ -9,8 +9,10 @@ stepgroups
 (#id -> #groups).
 (#isProperty -> false).
 (#label -> nil).
-(#next -> #'21bca680-25a5-1e4b-8a4b-de8ef046376f').
+(#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#groupsMinimal #defaultPropertiesExtended)).
+(#before -> #()).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '2 April 2019 3:12:48.396594 pm').
 (#inputKind -> #(nil nil)).
