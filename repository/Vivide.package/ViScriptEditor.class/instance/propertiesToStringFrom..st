@@ -17,6 +17,8 @@ propertiesToStringFrom: someAssociations
 	^ String streamContents: [:result |
 		result nextPutAll: '{'; cr.
 		
+		raw ifEmpty: [result tab; nextPutAll: '"Set script properties here..."' translated; cr].
+		
 		{
 			{ '"Basic Properties"'. kernelProperties }.
 			{ '"View Properties"'. viewProperties }.
