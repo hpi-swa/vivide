@@ -14,4 +14,4 @@ stepunsavedScripts
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 2:07 pm').
 (#isGlobal -> true).
-(#notifier -> ViSystemChangeNotifier)}))})
+(#notifier -> ViSqueakSystemChangeNotifier)}))})

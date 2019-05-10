@@ -6,6 +6,7 @@ addClassHierarchy
 			#inputKind -> ClassDescription. #outputKind -> ClassDescription.
 			#view -> ViTreeView.
 			#label -> 'Class Hierarchy'.
+			#id -> #classHierarchy.
 			#priority -> 45}.
 		#defaultPropertiesExtended.
 		[:class | class subclasses].

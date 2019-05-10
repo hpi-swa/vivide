@@ -13,4 +13,4 @@ step3bc53c43eaf392408d99587e9a09d49c
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 2:47:36 pm').
-(#notifier -> ViSystemChangeNotifier)}))})
+(#notifier -> ViSqueakSystemChangeNotifier)}))})

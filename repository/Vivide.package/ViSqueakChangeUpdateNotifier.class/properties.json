@@ -1,5 +1,5 @@
 {
-	"category" : "Vivide-Notifications",
+	"category" : "Vivide-Scripts-Notifications",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TViObjectNotifier classTrait",
@@ -9,7 +9,7 @@
 	"instvars" : [
 		"subject",
 		"aspect" ],
-	"name" : "ViChangeUpdateNotifier",
+	"name" : "ViSqueakChangeUpdateNotifier",
 	"pools" : [
 		 ],
 	"super" : "Object",

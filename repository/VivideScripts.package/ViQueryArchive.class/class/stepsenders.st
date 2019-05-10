@@ -14,6 +14,6 @@ stepsenders
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 12:08:55 pm').
 (#inputKind -> ByteSymbol).
-(#notifier -> ViSystemChangeNotifier).
+(#notifier -> ViSqueakSystemChangeNotifier).
 (#out -> Set).
 (#view -> ViTreeViewExtended)}))})

@@ -4,6 +4,9 @@ reset
 	(self valueOfProperty: #expandAll ifAbsent: [false])
 		ifTrue: [self currentQueryView expandAllNodes].  
 
+	(self valueOfProperty: #expandTop ifAbsent: [false])
+		ifTrue: [self currentQueryView expandAllTopLevelNodes ].  
+
 	self updateQueryCommands.
 	self findNext.
 	

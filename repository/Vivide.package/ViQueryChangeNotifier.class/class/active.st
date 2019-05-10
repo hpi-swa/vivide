@@ -1,4 +1,4 @@
 instances
 active
 
-	^ ViActiveNotifier value
+	^ ViActiveScriptNotifier value

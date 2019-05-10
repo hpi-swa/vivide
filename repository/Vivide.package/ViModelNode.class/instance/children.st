@@ -10,4 +10,5 @@ children
 		"Only one chance for lazy initialization."
 		children ifNil: [
 			children := Dictionary new.
-			children at: self defaultGroup put: {}]]
+			children at: self defaultGroup put: {}.
+			children]]

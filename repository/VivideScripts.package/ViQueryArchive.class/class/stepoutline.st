@@ -14,7 +14,7 @@ stepoutline
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '12 May 2015 4:39:25 pm').
 (#inputKind -> ClassDescription).
-(#notifier -> ViSystemChangeNotifier).
+(#notifier -> ViSqueakSystemChangeNotifier).
 (#orientation -> #default).
 (#priority -> 40).
 (#view -> ViTreeViewExtended)}))})
