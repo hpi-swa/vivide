@@ -1,7 +1,7 @@
 tests - advanced extraction
 test03ExtractPropertyAsReadWriteBlock
 
-		| script object property interpreter |
+	| script object property interpreter |
 	script := [:morph | 
 		#color 
 			-> [morph color] "Late bound read."

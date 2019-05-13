@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"sut" ],
-	"name" : "ViQueryNodeTests",
+		 ],
+	"name" : "ViModelNodeTests",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "TestCase",
 	"type" : "normal" }
