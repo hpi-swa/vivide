@@ -3,6 +3,12 @@ hasSameStack: node
 	"Only compare the script activations on the stack for this."
 	
 	| myLinks otherLinks |
+	(self referenceStack isNil and: [node referenceStack isNil])
+		ifTrue: [^ true].
+	
+	(self referenceStack isNil or: [node referenceStack isNil])
+		ifTrue: [^ false].
+	
 	(self referenceStack isEmpty and: [node referenceStack isEmpty])
 		ifTrue: [^ true].
 	
