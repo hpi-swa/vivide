@@ -6,7 +6,7 @@ def29c2800ba8b5fb468d7fe2ac6a7d3628
 (#block -> [:in :out | out addAll: ([:organizers | 
 	| orga |
 	orga := ViScriptOrganizer new.
-	orga notifier: ViQueryChangeNotifier new.
+	orga notifier: ViScriptChangeNotifier new.
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive
 		intoOrganizer: orga) merge.
@@ -19,7 +19,7 @@ def29c2800ba8b5fb468d7fe2ac6a7d3628
 (#sourceCode -> '[:in :out | out addAll: ([:organizers | 
 	| orga |
 	orga := ViScriptOrganizer new.
-	orga notifier: ViQueryChangeNotifier new.
+	orga notifier: ViScriptChangeNotifier new.
 	(ViQuerySerializer
 		fromArchive: ViQueryArchive
 		intoOrganizer: orga) merge.

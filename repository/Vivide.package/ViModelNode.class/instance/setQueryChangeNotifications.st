@@ -5,12 +5,12 @@ setQueryChangeNotifications
 	
 	self depth > self class updateDepthThreshold ifTrue: [^ self].
 	
-	ViQueryChangeNotifier active
+	ViScriptChangeNotifier active
 		notify: self
-		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		ofQueryChangesOfItem: ViScriptChangeNotifier stepKind
 		change: ModifiedEvent changeKind
 		using: #updateFromChangedStep:;
 		notify: self
-		ofQueryChangesOfItem: ViQueryChangeNotifier definitionKind
+		ofQueryChangesOfItem: ViScriptChangeNotifier definitionKind
 		change: ModifiedEvent changeKind
 		using: #updateFromChangedDefinition:.

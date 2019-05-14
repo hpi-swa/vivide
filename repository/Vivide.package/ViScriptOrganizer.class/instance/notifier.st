@@ -1,4 +1,4 @@
 accessing
 notifier
 
-	^ notifier ifNil: [ViQueryChangeNotifier uniqueInstance]
+	^ notifier ifNil: [ViScriptChangeNotifier uniqueInstance]

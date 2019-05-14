@@ -1,16 +1,16 @@
 initialization
 initializeUiQueryChanges
 
-	ViQueryChangeNotifier active
+	ViScriptChangeNotifier active
 		notify: self
-		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		ofQueryChangesOfItem: ViScriptChangeNotifier stepKind
 		change: ModifiedEvent changeKind
 		using: #updateFromChangedStep:;
 		notify: self
-		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		ofQueryChangesOfItem: ViScriptChangeNotifier stepKind
 		change: RenamedEvent changeKind
 		using: #updateFromRenamedStep:;
 		notify: self
-		ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+		ofQueryChangesOfItem: ViScriptChangeNotifier stepKind
 		change: DoItEvent changeKind
 		using: #updateFromQueryEvaluation:.

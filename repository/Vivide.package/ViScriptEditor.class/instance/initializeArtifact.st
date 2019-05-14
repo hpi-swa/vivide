@@ -3,11 +3,11 @@ initializeArtifact
 
 	| container |
 
-	ViQueryChangeNotifier active
-		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier stepKind
+	ViScriptChangeNotifier active
+		notify: self ofQueryChangesOfItem: ViScriptChangeNotifier stepKind
 		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
-	ViQueryChangeNotifier active
-		notify: self ofQueryChangesOfItem: ViQueryChangeNotifier definitionKind
+	ViScriptChangeNotifier active
+		notify: self ofQueryChangesOfItem: ViScriptChangeNotifier definitionKind
 		change: ModifiedEvent changeKind using: #updateFromChangedScript:.
 		
 	self initializeTextField.

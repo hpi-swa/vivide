@@ -8,7 +8,7 @@
 	"instvars" : [
 		"eventSource",
 		"silenceLevel" ],
-	"name" : "ViQueryChangeNotifier",
+	"name" : "ViScriptChangeNotifier",
 	"pools" : [
 		 ],
 	"super" : "Object",
