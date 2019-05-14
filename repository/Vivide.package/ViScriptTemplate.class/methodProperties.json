@@ -12,6 +12,7 @@
 		"detectDeepestBlockNode:" : "mt 4/26/2019 15:00",
 		"detectDeepestBlockNode:last:" : "mt 4/26/2019 15:00",
 		"detectObjectTransformation:" : "mt 4/26/2019 15:00",
+		"expandString:" : "mt 5/14/2019 10:04",
 		"generateBlockVarDeclarationFor:" : "mt 5/8/2019 13:44",
 		"generateEmptyScriptCodeFor:" : "mt 4/26/2019 14:57",
 		"hardcodedScriptIds" : "mt 5/3/2019 16:16",
