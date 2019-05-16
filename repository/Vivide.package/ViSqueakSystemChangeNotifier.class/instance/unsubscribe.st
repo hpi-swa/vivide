@@ -1,4 +1,4 @@
 as yet unclassified
 unsubscribe
 
-	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
+	self systemChangeNotifier noMoreNotificationsFor: self.

@@ -1,4 +1,4 @@
 as yet unclassified
 subscribe
 
-	SystemChangeNotifier uniqueInstance notify: self ofAllSystemChangesUsing: #notifyEvent:.
+	self systemChangeNotifier notify: self ofAllSystemChangesUsing: #notifyEvent:.

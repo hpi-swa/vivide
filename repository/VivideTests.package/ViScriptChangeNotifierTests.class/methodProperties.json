@@ -5,6 +5,7 @@
 		"addEvent:" : "mt 5/16/2019 16:03",
 		"eventCount" : "mt 5/16/2019 16:05",
 		"lastEvent" : "mt 5/16/2019 16:05",
+		"processDeferredUpdates" : "mt 5/16/2019 18:02",
 		"setUp" : "mt 5/16/2019 16:05",
 		"tearDown" : "mt 5/16/2019 16:04",
 		"test01RegisterUnregister" : "mt 5/16/2019 16:16",
@@ -13,4 +14,5 @@
 		"test04ChangeNext" : "mt 5/16/2019 16:28",
 		"test05ChangeScriptProperties" : "mt 5/16/2019 16:32",
 		"test06DoSilently" : "mt 5/16/2019 17:00",
-		"test07CountEvents" : "mt 5/16/2019 17:02" } }
+		"test07CountEvents" : "mt 5/16/2019 17:02",
+		"test08ScriptNotifier" : "mt 5/16/2019 18:02" } }
