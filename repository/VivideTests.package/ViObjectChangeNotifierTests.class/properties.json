@@ -7,9 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"notifier",
-		"script",
 		"events" ],
-	"name" : "ViScriptChangeNotifierTests",
+	"name" : "ViObjectChangeNotifierTests",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

@@ -2,4 +2,5 @@ initialization
 initializeUiObjectChanges
 
 	ViObjectChangeNotifier uniqueInstance
-		notify: self ofObjectChangesUsing: #onObjectChange:.
+		notify: self
+		using: #onObjectChange:.
