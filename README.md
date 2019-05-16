@@ -4,14 +4,14 @@ A programming environment and framework that supports *interactive*, *data-drive
 
 ## How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
 
-1. Get [Squeak 5.1 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
+1. Get [Squeak 5.2 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
 3. Finally, load VIVIDE into your Squeak image:
 
 ```Smalltalk
 Metacello new
   baseline: 'Vivide';
-  repository: 'github://hpi-swa/vivide/repository';
+  repository: 'github://hpi-swa/vivide/repository:master-squot';
   load.
 ```
 
