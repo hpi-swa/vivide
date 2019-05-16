@@ -7,5 +7,6 @@ label: aString
 		label := aString.
 		
 		self notifier
-			stepRenamed: self
-			from: oldLabel to: label].
+			step: self
+			properties: {#label -> oldLabel}
+			changedTo:{#label -> self label}].

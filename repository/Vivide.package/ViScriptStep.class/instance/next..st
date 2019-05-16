@@ -8,5 +8,6 @@ next: aStep
 		self breakLocalCycle.
 		
 		self notifier
-			stepNextChanged: self
-			from: oldNext to: next].
+			step: self
+			next: oldNext
+			changedTo: self next].

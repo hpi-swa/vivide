@@ -7,6 +7,6 @@ isProperty: aBoolean
 		isProperty := aBoolean.
 		
 		self notifier
-			stepPropertiesChanged: self
-			from: {#isProperty -> old}
-			to: {#isProperty -> aBoolean}].
+			step: self
+			properties: {#isProperty -> old}
+			changedTo: {#isProperty -> aBoolean}].

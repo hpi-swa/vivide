@@ -6,4 +6,5 @@ registerStep: aStep
 	self steps at: aStep id put: aStep.
 	
 	self notifier
-		stepRegistered: aStep.
+		step: aStep
+		registeredIn: self.

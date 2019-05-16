@@ -6,6 +6,3 @@ unregisterDefinition: aStepDefinition
 	self definitions removeKey: aStepDefinition id.
 	
 	self definitionsCategorizer removeElement: aStepDefinition id.
-	
-	self notifier
-		definitionUnregistered: aStepDefinition.

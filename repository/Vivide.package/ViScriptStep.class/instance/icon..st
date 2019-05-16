@@ -7,5 +7,6 @@ icon: aForm
 		icon := aForm.
 		
 		self notifier
-			stepIconChanged: self
-			from: oldIcon to: icon].
+			step: self
+			properties: {#icon -> oldIcon}
+			changedTo: {#icon -> self icon}].

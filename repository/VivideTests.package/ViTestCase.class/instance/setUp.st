@@ -13,7 +13,7 @@ setUp
 	Preferences disable: #mouseOverForKeyboardFocus."
 	
 	organization := ViScriptOrganizer new.
-	organization notifier: ViQueryChangeNotifier new.
+	organization notifier: ViScriptChangeNotifier new.
 	
 	{[:object | #text -> object printString] -> {#id -> #defaultProperties}} asScript
 		adoptOrganization: organization.

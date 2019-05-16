@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Notifications-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"changeKind" ],
+	"name" : "ViScriptChangeEvent",
+	"pools" : [
+		 ],
+	"super" : "AbstractEvent",
+	"type" : "normal" }

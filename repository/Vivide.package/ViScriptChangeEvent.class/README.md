@@ -1,0 +1,1 @@
+A generic change event for scripts and script steps. Encodes the actual change kind as an instance variable instead of a subclass to improve modularity. The traditional hierarchy of AbstractEvent fits only changes in classes and methods.

@@ -5,8 +5,8 @@ children
 		updateCount := false. "Discard deferred update requests."
 		self
 			processStepsGuarded;
-			setUpdateNotifications;
-			setQueryChangeNotifications.
+			setInputChangeNotifications;
+			setStepChangeNotifications.
 		"Only one chance for lazy initialization."
 		children ifNil: [
 			children := Dictionary new.

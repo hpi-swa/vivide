@@ -7,6 +7,6 @@ isExecutedAsynchronously: aBoolean
 		isExecutedAsynchronously := aBoolean.
 		
 		self notifier
-			stepPropertiesChanged: self
-			from: {#isExecutedAsynchronously -> old}
-			to: {#isExecutedAsynchronously -> aBoolean}].
+			step: self
+			properties: {#isExecutedAsynchronously -> old}
+			changedTo: {#isExecutedAsynchronously -> aBoolean}].

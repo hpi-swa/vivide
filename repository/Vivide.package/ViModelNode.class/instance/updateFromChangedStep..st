@@ -1,6 +1,7 @@
 script change events
 updateFromChangedStep: evt
 
+	| resetNotifications |
 	self firstStep ifNil: [^ self].
 	
 	"Only the notification property affects model nodes."
@@ -8,8 +9,8 @@ updateFromChangedStep: evt
 		ifTrue: [^ self].
 	
 	"Only things that could modify the result of #processSteps."
-	((evt isPropertiesModified
-		or: [evt isDefinitionChanged])
+	((evt isSourceCodeChanged
+		or: [evt isPropertiesModified])
 		or: [evt isNextChanged])
 			ifFalse: [^ self].
 	
@@ -23,9 +24,12 @@ updateFromChangedStep: evt
 			^ self].
 	
 	"Only if at least one of my next steps is this changed step."
+	resetNotifications := evt isPropertiesModified and: [evt newProperties includesKey: #notifier].
 	self firstStep allStepsDo: [:step |
 		evt item == step ifTrue: [
-			(evt isPropertiesModified and: [evt newProperties includesKey: #notifier])
-				ifTrue: [self clearUpdateNotifications; setUpdateNotifications].
+			resetNotifications ifTrue: [
+				self
+					clearInputChangeNotifications;
+					setInputChangeNotifications].
 			self triggerUpdateChildren.
 			^ self]].

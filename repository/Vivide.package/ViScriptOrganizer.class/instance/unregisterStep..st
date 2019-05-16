@@ -8,4 +8,5 @@ unregisterStep: aStep
 	self stepsCategorizer removeElement: aStep id.
 	
 	self notifier
-		stepUnregistered: aStep.
+		step: aStep
+		unregisteredIn: self.

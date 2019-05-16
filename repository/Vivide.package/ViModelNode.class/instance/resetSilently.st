@@ -5,7 +5,7 @@ resetSilently
 	children ifNil: [^ self].
 
 	self
-		clearUpdateNotifications;
-		clearQueryChangeNotifications.
+		clearInputChangeNotifications;
+		clearStepChangeNotifications.
 		
 	self resetChildrenSilently.

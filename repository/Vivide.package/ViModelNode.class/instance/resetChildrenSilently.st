@@ -3,7 +3,7 @@ resetChildrenSilently
 
 	children ifNil: [^ self].
 
-	self clearAllUpdateNotifications.
-	self clearAllQueryChangeNotifications.
+	self clearAllInputChangeNotifications.
+	self clearAllStepChangeNotifications.
 
 	children := nil.
