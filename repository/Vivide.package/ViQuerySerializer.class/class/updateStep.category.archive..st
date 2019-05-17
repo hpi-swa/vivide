@@ -11,6 +11,6 @@ updateStep: step category: category archive: aClass
 			String tab, '<step>', String cr,
 			String cr,
 			String tab, '^ ', step asDictionary compactStoreString
-		under: category, 'steps'.
+		under: category.
 		
 	^ selector

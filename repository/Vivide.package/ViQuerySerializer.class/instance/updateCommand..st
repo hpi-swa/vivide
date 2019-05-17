@@ -3,5 +3,5 @@ updateCommand: command
 
 	^ self class
 		updateCommand: command
-		category: (self class categoryPrefixFor: command)
+		category: 'commands'
 		archive: archive

@@ -11,6 +11,6 @@ updateCommand: command category: category archive: aClass
 			String tab, '<command>', String cr,
 			String cr,
 			String tab, '^ ', command asDictionary compactStoreString
-		under: category, 'commands'.
+		under: category.
 		
 	^ selector

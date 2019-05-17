@@ -3,10 +3,10 @@ serializeIntoArchive
 
 	ViQuerySerializer
 		updateStep: self
-		category: (ViQuerySerializer categoryPrefixFor: self)
+		category: 'steps'
 		archive: self archive.
 
 	ViQuerySerializer
 		updateDefinition: self definition
-		category: (ViQuerySerializer categoryPrefixFor: self definition)
+		category: 'definitions'
 		archive: self definition archive.

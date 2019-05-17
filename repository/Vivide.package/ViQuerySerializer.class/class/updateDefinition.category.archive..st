@@ -11,6 +11,6 @@ updateDefinition: def category: category archive: aClass
 			String tab, '<definition>', String cr,
 			String cr,
 			String tab, '^ ', def asDictionary compactStoreString
-		under: category, 'definitions'.
+		under: category.
 		
 	^ selector

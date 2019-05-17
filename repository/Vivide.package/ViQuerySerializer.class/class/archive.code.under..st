@@ -10,12 +10,12 @@ archive: class code: string under: category
 			(class organization categoryOfElement: selector) ~= category ifTrue: [
 				class organization
 					classify: selector
-					under: category.
+					under: (category ifEmpty: [Categorizer default]).
 				Transcript cr; show: '[ViQuerySerializer] Protocol for ', class name, ' >> ', selector, ' changed to: ', category].
 				^ self].
 	
 	class
 		compile: string
-		classified: category.
+		classified: (category ifEmpty: [Categorizer default]).
 		
 	Transcript cr; show: '[ViQuerySerializer] Method changed: ', class name, ' >> ', selector, '(', category, ')'.

@@ -3,5 +3,5 @@ updateStep: step
 
 	^ self class
 		updateStep: step
-		category: (self class categoryPrefixFor: step)
+		category: 'steps'
 		archive: archive
