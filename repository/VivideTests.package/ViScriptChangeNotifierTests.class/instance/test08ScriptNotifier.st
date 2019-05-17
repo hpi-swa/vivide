@@ -2,16 +2,12 @@ tests
 test08ScriptNotifier
 	"Use this notifier in scripts."
 	
-	| far model |
-	far := [:num | num] asScript.
-	far organization notifier: ViScriptChangeNotifier new.
+	| example model |
+	example := { [:step | step label] -> { #notifier -> [:object | object notifier] } } asScript.	
+	model := example interpretScriptWith: {script}.
+
+	script label: 'unnamed'.
+	self assert: 'unnamed' equals: model firstNode object.
 	
-	script sourceCode: (ViScriptTemplate expandString: '[:step | step id]').
-	script setProperty: #notifier toValue: [:object | object notifier].
-	
-	model := script interpretScriptWith: {far}.
-	self assert: far id equals: model firstNode object.
-	
-	far id: #test08.
-	self processDeferredUpdates.
-	self assert: far id equals: model firstNode object.	
+	script label: 'test08'. self processDeferredUpdates.
+	self assert: 'test08' equals: model firstNode object.	

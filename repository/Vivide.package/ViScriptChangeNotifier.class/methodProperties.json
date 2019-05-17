@@ -8,10 +8,12 @@
 		"allEventSelectors" : "mt 5/16/2019 14:21",
 		"allItemKinds" : "mt 5/16/2019 14:16",
 		"doSilently:" : "mt 9/16/2013 16:11:24.778",
+		"filter" : "mt 5/17/2019 09:36",
 		"initialize" : "mt 9/16/2013 16:08:03.204",
 		"isBroadcasting" : "mt 9/16/2013 16:11:29.935",
 		"noMoreNotificationsFor:" : "mt 9/16/2013 16:11:35.297",
 		"notify:using:" : "mt 5/16/2019 14:30",
+		"notifyEvent:" : "mt 5/17/2019 09:35",
 		"releaseAll" : "mt 9/16/2013 16:09:04.081",
 		"setBroadcasting" : "mt 9/16/2013 16:08:58.364",
 		"step:next:changedTo:" : "mt 5/16/2019 11:51",
@@ -19,4 +21,6 @@
 		"step:registeredIn:" : "mt 5/16/2019 11:59",
 		"step:sourceCode:changedTo:" : "mt 5/16/2019 11:40",
 		"step:unregisteredIn:" : "mt 5/16/2019 11:59",
-		"trigger:" : "mt 9/17/2013 09:47:40.486" } }
+		"subscribe" : "mt 5/17/2019 09:34",
+		"trigger:" : "mt 9/17/2013 09:47:40.486",
+		"unsubscribe" : "mt 5/17/2019 09:34" } }
