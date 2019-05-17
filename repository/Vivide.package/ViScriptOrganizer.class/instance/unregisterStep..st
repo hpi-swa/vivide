@@ -5,8 +5,6 @@ unregisterStep: aStep
 		ifFalse: [^ self].
 	self steps removeKey: aStep id.
 	
-	self stepsCategorizer removeElement: aStep id.
-	
 	self notifier
 		step: aStep
 		unregisteredIn: self.

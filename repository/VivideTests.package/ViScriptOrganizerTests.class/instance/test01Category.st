@@ -5,8 +5,8 @@ test01Category
 	step := [:ea | ea * ea] asScript.
 	step adoptOrganization: organization.
 		
-	self assert: (organization categoryOfElement: step) isNil.
+	self assert: #() equals: (organization categoryOfElement: step).
 	organization classify: step under: #test.
-	self assert: #test equals: (organization categoryOfElement: step).
+	self assert: #(test) equals: (organization categoryOfElement: step).
 	organization classify: step under: nil. "Remove category."
-	self assert: (organization categoryOfElement: step) isNil.
+	self assert: #() equals: (organization categoryOfElement: step).

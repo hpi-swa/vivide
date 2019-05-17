@@ -1,9 +1,5 @@
 categories
-categoryOfElement: aStep
+categoryOfElement: aScriptObject
 
-	| categorizer |
-	categorizer := aStep isScript
-		ifTrue: [self stepsCategorizer]
-		ifFalse: [self definitionsCategorizer].
-
-	^ categorizer categoryOfElement: aStep id
+	self flag: #remove. "mt: Deprecated."
+	^ (aScriptObject valueOfProperty: #tags) asList

@@ -2,7 +2,7 @@
 	"class" : {
 		"convertPanes:" : "mt 4/29/2019 17:53",
 		"convertPanes:toScript:" : "mt 4/29/2019 17:57",
-		"kernelProperties" : "mt 5/8/2019 14:05",
+		"kernelProperties" : "mt 5/17/2019 12:21",
 		"specialProperties" : "mt 5/8/2019 15:57",
 		"useHorizontalLists" : "mt 12/15/2015 09:41:52.057",
 		"useHorizontalLists:" : "mt 10/18/2015 10:29:18" },
@@ -127,6 +127,7 @@
 		"stepsDoUnsafe:" : "mt 4/25/2019 10:56",
 		"storeOn:" : "mt 5/2/2019 15:04",
 		"storeOn:withInput:" : "mt 5/17/2019 10:24",
+		"tags" : "mt 5/17/2019 12:22",
 		"unregister" : "mt 4/26/2019 13:03",
 		"valueOfProperty:ifAbsent:" : "mt 5/2/2019 15:04",
 		"viewClass" : "mt 5/3/2019 11:44",

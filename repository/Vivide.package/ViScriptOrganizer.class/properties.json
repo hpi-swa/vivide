@@ -9,10 +9,7 @@
 		"steps",
 		"definitions",
 		"notifier",
-		"stepsCategorizer",
-		"definitionsCategorizer",
-		"commands",
-		"commandsCategorizer" ],
+		"commands" ],
 	"name" : "ViScriptOrganizer",
 	"pools" : [
 		 ],
