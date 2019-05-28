@@ -17,9 +17,9 @@ iconForClass: aClassDescription
 	(aClassDescription inheritsFrom: TestCase) ifFalse: [^ self blankIcon].
 	
 	^ (aClassDescription lastRun at: #errors)
-		ifNotEmpty: [UiSilkIcons bulletRedIcon]
+		ifNotEmpty: [ViIcons icons8CancelBlack64pxIcon ]
 		ifEmpty: [(aClassDescription lastRun at: #failures)
-			ifNotEmpty: [UiSilkIcons bulletYellowIcon]
+			ifNotEmpty: [ViIcons icons8Cancel64px1Icon ]
 			ifEmpty: [(aClassDescription lastRun at: #passed)
-				ifNotEmpty: [UiSilkIcons bulletGreenIcon]
-				ifEmpty: [UiSilkIcons bulletWhiteIcon]]]
+				ifNotEmpty: [ViIcons icons8Checkmark64pxIcon]
+				ifEmpty: [ViIcons icons8QuestionMark64pxIcon ]]]
