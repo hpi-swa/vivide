@@ -7,6 +7,9 @@ deleteScript
 			for: self.
 		^ self "I am the last one."].
 
+	"This script must not be *new* because editor updates can happen in the deletion process, which would activate the wizard and try to interpret the script to collect input information. See #activateWizard and #updateInput."
+	self thisStep setProperty: #isNew toValue: nil.
+	
 	self thisStep organization deleteStep: self thisStep.
 	
 	ViLoggingService trigger: {#message -> 'Script part removed.'}.

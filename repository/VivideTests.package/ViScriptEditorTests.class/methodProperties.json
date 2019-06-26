@@ -40,7 +40,7 @@
 		"test14CodeFoldingStabilityOnChangedSourceCode" : "mt 4/12/2019 15:13",
 		"test14InputKindForTuplesMultipleSteps" : "mt 4/11/2019 11:09",
 		"test15CodeFoldingStabilityWhenAllVisible" : "mt 4/12/2019 15:44",
-		"test15WizardTemplate" : "mt 4/11/2019 11:22",
+		"test15WizardTemplate" : "mt 6/26/2019 09:31",
 		"test16CodeFoldingStabilityWhenCodeVisible" : "mt 4/12/2019 15:54",
 		"test16InputKindOverride" : "mt 4/11/2019 11:24",
 		"test17CodeFoldingStabilityWhenRevertingChanges" : "mt 4/14/2019 16:29",

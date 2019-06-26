@@ -4,6 +4,7 @@ addStep
 
 	| editor newStep |	
 	newStep := '[:in :out | out addAll: in]' asScript.
+	newStep setProperty: #isNew toValue: true. "Show script wizard."
 	newStep adoptOrganization: self thisStep organization.
 	
 	newStep next: self thisStep next.
@@ -16,9 +17,3 @@ addStep
 	
 	"Tell my environment about this new editor so that users can actually see it."
 	self artifactCreated: editor. 
-	
-	"New steps usually warrant the activation of the wizard to help edit."
-	editor activateWizard.
-	
-	"We need to update the pane highlights because only now we have a system window."
-	editor addPaneHighlights.

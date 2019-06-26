@@ -1,4 +1,4 @@
-accessing - script
+updating
 checkAllStepsConnected
 
 	self allSteps overlappingPairsDo: [:s1 :s2 |
