@@ -1,8 +1,12 @@
 drawing
 drawOn: aCanvas
 
-	super drawOn: aCanvas.
-	
+	0 to: 5 do: [:offset |
+		aCanvas
+			frameRectangle: (self bounds outsetBy: 15 - offset)
+			width: 15 - offset
+			color: self color].
+					
 	self target ifNotNil: [
 	self paneInHandles do: [:handle | | pane |
 		pane := handle valueOfProperty: #paneIn.

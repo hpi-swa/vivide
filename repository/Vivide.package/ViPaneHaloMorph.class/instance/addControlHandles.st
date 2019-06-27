@@ -22,9 +22,13 @@ addControlHandles
 	
 	"Advanced pane control."
 	(self addHandleButton: {ViIcons icons8SearchProperty32pxIcon scaledToDisplay. 'Explore pane'. ((box width // 2) + box left - (buttonSize * 1.5)) @ box top}) in: [:exploreBtn |
-		self connect: exploreBtn signal: #clicked: to: target selector: #explore].
+		self connect: exploreBtn signal: #clicked: to: self selector: #delete.
+		self connect: exploreBtn signal: #clicked: to: target selector: #explore.
+		].
 	(self addHandleButton: {ViIcons icons8FlowChart32pxIcon scaledToDisplay. 'Explore hierarchy'. ((box width // 2) + box left + (buttonSize * 1.5)) @ box top}) in: [:exploreBtn |
-		self connect: exploreBtn signal: #clicked: to: target selector: #exploreHierarchy].
+		self connect: exploreBtn signal: #clicked: to: self selector: #delete.
+		self connect: exploreBtn signal: #clicked: to: target selector: #exploreHierarchy.
+		].
 
 	"(self addHandleButton: {UiFugueIcons magnifierIcon asWireframeSunken. ' pane'. ((box width // 2) + box left) @ box top}) in: [:exploreBtn |
 		self connect: exploreBtn signal: #clicked: to: target selector: #explore]."
