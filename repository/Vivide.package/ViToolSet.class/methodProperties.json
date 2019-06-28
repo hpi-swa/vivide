@@ -26,7 +26,8 @@
 		"printRelativeTimeStamp:" : "mt 7/24/2014 11:03:58.903",
 		"selectFromMethods:thatAccess:" : "mt 10/28/2015 14:29:00.066",
 		"selectInGraphFromMethods:thatAccess:" : "mt 10/29/2015 16:49:55.024",
-		"showVivideStack" : "mt 6/26/2019 09:14",
+		"showPackageStack:" : "mt 6/27/2019 11:25",
+		"showVivideStack" : "mt 6/27/2019 11:23",
 		"spyOn:into:" : "mt 4/10/2019 08:23" },
 	"instance" : {
 		 } }
