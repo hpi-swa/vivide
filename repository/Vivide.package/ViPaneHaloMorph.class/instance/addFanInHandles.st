@@ -4,25 +4,6 @@ addFanInHandles
 	| inBtn box buttons |
 	buttons := OrderedCollection new.
 	
-	self target connections
-		select: [:connection | connection isValid and: [connection target == self target]]
-		thenDo: [:connection |
-			buttons add: (UiToolButton new
-				color: self fanInColor;
-				autoRaise: false;
-				buttonStyle: #iconOnly;
-				icon: connection class icon scaledToDisplay;
-				layoutInset: 2;
-				balloonText: (connection source currentQuery
-					ifNil: ['(no query)']
-					ifNotNil: [:q | q nextLabel]);
-				setProperty: #paneIn toValue: connection source;
-				addDropShadow;
-				yourself).
-			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
-			self connect: buttons last signal: #clicked: to: connection selector: #detach.
-			self connect: buttons last signal: #clicked: toSelector: #endInteraction].
-
 	inBtn := UiToolButton new
 		color: self fanInColor;
 		autoRaise: false;
@@ -34,6 +15,8 @@ addFanInHandles
 		yourself.
 	self connect: inBtn signal: #clicked: to: self target selector: #browseObjects.
 	self connect: inBtn signal: #clicked: toSelector: #delete.
+
+	buttons := inputConnections values collect: #second.
 
 	box := Morph new
 		color: Color transparent;
@@ -47,4 +30,6 @@ addFanInHandles
 
 	box fullBounds.
 	box center: (self basicBox left +15) @ ((self basicBox height // 2) + self basicBox top).
+
+	self addAllMorphs: (inputConnections values collect: #first).
 	self addMorph: box.

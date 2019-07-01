@@ -8,7 +8,10 @@
 	"instvars" : [
 		"inputPanes",
 		"outputPanes",
-		"newOutputPane" ],
+		"newOutputPane",
+		"newOutputConnection",
+		"inputConnections",
+		"outputConnections" ],
 	"name" : "ViPaneHaloMorph",
 	"pools" : [
 		 ],

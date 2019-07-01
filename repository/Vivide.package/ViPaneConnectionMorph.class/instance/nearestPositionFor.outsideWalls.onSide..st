@@ -1,5 +1,5 @@
 as yet unclassified
-nearestPositionFor: point outsideWalls: rects
+nearestPositionFor: point outsideWalls: rects onSide: side
 
 	| mergedWall insideWalls |
 	insideWalls := rects select: [:r | r containsPoint: point].
@@ -8,5 +8,8 @@ nearestPositionFor: point outsideWalls: rects
 	mergedWall := insideWalls first.
 	2 to: insideWalls size do: [:index |
 		mergedWall := mergedWall quickMerge: (insideWalls at: index)].
+	mergedWall := mergedWall outsetBy: 3.
 	
-	^ (mergedWall outsetBy: 3) pointNearestTo: point
+	^ side = #left
+		ifTrue: [mergedWall left @ point y]
+		ifFalse: [mergedWall right @ point y]

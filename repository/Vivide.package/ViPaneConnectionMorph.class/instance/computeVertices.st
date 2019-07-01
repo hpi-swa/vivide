@@ -1,18 +1,19 @@
 as yet unclassified
 computeVertices
 
-	| w h done next nextIndex finished path startOffset virtualWalls start end |
-
+	| w h done next nextIndex finished path startOffset virtualWalls start end endLink |
+	self deferUpdates ifTrue: [^ self].
+	
 	virtualWalls := self walls collect: [:morph | morph bounds outsetBy: self grid].
 
 	"Is the start inside a virtual wall?"
-	(self nearestPositionFor: self startPosition outsideWalls: virtualWalls)
+	(self nearestPositionFor: self startPosition outsideWalls: virtualWalls onSide: #right)
 		in: [:extra |			
 			start := extra // self grid.
 			startOffset := extra - (start * self grid)].
 
 	"Is the end inside a virtual wall?"
-	(self nearestPositionFor: self endPosition outsideWalls: virtualWalls)
+	(self nearestPositionFor: self endPosition outsideWalls: virtualWalls onSide: #left)
 		in: [:extra | end := extra // self grid].
 
 	w := Project current world width // self grid x.
@@ -47,17 +48,21 @@ computeVertices
 				"2) Schedule next cells for unblocked cells"
 				blocked ifFalse: [
 					self walk + cell value do: [:nextCell |
-						finished := finished | (nextCell = end).
 						(nextCell > (0@0) and: [nextCell <= (w@h)]) ifTrue: [
 							doneIndex := (nextCell y - 1) * w + nextCell x. "row major"
 							(done at: doneIndex) ifNil: [
-								next add: (nextCell asLink nextLink: cell; yourself)] ] ] ] ] ] ].
+								next add: (nextCell asLink nextLink: cell; yourself).
+								
+								(finished not and: [nextCell = end])
+									ifTrue: [finished := true. endLink := next last].
+								] ] ] ] ] ] ].
 
 	"Clean up path. TODO"
 	finished
-		ifFalse: [path := {self endPosition. self startPosition} * self grid]
+		ifFalse: [path := {self endPosition. self startPosition}.]
 		ifTrue: [
 			path := (LinkedList new
+						"add: endLink nextLink;"
 						add: (next at: nextIndex);
 						collect: [:ea | ea * self grid + startOffset]).
 			path add: self endPosition asLink beforeLink: path firstLink.
@@ -68,6 +73,6 @@ computeVertices
 	self setVertices: path.
 	
 	" *** DEBUGGING TOOLS *** "
-"	Project current world redraw.
+	"Project current world redraw.
 	Project current addDeferredUIMessage: [
 		self displayComputationResults: {done. start. end. startOffset}]."

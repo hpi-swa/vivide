@@ -15,13 +15,7 @@ drawOn: aCanvas
 				frameAndFillRectangle: pane bounds
 				fillColor: (self fanInColor alpha: 0.3)
 				borderWidth: 2
-				borderColor: self fanInColor;
-				line: handle center to: handle center - (20@0)
-				width: 2 color: self fanInColor;
-				line: handle center - (20@0) to: (handle center x - 20) @ pane center y
-				width: 2 color: self fanInColor;
-				line: (handle center x - 20) @ pane center y to: pane center
-				width: 2 color: self fanInColor]].
+				borderColor: self fanInColor]].
 
 	self paneOutHandles do: [:handle | | pane |
 		pane := handle valueOfProperty: #paneOut. 
@@ -30,13 +24,7 @@ drawOn: aCanvas
 				frameAndFillRectangle: pane bounds
 				fillColor: (self fanOutColor alpha: 0.3)
 				borderWidth: 2
-				borderColor: self fanOutColor;
-				line: handle center to: handle center + (20@0)
-				width: 2 color: self fanOutColor;
-				line: handle center + (20@0) to: (handle center x + 20) @ pane center y
-				width: 2 color: self fanOutColor;
-				line: (handle center x + 20) @ pane center y to: pane center
-				width: 2 color: self fanOutColor]].
+				borderColor: self fanOutColor]].
 	
 	self target "pane" drawOverlayInHaloOn: aCanvas.
 	(self target "pane" view isKindOf: ViMultiPaneWidget) ifTrue: [

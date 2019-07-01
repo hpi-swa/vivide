@@ -1,7 +1,26 @@
 drag/drop
 startConnect: event with: connectHandle
 
+	| walls |
+	
 	event hand obtainHalo: self.
-	self addMorph: connectHandle.
-	self removeAllMorphsIn: (self submorphs copyWithout: connectHandle).
+	self removeAllMorphs.
 	positionOffset := event cursorPoint - target topLeft.
+
+	outputConnections valuesDo: [:spec |
+		spec first borderColor: (Color gray: 0.85).
+		self addMorph: spec first]. 
+
+	walls := Set new.
+	self target connections do: [:c | walls add: c source; add: c target].
+
+	newOutputConnection := ViPaneConnectionMorph new
+		setFrom: connectHandle center
+			to: event cursorPoint
+			walls: walls asArray;
+		borderColor: self fanOutColor;
+		yourself.
+
+	self
+		addMorph: newOutputConnection;
+		addMorph: connectHandle.

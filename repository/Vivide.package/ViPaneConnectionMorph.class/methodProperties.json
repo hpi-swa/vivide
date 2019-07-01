@@ -1,15 +1,19 @@
 {
 	"class" : {
-		"from:to:walls:" : "mt 6/28/2019 17:08" },
+		"from:to:walls:" : "mt 7/1/2019 10:45" },
 	"instance" : {
-		"computeVertices" : "mt 6/28/2019 15:19",
+		"computeVertices" : "mt 7/1/2019 11:24",
+		"deferUpdates" : "mt 7/1/2019 10:08",
+		"deferUpdates:" : "mt 7/1/2019 10:08",
 		"displayComputationResults:" : "mt 6/28/2019 11:05",
 		"drawOn:" : "mt 6/28/2019 17:07",
 		"endPosition" : "mt 6/28/2019 09:38",
 		"endPosition:" : "mt 6/28/2019 10:17",
 		"grid" : "mt 6/28/2019 10:59",
-		"nearestPositionFor:outsideWalls:" : "mt 6/28/2019 11:15",
-		"outerBounds" : "mt 6/28/2019 16:59",
+		"initialize" : "mt 7/1/2019 10:45",
+		"nearestPositionFor:outsideWalls:onSide:" : "mt 7/1/2019 09:46",
+		"outerBounds" : "mt 7/1/2019 09:50",
+		"setFrom:to:" : "mt 7/1/2019 10:27",
 		"setFrom:to:walls:" : "mt 6/28/2019 10:16",
 		"startPosition" : "mt 6/28/2019 09:38",
 		"startPosition:" : "mt 6/28/2019 10:17",
@@ -17,4 +21,5 @@
 		"tunnels:" : "mt 6/28/2019 12:18",
 		"walk" : "mt 6/28/2019 09:06",
 		"walls" : "mt 6/27/2019 16:20",
-		"walls:" : "mt 6/27/2019 16:34" } }
+		"walls:" : "mt 6/27/2019 16:34",
+		"withExtraWall:do:" : "mt 7/1/2019 11:20" } }
