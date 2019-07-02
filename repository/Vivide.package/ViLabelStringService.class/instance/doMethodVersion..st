@@ -3,7 +3,7 @@ doMethodVersion: aMethodVersion
 
 	| theClass compiledMethod |
 	theClass := aMethodVersion theClass.
-	theClass ifNil: [^ super doMethodVersion: aMethodVersion].
+	theClass ifNil: [^ ViToolSet printRelativeTimeStamp: aMethodVersion timeStamp].
 
 	compiledMethod := aMethodVersion theClass anyMethodAt: aMethodVersion selector.
 

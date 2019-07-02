@@ -15,6 +15,7 @@ iconForClass: aClassDescription
 			ifTrue: [^ self icons at: assoc value ifAbsentPut: [(self perform: assoc value) clippedToSize: 16@16]]].
 
 	(aClassDescription inheritsFrom: TestCase) ifFalse: [^ self blankIcon].
+	aClassDescription isAbstract ifTrue: [^ self blankIcon].
 	
 	^ (aClassDescription lastRun at: #errors)
 		ifNotEmpty: [ViIcons icons8CancelBlack64pxIcon ]
