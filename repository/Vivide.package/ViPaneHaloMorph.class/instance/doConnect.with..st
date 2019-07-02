@@ -1,7 +1,6 @@
 drag/drop
 doConnect: event with: connectHandle
 
-	| ownerPanes |
 	event hand obtainHalo: self.
 	connectHandle position: event cursorPoint - (connectHandle extent // 2).
 
@@ -15,9 +14,10 @@ doConnect: event with: connectHandle
 		] ifNone: [].
 	self redrawLater.
 	
-	newOutputPane
-		ifNil: [newOutputConnection endPosition: connectHandle center]
-		ifNotNil: [:m |
-			newOutputConnection
-				withExtraWall: m
-				do: [newOutputConnection endPosition: newOutputPane leftCenter]].
+	newOutputConnection ifNotNil: [:connectionMorph |
+		newOutputPane
+			ifNil: [connectionMorph endPosition: connectHandle center]
+			ifNotNil: [:m |
+				connectionMorph
+					withExtraWall: m
+					do: [connectionMorph endPosition: m leftCenter]]].

@@ -2,7 +2,7 @@
 	"class" : {
 		"from:to:walls:" : "mt 7/1/2019 10:45" },
 	"instance" : {
-		"computeVertices" : "mt 7/1/2019 11:24",
+		"computeVertices" : "mt 7/2/2019 09:59",
 		"deferUpdates" : "mt 7/1/2019 10:08",
 		"deferUpdates:" : "mt 7/1/2019 10:08",
 		"displayComputationResults:" : "mt 6/28/2019 11:05",

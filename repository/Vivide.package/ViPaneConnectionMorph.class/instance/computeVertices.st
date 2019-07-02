@@ -60,7 +60,7 @@ computeVertices
 	"Clean up path. TODO"
 	finished
 		ifFalse: [path := {self endPosition. self startPosition}.]
-		ifTrue: [
+		ifTrue: [ | dst |
 			path := (LinkedList new
 						"add: endLink nextLink;"
 						add: (next at: nextIndex);
@@ -68,7 +68,11 @@ computeVertices
 			path add: self endPosition asLink beforeLink: path firstLink.
 			path add: self startPosition asLink afterLink: path lastLink.
 			
-				].
+			dst := (path firstLink value dist: path firstLink nextLink value).
+			dst < (1@1 dist: self grid)
+				ifTrue: [path firstLink nextLink: path firstLink nextLink nextLink].
+			
+			].
 
 	self setVertices: path.
 	

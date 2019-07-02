@@ -1,9 +1,10 @@
-events
-popUpFor: aPane at: eventPosition hand: hand
+pop up
+popUpFor: aPane at: eventPosition hand: eventHand
 
 	self flag: #metaScript.
 	aPane fullScript. "Update meta scripts"
 
-	super popUpFor: aPane at: eventPosition hand: hand.
+	hand := eventHand.
+	super popUpFor: aPane at: eventPosition hand: eventHand.
 
 	ViLoggingService trigger: {#message -> 'Halo opened.'}.

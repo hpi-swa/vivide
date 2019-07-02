@@ -8,4 +8,6 @@ endInteraction
 	self comeToFront.
 	self bounds: self target worldBoundsForHalo.
 	self redrawLater.
+	
 	self addHandles.
+	hand ifNotNil: [:h | h newMouseFocus: self].

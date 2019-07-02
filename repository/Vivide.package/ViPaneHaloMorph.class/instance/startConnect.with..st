@@ -11,7 +11,7 @@ startConnect: event with: connectHandle
 		spec first borderColor: (Color gray: 0.85).
 		self addMorph: spec first]. 
 
-	walls := Set new.
+	walls := Set with: self target.
 	self target connections do: [:c | walls add: c source; add: c target].
 
 	newOutputConnection := ViPaneConnectionMorph new
