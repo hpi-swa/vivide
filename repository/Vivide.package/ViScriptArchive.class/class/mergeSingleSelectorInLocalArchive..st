@@ -3,7 +3,7 @@ mergeSingleSelectorInLocalArchive: selector
 
 	| serializer organization step def |
 	
-	self flag: #todo. "mt: Are there other was to find the correct organization of a temporary script, which is not part of any profile?"
+	self flag: #todo. "mt: Are there other ways to find the correct organization of a temporary script, which is not part of any profile?"
 	(selector beginsWith: #step)
 		ifTrue: [organization := (ViScriptStep allInstances
 					detect: [:s | (s isDefault not
@@ -29,7 +29,8 @@ mergeSingleSelectorInLocalArchive: selector
 	(selector beginsWith: #def)
 		ifTrue: [def := serializer mergeDefinition: selector].	
 
-	organization resolveReferences.
+	step ifNotNil: [:s | s next; definition].
+	
 	def ifNotNil: [(organization referencesToDefinition: def)
 		ifNotEmpty: [:steps | step := steps first]].
 	
