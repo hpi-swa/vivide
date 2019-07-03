@@ -14,11 +14,12 @@ defeeb4a8f8acd3d540b76306d686bb7a33
 			-> ['2) Arguments']
 	} otherwise: ['3) Temporaries']] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'eeb4a8f8-acd3-d540-b763-06d686bb7a33').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:ungroupedObject | { [:binding :ctxt |
 	true caseOf: {
@@ -29,4 +30,5 @@ defeeb4a8f8acd3d540b76306d686bb7a33
 				node name = binding key]]]
 			-> [''2) Arguments'']
 	} otherwise: [''3) Temporaries'']] value: ungroupedObject . ungroupedObject } asTuples]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

@@ -3,7 +3,7 @@ stepobjectExplorer
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'9f3b781a-255d-f245-bee1-3fcf39040b9d').
 (#iconCode -> 'UiFugueIcons magnifierMediumIcon').
 (#id -> #objectExplorer).
@@ -16,4 +16,6 @@ stepobjectExplorer
 (#editable -> true).
 (#priority -> 500).
 (#view -> ViExplorerView).
-(#windowTitle -> #simple)}))})
+(#windowTitle -> #simple)
+}))
+})

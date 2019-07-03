@@ -3,7 +3,7 @@ stepoutline
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'e50b9af1-42f0-5a44-ba3d-be27b8cb0fdf').
 (#iconCode -> 'nil').
 (#id -> #outline).
@@ -17,4 +17,6 @@ stepoutline
 (#notifier -> ViSqueakSystemChangeNotifier).
 (#orientation -> #default).
 (#priority -> 40).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

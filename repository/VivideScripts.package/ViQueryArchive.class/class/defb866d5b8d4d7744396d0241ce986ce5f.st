@@ -21,11 +21,12 @@ defb866d5b8d4d7744396d0241ce986ce5f
 			 }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'b866d5b8-d4d7-7443-96d0-241ce986ce5f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '10 April 2019 11:09:43.02611 am')})).
+(#creationTimeStamp -> '10 April 2019 11:09:43.02611 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:object | 
 	| numNewAccesses ignore |
@@ -43,4 +44,5 @@ defb866d5b8d4d7744396d0241ce986ce5f
 				ifFalse: [numNewAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: ["white"]]]).
 			 }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

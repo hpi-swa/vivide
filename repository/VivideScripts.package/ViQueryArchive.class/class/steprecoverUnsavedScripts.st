@@ -3,7 +3,7 @@ steprecoverUnsavedScripts
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'110ae7b7-c003-5f4f-8bce-b8ec5d33741f').
 (#iconCode -> 'nil').
 (#id -> #recoverUnsavedScripts).
@@ -15,4 +15,6 @@ steprecoverUnsavedScripts
 (#creationTimeStamp -> '19 October 2015 2:07 pm').
 (#isGlobal -> true).
 (#optimalExtent -> (635@373)).
-(#view -> ViMultiPaneTiled)}))})
+(#view -> ViMultiPaneTiled)
+}))
+})

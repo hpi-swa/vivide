@@ -3,7 +3,7 @@ steptranscript
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'2c1bdde5-03ff-4341-8de6-d518dbf88ba7').
 (#iconCode -> 'ViIcons icons8BulletedList64px2Icon').
 (#id -> #transcript).
@@ -18,4 +18,6 @@ steptranscript
 		history: (VivideLight historyFor: #transcript)]).
 (#priority -> 500).
 (#scrollToBottom -> true).
-(#view -> ViTextView)}))})
+(#view -> ViTextView)
+}))
+})

@@ -6,11 +6,13 @@ defb87cea991358c040bab65d9cea675343
 (#block -> [:in :out | (
 	[:objects | objects collect: [:classOrText | classOrText isBehavior ifTrue: [classOrText]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'b87cea99-1358-c040-bab6-5d9cea675343').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '3 April 2019 9:02:53.560845 am')})).
+(#creationTimeStamp -> '3 April 2019 9:02:53.560845 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:classOrText | classOrText isBehavior ifTrue: [classOrText]]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

@@ -3,7 +3,7 @@ stepdebuggerStack
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'3c662290-020c-cf4d-853e-8062a9ff1cb7').
 (#iconCode -> 'nil').
 (#id -> #debuggerStack).
@@ -16,4 +16,6 @@ stepdebuggerStack
 (#inputKind -> Process).
 (#outputKind -> Context).
 (#priority -> 570).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

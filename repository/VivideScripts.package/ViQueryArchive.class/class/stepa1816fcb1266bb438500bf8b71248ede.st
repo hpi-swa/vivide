@@ -3,7 +3,7 @@ stepa1816fcb1266bb438500bf8b71248ede
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'4c957fd2-d36e-624f-a67c-38f8540d63fe').
 (#iconCode -> 'nil').
 (#id -> #'a1816fcb-1266-bb43-8500-bf8b71248ede').
@@ -15,4 +15,6 @@ stepa1816fcb1266bb438500bf8b71248ede
 (#creationTimeStamp -> '8 November 2013 4:10:44 pm').
 (#hAlignment -> #right).
 (#labelColor -> '#AAAAAA').
-(#priority -> 4220)}))})
+(#priority -> 4220)
+}))
+})

@@ -13,11 +13,12 @@ def0a1a8d7fc69cf24895d3e826729b8629
 			ifFalse: [' (', receiverClass theNonMetaClass name, ')']))}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'0a1a8d7f-c69c-f248-95d3-e826729b8629').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | 
 	| receiverClass |
@@ -27,4 +28,5 @@ def0a1a8d7fc69cf24895d3e826729b8629
 			ifTrue: ['''']
 			ifFalse: ['' ('', receiverClass theNonMetaClass name, '')'']))}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

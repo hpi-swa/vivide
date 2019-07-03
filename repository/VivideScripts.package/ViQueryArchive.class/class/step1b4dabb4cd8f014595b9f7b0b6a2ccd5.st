@@ -3,7 +3,7 @@ step1b4dabb4cd8f014595b9f7b0b6a2ccd5
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'f7529f37-e9c8-7b4b-a182-d4677089bb61').
 (#iconCode -> 'UiSilkIcons worldEditIcon').
 (#id -> #'1b4dabb4-cd8f-0145-95b9-f7b0b6a2ccd5').
@@ -15,4 +15,6 @@ step1b4dabb4cd8f014595b9f7b0b6a2ccd5
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> PackageInfo).
 (#priority -> 70).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

@@ -3,7 +3,7 @@ stepa6b7eb35f794e7419102f303b6594f32
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'f4edd9d8-b908-9c40-a911-a9a20d4e20fe').
 (#iconCode -> 'UiSilkIcons userSuitIcon').
 (#id -> #'a6b7eb35-f794-e741-9102-f303b6594f32').
@@ -15,4 +15,6 @@ stepa6b7eb35f794e7419102f303b6594f32
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> SystemNavigation).
 (#priority -> 810).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

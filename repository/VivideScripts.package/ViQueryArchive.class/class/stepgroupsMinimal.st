@@ -3,7 +3,7 @@ stepgroupsMinimal
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'1aa18191-d968-b347-aad8-96e6fc1ecd3d').
 (#iconCode -> 'nil').
 (#id -> #groupsMinimal).
@@ -14,4 +14,6 @@ stepgroupsMinimal
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '29 March 2019 2:44:51.101235 pm').
 (#inputKind -> #(nil nil)).
-(#view -> ViTreeView)}))})
+(#view -> ViTreeView)
+}))
+})

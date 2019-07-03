@@ -6,11 +6,13 @@ def3167effd0321144a9fe0e6143bc63133
 (#block -> [:in :out | (
 	[:objects | objects collect: [:ungroupedObject | { [:obj | obj category] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'3167effd-0321-144a-9fe0-e6143bc63133').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:ungroupedObject | { [:obj | obj category] value: ungroupedObject . ungroupedObject } asTuples]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

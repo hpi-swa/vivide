@@ -25,11 +25,12 @@ Has no comment') asText makeSelectorBoldIn: aClass]
 }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'cf0824b7-d1f2-2742-aff9-793511335e6b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 February 2014 10:32:36 am')})).
+(#creationTimeStamp -> '24 February 2014 10:32:36 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:method | 
 	"See CodeHolder >> commentContents"
@@ -51,4 +52,5 @@ Has no comment'') asText makeSelectorBoldIn: aClass]
 
 }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

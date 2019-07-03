@@ -13,11 +13,12 @@ def768fe1d5783ea546b83a016c4db6d552
 		-> [[morph addHalo]] }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'768fe1d5-783e-a546-b83a-016c4db6d552').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '15 December 2015 10:39:29 am')})).
+(#creationTimeStamp -> '15 December 2015 10:39:29 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:morph | 
 { #text
@@ -27,4 +28,5 @@ def768fe1d5783ea546b83a016c4db6d552
 	#selectedLater
 		-> [[morph addHalo]] }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

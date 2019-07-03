@@ -9,14 +9,16 @@ def17258eb11b3f474d9beeade709e6d9ad
 	#icon -> (ViIconService doObject: obj)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'17258eb1-1b3f-474d-9bee-ade709e6d9ad').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
 	#text -> (ViLabelService doObject: obj).
 	#icon -> (ViIconService doObject: obj)}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

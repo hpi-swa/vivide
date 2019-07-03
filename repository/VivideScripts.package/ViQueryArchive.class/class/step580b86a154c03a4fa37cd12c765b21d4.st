@@ -3,7 +3,7 @@ step580b86a154c03a4fa37cd12c765b21d4
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'686facbd-ceb9-6742-8b7e-c241f81b553b').
 (#iconCode -> 'UiSilkIcons folderIcon').
 (#id -> #'580b86a1-54c0-3a4f-a37c-d12c765b21d4').
@@ -16,4 +16,6 @@ step580b86a154c03a4fa37cd12c765b21d4
 (#inputKind -> FileDirectory).
 (#outputKind -> DirectoryEntry).
 (#priority -> 320).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

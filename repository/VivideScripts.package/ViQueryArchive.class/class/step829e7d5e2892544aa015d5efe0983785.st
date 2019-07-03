@@ -3,7 +3,7 @@ step829e7d5e2892544aa015d5efe0983785
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'34c17bcd-8a38-1049-bad6-9cf6e2beab36').
 (#iconCode -> 'nil').
 (#id -> #'829e7d5e-2892-544a-a015-d5efe0983785').
@@ -16,4 +16,6 @@ step829e7d5e2892544aa015d5efe0983785
 (#headerText -> 'Resource').
 (#inputKind -> ViFlagComment).
 (#labelColor -> '000000').
-(#priority -> 4020)}))})
+(#priority -> 4020)
+}))
+})

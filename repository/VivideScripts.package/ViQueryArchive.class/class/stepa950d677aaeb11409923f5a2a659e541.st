@@ -3,7 +3,7 @@ stepa950d677aaeb11409923f5a2a659e541
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'79f52e45-0935-2543-8aab-381d461f7c56').
 (#iconCode -> 'nil').
 (#id -> #'a950d677-aaeb-1140-9923-f5a2a659e541').
@@ -14,4 +14,6 @@ stepa950d677aaeb11409923f5a2a659e541
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '6 March 2018 10:30:21 am').
 (#labelHeight -> 120).
-(#view -> ViBarChart)}))})
+(#view -> ViBarChart)
+}))
+})

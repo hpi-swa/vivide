@@ -3,7 +3,7 @@ step31297e2396f54144a0413821519b9f1e
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'75a2435f-60e4-d84c-80d2-aaa667a36c63').
 (#iconCode -> 'UiSilkIcons carDeleteIcon').
 (#id -> #'31297e23-96f5-4144-a041-3821519b9f1e').
@@ -16,4 +16,6 @@ step31297e2396f54144a0413821519b9f1e
 (#inputKind -> PackageInfo).
 (#outputKind -> ClassDescription).
 (#priority -> 770).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

@@ -3,7 +3,7 @@ step42ef8b6b8cf0da4ab0750fb0146d805c
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'160a08d5-cd77-5c44-8286-1c5af506486f').
 (#iconCode -> 'nil').
 (#id -> #'42ef8b6b-8cf0-da4a-b075-0fb0146d805c').
@@ -15,4 +15,6 @@ step42ef8b6b8cf0da4ab0750fb0146d805c
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#headerText -> 'Size').
 (#labelColor -> '#AAAAAA').
-(#priority -> 2790)}))})
+(#priority -> 2790)
+}))
+})

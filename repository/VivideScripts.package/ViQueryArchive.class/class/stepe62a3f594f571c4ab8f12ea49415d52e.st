@@ -3,7 +3,7 @@ stepe62a3f594f571c4ab8f12ea49415d52e
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'d64bb967-563b-634e-b3ca-edbff3f1cb72').
 (#iconCode -> 'nil').
 (#id -> #'e62a3f59-4f57-1c4a-b8f1-2ea49415d52e').
@@ -15,4 +15,6 @@ stepe62a3f594f571c4ab8f12ea49415d52e
 (#creationTimeStamp -> '13 September 2013 7:12:18 pm').
 (#inputKind -> ByteSymbol).
 (#outputKind -> ByteSymbol).
-(#priority -> 3400)}))})
+(#priority -> 3400)
+}))
+})

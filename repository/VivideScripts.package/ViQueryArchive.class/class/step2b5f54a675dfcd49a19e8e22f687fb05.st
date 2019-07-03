@@ -3,7 +3,7 @@ step2b5f54a675dfcd49a19e8e22f687fb05
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'9d09ac24-315c-ac4c-af8b-ca5eb7b05f23').
 (#iconCode -> 'UiFugueIcons priceTagIcon').
 (#id -> #'2b5f54a6-75df-cd49-a19e-8e22f687fb05').
@@ -16,4 +16,6 @@ step2b5f54a675dfcd49a19e8e22f687fb05
 (#inputKind -> ClassDescription).
 (#orientation -> #default).
 (#priority -> 110).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

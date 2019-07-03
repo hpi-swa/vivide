@@ -6,11 +6,13 @@ defdbadf3adcedbe443bc1466d20a010aad
 (#block -> [:in :out | (
 	[:objects | objects collect: [:stamp | stamp value lastStep]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'dbadf3ad-cedb-e443-bc14-66d20a010aad').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '18 November 2013 8:47:26 am')})).
+(#creationTimeStamp -> '18 November 2013 8:47:26 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:stamp | stamp value lastStep]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

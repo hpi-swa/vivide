@@ -3,7 +3,7 @@ stepunsavedChanges
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'2822a617-9ef3-d644-98ed-f98dbb95168f').
 (#iconCode -> 'nil').
 (#id -> #unsavedChanges).
@@ -14,4 +14,6 @@ stepunsavedChanges
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '19 October 2015 10:57:19 am').
 (#isGlobal -> true).
-(#notifier -> ViSqueakSystemChangeNotifier)}))})
+(#notifier -> ViSqueakSystemChangeNotifier)
+}))
+})

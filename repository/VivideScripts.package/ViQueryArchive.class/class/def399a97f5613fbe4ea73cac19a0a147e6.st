@@ -16,11 +16,12 @@ def399a97f5613fbe4ea73cac19a0a147e6
 	cls theNonMetaClass methodDict values,
 	cls theMetaClass methodDict values]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'399a97f5-613f-be4e-a73c-ac19a0a147e6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '7 November 2013 10:44:12 am')})).
+(#creationTimeStamp -> '7 November 2013 10:44:12 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:cls | 
 	(cls withAllSuperclasses allButLast: 2) reversed,
@@ -33,4 +34,5 @@ def399a97f5613fbe4ea73cac19a0a147e6
 	(cls classVarNames collect: [:nm | cls class -> (nm -> nil)]),
 	cls theNonMetaClass methodDict values,
 	cls theMetaClass methodDict values]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

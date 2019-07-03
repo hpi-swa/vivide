@@ -6,11 +6,13 @@ defb702818ff9dfff4d86c7542fcbfbfd7b
 (#block -> [:in :out | (
 	[:objects | objects collect: [:byteString | ViProfile active organization definitionById: byteString ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'b702818f-f9df-ff4d-86c7-542fcbfbfd7b').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 April 2019 4:54:30.832086 pm')})).
+(#creationTimeStamp -> '14 April 2019 4:54:30.832086 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:byteString | ViProfile active organization definitionById: byteString ]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

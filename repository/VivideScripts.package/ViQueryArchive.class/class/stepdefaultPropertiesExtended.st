@@ -3,7 +3,7 @@ stepdefaultPropertiesExtended
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'81e09cb2-b3ab-b345-b591-fd828ea01434').
 (#iconCode -> 'nil').
 (#id -> #defaultPropertiesExtended).
@@ -14,4 +14,6 @@ stepdefaultPropertiesExtended
 (#after -> #()).
 (#before -> #()).
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '20 May 2015 2:52:45 pm')}))})
+(#creationTimeStamp -> '20 May 2015 2:52:45 pm')
+}))
+})

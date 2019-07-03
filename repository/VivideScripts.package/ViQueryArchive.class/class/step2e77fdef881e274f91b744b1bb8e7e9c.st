@@ -3,7 +3,7 @@ step2e77fdef881e274f91b744b1bb8e7e9c
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'49e02558-6e3e-0748-b0c1-b744754b910f').
 (#iconCode -> 'nil').
 (#id -> #'2e77fdef-881e-274f-91b7-44b1bb8e7e9c').
@@ -13,4 +13,6 @@ step2e77fdef881e274f91b744b1bb8e7e9c
 (#properties -> (Dictionary newFrom: {
 (#after -> #(#groupsMinimal)).
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '2 April 2019 4:48:12.789834 pm')}))})
+(#creationTimeStamp -> '2 April 2019 4:48:12.789834 pm')
+}))
+})

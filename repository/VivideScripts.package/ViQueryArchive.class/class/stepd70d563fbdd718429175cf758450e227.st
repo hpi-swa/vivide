@@ -3,7 +3,7 @@ stepd70d563fbdd718429175cf758450e227
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'90617371-0b50-8444-a853-96023a9105ba').
 (#iconCode -> 'UiSilkIcons folderIcon').
 (#id -> #'d70d563f-bdd7-1842-9175-cf758450e227').
@@ -16,4 +16,6 @@ stepd70d563fbdd718429175cf758450e227
 (#inputKind -> FileDirectory).
 (#outputKind -> DirectoryEntry).
 (#priority -> 330).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

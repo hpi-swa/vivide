@@ -3,7 +3,7 @@ stepinheritance
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'3f73a2f0-13d2-3a4e-aa20-2ed366310ce6').
 (#iconCode -> 'nil').
 (#id -> #inheritance).
@@ -15,4 +15,6 @@ stepinheritance
 (#creationTimeStamp -> '1 February 2016 1:57:55 pm').
 (#inputKind -> CompiledMethod).
 (#priority -> 550).
-(#view -> ViTreePlainView)}))})
+(#view -> ViTreePlainView)
+}))
+})

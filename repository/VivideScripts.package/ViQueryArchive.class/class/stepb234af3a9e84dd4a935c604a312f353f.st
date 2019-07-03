@@ -3,7 +3,7 @@ stepb234af3a9e84dd4a935c604a312f353f
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'e949ac9a-c053-b24f-929e-75da7266b9df').
 (#iconCode -> 'UiSilkIcons timeIcon').
 (#id -> #'b234af3a-9e84-dd4a-935c-604a312f353f').
@@ -15,4 +15,6 @@ stepb234af3a9e84dd4a935c604a312f353f
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> MethodReference).
 (#priority -> 210).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

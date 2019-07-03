@@ -16,11 +16,12 @@ def28d8d922627db84cbbd10c95cf39f776
 						ifFalse: [ViIcons blankIcon]]) }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'28d8d922-627d-b84c-bbd1-0c95cf39f776').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '9 December 2015 11:26:37 am')})).
+(#creationTimeStamp -> '9 December 2015 11:26:37 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:node | 
 { #text
@@ -33,4 +34,5 @@ def28d8d922627db84cbbd10c95cf39f776
 						ifTrue: [UiDiagonaIcons icon0316Small]
 						ifFalse: [ViIcons blankIcon]]) }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

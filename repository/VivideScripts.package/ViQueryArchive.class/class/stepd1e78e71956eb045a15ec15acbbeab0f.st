@@ -3,7 +3,7 @@ stepd1e78e71956eb045a15ec15acbbeab0f
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'6d4ec044-0ecb-aa49-bc62-0eaaf7b94ccc').
 (#iconCode -> 'UiSilkIcons bugIcon').
 (#id -> #'d1e78e71-956e-b045-a15e-c15acbbeab0f').
@@ -16,4 +16,6 @@ stepd1e78e71956eb045a15ec15acbbeab0f
 (#inputKind -> Process).
 (#outputKind -> Context).
 (#priority -> 5150).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

@@ -18,11 +18,12 @@ defb223ce01c9dcc043a935af79dde0b9a3
 	text]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'b223ce01-c9dc-c043-a935-af79dde0b9a3').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '21 July 2014 9:38:55 am')})).
+(#creationTimeStamp -> '21 July 2014 9:38:55 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:method | { #text -> (method getSource asString lines first in: [:label |
 	| node text |
@@ -37,4 +38,5 @@ defb223ce01c9dcc043a935af79dde0b9a3
 		
 	text]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

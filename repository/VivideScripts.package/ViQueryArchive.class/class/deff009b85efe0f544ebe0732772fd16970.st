@@ -11,11 +11,12 @@ deff009b85efe0f544ebe0732772fd16970
 	
 	bag sortedCounts]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'f009b85e-fe0f-544e-be07-32772fd16970').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '6 March 2018 10:31 am')})).
+(#creationTimeStamp -> '6 March 2018 10:31 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:mails | | bag |
 	bag := Bag new.
@@ -23,4 +24,5 @@ deff009b85efe0f544ebe0732772fd16970
 	mails do: [:ea | bag add: ea sender].
 	
 	bag sortedCounts]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

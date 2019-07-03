@@ -14,11 +14,12 @@ def97a39793e99b4d4ca8f5037c909dceb8
 			])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'97a39793-e99b-4d4c-a8f5-037c909dceb8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '9 January 2014 11:38:48 am')})).
+(#creationTimeStamp -> '9 January 2014 11:38:48 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
 	#text -> (ViLabelService doObject: obj).
@@ -29,4 +30,5 @@ def97a39793e99b4d4ca8f5037c909dceb8
 				ifTrue: [Color clover alpha: 0.2] ifFalse: []
 			])}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

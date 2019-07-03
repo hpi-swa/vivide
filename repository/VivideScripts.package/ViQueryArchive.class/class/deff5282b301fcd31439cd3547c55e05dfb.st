@@ -15,11 +15,12 @@ deff5282b301fcd31439cd3547c55e05dfb
 			] ] } ]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'f5282b30-1fcd-3143-9cd3-547c55e05dfb').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 October 2015 2:07 pm')})).
+(#creationTimeStamp -> '19 October 2015 2:07 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:changeRecord | { 
 	#text -> ''Load''.
@@ -31,4 +32,5 @@ deff5282b301fcd31439cd3547c55e05dfb
 		
 			] ] } ]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

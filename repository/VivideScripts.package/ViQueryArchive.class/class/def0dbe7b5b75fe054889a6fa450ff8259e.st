@@ -12,11 +12,12 @@ def0dbe7b5b75fe054889a6fa450ff8259e
 		ifFalse: [line key hasCategory: #other]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'0dbe7b5b-75fe-0548-89a6-fa450ff8259e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2014 2:48:40 pm')})).
+(#creationTimeStamp -> '14 February 2014 2:48:40 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:line | {
 	#color -> (Color white alpha: 0.5).
@@ -25,4 +26,5 @@ def0dbe7b5b75fe054889a6fa450ff8259e
 		ifTrue: [line key toggleCategory: #other to: value]
 		ifFalse: [line key hasCategory: #other]]}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

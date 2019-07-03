@@ -17,11 +17,12 @@ def78d34cba9aaa1743b23e2bc87f34d97a
 					ifTrue: [nm -> (object basicAt: basicIndex)]
 					ifFalse: [nm -> (object basicAt: object basicSize - (100 + 10) + basicIndex)]]])]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'78d34cba-9aaa-1743-b23e-2bc87f34d97a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 February 2014 10:12:18 am')})).
+(#creationTimeStamp -> '19 February 2014 10:12:18 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:object |
 	"Inspector >> fieldList, selection"
@@ -35,4 +36,5 @@ def78d34cba9aaa1743b23e2bc87f34d97a
 				(object basicSize <= (100 + 10) or: [basicIndex <= 100])
 					ifTrue: [nm -> (object basicAt: basicIndex)]
 					ifFalse: [nm -> (object basicAt: object basicSize - (100 + 10) + basicIndex)]]])]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

@@ -20,11 +20,12 @@ def09894e45157f0148b77c181b1a03e0c4
 	) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'09894e45-157f-0148-b77c-181b1a03e0c4').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 February 2014 11:57:29 am')})).
+(#creationTimeStamp -> '19 February 2014 11:57:29 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:class :offset | "See TestRunner >> classList"
 	| ident |
@@ -41,4 +42,5 @@ def09894e45157f0148b77c181b1a03e0c4
 					yourself ]
 	) }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

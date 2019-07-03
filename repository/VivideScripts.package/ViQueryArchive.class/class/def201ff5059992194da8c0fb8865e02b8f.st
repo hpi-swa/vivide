@@ -12,11 +12,12 @@ def201ff5059992194da8c0fb8865e02b8f
 	] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'201ff505-9992-194d-a8c0-fb8865e02b8f').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '3 September 2013 3:29:42 pm')})).
+(#creationTimeStamp -> '3 September 2013 3:29:42 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | {
 	#icon -> (step class == ViScriptStep ifTrue: [] ifFalse: [UiFugueIcons exclamationSmallIcon]).
@@ -25,4 +26,5 @@ def201ff5059992194da8c0fb8865e02b8f
 	yourself)}
 	] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

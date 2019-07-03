@@ -23,11 +23,12 @@ defae2d4e1f0fff3647905c89c71c1c5b06
 				prettyDiffs: true]) asText }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'ae2d4e1f-0fff-3647-905c-89c71c1c5b06').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 February 2014 11:02:55 am')})).
+(#creationTimeStamp -> '24 February 2014 11:02:55 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:method | "See CodeHolder >> sourceStringPrettifiedAndDiffed"
 	| class selector sourceString prior result |
@@ -47,4 +48,5 @@ defae2d4e1f0fff3647905c89c71c1c5b06
 				inClass: class
 				prettyDiffs: true]) asText }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

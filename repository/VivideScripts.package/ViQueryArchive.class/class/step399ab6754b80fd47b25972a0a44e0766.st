@@ -3,7 +3,7 @@ step399ab6754b80fd47b25972a0a44e0766
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'7ce23c08-31f0-c940-bd2d-0a209eb5f472').
 (#iconCode -> 'UiSilkIcons carIcon').
 (#id -> #'399ab675-4b80-fd47-b259-72a0a44e0766').
@@ -14,4 +14,6 @@ step399ab6754b80fd47b25972a0a44e0766
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '14 December 2015 11:52:58 am').
 (#inputKind -> String).
-(#priority -> 230)}))})
+(#priority -> 230)
+}))
+})

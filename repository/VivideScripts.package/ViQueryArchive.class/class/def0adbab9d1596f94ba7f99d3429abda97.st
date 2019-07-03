@@ -28,11 +28,12 @@ def0adbab9d1596f94ba7f99d3429abda97
 				at: method methodReference
 				put: (loc first: lineIndex)]]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'0adbab9d-1596-f94b-a7f9-9d3429abda97').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2014 9:28:02 am')})).
+(#creationTimeStamp -> '14 February 2014 9:28:02 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:method | | loc |
 	loc := (Smalltalk at: #LinesOfCode ifAbsentPut: [Dictionary new])
@@ -57,4 +58,5 @@ def0adbab9d1596f94ba7f99d3429abda97
 			(Smalltalk at: #LinesOfCode)
 				at: method methodReference
 				put: (loc first: lineIndex)]]]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

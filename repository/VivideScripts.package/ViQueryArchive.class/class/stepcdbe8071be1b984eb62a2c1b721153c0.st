@@ -3,7 +3,7 @@ stepcdbe8071be1b984eb62a2c1b721153c0
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'86327a87-dc80-ba43-b648-c2b877187bb3').
 (#iconCode -> 'nil').
 (#id -> #'cdbe8071-be1b-984e-b62a-2c1b721153c0').
@@ -17,4 +17,6 @@ stepcdbe8071be1b984eb62a2c1b721153c0
 (#inputKind -> ViFlagComment).
 (#labelColor -> '000000').
 (#priority -> 3900).
-(#resizeMode -> #rigid)}))})
+(#resizeMode -> #rigid)
+}))
+})

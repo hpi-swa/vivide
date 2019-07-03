@@ -3,7 +3,7 @@ stepformattedScripts
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'5c81b0a9-9ca8-4d4f-bf64-ec5c3d25c09f').
 (#iconCode -> 'nil').
 (#id -> #formattedScripts).
@@ -16,4 +16,6 @@ stepformattedScripts
 (#inputKind -> ViScriptStep).
 (#outputKind -> ViScriptStep).
 (#view -> ViTreeView).
-(#yieldOn -> #(#activated))}))})
+(#yieldOn -> #(#activated))
+}))
+})

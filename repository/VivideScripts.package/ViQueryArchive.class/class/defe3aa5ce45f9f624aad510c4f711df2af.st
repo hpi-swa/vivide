@@ -13,11 +13,12 @@ defe3aa5ce45f9f624aad510c4f711df2af
 		ifFalse: [tag key includes: flag]]}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'e3aa5ce4-5f9f-624a-ad51-0c4f711df2af').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '21 February 2014 9:39:56 am')})).
+(#creationTimeStamp -> '21 February 2014 9:39:56 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:tag | { #spawnTool in: [:flag | {
 	#checkable -> true. 
@@ -27,4 +28,5 @@ defe3aa5ce45f9f624aad510c4f711df2af
 				ifFalse: [tag key remove: flag]]
 		ifFalse: [tag key includes: flag]]}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

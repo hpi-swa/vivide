@@ -3,7 +3,7 @@ stepclassHierarchy
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'c05078c3-60b7-974f-9638-11f50024055a').
 (#iconCode -> 'UiSilkIcons carIcon').
 (#id -> #classHierarchy).
@@ -16,4 +16,6 @@ stepclassHierarchy
 (#expandAll -> true).
 (#inputKind -> ClassDescription).
 (#priority -> 300).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

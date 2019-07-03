@@ -3,7 +3,7 @@ steporderedSteps
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'830e6a7e-46cf-8148-b3a4-55733dd90ae1').
 (#iconCode -> 'UiFugueIcons scriptMediumIcon').
 (#id -> #orderedSteps).
@@ -16,4 +16,6 @@ steporderedSteps
 (#inputKind -> ViScriptOrganizer).
 (#outputKind -> ViScriptStep).
 (#priority -> 390).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

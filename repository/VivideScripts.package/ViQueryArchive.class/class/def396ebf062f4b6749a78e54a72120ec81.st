@@ -85,11 +85,12 @@ def396ebf062f4b6749a78e54a72120ec81
 	{ #text -> aStream contents }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'396ebf06-2f4b-6749-a78e-54a72120ec81').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 February 2014 11:28:19 am')})).
+(#creationTimeStamp -> '24 February 2014 11:28:19 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:method | "See  CodeHolder >> annotationForSelector:ofClass:."
 	| separator aStream requestList aClass aSelector |
@@ -171,4 +172,5 @@ def396ebf062f4b6749a78e54a72120ec81
 					aStream nextPutAll: separator]].
 	{ #text -> aStream contents }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

@@ -14,11 +14,12 @@ def1c1144c62ccec947aec97b48023da265
 		s do: [:each | each at: 2 put: max].
 		s]]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'1c1144c6-2cce-c947-aec9-7b48023da265').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '13 January 2014 4:26:25 pm')})).
+(#creationTimeStamp -> '13 January 2014 4:26:25 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:navi |
 	OrderedCollection new in: [:s| | max |
@@ -29,4 +30,5 @@ def1c1144c62ccec947aec97b48023da265
 		
 		s do: [:each | each at: 2 put: max].
 		s]]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

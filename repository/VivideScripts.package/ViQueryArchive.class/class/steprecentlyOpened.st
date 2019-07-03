@@ -3,7 +3,7 @@ steprecentlyOpened
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'4f13abce-d727-5143-a569-3a329c380f68').
 (#iconCode -> 'nil').
 (#id -> #recentlyOpened).
@@ -22,4 +22,6 @@ steprecentlyOpened
 		history: (VivideLight historyFor: #classes)]. [ViObjectHistoryNotifier new
 		history: (VivideLight historyFor: #methods)]. [ViObjectHistoryNotifier new
 		history: (VivideLight historyFor: #scripts)]}).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

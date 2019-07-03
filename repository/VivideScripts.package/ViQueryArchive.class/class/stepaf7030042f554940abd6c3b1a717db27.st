@@ -3,7 +3,7 @@ stepaf7030042f554940abd6c3b1a717db27
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'be0082fe-f238-c54a-9220-32909fda1e3d').
 (#iconCode -> 'nil').
 (#id -> #'af703004-2f55-4940-abd6-c3b1a717db27').
@@ -16,4 +16,6 @@ stepaf7030042f554940abd6c3b1a717db27
 (#inputKind -> ProtoObject).
 (#isGlobal -> true).
 (#priority -> 930).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

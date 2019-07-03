@@ -6,11 +6,13 @@ def68f069190e39c84d8bf6c4fdab66c7c8
 (#block -> [:in :out | (
 	[:objects | objects collect: [:group | {{#separator. {{ViSeparator for: group first}}}. group}]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'68f06919-0e39-c84d-8bf6-c4fdab66c7c8').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 March 2019 2:44:51.107235 pm')})).
+(#creationTimeStamp -> '29 March 2019 2:44:51.107235 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:group | {{#separator. {{ViSeparator for: group first}}}. group}]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

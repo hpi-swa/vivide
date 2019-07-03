@@ -4,11 +4,13 @@ def60c838c8d1a17d4ca00f3210018bcdaa
 
 	^ (Dictionary newFrom: {
 (#block -> nil).
-(#class -> ViQuerySnippetDefinition).
+(#className -> #ViQuerySnippetDefinition).
 (#id -> #'60c838c8-d1a1-7d4c-a00f-3210018bcdaa').
 (#inputKind -> ViToolSet class).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '10 February 2014 4:40:47 pm')})).
+(#creationTimeStamp -> '10 February 2014 4:40:47 pm')
+})).
 (#receiverIsCollection -> false).
-(#sourceCode -> 'ViProfile active serializeIntoArchive.')})
+(#sourceCode -> 'ViProfile active serializeIntoArchive.')
+})

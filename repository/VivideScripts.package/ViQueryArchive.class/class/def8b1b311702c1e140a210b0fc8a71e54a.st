@@ -17,11 +17,12 @@ def8b1b311702c1e140a210b0fc8a71e54a
 			 }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'8b1b3117-02c1-e140-a210-b0fc8a71e54a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 May 2018 9:28:47 am')})).
+(#creationTimeStamp -> '29 May 2018 9:28:47 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:foo | 
 	| numAccesses |
@@ -35,4 +36,5 @@ def8b1b311702c1e140a210b0fc8a71e54a
 				ifFalse: [numAccesses > 10 ifTrue: [Color red alpha: 0.3] ifFalse: ["white"]]]).
 			 }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

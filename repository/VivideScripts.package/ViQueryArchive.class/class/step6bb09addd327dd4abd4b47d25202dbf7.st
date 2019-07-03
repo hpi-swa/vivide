@@ -3,7 +3,7 @@ step6bb09addd327dd4abd4b47d25202dbf7
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'5c8455e8-f5be-c046-b1d5-0dcbb0175ddf').
 (#iconCode -> 'ViEclipseIcons tasksTskIcon').
 (#id -> #'6bb09add-d327-dd4a-bd4b-47d25202dbf7').
@@ -16,4 +16,6 @@ step6bb09addd327dd4abd4b47d25202dbf7
 (#inputKind -> MethodReference).
 (#outputKind -> ViFlagComment).
 (#priority -> 3850).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

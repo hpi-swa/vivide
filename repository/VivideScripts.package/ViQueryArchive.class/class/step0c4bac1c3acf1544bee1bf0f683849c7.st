@@ -3,7 +3,7 @@ step0c4bac1c3acf1544bee1bf0f683849c7
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'7bc5c57f-4a31-694e-9421-3d7f8248addf').
 (#iconCode -> 'UiFugueIcons plusSmallIcon').
 (#id -> #'0c4bac1c-3acf-1544-bee1-bf0f683849c7').
@@ -15,4 +15,6 @@ step0c4bac1c3acf1544bee1bf0f683849c7
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> PackageInfo).
 (#priority -> 80).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

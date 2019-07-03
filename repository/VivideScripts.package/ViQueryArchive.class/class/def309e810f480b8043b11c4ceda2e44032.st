@@ -13,11 +13,12 @@ def309e810f480b8043b11c4ceda2e44032
 				text addAttribute: TextColor red from: 1 to: text size; yourself]]]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'309e810f-480b-8043-b11c-4ceda2e44032').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 February 2014 8:38:57 am')})).
+(#creationTimeStamp -> '19 February 2014 8:38:57 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:object | "Inspector >> toggleIndex:, selectionPrintString"
 	{ #text -> (object isString
@@ -27,4 +28,5 @@ def309e810f480b8043b11c4ceda2e44032
 			do: [''<error in printString>'' asText in: [:text |
 				text addAttribute: TextColor red from: 1 to: text size; yourself]]]) }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

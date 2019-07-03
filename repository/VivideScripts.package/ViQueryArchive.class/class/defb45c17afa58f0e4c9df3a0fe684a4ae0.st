@@ -21,11 +21,12 @@ defb45c17afa58f0e4c9df3a0fe684a4ae0
 	 }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'b45c17af-a58f-0e4c-9df3-a0fe684a4ae0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 October 2015 10:58:50 am')})).
+(#creationTimeStamp -> '19 October 2015 10:58:50 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:changeRecord | { 
 	#text -> (changeRecord type caseOf: {
@@ -43,4 +44,5 @@ defb45c17afa58f0e4c9df3a0fe684a4ae0
 		[#classComment] -> [UiSilkIcons commentIcon] } otherwise: [ViIcons blankIcon])
 	 }]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

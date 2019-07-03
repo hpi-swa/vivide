@@ -3,7 +3,7 @@ stepd96e910adf735a4cb7608811fac45378
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'1d6bdedc-fe37-864b-8af7-6847c2ec88a1').
 (#iconCode -> 'nil').
 (#id -> #'d96e910a-df73-5a4c-b760-8811fac45378').
@@ -17,4 +17,6 @@ stepd96e910adf735a4cb7608811fac45378
 (#headerText -> 'Origin').
 (#itemOrientation -> #horizontalMaxHeight).
 (#priority -> 2570).
-(#vAlignment -> #top)}))})
+(#vAlignment -> #top)
+}))
+})

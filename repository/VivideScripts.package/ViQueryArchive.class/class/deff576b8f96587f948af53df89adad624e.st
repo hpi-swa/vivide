@@ -28,11 +28,12 @@ deff576b8f96587f948af53df89adad624e
 				#icon -> (ViIconService doObject: obj)}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'f576b8f9-6587-f948-af53-df89adad624e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2014 1:56:52 pm')})).
+(#creationTimeStamp -> '14 February 2014 1:56:52 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj |  
 	{ obj isVariableBinding
@@ -57,4 +58,5 @@ deff576b8f96587f948af53df89adad624e
 				#text -> (ViLabelService doObject: obj).
 				#icon -> (ViIconService doObject: obj)}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

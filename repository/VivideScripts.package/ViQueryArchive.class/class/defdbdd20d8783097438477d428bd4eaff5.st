@@ -6,11 +6,13 @@ defdbdd20d8783097438477d428bd4eaff5
 (#block -> [:in :out | (
 	[:objects | objects collect: [:cls | cls methodDict values, cls class methodDict values]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'dbdd20d8-7830-9743-8477-d428bd4eaff5').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '17 January 2014 2:55:42 pm')})).
+(#creationTimeStamp -> '17 January 2014 2:55:42 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:cls | cls methodDict values, cls class methodDict values]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

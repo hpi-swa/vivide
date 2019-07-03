@@ -13,11 +13,12 @@ def397cc4e01a323d4daf37dcef863d4d5d
 	} otherwise: [ViIcons blankIcon])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'397cc4e0-1a32-3d4d-af37-dcef863d4d5d').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '6 December 2013 4:53:10 pm')})).
+(#creationTimeStamp -> '6 December 2013 4:53:10 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:fileEntry | {
 	#text -> fileEntry name.
@@ -27,4 +28,5 @@ def397cc4e01a323d4daf37dcef863d4d5d
 		[fileEntry extension asLowercase = ''pdf''] -> [UiFugueIcons documentPdfIcon]
 	} otherwise: [ViIcons blankIcon])}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

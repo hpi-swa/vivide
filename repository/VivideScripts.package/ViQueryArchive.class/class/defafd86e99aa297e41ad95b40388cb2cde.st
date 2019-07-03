@@ -4,12 +4,13 @@ defafd86e99aa297e41ad95b40388cb2cde
 
 	^ (Dictionary newFrom: {
 (#block -> nil).
-(#class -> ViQuerySnippetDefinition).
+(#className -> #ViQuerySnippetDefinition).
 (#id -> #'afd86e99-aa29-7e41-ad95-b40388cb2cde').
 (#inputKind -> TestCase class).
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 February 2014 2:15:12 pm')})).
+(#creationTimeStamp -> '19 February 2014 2:15:12 pm')
+})).
 (#receiverIsCollection -> true).
 (#sourceCode -> 'TestSuite new in: [:suite |
 	self do: [:class |
@@ -17,4 +18,5 @@ defafd86e99aa297e41ad95b40388cb2cde
 			suite addTest: (class selector: failure)]].
 	suite run in: [:result |
 		result dispatchResultsIntoHistory.
-"		result explore"]]')})
+"		result explore"]]')
+})

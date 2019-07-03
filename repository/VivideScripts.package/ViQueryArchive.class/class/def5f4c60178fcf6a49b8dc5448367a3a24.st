@@ -12,11 +12,12 @@ def5f4c60178fcf6a49b8dc5448367a3a24
 	]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'5f4c6017-8fcf-6a49-b8dc-5448367a3a24').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2018 9:21:39 am')})).
+(#creationTimeStamp -> '14 February 2018 9:21:39 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:mail |
 	{ 
@@ -25,4 +26,5 @@ def5f4c60178fcf6a49b8dc5448367a3a24
 		#icon -> (mail isImportant ifFalse: [ViIcons blankIcon] ifTrue: [UiSilkIcons flagRedIcon]) }
 	]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

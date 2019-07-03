@@ -3,7 +3,7 @@ step5e2dceb99ba3484cb969cc38d82aeaf1
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'6a90006f-4daf-604a-add5-f6fa7102b541').
 (#iconCode -> 'UiFugueIcons balloonExclamationIcon').
 (#id -> #'5e2dceb9-9ba3-484c-b969-cc38d82aeaf1').
@@ -16,4 +16,6 @@ step5e2dceb99ba3484cb969cc38d82aeaf1
 (#inputKind -> PackageInfo).
 (#outputKind -> MethodReference).
 (#priority -> 750).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

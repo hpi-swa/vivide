@@ -3,7 +3,7 @@ stepgroupsUnsorted
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'c9ef82bd-db12-d446-a43f-558a04f98be2').
 (#iconCode -> 'nil').
 (#id -> #groupsUnsorted).
@@ -14,4 +14,6 @@ stepgroupsUnsorted
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 June 2015 10:20:57 am').
 (#inputKind -> {Object. Object}).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

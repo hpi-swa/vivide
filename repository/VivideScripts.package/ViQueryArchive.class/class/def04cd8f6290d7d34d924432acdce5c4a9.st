@@ -13,11 +13,12 @@ def04cd8f6290d7d34d924432acdce5c4a9
 		ifFalse: [tag key includes: flag]]}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'04cd8f62-90d7-d34d-9244-32acdce5c4a9').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '21 February 2014 8:53:15 am')})).
+(#creationTimeStamp -> '21 February 2014 8:53:15 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:tag | { #modelWrite in: [:flag | {
 	#checkable -> true. 
@@ -27,4 +28,5 @@ def04cd8f6290d7d34d924432acdce5c4a9
 				ifFalse: [tag key remove: flag]]
 		ifFalse: [tag key includes: flag]]}] }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

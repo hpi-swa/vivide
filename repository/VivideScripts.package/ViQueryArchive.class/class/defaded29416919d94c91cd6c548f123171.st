@@ -9,14 +9,16 @@ defaded29416919d94c91cd6c548f123171
 			#icon -> step viewClass widgetClassIcon }] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'aded2941-6919-d94c-91cd-6c548f123171').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '23 July 2014 2:54:01 pm')})).
+(#creationTimeStamp -> '23 July 2014 2:54:01 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:step | { 
 			#text -> step viewClass name.
 			#icon -> step viewClass widgetClassIcon }] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

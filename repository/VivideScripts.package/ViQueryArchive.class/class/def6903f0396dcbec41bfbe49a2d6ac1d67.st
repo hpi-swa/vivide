@@ -11,11 +11,12 @@ def6903f0396dcbec41bfbe49a2d6ac1d67
 	]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'6903f039-6dcb-ec41-bfbe-49a2d6ac1d67').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2018 8:57:51 am')})).
+(#creationTimeStamp -> '14 February 2018 8:57:51 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:box |
 	{ #text -> box boxName.
@@ -23,4 +24,5 @@ def6903f0396dcbec41bfbe49a2d6ac1d67
 	
 	]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

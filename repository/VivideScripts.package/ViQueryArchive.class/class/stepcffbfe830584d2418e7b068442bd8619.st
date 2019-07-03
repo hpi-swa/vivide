@@ -3,7 +3,7 @@ stepcffbfe830584d2418e7b068442bd8619
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'84116ddf-3a24-e74e-a42c-36c2a854dd77').
 (#iconCode -> 'nil').
 (#id -> #'cffbfe83-0584-d241-8e7b-068442bd8619').
@@ -15,4 +15,6 @@ stepcffbfe830584d2418e7b068442bd8619
 (#creationTimeStamp -> '19 February 2014 1:34:36 pm').
 (#inputKind -> Association).
 (#outputKind -> TestCase).
-(#priority -> 5600)}))})
+(#priority -> 5600)
+}))
+})

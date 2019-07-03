@@ -4,9 +4,11 @@ def75c00022426bf341b69fa760df0ca037
 
 	^ (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: in]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'75c00022-426b-f341-b69f-a760df0ca037').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '2 April 2019 4:48:12.206834 pm')})).
-(#sourceCode -> '[:in :out | out addAll: in]')})
+(#creationTimeStamp -> '2 April 2019 4:48:12.206834 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: in]')
+})

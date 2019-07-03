@@ -3,7 +3,7 @@ stepdebuggerBindings
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'1c0a54ab-f2e4-7747-a0b9-5b9444e5d0dd').
 (#iconCode -> 'UiFugueIcons blockIcon').
 (#id -> #debuggerBindings).
@@ -14,4 +14,6 @@ stepdebuggerBindings
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#priority -> 430).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

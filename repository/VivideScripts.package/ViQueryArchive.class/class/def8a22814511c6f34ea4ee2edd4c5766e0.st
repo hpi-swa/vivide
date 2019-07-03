@@ -18,11 +18,12 @@ def8a22814511c6f34ea4ee2edd4c5766e0
 				next addAll: n children]].
 		vars asSet]) asSet asOrderedCollection] value in: [:result |
 	out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'8a228145-11c6-f34e-a4ee-2edd4c5766e0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | [| result |
 	result := OrderedCollection new.
 	SystemNavigation allSelectorsAndMethodsDo: [:b :s :m |
@@ -37,4 +38,5 @@ def8a22814511c6f34ea4ee2edd4c5766e0
 				n isVariable ifTrue: [vars add: n name].
 				next addAll: n children]].
 		vars asSet]) asSet asOrderedCollection] value in: [:result |
-	out addAll: result asList]]')})
+	out addAll: result asList]]')
+})

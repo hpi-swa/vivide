@@ -16,11 +16,12 @@ def3737fbff7efa514292d30742a28234c7
 					ifTrue: [result add: def]].		
 		].
 	result] value: in)]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'3737fbff-7efa-5142-92d3-0742a28234c7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '18 September 2013 9:17:21 am')})).
+(#creationTimeStamp -> '18 September 2013 9:17:21 am')
+})).
 (#sourceCode -> '[:in :out | out addAll: ([:organizers | | result |
 	result := OrderedCollection new.
 	organizers do: [:o |
@@ -33,4 +34,5 @@ def3737fbff7efa514292d30742a28234c7
 				o == o2 or: [(o2 definitions keys includes: def id) not]])
 					ifTrue: [result add: def]].		
 		].
-	result] value: in)]')})
+	result] value: in)]')
+})

@@ -3,7 +3,7 @@ step5e941cab2cc706469ed0d8493d5d3d0e
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'8572f770-da04-804b-a566-2b332c424ef9').
 (#iconCode -> 'nil').
 (#id -> #'5e941cab-2cc7-0646-9ed0-d8493d5d3d0e').
@@ -14,4 +14,6 @@ step5e941cab2cc706469ed0d8493d5d3d0e
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#labelColor -> #'000000').
-(#priority -> 4470)}))})
+(#priority -> 4470)
+}))
+})

@@ -3,7 +3,7 @@ stepda240e4d2791be42a47a879ff7f15f76
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'64a80fd3-a399-0944-ad86-29d530feb8c8').
 (#iconCode -> 'nil').
 (#id -> #'da240e4d-2791-be42-a47a-879ff7f15f76').
@@ -15,4 +15,6 @@ stepda240e4d2791be42a47a879ff7f15f76
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
 (#inputKind -> ViClassComment).
 (#outputKind -> Boolean).
-(#priority -> 2300)}))})
+(#priority -> 2300)
+}))
+})

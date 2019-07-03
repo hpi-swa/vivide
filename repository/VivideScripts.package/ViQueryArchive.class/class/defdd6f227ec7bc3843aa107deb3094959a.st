@@ -6,11 +6,13 @@ defdd6f227ec7bc3843aa107deb3094959a
 (#block -> [:in :out | (
 	[:objects | objects collect: [:ctxt | ctxt receiver]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'dd6f227e-c7bc-3843-aa10-7deb3094959a').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '18 February 2014 5:58:29 pm')})).
+(#creationTimeStamp -> '18 February 2014 5:58:29 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:ctxt | ctxt receiver]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

@@ -3,7 +3,7 @@ stepsenders
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'fa044112-0baa-3e4d-abc2-c54a247e5236').
 (#iconCode -> 'UiFugueIcons arrowStepIcon').
 (#id -> #senders).
@@ -16,4 +16,6 @@ stepsenders
 (#inputKind -> ByteSymbol).
 (#notifier -> ViSqueakSystemChangeNotifier).
 (#out -> Set).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

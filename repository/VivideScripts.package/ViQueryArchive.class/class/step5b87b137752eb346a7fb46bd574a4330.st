@@ -3,7 +3,7 @@ step5b87b137752eb346a7fb46bd574a4330
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'5e8af872-a1c3-994d-b39f-9ea020eacf1a').
 (#iconCode -> 'nil').
 (#id -> #'5b87b137-752e-b346-a7fb-46bd574a4330').
@@ -15,4 +15,6 @@ step5b87b137752eb346a7fb46bd574a4330
 (#creationTimeStamp -> '13 September 2013 7:00:36 pm').
 (#inputKind -> ViFlagComment).
 (#outputKind -> Boolean).
-(#priority -> 3860)}))})
+(#priority -> 3860)
+}))
+})

@@ -3,7 +3,7 @@ step28be63168868744c9db70ec219020611
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'81c77a15-661d-1e48-9e81-85f7bdd732e2').
 (#iconCode -> 'nil').
 (#id -> #'28be6316-8868-744c-9db7-0ec219020611').
@@ -15,4 +15,6 @@ step28be63168868744c9db70ec219020611
 (#creationTimeStamp -> '18 November 2013 9:09:07 am').
 (#inputKind -> ViTranscriptHistory).
 (#priority -> 50).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

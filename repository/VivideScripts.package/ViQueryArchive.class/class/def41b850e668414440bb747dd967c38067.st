@@ -17,11 +17,12 @@ def41b850e668414440bb747dd967c38067
 	#tooltip -> [(object isText ifFalse: [ViObjectPreviewHandler doObject: object])]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'41b850e6-6841-4440-bb74-7dd967c38067').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '15 June 2015 10:20:57 am')})).
+(#creationTimeStamp -> '15 June 2015 10:20:57 am')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:object | {
 	#text -> (object isText
@@ -35,4 +36,5 @@ def41b850e668414440bb747dd967c38067
 	#selectable -> object isText not.
 	#tooltip -> [(object isText ifFalse: [ViObjectPreviewHandler doObject: object])]}]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

@@ -3,7 +3,7 @@ stepbce4eb13a02d144e96b2cd2944b85fee
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptStep).
+(#className -> #ViScriptStep).
 (#definition -> #'78d34cba-9aaa-1743-b23e-2bc87f34d97a').
 (#iconCode -> 'UiFugueIcons magnifierMediumIcon').
 (#id -> #'bce4eb13-a02d-144e-96b2-cd2944b85fee').
@@ -15,4 +15,6 @@ stepbce4eb13a02d144e96b2cd2944b85fee
 (#creationTimeStamp -> '19 February 2014 10:12:18 am').
 (#outputKind -> Association).
 (#priority -> 5170).
-(#view -> ViTreeViewExtended)}))})
+(#view -> ViTreeViewExtended)
+}))
+})

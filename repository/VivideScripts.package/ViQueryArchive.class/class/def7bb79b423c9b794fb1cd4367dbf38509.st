@@ -11,11 +11,12 @@ def7bb79b423c9b794fb1cd4367dbf38509
 		ifFalse: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'7bb79b42-3c9b-794f-b1cd-4367dbf38509').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2013 2:37:39 pm')})).
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
 	#text -> obj name.
@@ -23,4 +24,5 @@ def7bb79b423c9b794fb1cd4367dbf38509
 		ifTrue: [UiSilkIcons folderIcon]
 		ifFalse: [])}] value: textOrObject]]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

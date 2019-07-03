@@ -7,12 +7,14 @@ def0804698958689e40955589097b649956
 	[:objects | objects collect: [:viQueryStepDefinition | viQueryStepDefinition references
 	]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'08046989-5868-9e40-9555-89097b649956').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 April 2019 4:54:53.236086 pm')})).
+(#creationTimeStamp -> '14 April 2019 4:54:53.236086 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:viQueryStepDefinition | viQueryStepDefinition references
 	]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

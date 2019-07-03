@@ -12,11 +12,12 @@ def81e09cb2b3abb345b591fd828ea01434
 	#tooltip -> [ViObjectPreviewHandler doObject: object]}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'81e09cb2-b3ab-b345-b591-fd828ea01434').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '20 May 2015 2:52:45 pm')})).
+(#creationTimeStamp -> '20 May 2015 2:52:45 pm')
+})).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
 	[:object | {
 	#text -> (ViLabelService doObject: object).
@@ -25,4 +26,5 @@ def81e09cb2b3abb345b591fd828ea01434
 	#selectable -> (object class ~~ ViSeparator).
 	#tooltip -> [ViObjectPreviewHandler doObject: object]}]
 		value: o), { #object -> o }]]
-			value: in) do: [:result | out add: result]]')})
+			value: in) do: [:result | out add: result]]')
+})

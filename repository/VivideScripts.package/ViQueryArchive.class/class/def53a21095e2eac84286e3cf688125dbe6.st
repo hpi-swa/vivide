@@ -16,11 +16,12 @@ def53a21095e2eac84286e3cf688125dbe6
 		on: Notification
 		do: [:n | 	(first at: n messageText) name <= (second at: n messageText) name].
 	]] value: in)]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'53a21095-e2ea-c842-86e3-cf688125dbe6').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '19 February 2014 11:33:53 am')})).
+(#creationTimeStamp -> '19 February 2014 11:33:53 am')
+})).
 (#sourceCode -> '[:in :out | out addAll: ([:classes | "See TestRunner >> updateClasses, sortClass:before:"
 	classes sort: [:a :b |
 		| first second |
@@ -33,4 +34,5 @@ def53a21095e2eac84286e3cf688125dbe6
 				second includes: a]
 		on: Notification
 		do: [:n | 	(first at: n messageText) name <= (second at: n messageText) name].
-	]] value: in)]')})
+	]] value: in)]')
+})

@@ -16,11 +16,12 @@ defed1a253aff93ff46839e0b9fe0538bc0
 	current
 	 ]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'ed1a253a-ff93-ff46-839e-0b9fe0538bc0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '29 April 2016 6:04:11 pm')})).
+(#creationTimeStamp -> '29 April 2016 6:04:11 pm')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:viQueryStep | 
 	| current refs |
@@ -33,4 +34,5 @@ defed1a253aff93ff46839e0b9fe0538bc0
 	].
 	current
 	 ]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})

@@ -6,11 +6,13 @@ def4847dd5868b2864d94ae889117f97643
 (#block -> [:in :out | (
 	[:objects | objects collect: [:object | object class]]
 		value: in) do: [:result | out addAll: result asList]]).
-(#class -> ViScriptDefinition).
+(#className -> #ViScriptDefinition).
 (#id -> #'4847dd58-68b2-864d-94ae-889117f97643').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '9 December 2015 11:55:27 am')})).
+(#creationTimeStamp -> '9 December 2015 11:55:27 am')
+})).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:object | object class]]
-		value: in) do: [:result | out addAll: result asList]]')})
+		value: in) do: [:result | out addAll: result asList]]')
+})
