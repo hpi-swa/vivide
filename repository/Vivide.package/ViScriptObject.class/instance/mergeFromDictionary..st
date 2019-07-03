@@ -1,10 +1,12 @@
 serialization
 mergeFromDictionary: dict
 
-	self class ~~ (dict at: #class)
+	| targetClass |
+	targetClass := dict at: #class ifAbsent: [Smalltalk classNamed: (dict at: #className)].
+	self class ~~ targetClass
 		ifTrue: [
 			| instance |
-			instance := (dict at: #class) new.
+			instance := targetClass new.
 			instance mergeFromDictionary: dict.
 			self notifier doSilently: [
 				instance id: (dict at: #id).

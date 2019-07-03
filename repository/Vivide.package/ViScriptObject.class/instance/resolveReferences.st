@@ -1,4 +1,0 @@
-serialization
-resolveReferences
-
-	self subclassResponsibility.
