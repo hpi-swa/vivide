@@ -1,4 +1,4 @@
-private
+private - serialize
 serializeCommands
 
 	commands do: [:command |

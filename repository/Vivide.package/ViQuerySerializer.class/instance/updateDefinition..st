@@ -1,4 +1,4 @@
-support
+private - serialize
 updateDefinition: definition
 
 	^ self class

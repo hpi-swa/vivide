@@ -1,4 +1,4 @@
-private
+private - serialize
 serializeSteps
 
 	steps do: [:step |

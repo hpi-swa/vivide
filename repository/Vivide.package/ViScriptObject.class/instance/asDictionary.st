@@ -3,7 +3,7 @@ asDictionary
 
 	^ Dictionary newFrom:
 	"step type"
-	{#class -> self class},
+	{#className -> self class name},
 	"primitive values"
 	(#(id properties) collect: [:prop |
 		prop -> (self perform: prop)])

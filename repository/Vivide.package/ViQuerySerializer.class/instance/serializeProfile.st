@@ -1,4 +1,4 @@
-as yet unclassified
+private - serialize
 serializeProfile
 
 	self assert: profile notNil.
@@ -7,14 +7,17 @@ serializeProfile
 		setOrganizer: profile organization
 		archive: profile archive.   	
 
-	self
-		archiveCode: 'id', String cr, String tab, '^ ', profile id storeString
+	self class
+		archive: archive
+		code: 'id', String cr, String tab, '^ ', profile id storeString
 		under: 'profile'.
 
-	self
-		archiveCode: 'label', String cr, String tab, '^ ', profile label storeString
+	self class
+		archive: archive
+		code: 'label', String cr, String tab, '^ ', profile label storeString
 		under: 'profile'.
 
-	self
-		archiveCode: 'defaultView', String cr, String tab, '^ ', profile defaultView storeString
+	self class
+		archive: archive
+		code: 'defaultView', String cr, String tab, '^ ', profile defaultView storeString
 		under: 'profile'.

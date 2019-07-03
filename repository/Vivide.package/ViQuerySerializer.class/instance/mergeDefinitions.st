@@ -1,4 +1,4 @@
-private
+private - merge
 mergeDefinitions
 
 	archive selectors

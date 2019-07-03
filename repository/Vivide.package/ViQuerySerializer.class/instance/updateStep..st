@@ -1,4 +1,4 @@
-support
+private - serialize
 updateStep: step
 
 	^ self class

@@ -1,4 +1,4 @@
-support
+private - serialize
 updateCommand: command
 
 	^ self class

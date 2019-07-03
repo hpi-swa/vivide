@@ -1,4 +1,4 @@
-private
+private - serialize
 serializeDefinitions
 
 	definitions do: [:def | 
