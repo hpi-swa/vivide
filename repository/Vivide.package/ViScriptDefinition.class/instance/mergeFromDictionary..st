@@ -3,6 +3,8 @@ mergeFromDictionary: dict
 
 	super mergeFromDictionary: dict.
 	
-	"Overwrite contents."
-	#(sourceCode block) do: [:prop |
-		self perform: (prop, #:) asSymbol with: (dict at: prop)].
+	(dict includesKey: #sourceCode) ifTrue: [
+		self sourceCode: (dict at: #sourceCode)].
+
+	(dict includesKey: #block) ifTrue: [
+		self block: (dict at: #block)].
