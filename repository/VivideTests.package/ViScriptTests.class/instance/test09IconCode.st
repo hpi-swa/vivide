@@ -3,20 +3,18 @@ test09IconCode
 
 	<timeout: 60>
 	
-	| script |
+	| script iconCode |
 	script := [:num | num * num] asScript.
 
-	script
-		iconCode: nil;
-		icon: ViIcons icons8User64px1Icon hibernate.
+	script icon: ViIcons icons8User64px1Icon hibernate.
+	iconCode := script asDictionary at: #iconCode.
 	
 	self
 		assert: 'ViIcons icons8User64px1Icon'
-		equals: script iconCode.
+		equals: iconCode.
 		
-	script
-		icon: nil;
-		iconCode: 'ViIcons icons8User64px1Icon'.
+	script icon: nil.
+	script mergeFromDictionary: (Dictionary newFrom: {#iconCode -> 'ViIcons icons8User64px1Icon'}).
 	
 	self
 		assert: ViIcons icons8User64px1Icon

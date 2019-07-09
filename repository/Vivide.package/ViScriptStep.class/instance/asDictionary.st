@@ -8,8 +8,8 @@ asDictionary
 			at: #iconCode put: self iconCode.
 		"references to other steps and definitions"
 		dict
-			at: #definition put: self definition id;
-			at: #next put: self next id.
+			at: #definition put: (self definition ifNotNil: #id);
+			at: #next put: (self next ifNotNil: #id).
 		"denoted properties for script interpretation."
 		dict
 			at: #isProperty put: self isProperty.
