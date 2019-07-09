@@ -1,6 +1,7 @@
 tests
 test09IconCode
-
+	"For script serialization."
+	
 	<timeout: 60>
 	
 	| script iconCode |

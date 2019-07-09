@@ -2,11 +2,10 @@ private - merge
 mergeDefinition: selector
 
 	(archive theNonMetaClass perform: selector) in: [:spec |
+
 		((organizer definitionById: (spec at: #id))
-			ifNil: [(spec at: #class ifAbsent: [Smalltalk classNamed: (spec at: #className)]) new organization: organizer; id: (spec at: #id);  register]
-			ifNotNil: [:d | Transcript cr; show: '[Warning] Overwriting registered definition ', d id. d])
-			in: [:definition |
-				definition notifier doSilently: [
-					definition mergeFromDictionary: spec].
-				definitions add: definition.
-				^ definition]]
+			ifNotNil: [:definition | definition mergeFromDictionary: spec; yourself]
+			ifNil: [(ViScriptObject newFrom: spec) organization: organizer; register; yourself])
+				in: [:definition |
+					definitions add: definition.
+					^ definition]]

@@ -15,4 +15,4 @@ mergeFromDictionary: dict
 		self icon: (Compiler evaluate: (dict at: #iconCode))].
 	
 	(dict includesKey: #isProperty) ifTrue: [
-		self label: (dict at: #isProperty)].
+		self isProperty: (dict at: #isProperty)].
