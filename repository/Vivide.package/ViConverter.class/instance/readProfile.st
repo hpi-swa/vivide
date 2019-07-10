@@ -1,0 +1,4 @@
+read
+readProfile
+
+	self subclassResponsibility.

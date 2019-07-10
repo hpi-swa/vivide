@@ -2,6 +2,6 @@ serialization
 archive
 
 	^ archive ifNil: [
-		self
+		archive := ViConverterForClassArchive
 			createArchiveNamed: ((label isNil or: [self label isEmpty]) ifTrue: [self id asString])
 			inCategory: #VivideTemporary]

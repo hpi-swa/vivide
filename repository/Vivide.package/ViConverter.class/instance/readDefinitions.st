@@ -1,0 +1,4 @@
+read
+readDefinitions
+
+	self subclassResponsibility.

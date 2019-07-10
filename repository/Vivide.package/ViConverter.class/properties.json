@@ -4,16 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"organization",
-		"bookmarks",
-		"label",
-		"archive",
-		"id",
-		"defaultView",
-		"converter" ],
-	"name" : "ViProfile",
+		"profile",
+		"organization" ],
+	"name" : "ViConverter",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"createArchiveNamed:inCategory:" : "mt 7/10/2019 09:44",
+		"fromClass:intoOrganization:" : "mt 7/10/2019 10:18",
+		"fromClass:intoProfile:" : "mt 7/10/2019 10:18",
+		"fromOrganization:intoClass:" : "mt 7/10/2019 10:18",
+		"fromProfile:intoClass:" : "mt 7/10/2019 10:18" },
+	"instance" : {
+		"cleanUp" : "mt 7/10/2019 10:05",
+		"compileMessage:sourceCode:classified:" : "mt 7/10/2019 08:07",
+		"readCommands" : "mt 7/10/2019 08:47",
+		"readDefinitions" : "mt 7/10/2019 08:47",
+		"readProfile" : "mt 7/10/2019 08:41",
+		"readSteps" : "mt 7/10/2019 08:46",
+		"selectorForCommand:" : "mt 7/10/2019 09:49",
+		"selectorForDefinition:" : "mt 7/10/2019 09:49",
+		"selectorForProfile:" : "mt 7/10/2019 09:49",
+		"selectorForStep:" : "mt 7/10/2019 09:50",
+		"theClass" : "mt 7/10/2019 07:32",
+		"theClass:" : "mt 7/10/2019 07:32",
+		"writeCommand:" : "mt 7/10/2019 09:51",
+		"writeDefinition:" : "mt 7/10/2019 09:51",
+		"writeProfile:" : "mt 7/10/2019 09:51",
+		"writeStep:" : "mt 7/10/2019 09:51" } }
