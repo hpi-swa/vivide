@@ -1,4 +1,4 @@
 support
 selectorForCommand: dict
 
-	^ #command, ((dict at: #id) copyWithout: $-)
+	^ (#command, ((dict at: #id) copyWithout: $-)) asSymbol

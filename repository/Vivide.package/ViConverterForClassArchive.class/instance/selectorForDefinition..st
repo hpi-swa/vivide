@@ -1,4 +1,4 @@
 support
 selectorForDefinition: dict
 
-	^ #def, ((dict at: #id) copyWithout: $-)
+	^ (#def, ((dict at: #id) copyWithout: $-)) asSymbol

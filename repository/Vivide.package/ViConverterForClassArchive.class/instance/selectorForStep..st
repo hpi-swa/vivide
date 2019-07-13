@@ -1,4 +1,4 @@
 support
 selectorForStep: dict
 
-	^ #step, ((dict at: #id) copyWithout: $-)
+	^ (#step, ((dict at: #id) copyWithout: $-)) asSymbol
