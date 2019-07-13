@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "mt 7/13/2019 09:32" },
+	"instance" : {
+		"converterClass" : "mt 7/12/2019 15:45",
+		"exampleOrganization" : "mt 7/12/2019 15:28",
+		"exampleProfile" : "mt 7/12/2019 15:05",
+		"exampleScripts" : "mt 7/12/2019 15:16",
+		"setUp" : "mt 7/12/2019 15:45",
+		"test01ExtractSteps" : "mt 7/12/2019 15:30",
+		"test02MergeStep" : "mt 7/12/2019 15:39",
+		"test03MergeProfile" : "mt 7/13/2019 09:27" } }

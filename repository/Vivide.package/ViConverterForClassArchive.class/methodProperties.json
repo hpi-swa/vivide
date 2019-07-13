@@ -1,13 +1,15 @@
 {
 	"class" : {
-		"createArchiveNamed:inCategory:" : "mt 7/10/2019 09:44",
+		"createArchiveNamed:" : "mt 7/13/2019 09:37",
+		"createArchiveNamed:inCategory:" : "mt 7/13/2019 09:41",
 		"fromClass:intoOrganization:" : "mt 7/10/2019 10:18",
 		"fromClass:intoProfile:" : "mt 7/10/2019 10:18",
 		"fromOrganization:intoClass:" : "mt 7/10/2019 10:18",
 		"fromProfile:intoClass:" : "mt 7/10/2019 10:18" },
 	"instance" : {
-		"cleanUp" : "mt 7/10/2019 10:05",
+		"cleanUp" : "mt 7/13/2019 10:26",
 		"compileMessage:sourceCode:classified:" : "mt 7/10/2019 08:07",
+		"printOn:" : "mt 7/13/2019 10:35",
 		"readCommands" : "mt 7/10/2019 08:47",
 		"readDefinitions" : "mt 7/10/2019 08:47",
 		"readProfile" : "mt 7/10/2019 08:41",

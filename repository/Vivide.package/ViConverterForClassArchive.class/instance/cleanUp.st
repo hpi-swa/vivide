@@ -10,13 +10,13 @@ cleanUp
 		
 		self extractSteps do: [:step |
 			stream
-				nextPut: (self selectorForStep: step);
-				nextPut: (self selectorForDefinition: step definition)].
+				nextPut: (self selectorForStep: step asDictionary);
+				nextPut: (self selectorForDefinition: step definition asDictionary)].
 			
 		self extractCommands do: [:command |
 			stream
-				nextPut: (self selectorForCommand: command);
-				nextPut: (self selectorForDefinition: command definition)] ].
+				nextPut: (self selectorForCommand: command asDictionary);
+				nextPut: (self selectorForDefinition: command definition asDictionary)] ].
 	
 	unused := archive selectors copyWithoutAll: used.
 	

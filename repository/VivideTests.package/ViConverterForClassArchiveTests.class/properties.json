@@ -1,0 +1,14 @@
+{
+	"category" : "VivideTests-Kernel",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViConverterForClassArchiveTests",
+	"pools" : [
+		 ],
+	"super" : "ViConverterTests",
+	"type" : "normal" }
