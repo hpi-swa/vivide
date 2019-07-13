@@ -3,6 +3,6 @@
 		 },
 	"instance" : {
 		"test01NewEmpty" : "mt 5/3/2019 15:32",
-		"test02NewMinimal" : "mt 5/3/2019 15:45",
-		"test03SerializeAndMerge" : "mt 5/3/2019 15:57",
+		"test02NewMinimal" : "mt 7/13/2019 11:24",
+		"test03SerializeAndMerge" : "mt 7/13/2019 11:22",
 		"test04DefaultPropertiesView" : "mt 5/3/2019 16:55" } }

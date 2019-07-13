@@ -1,4 +1,4 @@
-accessing
+serialization
 converter: aConverter
 
 	converter := aConverter.

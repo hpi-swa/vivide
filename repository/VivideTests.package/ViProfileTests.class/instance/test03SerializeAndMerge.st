@@ -3,12 +3,13 @@ test03SerializeAndMerge
 
 	| profile archive backup |
 	profile := ViProfile newMinimal.
-	archive := profile archive.
-	profile serializeIntoArchive.
+	archive := profile converter theClass.
+	profile export.
 
 	backup := ViProfile newEmpty.
-	(ViQuerySerializer fromArchive: archive intoOrganizer: backup organization)
-		merge.
+	backup id: profile id.
+	(ViConverterForClassArchive fromClass: archive intoProfile: backup)
+		import.
 	
 	self
 		assert: profile organization orderedSteps size

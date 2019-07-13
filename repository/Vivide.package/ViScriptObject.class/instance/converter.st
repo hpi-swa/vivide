@@ -1,12 +1,12 @@
 serialization
-archive
+converter
 
 	"Fast path."
 	ViProfile active ifNotNil: [:profile |
 		profile organization = self organization
-			ifTrue: [^ profile archive]].
+			ifTrue: [^ profile converter]].
 
 	^ VivideLight profiles
 		detect: [:profile | profile organization = self organization]
-		ifFound: [:profile | profile archive]
-		ifNone: [ViScriptArchive localArchive]
+		ifFound: [:profile | profile converter]
+		ifNone: [ViConverter default]

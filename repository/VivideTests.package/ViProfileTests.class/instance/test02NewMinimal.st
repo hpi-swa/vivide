@@ -8,6 +8,6 @@ test02NewMinimal
 		assert: profile isValid;
 		assert: profile id notNil;
 		assert: profile defaultView isBehavior;
-		assert: profile archive notNil.
+		assert: profile converter notNil.
 		
-	profile archive removeFromSystem: false.
+	profile converter theClass removeFromSystem: false.

@@ -18,4 +18,4 @@ updateObject
 		self thisStep setProperty: #isNew toValue: nil.   
 		self updateObjectProperties: (Dictionary newFrom: spec value).
 
-		self thisStep serializeIntoArchive].
+		self thisStep export].

@@ -1,6 +1,4 @@
-organization - accessing
+serialization
 referenceInArchive
 
-	^ self organization 
-		referenceForDefinition: self
-		inQueryArchive: self archive
+	^ self converter methodReferenceForDefinition: self

@@ -14,7 +14,7 @@ test01NewInstance
 		
 		assert: script organization notNil;
 		assert: script notifier notNil;
-		assert: script archive notNil;
+		assert: script converter notNil;
 		
 		assert: script isRegistered;
 		assert: script label isNil;

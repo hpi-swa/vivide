@@ -23,4 +23,4 @@ postLoad
 		ifNotNil: [:ts | ToolSet default: ts].
 
 	VivideLight profiles ifEmpty: [
-		VivideLight profiles add: ViProfile newMinimal].
+		ViProfile newMinimal register].
