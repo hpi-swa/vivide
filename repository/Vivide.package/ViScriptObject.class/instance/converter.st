@@ -9,4 +9,4 @@ converter
 	^ VivideLight profiles
 		detect: [:profile | profile organization = self organization]
 		ifFound: [:profile | profile converter]
-		ifNone: [ViConverter default]
+		ifNone: [ViConverter default "for local script archive"]

@@ -1,0 +1,4 @@
+accessing
+clipboard
+
+	^ clipboard

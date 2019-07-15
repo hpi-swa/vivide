@@ -1,5 +1,8 @@
 actions - profile
 copyToClipboard
+
+	ViConverterForClipboard default
+		writeStep: self thisStep
+		withInput: self input.
 	
-	Clipboard clipboardText: (String streamContents: [:stream |
-		self thisStep storeOn: stream withInput: self input]).
+	self inform: 'Script was copied to clipboard.' for: self.
