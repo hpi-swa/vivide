@@ -3,6 +3,16 @@ step3db4c5e34863b44d8ff1423f40829e70
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:protocols | protocols gather: [:protocol | protocol methods]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'0277d509-8931-7b41-a15f-78fa2c4b883d').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:protocols | protocols gather: [:protocol | protocol methods]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'0277d509-8931-7b41-a15f-78fa2c4b883d').
 (#iconCode -> 'UiFugueIcons scriptsTextIcon').

@@ -9,9 +9,7 @@ cleanUp
 		self profile ifNotNil: [:profile | stream nextPut: (self selectorForProfile: profile)].
 		
 		self extractSteps do: [:step |
-			stream
-				nextPut: (self selectorForStep: step asDictionary);
-				nextPut: (self selectorForDefinition: step definition asDictionary)].
+			stream nextPut: (self selectorForStep: step asDictionary)].
 			
 		self extractCommands do: [:command |
 			stream

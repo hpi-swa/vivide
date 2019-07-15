@@ -3,6 +3,16 @@ stepc0cac2e3ab77904fa0ed936a31a423ea
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:definitions | definitions select: [:def | def isSnippetDefinition]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'c8b3a260-a50f-524a-9f5a-bafe2de5115d').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '31 January 2014 5:08:06 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:definitions | definitions select: [:def | def isSnippetDefinition]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'c8b3a260-a50f-524a-9f5a-bafe2de5115d').
 (#iconCode -> 'nil').

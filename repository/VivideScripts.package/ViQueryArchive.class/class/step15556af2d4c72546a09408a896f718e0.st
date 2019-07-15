@@ -3,6 +3,16 @@ step15556af2d4c72546a09408a896f718e0
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:tuples | tuples sorted: [:t1 :t2 | t2 first inheritsFrom: t1 first]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'65c357c4-72de-574c-b285-4b1be70e18e0').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 May 2018 5:15:08 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:tuples | tuples sorted: [:t1 :t2 | t2 first inheritsFrom: t1 first]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'65c357c4-72de-574c-b285-4b1be70e18e0').
 (#iconCode -> 'nil').

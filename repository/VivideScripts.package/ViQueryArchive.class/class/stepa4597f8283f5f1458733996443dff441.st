@@ -3,6 +3,20 @@ stepa4597f8283f5f1458733996443dff441
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:method | RBParser parseMethod: method getSource asString]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'11a05738-cd99-4b4c-8219-090dd6bf4a19').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '9 December 2015 11:26:37 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:method | RBParser parseMethod: method getSource asString]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'11a05738-cd99-4b4c-8219-090dd6bf4a19').
 (#iconCode -> 'nil').

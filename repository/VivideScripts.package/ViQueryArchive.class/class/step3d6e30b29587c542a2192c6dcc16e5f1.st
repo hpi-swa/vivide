@@ -3,6 +3,26 @@ step3d6e30b29587c542a2192c6dcc16e5f1
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:tuple |
+		[:superClass :thisClass :instVarName | {
+			(thisClass withAllSuperclasses reversed indexOf: superClass) asString, ') ', superClass name.
+			thisClass -> instVarName} asTuples] valueWithArguments: tuple]]
+			value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'a7aba676-f57f-2448-b69e-3283d44ce403').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '29 May 2018 9:18:47 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:tuple |
+		[:superClass :thisClass :instVarName | {
+			(thisClass withAllSuperclasses reversed indexOf: superClass) asString, '') '', superClass name.
+			thisClass -> instVarName} asTuples] valueWithArguments: tuple]]
+			value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'a7aba676-f57f-2448-b69e-3283d44ce403').
 (#iconCode -> 'nil').

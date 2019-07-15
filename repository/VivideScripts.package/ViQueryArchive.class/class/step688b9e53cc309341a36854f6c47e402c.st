@@ -3,6 +3,26 @@ step688b9e53cc309341a36854f6c47e402c
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
+	#text -> (ViLabelServiceForEclipse doObject: obj).
+	#icon -> (ViIconServiceForEclipse doObject: obj)}] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'1445ab5c-9464-fc42-875c-7b4e4ec4fde0').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '18 September 2013 3:34:54 pm')
+})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
+	#text -> (ViLabelServiceForEclipse doObject: obj).
+	#icon -> (ViIconServiceForEclipse doObject: obj)}] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'1445ab5c-9464-fc42-875c-7b4e4ec4fde0').
 (#iconCode -> 'nil').

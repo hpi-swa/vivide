@@ -3,6 +3,20 @@ step9116a93ca93f224dabf174f2e5067a77
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:category | SystemOrganization listAtCategoryNamed: category]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'8a196207-ea94-b944-901f-dd53bce5fd8a').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '14 December 2015 11:30:58 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:category | SystemOrganization listAtCategoryNamed: category]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'8a196207-ea94-b944-901f-dd53bce5fd8a').
 (#iconCode -> 'UiSilkIcons carIcon').

@@ -3,6 +3,16 @@ step417f42f73ebf834ea6ec8cecfbb75b84
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:objs | objs gather: [:obj | obj categories]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'62f98c5f-d392-9940-8b5f-a629bb10b412').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:objs | objs gather: [:obj | obj categories]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'62f98c5f-d392-9940-8b5f-a629bb10b412').
 (#iconCode -> 'UiSilkIcons packageIcon').

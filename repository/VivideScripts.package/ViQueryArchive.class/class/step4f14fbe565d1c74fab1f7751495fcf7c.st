@@ -3,6 +3,28 @@ step4f14fbe565d1c74fab1f7751495fcf7c
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
+	[:cls | { #text
+		-> (ViLabelService doObject: cls).
+	#icon
+		-> (ViIconService doObject: cls) }]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'7356b474-6dca-ab40-a55d-79bc5aaba65e').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '9 December 2015 1:12:24 pm')
+})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
+	[:cls | { #text
+		-> (ViLabelService doObject: cls).
+	#icon
+		-> (ViIconService doObject: cls) }]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'7356b474-6dca-ab40-a55d-79bc5aaba65e').
 (#iconCode -> 'nil').

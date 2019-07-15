@@ -3,6 +3,20 @@ step77862f460851124eb1ff6cb2e962a0c8
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:ref | ViFlagComment newListFromReference: ref]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'f91bbebd-046e-b248-9d3a-2d57d8f07c27').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '13 September 2013 6:34:06 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:ref | ViFlagComment newListFromReference: ref]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'f91bbebd-046e-b248-9d3a-2d57d8f07c27').
 (#iconCode -> 'ViIcons blueFlagIcon').

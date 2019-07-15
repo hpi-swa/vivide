@@ -3,6 +3,20 @@ stepa64e11c56bfc5a42a738d78d947d80da
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:obj | obj isVariableBinding ifTrue: ['variables'] ifFalse: ['methods']] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'ec2ad906-a7ae-d944-bfd7-eb54dba8b39a').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '18 September 2013 5:27:17 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:obj | obj isVariableBinding ifTrue: [''variables''] ifFalse: [''methods'']] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'ec2ad906-a7ae-d944-bfd7-eb54dba8b39a').
 (#iconCode -> 'nil').

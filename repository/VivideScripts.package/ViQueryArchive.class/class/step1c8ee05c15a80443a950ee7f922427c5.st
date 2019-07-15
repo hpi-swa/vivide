@@ -3,6 +3,28 @@ step1c8ee05c15a80443a950ee7f922427c5
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:navi |
+	Bag new in: [:histogram |
+		navi allObjectsDo: [:obj |
+			histogram add: obj class].
+		histogram]]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'137cbd22-232a-4f44-a6a9-e53e423d6acc').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '18 November 2013 3:36:11 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:navi |
+	Bag new in: [:histogram |
+		navi allObjectsDo: [:obj |
+			histogram add: obj class].
+		histogram]]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'137cbd22-232a-4f44-a6a9-e53e423d6acc').
 (#iconCode -> 'nil').

@@ -3,6 +3,16 @@ stepaa53c07584c54b40b6f36bcfd0ac3b68
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:entries | entries gather: [:entry | entry asFileDirectory entries]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'ad32da87-8ec2-a149-9c19-26e711922969').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:entries | entries gather: [:entry | entry asFileDirectory entries]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'ad32da87-8ec2-a149-9c19-26e711922969').
 (#iconCode -> 'UiFugueIcons picturesIcon').

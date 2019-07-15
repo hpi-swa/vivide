@@ -3,6 +3,26 @@ stepafb03b2b6810684f853c74918c6c73e3
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
+	#text -> (ViLabelService doObject: obj value).
+	#icon -> ((ViIconService doObject: obj value) ifNil: [ViIcons blankIcon])}] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'b3745d63-c2e7-574b-8d4b-2fcc84585bb1').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | {
+	#text -> (ViLabelService doObject: obj value).
+	#icon -> ((ViIconService doObject: obj value) ifNil: [ViIcons blankIcon])}] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'b3745d63-c2e7-574b-8d4b-2fcc84585bb1').
 (#iconCode -> 'nil').

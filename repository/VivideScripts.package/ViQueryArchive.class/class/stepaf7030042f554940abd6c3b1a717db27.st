@@ -3,6 +3,28 @@ stepaf7030042f554940abd6c3b1a717db27
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | [|result|
+	result := OrderedCollection new.
+	SystemNavigation allSelectorsAndMethodsDo: [:b :selector :method |
+		(ViMethodVersion versionsOfMethod: method methodReference) size > 3
+			ifTrue: [result add: method]].
+	result] value in: [:result |
+	out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'be0082fe-f238-c54a-9220-32909fda1e3d').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | [|result|
+	result := OrderedCollection new.
+	SystemNavigation allSelectorsAndMethodsDo: [:b :selector :method |
+		(ViMethodVersion versionsOfMethod: method methodReference) size > 3
+			ifTrue: [result add: method]].
+	result] value in: [:result |
+	out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'be0082fe-f238-c54a-9220-32909fda1e3d').
 (#iconCode -> 'nil').

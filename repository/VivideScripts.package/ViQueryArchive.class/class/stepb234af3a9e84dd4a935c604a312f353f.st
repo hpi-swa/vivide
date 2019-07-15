@@ -3,6 +3,16 @@ stepb234af3a9e84dd4a935c604a312f353f
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:refs | refs gather: [:ref | ViMethodVersion versionsOfMethod: ref]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'e949ac9a-c053-b24f-929e-75da7266b9df').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:refs | refs gather: [:ref | ViMethodVersion versionsOfMethod: ref]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'e949ac9a-c053-b24f-929e-75da7266b9df').
 (#iconCode -> 'UiSilkIcons timeIcon').

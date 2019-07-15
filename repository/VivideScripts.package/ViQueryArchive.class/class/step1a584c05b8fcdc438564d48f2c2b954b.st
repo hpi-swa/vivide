@@ -3,6 +3,18 @@ step1a584c05b8fcdc438564d48f2c2b954b
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:packages | packages gather: [:pkg |
+	pkg classes]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'712a4be8-7568-4e4c-8210-de3af483673b').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:packages | packages gather: [:pkg |
+	pkg classes]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'712a4be8-7568-4e4c-8210-de3af483673b').
 (#iconCode -> 'UiFugueIcons keyboardExclamationIcon').

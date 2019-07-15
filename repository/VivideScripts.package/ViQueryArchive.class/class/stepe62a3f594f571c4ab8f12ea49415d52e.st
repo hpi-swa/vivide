@@ -3,6 +3,16 @@ stepe62a3f594f571c4ab8f12ea49415d52e
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:selectors | SystemNavigation allUnSentMessagesIn: selectors] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'d64bb967-563b-634e-b3ca-edbff3f1cb72').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '13 September 2013 7:12:18 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:selectors | SystemNavigation allUnSentMessagesIn: selectors] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'d64bb967-563b-634e-b3ca-edbff3f1cb72').
 (#iconCode -> 'nil').

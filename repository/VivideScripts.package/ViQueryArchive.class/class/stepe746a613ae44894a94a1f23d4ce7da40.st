@@ -3,6 +3,20 @@ stepe746a613ae44894a94a1f23d4ce7da40
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:entry | entry asFileDirectory]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'5315c45d-25f8-f247-ab3b-dad6a2c522d7').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '3 January 2014 3:14:09 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:entry | entry asFileDirectory]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'5315c45d-25f8-f247-ab3b-dad6a2c522d7').
 (#iconCode -> 'nil').

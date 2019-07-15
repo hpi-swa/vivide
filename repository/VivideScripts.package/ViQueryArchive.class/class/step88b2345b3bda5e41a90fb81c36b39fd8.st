@@ -3,6 +3,20 @@ step88b2345b3bda5e41a90fb81c36b39fd8
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:morph | morph submorphs]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'39bba557-ee6f-694e-ad36-26a49f7d1886').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '3 February 2014 4:57:24 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:morph | morph submorphs]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'39bba557-ee6f-694e-ad36-26a49f7d1886').
 (#iconCode -> 'nil').

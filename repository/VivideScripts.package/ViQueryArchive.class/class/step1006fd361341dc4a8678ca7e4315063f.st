@@ -3,6 +3,20 @@ step1006fd361341dc4a8678ca7e4315063f
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:packageOrganizer | packageOrganizer packages]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'df292972-deb5-624c-9ece-d3afe484dd06').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '11 February 2014 1:08:56 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:packageOrganizer | packageOrganizer packages]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'df292972-deb5-624c-9ece-d3afe484dd06').
 (#iconCode -> 'UiSilkIcons packageIcon').

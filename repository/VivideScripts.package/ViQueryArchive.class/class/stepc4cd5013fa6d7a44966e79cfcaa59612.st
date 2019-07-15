@@ -3,6 +3,26 @@ stepc4cd5013fa6d7a44966e79cfcaa59612
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText
+		ifTrue: [ { #text -> textOrObject } ]
+		ifFalse: [ [:step | { #text -> (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'05921657-1e65-7947-aac4-65dcf139a621').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '20 December 2013 11:55:55 am')
+})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | textOrObject isText
+		ifTrue: [ { #text -> textOrObject } ]
+		ifFalse: [ [:step | { #text -> (step steps collect: [:s | s category ifNil: #default]) asSet asArray asString }] value: textOrObject]]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'05921657-1e65-7947-aac4-65dcf139a621').
 (#iconCode -> 'nil').

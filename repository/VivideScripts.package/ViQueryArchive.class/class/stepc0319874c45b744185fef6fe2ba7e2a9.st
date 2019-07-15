@@ -3,6 +3,16 @@ stepc0319874c45b744185fef6fe2ba7e2a9
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:entries | entries select: [:entry | entry isDirectory]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'fd81dffc-484e-5546-a046-3b389a66ac79').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:entries | entries select: [:entry | entry isDirectory]] value: in)]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'fd81dffc-484e-5546-a046-3b389a66ac79').
 (#iconCode -> 'nil').

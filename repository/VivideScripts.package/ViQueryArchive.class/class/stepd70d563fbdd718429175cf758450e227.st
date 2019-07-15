@@ -3,6 +3,20 @@ stepd70d563fbdd718429175cf758450e227
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:fd | [fd entries] on: InvalidDirectoryError do: [#()]]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'90617371-0b50-8444-a853-96023a9105ba').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '6 December 2013 4:49:40 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:fd | [fd entries] on: InvalidDirectoryError do: [#()]]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'90617371-0b50-8444-a853-96023a9105ba').
 (#iconCode -> 'UiSilkIcons folderIcon').

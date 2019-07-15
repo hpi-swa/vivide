@@ -3,6 +3,18 @@ stepcb3aaeaa1407b74d8f5e8838680974b5
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | [ViProfile active bookmarks] value in: [:result |
+	out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'4c57df18-603f-524d-a007-62a79be224e6').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '20 May 2014 11:59:48 am')
+})).
+(#sourceCode -> '[:in :out | [ViProfile active bookmarks] value in: [:result |
+	out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'4c57df18-603f-524d-a007-62a79be224e6').
 (#iconCode -> 'nil').

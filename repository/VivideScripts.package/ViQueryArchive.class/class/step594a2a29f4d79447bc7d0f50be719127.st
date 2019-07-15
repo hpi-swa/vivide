@@ -3,6 +3,20 @@ step594a2a29f4d79447bc7d0f50be719127
 	<step>
 
 	^ (Dictionary newFrom: {
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:cls | cls subclasses select: [:c | c category = cls category]]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'dceac215-ec7a-aa48-a9d9-0c1e45043057').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '14 December 2015 11:52:58 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:cls | cls subclasses select: [:c | c category = cls category]]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
 (#className -> #ViScriptStep).
 (#definition -> #'dceac215-ec7a-aa48-a9d9-0c1e45043057').
 (#iconCode -> 'nil').
