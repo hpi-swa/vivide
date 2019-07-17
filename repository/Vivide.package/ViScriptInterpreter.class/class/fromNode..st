@@ -18,10 +18,10 @@ fromNode: node
 			newInstance
 				stack: (Stack new push: node firstStep activate; yourself);
 				activateNext]
-		ifNotNil: [:stack |
+		ifNotNil: [:stackCopy |
 			"Intermediate node."
 			newInstance
 				next: node firstStep;
-				stack: stack].
+				stack: stackCopy].
 			
 	^ newInstance

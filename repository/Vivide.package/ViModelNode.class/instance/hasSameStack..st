@@ -3,17 +3,17 @@ hasSameStack: node
 	"Only compare the script activations on the stack for this."
 	
 	| myLinks otherLinks |
-	(self referenceStack isNil and: [node referenceStack isNil])
+	(self referenceStackNoCopy isNil and: [node referenceStackNoCopy isNil])
 		ifTrue: [^ true].
 	
-	(self referenceStack isNil or: [node referenceStack isNil])
+	(self referenceStackNoCopy isNil or: [node referenceStackNoCopy isNil])
 		ifTrue: [^ false].
 	
-	(self referenceStack isEmpty and: [node referenceStack isEmpty])
+	(self referenceStackNoCopy isEmpty and: [node referenceStackNoCopy isEmpty])
 		ifTrue: [^ true].
 	
-	myLinks := Array streamContents: [:s | self referenceStack linkedList linksDo: [:link | s nextPut: link]].
-	otherLinks := Array streamContents: [:s | node referenceStack linkedList linksDo: [:link | s nextPut: link]].
+	myLinks := Array streamContents: [:s | self referenceStackNoCopy linkedList linksDo: [:link | s nextPut: link]].
+	otherLinks := Array streamContents: [:s | node referenceStackNoCopy linkedList linksDo: [:link | s nextPut: link]].
 	
 	myLinks size = otherLinks size ifFalse: [^ false].
 	

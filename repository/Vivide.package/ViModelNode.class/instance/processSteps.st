@@ -4,7 +4,7 @@ processSteps
 
 	| interpreter |
 	self firstStep ifNil: [
-		self assert: self referenceStack isEmpty.
+		self assert: (self referenceStackNoCopy isNil or: [self referenceStackNoCopy isEmpty]).
 		^ self].
 
 	"Clear internal caches."

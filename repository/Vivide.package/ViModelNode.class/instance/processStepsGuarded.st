@@ -6,6 +6,5 @@ processStepsGuarded
 		on: Error
 		do: [:error |
 			self emergencyClearFor: error.
-			self pane
-				ifNil: [Transcript showln: '[ViModelNode] Script interpretation failed: ', error messageText]
-				ifNotNil: [:p | p triggerShowError: error node: self]]
+			ViScriptNotInterpreted signal: '[ViModelNode] Script interpretation failed: ', error messageText.
+			self pane ifNotNil: [:p | p triggerShowError: error node: self]]
