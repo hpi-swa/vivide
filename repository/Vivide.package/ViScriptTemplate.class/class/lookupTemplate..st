@@ -21,7 +21,9 @@ lookupTemplate: code
 			template := self templateReference].	
 	
 	node isBlock ifTrue: [
-		node arguments size = 0 ifTrue: [template := self templateGlobal].
+		node arguments size = 0 ifTrue: [
+			template := self templateGlobal.
+			properties at: #isGlobal put: true].
 		node arguments size > 1 ifTrue: [
 			(node arguments size = 2
 				and: [node argumentNames hasEqualElements: #(in out)])
