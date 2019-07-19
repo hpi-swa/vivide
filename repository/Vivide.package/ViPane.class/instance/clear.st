@@ -11,6 +11,6 @@ clear
 	self clearError.
 	
 	self view ifNotNil: #clear.
-	self currentQuery: nil.
+	self script: nil.
 	
 	self flag: #todo. "mt: Clear artifact list containers! Or any other editing state in views...?"

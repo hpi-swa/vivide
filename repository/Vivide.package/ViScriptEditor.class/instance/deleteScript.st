@@ -20,9 +20,9 @@ deleteScript
 	"All panes should now start with the next step."
 	self allSteps first == self thisStep ifTrue: [
 		ViPane allInstancesDo: [:pane | 
-			pane currentQuery == self thisStep
+			pane script == self thisStep
 				ifTrue: [
-					pane currentQuery: self thisStep next from: self.
+					pane script: self thisStep next from: self.
 					
 					self flag: #hiddenMagic. "mt: Make it more explicit to the pane."
-					pane recentQueries remove: self thisStep "not valid anymore"]]].
+					pane recentScripts remove: self thisStep "not valid anymore"]]].

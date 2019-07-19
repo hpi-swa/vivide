@@ -26,5 +26,5 @@ openArtifact: anObject
 			object retain]].
 
 	^ VivideLight useClassicMode
-		ifTrue: [ViPane chooseQueryFor: {object}]
+		ifTrue: [ViPane chooseAndOpenScriptWith: {object}]
 		ifFalse: [self openScript: #artifacts withObjects: {object}]

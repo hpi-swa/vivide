@@ -32,5 +32,5 @@ assureAllStepsConnected
 	"If the first part is different, update all open panes to show the new first."
 	oldFirst ~~ self allSteps first ifTrue: [
 		ViPane allInstancesDo: [:pane | 
-			pane currentQuery == oldFirst
-				ifTrue: [pane currentQuery: self allSteps first from: self]]]
+			pane script == oldFirst
+				ifTrue: [pane script: self allSteps first from: self]]]

@@ -13,5 +13,5 @@ addQuery
 		#scriptLabel -> (ViLabelService doObject: newQuery) asString}.
 
 	self
-		currentQuery: newQuery;
+		script: newQuery;
 		debugQuery: newQuery.

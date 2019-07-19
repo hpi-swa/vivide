@@ -4,7 +4,7 @@ browseResults
 
 	| pane |
 	pane := ViPane new
-		currentQuery: {#defaultProperties -> {#view -> ViTreePlainView}} asScript;
+		script: {#defaultProperties -> {#view -> ViTreePlainView}} asScript;
 		objects: self results;
 		yourself.
 	

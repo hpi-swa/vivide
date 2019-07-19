@@ -2,18 +2,18 @@ actions
 copyQuery
 
 	| newQuery |
-	self currentQuery ifNil: [self addQuery].
+	self script ifNil: [self addQuery].
 	
-	newQuery := self currentQuery deepCopy.
+	newQuery := self script deepCopy.
 	
 	self flag: #metaScript.
 	self isTopLevel ifFalse: [
-		newQuery adoptOrganization: self currentQuery organization].
+		newQuery adoptOrganization: self script organization].
 	
 	ViLoggingService trigger: {
 		#message -> 'Script copied.'.
 		#scriptLabel -> (ViLabelService doObject: newQuery) asString}.
 
 	self
-		currentQuery: newQuery;
+		script: newQuery;
 		debugQuery: newQuery.

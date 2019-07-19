@@ -5,13 +5,12 @@ new: symbolOrBlockOrScript for: objects
 	instance := self new.
 	script := symbolOrBlockOrScript asScript.
 	pane := ViPane new
-		queries: [script organization orderedSteps];
+		script: script;
+		objects: objects;
 		yourself.
-	pane recentQueries add: script.
-	pane objects: objects.
-	
-	pane chooseMostAppropriateQuery.
-	"pane currentQuery ifNil: [pane currentQuery: script]."
+
+	"Allow domain objects to override #artifacts script."
+	pane chooseVivideTool.
 	  
 	instance pane: pane.
 

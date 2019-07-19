@@ -47,7 +47,7 @@ addQueryHandles
 	box addMorphBack: (Morph new color: Color transparent; extent: 20@12). "spacer"
 	
 	{
-	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseQuery}.
+	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseAndOpenScript}.
 	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #debugQuery}.
 	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
 	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #addQuery}.

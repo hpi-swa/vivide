@@ -15,14 +15,14 @@ exploreAllViewsForScript: aStep using: someObjects
 
 [:input :script :view | 
 	ViPane new
+		script: (script deepCopy viewClass: view);
 		objects: input;
-		currentQuery: (script deepCopy viewClass: view);
 		extent: 200@200;
 		fullBounds;
 		yourself].
 
 [:pane |
-	#text -> pane currentQuery viewClass name.
+	#text -> pane script viewClass name.
 	#icon -> (([pane imageForm] on: Error do: [:e | UiFugueIcons exclamationRedIcon]) scaledIntoFormOfSize: 100@100)]
 		-> {#itemOrientation -> #vertical. #hAlignment -> #center}.
 	

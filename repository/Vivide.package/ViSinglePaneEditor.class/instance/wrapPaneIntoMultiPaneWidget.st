@@ -2,8 +2,8 @@ as yet unclassified
 wrapPaneIntoMultiPaneWidget
 
 	"Copy default scripts on the fly."
-	self pane currentQuery ifNotNil: [:script |
-		script isDefault ifTrue: [self pane currentQuery: script deepCopy]].
+	self pane script ifNotNil: [:script |
+		script isDefault ifTrue: [self pane script: script deepCopy]].
 
 	"Set up new pane"
 	self setProperty: #isSpawning toValue: true.

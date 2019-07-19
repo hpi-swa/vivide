@@ -19,6 +19,6 @@ initialize
 		initializeUiSystemChanges.
 
 	self connect: self model signal: #modelReset toSelector: #notifyChangedResults.
-	self connect: self signal: #currentQueryChanged: toSelector: #notifyChangedResults.
+	self connect: self signal: #scriptChanged: toSelector: #notifyChangedResults.
 
-	self connect: self signal: #currentQueryChanged: toSelector: #recentQueriesAdd:.
+	self connect: self signal: #scriptChanged: toSelector: #recentQueriesAdd:.

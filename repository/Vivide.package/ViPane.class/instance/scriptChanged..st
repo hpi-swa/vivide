@@ -1,5 +1,5 @@
 signals
-currentQueryChanged: newQuery
+scriptChanged: newScript
 
 	self emit.
 	self emitInOwnerChain.

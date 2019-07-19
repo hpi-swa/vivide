@@ -1,7 +1,5 @@
-as yet unclassified
+accessing - view
 results
 
-	self flag: #metaScript.
-	^ (self currentQuery notNil and: [self currentQuery isMeta])
-		ifTrue: [self view outgoingObjects]
-		ifFalse: [self model allObjects]
+	self flag: #deprecated.
+	^ self allResults

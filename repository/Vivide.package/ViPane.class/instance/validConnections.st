@@ -1,4 +1,4 @@
-as yet unclassified
+connections and tuples
 validConnections
 
 	^ self connections select: [:connection |

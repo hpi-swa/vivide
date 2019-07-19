@@ -20,5 +20,5 @@ openArtifacts: someObjects
 		ifTrue: [objects collect: [:o | o value]] ifFalse: [objects].
 	
 	^ VivideLight useClassicMode
-		ifTrue: [ViPane chooseQueryFor: objects]
+		ifTrue: [ViPane chooseAndOpenScriptWith: objects]
 		ifFalse: [self openScript: #artifacts withObjects: objects]

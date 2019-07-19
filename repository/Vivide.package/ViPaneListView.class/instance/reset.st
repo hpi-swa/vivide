@@ -30,8 +30,7 @@ reset
 		
 		newPane := (
 			ViPane new
-				currentQuery: customScript;
-				queries: [self organization orderedSteps];
+				script: customScript;
 				height: (node at: #height ifAbsent: [200]); "changeable via halo"
 				balloonText: (node at: #balloonText ifAbsent: [node at: #text ifAbsent: [nil]]);
 				yourself).

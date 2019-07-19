@@ -8,7 +8,7 @@ updateView
 	
 	"2) Update view."
 	[
-		self currentQuery ifNotNil: [:script |
+		self script ifNotNil: [:script |
 			script viewClass in: [:viewClass |
 				(self view class = viewClass
 					ifTrue: [self view "Keep the view"]

@@ -1,9 +1,9 @@
 accessing
-firstStep: aQueryStep
+firstStep: scriptStep
 
-	firstStep == aQueryStep ifTrue: [^ self].
+	firstStep == scriptStep ifTrue: [^ self].
 
 	"Reset all nodes and notifier subscriptions silently to avoid unnecessary view updates."
 	self resetSilently.
 	
-	firstStep := aQueryStep.
+	firstStep := scriptStep.

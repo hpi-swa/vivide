@@ -1,4 +1,4 @@
 accessing
 queries
 
-	^ queries ifNil: [#()]
+	^ queries ifNil: [#()] ifNotNil: [:objectOrBlock | objectOrBlock value]
