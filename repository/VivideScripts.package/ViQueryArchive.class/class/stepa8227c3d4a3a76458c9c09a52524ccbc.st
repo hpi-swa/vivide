@@ -27,8 +27,9 @@ stepa8227c3d4a3a76458c9c09a52524ccbc
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '15 December 2015 10:39:29 am').
+(#expandAll -> true).
 (#inputKind -> Morph).
-(#priority -> 600).
+(#priority -> 50).
 (#view -> ViTreeViewExtended)
 }))
 })
