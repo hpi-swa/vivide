@@ -6,10 +6,10 @@ asDictionary
 	^ Dictionary new
 		at: #id put: self id;
 		at: #bounds put: (self bounds translateBy: self owner topLeft negated);
-		at: #scripts put: (self recentQueries
+		at: #scripts put: (self recentScripts
 			select: [:script | (script valueOfProperty: #isNew ifAbsent: [false]) not]
 			thenCollect: [:script | script id]) asArray;
-		at: #current put: (self currentQuery ifNotNil: [:script | script id]);
+		at: #current put: (self script ifNotNil: [:script | script id]);
 		at: #in put: (self validConnections
 			select: [:connection | connection target == self]
 			thenCollect: [:connection | {

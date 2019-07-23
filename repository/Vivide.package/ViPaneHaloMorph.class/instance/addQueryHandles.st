@@ -2,7 +2,7 @@ handles
 addQueryHandles
 
 	| buttons box |
-	buttons := self target recentQueries collect: [:q |
+	buttons := self target recentScripts collect: [:q |
 		ViDraggableButton new
 			checkable: true;
 			color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);

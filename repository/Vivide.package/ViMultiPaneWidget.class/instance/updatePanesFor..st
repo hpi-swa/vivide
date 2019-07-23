@@ -46,7 +46,7 @@ updatePanesFor: specs
 		pane script: ((self organizer stepById: (spec at: #current))
 			ifNil: [Error signal: 'Script not found in organizer!']).
 		"3.2.2) Ensure current script being in history."
-		pane recentQueriesAdd: pane script].
+		pane recentScriptsAdd: pane script].
 
 	"4) Ensure recalculation of own bounds after pane insertions."
 	self fullBounds.

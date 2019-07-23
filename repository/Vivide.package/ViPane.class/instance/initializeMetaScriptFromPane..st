@@ -2,6 +2,8 @@ initialization
 initializeMetaScriptFromPane: pane
 
 	| metaScript metaWidget |
+	self flag: #metaScript.
+	
 	metaScript := ViScriptStep convertPanes: {pane asDictionary}.
 	metaWidget := ViMultiPaneTiled new addPane: pane; yourself.
 
@@ -19,7 +21,7 @@ initializeMetaScriptFromPane: pane
 	self model firstStep: metaScript.
 	self model inputForChildren: pane objects.
 	metaWidget model: self model.
-	self recentQueriesAdd: metaScript.
+	self recentScriptsAdd: metaScript.
 
 	"Update connections."
 	pane connections copy

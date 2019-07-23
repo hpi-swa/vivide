@@ -21,4 +21,4 @@ initialize
 	self connect: self model signal: #modelReset toSelector: #notifyChangedResults.
 	self connect: self signal: #scriptChanged: toSelector: #notifyChangedResults.
 
-	self connect: self signal: #scriptChanged: toSelector: #recentQueriesAdd:.
+	self connect: self signal: #scriptChanged: toSelector: #recentScriptsAdd:.

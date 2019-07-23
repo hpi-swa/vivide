@@ -2,6 +2,6 @@ testing - convenience
 isScriptEditor
 	"Convenience. Does this pane look like an editing tool for a script's steps?"
 	
-	^ (self currentQuery notNil
-		and: [self currentQuery id = #artifacts])
+	^ (self script notNil
+		and: [self script id = #artifacts])
 		and: [self objects anySatisfy: [:ea | ea isScript]]
