@@ -1,4 +1,0 @@
-updating
-updateFromQueryEvaluation: evt
-	
-	"Deprecated."

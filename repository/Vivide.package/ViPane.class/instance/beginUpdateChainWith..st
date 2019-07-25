@@ -1,4 +1,4 @@
-as yet unclassified
+updating - kernel
 beginUpdateChainWith: block
 	"Use this to trigger an update programmatically, that is, without any active user input event."
 

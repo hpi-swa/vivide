@@ -1,4 +1,5 @@
 actions - open
 openScript: aScript withObjects: someObjects
 
-	^ ViSinglePaneEditor open: aScript for: someObjects
+	someObjects do: #retain.
+	^ ViPane openScript: aScript withObjects: someObjects

@@ -1,4 +1,4 @@
-as yet unclassified
+errors
 openDebuggerForLastException
 
 	| process errorWasInUIProcess description debugger |

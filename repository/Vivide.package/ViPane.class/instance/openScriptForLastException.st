@@ -1,4 +1,4 @@
-as yet unclassified
+errors
 openScriptForLastException
 
 	| script anchor |

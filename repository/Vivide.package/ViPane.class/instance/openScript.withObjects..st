@@ -1,12 +1,12 @@
 initialization - pop-up
-openScript: script withObjects: someObjects
+openScript: symbolOrBlockOrScript withObjects: someObjects
 	
 	LastHelperPane := nil.
 	
 	self recentScripts removeAll.
 	
 	self
-		script: script;
+		script: symbolOrBlockOrScript asScript;
 		objects: someObjects.
 		
 	^ self open

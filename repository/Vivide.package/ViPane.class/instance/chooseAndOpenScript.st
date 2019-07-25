@@ -1,4 +1,4 @@
-actions
+script selection
 chooseAndOpenScript
 
 	| pane scripts doOpen |

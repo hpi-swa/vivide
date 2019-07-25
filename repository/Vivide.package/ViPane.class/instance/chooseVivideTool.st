@@ -1,4 +1,4 @@
-actions
+script selection
 chooseVivideTool
 	"Extension point for domain objects, which can provide #hasVivideTools to force application of a certain script. Only overrides #artifacts script at the moment."
 

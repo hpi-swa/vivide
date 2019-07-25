@@ -1,4 +1,4 @@
-actions
+script selection
 chooseAndOpenScriptWith: someObjects
 	"Interactive dialog version for #openScriptWith:. Let the user pick a script for the given objects. Use that script in a new pane with those objects."
 

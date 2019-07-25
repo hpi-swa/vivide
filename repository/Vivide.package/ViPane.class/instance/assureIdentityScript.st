@@ -1,4 +1,4 @@
-as yet unclassified
+script selection
 assureIdentityScript
 
 	self flag: #todo. "mt: Is #isNew really a good way to check for identity property?"

@@ -8,17 +8,13 @@ initialize
 		color: Color transparent;
 		extent: 150@150.
 	
-	model := ViModelNode new
+	self model: (ViModelNode new
 		pane: self;
 		inputForChildren: #();
-		firstStep: nil.
+		firstStep: nil;
+		yourself).
 	
 	self
 		initializeUiObjectChanges;
 		initializeUiScriptChanges;
 		initializeUiSystemChanges.
-
-	self connect: self model signal: #modelReset toSelector: #notifyChangedResults.
-	self connect: self signal: #scriptChanged: toSelector: #notifyChangedResults.
-
-	self connect: self signal: #scriptChanged: toSelector: #recentScriptsAdd:.

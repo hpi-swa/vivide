@@ -1,4 +1,4 @@
-as yet unclassified
+script selection
 assureAppropriateScript
 	"Changes the script if the current one cannot support the new (kind of) objects anymore."
 	

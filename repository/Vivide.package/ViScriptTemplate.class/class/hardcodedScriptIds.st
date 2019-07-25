@@ -17,7 +17,7 @@ hardcodedScriptIds
 					symbol includesSubstring: token caseSensitive: false]])]].
 	
 	"Add constructors for (single-pane) editors."
-	scriptSelectors addAll: #(new:for: open:for: openScript:withObjects:).
+	scriptSelectors addAll: #(openScript:withObjects:).
 
 	scriptIds := IdentitySet new.
 	SystemNavigation default allSelectorsAndMethodsDo: [:b :s :method |
