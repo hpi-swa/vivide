@@ -15,6 +15,6 @@ test13ResultsRecursive
 		Morph new addAllMorphs: {Morph new. Morph new}}.
 	
 	sut
-		currentQuery: script;
+		script: script;
 		objects: {ui}.
 	self assert: ui allMorphs size equals: sut results size.

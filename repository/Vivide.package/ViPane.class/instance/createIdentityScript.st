@@ -1,4 +1,4 @@
-as yet unclassified
+script generation
 createIdentityScript
 
 	| script tupleSize |

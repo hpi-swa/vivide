@@ -24,4 +24,5 @@ updateView
 	] on: Error do: [:ex | self triggerShowError: ex].
 	
 	"3) Update pane-specific stuff."
+	self flag: #todo. "Notify my dependent decorations."
 	self updateColor.

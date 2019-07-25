@@ -1,4 +1,4 @@
-accessing
+script selection - scripts
 knownScripts
 
 	^ Array streamContents: [:result |

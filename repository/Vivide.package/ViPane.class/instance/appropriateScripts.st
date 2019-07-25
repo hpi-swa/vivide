@@ -1,5 +1,5 @@
-accessing - convenience
-appropriateQueries
+script selection - scripts
+appropriateScripts
 	"Given the #knownScripts, select the ones that match tuple size and kinds in tuple."
 	
 	| paneBaseClasses paneTupleSize check |

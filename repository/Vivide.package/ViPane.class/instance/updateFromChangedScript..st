@@ -2,17 +2,17 @@ updating
 updateFromChangedScript: evt
 	"Watch for new property steps and update the view."
 	
-	self currentQuery
+	self script
 		ifNil: [^ self].
 
-	(self currentQuery isMeta and: [evt item isMeta not])
+	(self script isMeta and: [evt item isMeta not])
 		ifTrue: [^ self].
 
-	(evt isRenamed and: [self currentQuery == evt item])
+	(evt isRenamed and: [self script == evt item])
 		ifTrue: [^ self updateLabel].
 
 	(evt isPropertiesModified and: [evt onlyViewIndependentChanges])
 		ifTrue: [^ self].
 
-	self currentQuery allStepsDo: [:step |
+	self script allStepsDo: [:step |
 		step == evt item ifTrue: [self triggerUpdateView. ^ self]].

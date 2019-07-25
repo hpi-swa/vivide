@@ -10,4 +10,4 @@ test08DefaultQuery
 		[:color | #text -> color name]} asScript.
 
 	sut queries: {q1.q2}; objects: #(1 2 3).
-	self assert: sut currentQuery == q1. "two matching, first is default"
+	self assert: sut script == q1. "two matching, first is default"

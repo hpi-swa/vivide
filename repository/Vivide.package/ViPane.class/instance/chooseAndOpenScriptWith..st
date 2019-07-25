@@ -16,7 +16,7 @@ chooseAndOpenScriptWith: someObjects
 	"This is a class-side version. So use the global organization. Maybe we can also provide a instance side version of this?"
 	scripts := ViActiveScriptOrganizer
 		value: self organization "Use my current scope."
-		during: [LastHelperPane appropriateQueries].
+		during: [LastHelperPane appropriateScripts].
 	
 	ViPane new
 		script: #formattedScripts asScript;

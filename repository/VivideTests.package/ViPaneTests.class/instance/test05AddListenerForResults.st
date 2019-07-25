@@ -2,7 +2,7 @@ tests
 test05AddListenerForResults
 
 	| listener |
-	sut currentQuery: [:obj | obj] asScript.
+	sut script: [:obj | obj] asScript.
 	
 	listener := ViPane new.
 	(ViResultsConnection from: sut to: listener) attach.
@@ -14,7 +14,7 @@ test05AddListenerForResults
 	self assert: (listener objects hasEqualElements: sut results).
 	
 	sut beginUpdateChainWith: [:pane |
-		pane currentQuery: [:num | num * num] asScript].
+		pane script: [:num | num * num] asScript].
 	self assert: (listener objects hasEqualElements: sut results).
 
 	listener clear.

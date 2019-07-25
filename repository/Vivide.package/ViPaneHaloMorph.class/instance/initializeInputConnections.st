@@ -28,7 +28,7 @@ initializeInputConnections
 					buttonStyle: #iconOnly;
 					icon: connection class icon scaledToDisplay;
 					layoutInset: 2;
-					balloonText: (connection target currentQuery
+					balloonText: (connection target script
 						ifNil: ['(no query)']
 						ifNotNil: [:q | q nextLabel]);
 					setProperty: #paneIn toValue: connection source;

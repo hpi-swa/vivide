@@ -2,7 +2,7 @@ tests
 test02SingleQuery
 
 	sut
-		objects: #(1 2 3);
-		currentQuery: [:num | num * num] asScript.
+		script: [:num | num * num] asScript;
+		objects: #(1 2 3).
 	
 	self assert: (sut results hasEqualElements: {1. 4. 9}).

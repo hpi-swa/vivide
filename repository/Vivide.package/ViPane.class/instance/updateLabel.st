@@ -3,10 +3,10 @@ updateLabel
 	"Read script properties and update label/title of my enclosing system window."
 	
 	| newLabel |
-	self currentQuery ifNil: [^ self].
+	self script ifNil: [^ self].
 	self owner ifNil: [^ self].
 	
-	newLabel := self currentQuery label.
+	newLabel := self script label.
 		
 	"If we are (deeply) embedded in a tool, set the label as tooltip."
 	self owner class == ViSinglePaneEditor

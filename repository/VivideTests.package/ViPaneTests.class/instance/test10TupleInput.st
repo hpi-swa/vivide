@@ -7,7 +7,7 @@ test10TupleInput
 	provider1 := ViPane new.
 	(ViSelectionConnection from: provider1 to: sut) attach.
 	provider1
-		currentQuery: q;
+		script: q;
 		objects: #(a b).
 	
 	provider1 beginUpdateChainWith: [:pane | 
@@ -19,7 +19,7 @@ test10TupleInput
 	(ViSelectionConnection from: provider2 to: sut) attach.
 	"self assert: (sut objects hasEqualElements: #((a b)()))."
 	provider2
-		currentQuery: q;
+		script: q;
 		objects: #(3 4).
 	provider2 view currentVisibleView selectAll.
 	self forceGuiUpdate.

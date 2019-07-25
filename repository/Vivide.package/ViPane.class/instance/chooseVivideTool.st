@@ -13,4 +13,4 @@ chooseVivideTool
 	"Note: You can configure the result order of #formattedScripts script to determine the actual tool script to use. By default, that order is based on the script's #priority (script property)."
 	self objects first hasVivideTools ifTrue: [
 		self recentScripts removeAll. "Clean up UI. Remove trace #artifact script."
-		self script: (#formattedScripts asScript interpretScriptWith: self appropriateQueries) firstNode object].
+		self script: (#formattedScripts asScript interpretScriptWith: self appropriateScripts) firstNode object].

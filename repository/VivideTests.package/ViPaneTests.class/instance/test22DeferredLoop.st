@@ -2,9 +2,9 @@ tests
 test22DeferredLoop
 
 	| pa pb pc |
-	pa := sut currentQuery: [:a | a] asScript; yourself.
-	pb := ViPane new currentQuery: [:b | b] asScript; yourself.
-	pc := ViPane new currentQuery: [:a :b | a + b] asScript; yourself.
+	pa := sut script: [:a | a] asScript; yourself.
+	pb := ViPane new script: [:b | b] asScript; yourself.
+	pc := ViPane new script: [:a :b | a + b] asScript; yourself.
 	
 	pb objects: #(5).
 	

@@ -15,7 +15,7 @@ unwrapPaneFromMultiPaneWidget
 			c attachSilently].
 
 	"Delete meta script."
-	self pane currentQuery ifNotNil: [:script |
+	self pane script ifNotNil: [:script |
 		self assert: script isMeta.
 		script unregister].	
 	

@@ -5,4 +5,4 @@ test02OpenSpecificQuery
 	wnd := #senders openScriptWith: #(drawOn:).
 	pane := wnd editor pane.
 
-	self assert: pane currentQuery == #senders asScript.
+	self assert: pane script == #senders asScript.

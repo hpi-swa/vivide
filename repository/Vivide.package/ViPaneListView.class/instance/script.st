@@ -1,4 +1,4 @@
 as yet unclassified
-currentQuery
+script
 
 	^ self model "root" firstStep

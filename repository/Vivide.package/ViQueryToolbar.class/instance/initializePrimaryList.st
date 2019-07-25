@@ -9,7 +9,7 @@ initializePrimaryList
 		extent: 22@18;
 		color: Color transparent;
 		text: '+';
-		acceptedDropBlock: [:passenger :type | #(objects artifact queries) includes: type];
+		acceptedDropBlock: [:passenger :type | #(objects artifact "queries") includes: type];
 		convertPassengerBlock: [:objects | (objects collect: [:obj |
 			obj isScript ifTrue: [obj] ifFalse: []])
 				reject: [:obj | obj isNil]].

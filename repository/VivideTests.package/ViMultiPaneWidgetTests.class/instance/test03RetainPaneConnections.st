@@ -3,7 +3,7 @@ test03RetainPaneConnections
 
 	| target |
 	target := ViPane new
-		currentQuery: [:num | num + 5] asScript;
+		script: [:num | num + 5] asScript;
 		yourself.
 
 	(ViSelectionConnection from: pane to: target) attach.

@@ -6,7 +6,7 @@ addQuery
 
 	self flag: #metaScript.
 	self isTopLevel ifFalse: [
-		newQuery adoptOrganization: self currentQuery organization].
+		newQuery adoptOrganization: self script organization].
 	
 	ViLoggingService trigger: {
 		#message -> 'Script added.'.

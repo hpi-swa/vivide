@@ -3,7 +3,7 @@ assureAppropriateScript
 	"Changes the script if the current one cannot support the new (kind of) objects anymore."
 	
 	| appropriateScripts |
-	appropriateScripts := self appropriateQueries.
+	appropriateScripts := self appropriateScripts.
 	
 	"0) Create a new identity script if there is no alternative."
 	appropriateScripts

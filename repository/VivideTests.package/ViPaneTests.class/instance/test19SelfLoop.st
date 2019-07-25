@@ -1,7 +1,7 @@
 tests
 test19SelfLoop
 
-	sut currentQuery: [:a | a + 1] asScript.
+	sut script: [:a | a + 1] asScript.
 	sut objects: #(1).
 	(ViSelectionConnection from: sut to: sut) attach.
 

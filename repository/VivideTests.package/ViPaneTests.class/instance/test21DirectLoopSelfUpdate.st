@@ -3,10 +3,10 @@ test21DirectLoopSelfUpdate
 
 	| other |
 	other := ViPane new
-		currentQuery: [:b | b * 2] asScript;
+		script: [:b | b * 2] asScript;
 		yourself.
 
-	sut currentQuery: [:a | a + 1] asScript.
+	sut script: [:a | a + 1] asScript.
 
 	(ViResultsConnection from: sut to: other) attach.
 	(ViResultsConnection from: other to: sut) attach.

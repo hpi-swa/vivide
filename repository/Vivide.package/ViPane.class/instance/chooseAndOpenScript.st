@@ -4,7 +4,7 @@ chooseAndOpenScript
 	| pane scripts doOpen |
 	doOpen := Sensor shiftPressed not.
 	
-	scripts := self appropriateQueries.
+	scripts := self appropriateScripts.
 	
 	doOpen ifTrue: [
 		LastHelperPane := ViPane new.

@@ -19,7 +19,7 @@ drawOverlayInHaloOn: aCanvas
 			borderWidth: 2
 			borderColor: (Color gray: 0.3).
 			
-		s := (ViLabelService doObject: pane currentQuery) asString asMorph
+		s := (ViLabelService doObject: pane script) asString asMorph
 			topLeft: self topLeft
 				+ (offset asPoint * (1 @ self panes size))
 				+ (3 @ 1)

@@ -8,7 +8,7 @@ test25AppropriateQueries
 	sut queries: [{global. normal}].
 
 	sut objects: #(1).
-	self assert: sut appropriateQueries last == normal.
+	self assert: sut appropriateScripts last == normal.
 
 	sut objects: #().
-	self assert: sut appropriateQueries last == global.
+	self assert: sut appropriateScripts last == global.

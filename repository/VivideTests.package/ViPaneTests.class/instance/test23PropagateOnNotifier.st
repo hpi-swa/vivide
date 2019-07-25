@@ -4,7 +4,7 @@ test23PropagateOnNotifier
 	| listener last |
 	listener := ViPane new.
 	
-	sut currentQuery: {[Time now] -> {
+	sut script: {[Time now] -> {
 		#notifier -> [ViEventNotifier named: #test23PropagateOnNotifier]}} asScript.
 	
 	(ViResultsConnection from: sut to: listener) attach.

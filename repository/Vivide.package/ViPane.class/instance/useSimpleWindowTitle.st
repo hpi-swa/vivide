@@ -1,6 +1,6 @@
 testing - convenience
 useSimpleWindowTitle
 
-	^ self currentQuery
+	^ self script
 		ifNil: [true]
 		ifNotNil: [:q | (q valueOfProperty: #windowTitle ifAbsent: [#full]) = #simple]

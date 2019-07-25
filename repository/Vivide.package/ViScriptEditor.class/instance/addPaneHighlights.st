@@ -8,8 +8,8 @@ addPaneHighlights
 
 	self flag: #metaScript.
 	self setProperty: #paneHighlights toValue: (((VivideLight active panes
-		select: [:pane | (pane currentQuery ifNil: #() ifNotNil: #allSteps) includes: self object])
-		select: [:pane | pane currentQuery isMeta not or: [self object isMeta]])
+		select: [:pane | (pane script ifNil: #() ifNotNil: #allSteps) includes: self object])
+		select: [:pane | pane script isMeta not or: [self object isMeta]])
 		collect: [:pane | ViPaneHighlight on: pane]).
 	
 	"Fix GUI-related stuff."

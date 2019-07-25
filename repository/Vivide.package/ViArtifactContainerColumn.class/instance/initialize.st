@@ -14,5 +14,5 @@ initialize
 	self
 		layoutPolicy: ViArtifactContainerColumnLayout new;
 		acceptedDropAreas: #(between);
-		acceptedDropBlock: [:passenger :type | #(artifact objects queries operation operations) includes: type];
+		acceptedDropBlock: [:passenger :type | #(artifact objects operation operations) includes: type];
 		addMorphBack: dropShadow.

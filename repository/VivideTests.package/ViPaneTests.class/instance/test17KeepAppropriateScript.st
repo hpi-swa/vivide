@@ -3,19 +3,19 @@ test17KeepAppropriateScript
 
 	| script newScript |
 	sut objects: #(1 2 3).
-	script := sut currentQuery.
+	script := sut script.
 	
-	self assert: (sut currentQuery valueOfProperty: #isNew).
+	self assert: (sut script valueOfProperty: #isNew).
 
 	script setProperty: #inputKind toValue: Integer.
 	script setProperty: #isNew toValue: false.
 	sut objects: #(a b c).
 	
 	self deny: (script valueOfProperty: #isNew).
-	self assert: sut currentQuery ~~ script.
+	self assert: sut script ~~ script.
 
-	newScript := sut currentQuery.
+	newScript := sut script.
 
 	sut objects: #(1 2 3).
-	self assert: (sut appropriateQueries includes: newScript).
-	self assert: sut currentQuery == newScript. "No change.... *sigh*"
+	self assert: (sut appropriateScripts includes: newScript).
+	self assert: sut script == newScript. "No change.... *sigh*"

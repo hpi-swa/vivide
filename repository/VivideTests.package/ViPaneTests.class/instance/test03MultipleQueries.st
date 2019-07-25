@@ -11,8 +11,8 @@ test03MultipleQueries
 	
 	sut queries: {q1.q2}; objects: #(1 2 3).
 	self
-		assert: (sut appropriateQueries includes: q1);
-		assert: sut currentQuery == q1.
+		assert: (sut appropriateScripts includes: q1);
+		assert: sut script == q1.
 	
 	sut objects: {Morph new color: Color yellow; yourself}.
-	self assert: sut currentQuery == q2.
+	self assert: sut script == q2.

@@ -3,10 +3,10 @@ test18NoDoubleEmpty
 	"If the previous notification of a view did not contain any objects, skip an additional push of a empty collection."
 	
 	| listener |
-	sut currentQuery: [:a | a] asScript.
+	sut script: [:a | a] asScript.
 
 	listener := ViPane new.
-	listener currentQuery: sut currentQuery.
+	listener script: sut script.
 	
 	(ViSelectionConnection from: sut to: listener) attach.
 	

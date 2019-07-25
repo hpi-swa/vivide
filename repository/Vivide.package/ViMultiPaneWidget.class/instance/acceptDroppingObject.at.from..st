@@ -8,7 +8,7 @@ acceptDroppingObject: anObject at: aPoint from: source
 		objects: anObject asList;
 		yourself.
 
-	self assert: pane currentQuery notNil.
+	self assert: pane script notNil.
 	
 	[^ self
 		acceptDroppingPane: pane

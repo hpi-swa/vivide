@@ -5,7 +5,7 @@ test11ViewUpdate
 	script := {
 		[#(1 2 3)].
 		[:number | #text -> number asString]} asScript.
-	sut currentQuery: script.
+	sut script: script.
 
 	script setProperty: #view toValue: ViTextView.
 	self forceGuiUpdate.	

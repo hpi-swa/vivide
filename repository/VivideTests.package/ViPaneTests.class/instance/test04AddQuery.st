@@ -3,12 +3,12 @@ test04AddQuery
 
 	| prev |
 	sut
-		currentQuery: [:num | num * num] asScript;
+		script: [:num | num * num] asScript;
 		objects: #(1 2 3).
 	
-	prev := sut currentQuery.
+	prev := sut script.
 	sut addQuery.
 	
 	self
-		assert: sut currentQuery ~~ prev;
-		deny: (sut queries includes: sut currentQuery).
+		assert: sut script ~~ prev;
+		deny: (sut knownScripts includes: sut script).

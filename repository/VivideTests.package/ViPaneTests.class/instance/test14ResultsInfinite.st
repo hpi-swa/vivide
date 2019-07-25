@@ -13,6 +13,6 @@ test14ResultsInfinite
 	ui := Morph new addMorph: Morph new.
 	
 	sut
-		currentQuery: script;
+		script: script;
 		objects: {ui}.
 	self assert: 2 equals: sut results size.

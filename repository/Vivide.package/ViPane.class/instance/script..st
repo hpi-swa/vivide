@@ -8,8 +8,8 @@ script: step
 	self flag: #metaScript.
 	self layoutChanged.
 			
-	self model firstStep: step.
-	self updateView.
+	self model firstStep: step. "Silent reset."
+	self updateView. "View should fetch required data."
 
 	"Make all connected panes to fetch all results again, which does not happen through the view."
 	self notifyChangedResults.
@@ -18,5 +18,5 @@ script: step
 	self recentScriptsAdd: step.
 
 	"Tell everybody else."
-	self flag: #deprecated.
+	self flag: #deprecated. "Notify my decorations explicitely."
 	self scriptChanged: step.

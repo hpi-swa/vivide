@@ -9,7 +9,7 @@ addPaneHierarchy
 		[:pane | {
 			#text -> pane printString. 
 			#selectedLater -> [[pane addHalo]] }].
-		[:pane | {pane currentQuery. pane view}].
+		[:pane | {pane script. pane view}].
 		[:scriptOrView | {
 			#text -> scriptOrView printString.
 			#selectedLater -> [ [scriptOrView isMorph ifTrue: [scriptOrView addHalo]] ]

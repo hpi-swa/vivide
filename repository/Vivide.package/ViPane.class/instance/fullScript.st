@@ -4,4 +4,4 @@ fullScript
 
 	(self view respondsTo: #fullScript)
 		ifTrue: [self view fullScript].
-	^ self currentQuery
+	^ self script

@@ -6,16 +6,16 @@ updateFromChangedCode: evt
 		ifTrue: [^ self "Ignore system classes"].
 	
 	"Check needed for ViQueryNodeTests >> #test11Notifiactions."
-	self currentQuery ifNil: [^ self].
+	self script ifNil: [^ self].
 	
 	((self view class includesBehavior: evt itemClass)
-		or: [(self currentQuery valueOfProperty: #view ifAbsent: [ProtoObject]) value "supports blocks"
+		or: [(self script valueOfProperty: #view ifAbsent: [ProtoObject]) value "supports blocks"
 			includesBehavior: evt itemClass])
 				ifFalse: [^ self].
 	
 	[
 		evt itemSelector = #setUp:
-			ifTrue: [^ self view setUp: self currentQuery].
+			ifTrue: [^ self view setUp: self script].
 			
 		evt itemSelector = #process:
 			ifTrue: [^ self view process: self model].

@@ -3,10 +3,10 @@ updateColor
 	"Read script properties and update my color or the color of my enclosing system window."
 	
 	| newColor |
-	self currentQuery ifNil: [^ self].
+	self script ifNil: [^ self].
 	self owner ifNil: [^ self].
 	
-	newColor := self currentQuery valueOfProperty: #color ifAbsent: [
+	newColor := self script valueOfProperty: #color ifAbsent: [
 		(self owner == self world or: [self owner class == ViSinglePaneEditor])
 			ifTrue: [Color veryVeryLightGray]
 			ifFalse: [Color transparent]].

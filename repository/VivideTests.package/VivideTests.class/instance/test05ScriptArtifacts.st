@@ -16,7 +16,7 @@ test05ScriptArtifacts
 		scriptEditor := editorWnd editor pane view artifactContainers second.
 		scriptInput := editorWnd editor pane view artifactContainers first object.
 	
-		self assert: pane currentQuery == scriptEditor object.
+		self assert: pane script == scriptEditor object.
 		self assert: (scriptInput hasEqualElements: pane objects).
 		self assert: {SmallInteger} equals: scriptEditor inputKind.
 	].

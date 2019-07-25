@@ -1,4 +1,4 @@
-accessing
+script selection - scripts
 organization
 	"For script (id) lookup."
 

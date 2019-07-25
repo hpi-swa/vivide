@@ -2,7 +2,7 @@ tests
 test06AddListenerForSelections
 
 	| listener |
-	sut currentQuery: {[:obj | obj] -> {#view -> ViTreePlainView}} asScript.
+	sut script: {[:obj | obj] -> {#view -> ViTreePlainView}} asScript.
 	
 	listener := ViPane new.
 	(ViSelectionConnection from: sut to: listener) attach.

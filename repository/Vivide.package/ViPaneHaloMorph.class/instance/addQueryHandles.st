@@ -6,7 +6,7 @@ addQueryHandles
 		ViDraggableButton new
 			checkable: true;
 			color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);
-			checked: self target currentQuery == q;
+			checked: self target script == q;
 			icon: (q nextIcon ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
 				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]) scaledToDisplay;
 			balloonText: (q nextLabel
@@ -16,10 +16,10 @@ addQueryHandles
 				ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
 					ifTrue: ['*new*'] ifFalse: ['(unnamed)']]
 				ifNotNil: [:l | l withoutLineEndingsTruncatedTo: 25]);
-			buttonStyle: (self target currentQuery == q
+			buttonStyle: (self target script == q
 				ifTrue: [#textBesideIcon]
 				ifFalse: [#iconOnly]);
-			layoutInset: (self target currentQuery == q
+			layoutInset: (self target script == q
 				ifTrue: [0@ -1 corner: 1@ -2]
 				ifFalse: [0]);
 			setProperty: #query toValue: q;
