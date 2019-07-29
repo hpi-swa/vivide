@@ -15,7 +15,8 @@ setUp
 	organization := ViScriptOrganizer new.
 	organization notifier: ViScriptChangeNotifier new.
 	
-	{[:object | #text -> object printString] -> {#id -> #defaultProperties}} asScript
-		adoptOrganization: organization.
-	{[:object | object] -> {#id -> #artifacts}} asScript
-		adoptOrganization: organization.
+	self
+		addScript: {[:object | #text -> object printString]
+			-> {#id -> #defaultProperties} };
+		addScript: {[:object | object]
+			-> {#id -> #artifacts} }.
