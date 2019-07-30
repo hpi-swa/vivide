@@ -10,7 +10,7 @@ notifyChangedSelection: selectedNodes
 
 	self
 		setProperty: #lastSelection
-		toValue: (selectedNodes collect: [:node | node at: #object]).
+		toValue: (selectedNodes collect: [:node | node at: #object] as: Array).
 	
 	self connections
 		select: [:connection | (connection isValid
