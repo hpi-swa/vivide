@@ -9,6 +9,7 @@
 		"test02MatchGlobal" : "mt 7/29/2019 18:51",
 		"test02SimpleScenario" : "mt 7/26/2019 11:32",
 		"test03KnownScripts" : "mt 7/26/2019 14:07",
+		"test03MatchIdentityScript" : "mt 7/30/2019 10:27",
 		"test04AddQuery" : "mt 7/25/2019 16:11",
 		"test04ScriptOrganization" : "mt 7/26/2019 14:26",
 		"test05AddListenerForResults" : "mt 7/25/2019 16:06",

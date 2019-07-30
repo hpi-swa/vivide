@@ -1,5 +1,6 @@
 tests - organization
 test06AdoptOrganizationForDefaultScript
+	"Do not change the organization of default scripts."
 
 	| organization |
 	organization := ViScriptOrganizer new.
