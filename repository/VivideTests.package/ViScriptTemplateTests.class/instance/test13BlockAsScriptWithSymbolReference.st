@@ -1,8 +1,10 @@
 tests - list and script conversion
 test13BlockAsScriptWithSymbolReference
-	"Not supported anymore!"
+	"Not supported anymore! Use script property #after instead."
 	
 	| far script |
 	far := { [:num | num * num] -> { #id -> #far } } asScript.
-	
-	self deny: [#far] asScript hasAfterScripts. "See? Does not work."
+	script := [#far] asScript.
+	self
+		assert: script isGlobal;
+		deny: script hasAfterScripts. "See? Does not work."

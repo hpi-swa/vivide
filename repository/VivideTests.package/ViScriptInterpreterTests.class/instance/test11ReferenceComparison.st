@@ -8,16 +8,16 @@ test11ReferenceComparison
 	ViActiveScriptOrganizer value: far organization during: [
 		{
 			"1) Convert an object collection."
-			{ #far } asScript -> true.
+			{ #far } asScript -> false.
 			"2) Use the old-style #asReference interface."
-			#far asScript asReference -> true.
+			#far asScript asReference -> false.
 			"3) Explicitly use #after in any other script."
 			{ [:object | object] -> { #after -> #far } } asScript -> false.
 	
 		} do: [:scriptAndCheck |
 			self
 				"A) Same organization as #far?"
-				assert: (scriptAndCheck value not or: [scriptAndCheck key organization = far organization]);
+				assert: (scriptAndCheck value = (scriptAndCheck key organization = far organization));
 				"B) Same results?"
 				assert: #(1 4 9)
 				equals: ((ViScriptInterpreter on: scriptAndCheck key using: #(1 2 3))

@@ -5,6 +5,7 @@ test04RecursionWithReference
 	| step reference |
 	step := [:num | num * num] asScript.
 	reference := step asReference.
+	reference adoptOrganization: step organization.
 	self deny: step isRecursive.
 
 	step next: reference.

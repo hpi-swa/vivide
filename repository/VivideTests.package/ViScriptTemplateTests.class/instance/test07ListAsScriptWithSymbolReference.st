@@ -15,6 +15,7 @@ test07ListAsScriptWithSymbolReference
 	
 		self
 			assert: far organization equals: organization; "No Change"
+			deny: far organization equals: script organization;
 			deny: script hasAfterScripts;
 			assert: script next isScript;
 			assert: script next hasAfterScripts;

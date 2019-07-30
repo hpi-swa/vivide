@@ -8,7 +8,8 @@ test08ReferenceIdChange
 	farTwo adoptOrganization: farOne organization.
 
 	"Indirect #after configuration via #asReference."
-	script := farOne asReference.	
+	script := farOne asReference.
+	script adoptOrganization: farOne organization.
 	self
 		assert: #one equals: script after first;
 		assert: farOne equals: script afterScripts first.

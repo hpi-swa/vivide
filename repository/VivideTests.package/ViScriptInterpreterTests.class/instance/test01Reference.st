@@ -4,6 +4,7 @@ test01Reference
 	| near far interpreter |
 	far := [:num | num * num] asScript.
 	near := far asReference.
+	near adoptOrganization: far organization.
 	near next: [:number | #text -> ('test ', number asString)] asScript.
 	interpreter := ViScriptInterpreter on: near using: #(1 2 3).
 	

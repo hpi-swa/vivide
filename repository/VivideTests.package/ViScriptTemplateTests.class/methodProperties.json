@@ -37,7 +37,7 @@
 		"test06ListAsScript" : "mt 4/23/2019 11:48",
 		"test06TupleUnpackHint" : "mt 4/3/2019 15:12",
 		"test07Last" : "mt 4/3/2019 13:55",
-		"test07ListAsScriptWithSymbolReference" : "mt 5/2/2019 15:53",
+		"test07ListAsScriptWithSymbolReference" : "mt 7/30/2019 17:20",
 		"test07TupleFilter" : "mt 4/17/2019 08:52",
 		"test08AsTuples" : "mt 4/23/2019 12:12",
 		"test08Gather" : "mt 4/3/2019 13:58",
@@ -51,6 +51,7 @@
 		"test11ListAsScriptWithLocalReferenceAndProperties" : "mt 5/2/2019 10:52",
 		"test12SymbolAsScriptNotFound" : "mt 5/3/2019 07:45",
 		"test12TransformAllToSingle" : "mt 4/3/2019 14:56",
-		"test13BlockAsScriptWithSymbolReference" : "mt 5/2/2019 11:25",
+		"test13BlockAsScriptWithSymbolReference" : "mt 7/30/2019 17:15",
 		"test14ListAsScriptOrganization" : "mt 5/1/2019 16:25",
-		"test15ListAsScriptNotFoundError" : "mt 5/3/2019 08:39" } }
+		"test15ListAsScriptNotFoundError" : "mt 5/3/2019 08:39",
+		"test16ListAsScriptWithSymbolReferenceFirst" : "mt 7/30/2019 17:22" } }
