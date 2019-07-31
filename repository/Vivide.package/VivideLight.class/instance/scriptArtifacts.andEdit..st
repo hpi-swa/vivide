@@ -12,10 +12,8 @@ scriptArtifacts: someObjects andEdit: aBoolean
 	objects := (self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		ifTrue: [objects collect: [:o | o value]] ifFalse: [objects].
 	
-	script := ( '[:object | object]' -> { #isNew -> true } ) asScript.
-	
-	"Flatten nested collections if feasible."
-	objects := objects gather: [:o | o asList].
+	script := ViScriptTemplate createIdentityForObjects: objects.
+	script setProperty: #isNew toValue: true.
 	
 	toolWnd := self openScript: script withObjects: objects.
 	aBoolean ifTrue: [editorWnd := toolWnd editor pane debugQuery].
