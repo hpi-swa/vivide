@@ -9,4 +9,4 @@ objects: someObjects
 	self model inputForChildren: someObjects.
 	self objectsChanged: self objects.
 	
-	self assureAppropriateScript.
+	self assureAppropriateScript. "Update model and view."
