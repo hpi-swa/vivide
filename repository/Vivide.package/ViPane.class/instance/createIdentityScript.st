@@ -1,8 +1,9 @@
 script generation
 createIdentityScript
+	"Use #tupleSizeInput and #baseClass, which both use the current input objects, not the connection configuration."
 
 	| script tupleSize |
-	tupleSize := self tupleSizeDynamic.
+	tupleSize := self tupleSizeInput.
 	script := tupleSize = 0 "Global scripts only."
 		ifTrue: [ViScriptTemplate createIdentityForGlobal]
 		ifFalse: [ViScriptTemplate createIdentityForTuple: self baseClass asList].

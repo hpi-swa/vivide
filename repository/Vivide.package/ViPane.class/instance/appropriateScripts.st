@@ -6,7 +6,7 @@ appropriateScripts
 	self flag: #noStreamsSupport.
 	self flag: #noProxySupport.
 	
-	paneTupleSize := self tupleSizeDynamic.
+	paneTupleSize := self tupleSizeInput.
 	paneBaseClasses := self baseClass asList.	
 
 	"Tuple size must match and types as well. No support for tuples-in-tuples."
