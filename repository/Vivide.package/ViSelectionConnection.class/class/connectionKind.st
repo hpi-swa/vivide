@@ -1,4 +1,4 @@
 as yet unclassified
 connectionKind
 
-	^ #interactive
+	^ #(interactive selection manual view)

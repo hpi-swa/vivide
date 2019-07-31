@@ -1,3 +1,3 @@
 as yet unclassified
 connectionKind
-	^ #fixed
+	^ #(fixed object objects)

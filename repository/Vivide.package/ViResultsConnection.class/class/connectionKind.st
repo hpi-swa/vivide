@@ -1,4 +1,4 @@
 as yet unclassified
 connectionKind
 
-	^ #automatic
+	^ #(automatic auto results allResults)
