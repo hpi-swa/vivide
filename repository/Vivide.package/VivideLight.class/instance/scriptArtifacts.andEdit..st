@@ -16,6 +16,6 @@ scriptArtifacts: someObjects andEdit: aBoolean
 	script setProperty: #isNew toValue: true.
 	
 	toolWnd := self openScript: script withObjects: objects.
-	aBoolean ifTrue: [editorWnd := toolWnd editor pane debugQuery].
+	aBoolean ifTrue: [editorWnd := toolWnd editor pane editScript].
 
 	^ {toolWnd. editorWnd}

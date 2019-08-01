@@ -1,4 +1,4 @@
-tests - script selection
+tests - updates and script selection
 test02MatchGlobal
 	"Without input objects, there should be a global script selected."
 

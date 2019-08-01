@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test08DisconnectKeepObjects
 
 	| producer consumer c |

@@ -9,6 +9,6 @@ acceptDroppingMorph: aTransferMorph event: evt
 				
 				newPane
 					grabKeyboard;
-					debugQuery]].
+					editScript]].
 
 	self clearDrawFlag: #dropPane.

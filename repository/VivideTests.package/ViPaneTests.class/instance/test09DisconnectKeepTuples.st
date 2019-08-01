@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test09DisconnectKeepTuples
 	"We have to support gradual disconnect of multiple connections. So keep tuple input even if the intermediate connection setup would never produce tuples. -- Rely on auto updates and script selection."
 

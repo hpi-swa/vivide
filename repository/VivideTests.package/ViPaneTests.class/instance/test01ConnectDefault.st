@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test01ConnectDefault
 	"Test the default behavior of pane connections and minimal pane setup."
 	

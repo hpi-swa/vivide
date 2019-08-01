@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test05MultipleConsumers
 
 	| producer consumer1 consumer2 |

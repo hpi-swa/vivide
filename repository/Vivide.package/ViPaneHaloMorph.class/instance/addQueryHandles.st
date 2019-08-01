@@ -48,16 +48,16 @@ addQueryHandles
 	
 	{
 	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseAndOpenScript}.
-	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #debugQuery}.
+	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #editScript}.
 	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
-	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #addQuery}.
+	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #(addScript editScript)}.
 	} do: [:spec | | btn |
 		btn := UiToolButton new
 			buttonStyle: #iconOnly;
 			color: spec third;
 			icon: spec second;
 			balloonText: spec first.
-		self connect: btn signal: #clicked: to: self target selector: spec fourth.
+		spec fourth asList do: [:selector | self connect: btn signal: #clicked: to: self target selector: selector].
 		self connect: btn signal: #clicked: toSelector: #delete.
 		box addMorphBack: btn].
 

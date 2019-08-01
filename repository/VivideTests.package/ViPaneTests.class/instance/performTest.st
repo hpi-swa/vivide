@@ -1,4 +1,4 @@
-as yet unclassified
+running
 performTest
 	"Simulate an active event for pane-cycle updates."
 	

@@ -3,4 +3,4 @@ createIdentityForObjects: someObjects
 
 	^ someObjects
 		ifEmpty: [self createIdentityForGlobal]
-		ifNotEmpty: [self createIdentityForTuple: (self baseClassForObjects: someObjects)]
+		ifNotEmpty: [self createIdentityForTuple: (self baseClassForObjects: someObjects) asList]

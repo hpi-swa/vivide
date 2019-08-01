@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"acceptDroppingMorph:event:" : "mt 7/18/2015 11:22",
+		"acceptDroppingMorph:event:" : "mt 8/1/2019 15:40",
 		"acceptDroppingObject:at:from:" : "mt 7/25/2019 15:58",
 		"acceptDroppingPane:at:from:" : "mt 7/19/2019 15:40",
 		"acceptObjectService:" : "mt 6/1/2015 13:46",

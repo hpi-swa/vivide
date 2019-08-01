@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test04MultipleProducers
 	"Create tuples from multiple input connections."
 

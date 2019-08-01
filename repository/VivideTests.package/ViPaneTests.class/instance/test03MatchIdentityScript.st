@@ -1,4 +1,4 @@
-tests - script selection
+tests - updates and script selection
 test03MatchIdentityScript
 	"If nothing else matches, create a new identity script."
 

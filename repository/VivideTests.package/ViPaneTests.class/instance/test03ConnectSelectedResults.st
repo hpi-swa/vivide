@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test03ConnectSelectedResults
 
 	| producer consumer view |

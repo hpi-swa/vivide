@@ -1,4 +1,4 @@
-tests - connections and tuples
+tests - connections, tuples, cycles
 test06ConnectPushObjects
 
 	| producer consumer |

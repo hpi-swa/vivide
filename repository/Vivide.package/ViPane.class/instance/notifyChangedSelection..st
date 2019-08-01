@@ -10,7 +10,10 @@ notifyChangedSelection: selectedNodes
 
 	self
 		setProperty: #lastSelection
-		toValue: (selectedNodes collect: [:node | node at: #object] as: Array).
+		toValue: (selectedNodes collect: [:node |
+			node isDictionary
+				ifTrue: [node at: #object]
+				ifFalse: [node value]] as: Array).
 	
 	self connections
 		select: [:connection | (connection isValid

@@ -1,6 +1,7 @@
 updating - kernel
 beginUpdateChain
-
+	"By using ActiveEvent, we can support cycle detection triggered from clicks in views or just do-its on panes, e.g. 'pane objects: #(1 2 3)'."
+	
 	ActiveEvent ifNotNil: [:evt |
 		"Mouse-over events spoil things. Ignore them."
 		"self flag: #remove."

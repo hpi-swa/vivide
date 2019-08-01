@@ -1,4 +1,4 @@
-tests - script selection
+tests - updates and script selection
 test01MatchInputKind
 	"On new objects, switch to a script with a fitting input kind."
 	
