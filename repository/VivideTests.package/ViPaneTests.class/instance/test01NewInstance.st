@@ -15,5 +15,8 @@ test01NewInstance
 		assert: 0 equals: pane tupleSizeDynamic;
 		assert: 0 equals: pane tupleSizeInput;
 		
+		assert: 0 equals: pane validOutputConnections size;
+		assert: 0 equals: pane validInputConnections size;
+		
 		assert: pane selectedResults isEmpty;
 		assert: pane allResults isEmpty.

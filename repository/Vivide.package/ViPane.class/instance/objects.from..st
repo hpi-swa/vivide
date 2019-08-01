@@ -1,4 +1,4 @@
-accessing - convenience
+updating - kernel
 objects: someObjects from: aPane
 
 	self assert: self tupleSize > 0. "Must not be called otherwise."
