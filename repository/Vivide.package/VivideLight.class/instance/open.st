@@ -16,7 +16,5 @@ open
 			self setProperty: #previousToolSet toValue: ToolSet default. 
 			ToolSet default: ts].
 	
-	self initializeSystemChangeNotifications.
-
 	"Allow dropping things in the world."
 	self world transferMorphConverter: #openArtifactsForTransferMorph:.

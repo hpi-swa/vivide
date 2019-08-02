@@ -8,8 +8,8 @@ view: newView
 
 	self connectModelAndView.
 
-	newView
-		hResizing: #spaceFill;
-		vResizing: #spaceFill.
-
-	self addMorphBack: newView.
+	newView ifNotNil: [:v |
+		v
+			hResizing: #spaceFill;
+			vResizing: #spaceFill.
+		self addMorphBack: v]

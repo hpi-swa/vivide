@@ -5,8 +5,6 @@ close
 	"No more dropping in the world."
 	self flag: #cleanUp. "mt: What about restoring the old state instead of reset?"
 	self world resetTransferMorphConverter.
-
-	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
 	(self valueOfProperty: #previousToolSet) ifNotNil: [:ts |
 		ToolSet default: ts].
