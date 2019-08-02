@@ -3,8 +3,8 @@ objects: someObjects from: aPane
 
 	self assert: self tupleSize > 0. "Must not be called otherwise."
 	
-	aPane forceUpdate == #always
-		ifTrue: [forceUpdate := #always].
+	forceUpdate ~= #once "Do not propagate or overwrite #once but everything else."
+		ifTrue: [forceUpdate := aPane forceUpdate = #once ifTrue: [#never] ifFalse: [aPane forceUpdate ]].
 	(self canUpdate: aPane lastUpdateId)
 		ifFalse: [^ self "abort the cycle"].
 

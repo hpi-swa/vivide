@@ -5,4 +5,4 @@ attach: connection
 	self layoutChanged.
 
 	self connections add: connection.
-	forceUpdate := #never.
+	forceUpdate := self hasLocalCycle ifTrue: [#never] ifFalse: [#always].
