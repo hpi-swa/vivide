@@ -10,5 +10,5 @@
 	"name" : "ViArtifactListViewTests",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "ViMorphicTestCase",
 	"type" : "normal" }

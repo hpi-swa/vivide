@@ -18,4 +18,3 @@ setUp
 		initialize;
 		yourself.
 	vivide openInWorld: world.
-	vivide initializeSystemChangeNotifications.

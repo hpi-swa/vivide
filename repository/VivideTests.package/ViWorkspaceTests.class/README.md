@@ -1,0 +1,1 @@
+Tests the snippets one can evaluate in a workspace with Vivide running.

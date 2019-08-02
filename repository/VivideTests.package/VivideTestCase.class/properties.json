@@ -4,13 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "mt 8/2/2019 11:44",
 	"instvars" : [
 		"profile",
 		"vivide",
 		"world" ],
-	"name" : "ViIntegrationTestCase",
+	"name" : "VivideTestCase",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "ViMorphicTestCase",
 	"type" : "normal" }

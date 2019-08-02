@@ -4,6 +4,6 @@ openScriptWith: someObjects
 
 	self flag: #noStreamsSupport. "mt: #asList ..."
 	^ VivideLight active ifNotNil: [:vivide |
-		vivide
-			openScript: self
-			withObjects: someObjects asList "for robustness..."]
+		self id = #artifacts
+			ifTrue: [vivide openArtifacts: someObjects asList "for robustness"]
+			ifFalse: [vivide openScript: self withObjects: someObjects asList "for robustness..."]]

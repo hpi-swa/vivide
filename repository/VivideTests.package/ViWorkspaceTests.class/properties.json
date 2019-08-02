@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "<historical>",
+	"commentStamp" : "mt 8/2/2019 11:50",
 	"instvars" : [
 		 ],
-	"name" : "VivideTests",
+	"name" : "ViWorkspaceTests",
 	"pools" : [
 		 ],
-	"super" : "ViIntegrationTestCase",
+	"super" : "VivideTestCase",
 	"type" : "normal" }

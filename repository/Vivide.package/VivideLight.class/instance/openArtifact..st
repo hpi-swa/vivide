@@ -19,11 +19,8 @@ openArtifact: anObject
 	(object isKindOf: ViEditorState) ifTrue: [
 		^ self openEditor: object].
 	
-	(object isScript) ifTrue: [
-		object steps in: [:steps |
-		"See behavior of ViScriptEditor >> #onContextChanged."
-			steps size > 1 ifTrue: [^ self openArtifacts: steps].
-			object retain]].
+	"Open a script editor?"
+	object isScript ifTrue: [object retain. ^ object editScript].
 
 	^ VivideLight useClassicMode
 		ifTrue: [ViPane chooseAndOpenScriptWith: {object}]

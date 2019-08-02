@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"test01OpenScript" : "mt 8/2/2019 11:56",
+		"test02OpenScriptWith" : "mt 8/2/2019 12:00",
+		"test03OpenScriptEditor" : "mt 8/2/2019 14:00",
+		"test04OpenToolAndScriptEditor" : "mt 8/2/2019 14:10" } }

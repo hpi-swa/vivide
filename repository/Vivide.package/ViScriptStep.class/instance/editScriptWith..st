@@ -1,7 +1,9 @@
 interactive tools
 editScriptWith: someObjects
 
-	^ #artifacts openScriptWith: 
-		(someObjects
-			ifEmpty: [{}]
-			ifNotEmpty: [{someObjects}]), self steps
+	^ VivideLight active ifNotNil: [:vivide |
+		vivide
+			openScript: #artifacts
+			withObjects: (someObjects
+				ifEmpty: [{}]
+				ifNotEmpty: [{someObjects}]), self steps]

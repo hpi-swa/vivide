@@ -10,5 +10,5 @@
 	"name" : "ViPaneTests",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "ViMorphicTestCase",
 	"type" : "normal" }
