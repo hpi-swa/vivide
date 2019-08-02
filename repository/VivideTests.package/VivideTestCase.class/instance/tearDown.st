@@ -7,6 +7,8 @@ tearDown
 			self forceGuiUpdate.
 			
 			"Customized closing..."
-			vivide delete]. 
+			vivide
+				clearToolSet;
+				delete]. 
 
 	super tearDown.

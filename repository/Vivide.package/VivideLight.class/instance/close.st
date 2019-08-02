@@ -6,8 +6,7 @@ close
 	self flag: #cleanUp. "mt: What about restoring the old state instead of reset?"
 	self world resetTransferMorphConverter.
 	
-	(self valueOfProperty: #previousToolSet) ifNotNil: [:ts |
-		ToolSet default: ts].
+	self clearToolSet.
 	
 	self world == ActiveWorld
 		ifTrue: [ActiveHand removeKeyboardListener: self].

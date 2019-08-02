@@ -16,5 +16,6 @@ setUp
 	vivide := VivideLight basicNew
 		profile: profile;
 		initialize;
+		initializeToolSet;
 		yourself.
 	vivide openInWorld: world.
