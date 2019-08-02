@@ -35,6 +35,7 @@ step05197a071395e04d90c79ba0a635f185
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 2:43:15 pm').
+(#expandAll -> true).
 (#inputKind -> PackageInfo).
 (#out -> Set).
 (#priority -> 20).
