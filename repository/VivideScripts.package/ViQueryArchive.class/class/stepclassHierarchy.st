@@ -42,6 +42,7 @@ stepclassHierarchy
 (#expandAll -> true).
 (#inputKind -> ClassDescription).
 (#priority -> 300).
+(#selectSame -> true).
 (#view -> ViTreeViewExtended)
 }))
 })

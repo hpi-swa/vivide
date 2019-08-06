@@ -12,4 +12,5 @@ reset
 	
 	(self valueOfProperty: #selectNone ifAbsent: [false])
 		ifTrue: [self currentViews do: [:view | view selectNone]]
-		ifFalse: [self ensureSelection].
+		ifFalse: [(self valueOfProperty: #selectSame ifAbsent: [false])
+			ifFalse: [self ensureSelection]].
