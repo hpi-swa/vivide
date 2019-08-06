@@ -2,5 +2,5 @@ printing
 printOn: stream
 
 	stream
-		nextPutAll: 'Vivide <-obj--dict-> ';
-		nextPutAll: self theClass name.
+		nextPutAll: self theClass name;
+		nextPutAll: ' <-dict--obj-> Vivide '.

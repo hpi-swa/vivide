@@ -6,4 +6,4 @@ converter
 		converter := ViConverterForClassArchive
 			fromProfile: self
 			intoClass: (ViConverterForClassArchive
-				createArchiveNamed: ((label isNil or: [self label isEmpty]) ifTrue: [self id asString]))]
+				createArchiveNamed: ((label isNil or: [self label isEmpty]) ifTrue: [self id asString] ifFalse: [label]))]
