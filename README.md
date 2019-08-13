@@ -11,7 +11,7 @@ A programming environment and framework that supports *interactive*, *data-drive
 ```Smalltalk
 Metacello new
   baseline: 'Vivide';
-  repository: 'github://hpi-swa/vivide/repository:master-squot';
+  repository: 'github://hpi-swa/vivide:master-squot/repository';
   load.
 ```
 
