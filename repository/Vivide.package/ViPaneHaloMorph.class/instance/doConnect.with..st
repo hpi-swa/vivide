@@ -6,12 +6,7 @@ doConnect: event with: connectHandle
 
 	self redrawLater.
 	newOutputPane := (self target world morphsAt: event cursorPoint)
-		detect: [:morph | ((morph isKindOf: ViPane) and: [(self target allOwners identityIncludes: morph) not]) and: [
-			"Top-level pane in some other container."
-			morph ownerChainPanes size = 1
-				"Sibling pane in same container"
-				or: [morph owner == self target owner]]
-		] ifNone: [].
+		detect: [:morph | (morph isKindOf: ViPane) and: [morph wantsToBeAttachedTo: self target]] ifNone: [].
 	self redrawLater.
 	
 	newOutputConnection ifNotNil: [:connectionMorph |

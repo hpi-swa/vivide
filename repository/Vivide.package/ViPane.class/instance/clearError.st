@@ -1,11 +1,13 @@
 errors
 clearError
 
-	errorBtn ifNil: [^ self].
+	| d |
+	d := self decorationNamed: #error.
+	d ifNil: [^ self].
 	
-	(self errorBtn valueOfProperty: #suspendedProcess ifAbsent: []) ifNotNil: #terminate. 
+	(d valueOfProperty: #suspendedProcess ifAbsent: []) ifNotNil: #terminate. 
 	
-	self errorBtn
+	d
 		removeProperty: #suspendedProcess;
 		removeProperty: #errorWasInUIProcess;
 		removeProperty: #description;

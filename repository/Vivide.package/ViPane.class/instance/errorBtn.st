@@ -1,15 +1,13 @@
 errors
 errorBtn
 
-	^ errorBtn ifNil: [errorBtn :=
+	^ self decorationNamed: #error ifAbsentPut: [
 		UiToolButton new
 			color: Color white;
 			autoRaise: true;
 			buttonStyle: #iconOnly;
 			icon: UiFugueIcons balloonSmileyIcon;
-			disableTableLayout: true;
-			topRight: self topRight;
-			setToAdhereToEdge: #topRight.
-		self connect: errorBtn signal: #clicked: toSelector: #showLastException.
-		self addMorphFront: errorBtn.
-		errorBtn]
+			cellPositioning: #topRight;
+			visible: false;
+			in: [:btn | self connect: btn signal: #clicked: toSelector: #showLastException];
+			yourself]

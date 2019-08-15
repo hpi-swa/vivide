@@ -12,7 +12,6 @@
 		"queries",
 		"connections",
 		"recentQueries",
-		"errorBtn",
 		"id",
 		"lastUpdateId",
 		"lastUpdateWasEmpty",

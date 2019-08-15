@@ -1,8 +1,9 @@
 errors
 openScriptForLastException
 
-	| script anchor |
-	script := self errorBtn valueOfProperty: #maliciousScript.
+	| d script anchor |
+	d := self errorBtn.
+	script := d valueOfProperty: #maliciousScript.
 	
 	anchor := self script.
 	

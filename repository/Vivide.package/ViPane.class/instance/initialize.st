@@ -6,7 +6,9 @@ initialize
 	self
 		layoutPolicy: ViOverlappingLayout new;
 		color: Color transparent;
-		extent: 150@150.
+		extent: 150@150;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill.
 	
 	self model: (ViModelNode new
 		pane: self;
