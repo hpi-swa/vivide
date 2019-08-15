@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 attach
 
 	self attachSilently ifTrue: [self notify].

@@ -1,4 +1,4 @@
-as yet unclassified
+notification
 objects
 
 	^ self source selectedResults

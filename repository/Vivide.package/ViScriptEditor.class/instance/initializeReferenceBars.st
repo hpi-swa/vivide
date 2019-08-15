@@ -13,7 +13,7 @@ initializeReferenceBars
 		vResizing: #shrinkWrap;
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
-		balloonText: 'Referenced scripts <b>before</b> this step' translated asHtmlText
+		balloonText: 'Referenced scripts <b>before</b> this step' translated asTextFromHtml
 		yourself).
 
 	self referenceAfterBar: (Morph new
@@ -28,5 +28,5 @@ initializeReferenceBars
 		vResizing: #shrinkWrap;
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
-		balloonText: 'Referenced scripts <b>after</b> this step' translated asHtmlText
+		balloonText: 'Referenced scripts <b>after</b> this step' translated asTextFromHtml
 		yourself).

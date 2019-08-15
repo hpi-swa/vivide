@@ -9,4 +9,4 @@ errorMessage: aMessage
 		ifNil: ['']
 		ifNotNil: [:m | heading ifEmpty: [m] ifNotEmpty: [m allButFirst: heading size + 1]].
 	
-	self ui infoLbl text: ('<b>', heading, '</b>', msg escapeHtmlText) asHtmlText
+	self ui infoLbl text: ('<b>', heading, '</b>', msg escapeHtmlText) asTextFromHtml

@@ -1,4 +1,4 @@
-as yet unclassified
+connections and tuples
 ~~> aPane
 	"Return fully initialized and attached connection."
 

@@ -1,4 +1,4 @@
 squeak - kernel
 doContext: aContext
 
-	^ (super doContext: aContext) asHtmlText    
+	^ (super doContext: aContext) asTextFromHtml    

@@ -1,4 +1,4 @@
-as yet unclassified
+ui
 icon
 
 	^ ViIcons icons8DoubleRight32pxIcon

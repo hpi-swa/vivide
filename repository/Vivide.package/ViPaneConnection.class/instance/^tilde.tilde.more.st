@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 ~~> pane
 	"Complete initialization shortcut. See ViPane >> #~~~.
 	

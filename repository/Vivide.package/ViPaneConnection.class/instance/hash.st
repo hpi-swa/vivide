@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 hash
 
 	^ (self species hash bitXor: self source hash) bitXor: self target hash

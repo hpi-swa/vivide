@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 detach
 
 	self source ifNotNil: [:pane |

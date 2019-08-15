@@ -17,4 +17,4 @@ initializeCallStacks
 	
 	self connect: self ui stackCombo signal: #currentIndexChanged:text: toSelector: #stackIndex:.
 	self ui stackCombo addItemListFrom: self debuggers using: [:dict :item |
-		item text: ('{1} <font color="#0B61A4">pid {2}</font>' format: {(dict at: #label) escapeHtmlText. dict at: #id}) asHtmlText].
+		item text: ('{1} <font color="#0B61A4">pid {2}</font>' format: {(dict at: #label) escapeHtmlText. dict at: #id}) asTextFromHtml].

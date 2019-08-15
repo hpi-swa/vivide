@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 connectionKind
 
 	^ #(interactive selection manual view)

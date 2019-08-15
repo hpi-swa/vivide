@@ -67,7 +67,7 @@ showLastException
 		ifNil: [''].
 	scriptText := ViTextStyler new styledTextFor: scriptText asText.
 	
-	label := (errorText asHtmlText, scriptText asText) asMorph.
+	label := (errorText asTextFromHtml, scriptText asText) asMorph.
 		
 	box addAllMorphs: {label. buttons}.
 				
