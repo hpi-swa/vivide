@@ -1,6 +1,6 @@
 support
 methodReferenceForStep: step
 
-	^ MethodReference
+	^ ViScriptReference
 		class: self theClass theMetaClass
 		selector: (self selectorForStep: step asDictionary)

@@ -10,7 +10,7 @@ test02AddScriptStep
 		
 	"1) Append new step."
 	self assert: script next isNil.
-	editor addStep.
+	newEditor := editor addStep.
 	self assert: script next notNil.
 	self assert: script organization == script next organization.
 	self
@@ -18,7 +18,7 @@ test02AddScriptStep
 		equals: window artifactContainers size.
 	
 	"Check new editor."
-	newEditor := window artifactContainers last.
+	self assert: newEditor equals: window artifactContainers last.
 	self deny: editor isWizardActive.
 	self assert: newEditor isWizardActive.
 

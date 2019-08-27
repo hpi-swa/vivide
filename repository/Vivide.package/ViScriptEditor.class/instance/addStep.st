@@ -10,10 +10,15 @@ addStep
 	newStep next: self thisStep next.
 	self thisStep next: newStep.
 
+	self thisStep export.
+	newStep export.
+
 	ViLoggingService trigger: {#message -> 'Script part created.'}.
 
 	editor := self class new.
 	editor object: newStep.
 	
 	"Tell my environment about this new editor so that users can actually see it."
-	self artifactCreated: editor. 
+	self artifactCreated: editor.
+	
+	^ editor

@@ -7,8 +7,9 @@ clear
 	self removePaneHighlights.
 
 	self object ifNotNil: [:step |
-		step referenceInArchive isValid
-			ifFalse: [step export].
+		
+		"Do the initial export for this script step if necessary."
+		step referenceInArchive isValid ifFalse: [step export].
 
 		(step valueOfProperty: #isNew) == true
 			ifTrue: [self activateWizard]
