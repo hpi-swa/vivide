@@ -4,8 +4,8 @@
 	"instance" : {
 		"addConnection:with:" : "mt 7/25/2019 15:54",
 		"addControlHandles" : "mt 6/27/2019 11:08",
-		"addFanInHandles" : "mt 7/1/2019 10:53",
-		"addFanOutHandles" : "mt 7/1/2019 10:18",
+		"addFanInHandles" : "mt 8/21/2019 17:26",
+		"addFanOutHandles" : "mt 8/21/2019 17:26",
 		"addHandleButton:" : "mt 5/2/2014 14:42:42.326",
 		"addHandles" : "mt 12/30/2014 17:32:56.587",
 		"addQueryHandles" : "mt 8/1/2019 15:47",

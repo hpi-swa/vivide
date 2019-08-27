@@ -6,7 +6,7 @@ initializeTitleBar
 		color: Color veryVeryLightGray;
 		changeTableLayout;
 		listDirection: #leftToRight;
-		cellInset: 5;
+		cellGap: 5;
 		layoutInset: (5@5 corner: 5@2); 
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap.

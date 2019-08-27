@@ -39,7 +39,7 @@ addFanOutHandles
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		layoutInset: 3;
-		cellInset: (outBtn height // 2).
+		cellGap: (outBtn height // 2).
 	box addAllMorphs: {outBtn}, buttons, {addBtn}.
 
 	box fullBounds.

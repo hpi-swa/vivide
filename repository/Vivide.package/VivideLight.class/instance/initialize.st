@@ -8,9 +8,10 @@ initialize
 		changeTableLayout;
 		listDirection: #topToBottom;  
 		cellPositioning: #topLeft;  
-		cellInset: 5;
+		cellGap: 5;
 		vResizing: #spaceFill;
-		hResizing: #rigid; width: 150;
+		hResizing: #shrinkWrap;
+		rubberBandCells: true;
 		setToAdhereToEdge: #left;
 		beSticky.
 	

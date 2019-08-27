@@ -5,7 +5,7 @@ initialize
 	self
 		color: Color white;
 		changeTableLayout;
-		cellInset: 2;
+		cellGap: 2;
 		listDirection: #topToBottom.
 	
 	self initializeFinder.

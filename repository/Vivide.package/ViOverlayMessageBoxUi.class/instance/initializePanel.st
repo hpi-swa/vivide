@@ -8,7 +8,7 @@ initializePanel
 	panel position: (0@0).
 	panel hResizing: (#rigid).
 	panel vResizing: (#rigid).
-	panel cellInset: (4).
+	panel cellGap: (4).
 	panel cellPositioning: (#center).
 	panel cellSpacing: (#none).
 	panel layoutInset: (4).
@@ -34,7 +34,7 @@ initializePanel
 	messageContainer position: (53@58).
 	messageContainer hResizing: (#shrinkWrap).
 	messageContainer vResizing: (#spaceFill).
-	messageContainer cellInset: (4).
+	messageContainer cellGap: (4).
 	messageContainer cellPositioning: (#center).
 	messageContainer cellSpacing: (#none).
 	messageContainer layoutInset: (4).
@@ -60,7 +60,7 @@ initializePanel
 	iconLbl position: (57@62).
 	iconLbl hResizing: (#shrinkWrap).
 	iconLbl vResizing: (#spaceFill).
-	iconLbl cellInset: (0).
+	iconLbl cellGap: (0).
 	iconLbl cellPositioning: (#center).
 	iconLbl cellSpacing: (#none).
 	iconLbl layoutInset: (0).
@@ -86,7 +86,7 @@ initializePanel
 	messageLbl position: (77@62).
 	messageLbl hResizing: (#shrinkWrap).
 	messageLbl vResizing: (#spaceFill).
-	messageLbl cellInset: (0).
+	messageLbl cellGap: (0).
 	messageLbl cellPositioning: (#center).
 	messageLbl cellSpacing: (#none).
 	messageLbl layoutInset: (0).
@@ -113,7 +113,7 @@ initializePanel
 	titleLbl position: (79@22).
 	titleLbl hResizing: (#shrinkWrap).
 	titleLbl vResizing: (#shrinkWrap).
-	titleLbl cellInset: (0).
+	titleLbl cellGap: (0).
 	titleLbl cellPositioning: (#center).
 	titleLbl cellSpacing: (#none).
 	titleLbl layoutInset: (0).
@@ -139,7 +139,7 @@ initializePanel
 	buttonContainer position: (4@138).
 	buttonContainer hResizing: (#spaceFill).
 	buttonContainer vResizing: (#spaceFill).
-	buttonContainer cellInset: (4).
+	buttonContainer cellGap: (4).
 	buttonContainer cellPositioning: (#center).
 	buttonContainer cellSpacing: (#none).
 	buttonContainer layoutInset: (16).

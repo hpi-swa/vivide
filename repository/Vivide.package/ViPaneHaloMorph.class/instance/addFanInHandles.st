@@ -25,7 +25,7 @@ addFanInHandles
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		layoutInset: 3;
-		cellInset: (inBtn height // 2).
+		cellGap: (inBtn height // 2).
 	box addAllMorphs: {inBtn}, buttons.
 
 	box fullBounds.
