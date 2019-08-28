@@ -5,7 +5,7 @@ step3723f748fad3d4468f95d2d495e9a9cc
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:ref | {#text -> (ref actualClass organization categoryOfElement: ref selector)}] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> nil } ] ifFalse: [ [:ref | {#text -> (ref actualClass organization categoryOfElement: ref selector)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ step3723f748fad3d4468f95d2d495e9a9cc
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:ref | {#text -> (ref actualClass organization categoryOfElement: ref selector)}] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> nil } ] ifFalse: [ [:ref | {#text -> (ref actualClass organization categoryOfElement: ref selector)}] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).
