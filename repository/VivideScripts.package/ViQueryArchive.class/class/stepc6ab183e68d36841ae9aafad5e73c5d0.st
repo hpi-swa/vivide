@@ -29,8 +29,10 @@ stepc6ab183e68d36841ae9aafad5e73c5d0
 (#id -> #'c6ab183e-68d3-6841-ae9a-afad5e73c5d0').
 (#isProperty -> true).
 (#label -> nil).
-(#next -> #'45f3504e-509f-df49-b528-bc0333f9b718').
+(#next -> #'83e798e6-8b86-d340-90fc-4a5ddf0d7351').
 (#properties -> (Dictionary newFrom: {
+(#after -> #()).
+(#before -> #()).
 (#color -> (Color r: 0.553 g: 0.796 b: 0.553)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '27 August 2019 6:30:11.534572 pm').

@@ -19,6 +19,7 @@ initializeArtifact
 		removeHorizontalHeader;
 		model: ViObjectEditorModel new;
 		setResizeModeForColumn: 2 to: #spaceFill;
+		setTextLineWrapForColumn: 2 to: true; 
 "		rootIsDecorated: false;"
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;

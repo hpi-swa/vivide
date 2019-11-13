@@ -1,28 +1,27 @@
 steps
-step8fe6639eeac54041bebf7f8ad4f3f3b6
+step522c315128b49e49ab9b469da3243562
 	<step>
 
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | out addAll: ([:tuples | tuples asGroups] value: in) asList]).
 (#className -> #ViScriptDefinition).
-(#id -> #'f06a0fe5-9cde-8b4a-9944-fa0542da96f7').
+(#id -> #'4155320e-9514-8042-a222-ad8ecbe43679').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2019 9:38:28.534728 am')
+(#creationTimeStamp -> '23 September 2019 10:15:11.317086 am')
 })).
 (#sourceCode -> '[:in :out | out addAll: ([:tuples | tuples asGroups] value: in) asList]')
 })).
 (#className -> #ViScriptStep).
-(#definition -> #'f06a0fe5-9cde-8b4a-9944-fa0542da96f7').
+(#definition -> #'4155320e-9514-8042-a222-ad8ecbe43679').
 (#iconCode -> 'nil').
-(#id -> #'8fe6639e-eac5-4041-bebf-7f8ad4f3f3b6').
+(#id -> #'522c3151-28b4-9e49-ab9b-469da3243562').
 (#isProperty -> false).
 (#label -> nil).
-(#next -> #'66f64b27-8ccb-0549-a387-9ab332d35ab1').
+(#next -> #'d9549549-4466-474a-910f-42c951f8e7bb').
 (#properties -> (Dictionary newFrom: {
-(#color -> (Color r: 0.553 g: 0.796 b: 0.553)).
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '28 August 2019 9:38:28.534728 am')
+(#creationTimeStamp -> '23 September 2019 10:15:11.316086 am')
 }))
 })
