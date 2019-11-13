@@ -1,7 +1,7 @@
 updating
 updateForQuery: query
 
-	| newCols newResizeModes newHorizontalHeaderVisible commandsVisible |
+	| newCols newResizeModes newLineWraps newHorizontalHeaderVisible commandsVisible |
 	self
 		setProperty: #expandAll
 		toValue: (query valueOfProperty: #expandAll ifAbsent: [false]).
@@ -17,6 +17,7 @@ updateForQuery: query
 				labelColor: (idx > 1 ifTrue: [Color fromString: #AAAAAA] ifFalse: []);
 				yourself].
 	newResizeModes := OrderedCollection new.
+	newLineWraps := OrderedCollection new.
 	commandsVisible := true.
 	
 	query isHomogeneousRelaxed
@@ -27,11 +28,12 @@ updateForQuery: query
 			do: [:col :prop |
 				commandsVisible := commandsVisible and: [prop valueOfProperty: #showCommands ifAbsent: [true]].
 				newResizeModes add: (prop valueOfProperty: #resizeMode ifAbsent: [#shrinkWrap]).
+				newLineWraps add: (prop valueOfProperty: #lineWrap ifAbsent: [false]).
 				#(headerText headerIcon headerBalloonText) do: [:colProp | col
-					perform: colProp asSymbol asMutator
+					perform: colProp asSymbol asSimpleSetter
 					with: ((prop valueOfProperty: colProp) ifNotNil: [:val | wantsHeader := true. val])].
 				#(hAlignment vAlignment itemOrientation labelColor) do: [:colProp | col
-					perform: colProp asSymbol asMutator
+					perform: colProp asSymbol asSimpleSetter
 					with: (prop valueOfProperty: colProp)].
 				
 				(prop valueOfProperty: #selectionMode) ifNotNil: [:sm |
@@ -51,4 +53,8 @@ updateForQuery: query
 			addColumns: newCols.
 	
 		newResizeModes withIndexDo: [:resizeMode :idx |
-			view setResizeModeForColumn: idx to: resizeMode]].
+			view setResizeModeForColumn: idx to: resizeMode].
+		newLineWraps withIndexDo: [:lineWrap :idx |
+			view setTextLineWrapForColumn: idx to: lineWrap].
+	
+	]. 

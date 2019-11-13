@@ -11,7 +11,7 @@ setUp: query
 	query isHomogeneousRelaxed ifTrue: [ 
 		newSpecs with: (query nextExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) do: [:col :prop |
 			#(hAlignment vAlignment itemOrientation labelColor) do: [:colProp | col
-				perform: colProp asSymbol asMutator
+				perform: colProp asSymbol asSimpleSetter
 				with: (prop valueOfProperty: colProp)]]].
 	
 	self specs: newSpecs.
