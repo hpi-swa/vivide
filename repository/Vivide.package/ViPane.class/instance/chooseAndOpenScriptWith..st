@@ -4,6 +4,10 @@ chooseAndOpenScriptWith: someObjects
 
 	| objects scripts |
 	objects := someObjects asList.
+	
+	self flag: #noTupleSupport. "mt: For context menus in standard views."
+	objects := objects flatten.
+
 	objects ifEmpty: [^ self].
 	
 	LastHelperPane := ViPane new.
