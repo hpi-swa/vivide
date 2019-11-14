@@ -23,8 +23,10 @@ stepimplementors
 (#id -> #implementors).
 (#isProperty -> false).
 (#label -> 'Implementors').
-(#next -> #'8c058833-34df-6a4c-a717-5b1be5ea7200').
+(#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#messageSet)).
+(#before -> #()).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 2:36:10 pm').
 (#inputKind -> ByteSymbol).

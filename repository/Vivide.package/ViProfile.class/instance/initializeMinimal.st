@@ -20,6 +20,7 @@ initializeMinimal
 				addPackages; "optional"
 				addPackageOutline; "optional"
 
+				addMessageSet;
 				addSenders;
 				addImplementors;
 

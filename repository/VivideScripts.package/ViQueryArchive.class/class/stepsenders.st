@@ -23,8 +23,10 @@ stepsenders
 (#id -> #senders).
 (#isProperty -> false).
 (#label -> 'Senders').
-(#next -> #'e67a3ef7-7a93-634e-86af-5740774f3bb9').
+(#next -> nil).
 (#properties -> (Dictionary newFrom: {
+(#after -> #(#messageSet)).
+(#before -> #()).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 May 2015 12:08:55 pm').
 (#inputKind -> ByteSymbol).
