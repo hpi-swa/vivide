@@ -9,9 +9,10 @@ jobs:
         os: [ ubuntu-latest, macos-latest ]
         smalltalk: [ Squeak64-trunk, Squeak64-5.1 ]
     runs-on: ${{ matrix.os }}
-    name: ${{ matrix.smalltalk }} on ${{ matrix.os }} X
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
       - uses: hpi-swa/run-smalltalkCI@v1
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
+      - run: 'false # fail hard'
