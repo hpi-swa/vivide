@@ -7,11 +7,11 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest, macos-latest ]
-        smalltalk: [ Squeak-trunk, Squeak-5.1 ]
+        smalltalk: [ Squeak-trunk, Squeak64-5.1, Squeak-5.1 ]
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: hpi-swa/run-smalltalkCI@v0.6
+      - uses: hpi-swa/run-smalltalkCI@v0.7
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
