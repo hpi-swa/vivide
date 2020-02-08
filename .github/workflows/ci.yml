@@ -12,7 +12,7 @@ jobs:
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: hpi-swa/run-smalltalkCI@v0.4
+      - uses: hpi-swa/run-smalltalkCI@v0.5
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
       - run: 'false # fail hard'
