@@ -9,8 +9,9 @@ jobs:
         os: [ ubuntu-latest, macos-latest ]
         smalltalk: [ Squeak64-trunk, Squeak64-5.1 ]
         include:
-          - os: windows-latest
+          - os: ubuntu-latest
             smalltalk: Squeak32-5.1
+            name: 32bit build
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
