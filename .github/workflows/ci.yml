@@ -7,7 +7,10 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-latest, macos-latest ]
-        smalltalk: [ Squeak-trunk, Squeak64-5.1, Squeak-5.1 ]
+        smalltalk: [ Squeak64-trunk, Squeak64-5.1 ]
+        include:
+          - os: windows-latest
+            smalltalk: Squeak32-5.1
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
