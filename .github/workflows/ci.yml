@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+        smalltalk: [ Squeak64-trunk, Squeak64-5.1 ]
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.smalltalk }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hpi-swa/smalltalkCI@v1
+        with:
+          smalltalk-version: ${{ matrix.smalltalk }}
