@@ -19,3 +19,4 @@ jobs:
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
       - run: smalltalkci -s ${{ matrix.smalltalk }}
+        timeout-minutes: 20
