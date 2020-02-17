@@ -16,6 +16,6 @@ updateObject
 	
 		"If it was new, is is not anymore after its first save operation."
 		self thisStep setProperty: #isNew toValue: nil.   
-		self updateObjectProperties: (Dictionary newFrom: spec value).
+		self updateObjectProperties: (Dictionary withAll: spec value).
 
 		self thisStep export].

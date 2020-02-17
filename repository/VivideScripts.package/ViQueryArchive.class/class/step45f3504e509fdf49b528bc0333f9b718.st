@@ -30,6 +30,8 @@ step45f3504e509fdf49b528bc0333f9b718
 (#color -> (Color r: 0.553 g: 0.796 b: 0.553)).
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '27 August 2019 6:39:58.068572 pm').
-(#inputKind -> #(nil nil))
+(#inputKind -> #(nil nil)).
+(#lineWrap -> true).
+(#resizeMode -> #spaceFill)
 }))
 })

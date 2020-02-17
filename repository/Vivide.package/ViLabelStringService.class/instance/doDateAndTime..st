@@ -1,4 +1,4 @@
-squeak - chronology
+operations
 doDateAndTime: aDateAndTime
 
 	| today yesterday date time |

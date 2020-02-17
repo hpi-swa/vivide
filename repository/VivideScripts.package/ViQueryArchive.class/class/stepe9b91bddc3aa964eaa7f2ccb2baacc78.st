@@ -8,6 +8,7 @@ stepe9b91bddc3aa964eaa7f2ccb2baacc78
 	[:method :behaviors | { 
 	#icon -> (ViIconService doObject: method).
 	#morph -> (ViMorphService doObject: method).
+	#selectable -> (method class ~~ ViSeparator).
 	#text -> (ViLabelService doObject: method) }]
 		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]).
@@ -21,6 +22,7 @@ stepe9b91bddc3aa964eaa7f2ccb2baacc78
 	[:method :behaviors | { 
 	#icon -> (ViIconService doObject: method).
 	#morph -> (ViMorphService doObject: method).
+	#selectable -> (method class ~~ ViSeparator).
 	#text -> (ViLabelService doObject: method) }]
 		valueWithArguments: t), { #object -> t first. #objects -> {t} }]]
 			value: in) do: [:result | out add: result]]')

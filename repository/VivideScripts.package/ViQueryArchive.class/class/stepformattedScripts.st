@@ -27,7 +27,7 @@ stepformattedScripts
 (#creationTimeStamp -> '7 December 2015 2:00:40 pm').
 (#inputKind -> ViScriptStep).
 (#outputKind -> ViScriptStep).
-(#view -> ViTreeView).
+(#view -> ViTreeViewExtended).
 (#yieldOn -> #(#activated))
 }))
 })

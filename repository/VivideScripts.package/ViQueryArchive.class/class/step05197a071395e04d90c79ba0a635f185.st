@@ -37,6 +37,7 @@ step05197a071395e04d90c79ba0a635f185
 (#creationTimeStamp -> '20 May 2015 2:43:15 pm').
 (#expandAll -> true).
 (#inputKind -> PackageInfo).
+(#notifier -> ViSqueakSystemChangeNotifier).
 (#out -> Set).
 (#priority -> 20).
 (#view -> ViTreeViewExtended)

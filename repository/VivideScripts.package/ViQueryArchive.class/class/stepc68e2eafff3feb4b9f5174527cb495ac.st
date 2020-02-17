@@ -8,7 +8,7 @@ stepc68e2eafff3feb4b9f5174527cb495ac
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptStep ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> script baseClass name}]
+	#text -> (script baseClass name asText addAttribute: (TextFontReference toFont: Preferences standardButtonFont))}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -21,7 +21,7 @@ stepc68e2eafff3feb4b9f5174527cb495ac
 	[:script | {
 	"Provide hint about old-style scripts."
 	#icon -> (script class == ViScriptStep ifFalse: [UiFugueIcons exclamationSmallIcon]).
-	#text -> script baseClass name}]
+	#text -> (script baseClass name asText addAttribute: (TextFontReference toFont: Preferences standardButtonFont))}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

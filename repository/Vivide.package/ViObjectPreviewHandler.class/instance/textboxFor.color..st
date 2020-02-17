@@ -5,7 +5,7 @@ textboxFor: aStringOrText color: aColor
 	(aStringOrText isNil or: [aStringOrText isEmpty]) ifTrue: [^ nil].
 	
 	box := UiTextEdit new
-		extent: 300@150;
+		extent: ((300@150) * RealEstateAgent scaleFactor) rounded;
 		colorBackground: aColor;
 		updateFocusColor: false;  
 		scrollingMode: #limit;

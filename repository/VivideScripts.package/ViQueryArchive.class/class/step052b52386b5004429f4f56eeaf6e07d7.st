@@ -5,7 +5,7 @@ step052b52386b5004429f4f56eeaf6e07d7
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:script | { #text -> (script priority >= 9999 ifFalse: [script priority]) }]
+	[:script | { #text -> ((script priority >= 9999 ifFalse: [script priority]) asString asText addAttribute: (TextFontReference toFont: Preferences standardButtonFont); addAttribute: TextColor gray)}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ step052b52386b5004429f4f56eeaf6e07d7
 (#creationTimeStamp -> '9 December 2015 11:42:44 am')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:script | { #text -> (script priority >= 9999 ifFalse: [script priority]) }]
+	[:script | { #text -> ((script priority >= 9999 ifFalse: [script priority]) asString asText addAttribute: (TextFontReference toFont: Preferences standardButtonFont); addAttribute: TextColor gray)}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

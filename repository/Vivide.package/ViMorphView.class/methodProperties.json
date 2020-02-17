@@ -12,7 +12,7 @@
 		"handlesMouseMove:" : "mt 1/25/2018 18:01",
 		"handlesMouseOver:" : "mt 1/26/2018 08:15",
 		"indicateKeyboardFocus" : "mt 1/29/2018 11:45",
-		"initialize" : "mt 1/26/2018 16:34",
+		"initialize" : "mt 8/28/2019 15:58",
 		"model" : "mt 1/21/2015 13:50:14.887",
 		"mouseEnter:" : "mt 1/26/2018 17:36",
 		"mouseLeave:" : "mt 1/26/2018 09:12",
@@ -21,6 +21,6 @@
 		"optimalWidth" : "mt 3/4/2015 13:23",
 		"process:" : "mt 9/7/2015 15:39",
 		"reset" : "mt 1/28/2018 13:54",
-		"setUp:" : "mt 1/29/2018 09:26",
+		"setUp:" : "mt 8/28/2019 15:15",
 		"updateScale" : "mt 1/26/2018 16:03",
 		"wantsHaloFromClick" : "mt 1/21/2015 13:57:23.149" } }

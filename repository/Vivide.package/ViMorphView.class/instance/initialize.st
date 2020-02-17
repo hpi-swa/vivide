@@ -9,12 +9,16 @@ initialize
 	innerTransform := TransformMorph new
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;
-			addMorph: Morph new;
+			addMorph: (Morph new name: #container);
 			yourself.
 
 	self content
 		changeTableLayout;
 		addMorphBack: innerTransform.
+
+	self container
+		changeTableLayout;
+		color: Color transparent.
 
 	self connect: innerTransform signal: #extentChanged: to: self selector: #updateScale.
 	
