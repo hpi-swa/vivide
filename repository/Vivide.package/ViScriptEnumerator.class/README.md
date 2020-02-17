@@ -1,0 +1,1 @@
+Only enumerate the steps and referenced steps of a script. Does not transform objects or extract properties.

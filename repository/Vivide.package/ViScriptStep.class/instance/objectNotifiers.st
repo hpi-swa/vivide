@@ -1,0 +1,4 @@
+notification
+objectNotifiers
+
+	^ self objectNotifiersWith: #()

@@ -2,26 +2,6 @@ handles
 addFanOutHandles
 
 	| addBtn box buttons outBtn |
-	buttons := OrderedCollection new.
-	
-	self target connections
-		select: [:connection | connection isValid and: [connection source == self target]]
-		thenDo: [:connection |
-			buttons add: (UiToolButton new
-				color: self fanOutColor;
-				autoRaise: false;
-				buttonStyle: #iconOnly;
-				icon: connection class icon scaledToDisplay;
-				layoutInset: 2;
-				balloonText: (connection target currentQuery
-					ifNil: ['(no query)']
-					ifNotNil: [:q | q nextLabel]);
-				setProperty: #paneOut toValue: connection target;
-				addDropShadow;
-				yourself).
-			self connect: buttons last signal: #clicked: toSelector: #logDataflowChanged.
-			self connect: buttons last signal: #clicked: to: connection selector: #detach.
-			self connect: buttons last signal: #clicked: toSelector: #endInteraction].
 	
 	addBtn := UiToolButton new
 		color: self fanOutColor;
@@ -50,6 +30,8 @@ addFanOutHandles
 	self connect: outBtn signal: #clicked: to: self target selector: #browseResults.
 	self connect: outBtn signal: #clicked: toSelector: #delete.
 	
+	buttons := outputConnections values collect: #second.
+	
 	box := Morph new
 		color: Color transparent;
 		changeTableLayout;
@@ -57,9 +39,11 @@ addFanOutHandles
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		layoutInset: 3;
-		cellInset: (outBtn height // 2).
+		cellGap: (outBtn height // 2).
 	box addAllMorphs: {outBtn}, buttons, {addBtn}.
 
 	box fullBounds.
 	box center: (self basicBox right -15) @ ((self basicBox height // 2) + self basicBox top + (addBtn height // 2)).
+	
+	self addAllMorphs: (outputConnections values collect: #first).
 	self addMorph: box.

@@ -1,0 +1,3 @@
+interpretation
+interpretScript
+	^ self interpretScriptWith: #()

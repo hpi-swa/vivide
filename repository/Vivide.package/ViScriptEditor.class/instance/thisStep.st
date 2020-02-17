@@ -1,0 +1,4 @@
+accessing - script
+thisStep
+
+	^ thisStep

@@ -3,20 +3,33 @@ steptranscript
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
-(#definition -> #'947b5711-7f96-b84e-b377-552af88bcea8').
-(#iconCode -> 'UiFugueIcons applicationTextIcon').
-(#id -> #transcript).
-(#isProperty -> false).
-(#isReference -> false).
-(#label -> 'Transcript').
-(#next -> #'a6cec8a8-3004-2247-9d7c-1eb029cb617c').
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | [VivideLight historyFor: #transcript] value in: [:result |
+	out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'2c1bdde5-03ff-4341-8de6-d518dbf88ba7').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '24 August 2016 4:50:38 pm').
+(#creationTimeStamp -> '21 February 2018 6:39:39 pm')
+})).
+(#sourceCode -> '[:in :out | [VivideLight historyFor: #transcript] value in: [:result |
+	out addAll: result asList]]')
+})).
+(#className -> #ViScriptStep).
+(#definition -> #'2c1bdde5-03ff-4341-8de6-d518dbf88ba7').
+(#iconCode -> 'ViIcons icons8BulletedList64px2Icon').
+(#id -> #transcript).
+(#isProperty -> false).
+(#label -> 'Transcript').
+(#next -> #'c71cedcd-3e52-a742-8417-e71572b1560e').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '21 February 2018 6:39:39 pm').
 (#isGlobal -> true).
 (#notifier -> [ViObjectHistoryNotifier new
-		history: (ViProfile active ifNotNil: #transcriptHistory)]).
+		history: (VivideLight historyFor: #transcript)]).
 (#priority -> 500).
 (#scrollToBottom -> true).
-(#view -> ViTextView)}))})
+(#view -> ViTextView)
+}))
+})

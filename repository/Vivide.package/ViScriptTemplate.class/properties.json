@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"ViewProperties" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptTemplate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -4,4 +4,4 @@ objects
 
 	^ self queryModel
 		ifNil: [#()]
-		ifNotNil: [:m | m firstStep "fill step" objects]
+		ifNotNil: [:m | m inputForChildren]

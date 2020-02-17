@@ -1,4 +1,4 @@
 accessing
 organization
 
-	^ organization ifNil: [organization := ViQueryOrganizer new]
+	^ organization ifNil: [organization := ViScriptOrganizer new]

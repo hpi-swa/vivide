@@ -2,7 +2,7 @@
 	"class" : {
 		"widgetClassName" : "mt 1/27/2013 19:51:16.335" },
 	"instance" : {
-		"activateSymbol:" : "mt 1/28/2016 10:41:33.084",
+		"activateSymbol:" : "mt 4/11/2019 08:22",
 		"checkMethodVersion" : "mt 3/6/2014 13:25:53.349",
 		"compile" : "mt 2/4/2014 15:51:07.859",
 		"drawOverlayBottomOn:" : "mt 8/14/2012 11:47:39.645",
@@ -11,8 +11,10 @@
 		"hasUnacceptedChanges" : "mt 8/6/2012 15:55:27.997",
 		"method" : "mt 1/30/2014 16:11:33.355",
 		"method:" : "mt 2/3/2015 18:26",
+		"methodReference" : "mt 4/11/2019 08:22",
 		"notify:at:in:" : "mt 9/29/2014 14:20:56.041",
 		"overlayText" : "mt 6/21/2012 17:06:52.667",
 		"parse" : "mt 2/4/2014 16:39:25.275",
-		"protocol" : "mt 2/4/2014 16:41:38.987",
+		"protocol" : "mt 4/24/2019 15:10",
+		"protocol:" : "mt 4/24/2019 15:10",
 		"selector" : "mt 2/4/2014 15:39:41.756" } }

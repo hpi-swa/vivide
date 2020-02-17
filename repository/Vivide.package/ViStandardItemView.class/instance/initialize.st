@@ -3,9 +3,9 @@ initialize
 
 	super initialize.
 	self
-		color: Color transparent;
+		color: Color white;
 		changeTableLayout;
-		cellInset: 2;
+		cellGap: 2;
 		listDirection: #topToBottom.
 	
 	self initializeFinder.

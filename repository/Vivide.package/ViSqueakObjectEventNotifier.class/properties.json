@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Scripts-Notifications",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "TViObjectNotifier classTrait",
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"event" ],
+	"name" : "ViSqueakObjectEventNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "TViObjectNotifier",
+	"type" : "normal" }

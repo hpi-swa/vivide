@@ -6,8 +6,8 @@ test01PaneToMultiPane
 	self assert: sut panes first == pane.
 
 	self assert: self metaScript isMeta.
-	self assert: self metaScript metaReference == pane currentQuery.
-	self assert: self metaScript organization == pane currentQuery organization.
+	self assert: self metaScript metaReference == pane script.
+	self assert: self metaScript organization == pane script organization.
 
 	"The first pane gets input and gives output to the surrounding multipane widget."
 	self assert: 2 equals: pane connections size.

@@ -1,4 +1,4 @@
 accessing
-signalDelay: anObject
+signalDelay: milliseconds
 
-	signalDelay := anObject
+	signalDelay := milliseconds

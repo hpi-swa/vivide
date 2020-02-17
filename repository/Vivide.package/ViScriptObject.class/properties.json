@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"id",
+		"properties",
+		"organization" ],
+	"name" : "ViScriptObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

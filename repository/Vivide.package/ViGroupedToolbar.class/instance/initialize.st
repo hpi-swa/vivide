@@ -11,7 +11,7 @@ initialize
 	self
 		color: (Color gray: 0.3);
 		layoutInset: (4@4 corner: 5@5);
-		cellInset: 6;
+		cellGap: 6;
 		cellPositioning: #topLeft;  
 		addMorph: primaryList;
 		orientation: #leftToRight.

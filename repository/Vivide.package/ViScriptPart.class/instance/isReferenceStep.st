@@ -1,4 +1,0 @@
-testing
-isReferenceStep
-
-	^ self isReference

@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"test01Open" : "mt 7/6/2015 10:45",
-		"test02OpenSpecificQuery" : "mt 7/7/2015 14:05",
-		"test03OpenAllScriptParts" : "mt 11/12/2015 12:54:09.777",
-		"test04OpenAllScriptParts" : "mt 11/12/2015 12:46:23.875",
-		"test05ScriptArtifacts" : "mt 7/9/2015 14:33" } }

@@ -12,13 +12,12 @@ updatePanesFor: specs
 			detect: [:p | p id = (spec at: #id)]
 			ifNone: [(ViPane new
 				id: (spec at: #id);
-				queries: [self organizer orderedSteps]
 				yourself) in: [:m | self addMorph: m. m]]) in: [:pane |
 					unknownPanes remove: pane ifAbsent: [].
 					"1) Geometry"
 					pane bounds: ((spec at: #bounds ifAbsent: [0@0 corner: 300@300]) translateBy: (self topLeft)).
 					"2) Recent Scripts"
-					pane recentQueries: ((spec at: #scripts ifAbsent: [#()])
+					pane recentScripts: ((spec at: #scripts ifAbsent: [#()])
 						collect: [:id | self organizer stepById: id]
 						thenSelect: [:ea | ea notNil]) ]].
 	
@@ -44,10 +43,10 @@ updatePanesFor: specs
 				ifNotNil: [:consumerForSelections | (ViPaneConnection kind: kindId first from: pane to: consumerForSelections) attachSilently]].
 			
 		"3.2.1) Set current script"
-		pane currentQuery: ((self organizer stepById: (spec at: #current))
+		pane script: ((self organizer stepById: (spec at: #current))
 			ifNil: [Error signal: 'Script not found in organizer!']).
 		"3.2.2) Ensure current script being in history."
-		pane recentQueriesAdd: pane currentQuery].
+		pane recentScriptsAdd: pane script].
 
 	"4) Ensure recalculation of own bounds after pane insertions."
 	self fullBounds.

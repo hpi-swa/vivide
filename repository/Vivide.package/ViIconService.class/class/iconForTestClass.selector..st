@@ -5,12 +5,12 @@ iconForTestClass: aClassDescription selector: aSelector
 	"((aClassDescription inheritsFrom: TestCase) and: [aSelector startsWith: #test])
 		ifFalse: [^ nil]."
 	
-	(aClassDescription >> aSelector) isReturnSelf ifTrue: [^ UiFugueIcons exclamationSmallIcon].
+	(aClassDescription >> aSelector) isReturnSelf ifTrue: [^ ViIcons icons8Error64pxIcon].
 	
 	^ ((aClassDescription lastRun at: #errors) includes: aSelector)
-		ifTrue: [UiSilkIcons bulletRedIcon]
+		ifTrue: [ViIcons icons8CancelBlack64pxIcon ]
 		ifFalse: [((aClassDescription lastRun at: #failures) includes: aSelector)
-			ifTrue: [UiSilkIcons bulletYellowIcon]
+			ifTrue: [ViIcons icons8Cancel64px1Icon ]
 			ifFalse: [((aClassDescription lastRun at: #passed) includes: aSelector)
-				ifTrue: [UiSilkIcons bulletGreenIcon]
-				ifFalse: [UiSilkIcons bulletWhiteIcon]]]
+				ifTrue: [ViIcons icons8Checkmark64pxIcon ]
+				ifFalse: [ViIcons icons8QuestionMark64pxIcon ]]]

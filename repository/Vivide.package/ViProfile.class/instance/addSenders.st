@@ -9,7 +9,9 @@ addSenders
 			#label -> 'Senders'.
 			#id -> #senders.
 			#priority -> 200}.
+			
 		#defaultPropertiesExtended.
+		[:object | #text -> (ViObjectOriginService doObject: object)] -> { #mergeProperty -> true }.
 			
 	} asScript.
 

@@ -9,7 +9,9 @@ addImplementors
 			#label -> 'Implementors'.
 			#id -> #implementors.
 			#priority -> 200}.
+			
 		#defaultPropertiesExtended.
+		[:object | #text -> (ViObjectOriginService doObject: object)] -> { #mergeProperty -> true }.
 			
 	} asScript.
 

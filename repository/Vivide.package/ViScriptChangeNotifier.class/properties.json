@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UniqueInstance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"eventSource",
+		"silenceLevel" ],
+	"name" : "ViScriptChangeNotifier",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

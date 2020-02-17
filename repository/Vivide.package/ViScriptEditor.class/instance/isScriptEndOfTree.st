@@ -1,3 +1,3 @@
-testing - object
+testing
 isScriptEndOfTree
-	^ self firstStep isRecursive and: [self firstStep accessibleSteps last == self object]
+	^ self thisStep ifNil: [false] ifNotNil: [:step | step isEndOfTree]

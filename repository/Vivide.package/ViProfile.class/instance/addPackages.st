@@ -1,4 +1,4 @@
-initialization - bookmarks
+initialization - scripts
 addPackages
 
 	self addScript: {

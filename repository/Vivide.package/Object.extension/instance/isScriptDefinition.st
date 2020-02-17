@@ -1,0 +1,4 @@
+*vivide
+isScriptDefinition
+
+	^ false

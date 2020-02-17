@@ -1,21 +1,20 @@
-as yet unclassified
+script generation
 createIdentityScript
+	"Use #tupleSizeInput and #baseClass, which both use the current input objects, not the connection configuration."
 
 	| script tupleSize |
-	tupleSize := self tupleSizeDynamic.
-	script := (tupleSize <= 1
-		ifTrue: [ [:object | object] asScript ]
-		ifFalse: [
-			ViScriptPart createIdentityForTuple: (self objects
-				ifEmpty: [Array new: tupleSize withAll: Object]
-				ifNotEmpty: [:objs | objs first "tuple" collect: [:o | o class]]) ]).
+	tupleSize := self tupleSizeInput.
+	script := tupleSize = 0 "Global scripts only."
+		ifTrue: [ViScriptTemplate createIdentityForGlobal]
+		ifFalse: [ViScriptTemplate createIdentityForTuple: self baseClass asList].
 
 	script setProperty: #isNew toValue: true.
 
-	self validConnections
-		detect: [:c | c target == self and: [c source currentQuery notNil]]
-		ifFound: [:c | script adoptOrganization: c source currentQuery organization]
-		ifNone: [self recentQueries
-			ifEmpty: ["Keep the new organization."]
+	"Adopt the organization of any source script or the recent scripts."
+	self validInputConnections
+		detect: [:c | c source script notNil]
+		ifFound: [:c | script adoptOrganization: c source script organization]
+		ifNone: [self recentScripts "includes current script"
+			ifEmpty: ["Keep the current organization."]
 			ifNotEmpty: [:scripts | script adoptOrganization: scripts first organization]].
 	^ script

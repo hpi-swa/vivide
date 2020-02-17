@@ -1,4 +1,4 @@
-operations
+squeak - collections
 doAssociation: anAssociation
 
 	^ anAssociation key isString

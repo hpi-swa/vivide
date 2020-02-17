@@ -3,11 +3,11 @@ setUp
 
 	super setUp.
 	
-	ViActiveOrganizer
+	ViActiveScriptOrganizer
 		value: organization
 		during: [
 			pane := ViPane new
-				currentQuery: [:num | num * 2] asScript;
+				script: [:num | num * 2] asScript;
 				objects: #(1 2 3 4);
 				yourself.
 			

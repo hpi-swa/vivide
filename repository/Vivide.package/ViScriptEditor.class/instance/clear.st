@@ -3,14 +3,15 @@ clear
 
 	super clear.
 
-	self inputKind: nil.
-	self discardPaneHighlights.
+	self input: nil.
+	self removePaneHighlights.
 
 	self object ifNotNil: [:step |
-		step referenceInArchive isValid
-			ifFalse: [self updateObjectVersion].
+		
+		"Do the initial export for this script step if necessary."
+		step referenceInArchive isValid ifFalse: [step export].
 
-		(step valueOfProperty: #isNew ifAbsent: [false])
+		(step valueOfProperty: #isNew) == true
 			ifTrue: [self activateWizard]
 			ifFalse: [self deactivateWizard]].	
 

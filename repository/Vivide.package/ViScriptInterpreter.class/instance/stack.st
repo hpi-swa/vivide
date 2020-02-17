@@ -1,0 +1,4 @@
+accessing - transformation
+stack
+
+	^ stack

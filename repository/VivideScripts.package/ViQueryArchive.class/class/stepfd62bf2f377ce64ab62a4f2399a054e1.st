@@ -3,13 +3,34 @@ stepfd62bf2f377ce64ab62a4f2399a054e1
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryGroupStep).
-(#definition -> #'236a8c89-659c-5349-a716-fd2bed0f7486').
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:ref | (PackageOrganizer default packageOfClass: ref actualClass ifNone: [])
+	ifNil: ['(no package)'] ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'5158517a-5763-7048-a1fc-00307cafd0c1').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '9 January 2014 11:37 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:ref | (PackageOrganizer default packageOfClass: ref actualClass ifNone: [])
+	ifNil: [''(no package)''] ifNotNil: [:pkg | pkg name]] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
+(#className -> #ViScriptStep).
+(#definition -> #'5158517a-5763-7048-a1fc-00307cafd0c1').
 (#iconCode -> 'nil').
 (#id -> #'fd62bf2f-377c-e64a-b62a-4f2399a054e1').
+(#isProperty -> false).
 (#label -> nil).
-(#next -> #'9cef732f-20e3-884c-8e5f-55e415a20f91').
+(#next -> #'4b13c5ec-1484-1b45-b800-ac2bd6af1360').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 1210)}))})
+(#inputKind -> MethodReference).
+(#outputKind -> String).
+(#priority -> 1210)
+}))
+})

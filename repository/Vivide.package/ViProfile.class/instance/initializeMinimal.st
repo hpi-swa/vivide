@@ -1,8 +1,7 @@
 initialization
 initializeMinimal
-	"Order is important because we don't configure explicit priorities here."
 	
-	ViActiveOrganizer
+	ViActiveScriptOrganizer
 		value: self organization
 		during: [
 			self
@@ -10,6 +9,8 @@ initializeMinimal
 				addDefaultPropertiesMinimal; "optional"
 				addDefaultPropertiesExtended; "quasi optional"
 				addArtifacts;
+				
+				addGroupsMinimalScript; "quasi optional"
 				addGroupsScript; "quasi optional"
 				
 				addExplorer;
@@ -19,6 +20,7 @@ initializeMinimal
 				addPackages; "optional"
 				addPackageOutline; "optional"
 
+				addMessageSet;
 				addSenders;
 				addImplementors;
 

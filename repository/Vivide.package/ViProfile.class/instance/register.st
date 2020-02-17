@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 register
 
 	(VivideLight profiles includes: self)

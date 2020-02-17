@@ -1,4 +1,4 @@
-open
+preview - open
 discardPreview
 
 	self hidePreview.

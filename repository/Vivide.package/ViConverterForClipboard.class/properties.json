@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"clipboard" ],
+	"name" : "ViConverterForClipboard",
+	"pools" : [
+		 ],
+	"super" : "ViConverter",
+	"type" : "normal" }

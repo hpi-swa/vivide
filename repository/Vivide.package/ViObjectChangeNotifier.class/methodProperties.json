@@ -5,13 +5,16 @@
 		"uniqueInstance" : "mt 2/3/2014 10:40:49.059" },
 	"instance" : {
 		"doSilently:" : "mt 2/3/2014 10:53:39.42",
+		"filter" : "mt 5/17/2019 09:45",
 		"initialize" : "mt 2/3/2014 10:40:00.171",
 		"isBroadcasting" : "mt 2/3/2014 10:53:51.935",
 		"noMoreNotificationsFor:" : "mt 2/3/2014 10:53:58.807",
-		"notify:ofEvents:using:" : "mt 2/3/2014 10:41:43.043",
-		"notify:ofObjectChangesUsing:" : "mt 2/3/2014 10:53:04.793",
+		"notify:using:" : "mt 5/16/2019 17:37",
+		"notifyEvent:" : "mt 5/17/2019 09:44",
 		"objectChanged:" : "mt 2/3/2014 10:46:47.991",
 		"objectChanged:oldObject:" : "mt 2/3/2014 10:46:28.986",
 		"releaseAll" : "mt 2/3/2014 10:41:22.589",
 		"setBroadcasting" : "mt 2/3/2014 10:41:52.139",
-		"trigger:" : "mt 2/3/2014 10:41:59.081" } }
+		"subscribe" : "mt 5/17/2019 09:44",
+		"trigger:" : "mt 2/3/2014 10:41:59.081",
+		"unsubscribe" : "mt 5/17/2019 09:44" } }

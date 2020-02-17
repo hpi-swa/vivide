@@ -19,8 +19,8 @@ postLoad
 	
 	TextEditor allSubclassesDo: [:e | e initialize].
 	
-	(Smalltalk at: #ViToolSet ifAbsent: [])
+	(Smalltalk classNamed: #ViToolSet)
 		ifNotNil: [:ts | ToolSet default: ts].
 
 	VivideLight profiles ifEmpty: [
-		VivideLight profiles add: ViProfile newMinimal].
+		ViProfile newMinimal register].

@@ -1,7 +1,8 @@
 actions
 changeToQueryFrom: button
 
-	| query |
-	query := button valueOfProperty: #query.
-	self target currentQuery: query.
+	| script pane |
+	script := button valueOfProperty: #query.
+	pane := self target.
+	pane script: script.
 	self delete.

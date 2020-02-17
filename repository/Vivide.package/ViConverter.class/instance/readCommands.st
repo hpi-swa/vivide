@@ -1,0 +1,4 @@
+read
+readCommands
+
+	self subclassResponsibility.

@@ -2,13 +2,16 @@ actions - editing
 activateWizard
 	"Ignore current source code and propose simple mapping."
 
-	shouldPropose := true.
+	"Make room for the magic wand. See #drawWizardIndicationOn:."
+	self textField margins: ((14 * RealEstateAgent scaleFactor) rounded @0 corner: 0@7).
+
+	"New scripts are green by default."
+	self thisStep checkNewToolColor. 
+
+	"Propose a starting point for the user."
+	self fullSourceCode: nil.
+	self setFullSourceCodeInterval.
+	self visibleSourceCode: (ViScriptTemplate generateEmptyScriptCodeFor: self inputKind).
 	
-	edit margins: (14@0 corner: 0@7).
-	
-	self script: (self inputKind
-		ifEmpty: ['["Type code here..."]']
-		ifNotEmpty: ['[{1}| "Type code here..."]'
-			format: {self generateBlockVarDeclaration}]).
-	self mapIndex: 1.
+	"If the user starts typing, any 'type code here' information should be removed."
 	self selectBlockStatements.

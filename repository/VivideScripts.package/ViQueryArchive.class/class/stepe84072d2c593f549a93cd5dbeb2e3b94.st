@@ -3,13 +3,38 @@ stepe84072d2c593f549a93cd5dbeb2e3b94
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryPropertyStep).
-(#definition -> #iconAndLabel).
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | {
+	#text -> (ViLabelService doObject: textOrObject).
+	#morph -> (ViMorphService doObject: textOrObject).
+	#icon -> (ViIconService doObject: textOrObject)} ]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'753003be-d44a-284c-b617-5f685c572efe').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
+	[:textOrObject | {
+	#text -> (ViLabelService doObject: textOrObject).
+	#morph -> (ViMorphService doObject: textOrObject).
+	#icon -> (ViIconService doObject: textOrObject)} ]
+		value: o), { #object -> o }]]
+			value: in) do: [:result | out add: result]]')
+})).
+(#className -> #ViScriptStep).
+(#definition -> #'753003be-d44a-284c-b617-5f685c572efe').
 (#iconCode -> 'nil').
 (#id -> #'e84072d2-c593-f549-a93c-d5dbeb2e3b94').
+(#isProperty -> true).
 (#label -> nil).
 (#next -> #'3723f748-fad3-d446-8f95-d2d495e9a9cc').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 1370)}))})
+(#priority -> 1370)
+}))
+})

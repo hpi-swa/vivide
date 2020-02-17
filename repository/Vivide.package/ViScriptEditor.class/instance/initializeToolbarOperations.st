@@ -7,7 +7,7 @@ initializeToolbarOperations
 		addGroup: #add
 		icon: UiFugueIcons newIcon
 		contents: [:editor | {
-			{#addArtifact. 'Insert new part'. UiFugueIcons newIcon. nil. 1}.
+			{#addStep. 'Add script'. UiFugueIcons newIcon. nil. 1}.
 			{#activateWizard. 'Activate wizard'. UiSilkIcons wandIcon. nil. 2}.
 			{#deactivateWizard. 'Deactivate wizard'. ViIcons blankIcon. nil. 2}.
 			{#openScript. 'Open script'. UiFugueIcons controlIcon. nil. 3}.			
@@ -31,8 +31,8 @@ initializeToolbarOperations
 		addGroup: #profile
 		icon: UiFugueIcons userSilhouetteIcon
 		contents: [:editor | {
-			{#tryAddScript. 'Install in profile'. UiSilkIcons databaseEditIcon. nil. 1}.
-			{#tryRemoveScript. 'Remove from profile'. ViIcons blankIcon. nil. 1}.
+			{#tryAddScriptToProfile. 'Install in profile'. UiSilkIcons databaseEditIcon. nil. 1}.
+			{#tryRemoveScriptFromProfile. 'Remove from profile'. ViIcons blankIcon. nil. 1}.
 			{#copyToClipboard. 'Copy to clipboard'. UiFugueIcons clipboardTextIcon. nil. 2}
 			}].
 		
@@ -40,6 +40,7 @@ initializeToolbarOperations
 		addGroup: #debug
 		icon: UiSilkIcons bugIcon
 		contents: [:editor | {
+			{#exploreInput. 'Explore input'. ViIcons blankIcon. nil. 0}.
 			{#exploreOutput. 'Explore output'. UiFugueIcons magnifierIcon. nil. 1}.
 			{#exploreOutputTrace. 'Explore output trace'. ViIcons blankIcon. nil. 1}.
 			{#exploreOneProperty. 'Explore properties by example'. UiFugueIcons propertyIcon. nil. 2}.

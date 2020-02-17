@@ -12,7 +12,7 @@ initializePanel
 	panel vResizing: (#rigid).
 	panel minWidth: (2).
 	panel minHeight: (2).
-	panel cellInset: (2).
+	panel cellGap: (2).
 	panel cellPositioning: (#center).
 	panel cellSpacing: (#none).
 	panel layoutInset: (0).
@@ -40,7 +40,7 @@ initializePanel
 	unnamedMorph1 vResizing: (#shrinkWrap).
 	unnamedMorph1 minWidth: (2).
 	unnamedMorph1 minHeight: (2).
-	unnamedMorph1 cellInset: (0).
+	unnamedMorph1 cellGap: (0).
 	unnamedMorph1 cellPositioning: (#center).
 	unnamedMorph1 cellSpacing: (#none).
 	unnamedMorph1 layoutInset: (0).
@@ -67,7 +67,7 @@ initializePanel
 	closeBtn vResizing: (#shrinkWrap).
 	closeBtn minWidth: (2).
 	closeBtn minHeight: (2).
-	closeBtn cellInset: (4).
+	closeBtn cellGap: (4).
 	closeBtn cellPositioning: (#center).
 	closeBtn cellSpacing: (#none).
 	closeBtn layoutInset: (0).
@@ -101,7 +101,7 @@ initializePanel
 	unnamedMorph2 vResizing: (#rigid).
 	unnamedMorph2 minWidth: (2).
 	unnamedMorph2 minHeight: (2).
-	unnamedMorph2 cellInset: (4).
+	unnamedMorph2 cellGap: (4).
 	unnamedMorph2 cellPositioning: (#center).
 	unnamedMorph2 cellSpacing: (#none).
 	unnamedMorph2 layoutInset: (4).
@@ -128,7 +128,7 @@ initializePanel
 	unnamedMorph3 vResizing: (#rigid).
 	unnamedMorph3 minWidth: (2).
 	unnamedMorph3 minHeight: (2).
-	unnamedMorph3 cellInset: (0).
+	unnamedMorph3 cellGap: (0).
 	unnamedMorph3 cellPositioning: (#center).
 	unnamedMorph3 cellSpacing: (#none).
 	unnamedMorph3 layoutInset: (0).
@@ -157,7 +157,7 @@ initializePanel
 	headerBtn vResizing: (#shrinkWrap).
 	headerBtn minWidth: (2).
 	headerBtn minHeight: (2).
-	headerBtn cellInset: (4).
+	headerBtn cellGap: (4).
 	headerBtn cellPositioning: (#center).
 	headerBtn cellSpacing: (#none).
 	headerBtn layoutInset: (2@ -1 corner: 2@ -2).
@@ -191,7 +191,7 @@ initializePanel
 	unnamedMorph4 vResizing: (#rigid).
 	unnamedMorph4 minWidth: (2).
 	unnamedMorph4 minHeight: (2).
-	unnamedMorph4 cellInset: (0).
+	unnamedMorph4 cellGap: (0).
 	unnamedMorph4 cellPositioning: (#center).
 	unnamedMorph4 cellSpacing: (#none).
 	unnamedMorph4 layoutInset: (0).
@@ -220,7 +220,7 @@ initializePanel
 	hideBtn vResizing: (#shrinkWrap).
 	hideBtn minWidth: (2).
 	hideBtn minHeight: (2).
-	hideBtn cellInset: (4).
+	hideBtn cellGap: (4).
 	hideBtn cellPositioning: (#center).
 	hideBtn cellSpacing: (#none).
 	hideBtn layoutInset: (0).
@@ -255,7 +255,7 @@ initializePanel
 	addPaneBtn vResizing: (#shrinkWrap).
 	addPaneBtn minWidth: (2).
 	addPaneBtn minHeight: (2).
-	addPaneBtn cellInset: (4).
+	addPaneBtn cellGap: (4).
 	addPaneBtn cellPositioning: (#center).
 	addPaneBtn cellSpacing: (#none).
 	addPaneBtn layoutInset: (0).
@@ -290,7 +290,7 @@ initializePanel
 	content vResizing: (#spaceFill).
 	content minWidth: (2).
 	content minHeight: (2).
-	content cellInset: (4).
+	content cellGap: (4).
 	content cellPositioning: (#center).
 	content cellSpacing: (#none).
 	content layoutInset: (4).

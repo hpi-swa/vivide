@@ -1,0 +1,4 @@
+instances
+active
+
+	^ ViActiveScriptNotifier value

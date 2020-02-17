@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Services",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViMorphService",
+	"pools" : [
+		 ],
+	"super" : "ViObjectService",
+	"type" : "normal" }

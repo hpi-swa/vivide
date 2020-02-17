@@ -4,14 +4,14 @@ initialize
 	super initialize.
 	self initializeForContainerClass: ViScriptEditor.
 	
-	self container edit
+	self container textField
 		scrollingMode: #none;
 		vResizing: #spaceFill;
 		autoCreateArtifacts: false.
 	
-	self setupBlock: [:model :container |
+	self setupBlock: [:model :editor |
 		model nodes
-			ifEmpty: [	container object: nil]
+			ifEmpty: [editor object: nil]
 			ifNotEmpty: [:nodes | 
-				container object: (nodes first at: #object).
-				container context: (nodes first at: #context ifAbsent: [#()])]].
+				editor object: (nodes first at: #object).
+				editor context: (nodes first at: #context ifAbsent: [#()])]].

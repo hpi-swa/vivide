@@ -1,4 +1,4 @@
-as yet unclassified
+vivide - other
 doMultiPaneWidget: aMultiPaneWidget
 
 	^ nil

@@ -10,5 +10,5 @@
 	"name" : "ViSinglePaneEditorTests",
 	"pools" : [
 		 ],
-	"super" : "ViIntegrationTestCase",
+	"super" : "VivideTestCase",
 	"type" : "normal" }

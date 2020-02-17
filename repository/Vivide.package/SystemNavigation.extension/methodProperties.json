@@ -4,4 +4,6 @@
 	"instance" : {
 		"allClassesImplementingTrait:" : "mt 10/13/2017 17:41",
 		"allFlagComments" : "mt 8/31/2012 19:40:53.561",
-		"allMethods" : "mt 8/22/2012 18:33:52.082" } }
+		"allLocalAccessesTo:from:" : "mt 4/10/2019 11:04",
+		"allMethods" : "mt 8/22/2012 18:33:52.082",
+		"allSuperAccessesTo:from:" : "mt 4/10/2019 11:25" } }

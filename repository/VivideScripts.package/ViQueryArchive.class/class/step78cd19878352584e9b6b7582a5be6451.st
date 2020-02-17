@@ -3,12 +3,25 @@ step78cd19878352584e9b6b7582a5be6451
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViScriptPart).
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:method | method]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'331ef878-24d5-f442-9676-04b6c451895a').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '9 December 2015 11:02:31 am')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:method | method]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
+(#className -> #ViScriptStep).
 (#definition -> #'331ef878-24d5-f442-9676-04b6c451895a').
 (#iconCode -> 'UiSilkIcons pencilIcon').
 (#id -> #'78cd1987-8352-584e-9b6b-7582a5be6451').
 (#isProperty -> false).
-(#isReference -> false).
 (#label -> 'Source code').
 (#next -> nil).
 (#properties -> (Dictionary newFrom: {
@@ -16,4 +29,6 @@ step78cd19878352584e9b6b7582a5be6451
 (#creationTimeStamp -> '9 December 2015 11:02:31 am').
 (#inputKind -> CompiledMethod).
 (#priority -> 300).
-(#view -> ViMethodEditorView)}))})
+(#view -> ViMethodEditorView)
+}))
+})

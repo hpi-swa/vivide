@@ -8,8 +8,8 @@ updateForListForQuery: query
 				collect: [:p | p -> ('1_{1}' format: {p}) asSymbol]))
 					yourself).
 					
-		(query allPropertySteps ifEmpty: [{[:fake | #object -> fake] asScript}]) first in: [:prop |
+		(query allExtractionSteps ifEmpty: [{[:fake | #object -> fake] asScript}]) first in: [:prop |
 			#(hAlignment vAlignment itemOrientation) do: [:colProp |
 				view listSpec
-					perform: colProp asSymbol asMutator
+					perform: colProp asSymbol asSimpleSetter
 					with: (prop valueOfProperty: colProp)]]].

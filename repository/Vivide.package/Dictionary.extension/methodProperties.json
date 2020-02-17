@@ -1,7 +1,8 @@
 {
 	"class" : {
-		 },
+		"newFromAny:" : "mt 5/8/2019 10:39" },
 	"instance" : {
 		"asList" : "mt 7/22/2015 17:04",
+		"at:ifAbsentPut:ifPresentPut:" : "mt 1/9/2020 17:12",
 		"isList" : "mt 1/4/2016 16:21:20.205",
 		"storeCompactOn:" : "mt 1/22/2016 10:48:39.815" } }

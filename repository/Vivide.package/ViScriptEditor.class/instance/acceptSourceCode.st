@@ -1,16 +1,14 @@
 actions - editing
 acceptSourceCode
+	"Accept the visible source code."
 
 	| code |
-	shouldPropose ifTrue: [self proposeScriptTemplate].
+	self textField parse ifFalse: [^ self].
+	self isWizardActive ifTrue: [self setScriptTemplate].
 	
-	code := edit theText asString withBlanksTrimmed.
+	code := self visibleSourceCode withPunctuationTrimmed.
 	
-	[code endsWith: '.'] whileTrue: [
-		"No trailing points for intermediate code blocks."
-		code := code allButLast].
-
-	self propertiesVisible
+	self areScriptPropertiesVisible
 		ifFalse: [
 			"Check for correct enclosing brackets if not outermost snippet."	
 			((code beginsWith: '[') and: [code endsWith: ']'])
@@ -23,23 +21,19 @@ acceptSourceCode
 			].
 
 	"Store new code and adjust script pointer."	
-	script := (self script first: self scriptPointer first -1), code, (self script last: self script size - self scriptPointer last).
-	scriptPointer := self scriptPointer first to: self scriptPointer first + code size - 1.
-	(RBParser parseExpression: script) in: [:n |
-		self
-			updateMapFor: n;
-			updateMapIndex: n].
-	
-	"Update visuals if code was fixed automatically."
-	code size ~= edit theText size
-		ifTrue: [edit theText: code].
+	self fullSourceCode: 
+		(self fullSourceCode first: self fullSourceCodeInterval first -1),
+		code,
+		(self fullSourceCode last: self fullSourceCode size - self fullSourceCodeInterval last).
+	self fullSourceCodeInterval: (self fullSourceCodeInterval first to: self fullSourceCodeInterval first + code size - 1).
+	self setVisibleSourceCode.
 
 	"Store changes in object."
 	self updateObject.
-	self updateObjectVersion.
-
 	self updateUi.
+	self updatePropertyBar.
+	self updateReferenceBars.
 
 	ViLoggingService trigger: {
 		#message -> 'Script modified.'.
-		#script -> script copy}.
+		#sourceCode -> self fullSourceCode copy}.

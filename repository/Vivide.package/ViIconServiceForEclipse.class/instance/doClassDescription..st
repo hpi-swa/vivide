@@ -1,4 +1,4 @@
-as yet unclassified
+squeak - kernel
 doClassDescription: cls
 
 	cls isTrait

@@ -7,10 +7,15 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"model" ],
+		"model",
+		"lastPoints",
+		"cursorPosition",
+		"showCursorPosition",
+		"pin",
+		"pinOffset" ],
 	"name" : "ViMorphView",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ViScrollPaneView",
 	"traitcomposition" : "TViObjectView",
 	"type" : "normal" }

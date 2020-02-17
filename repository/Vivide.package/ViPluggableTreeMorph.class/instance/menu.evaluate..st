@@ -1,7 +1,6 @@
 as yet unclassified
 menu: menu evaluate: boolean
 
-	ViPane chooseQueryFor: (self currentSelection
-		ifNil: [^ nil]
-		ifNotNil: [:node | node at: #object]).
+	self currentSelection ifNotNil: [:node |
+		 self pane chooseAndOpenScriptWith: (node at: #object)].
 	^ nil

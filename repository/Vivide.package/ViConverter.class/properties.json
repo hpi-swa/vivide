@@ -1,0 +1,15 @@
+{
+	"category" : "Vivide",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"profile",
+		"organization" ],
+	"name" : "ViConverter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
-operations
+vivide - other
 doMethodVersion: aMethodVersion
 
-	^ (super doMethodVersion: aMethodVersion) asHtmlText  
+	^ (super doMethodVersion: aMethodVersion) asTextFromHtml  

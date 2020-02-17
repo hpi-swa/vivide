@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"test01OpenScript" : "mt 8/2/2019 11:56",
+		"test01Senders" : "mt 8/2/2019 14:54",
+		"test02Implementors" : "mt 8/2/2019 14:53",
+		"test02OpenScriptWith" : "mt 8/2/2019 12:00",
+		"test03Inspect" : "mt 8/2/2019 15:18",
+		"test03OpenScriptEditor" : "mt 8/2/2019 14:00",
+		"test04Explore" : "mt 8/2/2019 15:18",
+		"test04OpenToolAndScriptEditor" : "mt 8/2/2019 14:10",
+		"test05BrowseClass" : "mt 8/2/2019 15:24",
+		"test06BrowseClassHierarchy" : "mt 8/2/2019 17:37",
+		"test07BrowseMessageNames" : "mt 8/2/2019 17:54" } }

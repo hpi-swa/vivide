@@ -1,4 +1,4 @@
 accessing - object
 context
 
-	^ context ifNil: [#()]
+	^ self valueOfProperty: #artifactContext ifAbsent: [#()]

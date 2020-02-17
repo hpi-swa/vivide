@@ -1,4 +1,4 @@
-as yet unclassified
+squeak - system
 doMethodReference: aMethodReference
 
 	aMethodReference isValid

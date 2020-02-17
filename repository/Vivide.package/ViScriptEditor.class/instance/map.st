@@ -1,4 +1,0 @@
-accessing
-map
-
-	^ map ifNil: [#()]

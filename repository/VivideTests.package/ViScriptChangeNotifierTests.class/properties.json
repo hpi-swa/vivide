@@ -1,0 +1,16 @@
+{
+	"category" : "VivideTests-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"notifier",
+		"script",
+		"events" ],
+	"name" : "ViScriptChangeNotifierTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

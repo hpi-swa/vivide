@@ -1,14 +1,16 @@
 actions
 deleteScript
 
-	self updateContext.
-	otherSteps size = 1 ifTrue: [
+	self allSteps size = 1 ifTrue: [
 		self
 			warn: 'You cannot remove the only script part.'
 			for: self.
 		^ self "I am the last one."].
 
-	self object organization deleteStep: self object.
+	"This script must not be *new* because editor updates can happen in the deletion process, which would activate the wizard and try to interpret the script to collect input information. See #activateWizard and #updateInput."
+	self thisStep setProperty: #isNew toValue: nil.
+	
+	self thisStep organization deleteStep: self thisStep.
 	
 	ViLoggingService trigger: {#message -> 'Script part removed.'}.
 	
@@ -16,9 +18,11 @@ deleteScript
 	self close.
 
 	"All panes should now start with the next step."
-	otherSteps first == self object ifTrue: [
+	self allSteps first == self thisStep ifTrue: [
 		ViPane allInstancesDo: [:pane | 
-			pane currentQuery == self object
+			pane script == self thisStep
 				ifTrue: [
-					pane currentQuery: self object next.
-					pane recentQueries remove: self object "not valid anymore"]]].
+					pane script: self thisStep next from: self.
+					
+					self flag: #hiddenMagic. "mt: Make it more explicit to the pane."
+					pane recentScripts remove: self thisStep "not valid anymore"]]].

@@ -1,9 +1,12 @@
 support - properties
 specialProperties
-
+	"Does not show the property if nil is returned for it, which is usually for that property's default value."
 	^ {
-			#id -> (self object id size = 36 ifTrue: [nil] ifFalse: [self object id]).
-			#label -> self object label.
-			#isProperty -> (self object isProperty ifFalse: [nil] ifTrue: [true]).
-			#isReference -> (self object isReference ifFalse: [nil] ifTrue: [true]).  
+			#id -> (self thisStep id size = 36 ifTrue: [nil] ifFalse: [self thisStep id]).
+			#label -> self thisStep label.
+			#isProperty -> (self thisStep isPropertyExtraction ifFalse: [nil] ifTrue: [true]).
+			
+			#after -> (self thisStep after ifEmpty: [nil]).
+			#before -> (self thisStep before ifEmpty: [nil]).
+			
 			"#icon -> self iconCode"} select: [:assoc | assoc value notNil]

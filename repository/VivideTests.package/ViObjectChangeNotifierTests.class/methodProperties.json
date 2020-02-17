@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addEvent:" : "mt 5/16/2019 17:30",
+		"eventCount" : "mt 5/16/2019 17:30",
+		"lastEvent" : "mt 5/16/2019 17:30",
+		"processDeferredUpdates" : "mt 5/16/2019 18:03",
+		"setUp" : "mt 5/16/2019 17:30",
+		"tearDown" : "mt 5/16/2019 17:30",
+		"test01ExternalTrigger" : "mt 5/16/2019 17:43",
+		"test02CopyObjectState" : "mt 5/16/2019 17:39",
+		"test03NoObjectCopy" : "mt 5/16/2019 17:43",
+		"test04ScriptNotifier" : "mt 5/17/2019 09:45" } }

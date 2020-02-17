@@ -1,4 +1,0 @@
-testing - old
-isGroupStep
-
-	^ false

@@ -1,4 +1,4 @@
-operations
+squeak - tools
 doTestCase: aTestCase
 
 	^ nil

@@ -1,4 +1,0 @@
-instances
-active
-
-	^ ViActiveOrganizer value

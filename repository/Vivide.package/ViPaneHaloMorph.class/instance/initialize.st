@@ -5,4 +5,4 @@ initialize
 	inputPanes  := IdentitySet new.
 
 	super initialize.
-	self color: (Color black alpha: 0.2).
+	self color: (Color black alpha: 0.08).

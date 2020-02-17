@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Support",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"object",
+		"label",
+		"labelText" ],
+	"name" : "ViSeparator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

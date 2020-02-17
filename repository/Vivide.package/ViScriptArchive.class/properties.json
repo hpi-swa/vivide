@@ -1,9 +1,9 @@
 {
-	"category" : "Vivide-Queries",
+	"category" : "Vivide-Scripts",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"LocalOrganization" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

@@ -1,0 +1,15 @@
+{
+	"category" : "VivideTests-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"notifier",
+		"events" ],
+	"name" : "ViObjectChangeNotifierTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

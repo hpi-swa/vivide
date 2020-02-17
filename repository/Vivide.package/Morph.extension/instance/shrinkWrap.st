@@ -2,7 +2,9 @@
 shrinkWrap
 	"Change bounds to match submorphBounds."
 
-	self submorphBounds in: [:newBounds |
+	self flag: #remove. "mt: Use something from Morphic instead."
+	self fullBounds. "Do full layout first."
+	self submorphBoundsForShrinkWrap in: [:newBounds |
 		| deltaPosition |
 		deltaPosition := newBounds topLeft - self topLeft.
 		self submorphsDo: [:morph |

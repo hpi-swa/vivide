@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 = c
 
 	super = c ifTrue: [^ true].

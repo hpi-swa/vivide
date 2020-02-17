@@ -5,10 +5,15 @@
 		"addChild:" : "mt 9/16/2015 15:55",
 		"addRandomChild" : "mt 9/16/2015 16:01",
 		"childMorphs" : "mt 9/16/2015 16:01",
-		"drawOn:" : "mt 9/16/2015 16:06",
+		"drawOverlayOn:" : "mt 4/9/2018 14:07",
 		"initialize" : "mt 9/16/2015 16:04",
 		"initializeChildren" : "mt 9/16/2015 16:04",
-		"initializeNode" : "mt 9/16/2015 16:18",
+		"initializeNode" : "mt 4/10/2018 09:23",
 		"itemMorph" : "mt 9/16/2015 15:54",
 		"lineWeight" : "mt 9/16/2015 16:06",
-		"lineWeight:" : "mt 9/16/2015 16:06" } }
+		"lineWeight:" : "mt 9/16/2015 16:06",
+		"scale" : "mt 4/10/2018 09:13",
+		"scale:" : "mt 4/10/2018 09:29",
+		"zoomFit" : "mt 4/10/2018 09:31",
+		"zoomIn" : "mt 4/10/2018 09:21",
+		"zoomOut" : "mt 4/10/2018 09:21" } }

@@ -1,4 +1,4 @@
 events
 hasKeyboard
 
-	^ edit hasKeyboard
+	^ self textField hasKeyboard

@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 connectionKind
-	^ #fixed
+	^ #(fixed object objects)

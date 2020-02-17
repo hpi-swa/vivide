@@ -6,7 +6,7 @@ tryDeleteMethod
 	
 	msg := ViOverlayMessageBox new title: 'Remove Method'.
 
-	msg addAction: 'Remove method #', self selector icon: UiSilkIcons binIcon receiver: self selectors: #(deleteMethod).
+	msg addAction: 'Remove method #', self selector icon: ViIcons icons8Trash64px2Icon receiver: self selectors: #(deleteMethod).
 	
 	senders size > 0
 		ifTrue: [
@@ -20,7 +20,7 @@ tryDeleteMethod
 				message: 'This method has no senders.'
 				icon: ViIcons icons8Info64px1Icon].
 			
-	msg addAction: 'Abort this action.' icon: UiSilkIcons cancelIcon.
+	msg addAction: 'Abort this action.' icon: ViIcons icons8Cancel64px1Icon.
 	
 	msg showAbove: self.
 	

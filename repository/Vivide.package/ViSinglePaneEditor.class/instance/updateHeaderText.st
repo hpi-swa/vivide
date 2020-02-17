@@ -5,7 +5,7 @@ updateHeaderText
 	
 	"Simplify visual appearance for try-outs."
 	(self pane isExperimentalTool or: [self pane useSimpleWindowTitle])
-		ifTrue: [^ self headerText: (self pane currentQuery ifNil: [''] ifNotNil: [:q | q label ifNil: ['']])].
+		ifTrue: [^ self headerText: (self pane script ifNil: [''] ifNotNil: [:q | q label ifNil: ['']])].
 	"Make script editor more explicit."
 	self pane isScriptEditor
 		ifTrue: [^ self headerText: 'Script Editor'].

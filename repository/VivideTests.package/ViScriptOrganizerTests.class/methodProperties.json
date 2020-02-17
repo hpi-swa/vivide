@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "mt 4/18/2019 14:43",
+		"setUp" : "mt 4/18/2019 10:01",
+		"test01Category" : "mt 5/17/2019 14:06",
+		"test01RegisterDefinition" : "mt 4/23/2019 10:32",
+		"test01RegisterStep" : "mt 4/18/2019 10:08",
+		"test02ChangeIdKeepCategory" : "mt 4/18/2019 15:14",
+		"test02UnregisterDefinition" : "mt 4/23/2019 10:32",
+		"test02UnregisterStep" : "mt 4/18/2019 10:09",
+		"test03ChangeStepId" : "mt 4/23/2019 10:33",
+		"test04OrganizationsAsNamespaces" : "mt 4/18/2019 10:22",
+		"test05ReferencesToStep" : "mt 4/18/2019 14:54",
+		"test06OrderByPriority" : "mt 4/18/2019 14:56",
+		"test07StepsWithLabel" : "mt 4/18/2019 14:58",
+		"test08DeleteStep" : "mt 5/2/2019 13:42",
+		"test09DeleteStepWithReferences" : "mt 5/2/2019 14:04",
+		"test10DeleteStepWithBeforeAfter" : "mt 5/2/2019 14:24",
+		"test11DeleteStepWithNoReplacement" : "mt 5/2/2019 14:48" } }

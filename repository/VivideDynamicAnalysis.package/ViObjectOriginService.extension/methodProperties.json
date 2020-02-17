@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"doCallgraph:" : "mt 2/13/2013 17:14:45.372",
-		"doCallgraphDiff:" : "mt 2/15/2013 12:00:09.387",
-		"doMethodCallNode:" : "mt 9/10/2012 16:31:26.334",
-		"doMethodCallNodeOLD:" : "mt 9/10/2012 16:14:44.631",
-		"doTag:" : "mt 9/6/2012 17:40:40.356" } }

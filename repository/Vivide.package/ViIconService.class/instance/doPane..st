@@ -1,8 +1,8 @@
-as yet unclassified
+vivide - kernel
 doPane: aPane
 
 	^ (aPane view isKindOf: ViMultiPaneWidget)
-		ifFalse: [aPane currentQuery
+		ifFalse: [aPane script
 			ifNotNil: [UiFugueIcons zoneIcon]
 			ifNil: [UiFugueIcons zoneExclamationIcon]]
 		ifTrue: [UiFugueIcons zonesStackIcon]

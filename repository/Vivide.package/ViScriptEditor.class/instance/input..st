@@ -1,4 +1,4 @@
-as yet unclassified
+accessing - script
 input: someObjects
 
 	input := someObjects.

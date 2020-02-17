@@ -1,4 +1,4 @@
-building
+preview - building
 codeboxFor: someCode inClass: aClass
 
 	| box |
@@ -15,6 +15,6 @@ codeboxFor: someCode inClass: aClass
 		colorHighlightedBorder: (Color gray: 0.6);
 		updateFocusColor: false.
 	
-	box width: (box optimalWidth min: 400).
+	box width: (box optimalWidth min: (400 * RealEstateAgent scaleFactor) rounded).
 	
 	^ box

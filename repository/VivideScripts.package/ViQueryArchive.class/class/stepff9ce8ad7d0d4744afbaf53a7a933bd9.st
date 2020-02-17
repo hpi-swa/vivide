@@ -3,13 +3,30 @@ stepff9ce8ad7d0d4744afbaf53a7a933bd9
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryGroupStep).
-(#definition -> #'52e3e131-1ce2-6941-86f6-ba307bf8e791').
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:tag | tag value methodClass organization categoryOfElement: tag value selector] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]).
+(#className -> #ViScriptDefinition).
+(#id -> #'c94ed80e-b326-be4e-814f-4b67476991a6').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '20 February 2014 6:28:37 pm')
+})).
+(#sourceCode -> '[:in :out | (
+	[:objects | objects collect: [:ungroupedObject | { [:tag | tag value methodClass organization categoryOfElement: tag value selector] value: ungroupedObject . ungroupedObject } asTuples]]
+		value: in) do: [:result | out addAll: result asList]]')
+})).
+(#className -> #ViScriptStep).
+(#definition -> #'c94ed80e-b326-be4e-814f-4b67476991a6').
 (#iconCode -> 'nil').
 (#id -> #'ff9ce8ad-7d0d-4744-afba-f53a7a933bd9').
+(#isProperty -> false).
 (#label -> nil).
-(#next -> #'11f0e878-14f5-b147-a1c6-e95064e1a62a').
+(#next -> #'ed1b8e40-bde8-4443-972a-ed9b1112c7e0').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '20 February 2014 6:28:37 pm').
-(#priority -> 5770)}))})
+(#priority -> 5770)
+}))
+})

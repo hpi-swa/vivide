@@ -18,5 +18,8 @@ setUp: aScript
 	self textMorph borderWidth: (aScript valueOfProperty: #borderWidth ifAbsent: [1]).
 	self textMorph acceptOnCR: (aScript valueOfProperty: #acceptOnCR ifAbsent: [false]).
 
+	separator := aScript valueOfProperty: #separator ifAbsent: ['---'].
+	mode := aScript valueOfProperty: #mode ifAbsent: [#plain].
+
 	self flag: #performance.
 	self reset.

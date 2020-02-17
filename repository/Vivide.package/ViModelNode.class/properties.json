@@ -1,0 +1,20 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UpdateDepthThreshold" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"firstStep",
+		"pane",
+		"referenceStack",
+		"updateCount",
+		"depth",
+		"cachedResults",
+		"updateNotifiers" ],
+	"name" : "ViModelNode",
+	"pools" : [
+		 ],
+	"super" : "UiPropertyItemNode",
+	"type" : "normal" }

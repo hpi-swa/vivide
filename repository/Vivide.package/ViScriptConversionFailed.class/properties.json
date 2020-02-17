@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptConversionFailed",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

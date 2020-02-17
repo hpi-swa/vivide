@@ -7,7 +7,7 @@
 	"instance" : {
 		"acceptChanges" : "mt 9/21/2012 09:03:37.032",
 		"activateObject:" : "mt 12/11/2014 10:42:59.747",
-		"activateSymbol:" : "mt 8/14/2012 15:19:50.107",
+		"activateSymbol:" : "mt 4/11/2019 08:16",
 		"artifactRequested:" : "mt 8/13/2012 16:18:10.998",
 		"autoCreateArtifacts" : "mt 9/5/2012 18:28:36.449",
 		"autoCreateArtifacts:" : "mt 9/5/2012 18:28:45.156",
@@ -23,7 +23,7 @@
 		"newArtifactRequested" : "mt 2/4/2014 15:12:10.475",
 		"onFocusChanged:" : "mt 3/4/2013 15:17:04.039",
 		"onRepeatedReturnPressed:" : "mt 10/22/2014 14:05:21.999",
-		"optimalWidth" : "mt 6/30/2011 11:54:40.735",
+		"optimalWidth" : "mt 5/8/2019 15:31",
 		"parse" : "mt 9/29/2014 14:18:55.982",
 		"revertChanges" : "mt 9/21/2012 09:06:23.132",
 		"selectedSelector" : "mt 6/9/2011 13:50:53.428",

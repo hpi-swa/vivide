@@ -1,5 +1,5 @@
 as yet unclassified
 menu: menu evaluate: boolean
 	
-	ViPane chooseQueryFor: self selectedObjects.
+	self pane chooseAndOpenScriptWith: self selectedObjects.
 	^ nil

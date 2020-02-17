@@ -1,4 +1,4 @@
-operations
+vivide - other
 doSourceCodeSnippet: aSourceCodeSnippet
 
 	^ panel := self

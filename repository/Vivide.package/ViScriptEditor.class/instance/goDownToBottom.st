@@ -3,9 +3,10 @@ goDownToBottom
 
 	| node cursor result lastBlock |
 	self hasUnacceptedChanges ifTrue: [^ self].
+	self isWizardActive ifTrue: [^ self].
 	
-	node := RBParser parseExpression: self script.
-	cursor := edit cursorPosition + self scriptPointer first - 1.
+	node := RBParser parseExpression: self fullSourceCode.
+	cursor := self textField cursorPosition + self fullSourceCodeInterval first - 1.
 	result := node.
 	[result isNil or: [result children isEmpty]] whileFalse: [
 		result isBlock ifTrue: [lastBlock := result].
@@ -15,7 +16,9 @@ goDownToBottom
 
 	result := lastBlock.
 	result ifNil: [^ self].
+	result := ViScriptTemplate detectObjectTransformation: result.
 
-	self scriptPointer: result sourceInterval.
-	edit select: ((cursor - result start + 1) to: (cursor - result start)).
-	self mapIndex: self map size.
+	self fullSourceCodeInterval: result sourceInterval.
+	self setVisibleSourceCode.
+	
+	self textField select: ((cursor - result start + 1) to: (cursor - result start)).

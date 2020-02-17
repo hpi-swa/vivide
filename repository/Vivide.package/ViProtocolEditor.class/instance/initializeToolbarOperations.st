@@ -2,7 +2,13 @@ toolbar - initialization
 initializeToolbarOperations
 
 	super initializeToolbarOperations.
-		
+
+	self toolbar rightPanel
+		addGroup: #create
+		icon: UiFugueIcons plusIcon
+		contents: [:editor | {
+			{#addMethod. ('Add method to <b>', editor theClass, '</b>') asHtmlText. UiFugueIcons newIcon. nil. 1}}].
+				
 	self toolbar rightPanel
 		addGroup: #edit
 		icon: UiSilkIcons pencilIcon

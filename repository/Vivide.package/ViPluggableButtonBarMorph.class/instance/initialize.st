@@ -8,7 +8,7 @@ initialize
 		changeTableLayout;
 		listDirection: #leftToRight;
 		extent: 10@25;
-		cellInset: 5.
+		cellGap: 5.
 		"layoutPolicy: (ViWrappingLayout new cellInset: 5)."
 		
 	buttonCount := 0.

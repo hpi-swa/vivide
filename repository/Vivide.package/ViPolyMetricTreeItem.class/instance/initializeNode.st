@@ -2,6 +2,7 @@ as yet unclassified
 initializeNode
 
 	self lineWeight: 1.
+	scale := 1.0.
 
 	self addMorphFront: (Morph new
 		color: Color white;

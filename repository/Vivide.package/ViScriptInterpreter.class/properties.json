@@ -1,0 +1,21 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"objects",
+		"stack",
+		"step",
+		"properties",
+		"modelClass",
+		"objectsCache",
+		"bindings",
+		"first" ],
+	"name" : "ViScriptInterpreter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

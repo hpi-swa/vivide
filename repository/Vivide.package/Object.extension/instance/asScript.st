@@ -1,0 +1,4 @@
+*vivide
+asScript
+
+	self subclassResponsibility.

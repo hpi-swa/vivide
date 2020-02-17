@@ -1,9 +1,9 @@
-as yet unclassified
+connections and tuples
 tupleSizeInput
-	"Estimate the tuple size from the input objects."
+	"Estimate the tuple size from the input objects.See ViPane >> #baseClass."
 
 	^ self objects
-		ifEmpty: [1]
+		ifEmpty: [0]
 		ifNotEmpty: [:o |
 			(o allSatisfy: [:ea | ea isList])
 				ifFalse: [1]

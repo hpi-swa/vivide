@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"converterClass" : "mt 7/13/2019 09:31",
+		"setUp" : "mt 7/13/2019 09:42",
+		"tearDown" : "mt 7/13/2019 09:42",
+		"test01ReadWriteSteps" : "mt 7/13/2019 09:54",
+		"test02ImportExportProfile" : "mt 7/13/2019 10:04",
+		"test03ResolveIds" : "mt 7/13/2019 10:13",
+		"test04CleanUpOrganization" : "mt 7/13/2019 10:19",
+		"test05CleanUpArchive" : "mt 7/13/2019 10:24" } }

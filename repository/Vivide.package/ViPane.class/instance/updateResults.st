@@ -5,4 +5,4 @@ updateResults
 	self clearError.
 
 	self removeProperty: #lastSelection.
-	self model reset.
+	self script ifNotNil: [self model reset].

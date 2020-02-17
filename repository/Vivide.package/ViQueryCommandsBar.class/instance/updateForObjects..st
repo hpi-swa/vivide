@@ -1,11 +1,9 @@
 updating
-updateForObjects: someObjects
+updateForObjects: oneOrMoreObjects
 
-	| commands |
-	(ViQueryInterpreter isCollection: someObjects)
-		ifFalse: [^ self updateForObjects: {someObjects}].
-	
-	commands := ViQueryCommandsBar commandsForObjects: someObjects.
+	| commands objects |
+	objects := oneOrMoreObjects asList.	
+	commands := ViQueryCommandsBar commandsForObjects: objects.
 	
 	self flag: #performance. "mt: Only update changed buttons?"
 	self
@@ -14,4 +12,4 @@ updateForObjects: someObjects
 			(commands collect: [:cmd | self createButtonForCommand: cmd]),
 			{addBtn}.
 	
-	lastObjects := WeakArray withAll: someObjects.
+	lastObjects := WeakArray withAll: objects.

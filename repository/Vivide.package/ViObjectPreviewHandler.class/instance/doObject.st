@@ -1,4 +1,4 @@
-private
+preview - private
 doObject
 
 	self object ifNotNil: [

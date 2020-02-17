@@ -4,7 +4,8 @@
 	"instance" : {
 		"acceptObjectService:" : "mt 5/20/2015 15:04",
 		"asList" : "mt 6/9/2015 10:23",
-		"asRawScript" : "mt 7/7/2015 16:19",
-		"asScript" : "mt 7/9/2015 16:23",
+		"asScript" : "mt 4/26/2019 13:59",
 		"isList" : "mt 7/9/2015 14:30",
-		"unescapeEntities" : "mt 10/22/2014 06:16:09.164" } }
+		"unescapeEntities" : "mt 10/22/2014 06:16:09.164",
+		"withPunctuationTrimmed" : "mt 4/1/2019 14:16",
+		"withoutLeading:" : "mt 3/22/2018 17:15" } }

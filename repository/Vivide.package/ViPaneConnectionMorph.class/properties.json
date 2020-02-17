@@ -1,0 +1,17 @@
+{
+	"category" : "Vivide-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startPosition",
+		"endPosition",
+		"walls",
+		"tunnels" ],
+	"name" : "ViPaneConnectionMorph",
+	"pools" : [
+		 ],
+	"super" : "PolygonMorph",
+	"type" : "normal" }

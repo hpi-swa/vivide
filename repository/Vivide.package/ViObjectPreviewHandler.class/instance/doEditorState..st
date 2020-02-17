@@ -1,4 +1,4 @@
-operations
+vivide - other
 doEditorState: anEditorState
 	"If it is an extensional list, enumerate all objects. Show input objects for intensional lists. Show default preview for single objects."
 

@@ -1,4 +1,14 @@
 as yet unclassified
 zoomIn: refPoint
 
-	self scroller transformMorph scale: self scroller transformMorph scale * 1.2.
+	| delta old |
+	old := self scroller horizontalScrollBar currentValue
+		@ self scroller verticalScrollBar currentValue.
+	
+	self content submorphsDo: [:ea | ea zoomIn].
+	self scroller transformMorph fullBounds.
+	
+	delta := refPoint * (self content firstSubmorph scale - 1.0).
+	
+	self scroller verticalScrollBar currentValue: old y + delta y. 
+	self scroller horizontalScrollBar currentValue: old x + delta x.

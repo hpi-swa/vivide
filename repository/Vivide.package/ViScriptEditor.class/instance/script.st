@@ -1,4 +1,0 @@
-accessing
-script
-
-	^ script ifNil: ['']

@@ -1,4 +1,0 @@
-*VivideDynamicAnalysis
-doCallgraph: aCallgraph
-
-	^ nil  

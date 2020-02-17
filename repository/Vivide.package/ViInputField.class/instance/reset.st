@@ -5,7 +5,7 @@ reset
 		self lineEdit
 			theText: objs first].
 	
-	(self model firstStep allPropertySteps first valueOfProperty: #autoAccept
+	(self model firstStep allExtractionSteps first valueOfProperty: #autoAccept
 		ifAbsent: [false])
 			ifTrue: [self textEdit autoAccept: true.
 					self connect: self textEdit signal: #textEdited: toSelector: #acceptChanges.].

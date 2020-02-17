@@ -22,5 +22,5 @@ initializeUi
 	self sgConnectSignal: #artifactsAdded: toSelector: #updateHeaderText.
 	self sgConnectSignal: #artifactsRemoved: toSelector: #updateHeaderText.
 	"self sgConnectSignal: #lastArtifactRemoved toSelector: #closeIfEmpty."
-	self sgConnectSignal: #currentQueryChanged: toSelector: #updateHeaderText.
+	self sgConnectSignal: #scriptChanged: toSelector: #updateHeaderText.
 	self sgConnectSignal: #objectsChanged: toSelector: #updateHeaderText.

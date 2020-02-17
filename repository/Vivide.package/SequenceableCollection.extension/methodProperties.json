@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"asGroups" : "mt 10/6/2014 15:43:02.618",
-		"asScript" : "mt 11/26/2014 16:37:34.439",
-		"asTuples" : "mt 10/6/2014 15:45:37.493",
-		"expandGroup" : "mt 10/6/2014 15:44:44.5",
+		"asGroups" : "mt 4/16/2019 09:18",
+		"asScript" : "mt 4/26/2019 14:30",
+		"asTuples" : "mt 4/16/2019 09:18",
+		"expandGroup" : "mt 4/16/2019 09:18",
+		"flattenBy:" : "mt 7/16/2018 14:59",
 		"openScript" : "mt 10/10/2014 12:04:53.942",
 		"openScriptWith:" : "mt 10/10/2014 14:54:21.025" } }

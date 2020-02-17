@@ -1,4 +1,4 @@
-operations
+squeak - graphics
 doColor: aColor
 
 	| form |

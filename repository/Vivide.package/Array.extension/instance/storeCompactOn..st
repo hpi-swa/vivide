@@ -18,4 +18,6 @@ storeCompactOn: aStream
 					useLineBreaks
 						ifTrue: [aStream cr]
 						ifFalse: [aStream space]].
+			
+			useLineBreaks ifTrue: [aStream cr].
 			aStream nextPut: $}].

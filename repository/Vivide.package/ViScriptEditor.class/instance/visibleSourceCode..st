@@ -1,4 +1,4 @@
-accessing
+source code
 visibleSourceCode: someText
 
-	edit theText: someText.
+	self textField theText: someText.

@@ -2,25 +2,25 @@ initialization
 initializeMetaScriptFromPane: pane
 
 	| metaScript metaWidget |
-	metaScript := ViScriptPart convertPanes: {pane asDictionary}.
+	self flag: #metaScript.
+	
+	metaScript := ViScriptStep convertPanes: {pane asDictionary}.
 	metaWidget := ViMultiPaneTiled new addPane: pane; yourself.
 
 	"Preserve window color and label."
-	metaScript color: pane currentQuery color.
-	metaScript label: pane currentQuery label.
+	metaScript color: pane script color.
+	metaScript label: pane script label.
 
 	"Adopt organization of single pane's script."
-	metaScript adoptOrganization: pane currentQuery organization.
-	metaWidget adoptOrganization: pane currentQuery organization.
+	metaScript adoptOrganization: pane script organization.
+	metaWidget adoptOrganization: pane script organization.
 
 	self view: metaWidget.
 	"Avoid unnecessary updates by setting inst vars directly."
-	queries := pane queries.
-	self model resetSilently.
-	self model firstStep next: metaScript.
-	self model firstStep objects: pane objects.
+	self model firstStep: metaScript.
+	self model inputForChildren: pane objects.
 	metaWidget model: self model.
-	self recentQueriesAdd: metaScript.
+	self recentScriptsAdd: metaScript.
 
 	"Update connections."
 	pane connections copy

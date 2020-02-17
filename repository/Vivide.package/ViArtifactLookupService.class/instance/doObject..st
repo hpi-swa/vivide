@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doObject: anObject
 
 	self flag: #refactor. "mt: looks ugly..."

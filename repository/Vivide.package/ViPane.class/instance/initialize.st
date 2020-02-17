@@ -6,18 +6,17 @@ initialize
 	self
 		layoutPolicy: ViOverlappingLayout new;
 		color: Color transparent;
-		extent: 150@150.
+		extent: 150@150;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill.
 	
-	model := ViQueryNode new
+	self model: (ViModelNode new
 		pane: self;
-		firstStep: (ViQueryFillStep new objects: #()).
+		inputForChildren: #();
+		firstStep: nil;
+		yourself).
 	
 	self
 		initializeUiObjectChanges;
-		initializeUiQueryChanges;
+		initializeUiScriptChanges;
 		initializeUiSystemChanges.
-
-	self connect: self model signal: #modelReset toSelector: #notifyChangedResults.
-	self connect: self signal: #currentQueryChanged: toSelector: #notifyChangedResults.
-
-	self connect: self signal: #currentQueryChanged: toSelector: #recentQueriesAdd:.

@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doObject: anObject
 	"Use Morphic implementation as fallback."
 

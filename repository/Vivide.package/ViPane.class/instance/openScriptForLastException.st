@@ -1,14 +1,15 @@
-as yet unclassified
+errors
 openScriptForLastException
 
-	| script anchor |
-	script := self errorBtn valueOfProperty: #maliciousScript.
+	| d script anchor |
+	d := self errorBtn.
+	script := d valueOfProperty: #maliciousScript.
 	
-	anchor := self currentQuery.
+	anchor := self script.
 	
 	self flag: #todo. "mt: Support metascripts and references."
-	self currentQuery stepsDo: [:step |
-		step == script ifTrue: [^ VivideLight active openArtifact: self currentQuery]].
+	self script stepsDo: [:step |
+		step == script ifTrue: [^ VivideLight active openArtifact: self script]].
 
 	self flag: #tofix. "mt: open the correct script as entry point..."
 	VivideLight active openArtifact: script.

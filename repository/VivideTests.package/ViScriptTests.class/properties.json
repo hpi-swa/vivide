@@ -1,0 +1,14 @@
+{
+	"category" : "VivideTests-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ViScriptTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

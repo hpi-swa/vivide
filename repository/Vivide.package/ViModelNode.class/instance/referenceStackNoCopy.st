@@ -1,0 +1,4 @@
+stack
+referenceStackNoCopy
+
+	^ referenceStack

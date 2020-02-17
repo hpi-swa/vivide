@@ -1,8 +1,9 @@
 as yet unclassified
 drawConnectionsOn: aCanvas
 
-	| font col |
+	| font col handleExtent |
 	font := Preferences standardButtonFont.
+	handleExtent := (font height // 2) asPoint.
 	col := (Color r: 0.667 g: 0.667 b: 0.667). "#AAAAAA"
 	
 	self artifactContainers overlappingPairsDo: [:c1 :c2 | | reason1 reason2 pt1 pt2 offset |
@@ -16,25 +17,25 @@ drawConnectionsOn: aCanvas
 			ifTrue: [aCanvas line: pt1 to: pt2 color: col].
 		reason1 ifNil: [reason2 ifNotNil: [
 			aCanvas
-				frameOval: ((0@0 extent: 5@5) translateBy: pt1 - (2@2))
+				frameOval: ((0@0 extent: handleExtent) translateBy: pt1 - (handleExtent // 2))
 				color: col
 			]] ifNotNil: [
 			aCanvas
-				fillOval: ((0@0 extent: 5@5) translateBy: pt1 - (2@2))
+				fillOval: ((0@0 extent: handleExtent) translateBy: pt1 - (handleExtent // 2))
 				color: col;
 				drawString: reason1
-				at: (pt1 x - 5 - (font widthOfString: reason1)) @ (pt1 y + pt2 y // 2 - 12)
+				at: (pt1 x - handleExtent x - (font widthOfString: reason1)) @ (pt1 y - (font height // 2))
 				font: font
 				color: col].
 		reason2 ifNil: [reason1 ifNotNil: [
 			aCanvas
-				frameOval: ((0@0 extent: 5@5) translateBy: pt2 - (2@2))
+				frameOval: ((0@0 extent: handleExtent) translateBy: pt2 - (handleExtent // 2))
 				color: col
 			]] ifNotNil: [
 			aCanvas
-				fillOval: ((0@0 extent: 5@5) translateBy: pt2 - (2@2))
+				fillOval: ((0@0 extent: handleExtent) translateBy: pt2 - (handleExtent // 2))
 				color: col;
 				drawString: reason2
-				at: (pt1 x + 6) @ (pt1 y + pt2 y // 2 + 3)
+				at: (pt1 x + handleExtent x) @ (pt2 y - (font height // 2))
 				font: font
 				color: col]]

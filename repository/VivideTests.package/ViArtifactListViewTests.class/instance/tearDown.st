@@ -1,5 +1,5 @@
-as yet unclassified
+running
 tearDown
 
-	sut clear.
+	view clear. "Kind of explicit finalization and garbage collect."
 	super tearDown.

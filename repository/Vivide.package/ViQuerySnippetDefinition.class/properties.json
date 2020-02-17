@@ -1,5 +1,5 @@
 {
-	"category" : "Vivide-Queries",
+	"category" : "Vivide-Scripts",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -12,5 +12,5 @@
 	"name" : "ViQuerySnippetDefinition",
 	"pools" : [
 		 ],
-	"super" : "ViQueryStepDefinition",
+	"super" : "ViScriptDefinition",
 	"type" : "normal" }

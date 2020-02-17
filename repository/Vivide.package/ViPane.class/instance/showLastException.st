@@ -1,7 +1,8 @@
 errors
 showLastException
 
-	| box buttons label errorText scriptText |
+	| d box buttons label errorText scriptText |
+	d := self errorBtn.
 	box := Morph new
 		color: Color white;
 		addDropShadow;
@@ -31,11 +32,11 @@ showLastException
 		btn
 			buttonStyle: #iconOnly;
 			icon: UiSilkIcons bugIcon;
-			balloonText: ((self errorBtn hasProperty: #suspendedProcess)
+			balloonText: ((d hasProperty: #suspendedProcess)
 				ifTrue: ['Open a debugger (not proceed-able)']
 				ifFalse: ['Process already terminated. Please run script again.']);
 			color: Color white;
-			enabled: (self errorBtn hasProperty: #suspendedProcess).
+			enabled: (d hasProperty: #suspendedProcess).
 		self connect: btn signal: #clicked: to: box selector: #delete.
 		self connect: btn signal: #clicked: toSelector: #openDebuggerForLastException.
 		buttons addMorphBack: btn].
@@ -61,17 +62,17 @@ showLastException
 		buttons addMorphBack: btn].
 	
 	
-	errorText := '<b>', (self errorBtn valueOfProperty: #description) escapeHtmlText, '</b>', String cr.
-	scriptText := (self errorBtn valueOfProperty: #maliciousScript)
+	errorText := '<b>', (d valueOfProperty: #description) escapeHtmlText, '</b>', String cr.
+	scriptText := (d valueOfProperty: #maliciousScript)
 		ifNotNil: [:script | script sourceCode]
 		ifNil: [''].
 	scriptText := ViTextStyler new styledTextFor: scriptText asText.
 	
-	label := (errorText asHtmlText, scriptText asText) asMorph.
+	label := (errorText asTextFromHtml, scriptText asText) asMorph.
 		
 	box addAllMorphs: {label. buttons}.
 				
-	box topLeft: self errorBtn bottomLeft + (0@5).
+	box topLeft: d fullBounds bottomLeft + (0@5).
 	box bounds: (box bounds translatedToBeWithin: RealEstateAgent maximumUsableArea).
 	
 	box setProperty: #indicateKeyboardFocus toValue: #never.

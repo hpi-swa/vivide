@@ -1,12 +1,13 @@
 actions - editing
 loadPreviousVersion
 
-	self flag: #todo:. "Step versions resp. its properties."
-	(ViScriptVersion versionsOfMethod: self object definition referenceInArchive) in: [:versions | 
+	(ViScriptVersion versionsOfMethod: self thisStep referenceInArchive) in: [:versions | 
 		| current |
-		current := versions first timeStamp.
+		current := versions first.
 		(versions allButFirst
-			detect: [:v | v timeStamp < current]
+			detect: [:v | v timeStamp < current timeStamp or: [v timeStamp = current timeStamp and: [v sourceString ~= current sourceString]]]
 			ifNone: []) ifNotNil: [:prev |
-				self object definition mergeFromDictionary: prev asDictionary.
-				prev fileIn]].
+				self thisStep converter
+					into: self thisStep organization
+					during: [:converter | converter importStep: prev asDictionary].
+				prev fileIn "To be compatible with Squeak's versioning."]].

@@ -1,4 +1,4 @@
 events
 grabKeyboard
 
-	edit grabKeyboard.
+	self textField grabKeyboard.

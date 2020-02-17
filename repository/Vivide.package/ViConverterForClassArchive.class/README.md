@@ -1,0 +1,1 @@
+Exports Vivide objects into a single class using a method for each object. Use this for Monticello and Squeak's sender/version tools.

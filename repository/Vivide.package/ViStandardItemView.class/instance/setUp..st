@@ -19,6 +19,9 @@ setUp: aScript
 	self
 		setProperty: #selectNone
 		toValue: (aScript valueOfProperty: #selectNone ifAbsent: [false]).
+	self
+		setProperty: #selectSame
+		toValue: (aScript valueOfProperty: #selectSame ifAbsent: [false]).
 
 	(aScript valueOfProperty: #searchBar ifAbsent: [true])
 		ifTrue: [self showSearchBar]

@@ -6,7 +6,7 @@ interrupt: aProcess label: aString
 		ifTrue: [^ super interrupt: aProcess label: aString].
 		
 	Preferences logDebuggerStackToFile
-		ifTrue: [(aString includesSubString: 'Space') & (aString includesSubString: 'low')
+		ifTrue: [(aString includesSubstring: 'Space') & (aString includesSubstring: 'low')
 			ifTrue: [Smalltalk logError: aString inContext: aProcess suspendedContext to: 'LowSpaceDebug.log']].
 	
 	errorWasInUIProcess := Project current spawnNewProcessIfThisIsUI: aProcess.

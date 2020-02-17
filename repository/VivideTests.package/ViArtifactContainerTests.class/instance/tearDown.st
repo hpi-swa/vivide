@@ -1,5 +1,8 @@
-as yet unclassified
+running
 tearDown
 
-	editor close.
+	window
+		ifNil: [editor close]
+		ifNotNil: [window close].
+		
 	super tearDown.

@@ -1,4 +1,4 @@
 memento - data
 hasUnacceptedChanges
 
-	^ edit hasUnacceptedChanges
+	^ self textField hasUnacceptedChanges

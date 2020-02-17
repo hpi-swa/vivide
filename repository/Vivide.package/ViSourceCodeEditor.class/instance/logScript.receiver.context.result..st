@@ -11,7 +11,7 @@ logScript: string receiver: recvr context: ctxt result: obj
 	VivideLight active ifNil: [^ self].
 
 	selfSent := string includesSubstring: 'self' caseSensitive: true.
-	receiverIsCollection := ViQueryInterpreter isCollection: recvr.
+	receiverIsCollection := recvr isList.
 	
 	self flag: #suspicious. "mt: Not so easy to hide collections, eh?"
 	(receiverIsCollection and: [recvr isEmpty])
@@ -24,15 +24,7 @@ logScript: string receiver: recvr context: ctxt result: obj
 			receiverIsCollection: selfSent & receiverIsCollection;
 			inputKind: (selfSent ifFalse: [UndefinedObject]
 				ifTrue: [receiverIsCollection
-					ifTrue: [(ViQueryStepDefinition collectBaseClassesForContext: recvr) first]
+					ifTrue: [(ViScriptDefinition collectBaseClassesForContext: recvr) first]
 					ifFalse: [recvr class]])].
 	
-	similarDef := ViQueryOrganizer active snippetDefinitions
-		detect: [:def | (def method = newDef method
-			and: [def inputKind = newDef inputKind])
-			and: [def receiverIsCollection = newDef receiverIsCollection]]
-		ifNone: [
-			newDef adoptOrganization: ViQueryOrganizer active.
-			^ self].
-
-	self flag: #merge. "mt: Merge similarDef with newDef."
+	newDef retain.

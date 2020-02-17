@@ -15,6 +15,6 @@ drawOn: aCanvas
 			width: 1
 			color: (Color fromString: '#999999').
 		self flag: #performance. "mt: Draw text directly or cache text morph object."
-		'<font size="9" color="#999999">No scenario found.</font>' asHtmlText asMorph
+		'<font size="9" color="#999999">No scenario found.</font>' asTextFromHtml asMorph
 			center: self center;
 			drawOn: aCanvas].

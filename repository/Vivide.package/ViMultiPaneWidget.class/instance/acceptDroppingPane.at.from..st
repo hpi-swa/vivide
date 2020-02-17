@@ -7,7 +7,7 @@ acceptDroppingPane: aPane at: aPoint from: source
 		Error signal: 'Cannot modify default script here. Copy first.'].
 
 	"Compose a tree."
-	aPane currentQuery isMeta ifTrue: [
+	aPane script isMeta ifTrue: [
 		self wrapPanesIntoMultiPaneWidget].
 
 	"Drop source context because this pane is embedded in a new one."
@@ -16,8 +16,8 @@ acceptDroppingPane: aPane at: aPoint from: source
 		thenDo: [:c | c detach].
 
 	"Auto copy to avoid script stealing from default organization."
-	aPane currentQuery ifNotNil: [:script |
-		script isDefault ifTrue: [aPane currentQuery: script deepCopy]].
+	aPane script ifNotNil: [:script |
+		script isDefault ifTrue: [aPane script: script deepCopy]].
 
 	aPane
 		topLeft: aPoint;

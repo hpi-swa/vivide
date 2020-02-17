@@ -5,6 +5,6 @@ optimalHeight
 	^ self currentVisibleView optimalHeight
 		+ self searchEdit height + 3
 		+ self cellInset
-		+ ((self commandsBar world isNil)
+		+ ((self commandsBar owner isNil)
 			ifTrue: [0]
-			ifFalse: [self commandsBar fullBounds height])
+			ifFalse: [self commandsBar fullBounds height + 3])

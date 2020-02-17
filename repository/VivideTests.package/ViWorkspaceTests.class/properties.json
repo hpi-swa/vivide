@@ -1,0 +1,14 @@
+{
+	"category" : "VivideTests-Integration",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "mt 8/2/2019 11:50",
+	"instvars" : [
+		 ],
+	"name" : "ViWorkspaceTests",
+	"pools" : [
+		 ],
+	"super" : "VivideTestCase",
+	"type" : "normal" }

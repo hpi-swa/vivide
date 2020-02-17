@@ -1,4 +1,4 @@
-private
+preview - private
 setPanelPositionAt: globalBounds
 	"If a panel was built, show it relative to the given global bounds."
 	

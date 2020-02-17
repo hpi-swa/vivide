@@ -1,14 +1,17 @@
 support - debugging
 interpretUpToDetect: block
-
+	"Interprets the entire visible script with the objects on top as input."
+	
 	| input |
-	input := self originalInput. "We need to call this here because we need to have updated context."
-
-	otherSteps overlappingPairsDo: [:s1 :s2 |
-		s1 next == s2 ifFalse: [
-			self warningSent: 'Some steps are not connected. Fix that first.'.
-			^ nil]].
+	input := Array streamContents: [:stream |
+		self context detect: [:obj | obj isScript
+				ifTrue: [true "stop here"]
+				ifFalse: [stream nextPutAll: obj asList. false]]].
+	
+	self checkAllStepsConnected ifFalse: [^ nil].
 		
-	^ (ViQueryInterpreter on: (ViQueryStep use: input in: otherSteps first))
-		upToDetect: block;
-		yourself
+	^ (ViScriptInterpreter
+		on: self allSteps first
+		using: input)
+			upToDetect: block;
+			yourself

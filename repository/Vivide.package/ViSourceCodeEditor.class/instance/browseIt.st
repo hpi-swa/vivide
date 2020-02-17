@@ -1,10 +1,17 @@
 menu messages
 browseIt
+	"Browse class or implementors or query class by pattern."
 
 	| aSymbol |
 	self lineSelectAndEmptyCheck: [^ self].
-	(aSymbol := self selectedSymbol) == nil ifTrue: [^ morph flash].
+
+	((aSymbol := self selectedSymbol) notNil and: [aSymbol first isLowercase])
+		ifTrue: [morph requestImplementors: aSymbol].
 	
-	(Smalltalk at: aSymbol ifAbsent: [nil])
-		ifNil: [morph requestImplementors: aSymbol]
-		ifNotNil: [:cls | #outline openScriptWith: {cls}].
+	aSymbol ifNil: [aSymbol := self selection asString].
+	
+	(SystemNavigation default allClassesAndTraitsMatching: aSymbol)
+		ifNotEmpty: [:classes |
+			classes size = 1
+				ifTrue: [ #outline openScriptWith: classes]
+				ifFalse: [ #defaultPropertiesExtended openScriptWith: classes]].

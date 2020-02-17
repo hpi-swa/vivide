@@ -11,7 +11,7 @@ open
 	ActiveVivide := self.
 	ActiveHand addKeyboardListener: self.
 	
-	self initializeSystemChangeNotifications.
-
+	self initializeToolSet.
+	
 	"Allow dropping things in the world."
 	self world transferMorphConverter: #openArtifactsForTransferMorph:.

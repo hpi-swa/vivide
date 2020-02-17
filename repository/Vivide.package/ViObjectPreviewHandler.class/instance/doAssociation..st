@@ -1,4 +1,4 @@
-as yet unclassified
+squeak - collections
 doAssociation: assoc
 
 	^ self doObject: assoc value

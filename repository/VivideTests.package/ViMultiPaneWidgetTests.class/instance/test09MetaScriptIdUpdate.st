@@ -2,7 +2,7 @@ tests
 test09MetaScriptIdUpdate
 	
 	| script |
-	script := pane currentQuery.
+	script := pane script.
 	self assert: self metaScript metaReference == script.
 	self assert: (self metaScript metaScriptReferences identityIncludes: script).
 

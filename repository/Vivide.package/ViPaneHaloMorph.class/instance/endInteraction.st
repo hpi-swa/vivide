@@ -3,7 +3,11 @@ endInteraction
 
 	positionOffset := nil.
 
+	outputConnections valuesDo: [:spec | spec first borderColor: self fanOutColor]. 
+
 	self comeToFront.
 	self bounds: self target worldBoundsForHalo.
 	self redrawLater.
+	
 	self addHandles.
+	hand ifNotNil: [:h | h newMouseFocus: self].

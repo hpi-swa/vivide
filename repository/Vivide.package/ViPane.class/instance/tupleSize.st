@@ -1,5 +1,6 @@
-tuples
+connections and tuples
 tupleSize
 
-	self connections ifEmpty: [^ self tupleSizeInput].
-	^ self connections count: [:c | c target == self]
+	^ self validInputConnections
+		ifEmpty: [self tupleSizeInput]
+		ifNotEmpty: [:connections | connections size]

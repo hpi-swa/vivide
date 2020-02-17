@@ -12,5 +12,8 @@ initializeArtifact
 		colorBackground: Color white;
 		autoCreateArtifacts: true;
 		margins: (4@4 corner: 4@4).
-		
+	
+	"Keyboard shortcuts."
+	sourceCodeEdit eventHandler on: Character escape send: #tryQuickClear to: self.
+	
 	self artifact: sourceCodeEdit.

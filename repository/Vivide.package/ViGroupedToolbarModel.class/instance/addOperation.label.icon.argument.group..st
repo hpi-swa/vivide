@@ -5,6 +5,6 @@ addOperation: aSymbol label: aString icon: aForm argument: anObject group: aGrou
 		at: #operation put: aSymbol;
 		at: #argument put: anObject;
 		at: #text put: aString;
-		at: #icon put: aForm;
+		at: #icon put: (aForm ifNotNil: [:f | f scaledToDisplay]);
 		at: #group put: aGroupLabel;
 		yourself).

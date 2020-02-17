@@ -13,8 +13,8 @@ initializeToolbarObjects
 	self toolbar leftPanel
 		addGroup: #protocols
 		icon: UiFugueIcons priceTagIcon
-		contents: [:editor | self theClass ifNil: [#()] ifNotNil: [:cls |
-				{self protocol. '--------------' -> ''}, ((ViProtocol protocolsForClass: cls)
+		contents: [:editor | editor theClass ifNil: [#()] ifNotNil: [:cls |
+				{editor protocol. '--------------' -> ''}, ((ViProtocol protocolsForClass: cls)
 					sorted: [:p1 :p2 | p1 protocolname  <= p2 protocolname])]]
 		helpText: 'No protocols found.'.
 

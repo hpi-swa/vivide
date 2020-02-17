@@ -1,4 +1,4 @@
-as yet unclassified
+errors
 triggerShowError: ex
 
 	| thisProcess errorWasInUIProcess description maliciousScript |

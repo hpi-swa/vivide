@@ -3,7 +3,7 @@ chooseSnippet
 
 	| pg |
 	pg := ViPane new.
-	pg currentQuery: {
+	pg script: {
 		[:objects | ViQueryCommandsBar appropriateSnippetsFor: objects].
 		[:snippetDef | #text -> snippetDef sourceCode]} asScript.
 	pg objects: (lastObjects asOrderedCollection reject: [:o | o isNil]).

@@ -2,7 +2,7 @@ initialization - bookmarks
 addTranscript
 
 	self addScript: {
-		[ViProfile active ifNotNil: #transcriptHistory] -> {
+		[VivideLight historyFor: #transcript] -> {
 			#id -> #transcript.
 			#label -> 'Transcript'.
 			#isGlobal -> true.
@@ -11,7 +11,7 @@ addTranscript
 			#view -> ViTextView.
 			#scrollToBottom -> true.
 			#notifier -> [ViObjectHistoryNotifier new
-				history: (ViProfile active ifNotNil: #transcriptHistory)]}.
+				history: (VivideLight historyFor: #transcript)]}.
 		 [:history | history objects].
 		 [:entry | #text -> ('[', entry key time print24, '] ', entry value)]
 	} asScript.

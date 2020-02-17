@@ -1,0 +1,4 @@
+actions
+removeStep
+
+	self deleteScript.

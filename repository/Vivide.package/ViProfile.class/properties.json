@@ -8,16 +8,10 @@
 	"instvars" : [
 		"organization",
 		"bookmarks",
-		"closedObjects",
-		"recentClasses",
-		"recentMethods",
-		"recentPackages",
-		"recentScripts",
-		"transcriptHistory",
 		"label",
-		"archive",
 		"id",
-		"defaultView" ],
+		"defaultView",
+		"converter" ],
 	"name" : "ViProfile",
 	"pools" : [
 		 ],

@@ -4,9 +4,9 @@ addFormattedScripts
 	self addScript: {
 	
 		[:scripts | scripts sorted: [:s1 :s2 | s1 priority <= s2 priority]] -> {
-			#inputKind -> ViQueryStep. #outputKind -> ViQueryStep.
+			#inputKind -> ViScriptStep. #outputKind -> ViScriptStep.
 			#label -> 'Scripts'.
-			#id -> #formattedQueries.
+			#id -> #formattedScripts.
 			#view -> ViTreeView.
 			#yieldOn -> #(activated)}.
 		[:scripts | scripts reject: [:script | script valueOfProperty: #isNew ifAbsent: false]].
@@ -14,6 +14,6 @@ addFormattedScripts
 			#icon -> (script nextIcon ifNil: [ViIcons blankIcon]).
 			#text -> (script nextLabel
 				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}].
-		[:script | #text -> script baseClassName]
+		[:script | #text -> script baseClass name]
 	
 	} asScript.

@@ -3,13 +3,12 @@ acceptDroppingObject: anObject at: aPoint from: source
 
 	| pane |
 	pane := ViPane new
-		queries: [self organization orderedSteps];
 		"Force usage of an identity script because we want to script the objects in a new way."
-		in: [:p | p currentQuery: p createIdentityScript];
+		script: ('[:object | object]' asScript adoptOrganization: self organization; yourself);
 		objects: anObject asList;
 		yourself.
 
-	self assert: pane currentQuery notNil.
+	self assert: pane script notNil.
 	
 	[^ self
 		acceptDroppingPane: pane

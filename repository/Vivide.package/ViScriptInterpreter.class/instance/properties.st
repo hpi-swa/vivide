@@ -1,0 +1,4 @@
+accessing - extraction
+properties
+
+	^ properties

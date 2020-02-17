@@ -1,12 +1,17 @@
-as yet unclassified
+actions - debugging
 exploreOutputTrace
 
 	| result |
-	result := OrderedCollection with: self originalInput.
+	result := OrderedDictionary new.
 
-	self firstStep stepsDo: [:s |
-		(self interpretUpToDetect: [:sc | sc == s]) ifNotNil: [:interpreter |
-			result add: (interpreter objects at: #all)].
-		s == self object ifTrue: [^ result explore]].
-	
-	Error signal: 'Should not happen.'.
+	(self interpretUpToDetect: [:step :input :interpreter |
+		result
+			at: step
+			put: {interpreter objects copy. interpreter properties copy}.
+		step = self thisStep])
+			in: [:interpreter |
+				result
+					at: #output
+					put: {interpreter objects copy. interpreter properties copy}].
+		
+	result explore.

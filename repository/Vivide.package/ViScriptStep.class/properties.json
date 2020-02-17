@@ -1,0 +1,19 @@
+{
+	"category" : "Vivide-Scripts",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"UseHorizontalLists" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"isProperty",
+		"isExecutedAsynchronously",
+		"definition",
+		"icon",
+		"label",
+		"next" ],
+	"name" : "ViScriptStep",
+	"pools" : [
+		 ],
+	"super" : "ViScriptObject",
+	"type" : "normal" }

@@ -1,7 +1,11 @@
 instance creation
-named: aString inClass: aClass
+named: aStringOrNil inClass: aClass
 
-	(aClass organization categories includes: aString)
-		ifFalse: [aClass organization addCategory: aString].
+	| protocolname |
+	protocolname := aStringOrNil ifNil: [Categorizer default].
+	
+	"Add category if not present."
+	(aStringOrNil notNil and: [(aClass organization categories includes: aStringOrNil) not])
+		ifTrue: [aClass organization addCategory: protocolname].
 		
-	^ self new protocolname: aString; theClass: aClass
+	^ self new protocolname: protocolname; theClass: aClass

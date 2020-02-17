@@ -1,11 +1,11 @@
-building
+preview - building
 textboxFor: aStringOrText color: aColor
 
 	| box |
 	(aStringOrText isNil or: [aStringOrText isEmpty]) ifTrue: [^ nil].
 	
 	box := UiTextEdit new
-		extent: 300@150;
+		extent: ((300@150) * RealEstateAgent scaleFactor) rounded;
 		colorBackground: aColor;
 		updateFocusColor: false;  
 		scrollingMode: #limit;
@@ -14,6 +14,6 @@ textboxFor: aStringOrText color: aColor
 		readOnly: true;  
 		theText: aStringOrText asHtmlText.
 		
-	box width: (box optimalWidth min: 400).
+	box width: (box optimalWidth min: (400 * RealEstateAgent scaleFactor) rounded).
 	
 	^ box

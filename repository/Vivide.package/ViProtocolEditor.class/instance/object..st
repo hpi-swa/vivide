@@ -1,9 +1,10 @@
 accessing - object
-object: aProtocol
+object: protocolOrAssociation
 
-	protocol := aProtocol.
+	(protocolOrAssociation isKindOf: Association)
+		ifTrue: [protocol := ViProtocol named: protocolOrAssociation value inClass: protocolOrAssociation key]
+		ifFalse: [protocol := protocolOrAssociation].
 
-	aProtocol ifNotNil: [:p |
-		self theClass: p theClass].
+	protocol ifNotNil: [:p | self theClass: p theClass].
 	
 	self clear.

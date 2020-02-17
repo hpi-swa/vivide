@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doCompiledMethodReally: aMethod
 
 	self flag: #performance. "mt: Is it slow?"

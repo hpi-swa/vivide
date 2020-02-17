@@ -4,14 +4,14 @@ A programming environment and framework that supports *interactive*, *data-drive
 
 ## How to Install [![Build Status](https://secure.travis-ci.org/hpi-swa/vivide.png?branch=master)](http://travis-ci.org/hpi-swa/vivide)
 
-1. Get [Squeak 5.1 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
+1. Get [Squeak 5.2 or later](http://www.squeak.org) with a recent [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) for your operating system.
 2. If not already integrated, load [Metacello](https://github.com/dalehenrich/metacello-work). Learn how it [works](https://github.com/dalehenrich/metacello-work/blob/master/docs/MetacelloUserGuide.md).
 3. Finally, load VIVIDE into your Squeak image:
 
 ```Smalltalk
 Metacello new
   baseline: 'Vivide';
-  repository: 'github://hpi-swa/vivide/repository';
+  repository: 'github://hpi-swa/vivide:master-squot/repository';
   load.
 ```
 
@@ -23,11 +23,57 @@ See [FAQ](https://github.com/hpi-swa/vivide/wiki/FAQ) for further information.
 
 You can download a Squeak/Smalltalk image with the latest working version of Vivide pre-installed from [here](https://www.hpi.uni-potsdam.de/hirschfeld/artefacts/vivide/). Additionally, you may want to get the latest [OpenSmalltalkVM](https://github.com/OpenSmalltalk/opensmalltalk-vm) and [sources](http://ftp.squeak.org/sources_files/) file.
 
-## Applications
+## Projects and Applications
 
 * [CCMail](https://github.com/calmez/CCMail) - a mail client by [Conrad Calmez](https://github.com/calmez)
 * [Gramada](https://github.com/hpi-swa/Gramada) - interactive DSL creation by [Patrick Rein](https://github/codeZeilen)
 * [Matriona](https://github.com/hpi-swa/smalltalk-nested-classes) - tools for a new module system by [Matthias Springer](https://github.com/matthias-springer) and [Fabio Niephaus](https://github.com/fniephaus)
+
+### How to cite this work
+
+If you did work based on (or related to) Vivide and want to write about that work, you can refer to our project as follows:
+
+```Bibtex
+@inproceedings{taeumel2014interleaving,
+ author = {Taeumel, Marcel and Perscheid, Michael and Steinert, Bastian and Lincke, Jens and Hirschfeld, Robert},
+ title = {Interleaving of Modification and Use in Data-driven Tool Development},
+ booktitle = {Proceedings of the 2014 ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming \& Software},
+ series = {Onward! 2014},
+ year = {2014},
+ isbn = {978-1-4503-3210-1},
+ location = {Portland, Oregon, USA},
+ pages = {185--200},
+ numpages = {16},
+ url = {http://doi.acm.org/10.1145/2661136.2661150},
+ doi = {10.1145/2661136.2661150},
+ acmid = {2661150},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {adaptation, graphical tools, reflection, scripting, tool building, vivide},
+}
+```
+
+The following publication describes a different aspect of this work:
+
+```Bibtex
+@inproceedings{taeumel2012vivide,
+ author = {Taeumel, Marcel and Steinert, Bastian and Hirschfeld, Robert},
+ title = {The VIVIDE Programming Environment: Connecting Run-time Information with Programmers' System Knowledge},
+ booktitle = {Proceedings of the ACM International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+ series = {Onward! 2012},
+ year = {2012},
+ isbn = {978-1-4503-1562-3},
+ location = {Tucson, Arizona, USA},
+ pages = {117--126},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2384592.2384604},
+ doi = {10.1145/2384592.2384604},
+ acmid = {2384604},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrent views, dynamic analysis, navigation, program comprehension, programming environments, source code},
+}
+```
 
 ## Videos
 
@@ -52,12 +98,13 @@ Here is an older screencast about how to create a code browser and modify its ap
 
 ## Acknowledgements
 
-We are very thankful for any feedback in the form of bug reports, discussions, or even custom applications. Vivide is mainly developed by [Marcel Taeumel](https://github.com/marceltaeumel) in context of his PhD thesis. To date, the following people also contributed to this project:
+We are very thankful for any feedback in the form of bug reports, discussions, or even custom applications. Vivide is designed and implemented by [Marcel Taeumel](https://github.com/marceltaeumel) in context of his PhD thesis. To date, the following people also contributed to this project:
 
 Pavel Belskiy,
 Lars Blumberg,
 Thomas Bünger,
 [Conrad Calmez](https://github.com/calmez),
+[Jonas Chromik](https://github.com/jchromik),
 Falco Duersch,
 [Tim Felgentreff](https://github.com/timfel),
 Maxi Fischer,
@@ -81,9 +128,10 @@ Philipp Otto,
 [Tobias Pape](https://github.com/krono),
 Tobias Pfeiffer,
 Stephanie Platz,
+[Stefan Ramson](https://github.com/onsetsu),
 Jan Rehwaldt,
 [Patrick Rein](https://github.com/codeZeilen),
-Jakob Reschke,
+[Jakob Reschke](https://github.com/j4yk),
 Oliver Richter,
 Marko Röder,
 [Robin Schreiber](https://github.com/merryman),
@@ -98,5 +146,3 @@ Juliane Waack,
 Florian Wagner,
 Daniel Werner,
 Sebastian Woinar
-
-

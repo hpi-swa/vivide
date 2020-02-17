@@ -1,4 +1,4 @@
-as yet unclassified
+updating - deferred objects
 triggerDeferredObjects
 
 	self setProperty: #shouldSetObjects toValue: true.

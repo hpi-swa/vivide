@@ -3,13 +3,30 @@ step1a584c05b8fcdc438564d48f2c2b954b
 	<step>
 
 	^ (Dictionary newFrom: {
-(#class -> ViQueryTransformStep).
-(#definition -> #'664dac2d-ff00-6c42-a83d-3a52f5a83749').
+(#'_def' -> (Dictionary newFrom: {
+(#block -> [:in :out | out addAll: ([:packages | packages gather: [:pkg |
+	pkg classes]] value: in)]).
+(#className -> #ViScriptDefinition).
+(#id -> #'712a4be8-7568-4e4c-8210-de3af483673b').
+(#properties -> (Dictionary newFrom: {
+(#creationAuthor -> 'mt').
+(#creationTimeStamp -> '28 August 2013 2:37:39 pm')
+})).
+(#sourceCode -> '[:in :out | out addAll: ([:packages | packages gather: [:pkg |
+	pkg classes]] value: in)]')
+})).
+(#className -> #ViScriptStep).
+(#definition -> #'712a4be8-7568-4e4c-8210-de3af483673b').
 (#iconCode -> 'UiFugueIcons keyboardExclamationIcon').
 (#id -> #'1a584c05-b8fc-dc43-8564-d48f2c2b954b').
+(#isProperty -> false).
 (#label -> 'Inconsistent grab-/hasKeyboard').
 (#next -> #'5b3d233e-c93c-0b42-b8ba-fafb41d70a9e').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '28 August 2013 2:37:39 pm').
-(#priority -> 740)}))})
+(#inputKind -> PackageInfo).
+(#priority -> 740).
+(#view -> ViTreeViewExtended)
+}))
+})

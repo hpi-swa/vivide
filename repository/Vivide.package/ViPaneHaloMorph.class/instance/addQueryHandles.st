@@ -2,11 +2,11 @@ handles
 addQueryHandles
 
 	| buttons box |
-	buttons := self target recentQueries collect: [:q |
+	buttons := self target recentScripts collect: [:q |
 		ViDraggableButton new
 			checkable: true;
 			color: ((UserInterfaceTheme current get: #color for: #BalloonMorph) ifNil: [Color gray: 0.85]);
-			checked: self target currentQuery == q;
+			checked: self target script == q;
 			icon: (q nextIcon ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
 				ifTrue: [UiFugueIcons newIcon] ifFalse: [ViIcons controlRecordSmallSunkenIcon]]) scaledToDisplay;
 			balloonText: (q nextLabel
@@ -16,10 +16,10 @@ addQueryHandles
 				ifNil: [(q valueOfProperty: #isNew ifAbsent: [false])
 					ifTrue: ['*new*'] ifFalse: ['(unnamed)']]
 				ifNotNil: [:l | l withoutLineEndingsTruncatedTo: 25]);
-			buttonStyle: (self target currentQuery == q
+			buttonStyle: (self target script == q
 				ifTrue: [#textBesideIcon]
 				ifFalse: [#iconOnly]);
-			layoutInset: (self target currentQuery == q
+			layoutInset: (self target script == q
 				ifTrue: [0@ -1 corner: 1@ -2]
 				ifFalse: [0]);
 			setProperty: #query toValue: q;
@@ -47,17 +47,17 @@ addQueryHandles
 	box addMorphBack: (Morph new color: Color transparent; extent: 20@12). "spacer"
 	
 	{
-	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseQuery}.
-	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #debugQuery}.
+	{'Choose script'. ViIcons icons8ExpandArrow64px1Icon scaledToDisplay. Color yellow darker. #chooseAndOpenScript}.
+	{'Edit script'. ViIcons icons8Edit32pxIcon scaledToDisplay. Color gray: 0.85. #editScript}.
 	"{'Copy script'. ViIcons plusSmallSunkenIcon. Color green darker. #copyQuery}."
-	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #addQuery}.
+	{'Add script'. ViIcons icons8Add32pxIcon scaledToDisplay. Color green darker. #(addScript editScript)}.
 	} do: [:spec | | btn |
 		btn := UiToolButton new
 			buttonStyle: #iconOnly;
 			color: spec third;
 			icon: spec second;
 			balloonText: spec first.
-		self connect: btn signal: #clicked: to: self target selector: spec fourth.
+		spec fourth asList do: [:selector | self connect: btn signal: #clicked: to: self target selector: selector].
 		self connect: btn signal: #clicked: toSelector: #delete.
 		box addMorphBack: btn].
 

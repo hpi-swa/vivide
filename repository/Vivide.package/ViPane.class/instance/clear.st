@@ -5,12 +5,12 @@ clear
 		connection detach].
 	
 	ViObjectChangeNotifier uniqueInstance noMoreNotificationsFor: self.
-	ViQueryChangeNotifier uniqueInstance noMoreNotificationsFor: self.
+	ViScriptChangeNotifier active noMoreNotificationsFor: self.
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	
 	self clearError.
 	
 	self view ifNotNil: #clear.
-	self currentQuery: nil.
+	self script: nil.
 	
 	self flag: #todo. "mt: Clear artifact list containers! Or any other editing state in views...?"

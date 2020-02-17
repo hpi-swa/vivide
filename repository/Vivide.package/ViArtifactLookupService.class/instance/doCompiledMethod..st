@@ -1,4 +1,4 @@
-operations
+squeak - kernel
 doCompiledMethod: aCompiledMethod
 
 	^ ViMethodEditor

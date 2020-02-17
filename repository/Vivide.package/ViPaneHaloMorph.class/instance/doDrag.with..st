@@ -19,4 +19,4 @@ doDrag: evt with: dragHandle
 	target layoutChanged. "Needed for layout algorithm."
 	
 	self topLeft: evt cursorPoint - positionOffset.
-	dragHandle position: evt cursorPoint - (dragHandle extent // 2).
+	dragHandle center: evt cursorPoint + (dragHandle valueOfProperty: #clickOffset).

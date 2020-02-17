@@ -1,4 +1,4 @@
-operations
+squeak - tools
 doPackageInfo: aPackageInfo
 
 	| mcp wc |
@@ -9,6 +9,6 @@ doPackageInfo: aPackageInfo
 
 	wc := mcp workingCopy.
 		
-	wc repositoryGroup repositories size > 1 "cache repo and a real one"
-		ifFalse: [^ wc repositoryGroup repositories first description]
-		ifTrue: [^ wc repositoryGroup repositories second description]
+	^ wc repositoryGroup repositories size > 1 "cache repo and a real one"
+		ifFalse: [wc repositoryGroup repositories first description copyReplaceAll: '\' with: '\\']
+		ifTrue: [^ wc repositoryGroup repositories second description copyReplaceAll: '\' with: '\\']

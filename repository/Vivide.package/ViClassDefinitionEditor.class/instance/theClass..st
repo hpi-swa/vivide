@@ -5,7 +5,7 @@ theClass: aClassOrMetaClass
 		ifNil: [self setDefaultClassDefinition]
 		ifNotNil: [:cls |
 			self artifact
-				theClass: cls theNonMetaClass;
+				theClass: (cls isClassReference ifTrue: [cls actualClass] ifFalse: [cls]) theNonMetaClass;
 				autoCreateArtifacts: true].
 	
 	self resetSource.

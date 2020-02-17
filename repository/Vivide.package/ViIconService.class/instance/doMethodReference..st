@@ -1,4 +1,4 @@
-operations
+squeak - system
 doMethodReference: aMethodReference  
 
 	^ aMethodReference isValid

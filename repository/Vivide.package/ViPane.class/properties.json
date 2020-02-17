@@ -1,5 +1,5 @@
 {
-	"category" : "Vivide",
+	"category" : "Vivide-Morphic",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TViMemento classTrait + TViOverlayMessages classTrait",
@@ -8,10 +8,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"model",
+		"view",
 		"queries",
 		"connections",
 		"recentQueries",
-		"errorBtn",
 		"id",
 		"lastUpdateId",
 		"lastUpdateWasEmpty",

@@ -1,5 +1,5 @@
-as yet unclassified
+tests
 test01Objects
 
-	sut objects: #(1 2 3).
-	self assert: (sut objects hasEqualElements: #(1 2 3)).
+	view objects: #(1 2 3).
+	self assert: (view objects hasEqualElements: #(1 2 3)).

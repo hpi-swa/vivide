@@ -5,6 +5,8 @@ initialize
 
 	max := 0.
 
+	self scroller color: Color white.
+
 	self content
 		changeTableLayout;
 		cellInset: 1;

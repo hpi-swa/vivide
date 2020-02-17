@@ -1,18 +1,20 @@
 {
-	"category" : "Vivide-Support-Morphic",
+	"category" : "Vivide-Morphic",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"target",
-		"positionOffset",
 		"inputPanes",
 		"outputPanes",
-		"newOutputPane" ],
+		"newOutputPane",
+		"newOutputConnection",
+		"inputConnections",
+		"outputConnections",
+		"hand" ],
 	"name" : "ViPaneHaloMorph",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "SimpleHaloMorph",
 	"type" : "normal" }

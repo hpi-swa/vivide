@@ -1,4 +1,0 @@
-accessing
-mapType
-
-	^ mapType

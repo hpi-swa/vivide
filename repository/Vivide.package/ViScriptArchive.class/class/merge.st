@@ -1,8 +1,9 @@
 merging
 merge
 
-	self == self localArchive ifTrue: [^ self].
+	self == self localArchive
+		ifTrue: [^ Error signal: 'The local archive cannot be merged!'].
 
-	^ ViQuerySerializer new
-		setArchive: self;
-		merge
+	ViConverterForClassArchive new
+		theClass: self;
+		import.

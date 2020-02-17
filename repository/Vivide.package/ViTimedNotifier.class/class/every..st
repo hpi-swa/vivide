@@ -1,6 +1,8 @@
 as yet unclassified
-every: milliseconds
+every: millisecondsOrDuration
 
 	^ self new
-		signalDelay: milliseconds;
+		signalDelay: ((millisecondsOrDuration isKindOf: Duration)
+			ifTrue: [millisecondsOrDuration asMilliSeconds]
+			ifFalse: [millisecondsOrDuration]);
 		yourself

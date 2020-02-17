@@ -5,13 +5,13 @@ exploreOneProperty
 		interpreter hasObjects ifFalse: [
 			self warningSent: 'There are no objects.'.
 			^ self].
-		interpreter allObjects anyOne in: [:obj |
+		interpreter objects anyOne in: [:obj |
 		(interpreter
 			propertiesFor: obj
 			ifNone: [
 				self warningSent: 'Using default properties...'.
 				"Just use default properties for the object at hand."
-				(ViQueryInterpreter on: (ViQueryStep
-					use: {obj}
-					in: #defaultProperties asScript)) upToNextProperties; propertiesFor: obj])
+				(ViScriptInterpreter
+					on: #defaultProperties asScript
+					using:{obj}) upToExtraction; propertiesFor: obj])
 			explore]].

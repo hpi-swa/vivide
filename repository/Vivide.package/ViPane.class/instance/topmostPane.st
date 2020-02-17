@@ -1,4 +1,4 @@
-accessing - convenience
+connections and tuples
 topmostPane
 
 	^ self ownerChainPanes last

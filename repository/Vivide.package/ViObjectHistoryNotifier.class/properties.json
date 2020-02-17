@@ -1,5 +1,5 @@
 {
-	"category" : "Vivide-Notifications",
+	"category" : "Vivide-Scripts-Notifications",
 	"classinstvars" : [
 		 ],
 	"classtraitcomposition" : "TViObjectNotifier classTrait",

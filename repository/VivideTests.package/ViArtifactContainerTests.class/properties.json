@@ -11,5 +11,5 @@
 	"name" : "ViArtifactContainerTests",
 	"pools" : [
 		 ],
-	"super" : "ViTestCase",
+	"super" : "ViMorphicTestCase",
 	"type" : "normal" }

@@ -1,4 +1,4 @@
-accessing
+accessing - kernel
 objects
 
-	^ self model firstStep "fill step" objects
+	^ self model inputForChildren

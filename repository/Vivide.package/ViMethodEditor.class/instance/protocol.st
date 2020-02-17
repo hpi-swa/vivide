@@ -1,6 +1,7 @@
 accessing
 protocol
 
-	^ ViProtocol
-		named: (self theClass organization categoryOfElement: self selector)
-		inClass: self theClass
+	^ self artifact ifNotNil: [:a |
+		ViProtocol
+			named: a protocol
+			inClass: a theClass].

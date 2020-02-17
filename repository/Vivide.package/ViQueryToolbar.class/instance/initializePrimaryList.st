@@ -9,12 +9,12 @@ initializePrimaryList
 		extent: 22@18;
 		color: Color transparent;
 		text: '+';
-		acceptedDropBlock: [:passenger :type | #(objects artifact queries) includes: type];
+		acceptedDropBlock: [:passenger :type | #(objects artifact "queries") includes: type];
 		convertPassengerBlock: [:objects | (objects collect: [:obj |
-			(obj isKindOf: ViQueryStep) ifTrue: [obj] ifFalse: []])
+			obj isScript ifTrue: [obj] ifFalse: []])
 				reject: [:obj | obj isNil]].
 	
 	self halt.
-	self groups add: #Queries -> (ViQueryNode new firstStep: (ViQueryStep use: {self object} in: (ViQueryOrganizer default stepById: #orderedSteps))).
+	"self groups add: #Queries -> (ViQueryNode new inputForChildren: {self object}; firstStep: #orderedSteps asScript)."
 	
 	primaryList addMorph: dropTarget.
