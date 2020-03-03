@@ -7,13 +7,13 @@ initializeToolbarOperations
 		addGroup: #font
 		icon: UiSilkIcons fontIcon
 		contents: [:editor | {
-			{#setFont:. 'Text Font'. nil. UiPlatform current standardDefaultTextFont}.
-			{#setFont:. 'Code Font'. nil. UiPlatform current standardCodeFont}}].
+			{#setFont:. 'Normal Font'. nil. TextStyle defaultFont}.
+			{#setFont:. 'Mono Font'. nil. TextStyle defaultFixedFont}}].
 		
 	self toolbar rightPanel
 		addGroup: #size
 		icon: UiFugueIcons editSizeIcon
-		contents: [:editor | #(8 9 10 11 12 14 16) collect: [:sz |
+		contents: [:editor | #(8 12 16 24 32) collect: [:sz |
 			{#setPointSize:. sz asString. nil. sz}]].
 	
 	self toolbar rightPanel

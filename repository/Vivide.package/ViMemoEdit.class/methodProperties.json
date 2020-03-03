@@ -2,15 +2,18 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addSelectionAttribute:" : "mt 1/30/2014 11:45:33.54",
+		"addSelectionAttribute:" : "mt 2/27/2020 15:19",
 		"compile" : "mt 11/12/2014 10:31:54.488",
 		"currentFont" : "mt 1/29/2014 17:37:04.72",
 		"currentFontSize" : "mt 1/29/2014 17:37:20.563",
-		"drawOn:" : "mt 1/29/2014 16:56:13.117",
-		"initialize" : "mt 1/30/2014 12:59:31.585",
+		"drawOn:" : "mt 2/27/2020 18:37",
+		"hasUnacceptedChanges" : "mt 2/27/2020 18:18",
+		"initialize" : "mt 2/27/2020 15:24",
 		"makeSelectionBold" : "mt 1/30/2014 11:45:47.163",
 		"makeSelectionItalic" : "mt 1/30/2014 11:45:52.878",
 		"makeSelectionUnderlined" : "mt 1/30/2014 11:45:58.577",
 		"parse" : "mt 11/12/2014 10:31:50.315",
 		"setColor:" : "mt 1/30/2014 12:59:44.839",
-		"setFont:" : "mt 1/30/2014 11:57:34.836" } }
+		"setFont:" : "mt 1/30/2014 11:57:34.836",
+		"setFontSize:" : "mt 2/27/2020 15:15",
+		"styler" : "mt 2/28/2020 11:23" } }

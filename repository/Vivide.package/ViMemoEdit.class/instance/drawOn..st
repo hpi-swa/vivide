@@ -1,29 +1,26 @@
 as yet unclassified
 drawOn: aCanvas
 
-	| b |
-	b := self bounds insetBy: (8@3 corner: 10@3).
-
-	"Draw paper-like background."
-	aCanvas
-		frameRectangle: b
-		color: (Color gray: 0.7).
+	| b o c |	
+	o := self margins origin.
+	c  := self margins corner.
+	b := self bounds insetBy: ((o / 2) rounded corner: (c / 2) rounded).
 	
-	UiPlatform current
-		canvas: aCanvas
+	"Draw fancy shadow."
+	aCanvas
 		frameAndFillRoundRect: (b outsetBy: 2)
 		radius: 3
-		fillStyle: (SolidFillStyle color: (Color gray: 0.87))
-		borderWidth: 1 borderColor: (Color gray: 0.95).
-		
+		fillStyle: (SolidFillStyle color: self color darker)
+		borderWidth: 1 borderColor: self color.
 
 	aCanvas
 		fillRectangle: b
-		color: (Color gray: 0.95).
+		color: self color.
 	
 	aCanvas
 		frameRectangle: b
-		color: (Color gray: 0.7).
+		width: self borderWidth
+		color: self borderColor.
 		
 	self hasUnacceptedChanges ifTrue: [
 		aCanvas

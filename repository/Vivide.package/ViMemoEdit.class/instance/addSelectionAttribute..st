@@ -6,6 +6,6 @@ addSelectionAttribute: attr
 		from: self selection first
 		to: self selection last.
 		
-	self textMorph paragraph composeAll.
-	self textMorph editor recomputeSelection.
-	self textMorph changed.
+	self textMorph
+		releaseParagraph;
+		layoutChanged.

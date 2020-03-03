@@ -6,7 +6,7 @@ updateLabel
 	self script ifNil: [^ self].
 	self owner ifNil: [^ self].
 	
-	newLabel := self script label.
+	newLabel := self script nextLabel.
 		
 	"If we are (deeply) embedded in a tool, set the label as tooltip."
 	self owner class == ViSinglePaneEditor
