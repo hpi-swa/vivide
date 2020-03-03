@@ -8,8 +8,10 @@ showHelp
 		('<font size="22" family="Bitmap Segoe UI Light" color="#AAAAAA">{1}</font>' format: {
 		self flagSpecs
 			inject: ''
-			into: [:label :spec | label, String cr, String tab, spec first asString, ' ... ', spec second]	
-		})) asHtmlText asMorph.
+			into: [:label :spec | label, '<br>  ', spec first asString, ' ... ', spec second]	
+		})) asTextFromHtml.
+	text addAttribute: (TextFontReference toFont: TextStyle defaultFixedFont).
+	text := text asMorph.
 	
 	helpBox := Morph new color: (Color gray:0.3); bounds: (text fullBounds outsetBy: 15); addDropShadow; yourself.
 	text center: helpBox center.

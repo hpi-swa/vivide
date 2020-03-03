@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"flagSpecs" : "mt 10/26/2015 14:14:51.516",
+		"flagSpecs" : "mt 3/3/2020 09:07",
 		"flagSpecs:" : "mt 12/16/2014 15:11:47.574",
 		"iconFor:" : "mt 1/29/2018 13:40",
 		"initDraggedMorph" : "mt 5/2/2014 11:48:06.99",
@@ -12,7 +12,7 @@
 		"passenger:" : "mt 11/16/2015 11:33:26.64",
 		"setDefaultParameters" : "mt 7/7/2019 11:02",
 		"setFlags:" : "mt 12/16/2014 15:36:18.069",
-		"showHelp" : "mt 2/21/2018 17:23",
+		"showHelp" : "mt 3/3/2020 09:26",
 		"step" : "mt 12/16/2014 16:54:24.912",
 		"updateGradient" : "mt 7/7/2019 11:02",
 		"updateKeyStroke:" : "mt 12/16/2014 15:16:45.266",
