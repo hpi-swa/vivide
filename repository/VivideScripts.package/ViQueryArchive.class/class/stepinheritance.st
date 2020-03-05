@@ -7,7 +7,7 @@ stepinheritance
 (#block -> [:in :out | (
 	[:objects | objects collect: [:method | {
 	method methodClass withAllSuperclasses reversed,
-	(method methodClass allSubclasses sortBy: [:a :b | a name <= b name]).
+	(method methodClass allSubclasses sorted: [:a :b | a name <= b name]).
 	method selector.
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
@@ -20,7 +20,7 @@ stepinheritance
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:method | {
 	method methodClass withAllSuperclasses reversed,
-	(method methodClass allSubclasses sortBy: [:a :b | a name <= b name]).
+	(method methodClass allSubclasses sorted: [:a :b | a name <= b name]).
 	method selector.
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]')

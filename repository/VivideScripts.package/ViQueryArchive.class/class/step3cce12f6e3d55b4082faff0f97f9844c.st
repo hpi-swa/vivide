@@ -8,9 +8,9 @@ step3cce12f6e3d55b4082faff0f97f9844c
 	[:objects | objects collect: [:ungroupedObject | { [:pkg | ((pkg packageName beginsWith: 'ConfigurationOf') or: [pkg packageName beginsWith: 'BaselineOf'])
 	ifTrue: ['3) Metacello Configurations']
 	ifFalse: [pkg workingCopy repositoryGroup repositories in: [:repos | 
-		(repos anySatisfy: [:rep | rep description includesSubString: 'hpi'])
+		(repos anySatisfy: [:rep | rep description includesSubstring: 'hpi'])
 			ifTrue: ['1) HPI Projects'] ifFalse: [
-		(repos anySatisfy: [:rep | rep description includesSubString: 'source.squeak.org'])
+		(repos anySatisfy: [:rep | rep description includesSubstring: 'source.squeak.org'])
 			ifTrue: ['2) Squeak'] ifFalse: [
 				'3) Other Packages']]]]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
@@ -24,9 +24,9 @@ step3cce12f6e3d55b4082faff0f97f9844c
 	[:objects | objects collect: [:ungroupedObject | { [:pkg | ((pkg packageName beginsWith: ''ConfigurationOf'') or: [pkg packageName beginsWith: ''BaselineOf''])
 	ifTrue: [''3) Metacello Configurations'']
 	ifFalse: [pkg workingCopy repositoryGroup repositories in: [:repos | 
-		(repos anySatisfy: [:rep | rep description includesSubString: ''hpi''])
+		(repos anySatisfy: [:rep | rep description includesSubstring: ''hpi''])
 			ifTrue: [''1) HPI Projects''] ifFalse: [
-		(repos anySatisfy: [:rep | rep description includesSubString: ''source.squeak.org''])
+		(repos anySatisfy: [:rep | rep description includesSubstring: ''source.squeak.org''])
 			ifTrue: [''2) Squeak''] ifFalse: [
 				''3) Other Packages'']]]]] value: ungroupedObject . ungroupedObject } asTuples]]
 		value: in) do: [:result | out addAll: result asList]]')
