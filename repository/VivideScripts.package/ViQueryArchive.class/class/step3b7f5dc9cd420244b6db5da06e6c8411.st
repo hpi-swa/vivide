@@ -29,7 +29,6 @@ step3b7f5dc9cd420244b6db5da06e6c8411
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '14 February 2018 9:23:43 am').
-(#inputKind -> MDMail).
 (#view -> ViPluggableTextMorph)
 }))
 })

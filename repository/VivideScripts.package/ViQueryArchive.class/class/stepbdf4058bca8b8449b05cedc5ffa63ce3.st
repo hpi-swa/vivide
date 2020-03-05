@@ -27,7 +27,6 @@ stepbdf4058bca8b8449b05cedc5ffa63ce3
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
 (#creationTimeStamp -> '14 February 2018 9:01:26 am').
-(#inputKind -> MDMailBox).
 (#searchBar -> false).
 (#view -> ViTreeViewExtended)
 }))

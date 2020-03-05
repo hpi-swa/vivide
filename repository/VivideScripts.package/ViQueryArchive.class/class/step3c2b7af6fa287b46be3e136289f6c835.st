@@ -26,7 +26,6 @@ step3c2b7af6fa287b46be3e136289f6c835
 (#next -> #'fae58224-4829-944b-ac11-ce72e6570614').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '14 February 2018 8:53:32 am').
-(#inputKind -> MDMailArchive)
+(#creationTimeStamp -> '14 February 2018 8:53:32 am')
 }))
 })
