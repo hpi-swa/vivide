@@ -1,6 +1,7 @@
 serialization
 loadFromDictionary: dict
 
+	id := dict at: #id.
 	super loadFromDictionary: dict.
 
 	"Set references by id only. Resolve later."

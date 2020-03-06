@@ -9,7 +9,7 @@ mergeProfile: dict
 				ifNil: [			
 					Transcript showln: '[ViConverter] Creating new profile...'.
 					self flag: #todo. "mt: Use ViProfile class >> #newFrom: like in #mergeStep:... etc.".
-					self profile: ViProfile newEmpty; register; yourself.
+					self profile: (ViProfile newEmpty register; yourself).
 					self profile converter: self. "Remember default converter."
 					self profile loadFromDictionary: dict.
 					self profile]
