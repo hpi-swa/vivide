@@ -45,3 +45,14 @@ test12IsHomogeneousRelaxed
 	} asScript.
 	
 	self deny: script isHomogeneousRelaxed.
+
+	script := {
+		[:num | num * num].
+		[:num | #text -> num asString].
+		[:num | num * num].
+		[:num | #text -> num asString].
+		[:num | num * num].
+		[:num | #text -> num asString].
+	} asScript.
+	
+	self assert: script isHomogeneousRelaxed.

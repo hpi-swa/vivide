@@ -7,7 +7,7 @@ layout: aMorph in: newBounds
 	
 	offset := aMorph topLeft + (0@1) + margins topLeft.
 	aMorph submorphsDo: [:s |
-		s visible ifTrue: [ | noMargins |
+		(s visible and: [s disableLayout not]) ifTrue: [ | noMargins |
 			noMargins := s valueOfProperty: #noMargins ifAbsent: false.  
 			s
 				width: aMorph width - (noMargins
