@@ -10,4 +10,4 @@ test02ChangeIdKeepCategory
 		
 	self
 		assert: step equals: (organization stepById: #two);
-		assert: #test equals: (organization categoryOfElement: step).
+		assert: #(test) equals: (organization categoryOfElement: step).

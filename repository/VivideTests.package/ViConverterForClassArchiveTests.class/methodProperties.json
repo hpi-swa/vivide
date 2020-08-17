@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"converterClass" : "mt 7/13/2019 09:31",
+		"performTest" : "mt 8/17/2020 14:01:45.267618",
 		"setUp" : "mt 7/13/2019 09:42",
 		"tearDown" : "mt 7/13/2019 09:42",
 		"test01ReadWriteSteps" : "mt 7/13/2019 09:54",
