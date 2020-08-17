@@ -5,7 +5,7 @@ step6432870100b2654ea36998b5ecac31fd
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #icon -> (ViMorphService doObject: textOrObject). #text -> ' ' } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ step6432870100b2654ea36998b5ecac31fd
 (#creationTimeStamp -> '8 November 2013 4:10:44 pm')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #icon -> (ViMorphService doObject: textOrObject). #text -> '' '' } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

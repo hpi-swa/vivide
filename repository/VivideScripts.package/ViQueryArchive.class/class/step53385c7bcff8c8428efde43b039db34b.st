@@ -5,7 +5,7 @@ step53385c7bcff8c8428efde43b039db34b
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  ViObjectOriginService doObject: obj key ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> ' ' } ] ifFalse: [ [:obj | { #text -> (  ViObjectOriginService doObject: obj key ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ step53385c7bcff8c8428efde43b039db34b
 (#creationTimeStamp -> '18 November 2013 5:07:13 pm')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  ViObjectOriginService doObject: obj key ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> '' '' } ] ifFalse: [ [:obj | { #text -> (  ViObjectOriginService doObject: obj key ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).
