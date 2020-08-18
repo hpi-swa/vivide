@@ -1,0 +1,1 @@
+This policy implements the "outer bounds" layout that halo morphs offer. It computes cells around a morphs edges and corners.

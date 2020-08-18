@@ -1,0 +1,4 @@
+accessing
+outerBorderColor
+
+	^ outerBorderColor

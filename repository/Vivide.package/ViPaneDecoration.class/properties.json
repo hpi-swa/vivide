@@ -1,0 +1,16 @@
+{
+	"category" : "Vivide-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"layoutOutset",
+		"outerBorderWidth",
+		"outerBorderColor" ],
+	"name" : "ViPaneDecoration",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
