@@ -2,7 +2,7 @@ errors
 openDebuggerForLastException
 
 	| d process errorWasInUIProcess description debugger |
-	d := self errorBtn.
+	d := self decorationNamed: #error.
 	process := d valueOfProperty: #suspendedProcess.
 	errorWasInUIProcess := d valueOfProperty: #errorWasInUIProcess ifAbsent: [false].
 	description := d valueOfProperty: #description ifAbsent: ['Script evaluation failed']. 

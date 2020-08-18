@@ -2,8 +2,7 @@ errors
 clearError
 
 	| d |
-	d := self decorationNamed: #error.
-	d ifNil: [^ self].
+	d := self decorationNamed: #error ifAbsent: [^ self].
 	
 	(d valueOfProperty: #suspendedProcess ifAbsent: []) ifNotNil: #terminate. 
 	

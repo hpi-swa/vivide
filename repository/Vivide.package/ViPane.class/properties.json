@@ -9,7 +9,6 @@
 	"instvars" : [
 		"model",
 		"view",
-		"queries",
 		"connections",
 		"recentQueries",
 		"id",

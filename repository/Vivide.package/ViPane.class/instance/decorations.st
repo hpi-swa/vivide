@@ -1,4 +1,4 @@
 decorations
 decorations
 
-	^ self submorphs select: [:ea | ea hasProperty: #isDecoration]
+	^ self submorphs select: [:morph | morph hasProperty: #isDecoration]

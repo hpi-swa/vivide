@@ -18,5 +18,5 @@ script: step
 	self recentScriptsAdd: step.
 
 	"Tell everybody else."
-	self flag: #deprecated. "Notify my decorations explicitely."
+	self flag: #deprecate. "Notify my decorations explicitely."
 	self scriptChanged: step.

@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pane" ],
+	"name" : "ViPaneDecorationLookup",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

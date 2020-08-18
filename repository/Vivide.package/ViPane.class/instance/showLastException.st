@@ -2,7 +2,7 @@ errors
 showLastException
 
 	| d box buttons label errorText scriptText |
-	d := self errorBtn.
+	d := self decorationNamed: #error.
 	box := Morph new
 		color: Color white;
 		addDropShadow;
@@ -31,7 +31,7 @@ showLastException
 	UiToolButton new in: [:btn |
 		btn
 			buttonStyle: #iconOnly;
-			icon: UiSilkIcons bugIcon;
+			icon: UiSilkIcons bugIcon scaleIconToDisplay;
 			balloonText: ((d hasProperty: #suspendedProcess)
 				ifTrue: ['Open a debugger (not proceed-able)']
 				ifFalse: ['Process already terminated. Please run script again.']);
@@ -44,7 +44,7 @@ showLastException
 	UiToolButton new in: [:btn |
 		btn
 			buttonStyle: #iconOnly;
-			icon: UiSilkIcons pencilIcon;
+			icon: UiSilkIcons pencilIcon scaleIconToDisplay;
 			balloonText: 'Edit the script';
 			color: Color white.
 		self connect: btn signal: #clicked: to: box selector: #delete.
@@ -54,7 +54,7 @@ showLastException
 	UiToolButton new in: [:btn |
 		btn
 			buttonStyle: #iconOnly;
-			icon: UiSilkIcons arrowRefreshSmallIcon;
+			icon: UiSilkIcons arrowRefreshSmallIcon scaleIconToDisplay;
 			balloonText: 'Try again';
 			color: Color white.
 		self connect: btn signal: #clicked: to: box selector: #delete.
@@ -62,7 +62,7 @@ showLastException
 		buttons addMorphBack: btn].
 	
 	
-	errorText := '<b>', (d valueOfProperty: #description) escapeHtmlText, '</b>', String cr.
+	errorText := '<b>', (d valueOfProperty: #description) escapeHtmlText, '</b><br>'.
 	scriptText := (d valueOfProperty: #maliciousScript)
 		ifNotNil: [:script | script sourceCode]
 		ifNil: [''].
