@@ -2,15 +2,18 @@
 	"category" : "Vivide-Morphic",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "TViPaneDecoration classTrait",
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"layoutOutset",
-		"outerBorderWidth",
-		"outerBorderColor" ],
-	"name" : "ViPaneDecoration",
+		"label",
+		"closeBox",
+		"resizeBox",
+		"copyBox" ],
+	"name" : "ViWindow",
 	"pools" : [
 		 ],
 	"super" : "Morph",
+	"traitcomposition" : "TViPaneDecoration",
 	"type" : "normal" }

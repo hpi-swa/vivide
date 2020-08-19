@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"closeBoxHit" : "mt 8/19/2020 15:12:42.093138",
+		"copyBoxHit" : "mt 8/19/2020 15:42:35.632138",
+		"createBox:" : "mt 8/19/2020 14:20:44.226721",
+		"createCloseBox" : "mt 8/19/2020 14:24:50.536721",
+		"createCopyBox" : "mt 8/19/2020 14:24:36.065721",
+		"createResizeBox" : "mt 8/19/2020 14:31:20.326721",
+		"gripThickness" : "mt 8/19/2020 14:08:28.107721",
+		"initialize" : "mt 8/19/2020 15:20:38.203138",
+		"initializeLabelArea" : "mt 8/19/2020 14:51:26.711721",
+		"resizeBoxHit" : "mt 8/19/2020 16:03:41.698138",
+		"setLabel:" : "mt 8/19/2020 14:28:33.325721",
+		"setWindowColor:" : "mt 8/19/2020 15:20:27.465138" } }

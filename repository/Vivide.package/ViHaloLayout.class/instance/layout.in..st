@@ -43,4 +43,4 @@ layout: decoration in: bounds
 	decoration submorphsDo: [:m |
 		m
 			layoutInBounds: ((m edgeSide == #inside ifTrue: [flipped] ifFalse: [cells]) at: (m edgeCell ifNil: [#center]) ifAbsent: [box])
-			positioning: m cellPositioning].
+			positioning: m edgeCellPositioning].

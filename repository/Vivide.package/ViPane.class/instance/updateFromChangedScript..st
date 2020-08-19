@@ -8,9 +8,12 @@ updateFromChangedScript: evt
 	(self script isMeta and: [evt item isMeta not])
 		ifTrue: [^ self].
 
-	(evt isRenamed and: [self script == evt item])
-		ifTrue: [^ self updateLabel].
+	(evt isPropertiesModified and: [evt oldProperties includesKey: #label])
+		ifTrue: [self updateLabel].
 
+"	(evt isPropertiesModified and: [evt oldProperties includesKey: #color])
+		ifTrue: [^ self updateColor].
+"
 	(evt isPropertiesModified and: [evt onlyViewIndependentChanges])
 		ifTrue: [^ self].
 

@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"artifactName" : "mt 8/6/2012 14:15:19.447",
-		"defaultClassDefinition" : "mt 5/13/2014 11:39:32.442" },
+		"defaultClassDefinition" : "mt 5/13/2014 11:39:32.442",
+		"defaultTraitDefinition" : "mt 8/19/2020 12:25:27.589721" },
 	"instance" : {
 		"addArtifact" : "mt 9/5/2012 18:16:50.092",
 		"addInstVarAccessors" : "mt 2/24/2014 13:42:53.418",

@@ -1,7 +1,7 @@
-as yet unclassified
-drawOn: aCanvas
+drawing
+drawRolloverBorderOn: aCanvas
 
-	| box cut |
+	| box cut colorToUse |
 	self flag: #todo. "mt: #wantsRoundedCorners"
 	
 	box := self outerLayoutBounds.
@@ -9,6 +9,7 @@ drawOn: aCanvas
 	
 	box := box insetBy: self outerBorderWidth.
 	cut := self bounds.
+	colorToUse := self outerColor.
 	
 	{
 		box left @ cut top corner: cut left @ cut bottom. 
@@ -16,4 +17,4 @@ drawOn: aCanvas
 		cut right @ cut top corner: box right @ cut bottom.
 		box left @ cut bottom corner: box right @ box bottom.
 
-	} do: [:rect | aCanvas fillRectangle: rect color: self color].
+	} do: [:rect | aCanvas fillRectangle: rect color: colorToUse].

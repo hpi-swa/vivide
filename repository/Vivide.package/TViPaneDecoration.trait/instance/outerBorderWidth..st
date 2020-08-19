@@ -3,7 +3,8 @@ outerBorderWidth: anObject
 
 	self fullBounds; changed.
 
-	outerBorderWidth := anObject.
+	self setProperty: #outerBorderWidth toValue: anObject.
 
+	self removeProperty: #dropShadow.
 	self layoutChanged.
 	self fullBounds; changed.

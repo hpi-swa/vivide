@@ -1,0 +1,3 @@
+drawing
+hasRolloverBorder
+	^ true

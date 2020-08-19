@@ -1,4 +1,4 @@
-as yet unclassified
+geometry - layout
 outerLayoutExtent
 
 	^ self outerLayoutBounds extent

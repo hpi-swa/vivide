@@ -1,4 +1,4 @@
-as yet unclassified
+drawing - drop shadows
 updateDropShadowCache
 
 	| shadowOffset shadowBounds offset form canvas drawBlock localBounds mask maskCanvas |
