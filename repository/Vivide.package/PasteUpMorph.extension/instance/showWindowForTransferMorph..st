@@ -12,12 +12,7 @@ showWindowForTransferMorph: aTransferMorph
 	aTransferMorph dragTransferType in: [:type |
 
 		(#(pane panes) includes: type)
-			ifTrue: [^ aTransferMorph passenger asList collect: [:ea | 
-				ViSinglePaneEditor new
-					pane: ea;
-					openInWindow;
-					fullBounds; "Needed for correct geometry."
-					window]].
+			ifTrue: [^ aTransferMorph passenger asList collect: [:pane | pane openInWindow]].
 	
 		(#(objects) includes: type)
 			ifTrue: [^ {VivideLight active openArtifacts: aTransferMorph passenger}].

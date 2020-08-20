@@ -1,0 +1,1 @@
+Null object for pane decorations. Eats all messages.

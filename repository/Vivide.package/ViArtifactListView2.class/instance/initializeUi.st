@@ -23,6 +23,10 @@ initializeUi
 		color: (Color gray: 0.3).
 	self addMorph: scrollArea.
 	
+	self flag: #toRemove.
+	self adoptPaneColor: self color.
+	scrollArea widget adoptPaneColor: self color.
+	
 	self sgConnectSignal: #objectSelectionChanged: toSelector: #onSelectionChanged:.
 	
 	"General callbacks. Scene-graph based."

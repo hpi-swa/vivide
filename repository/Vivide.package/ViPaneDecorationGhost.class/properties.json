@@ -1,0 +1,14 @@
+{
+	"category" : "Vivide-Morphic",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "ViPaneDecorationGhost",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

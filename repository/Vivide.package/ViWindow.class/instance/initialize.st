@@ -17,3 +17,6 @@ initialize
 	self addCornerGrips.
 
 	self initializeLabelArea.
+
+	self addDropShadow.
+	self hasDropShadow: false.
