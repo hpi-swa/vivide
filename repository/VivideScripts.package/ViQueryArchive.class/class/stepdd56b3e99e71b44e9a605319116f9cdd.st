@@ -12,7 +12,7 @@ stepdd56b3e99e71b44e9a605319116f9cdd
 			ifFalse: ['** variables **']]
 		ifFalse: [object isBehavior
 			ifTrue: ['** traits **']
-			ifFalse: [object methodClass organization categoryOfElement: object selector]].
+			ifFalse: [(object methodClass organization categoryOfElement: object selector) asString]].
 	object
 	
 	} asTuples]]
@@ -31,7 +31,7 @@ stepdd56b3e99e71b44e9a605319116f9cdd
 			ifFalse: [''** variables **'']]
 		ifFalse: [object isBehavior
 			ifTrue: [''** traits **'']
-			ifFalse: [object methodClass organization categoryOfElement: object selector]].
+			ifFalse: [(object methodClass organization categoryOfElement: object selector) asString]].
 	object
 	
 	} asTuples]]

@@ -3,7 +3,7 @@
 		"widgetCategory" : "mt 1/27/2013 19:49:57.452",
 		"widgetClassName" : "mt 1/27/2013 19:50:15.562" },
 	"instance" : {
-		"addHelpResults" : "mt 10/16/2015 10:22",
+		"addHelpResults" : "mt 8/21/2020 17:46:47.32303",
 		"addResult:" : "mt 1/25/2013 17:06:15.412",
 		"artifactRequested:" : "mt 11/15/2012 15:29:41.363",
 		"clearResults" : "mt 1/25/2013 17:14:52.338",
@@ -24,7 +24,6 @@
 		"openResults:" : "mt 10/16/2015 10:04",
 		"passKeyboardFocusToResultList" : "mt 3/7/2013 10:03:28.619",
 		"scriptResults" : "mt 10/16/2015 10:13",
-		"searchBookmarks:" : "mt 10/14/2015 12:00",
 		"searchClasses:" : "mt 9/2/2012 10:43:39.121",
 		"searchClasses:inPackages:" : "mt 9/7/2012 10:56:59.879",
 		"searchFlags:" : "mt 9/7/2012 09:51:08.967",
