@@ -1,8 +1,8 @@
 initialization
 initializeObjectsBar
 
-	objectsBar := ViObjectsBar new
-		drawBackground: false;
-		hResizing: #rigid;
-		adoptPaneColor: self color;
-		yourself.
+	self addMorphBack: (Morph new
+		color: Color transparent;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill;
+		yourself).

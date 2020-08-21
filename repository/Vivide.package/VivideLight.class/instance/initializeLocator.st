@@ -1,8 +1,10 @@
 initialization
 initializeLocator
 
-	locator := ViLocator new
+	self addMorphBack: (locator := (ViLocator new
 		helpText: 'Search... (CMD+K)';
-		vivide: self.
-
-	objectsBar contentContainer addMorphBack: locator.
+		hResizing: #rigid;
+		vResizing: #spaceFill;
+		width: 250 * RealEstateAgent scaleFactor;
+		outerBorderWidth: 0; 
+		vivide: self)).

@@ -13,7 +13,7 @@ stepoutline
 	(cls classVarNames collect: [:nm | cls class -> (nm -> (cls classPool at: nm))]),"
 	(cls instVarNames collect: [:nm | cls -> (nm -> nm)]),
 	(cls class instVarNames collect: [:nm | cls class -> (nm -> nm)]),
-	(cls classVarNames collect: [:nm | cls class -> (nm -> nm)]),
+	(cls classVarNames collect: [:nm | cls class -> (nm -> nm asString)]),
 	cls theNonMetaClass methodDict values,
 	cls theMetaClass methodDict values]]
 		value: in) do: [:result | out addAll: result asList]]).
@@ -32,7 +32,7 @@ stepoutline
 	(cls classVarNames collect: [:nm | cls class -> (nm -> (cls classPool at: nm))]),"
 	(cls instVarNames collect: [:nm | cls -> (nm -> nm)]),
 	(cls class instVarNames collect: [:nm | cls class -> (nm -> nm)]),
-	(cls classVarNames collect: [:nm | cls class -> (nm -> nm)]),
+	(cls classVarNames collect: [:nm | cls class -> (nm -> nm asString)]),
 	cls theNonMetaClass methodDict values,
 	cls theMetaClass methodDict values]]
 		value: in) do: [:result | out addAll: result asList]]')

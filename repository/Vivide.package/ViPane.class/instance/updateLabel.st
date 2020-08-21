@@ -4,12 +4,7 @@ updateLabel
 	
 	| newLabel scriptsSummary objectsSummary |
 	self script ifNil: [^ self].
-	self owner ifNil: [^ self].
 			
-	"If we are (deeply) embedded in a tool, set the label as tooltip."
-	self owner class == ViSinglePaneEditor
-		ifTrue: [^ self owner updateHeaderText].
-
 	newLabel := self script nextLabel.
 
 	"Simplify visual appearance for try-outs."
@@ -38,5 +33,4 @@ updateLabel
 						ifEmpty: [scriptsSummary]
 						ifNotEmpty: ['{1}: {2}' format: {scriptsSummary. objectsSummary}])]].
 		
-	self decoration window
-		ifNotNil: [:wnd | wnd setLabel: newLabel].
+	self decoration window setLabel: newLabel.

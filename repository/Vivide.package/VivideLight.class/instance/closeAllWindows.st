@@ -1,8 +1,8 @@
 actions
 closeAllWindows
 
-	ActiveWorld submorphs
-		select: [:m | (m isKindOf: ViSystemWindow) and: [m model hasUnacceptedChanges not]]
-		thenDo: [:wnd | wnd delete].
+	self panes
+		select: [:pane | pane hasUnacceptedChanges not]
+		thenDo: [:pane | pane close].
 		
-	ViArtifactToolbar hideAllToolbars.
+"	ViArtifactToolbar hideAllToolbars."

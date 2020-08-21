@@ -6,13 +6,13 @@ initialize
 	self
 		color: Color veryVeryLightGray darker;
 		changeTableLayout;
-		listDirection: #topToBottom;  
-		cellPositioning: #topLeft;  
+		listDirection: #leftToRight;  
+		cellPositioning: #center;  
 		cellGap: 5;
-		vResizing: #spaceFill;
-		hResizing: #shrinkWrap;
+		vResizing: #shrinkWrap;
+		hResizing: #spaceFill;
 		rubberBandCells: true;
-		setToAdhereToEdge: #left;
+		setToAdhereToEdge: #bottom;
 		beSticky.
 	
 	ViActiveVivide
@@ -20,8 +20,6 @@ initialize
 		during: [
 			"Code may have to access this instance..."
 			self
-				initializeTitleBar;
+				initializeScriptShortcuts;
 				initializeObjectsBar;
-				initializeLocator].
-	
-	self addAllMorphs: {titleBar. objectsBar}.
+				initializeTitleBar].

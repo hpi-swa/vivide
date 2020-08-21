@@ -1,25 +1,13 @@
 as yet unclassified
 updateColor
-	"Read script properties and update my color or the color of my enclosing system window."
 	
-	| newColor |
+	| colorToUse |
 	self script ifNil: [^ self].
-	self owner ifNil: [^ self].
 	
-	newColor := self script valueOfProperty: #color ifAbsent: [
-		(self owner == self world or: [self owner class == ViSinglePaneEditor])
-			ifTrue: [Color veryVeryLightGray]
-			ifFalse: [Color transparent]].
+	colorToUse := (self script valueOfProperty: #color ifAbsent: [Color veryVeryLightGray]) value. "support blocks"
+
+	self color: colorToUse.
+	self decoration window setWindowColor: colorToUse.
 	
-	"Support blocks in color property."
-	newColor := newColor value.
-	
-	"If we are (deeply) embedded in a tool, set our own color."
-	"self owner class == ViSinglePaneEditor
-		ifFalse: [self borderColor: newColor; color: newColor. ^ self]."
-	
-	"Colorize the window if we are toplevel."
-	(self firstOwnerSuchThat: [:m | m isSystemWindow])
-		ifNotNil: [:wnd | wnd setWindowColor: newColor].
-	self decoration window
-		ifNotNil: [:wnd | wnd setWindowColor: newColor].
+	"Hide window decoration if transparent."
+	self decoration window visible: colorToUse isTransparent not.

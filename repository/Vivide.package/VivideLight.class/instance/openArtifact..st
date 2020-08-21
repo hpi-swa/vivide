@@ -5,9 +5,8 @@ openArtifact: anObject
 	"Reuse windows if modifier pressed."
 	(self currentEvent in: [:evt | evt isKeyboard | evt isMouse and: [evt shiftPressed]])
 		ifTrue: [
-			self world doOneSubCycle. "Ensure all tool windows to be opened by now."
-			(self toolWindows detect: [:wnd | wnd editor includesObject: anObject] ifNone: [])
-				ifNotNil: [:wnd | wnd activate. wnd editor focusObject: anObject. ^ self]].
+			(self panes detect: [:pane | pane objects identityIncludes: anObject] ifNone: [])
+				ifNotNil: [:pane | pane activate. ^ self]].
 	
 	object := anObject.
 		

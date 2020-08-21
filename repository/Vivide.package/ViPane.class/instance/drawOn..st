@@ -2,14 +2,13 @@ drawing
 drawOn: aCanvas
 
 	super drawOn: aCanvas.
-	
-	"Fall-back to avoid glitches with shadow."
-	(self owner == self world and: [self color isTransparent]) ifTrue: [
-		aCanvas
-			fillRectangle: self bounds
-			color: (Color gray: 0.85)].
-	
+		
 	self view ifNil: [
+		self color isTransparent ifTrue: [
+			aCanvas
+				fillRectangle: self bounds
+				color: (Color gray: 0.85)].
+
 		aCanvas
 			frameRectangle: (self bounds insetBy: 10)
 			width: 1

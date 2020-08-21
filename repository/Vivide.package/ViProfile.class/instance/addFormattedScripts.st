@@ -13,7 +13,8 @@ addFormattedScripts
 		[:script | {
 			#icon -> (script nextIcon ifNil: [ViIcons blankIcon]).
 			#text -> (script nextLabel
-				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}].
+				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText]).
+			#doubleClicked -> [[ script openScript ]] }].
 		[:script | #text -> script baseClass name]
 	
 	} asScript.

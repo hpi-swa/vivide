@@ -6,6 +6,8 @@ baseClass
 	
 	self flag: #tofix.
 
+	self isGlobal ifTrue: [^ Object].
+
 	self isMeta ifTrue: [
 		self flag: #metaScript.
 		

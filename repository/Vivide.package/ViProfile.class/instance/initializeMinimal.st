@@ -5,6 +5,9 @@ initializeMinimal
 		value: self organization
 		during: [
 			self
+				addTools;
+				addObjectTemplates;
+
 				addDefaultProperties;
 				addDefaultPropertiesMinimal; "optional"
 				addDefaultPropertiesExtended; "quasi optional"

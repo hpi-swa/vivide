@@ -9,7 +9,9 @@ step1af811b85914fa4aa3086a17174c3d9c
 		-> (script nextIcon
 				ifNil: [ViIcons blankIcon]) scaledToDisplay. #text
 		-> (script nextLabel
-				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}]
+				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText]).
+		#doubleClicked -> [[ script openScript ]].
+		#returnPressed -> [[ script openScript ]] }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -23,7 +25,9 @@ step1af811b85914fa4aa3086a17174c3d9c
 		-> (script nextIcon
 				ifNil: [ViIcons blankIcon]) scaledToDisplay. #text
 		-> (script nextLabel
-				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText])}]
+				ifNil: [ViTextStyler new styledTextFor: script sourceCodeShort asText]).
+		#doubleClicked -> [[ script openScript ]].
+		#returnPressed -> [[ script openScript ]] }]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

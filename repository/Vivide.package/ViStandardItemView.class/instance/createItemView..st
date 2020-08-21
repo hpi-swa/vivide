@@ -6,7 +6,8 @@ createItemView: viewClass
 	view
 		hResizing: #spaceFill;
 		vResizing: #spaceFill;
-		editTriggers: #(editKeyPressed).
+		editTriggers: #(editKeyPressed);
+		color: Color transparent.
 	view selectionMode: UiViewExtendedSelection.
 	view groupSpec
 		hideIfFirst: false;

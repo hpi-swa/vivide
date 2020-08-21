@@ -1,9 +1,11 @@
 accessing - kernel
 view: newView
 
+	| oldView |
 	self disconnectModelAndView.
 	
-	view ifNotNil: [:v | v clear; delete].
+	oldView := view.
+	view ifNotNil: [:v | v clear].
 	view := newView.
 
 	self connectModelAndView.
@@ -12,4 +14,8 @@ view: newView
 		v
 			hResizing: #spaceFill;
 			vResizing: #spaceFill.
-		self addMorphBack: v]
+		oldView
+			ifNil: [self addMorphFront: v]
+			ifNotNil: [self addMorph: v behind: oldView]].
+	
+	oldView ifNotNil: #delete.

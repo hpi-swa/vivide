@@ -8,7 +8,7 @@ initializeTitleBar
 		listDirection: #leftToRight;
 		cellGap: 5;
 		layoutInset: (5@5 corner: 5@2); 
-		hResizing: #spaceFill;
+		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap.
 	
 	clock := ClockMorph new
@@ -17,13 +17,6 @@ initializeTitleBar
 			show24hr: true;
 			showSeconds: true;
 			yourself.
-	
-	closeBtn := UiToolButton new
-		buttonStyle: #iconOnly;
-		color: Color veryVeryLightGray;
-		balloonText: 'Close Vivide';
-		icon: ViIcons icons8Delete64px1Icon scaledToDisplay.
-	self connect: closeBtn signal: #clicked: toSelector: #close.
 	
 	fullscreenBtn := UiToolButton new
 		buttonStyle: #iconOnly;
@@ -73,15 +66,14 @@ initializeTitleBar
 			position: titleBar position + (10@30).
 	
 	titleBar addAllMorphs: {
-		closeBtn.
+		changeProfileBtn.
+		closeWndBtn.
 		UiSpacer new orientation: #horizontal.
 		clock.
 		"(ViIcons vivideLogo asWireframeSunken: 0.45) asMorph."
 		UiSpacer new orientation: #horizontal.
 		"updateBtn."
-		changeProfileBtn.
-		closeWndBtn.
 		fullscreenBtn.
 		"helpBtn."}.
 		
-	"updateBtn hideFull."
+	self addMorphBack: titleBar.
