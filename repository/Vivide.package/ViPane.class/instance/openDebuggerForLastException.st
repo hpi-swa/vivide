@@ -2,25 +2,18 @@ errors
 openDebuggerForLastException
 
 	| d process errorWasInUIProcess description debugger |
-	d := self decorationNamed: #error.
+	d := self decoration error.
 	process := d valueOfProperty: #suspendedProcess.
 	errorWasInUIProcess := d valueOfProperty: #errorWasInUIProcess ifAbsent: [false].
 	description := d valueOfProperty: #description ifAbsent: ['Script evaluation failed']. 
 	
 	process ifNil: [^ self].
 	
-	debugger := Debugger new process: process controller: nil context: process suspendedContext.
-	debugger
-		labelString: description asString;
-		expandStack;
-		errorWasInUIProcess: errorWasInUIProcess;
-		checkContextSelection.
-	
 	"Squeak's debugger."
 	(VivideLight active isNil or: [(VivideLight useVivideDebugger) not])
 		ifTrue: [
 			d removeProperty: #suspendedProcess. "debugger window will terminate process."
-			^ debugger openFullNoSuspendLabel: description].
+			^ process debug].
 
 	"Vivide's debugger."
-	VivideLight active openDebugger: debugger.
+	VivideLight active openArtifact: process.
