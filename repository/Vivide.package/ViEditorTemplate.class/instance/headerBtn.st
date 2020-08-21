@@ -1,5 +1,0 @@
-accessing
-headerBtn
-	"nil"
-	
-	^ headerBtn

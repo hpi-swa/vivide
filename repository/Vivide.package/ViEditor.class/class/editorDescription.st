@@ -1,4 +1,0 @@
-accessing
-editorDescription
-
-	^ 'n/a'

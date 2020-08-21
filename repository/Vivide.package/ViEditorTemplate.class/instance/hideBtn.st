@@ -1,5 +1,0 @@
-accessing
-hideBtn
-	"nil"
-	
-	^ hideBtn

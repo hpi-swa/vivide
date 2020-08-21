@@ -9,13 +9,6 @@ setUp
 			pane := ViPane new
 				script: [:num | num * 2] asScript;
 				objects: #(1 2 3 4);
-				yourself.
-			
-			editor := ViSinglePaneEditor new
-				pane: pane;
-				wrapPaneIntoMultiPaneWidget;
 				yourself].
-	
-	editor topLeft: 0@0; fullBounds.
-	
-	sut := editor pane view.
+		
+	sut := pane view.

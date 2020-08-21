@@ -1,4 +1,0 @@
-testing
-isTemplate
-
-	^ true

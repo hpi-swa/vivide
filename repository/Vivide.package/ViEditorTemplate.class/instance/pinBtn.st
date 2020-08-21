@@ -1,5 +1,0 @@
-accessing
-pinBtn
-	"nil"
-	
-	^ pinBtn

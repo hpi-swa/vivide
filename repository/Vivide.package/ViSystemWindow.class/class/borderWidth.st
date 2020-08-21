@@ -1,4 +1,0 @@
-initializing
-borderWidth
-
-	^ 3

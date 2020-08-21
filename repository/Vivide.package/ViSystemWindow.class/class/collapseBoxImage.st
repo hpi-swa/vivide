@@ -1,4 +1,0 @@
-initializing
-collapseBoxImage
-
-	^ ViIcons icons8Subtract64px1Icon scaledToDisplay

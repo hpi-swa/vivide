@@ -1,4 +1,0 @@
-geometry
-optimalHeight
-
-	^ 500

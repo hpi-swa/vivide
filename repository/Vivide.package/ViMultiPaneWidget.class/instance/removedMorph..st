@@ -7,9 +7,7 @@ removedMorph: morph
 			"Unbox pane from me if last one."
 			panes size = 1 ifTrue: [
 				(self firstOwnerSuchThat: [:m | m isKindOf: ViMultiPaneWidget])
-					ifNotNil: [:view | view unwrapPaneFromMultiPaneWidget ifTrue: [^ self] ].
-				(self firstOwnerSuchThat: [:m | m isKindOf: ViSinglePaneEditor])
-					in: [:editor | editor unwrapPaneFromMultiPaneWidget ifTrue: [^ self] ]].
+					ifNotNil: [:view | view unwrapPaneFromMultiPaneWidget ifTrue: [^ self] ]].
 			"See ViConstraintLayout."
 			panes anyOne layoutChanged].
 	

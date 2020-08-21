@@ -1,4 +1,0 @@
-initializing
-expandBoxImage
-
-	^ ViIcons icons8ResizeVertical64px1Icon scaledToDisplay

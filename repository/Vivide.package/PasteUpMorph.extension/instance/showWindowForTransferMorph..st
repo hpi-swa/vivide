@@ -20,8 +20,6 @@ showWindowForTransferMorph: aTransferMorph
 		(#(artifact) includes: type)
 			ifTrue: [^ {VivideLight active openEditorForArtifact: aTransferMorph passenger}].
 	
-		(#(editorStates) includes: type)
-			ifTrue: [^ {VivideLight active openEditor: aTransferMorph passenger first}].
 	].
 
 	^ {VivideLight active openArtifact: aTransferMorph passenger}

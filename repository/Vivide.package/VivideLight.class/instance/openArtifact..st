@@ -14,9 +14,6 @@ openArtifact: anObject
 	(self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		in: [:evaluateObject | "Unbox bindings, e.g. #a -> aMorph."
 			object := evaluateObject ifTrue: [anObject value] ifFalse: [anObject]].
-
-	(object isKindOf: ViEditorState) ifTrue: [
-		^ self openEditor: object].
 	
 	"Open a script editor?"
 	object isScript ifTrue: [object retain. ^ object editScript].
