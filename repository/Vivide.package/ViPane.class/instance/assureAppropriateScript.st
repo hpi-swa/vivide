@@ -3,6 +3,9 @@ assureAppropriateScript
 	"Changes the script if the current one cannot support the new (kind of) objects anymore."
 	
 	| appropriateScripts |
+	(self objects isEmpty and: [self script notNil])
+		ifTrue: [^ self "No change"].
+
 	appropriateScripts := self appropriateScripts.
 	
 	"0) Create a new identity script if there is no alternative."

@@ -11,11 +11,11 @@ addConnection: event with: connectHandle
 			newWindows first center: event position.
 			"newWindows second topLeft: newWindows first topRight."
 			
-			newWindows first editor pane script checkNewToolColor.
+			newWindows first script checkNewToolColor.
 			
 			event shiftPressed
-				ifFalse: [(ViSelectionConnection from: self target to: newWindows first editor pane) attach]
-				ifTrue: [(ViResultsConnection from: self target to: newWindows first editor pane) attach].
+				ifFalse: [(ViSelectionConnection from: self target to: newWindows first) attach]
+				ifTrue: [(ViResultsConnection from: self target to: newWindows first) attach].
 			
 			self endInteraction.
 			self logDataflowChanged.

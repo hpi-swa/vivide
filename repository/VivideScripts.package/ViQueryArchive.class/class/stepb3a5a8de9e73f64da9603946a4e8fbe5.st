@@ -5,7 +5,7 @@ stepb3a5a8de9e73f64da9603946a4e8fbe5
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> ' ' } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ stepb3a5a8de9e73f64da9603946a4e8fbe5
 (#creationTimeStamp -> '8 November 2013 4:10:44 pm')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #text -> '' '' } ] ifFalse: [ [:obj | { #text -> (  obj value identityHash ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

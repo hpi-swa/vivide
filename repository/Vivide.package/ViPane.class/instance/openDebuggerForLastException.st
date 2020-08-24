@@ -2,7 +2,7 @@ errors
 openDebuggerForLastException
 
 	| d process errorWasInUIProcess description |
-	d := self decoration error.
+	d := self decoration message.
 	process := d valueOfProperty: #suspendedProcess.
 	errorWasInUIProcess := d valueOfProperty: #errorWasInUIProcess ifAbsent: [false].
 	description := d valueOfProperty: #description ifAbsent: ['Script evaluation failed']. 

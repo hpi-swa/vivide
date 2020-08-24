@@ -16,7 +16,7 @@ openInWindow
 	world := ViActiveVivide world.
 	hand := world firstHand.
 	
-	grab := self currentEvent isMouse
+	grab := (self currentEvent isMouse and: [Project uiManager openToolsAttachedToMouseCursor])
 		and: [self currentEvent isMouseUp
 		or: [self currentEvent isMouseOver and: [self currentEvent redButtonPressed]]].
 		

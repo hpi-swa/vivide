@@ -2,7 +2,7 @@ errors
 openScriptForLastException
 
 	| d script anchor |
-	d := self decorationNamed: #error.
+	d := self decoration message.
 	script := d valueOfProperty: #maliciousScript.
 	
 	anchor := self script.

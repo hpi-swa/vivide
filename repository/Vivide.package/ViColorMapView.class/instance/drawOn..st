@@ -8,7 +8,7 @@ drawOn: canvas
 	canvas
 		clipBy: self boundsInWorld
 		during: [:c |
-			model nodes doWithIndex: [:node :index |
+			model nodes withIndexDo: [:node :index |
 				| pt |
 				pt := (index-1 \\ (self width // tileSize x) @ (index-1 // (self width // tileSize x))) * tileSize + self topLeft.
 				c

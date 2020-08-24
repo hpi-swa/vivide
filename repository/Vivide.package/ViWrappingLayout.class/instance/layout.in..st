@@ -9,7 +9,7 @@ layout: morph in: bounds
 	rowHeight := 0.
 	
 	self flag: #refactor. "mt: cellinset and layoutinset"
-	morph submorphs doWithIndex: [:s :i |
+	morph submorphs withIndexDo: [:s :i |
 		s visible ifTrue: [
 			s fullBounds.
 			((offset x + s width) > morph right and: [i > 1]) ifTrue: [

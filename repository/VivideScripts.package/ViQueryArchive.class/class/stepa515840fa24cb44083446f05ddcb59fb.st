@@ -6,7 +6,7 @@ stepa515840fa24cb44083446f05ddcb59fb
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | (
 	[:objects | objects collect: [:object | {
-	object isVariableBinding ifTrue: ['** scripts **'] ifFalse: [object category].
+	object isVariableBinding ifTrue: ['** scripts **'] ifFalse: [object category asString].
 	object
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
@@ -18,7 +18,7 @@ stepa515840fa24cb44083446f05ddcb59fb
 })).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:object | {
-	object isVariableBinding ifTrue: [''** scripts **''] ifFalse: [object category].
+	object isVariableBinding ifTrue: [''** scripts **''] ifFalse: [object category asString].
 	object
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]')

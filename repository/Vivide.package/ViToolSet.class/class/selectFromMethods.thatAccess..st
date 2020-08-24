@@ -9,7 +9,7 @@ selectFromMethods: someMethods thatAccess: instVarName
 
 	[found notEmpty] whileTrue: [
 		found := OrderedCollection new.
-		rest doWithIndex: [:ea :i |
+		rest withIndexDo: [:ea :i |
 			(result anySatisfy: [:target | ea hasLiteral: target selector. "ea sendsSelector: target selector"])
 				ifTrue: [found add: i. result add: ea]].
 		found reverseDo: [:i | rest removeAt: i]].

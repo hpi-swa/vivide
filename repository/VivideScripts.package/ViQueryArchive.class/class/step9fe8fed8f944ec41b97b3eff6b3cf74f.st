@@ -5,7 +5,7 @@ step9fe8fed8f944ec41b97b3eff6b3cf74f
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj key ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #morph -> (ViMorphService doObject: textOrObject). #text -> ' ' . #selectable -> false} ] ifFalse: [ [:obj | { #text -> (  obj key ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
@@ -15,7 +15,7 @@ step9fe8fed8f944ec41b97b3eff6b3cf74f
 (#creationTimeStamp -> '11 February 2014 10:25:09 am')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:textOrObject | textOrObject isText ifTrue: [ { #text -> textOrObject } ] ifFalse: [ [:obj | { #text -> (  obj key ) } ] value: textOrObject]]
+	[:textOrObject | textOrObject class == ViSeparator ifTrue: [ { #morph -> (ViMorphService doObject: textOrObject). #text -> '' '' . #selectable -> false} ] ifFalse: [ [:obj | { #text -> (  obj key ) } ] value: textOrObject]]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).

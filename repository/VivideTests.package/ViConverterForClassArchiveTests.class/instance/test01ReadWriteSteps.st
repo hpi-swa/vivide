@@ -6,7 +6,7 @@ test01ReadWriteSteps
 	dicts := steps collect: [:step | step asDictionary] as: Array.
 	
 	"1) Write the sample into the archive."
-	dicts doWithIndex: [:dict :index |
+	dicts withIndexDo: [:dict :index |
 		converter writeStep: dict.
 		self assert: index equals: converter theClass theMetaClass selectors size].
 	

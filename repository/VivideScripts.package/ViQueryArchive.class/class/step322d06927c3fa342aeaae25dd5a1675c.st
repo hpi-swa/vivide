@@ -6,7 +6,7 @@ step322d06927c3fa342aeaae25dd5a1675c
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | (
 	[:objects | objects collect: [:class | {
-	class category.
+	class category asString.
 	class
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]).
@@ -18,7 +18,7 @@ step322d06927c3fa342aeaae25dd5a1675c
 })).
 (#sourceCode -> '[:in :out | (
 	[:objects | objects collect: [:class | {
-	class category.
+	class category asString.
 	class
 	} asTuples]]
 		value: in) do: [:result | out addAll: result asList]]')

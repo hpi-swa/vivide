@@ -15,7 +15,7 @@ computeVisualRepresentation: node parent: polygon
 	
 	offset := 0.
 	nodeCount := node nodes size.
-	node nodes doWithIndex: [:n :i | |rel|
+	node nodes withIndexDo: [:n :i | |rel|
 		rel := ((n at: #weight) / (node at: #weight) asFloat) asPoint.
 		rel := rel * relExtent.
 		node depth even

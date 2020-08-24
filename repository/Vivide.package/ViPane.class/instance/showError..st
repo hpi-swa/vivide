@@ -1,21 +1,10 @@
 errors
 showError: info
 
-	| wasVisible d |
-	d := self decorationNamed: #error ifAbsentPut: [
-		UiToolButton new
-			color: Color white;
-			autoRaise: true;
-			buttonStyle: #iconOnly;
-			icon: UiFugueIcons balloonSmileyIcon scaleIconToDisplay;
-			cellPositioning: #center; "#topRight;"
-			visible: false;
-			in: [:btn | self connect: btn signal: #clicked: toSelector: #showLastException];
-			yourself].
-	wasVisible := d visible.
+	| d |
+	d := self decorationNamed: #message ifAbsent: [self addMessageDecoration].
 
-	"terminate old process if any"
-	self clearError.
+	self clearError.	"terminate old process if any"
 
 	d
 		setProperty: #suspendedProcess toValue: info first;
@@ -25,6 +14,11 @@ showError: info
 		balloonText: info third;
 		comeToFront.
 
-	wasVisible
-		ifTrue: [d show]
-		ifFalse: [d fadeIn].
+	d submorphs first icon: (d valueOfProperty: #errorIcon).
+
+	d submorphs second contents: (
+		Text
+			string: info third
+			attribute: TextColor white).
+
+	d show.

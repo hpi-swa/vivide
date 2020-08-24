@@ -2,7 +2,7 @@ errors
 showLastException
 
 	| d box buttons label errorText scriptText |
-	d := self decorationNamed: #error.
+	d := self decoration message.
 	box := Morph new
 		color: Color white;
 		addDropShadow;

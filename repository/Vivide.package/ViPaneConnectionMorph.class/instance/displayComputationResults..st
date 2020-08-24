@@ -9,7 +9,7 @@ displayComputationResults: spec
 	
 	w := Project current world width // self grid x.
 	
-	done doWithIndex: [:blocked :doneIndex |
+	done withIndexDo: [:blocked :doneIndex |
 	| cell pixel |
 	blocked ifNotNil: [
 		cell := ((doneIndex-1) \\ w) +1 @ (((doneIndex-1) // w) + 1).
