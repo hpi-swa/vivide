@@ -7,8 +7,8 @@ beKeyWindow
 	SystemWindow new beKeyWindow.
 	self world submorphsDo: [:m |
 		(m isPane and: [m ~~ self]) ifTrue: [
-			m decoration window hasDropShadow: false]].
-	self decoration window hasDropShadow: true.
+			m decoration window lookUnfocused]].
+	self decoration window lookFocused.
 	self comeToFront.
 	
 	self flag: #performance.

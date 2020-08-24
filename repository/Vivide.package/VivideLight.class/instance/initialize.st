@@ -13,6 +13,7 @@ initialize
 		hResizing: #spaceFill;
 		rubberBandCells: true;
 		setToAdhereToEdge: #bottom;
+		addDropShadow;
 		beSticky.
 	
 	ViActiveVivide

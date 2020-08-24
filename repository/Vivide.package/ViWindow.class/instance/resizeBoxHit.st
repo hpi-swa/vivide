@@ -4,12 +4,14 @@ resizeBoxHit
 
 	| target maxBounds |
 	target := self pane.
-	maxBounds := target owner visibleClearArea.
+	target width: 700 * RealEstateAgent scaleFactor. "Increase width to reduce height in height-for-width layouts."
+	maxBounds := (target owner ifNil: [Project current world]) visibleClearArea.
 	
 	self flag: #todo. "mt: What about the needs of the pane's other decorations?"
 	maxBounds := maxBounds insetBy: self outerBorderWidth.
 	maxBounds := maxBounds insetBy: self layoutOutset.	
 	
+	target fullBounds. "Do layout."
 	target bounds: ((target topLeft
 		extent: (target optimalWidth min: maxBounds width)
 			@ (target optimalHeight min: maxBounds height))

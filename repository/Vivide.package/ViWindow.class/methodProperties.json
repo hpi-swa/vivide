@@ -11,6 +11,8 @@
 		"gripThickness" : "mt 8/19/2020 14:08:28.107721",
 		"initialize" : "mt 8/20/2020 09:18:40.389506",
 		"initializeLabelArea" : "mt 8/19/2020 14:51:26.711721",
-		"resizeBoxHit" : "mt 8/19/2020 16:03:41.698138",
+		"lookFocused" : "mt 8/22/2020 13:20:51.580688",
+		"lookUnfocused" : "mt 8/22/2020 13:21:32.400688",
+		"resizeBoxHit" : "mt 8/22/2020 12:43:36.842688",
 		"setLabel:" : "mt 8/19/2020 14:28:33.325721",
 		"setWindowColor:" : "mt 8/19/2020 15:20:27.465138" } }

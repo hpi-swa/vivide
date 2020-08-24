@@ -1,5 +1,6 @@
 instance creation
 forScript: symbolOrBlockOrScript withObjects: objects
+	"Always set the script first to avoid the creation of identity scripts."
 
 	| pane |
 	pane := ViPane new

@@ -1,0 +1,3 @@
+dynamic lookup
+yourself
+	^ self

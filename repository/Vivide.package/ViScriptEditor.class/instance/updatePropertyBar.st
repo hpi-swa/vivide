@@ -25,7 +25,7 @@ updatePropertyBar
 					layoutInset: (-1@ -2 corner: -2@ -1);
 					balloonText: '#', property, ' -> ', raw printString;
 					text: (icon ifNotNil: [nil] ifNil: [text ifNotNil: [
-						((text padded: #left to: 3 with: Character space) truncateWithElipsisTo: 10) asText addAttribute: (TextColor color: (Color gray: 0.3))]]);
+						((text padded: #left to: 3 with: Character space) truncateWithElipsisTo: 25) asText addAttribute: (TextColor color: (Color gray: 0.3))]]);
 					icon: icon;
 					buttonStyle: (icon notNil ifTrue: [#iconOnly] ifFalse: [#textOnly]);
 					

@@ -10,5 +10,5 @@
 	"name" : "ViPaneDecorationLookup",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ProtoObject",
 	"type" : "normal" }

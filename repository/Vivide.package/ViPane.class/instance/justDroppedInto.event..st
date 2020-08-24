@@ -3,7 +3,7 @@ justDroppedInto: aMorph event: anEvent
 
 	(self decorationNamed: #window) ifNil: [^super justDroppedInto: aMorph event: anEvent].
 
-	self decoration window hasDropShadow: Preferences menuAppearance3d. "See #startDragFromLabel:."
+	self activate.
 
 	(Project uiManager openToolsAttachedToMouseCursor and: (self hasProperty: #initialDrop))
 		ifTrue: [

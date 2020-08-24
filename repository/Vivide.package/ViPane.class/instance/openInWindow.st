@@ -1,24 +1,35 @@
 as yet unclassified
 openInWindow
 
-	self width: 700. "Better support for height-for-width layouts."
-"	self fullBounds.
+	| preferredWidth preferredHeight grab world hand |
+	self addWindowDecoration.
+	
+	preferredWidth := 200 * RealEstateAgent scaleFactor to: 700 * RealEstateAgent scaleFactor.
+	preferredHeight := 100 * RealEstateAgent scaleFactor to: 500 * RealEstateAgent scaleFactor.
 
-	self
-		width: ((self optimalWidth min: 700) max: 200);
-		fullBounds;
-		height: ((self optimalHeight min: 500) max: 200).	
-"
-	self
-		openInWindowBounds: (RealEstateAgent
-			initialFrameFor: Morph new "Workaround. We do not have the window yet."
-			initialExtent: self extent
-			world: ViActiveVivide world)
-		grab: (ViActiveVivide world == Project current world
-				and: [self currentEvent isMouse and: [self currentEvent isMouseUp or: [self currentEvent isMouseOver and: [self currentEvent redButtonPressed]]]]).
-				
+	"Increase width to reduce height in height-for-width layouts."
 	self decoration window resizeBoxHit.
-	self width: (self width max: 200 * RealEstateAgent scaleFactor).
-	self height: (self height min: 500 * RealEstateAgent scaleFactor).
+	"Constrain minimum and maximum extent."
+	self width: ((self width max: preferredWidth first) min: preferredWidth last).
+	self height: ((self height max: preferredHeight first) min: preferredHeight last).
+	
+	world := ViActiveVivide world.
+	hand := world firstHand.
+	
+	grab := self currentEvent isMouse
+		and: [self currentEvent isMouseUp
+		or: [self currentEvent isMouseOver and: [self currentEvent redButtonPressed]]].
+		
+	grab
+		ifTrue: [
+			self setProperty: #initialDrop toValue: true.
+			"Defer attachment to hand because we might have other mouse events in the processing chain."
+			Project current addDeferredUIMessage: [hand attachMorph: self]]
+		ifFalse: [
+			self openInWorld: world.
+			self decoration window hasDropShadow: false.
+			self translateToAlignWithFocus.
+			self translateToShowDecorations.
+			self activate].
 
 	^ self

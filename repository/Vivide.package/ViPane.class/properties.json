@@ -2,7 +2,7 @@
 	"category" : "Vivide-Morphic",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "TViMemento classTrait + TViOverlayMessages classTrait",
+	"classtraitcomposition" : "TViMemento classTrait",
 	"classvars" : [
 		"LastHelperPane" ],
 	"commentStamp" : "",
@@ -19,5 +19,5 @@
 	"pools" : [
 		 ],
 	"super" : "Morph",
-	"traitcomposition" : "TViMemento + TViOverlayMessages",
+	"traitcomposition" : "TViMemento",
 	"type" : "normal" }

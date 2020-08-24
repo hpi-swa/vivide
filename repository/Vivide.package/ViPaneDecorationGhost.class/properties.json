@@ -10,5 +10,5 @@
 	"name" : "ViPaneDecorationGhost",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ProtoObject",
 	"type" : "normal" }

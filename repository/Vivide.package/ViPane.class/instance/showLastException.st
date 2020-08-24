@@ -69,6 +69,7 @@ showLastException
 	scriptText := ViTextStyler new styledTextFor: scriptText asText.
 	
 	label := (errorText asTextFromHtml, scriptText asText) asMorph.
+	label hResizing: #rigid; width: (label width min: 500 * RealEstateAgent scaleFactor).
 		
 	box addAllMorphs: {label. buttons}.
 				

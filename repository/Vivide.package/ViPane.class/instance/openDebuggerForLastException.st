@@ -1,7 +1,7 @@
 errors
 openDebuggerForLastException
 
-	| d process errorWasInUIProcess description debugger |
+	| d process errorWasInUIProcess description |
 	d := self decoration error.
 	process := d valueOfProperty: #suspendedProcess.
 	errorWasInUIProcess := d valueOfProperty: #errorWasInUIProcess ifAbsent: [false].
