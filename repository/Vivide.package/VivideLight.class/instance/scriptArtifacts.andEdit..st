@@ -2,7 +2,7 @@ as yet unclassified
 scriptArtifacts: someObjects andEdit: aBoolean
 	"Create a fresh script and open it."
 	
-	| objects script toolWnd editorWnd |
+	| objects script toolPane editorPane |
 	VivideLight useClassicMode
 		ifTrue: [^ self openArtifacts: someObjects].
 	
@@ -15,7 +15,7 @@ scriptArtifacts: someObjects andEdit: aBoolean
 	script := ViScriptTemplate createIdentityForObjects: objects.
 	script setProperty: #isNew toValue: true.
 	
-	toolWnd := self openScript: script withObjects: objects.
-	aBoolean ifTrue: [editorWnd := toolWnd editor pane editScript].
+	toolPane := self openScript: script withObjects: objects.
+	aBoolean ifTrue: [editorPane := toolPane editScript].
 
-	^ {toolWnd. editorWnd}
+	^ {toolPane. editorPane}
