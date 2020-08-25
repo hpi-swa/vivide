@@ -1,6 +1,7 @@
 vivide - kernel
 doPane: aPane
 
+	self flag: #metaScript.
 	^ (aPane view isKindOf: ViMultiPaneWidget)
 		ifFalse: [aPane script
 			ifNotNil: [UiFugueIcons zoneIcon]

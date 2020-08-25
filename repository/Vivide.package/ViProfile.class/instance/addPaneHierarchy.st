@@ -1,6 +1,7 @@
 initialization - scripts
 addPaneHierarchy
 
+	self flag: #metaScript.
 	self addScript: {
 		[:pane | pane] -> {
 			#label -> 'Pane Hierarchy'.

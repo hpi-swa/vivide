@@ -27,6 +27,7 @@ drawOn: aCanvas
 				borderColor: self fanOutColor]].
 	
 	self target "pane" drawOverlayInHaloOn: aCanvas.
+	self flag: #metaScript.
 	(self target "pane" view isKindOf: ViMultiPaneWidget) ifTrue: [
 		self target "pane "view drawOverlayInHaloOn: aCanvas]].
 

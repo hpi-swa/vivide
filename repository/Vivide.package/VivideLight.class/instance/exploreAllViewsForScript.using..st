@@ -1,7 +1,8 @@
 actions
 exploreAllViewsForScript: aStep using: someObjects
 	"Try out all available views from the system."
-	
+
+self flag: #metaScript.	
 {
 	[:input :script | {
 		{input}.
