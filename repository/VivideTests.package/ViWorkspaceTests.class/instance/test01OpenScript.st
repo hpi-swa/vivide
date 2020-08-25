@@ -1,10 +1,9 @@
 tests - open
 test01OpenScript
 
-	| script window pane |
+	| script pane |
 	script := [#(1 2 3)] asScript.
-	window := script openScript.
-	pane := window pane.
+	pane := script openScript.
 
 	self
 		assert: script equals: pane script;

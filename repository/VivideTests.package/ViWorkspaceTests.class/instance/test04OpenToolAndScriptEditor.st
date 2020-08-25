@@ -9,8 +9,8 @@ test04OpenToolAndScriptEditor
 	( (1 2 3) (4 5) )
 	) do: [:objects |	
 		(vivide scriptArtifacts: objects) in: [:windows |
-			toolPane := windows first pane.
-			editorPane := windows second pane].
+			toolPane := windows first.
+			editorPane := windows second].
 	
 		self
 			assert: objects equals: toolPane objects;

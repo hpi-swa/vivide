@@ -24,12 +24,7 @@ drawOn: aCanvas
 				frameAndFillRectangle: pane bounds
 				fillColor: (self fanOutColor alpha: 0.3)
 				borderWidth: 2
-				borderColor: self fanOutColor]].
-	
-	self target "pane" drawOverlayInHaloOn: aCanvas.
-	self flag: #metaScript.
-	(self target "pane" view isKindOf: ViMultiPaneWidget) ifTrue: [
-		self target "pane "view drawOverlayInHaloOn: aCanvas]].
+				borderColor: self fanOutColor]]].
 
 	newOutputPane ifNotNil: [:morph |
 		aCanvas

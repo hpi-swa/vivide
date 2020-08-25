@@ -10,12 +10,12 @@ test03OpenScriptEditor
 	} asScript.
 
 	{	"There are several ways to open a script editor."
-		(#artifacts openScriptWith: {script}) pane.
-		(vivide openArtifact: script) pane.
-		(vivide openArtifacts: {#(1 2 3). script}) pane.
-		script editScript pane.
-		(script editScriptWith: #(1 2 3)) pane.
-		(script openScriptWith: #(1 2 3)) pane "tool" editScript pane "script editor".
+		(#artifacts openScriptWith: {script}).
+		(vivide openArtifact: script).
+		(vivide openArtifacts: {#(1 2 3). script}).
+		script editScript.
+		(script editScriptWith: #(1 2 3)).
+		(script openScriptWith: #(1 2 3)) "tool" editScript "script editor".
 	} do: [:pane |
 		self
 			assert: (organization stepById: #artifacts) equals: pane script;

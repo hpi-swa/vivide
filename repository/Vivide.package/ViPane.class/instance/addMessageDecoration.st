@@ -5,7 +5,7 @@ addMessageDecoration
 	(self decorationNamed: #message) ifNotNil: [:m | ^ m].
 	d := self addDecoration: Morph new named: #message.
 	
-	d color: (Color black alpha: 0.65).
+	d color: (Color black alpha: 0.50).
 
 	d layoutPolicy: TableLayout new.
 	d hResizing: #spaceFill.

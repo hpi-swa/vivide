@@ -1,4 +1,0 @@
-accessing
-panes
-
-	^ self submorphs

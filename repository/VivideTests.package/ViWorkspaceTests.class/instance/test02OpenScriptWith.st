@@ -1,10 +1,9 @@
 tests - open
 test02OpenScriptWith
 
-	| script window pane |
+	| script pane |
 	script := [:num | num + num] asScript.
-	window := script openScriptWith: #(1 2 3).
-	pane := window pane.
+	pane := script openScriptWith: #(1 2 3).
 
 	self
 		assert: script equals: pane script;

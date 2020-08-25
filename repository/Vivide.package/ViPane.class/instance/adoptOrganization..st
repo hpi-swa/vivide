@@ -5,7 +5,3 @@ adoptOrganization: aScriptOrganizer
 	self recentScripts
 		select: [:recentScript | recentScript organization = self script organization]
 		thenDo: [:recentScript | recentScript adoptOrganization: aScriptOrganizer].
-	
-	self flag: #refactor. "mt: self currentQuery isMeta does the same check..."
-	(self view isKindOf: ViMultiPaneWidget) ifTrue: [
-		self view adoptOrganization: aScriptOrganizer].

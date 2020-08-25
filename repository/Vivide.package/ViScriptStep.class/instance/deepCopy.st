@@ -30,15 +30,6 @@ deepCopy
 					copiedReferences at: r id put: r.
 					idMap at: referencedStep id put: r id]]]]."
 	
-		step isMeta ifTrue: [
-			self flag: #metaScript.
-			self assert: (step metaScriptReferences includes: step metaReference).
-
-			step metaScriptReferences do: [:referencedStep |
-				"referencedStep isDefault not" true ifTrue: [
-					referencedStep deepCopy in: [:r |
-						copiedReferences at: r id put: r.
-						idMap at: referencedStep id put: r id]]]].
 			].
 
 	"Resolve references."
@@ -52,16 +43,6 @@ deepCopy
 				ifTrue: [(copiedReferences at: (idMap at: someIds first))
 					in: [:target | target notifier doSilently: [target id: someIds first]]] 
 			]]."
-		step isMeta ifTrue: [
-			((Dictionary newFrom: (step process: #(1)) first) at: #current) in: [:someId |
-				(copiedReferences at: (idMap at: someId))
-					in: [:target | target notifier doSilently: [target id: someId]]].
-			((Dictionary newFrom: (step process: #(1)) first) at: #scripts ifAbsent: [#()]) do: [:someId |
-				(copiedReferences at: (idMap at: someId))
-					in: [:target | target notifier doSilently: [target id: someId]]]
-
-			
-			].
 	].
 
 	"Use first step's organization for all steps and external references."

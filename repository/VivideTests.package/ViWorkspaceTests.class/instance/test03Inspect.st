@@ -7,13 +7,13 @@ test03Inspect
 		#lastname -> 'Doe'. }.
 		
 	window := ToolSet inspect: object. "Shorter: object inspect -- but no tool window."
-	pane := window pane.
+	pane := window.
 	self
 		assert: {object} equals: pane objects;
 		assert: #objectExplorer asScript equals: pane script.
 
 	window := vivide openExplorer: object.
-	pane := window pane.
+	pane := window.
 	self
 		assert: {object} equals: pane objects;
 		assert: #objectExplorer asScript equals: pane script.

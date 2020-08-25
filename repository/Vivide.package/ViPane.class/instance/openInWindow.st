@@ -7,11 +7,10 @@ openInWindow
 	preferredWidth := 200 * RealEstateAgent scaleFactor to: 700 * RealEstateAgent scaleFactor.
 	preferredHeight := 100 * RealEstateAgent scaleFactor to: 500 * RealEstateAgent scaleFactor.
 
-	"Increase width to reduce height in height-for-width layouts."
-	self decoration window resizeBoxHit.
-	"Constrain minimum and maximum extent."
-	self width: ((self width max: preferredWidth first) min: preferredWidth last).
-	self height: ((self height max: preferredHeight first) min: preferredHeight last).
+	self fullBounds.
+	self width: ((self optimalWidth max: preferredWidth first) min: preferredWidth last).
+	self fullBounds.
+	self height: ((self optimalHeight max: preferredHeight first) min: preferredHeight last).
 	
 	world := ViActiveVivide world.
 	hand := world firstHand.

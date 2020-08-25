@@ -10,5 +10,5 @@ test07BrowseMessageNames
 	self assert: messages size > 10.
 	
 	window := ToolSet browseMessageNames: pattern.
-	pane := window pane.
+	pane := window.
 	self assert: messages equals: pane objects.

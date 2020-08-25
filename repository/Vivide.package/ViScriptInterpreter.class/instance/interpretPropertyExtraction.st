@@ -24,21 +24,13 @@ interpretPropertyExtraction
 		self properties add: (
 				propertiesToUse collect: [:p | p collect: [:pp | ViScriptTemplate convertObjectProperty: pp] ]).
 				
-	"Update objects according to #object or #objects property if existing. See ViQueryNode >> #inputForChildren."
-	self next isMeta
-		ifTrue: [
-			self flag: #metaScript. "mt: Sigh... See ViScriptPart >> #convertPanes:toScript:."
-			transformedObjects := (propertiesToUse first detect: [:assoc | assoc key = #objects]) value.
-			]
-		ifFalse: [
-			self flag: #refactor. "mt: Same code as in #inputForChildren in model nodes!"
-			transformedObjects := (propertiesToUse gather: [:p |
-				(p detect: [:assoc | assoc key = #objects]
-					ifFound: [:assoc | assoc value]
-					ifNone: [p detect: [:assoc | assoc key = #object]
-						ifFound: [:assoc | {assoc value}]
-						ifNone: [Error signal: 'Extraction step must not omit #object property!']])])
-			]
-		].
+		"Update objects according to #object or #objects property if existing. See ViQueryNode >> #inputForChildren."
+		self flag: #refactor. "mt: Same code as in #inputForChildren in model nodes!"
+		transformedObjects := (propertiesToUse gather: [:p |
+			(p detect: [:assoc | assoc key = #objects]
+				ifFound: [:assoc | assoc value]
+				ifNone: [p detect: [:assoc | assoc key = #object]
+					ifFound: [:assoc | {assoc value}]
+					ifNone: [Error signal: 'Extraction step must not omit #object property!']])])].
 
 	self objects: transformedObjects.

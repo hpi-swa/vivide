@@ -5,7 +5,7 @@ test05BrowseClass
 	class := self class.
 	
 	window := ToolSet browseClass: class. "Shorter: class browse -- but no tool window."
-	pane := window pane.
+	pane := window.
 	self
 		assert: {class} equals: pane objects;
 		assert: #outline asScript equals: pane script.

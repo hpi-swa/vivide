@@ -1,7 +1,6 @@
 initialization - scripts
 addPaneHierarchy
 
-	self flag: #metaScript.
 	self addScript: {
 		[:pane | pane] -> {
 			#label -> 'Pane Hierarchy'.
@@ -15,7 +14,7 @@ addPaneHierarchy
 			#text -> scriptOrView printString.
 			#selectedLater -> [ [scriptOrView isMorph ifTrue: [scriptOrView addHalo]] ]
 		}].
-		[:object | (object isKindOf: ViMultiPaneWidget)
+		[:object | (object respondsTo: #panes) "pane views"
 			ifTrue: [object panes]
 			ifFalse: [#()]].
 		[:panes | panes sorted: [:p1 :p2 | p1 topLeft <= p2 topLeft]].

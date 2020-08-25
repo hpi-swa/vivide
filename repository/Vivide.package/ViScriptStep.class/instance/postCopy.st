@@ -22,5 +22,3 @@ postCopy
 	"Copy references?"
 	self flag: #todo. "mt: Consider #before and #after."
 	"??? #copyOf holds old id ???"
-
-	self flag: #metaScript. "mt: What about copying meta-scripts and its organization?"

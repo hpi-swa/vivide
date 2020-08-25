@@ -4,10 +4,6 @@ script: step
 	"For the same script, just force re-evaluation."
 	step = self script ifTrue: [^ self updateResults].
 
-	"For a different script, tell the model and update the view."
-	self flag: #metaScript.
-	self layoutChanged.
-			
 	self model firstStep: step. "Silent reset."
 	self updateView. "View should fetch required data."
 
@@ -18,5 +14,5 @@ script: step
 	self recentScriptsAdd: step.
 
 	"Tell everybody else."
-	self flag: #deprecate. "Notify my decorations explicitely."
+	self flag: #deprecate. "Notify my decorations explicitely. And also my encompassing pane views?!"
 	self scriptChanged: step.

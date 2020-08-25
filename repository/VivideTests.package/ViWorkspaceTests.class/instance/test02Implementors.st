@@ -10,7 +10,7 @@ test02Implementors
 	
 	"1) Squeak's standard way through the system navigation."
 	window := self navigation browseAllImplementorsOf: symbol.
-	pane := window pane.
+	pane := window.
 	self
 		assert: methodReferences equals: pane objects;
 		assert: pane script notNil;
@@ -18,7 +18,7 @@ test02Implementors
 	
 	"2) Special way for Vivide widgets."
 	window := vivide openImplementors: symbol.
-	pane := window pane.
+	pane := window.
 	self
 		assert: {symbol} equals: pane objects;
 		assert: methodReferences asArray equals: (pane allResults select: #isMethodReference);

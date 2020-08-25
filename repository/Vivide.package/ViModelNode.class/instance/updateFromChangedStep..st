@@ -13,16 +13,7 @@ updateFromChangedStep: evt
 		or: [evt isPropertiesModified])
 		or: [evt isNextChanged])
 			ifFalse: [^ self].
-	
-	"Special handling for meta scripts. Do not traverse the whole chain."
-	self flag: #metaScript.
-	((self depth = 0 and: [self firstStep next notNil]) and: [self firstStep next isMeta])
-		ifTrue: [
-			self firstStep stepsDo: [:step |
-			evt item == step ifTrue: [
-				self triggerUpdateChildren. ^ self]].
-			^ self].
-	
+		
 	"Only if at least one of my next steps is this changed step."
 	resetNotifications := evt isPropertiesModified and: [evt newProperties includesKey: #notifier].
 	self firstStep allStepsDo: [:step |

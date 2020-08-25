@@ -1,8 +1,6 @@
 printing
 printOn: stream
 
-	self flag: #metaScript.
-	self isMeta ifTrue: [stream nextPutAll: ' <meta>'].
 	"self isPropertyExtraction ifTrue: [stream nextPutAll: ' <property>']."
 
 	self isSpecial ifTrue: [

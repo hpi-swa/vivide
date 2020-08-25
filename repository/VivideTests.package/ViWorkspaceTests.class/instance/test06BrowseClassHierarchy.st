@@ -5,7 +5,7 @@ test06BrowseClassHierarchy
 	class := self class.
 	
 	window := ToolSet browseHierarchy: class selector: nil.
-	pane := window pane.
+	pane := window.
 	self
 		assert: {class} equals: pane objects;
 		assert: ({ProtoObject}, pane allResults includesAllOf: (class allSuperclasses, class withAllSubclasses));

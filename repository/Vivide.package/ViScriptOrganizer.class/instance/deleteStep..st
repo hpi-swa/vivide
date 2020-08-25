@@ -11,21 +11,17 @@ deleteStep: aStep
 	removal := aStep.
 	replacement := aStep next.
 	(self referencesToStep: removal) do: [:step |
-		self flag: #metaScript.
-		step isMeta
-			ifTrue: [step metaReference: replacement]
-			ifFalse: [
-				"A) #before and #after" 
-				replacement
-					ifNil: [
-						step before: (step before copyWithout: removal id).
-						step after: (step after copyWithout: removal id)]
-					ifNotNil: [
-						step before: (step before copyReplaceAll: {removal id} with: {replacement id}).
-						step after: (step after copyReplaceAll: {removal id} with: {replacement id})].
-				"B) #next"
-				step next == removal
-					ifTrue: [step next: replacement]]].
+		"A) #before and #after" 
+		replacement
+			ifNil: [
+				step before: (step before copyWithout: removal id).
+				step after: (step after copyWithout: removal id)]
+			ifNotNil: [
+				step before: (step before copyReplaceAll: {removal id} with: {replacement id}).
+				step after: (step after copyReplaceAll: {removal id} with: {replacement id})].
+		"B) #next"
+		step next == removal
+			ifTrue: [step next: replacement]].
 	
 	"2) Do not point to anything anymore."
 	aStep next: nil.
