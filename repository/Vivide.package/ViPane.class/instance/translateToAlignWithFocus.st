@@ -15,7 +15,7 @@ translateToAlignWithFocus
 		hand keyboardFocus ifNotNil: [:m |
 			self flag: #tofix. "mt: Wrong for pop-up panes."
 			focus := m firstOwnerSuchThat: [:mm | mm isPane]]].
-	focus ifNotNil: [self translateToAlignWith: focus].
+	self translateToAlignWith: focus.
 	
 	done := false.		
 	[done] whileFalse: [
