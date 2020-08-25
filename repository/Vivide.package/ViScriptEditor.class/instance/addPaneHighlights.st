@@ -13,6 +13,4 @@ addPaneHighlights
 		collect: [:pane | ViPaneHighlight on: pane]).
 	
 	"Fix GUI-related stuff."
-	(self firstOwnerSuchThat: [:morph | morph isSystemWindow])
-		ifNotNil: #comeToFront.
 	self showToolbar.

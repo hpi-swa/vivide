@@ -15,6 +15,7 @@ isValid
 			ifTrue: [^ false].
 		(step after size ~= step afterScripts size)
 			ifTrue: [^ false].
+		self flag: #metaScript.
 		(step isMeta and: [step metaReference isNil])
 			ifTrue: [^ false]].
 	^ true

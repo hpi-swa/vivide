@@ -11,6 +11,7 @@ deleteStep: aStep
 	removal := aStep.
 	replacement := aStep next.
 	(self referencesToStep: removal) do: [:step |
+		self flag: #metaScript.
 		step isMeta
 			ifTrue: [step metaReference: replacement]
 			ifFalse: [

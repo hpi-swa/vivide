@@ -31,6 +31,7 @@ deepCopy
 					idMap at: referencedStep id put: r id]]]]."
 	
 		step isMeta ifTrue: [
+			self flag: #metaScript.
 			self assert: (step metaScriptReferences includes: step metaReference).
 
 			step metaScriptReferences do: [:referencedStep |

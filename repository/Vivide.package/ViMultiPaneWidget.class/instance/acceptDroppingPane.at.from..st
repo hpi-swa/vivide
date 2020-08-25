@@ -7,6 +7,7 @@ acceptDroppingPane: aPane at: aPoint from: source
 		Error signal: 'Cannot modify default script here. Copy first.'].
 
 	"Compose a tree."
+	self flag: #metaScript.
 	aPane script isMeta ifTrue: [
 		self wrapPanesIntoMultiPaneWidget].
 

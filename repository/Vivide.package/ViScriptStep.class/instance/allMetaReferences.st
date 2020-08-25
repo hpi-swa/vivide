@@ -1,6 +1,7 @@
 meta-scripts
 allMetaReferences
 
+	self flag: #metaScript.
 	^ Array streamContents: [:strm |
 		self allExtractionStepsDo: [:step |
 			step isMeta ifTrue: [

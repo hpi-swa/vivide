@@ -5,6 +5,7 @@ updateFromChangedScript: evt
 	self script
 		ifNil: [^ self].
 
+	self flag: #metaScript.
 	(self script isMeta and: [evt item isMeta not])
 		ifTrue: [^ self].
 

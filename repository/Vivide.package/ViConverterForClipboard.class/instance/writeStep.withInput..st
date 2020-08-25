@@ -12,6 +12,7 @@ writeStep: tool withInput: someObjects
 
 		tool allStepsDo: [:step |
 			props := nil.
+			self flag: #metaScript.
 			step isMeta ifTrue: [Error signal: 'Meta scripts not supported.'].
 
 			stream nextPutAll: step sourceCode.

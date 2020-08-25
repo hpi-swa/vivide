@@ -3,7 +3,8 @@ metaScriptReferences: someScripts
 
 	| newCode pos |
 	self assert: self isMeta.
-
+	self flag: #metaScript.
+	
 	someScripts
 		select: [:script | script isDefault not]
 		thenDo: [:script | script adoptOrganization: self organization].

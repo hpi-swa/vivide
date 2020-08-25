@@ -2,6 +2,7 @@ meta-scripts
 metaReference: script
 
 	| newCode pos |
+	self flag: #metaScript.
 	self assert: self isMeta.
 
 	script isDefault ifFalse: [
