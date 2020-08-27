@@ -1,5 +1,13 @@
 as yet unclassified
 addPane: aPane
 
-	self addAllPanes: {aPane}.
+	self assert: [(self panes identityIncludes: aPane) not].
+	
+	self
+		objects: aPane objects
+		for: aPane.
+
+	self panes add: aPane.
+	self updateModelInput.
+		
 	^ aPane

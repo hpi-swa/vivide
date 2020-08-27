@@ -4,5 +4,8 @@ panes: newPanes
 	((panes ifNil: [#()]) copyWithoutAll: newPanes)
 		do: [:pane | pane delete].
 
-	(panes := newPanes asOrderedCollection) do: [:pane |
-		pane owner ifNil: [self openInWindow: pane]].
+	panes := OrderedCollection new.
+	newPanes do: [:pane |
+		(pane owner == self)
+			ifFalse: [self openInWindow: pane]
+			ifTrue: [panes add: pane]].

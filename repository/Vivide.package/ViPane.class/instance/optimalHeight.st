@@ -1,6 +1,6 @@
 geometry
 optimalHeight
 
-	^ self view
-		ifNil: [300]
-		ifNotNil: [:view | view optimalHeight]
+	^ (self view isNil or: [self objects isEmpty])
+		ifTrue: [100 * RealEstateAgent scaleFactor]
+		ifFalse: [self view optimalHeight]

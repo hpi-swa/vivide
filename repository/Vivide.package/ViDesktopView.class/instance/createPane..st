@@ -1,15 +1,9 @@
 as yet unclassified
 createPane: node
 
-	| pane |
-	pane := ViPane new.
-	pane script: { 
+	^ ViPane
+		forScript: { 
 			(node at: #script ifAbsent: [#defaultProperties])
 				-> {#view -> (node at: #view ifAbsent: [ViExplorerView])}
-	} asScript.
-
-	self
-		objects: node inputForChildren
-		for: pane.
-
-	^ pane
+		} asScript
+		withObjects: node inputForChildren unwrapList asList

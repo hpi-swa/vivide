@@ -2,6 +2,6 @@ geometry
 optimalWidth
 
 	self flag: #magicNumber.
-	^ self view
-		ifNil: [150]
-		ifNotNil: [:view | view optimalWidth + 5]
+	^ (self view isNil or: [self objects isEmpty])
+		ifTrue: [200 * RealEstateAgent scaleFactor]
+		ifFalse: [self view optimalWidth]
