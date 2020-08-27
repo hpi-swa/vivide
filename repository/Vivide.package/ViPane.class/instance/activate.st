@@ -1,6 +1,7 @@
 activation and focus
 activate
 
-	self owner == self world
-		ifTrue: [self beKeyWindow "For compatibility."]
-		ifFalse: [self activated].
+	self beKeyWindow.
+"	self owner == self world
+		ifTrue: [self beKeyWindow]
+		ifFalse: [self activated]."

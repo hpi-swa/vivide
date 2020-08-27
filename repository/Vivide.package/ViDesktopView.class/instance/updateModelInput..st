@@ -1,9 +1,9 @@
-pane api
+as yet unclassified
 updateModelInput: newObjects
 
 	self model ifNil: [
 		"Needed for tests that do not use a model here."
-		self onObjectsChanged.
+		"self onObjectsChanged."
 		^ self].
 	
 	self doNonReentrant: [
@@ -13,8 +13,8 @@ updateModelInput: newObjects
 			ifFound: [:c | c source objects: newObjects]
 			ifNone: ["For compatibility with Morphic world only."
 				self model inputForChildren: newObjects].
-			
+		
 		(self firstOwnerSuchThat: [:morph | morph isPaneView])
 			ifNotNil: [:paneView | paneView updateModelInput].
-		
-		self onObjectsChanged].
+			
+		"self onObjectsChanged"].

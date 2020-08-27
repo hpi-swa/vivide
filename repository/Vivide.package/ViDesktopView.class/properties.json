@@ -7,8 +7,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "ViMultiPaneABC",
+		"model",
+		"panes" ],
+	"name" : "ViDesktopView",
 	"pools" : [
 		 ],
 	"super" : "Morph",

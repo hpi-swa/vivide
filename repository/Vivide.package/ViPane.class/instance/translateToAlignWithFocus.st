@@ -2,9 +2,9 @@ decorations
 translateToAlignWithFocus
 
 	| world hand focus done |
-	self assert: [self isInWorld].
-	
-	world := self world.
+	self assert: [self owner notNil].
+
+	world := self world ifNil: [Project current world].
 	hand := world firstHand.
 	
 	"Move bounds right to currently focused window."

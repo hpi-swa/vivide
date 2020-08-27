@@ -3,7 +3,6 @@ SystemOrganization addCategory: #'Vivide-Artifacts'!
 SystemOrganization addCategory: #'Vivide-Artifacts-Support'!
 SystemOrganization addCategory: #'Vivide-Code'!
 SystemOrganization addCategory: #'Vivide-Data'!
-SystemOrganization addCategory: #'Vivide-Editors'!
 SystemOrganization addCategory: #'Vivide-Editors-Support'!
 SystemOrganization addCategory: #'Vivide-Feedback'!
 SystemOrganization addCategory: #'Vivide-Globals'!

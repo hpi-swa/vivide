@@ -19,3 +19,4 @@ view: newView
 			ifNotNil: [self addMorph: v behind: oldView]].
 	
 	oldView ifNotNil: #delete.
+	self fullBounds. "update layout now"

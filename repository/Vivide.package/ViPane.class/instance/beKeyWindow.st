@@ -2,10 +2,12 @@ activation and focus
 beKeyWindow
 	"For compatibility with Morphic's (system) window management."
 	
-	self isInWorld ifFalse: [^ self].
+	self owner notNil ifFalse: [^ self].
 	
-	SystemWindow new beKeyWindow.
-	self world submorphsDo: [:m |
+	self owner == self world
+		ifTrue: [SystemWindow new beKeyWindow].
+	
+	self owner submorphsDo: [:m |
 		(m isPane and: [m ~~ self]) ifTrue: [
 			m decoration window lookUnfocused]].
 	self decoration window lookFocused.

@@ -1,3 +1,3 @@
 as yet unclassified
 pane
-	^ self owner
+	^ self firstOwnerSuchThat: [:morph | morph isPane]
