@@ -1,3 +1,3 @@
-as yet unclassified
+morphic - halo
 wantsHaloFromClick: evt
 	^ false

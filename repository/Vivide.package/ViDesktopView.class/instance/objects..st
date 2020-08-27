@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 objects: someObjects
 	"See #nodes."
 	

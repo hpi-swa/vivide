@@ -1,4 +1,4 @@
-as yet unclassified
+updating - guards
 doNonReentrant: workBlock
 	"Ignore the given workBlock if somebody is already in here."
 	

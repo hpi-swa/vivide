@@ -1,4 +1,4 @@
-as yet unclassified
+initialization - panes
 addPane: aPane
 
 	self assert: [(self panes identityIncludes: aPane) not].

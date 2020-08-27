@@ -1,4 +1,4 @@
-as yet unclassified
+morphic - submorphs
 acceptDroppingMorph: morph event: event
 
 	morph isPane ifTrue: [

@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateModelInput
 	"Avoid double-wrapping of single objects."
 	

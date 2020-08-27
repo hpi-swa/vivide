@@ -1,4 +1,4 @@
-as yet unclassified
+initialization - panes
 createPane: node
 
 	^ ViPane

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 objects
 	"Extract this view model's objects from each pane's input connection. Unwrap single objects in lists. See #objects:for: and also ViModelNode >> #inputForChildren."
 

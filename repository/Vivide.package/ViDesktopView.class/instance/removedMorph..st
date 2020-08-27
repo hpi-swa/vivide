@@ -1,4 +1,4 @@
-as yet unclassified
+morphic - submorphs
 removedMorph: aMorph
 
 	aMorph isPane ifTrue: [

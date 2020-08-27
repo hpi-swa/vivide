@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 nodes: someNodes
 
 	| newPanes paneIndex currentPane |

@@ -1,3 +1,3 @@
-as yet unclassified
+morphic - events
 indicateKeyboardFocus
 	^ false

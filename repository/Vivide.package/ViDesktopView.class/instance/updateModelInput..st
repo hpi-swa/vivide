@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateModelInput: newObjects
 
 	self model ifNil: [

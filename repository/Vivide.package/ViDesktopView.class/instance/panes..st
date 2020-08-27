@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 panes: newPanes
 
 	((panes ifNil: [#()]) copyWithoutAll: newPanes)

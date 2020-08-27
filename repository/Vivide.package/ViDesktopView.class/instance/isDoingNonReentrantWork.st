@@ -1,4 +1,4 @@
-as yet unclassified
+updating - guards
 isDoingNonReentrantWork
 
 	^ self hasProperty: #isReadingModel
