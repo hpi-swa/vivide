@@ -7,6 +7,6 @@ initialize
 	
 	self currentViews do: [:treeView |
 		treeView viewport
-			indent: (16 * RealEstateAgent scaleFactor) rounded;
+			indent: (16 scaleValueToDisplay roundTo: 8);
 			expandedIcon: ViIcons icons8ChevronDownSmall64px1Icon  scaledToDisplay;
 			collapsedIcon: ViIcons icons8ChevronRightSmall64px1Icon scaledToDisplay].

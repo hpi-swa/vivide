@@ -4,8 +4,8 @@ openInWindow
 	| preferredWidth preferredHeight grab world hand |
 	self addWindowDecoration.
 	
-	preferredWidth := 200 * RealEstateAgent scaleFactor to: 700 * RealEstateAgent scaleFactor.
-	preferredHeight := 100 * RealEstateAgent scaleFactor to: 500 * RealEstateAgent scaleFactor.
+	preferredWidth := 200 scaleValueToDisplay to: 700 scaleValueToDisplay.
+	preferredHeight := 100 scaleValueToDisplay to: 500 scaleValueToDisplay.
 
 	self fullBounds.
 	self width: ((self optimalWidth max: preferredWidth first) min: preferredWidth last).

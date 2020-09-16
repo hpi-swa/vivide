@@ -15,4 +15,4 @@ translateToAlignWith: pane
 		ifTrue: [
 			"Add new row."
 			self left: self owner left + delta x.
-			self top: self top + (100 * RealEstateAgent scaleFactor)].
+			self top: self top + 100 scaleValueToDisplay].

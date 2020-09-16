@@ -4,8 +4,8 @@ openInWindow: pane
 	| preferredWidth preferredHeight grab world hand |
 	pane addWindowDecoration.
 	
-	preferredWidth := 200 * RealEstateAgent scaleFactor to: 700 * RealEstateAgent scaleFactor.
-	preferredHeight := 100 * RealEstateAgent scaleFactor to: 500 * RealEstateAgent scaleFactor.
+	preferredWidth := 200 scaleValueToDisplay to: 700 scaleValueToDisplay.
+	preferredHeight := 100 scaleValueToDisplay to: 500 scaleValueToDisplay.
 
 	pane fullBounds.
 	pane width: ((pane optimalWidth max: preferredWidth first) min: preferredWidth last).

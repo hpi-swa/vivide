@@ -3,7 +3,7 @@ activateWizard
 	"Ignore current source code and propose simple mapping."
 
 	"Make room for the magic wand. See #drawWizardIndicationOn:."
-	self textField margins: ((14 * RealEstateAgent scaleFactor) rounded @0 corner: 0@7).
+	self textField margins: (14 scaleValueToDisplay @0 corner: 0@7).
 
 	"New scripts are green by default."
 	self thisStep checkNewToolColor. 

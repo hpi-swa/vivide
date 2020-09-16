@@ -4,8 +4,8 @@ initializeArtifact
 	| memoEdit |
 	memoEdit := ViMemoEdit new
 		outerBorderWidth: 0;
-		margins: ((15@11) * RealEstateAgent scaleFactor
-			corner: (15@11) * RealEstateAgent scaleFactor);
+		margins: ((15@11) scaleValueToDisplay
+			corner: (15@11) scaleValueToDisplay);
 		color: (Color gray: 0.95);
 		borderColor: (Color gray: 0.7);
 		borderWidth: 1;

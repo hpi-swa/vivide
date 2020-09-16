@@ -15,9 +15,9 @@ addMessageDecoration
 	d cellInset: 5.
 	d clipSubmorphs: true.
 	
-	d setProperty: #infoIcon toValue: ((ViIcons icons8Info64px1Icon dyed: Color white) scaledToSize: (24@24) * RealEstateAgent scaleFactor).
-	d setProperty: #errorIcon toValue: ((ViIcons icons8Error64px1Icon dyed: Color yellow) scaledToSize: (24@24) * RealEstateAgent scaleFactor).
-	d setProperty: #helpIcon toValue: ((ViIcons icons8Help64px1Icon dyed: Color white) scaledToSize: (24@24) * RealEstateAgent scaleFactor).
+	d setProperty: #infoIcon toValue: ((ViIcons icons8Info64px1Icon dyed: Color white) scaledToSize: (24@24) scaleValueToDisplay).
+	d setProperty: #errorIcon toValue: ((ViIcons icons8Error64px1Icon dyed: Color yellow) scaledToSize: (24@24) scaleValueToDisplay).
+	d setProperty: #helpIcon toValue: ((ViIcons icons8Help64px1Icon dyed: Color white) scaledToSize: (24@24) scaleValueToDisplay).
 	
 	d addMorphFront: (UiToolButton new color: Color black; autoRaise: true; buttonStyle: #iconOnly; yourself).
 	d addMorphBack: (TextMorph new hResizing: #spaceFill; yourself).

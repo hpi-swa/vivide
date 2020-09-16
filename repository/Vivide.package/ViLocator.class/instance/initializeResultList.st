@@ -3,7 +3,7 @@ initializeResultList
 
 	resultList := UiTableView new
 		showGrid: false;
-		extent: ((500@300) * RealEstateAgent scaleFactor) rounded;
+		extent: (500@300) scaleValueToDisplay;
 		selectionBehavior: #selectRows;  
 		removeVerticalHeader;
 		removeHorizontalHeader;

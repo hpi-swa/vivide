@@ -2,7 +2,7 @@
 	"class" : {
 		"createClassPreviewFor:" : "mt 7/22/2012 15:23:52.588" },
 	"instance" : {
-		"codeboxFor:inClass:" : "mt 1/9/2020 11:39",
+		"codeboxFor:inClass:" : "mt 9/16/2020 11:08:55.453617",
 		"discardPreview" : "mt 7/22/2012 15:29:40.097",
 		"discardPreviewLater" : "mt 8/16/2012 15:07:42.748",
 		"doAssociation:" : "mt 9/19/2013 14:12:18.826",
@@ -33,4 +33,4 @@
 		"showPreview" : "mt 9/3/2012 14:21:41.545",
 		"showPreviewAt:" : "mt 8/29/2012 11:58:08.355",
 		"textboxFor:" : "mt 9/7/2012 11:20:25.446",
-		"textboxFor:color:" : "mt 1/9/2020 11:40" } }
+		"textboxFor:color:" : "mt 9/16/2020 11:09:12.836617" } }

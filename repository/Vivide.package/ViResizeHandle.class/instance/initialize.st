@@ -6,7 +6,7 @@ initialize
 	super initialize.
 	
 	self
-		extent: ((9@9) * RealEstateAgent scaleFactor) rounded;
+		extent: (9@9) scaleValueToDisplay;
 		color: (Color gray: 0.85);
 		changeProportionalLayout;
 		layoutInset: 0;

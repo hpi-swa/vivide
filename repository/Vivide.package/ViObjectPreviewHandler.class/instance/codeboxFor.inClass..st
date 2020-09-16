@@ -15,6 +15,6 @@ codeboxFor: someCode inClass: aClass
 		colorHighlightedBorder: (Color gray: 0.6);
 		updateFocusColor: false.
 	
-	box width: (box optimalWidth min: (400 * RealEstateAgent scaleFactor) rounded).
+	box width: (box optimalWidth min: 400 scaleValueToDisplay).
 	
 	^ box

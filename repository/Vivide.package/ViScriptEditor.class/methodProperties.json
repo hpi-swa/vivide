@@ -9,7 +9,7 @@
 	"instance" : {
 		"acceptDroppingMorph:event:" : "mt 5/2/2019 09:24",
 		"acceptSourceCode" : "mt 5/7/2019 15:09",
-		"activateWizard" : "mt 5/8/2019 14:33",
+		"activateWizard" : "mt 9/16/2020 11:09:41.500617",
 		"addArtifact" : "mt 4/9/2019 08:05",
 		"addPaneHighlights" : "mt 8/25/2020 12:43:39.321015",
 		"addScriptToProfile" : "mt 4/8/2019 16:34",
@@ -60,7 +60,7 @@
 		"initializeEventHandler" : "mt 4/8/2019 14:05",
 		"initializeNavigationBar" : "mt 11/14/2019 09:57",
 		"initializePropertyBar" : "mt 11/13/2019 16:45",
-		"initializeReferenceBars" : "mt 8/15/2019 14:16",
+		"initializeReferenceBars" : "mt 9/16/2020 11:10:14.967617",
 		"initializeResizeHandle" : "mt 4/10/2019 11:24",
 		"initializeSummaryContainer" : "mt 10/15/2014 09:18:23.281",
 		"initializeTextField" : "mt 4/10/2019 08:05",
