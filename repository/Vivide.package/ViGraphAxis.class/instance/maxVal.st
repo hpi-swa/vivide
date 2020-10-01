@@ -1,0 +1,4 @@
+accessing
+maxVal
+
+	^ maxVal
