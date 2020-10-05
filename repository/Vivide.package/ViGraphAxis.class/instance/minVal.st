@@ -1,4 +1,4 @@
 accessing
 minVal
 
-	^ minVal
+	^ minVal ifNil: [0.0]

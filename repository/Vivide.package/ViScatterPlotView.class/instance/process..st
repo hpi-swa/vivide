@@ -1,11 +1,13 @@
 updating
 process: model
 
-	| minVal maxVal offset w |
+	| minVal maxVal offset w count margin |
 	graph removeAllMorphs.
 	topLabel contents: ((topLabel valueOfProperty: #builder) value cull: model objects) asString.
 
+	count := 0.
 	model nodesDo: [:node |
+		count := count + 1.
 		minVal
 			ifNil: [minVal := node at: #point]
 			ifNotNil: [minVal := minVal min: (node at: #point)].
@@ -15,14 +17,13 @@ process: model
 
 	minVal ifNil: [^ self "no nodes"].
 
-	xAxis
-		minVal: minVal x - (xAxis incVal * 0.1);
-		maxVal: maxVal x + (xAxis incVal * 0.1).
-	yAxis
-		minVal: minVal y - (yAxis incVal * 0.25);
-		maxVal: maxVal y + (yAxis incVal * 0.25).
-	
 	w := (topLabel font widthOf: $.) * 2.
+
+	"Adds space around field in terms of point diameter."
+	xAxis minVal: minVal x; maxVal: maxVal x.
+	count > 1 ifTrue: [xAxis addMargins: w].
+	yAxis minVal: minVal y; maxVal: maxVal y.
+	count > 1 ifTrue: [yAxis addMargins: w].
 	
 	model nodesDo: [:node | | pt f |
 		pt := node at: #point ifAbsent: [0@0].		
@@ -39,3 +40,5 @@ process: model
 			layoutFrame: (LayoutFrame fractions: (f corner: f) offsets: ((w@w) // -2 corner: 0@0));
 			in: [:m | self configureSubmorph: m forNode: node];
 			yourself)].
+		
+	self yieldSelectionOn: graph.

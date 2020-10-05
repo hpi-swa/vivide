@@ -1,6 +1,8 @@
 as yet unclassified
 mouseUp: evt on: morph
 
+	evt yellowButtonChanged ifTrue: [^ self invokeMenuOn: graph].
+
 	evt shiftPressed ifFalse: [
 		self deselectAllItemsOn: graph.
 		self selectItem: morph.

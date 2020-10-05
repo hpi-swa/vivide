@@ -1,3 +1,3 @@
 as yet unclassified
 maxValString
-	^ self maxVal printShowingDecimalPlaces: 1
+	^ self maxVal printShowingDecimalPlaces: precision

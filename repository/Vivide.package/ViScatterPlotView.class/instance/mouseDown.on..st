@@ -1,6 +1,8 @@
 as yet unclassified
 mouseDown: evt on: morph
 
+	evt redButtonChanged ifFalse: [^ self "menu"].
+	
 	(morph valueOfProperty: #isSelected) == true
 		ifTrue: [^ self].
 
@@ -12,4 +14,4 @@ mouseDown: evt on: morph
 	(morph valueOfProperty: #isSelected) == true
 		ifTrue: [self deselectItem: morph]
 		ifFalse: [self selectItem: morph].
-	morph setProperty: #retainSelection toValue: true. 
+	morph setProperty: #retainSelection toValue: true.

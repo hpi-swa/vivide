@@ -1,4 +1,7 @@
 as yet unclassified
 ratioOf: value
 
-	^ value - minVal / (maxVal - minVal)
+	| delta |
+	delta := maxVal - minVal.
+	delta isZero ifTrue: [^ 0.5].
+	^ value - minVal / delta

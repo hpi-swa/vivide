@@ -8,8 +8,11 @@ initialize
 
 	minVal := 0.0.
 	maxVal := 10.0.
-	firstVal := 0.5.
-	incVal := 0.5.
+
+	firstVal := nil. "auto"
+	incVal := nil. "auto"
+	
+	precision := 1. "i.e. roundTo: 0.1"
 
 "	minVal := 0.65.
 	maxVal := 2.19.

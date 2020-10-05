@@ -2,6 +2,8 @@ as yet unclassified
 doDrag: evt on: morph
 
 	| pt1 pt2 selectionRectangle |
+	evt redButtonPressed ifFalse: [^ self].
+
 	pt1 := morph valueOfProperty: #dragStart ifAbsent: [0@0].
 	pt2 := evt position.
 	

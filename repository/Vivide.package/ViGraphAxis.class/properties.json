@@ -11,6 +11,7 @@
 		"maxVal",
 		"firstVal",
 		"incVal",
+		"precision",
 		"orientation" ],
 	"name" : "ViGraphAxis",
 	"pools" : [
