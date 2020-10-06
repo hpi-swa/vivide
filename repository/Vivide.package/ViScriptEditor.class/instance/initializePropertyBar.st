@@ -5,7 +5,7 @@ initializePropertyBar
 		color: Color transparent;
 		extent: 5@5;
 		layoutPolicy: TableLayout new;
-		cellGap: 2;
+		cellGap: 3;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		listDirection: #leftToRight;

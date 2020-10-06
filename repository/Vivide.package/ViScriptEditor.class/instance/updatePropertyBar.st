@@ -1,14 +1,20 @@
 updating
 updatePropertyBar
 
+	| fontToUse colorToUse separatorExtent |
 	self propertyBar
 		removeAllMorphs;
 		height: 1.
 	
+	fontToUse := TextStyle defaultFont.
+	colorToUse := TextColor color: (Color gray: 0.3).
+	separatorExtent := 1@ (fontToUse height // 2).
+	
 	(self propertiesToIgnore keys select: [:key | (self propertiesToIgnore at: key) isNil]), #(before after) in: [:ignore | 
 		(self scriptScriptProperties keys copyWithoutAll: ignore) do: [:property |
 			| propertyValue raw text icon |
-			propertyValue := (self thisStep valueOfProperty: property) "no blocks" value.
+			propertyValue := (self thisStep valueOfProperty: property).
+			propertyValue isBlock ifTrue: [propertyValue := propertyValue "no blocks" cull: #()]. "value"
 			
 			"The WHAT is more important than the TRUTH."
 			raw := propertyValue.
@@ -25,7 +31,7 @@ updatePropertyBar
 					layoutInset: (-1@ -2 corner: -2@ -1);
 					balloonText: '#', property, ' -> ', raw printString;
 					text: (icon ifNotNil: [nil] ifNil: [text ifNotNil: [
-						((text padded: #left to: 3 with: Character space) truncateWithElipsisTo: 25) asText addAttribute: (TextColor color: (Color gray: 0.3))]]);
+						(text truncateWithElipsisTo: 25) asText addAttribute: colorToUse]]);
 					icon: icon;
 					buttonStyle: (icon notNil ifTrue: [#iconOnly] ifFalse: [#textOnly]);
 					
@@ -36,5 +42,5 @@ updatePropertyBar
 					
 					yourself).
 					].
-				].
+				] separatedBy: [self propertyBar addMorphBack: (Morph new extent: separatorExtent; color: (Color gray: 0.5))].
 			].

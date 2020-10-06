@@ -13,4 +13,4 @@ setUp: script
 		firstVal: (script valueOfProperty: #verticalFirst ifAbsent: [0.0]);
 		incVal: (script valueOfProperty: #verticalInc ifAbsent: [nil "auto"]).
 
-	topLabel setProperty: #builder toValue: (script valueOfProperty: #topLabel ifAbsent: [ [[ '(no title)' ]] ]).
+	topLabel setProperty: #builder toValue: (script valueOfProperty: #topLabel ifAbsent: [ [ '(no title)' ] ]).

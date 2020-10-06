@@ -3,7 +3,7 @@ process: model
 
 	| minVal maxVal offset w count margin |
 	graph removeAllMorphs.
-	topLabel contents: ((topLabel valueOfProperty: #builder) value cull: model objects) asString.
+	topLabel contents: ((topLabel valueOfProperty: #builder) cull: model objects) asString.
 
 	count := 0.
 	model nodesDo: [:node |
