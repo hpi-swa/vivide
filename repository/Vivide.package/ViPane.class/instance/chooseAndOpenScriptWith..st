@@ -29,7 +29,7 @@ chooseAndOpenScriptWith: someObjects
 		objects: scripts;
 		
 		flag: #fishy; "mt: We need this for some pluggable morphs as views who would otherwise eat this pane immediately... *sigh*"
-		grabMouse;
+		"grabMouse;"
 
 		chooseObjectAt: ActiveHand cursorPoint - (5@5)
 		thenNotify: LastHelperPane
