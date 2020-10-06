@@ -1,35 +1,34 @@
 steps
-step34b21752fa54c04592bfb7cbda9259ca
+step60a1569b51d789478a007a82f2528572
 	<step>
 
 	^ (Dictionary newFrom: {
 (#'_def' -> (Dictionary newFrom: {
 (#block -> [:in :out | ([:all | all collect: [:o | (
-	[:exNote | { #text -> exNote serialNumber }]
+	[:row | { #value -> (row at: 'stride_lengths') asNumber . #text -> (row at: '#')}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]).
 (#className -> #ViScriptDefinition).
-(#id -> #'f56cfc2e-9390-ba4c-ad6a-661f13598f73').
+(#id -> #'32d6236b-34a2-a945-a869-6c5b43df2c0c').
 (#properties -> (Dictionary newFrom: {
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '6 March 2020 1:28:19.336371 pm')
+(#creationTimeStamp -> '2 October 2020 11:25:21.996911 am')
 })).
 (#sourceCode -> '[:in :out | ([:all | all collect: [:o | (
-	[:exNote | { #text -> exNote serialNumber }]
+	[:row | { #value -> (row at: ''stride_lengths'') asNumber . #text -> (row at: ''#'')}]
 		value: o), { #object -> o }]]
 			value: in) do: [:result | out add: result]]')
 })).
 (#className -> #ViScriptStep).
-(#definition -> #'f56cfc2e-9390-ba4c-ad6a-661f13598f73').
+(#definition -> #'32d6236b-34a2-a945-a869-6c5b43df2c0c').
 (#iconCode -> 'nil').
-(#id -> #'34b21752-fa54-c045-92bf-b7cbda9259ca').
+(#id -> #'60a1569b-51d7-8947-8a00-7a82f2528572').
 (#isProperty -> true).
 (#label -> nil).
-(#next -> #'4844bfc0-65ed-7047-9c3b-32d2bd51ff66').
+(#next -> nil).
 (#properties -> (Dictionary newFrom: {
-(#after -> #()).
 (#color -> (Color r: 0.553 g: 0.796 b: 0.553)).
 (#creationAuthor -> 'mt').
-(#creationTimeStamp -> '6 March 2020 1:28:19.336371 pm')
+(#creationTimeStamp -> '2 October 2020 11:25:21.996911 am')
 }))
 })
