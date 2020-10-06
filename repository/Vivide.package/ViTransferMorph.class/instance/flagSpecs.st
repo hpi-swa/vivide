@@ -9,4 +9,5 @@ flagSpecs
 		($c 'Collect' #collect)
 		($s 'Script' #script)
 		($u 'Use' #use)
+		($f 'Flatten' #flatten)
 		)]

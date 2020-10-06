@@ -9,7 +9,12 @@ openArtifact: anObject
 				ifNotNil: [:pane | pane activate. ^ self]].
 	
 	object := anObject.
-		
+
+	self flag: #flatten. "mt: Avoid tuple treatment."
+	(self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #flatten]])
+		in: [:flattenObject |
+			object := flattenObject ifTrue: [anObject asList first] ifFalse: [anObject]].
+
 	self flag: #evaluate. "mt: Unwrap name bindings."
 	(self currentEvent in: [:evt | evt isDropEvent and: [evt contents hasFlag: #evaluate]])
 		in: [:evaluateObject | "Unbox bindings, e.g. #a -> aMorph."

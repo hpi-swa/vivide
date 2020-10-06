@@ -8,7 +8,7 @@ chooseAndOpenScriptWith: someObjects
 	self flag: #noTupleSupport. "mt: For context menus in standard views."
 	objects first isList ifTrue: [
 		self flag: #hacky. "mt: ByteArrays should never be flattened."
-		objects := objects flatten].
+		objects := [objects flatten] ifError: [objects gather: [:o | o asList]]].
 
 	objects ifEmpty: [^ self].
 	
