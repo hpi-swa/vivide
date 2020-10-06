@@ -1,4 +1,4 @@
-as yet unclassified
+items
 mouseLeave: evt on: morph
 
 	(morph valueOfProperty: #isSelected) == true

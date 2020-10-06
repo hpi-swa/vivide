@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 deselectAllItemsOn: container
 
 	container submorphsDo: [:m |

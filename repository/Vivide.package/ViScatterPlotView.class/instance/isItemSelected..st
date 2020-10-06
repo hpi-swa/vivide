@@ -1,4 +1,4 @@
-as yet unclassified
+items
 isItemSelected: morph
 	
 	^ (morph valueOfProperty: #isSelected) == true

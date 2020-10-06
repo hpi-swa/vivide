@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 hideCross: evt on: morph
 
 	morph removeProperty: #showCross.

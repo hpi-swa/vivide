@@ -1,4 +1,4 @@
-as yet unclassified
+items
 mouseUp: evt on: morph
 
 	evt yellowButtonChanged ifTrue: [^ self invokeMenuOn: graph].

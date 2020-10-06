@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 handleMouseMove: evt
 	"Draw the cross hair."
 	(graph hasProperty: #showCross) ifTrue: [

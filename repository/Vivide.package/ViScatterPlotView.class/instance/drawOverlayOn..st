@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 drawOverlayOn: aCanvas
 
 	super drawOverlayOn: aCanvas.

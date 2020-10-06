@@ -1,4 +1,4 @@
-as yet unclassified
+items
 mouseEnter: evt on: morph
 
 	self highlightItem: morph.

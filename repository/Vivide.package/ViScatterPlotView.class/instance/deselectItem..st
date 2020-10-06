@@ -1,4 +1,4 @@
-as yet unclassified
+items
 deselectItem: morph
 
 	self deselectItemSilently: morph.

@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"configureSelectionOn:" : "mt 10/1/2020 10:43:09.583619",
-		"configureSubmorph:forNode:" : "mt 10/2/2020 11:31:50.520911",
+		"configureSelectionOn:" : "mt 10/6/2020 13:28:36.719459",
+		"configureSubmorph:forNode:" : "mt 10/6/2020 13:27:57.239459",
 		"deselectAllItemsOn:" : "mt 10/1/2020 11:04:50.654619",
 		"deselectItem:" : "mt 10/1/2020 11:02:31.711619",
 		"deselectItemSilently:" : "mt 10/1/2020 10:34:48.219619",
 		"doDrag:on:" : "mt 10/5/2020 18:17:39.479803",
+		"doubleClick:on:" : "mt 10/6/2020 13:27:21.282459",
 		"drawOn:" : "mt 10/1/2020 11:01:29.691619",
 		"drawOverlayOn:" : "mt 10/1/2020 11:16:34.745619",
 		"endDrag:on:" : "mt 10/5/2020 18:17:08.846803",
@@ -18,6 +19,7 @@
 		"initialize" : "mt 10/1/2020 09:40:05.468619",
 		"invokeMenuOn:" : "mt 10/5/2020 18:17:52.036803",
 		"isItemSelected:" : "mt 10/1/2020 10:01:08.410619",
+		"keystroke:on:" : "mt 10/6/2020 13:34:50.259459",
 		"mouseDown:on:" : "mt 10/5/2020 18:16:58.810803",
 		"mouseEnter:on:" : "mt 10/1/2020 08:48:15.989619",
 		"mouseLeave:on:" : "mt 10/1/2020 10:38:54.576619",
@@ -28,7 +30,7 @@
 		"selectedItems" : "mt 10/1/2020 10:59:15.724619",
 		"selectedItemsOn:" : "mt 10/1/2020 10:58:59.995619",
 		"setUp:" : "mt 10/6/2020 12:14:33.016459",
-		"showCross:on:" : "mt 10/1/2020 10:52:23.618619",
+		"showCross:on:" : "mt 10/6/2020 13:35:40.714459",
 		"startDrag:on:" : "mt 10/5/2020 18:17:13.984803",
 		"unhighlightItem:" : "mt 10/1/2020 08:47:38.350619",
 		"yieldSelectionOn:" : "mt 10/1/2020 10:03:22.630619" } }

@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 endDrag: evt on: morph
 
 	evt yellowButtonChanged ifTrue: [^ self invokeMenuOn: morph].

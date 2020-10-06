@@ -1,4 +1,4 @@
-as yet unclassified
+items
 mouseDown: evt on: morph
 
 	evt redButtonChanged ifFalse: [^ self "menu"].

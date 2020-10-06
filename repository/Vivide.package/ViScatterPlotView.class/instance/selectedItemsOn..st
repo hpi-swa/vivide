@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 selectedItemsOn: morph
 
 	^ morph submorphs

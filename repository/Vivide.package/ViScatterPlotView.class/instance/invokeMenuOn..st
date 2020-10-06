@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 invokeMenuOn: container
 
 	self pane chooseAndOpenScriptWith: ((self selectedItemsOn: container)

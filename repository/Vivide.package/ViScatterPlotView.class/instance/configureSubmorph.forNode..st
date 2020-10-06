@@ -1,4 +1,4 @@
-as yet unclassified
+items
 configureSubmorph: morph forNode: node 
 
 	morph setProperty: #node toValue: node.
@@ -14,3 +14,6 @@ configureSubmorph: morph forNode: node
 
 	morph on: #mouseDown send: #mouseDown:on: to: self.
 	morph on: #mouseUp send: #mouseUp:on: to: self.
+
+	"More configurable interaction."
+	morph on: #doubleClick send: #doubleClick:on: to: self.

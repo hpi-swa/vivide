@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 selectedItems
 
 	^ self selectedItemsOn: graph

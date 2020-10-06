@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 yieldSelectionOn: morph
 
 	self yield: (morph submorphs

@@ -1,4 +1,4 @@
-as yet unclassified
+items
 deselectItemSilently: morph
 
 	morph removeProperty: #isSelected.

@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 startDrag: evt on: morph
 
 	evt redButtonChanged ifFalse: [^ self].

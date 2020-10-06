@@ -1,4 +1,4 @@
-as yet unclassified
+graph
 doDrag: evt on: morph
 
 	| pt1 pt2 selectionRectangle |
