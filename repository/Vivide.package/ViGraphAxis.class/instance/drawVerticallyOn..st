@@ -1,18 +1,20 @@
 as yet unclassified
 drawVerticallyOn: aCanvas
 
-	| fontToUse offset scaleFactor pt m |
+	| fontToUse offset scaleFactor pt m valIndex |
 	fontToUse := self fontToUse.
 	scaleFactor := self scaleFactor.
 	offset := minVal = maxVal
 		ifTrue: [0] ifFalse: [(self minVal * scaleFactor) rounded].	
 
 	"Draw steps."
+	valIndex := 0.
 	self firstVal to: self maxVal by: self incVal do: [:val |
 		| y valLabel w |
+		valIndex := valIndex + 1.
 		y := minVal = maxVal
 			ifTrue: [self center y] ifFalse: [self bottom + offset - (val*scaleFactor)].
-		valLabel := val printShowingDecimalPlaces: precision.
+		valLabel := (self labelsForValues at: valIndex ifAbsent: [val printShowingDecimalPlaces: precision]) asString.
 		w := fontToUse widthOfString: valLabel, ' x'.
 		
 		(y > (self top + (fontToUse height // 2))

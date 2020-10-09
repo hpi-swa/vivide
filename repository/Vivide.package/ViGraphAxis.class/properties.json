@@ -12,7 +12,8 @@
 		"firstVal",
 		"incVal",
 		"precision",
-		"orientation" ],
+		"orientation",
+		"labelsForValues" ],
 	"name" : "ViGraphAxis",
 	"pools" : [
 		 ],

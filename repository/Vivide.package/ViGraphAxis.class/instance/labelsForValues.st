@@ -1,0 +1,4 @@
+accessing
+labelsForValues
+
+	^ labelsForValues ifNil: [#()]
