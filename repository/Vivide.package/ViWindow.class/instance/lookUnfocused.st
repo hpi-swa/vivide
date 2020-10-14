@@ -5,3 +5,4 @@ lookUnfocused
 	(self hasProperty: #focusedColor) ifFalse: [
 		self setProperty: #focusedColor toValue: self outerColor.
 		self outerColor: self outerColor darker].
+	self removeProperty: #isLookingFocused.

@@ -3,7 +3,7 @@ justDroppedInto: aMorph event: anEvent
 
 	(self decorationNamed: #window) ifNil: [^super justDroppedInto: aMorph event: anEvent].
 
-	self activate.
+	self activate; hasDropShadow: true.
 
 	(Project uiManager openToolsAttachedToMouseCursor and: (self hasProperty: #initialDrop))
 		ifTrue: [
