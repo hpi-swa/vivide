@@ -35,6 +35,21 @@ You can download a Squeak/Smalltalk image with the latest working version of Viv
 If you did work based on (or related to) Vivide and want to write about that work, you can refer to our project as follows:
 
 ```Bibtex
+@phdthesis{taeumel2020datadriven,
+ author = {Taeumel, Marcel},
+ title = {Data-driven Tool Construction in Exploratory Programming Environments},
+ school = {University of Potsdam, Digital Engineering Faculty, Hasso Plattner Institute},
+ year = {2020},
+ month = {2},
+ numpages = {299},
+ url = {https://doi.org/10.25932/publishup-44428},
+ doi = {10.25932/publishup-44428},
+}
+```
+
+Here is an older, yet more compact, description about some ideas around Vivide:
+
+```Bibtex
 @inproceedings{taeumel2014interleaving,
  author = {Taeumel, Marcel and Perscheid, Michael and Steinert, Bastian and Lincke, Jens and Hirschfeld, Robert},
  title = {Interleaving of Modification and Use in Data-driven Tool Development},
