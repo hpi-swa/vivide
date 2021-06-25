@@ -22,4 +22,6 @@ showWindowForTransferMorph: aTransferMorph
 	
 	].
 
-	^ {VivideLight active openArtifact: aTransferMorph passenger}
+	^ aTransferMorph passenger isList
+		ifTrue: [{VivideLight active openArtifacts: aTransferMorph passenger}]
+		ifFalse:[{VivideLight active openArtifact: aTransferMorph passenger}]
