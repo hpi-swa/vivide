@@ -5,6 +5,11 @@ startUp: resuming
 		ifTrue: [
 			self active
 				ifNotNil: [#recoverUnsavedScripts openScript]
-				ifNil: [self inform: 'Squeak was shut down unexpectedly.']].
-
+				ifNil: [(Project current uiManager
+						chooseFromLabeledValues: (OrderedDictionary newFrom: {
+							'Ignore' -> [].
+							'Restore changes' -> [ChangeList browseRecentLog]
+						})
+						title: 'Squeak was shut down unexpectedly.') value]].
+	
 	FileStream forceNewFileNamed: 'vivide.ok' do: [:stream | ].
