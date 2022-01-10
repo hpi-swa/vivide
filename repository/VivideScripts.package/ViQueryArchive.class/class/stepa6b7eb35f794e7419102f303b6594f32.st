@@ -11,7 +11,7 @@ stepa6b7eb35f794e7419102f303b6594f32
 		(method timeStamp ifNil: [''] ifNotNil: [:s |
 			(s subStrings: ' ') ifEmpty: [''] ifNotEmpty: [:tokens |
 				(tokens select: [:token | token first isLetter])
-					inject: '' into: [:nm :t | nm := nm, ' ', t]]])
+					inject: '' into: [:nm :t | nm, ' ', t]]])
 		
 		ifNotEmpty: [:nm | 
 			(((b == ViQueryArchive class
@@ -35,7 +35,7 @@ stepa6b7eb35f794e7419102f303b6594f32
 		(method timeStamp ifNil: [''''] ifNotNil: [:s |
 			(s subStrings: '' '') ifEmpty: [''''] ifNotEmpty: [:tokens |
 				(tokens select: [:token | token first isLetter])
-					inject: '''' into: [:nm :t | nm := nm, '' '', t]]])
+					inject: '''' into: [:nm :t | nm, '' '', t]]])
 		
 		ifNotEmpty: [:nm | 
 			(((b == ViQueryArchive class
